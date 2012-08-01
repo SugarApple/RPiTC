@@ -1,9 +1,0 @@
-Jul 31 20:30:46 raspberrypi shutdown[1219]: shutting down for system reboot
-Aug  1 08:54:13 localhost shutdown[1221]: shutting down for system reboot
-Aug  1 09:04:29 localhost shutdown[1147]: shutting down for system halt
-Aug  1 10:19:35 localhost qrdesktop[5768]: +
-Aug  1 10:19:35 localhost qrdesktop[5768]: Starting qrdesktop.  Build date: Jul 20 2010 Build time: 16:08:06.
-Aug  1 10:19:35 localhost qrdesktop[5768]: App version: 7.0 Build 012 (GA).
-Aug  1 10:19:35 localhost qrdesktop[5768]: Description: WARNING: DEBUG BUILD (except for qrdesktop)
-Aug  1 10:19:35 localhost qrdesktop[5768]: +
-Aug  1 10:46:18 localhost shutdown[1325]: shutting down for system halt
