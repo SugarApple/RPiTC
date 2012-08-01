@@ -1,0 +1,6 @@
+ff19485247665ea86bf3cb71a59c69a9  usr/include/X11/extensions/Print.h
+4e3c0f71c41364f09df13d25f47857bf  usr/include/X11/extensions/Printstr.h
+e3170d54a43b4f3434069d6982fd20f0  usr/lib/pkgconfig/printproto.pc
+9368fe3a567736f9c4c42242a2172c34  usr/share/doc/x11proto-print-dev/changelog.Debian.gz
+efecccc1cb326a37d7f3b40310831b64  usr/share/doc/x11proto-print-dev/changelog.gz
+5d2cd79de651eb1843a2b4c286d066e1  usr/share/doc/x11proto-print-dev/copyright

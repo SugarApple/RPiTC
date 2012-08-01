@@ -1,0 +1,5 @@
+rpitc.blogspot.com
+RPiTC full file system
+missing folder to create on ext4 filesystem: /boot /dev /lost+found /media /mnt /proc /run /selinux /svr /sys /tmp
+fs will be:
+bin  boot  dev  etc  home  lib  lost+found  media  mnt  opt  proc  README  root  run  sbin  selinux  srv  sys  tmp  usr  var

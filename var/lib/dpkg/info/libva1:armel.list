@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libva.so.1.3200.0
+/usr/lib/arm-linux-gnueabi/dri
+/usr/lib/arm-linux-gnueabi/dri/dummy_drv_video.so
+/usr/share
+/usr/share/doc
+/usr/share/doc/libva1
+/usr/share/doc/libva1/changelog.Debian.gz
+/usr/share/doc/libva1/copyright
+/usr/lib/arm-linux-gnueabi/libva.so.1

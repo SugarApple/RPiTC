@@ -1,0 +1,12 @@
+! Citrix XenApp Plugin App-Defaults File for Netscape Plugin.
+!
+! Copyright 2000-2003, 2006, 2009 Citrix Systems, Inc. Alle Rechte vorbehalten.
+
+Npica*R_EMBEDDED_START:		Klicken Sie hier zum Verbinden.
+Npica*R_EMBEDDED_RESTART:	Klicken Sie hier zum erneuten Verbinden.
+Npica*R_EMBEDDED_STATUS: 	Verbindung wird hergestellt. Bitte warten...
+Npica*R_EMBEDDED_LAUNCHED: 	ICA-Verbindung wurde gestartet.
+Npica*R_EMBEDDED_INITIALIZE: 	Initialisierung...
+
+Npica*Options.Auto-start:	False
+

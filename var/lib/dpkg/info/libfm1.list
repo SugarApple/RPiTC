@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libfm1
+/usr/share/doc/libfm1/AUTHORS
+/usr/share/doc/libfm1/TODO.gz
+/usr/share/doc/libfm1/changelog.Debian.gz
+/usr/share/doc/libfm1/copyright
+/usr/share/apport
+/usr/share/apport/package-hooks
+/usr/share/apport/package-hooks/source_libfm.py
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libfm.so.1.0.0
+/usr/lib/arm-linux-gnueabi/libfm.so.1

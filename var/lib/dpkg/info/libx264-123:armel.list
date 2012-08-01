@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/neon
+/usr/lib/arm-linux-gnueabi/neon/vfp
+/usr/lib/arm-linux-gnueabi/neon/vfp/libx264.so.123
+/usr/lib/arm-linux-gnueabi/libx264.so.123
+/usr/share
+/usr/share/doc
+/usr/share/doc/libx264-123
+/usr/share/doc/libx264-123/changelog.Debian.gz
+/usr/share/doc/libx264-123/copyright

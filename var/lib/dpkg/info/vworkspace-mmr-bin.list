@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/lib
+/usr/lib/vworkspace
+/usr/lib/vworkspace/bin
+/usr/lib/vworkspace/bin/mmrclient
+/usr/lib/vworkspace/bin/mmrproxy
+/usr/lib/vworkspace/gstreamer-0.10
+/usr/lib/vworkspace/gstreamer-0.10/libpntssrc.so
+/usr/lib/vworkspace/etc
+/usr/lib/vworkspace/etc/mmr
+/usr/lib/vworkspace/etc/mmr/config
+/usr/local
+/usr/local/bin

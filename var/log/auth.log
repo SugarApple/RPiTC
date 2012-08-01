@@ -1,0 +1,78 @@
+Jan  1 00:00:25 raspberrypi sshd[1096]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:25 raspberrypi sshd[1096]: Server listening on :: port 22.
+Jan  1 00:00:25 raspberrypi login[1120]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:25 raspberrypi login[1120]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:25 raspberrypi login[1122]: ROOT LOGIN  on '/dev/tty1'
+Jul 31 20:17:01 raspberrypi CRON[4761]: pam_unix(cron:session): session opened for user root by (uid=0)
+Jul 31 20:17:01 raspberrypi CRON[4761]: pam_unix(cron:session): session closed for user root
+Jan  1 00:00:30 raspberrypi sshd[1085]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:30 raspberrypi sshd[1085]: Server listening on :: port 22.
+Jan  1 00:00:31 raspberrypi login[1109]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:31 raspberrypi login[1109]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:31 raspberrypi login[1111]: ROOT LOGIN  on '/dev/tty1'
+Jul 31 20:30:49 raspberrypi sshd[1085]: Received signal 15; terminating.
+Jan  1 00:00:18 localhost sshd[1076]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:18 localhost sshd[1076]: Server listening on :: port 22.
+Jan  1 00:00:18 localhost login[1100]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:18 localhost login[1100]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:18 localhost login[1102]: ROOT LOGIN  on '/dev/tty1'
+Jul 31 20:33:42 localhost sshd[1114]: Accepted password for root from 192.168.0.102 port 50481 ssh2
+Jul 31 20:33:42 localhost sshd[1114]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Jan  1 00:00:37 localhost sshd[1084]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:37 localhost sshd[1084]: Server listening on :: port 22.
+Jan  1 00:00:38 localhost login[1108]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:38 localhost login[1108]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:38 localhost login[1110]: ROOT LOGIN  on '/dev/tty1'
+Aug  1 08:52:11 localhost sshd[1114]: Accepted password for root from 10.1.16.10 port 51473 ssh2
+Aug  1 08:52:11 localhost sshd[1114]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 08:54:23 localhost sshd[1084]: Received signal 15; terminating.
+Aug  1 08:54:23 localhost sshd[1114]: Exiting on signal 15
+Aug  1 08:54:23 localhost sshd[1114]: pam_unix(sshd:session): session closed for user root
+Jan  1 00:00:28 localhost sshd[1081]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:28 localhost sshd[1081]: Server listening on :: port 22.
+Jan  1 00:00:29 localhost login[1105]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:29 localhost login[1105]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:29 localhost login[1107]: ROOT LOGIN  on '/dev/tty1'
+Aug  1 09:02:55 localhost sshd[1128]: Accepted password for root from 10.1.16.10 port 51503 ssh2
+Aug  1 09:02:55 localhost sshd[1128]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 09:03:20 localhost sshd[1128]: pam_unix(sshd:session): session closed for user root
+Aug  1 09:03:31 localhost sshd[1138]: Accepted password for root from 10.1.16.10 port 51504 ssh2
+Aug  1 09:03:31 localhost sshd[1138]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 09:04:34 localhost sshd[1081]: Received signal 15; terminating.
+Aug  1 09:04:34 localhost sshd[1138]: Exiting on signal 15
+Aug  1 09:04:34 localhost sshd[1138]: pam_unix(sshd:session): session closed for user root
+Jan  1 00:00:25 localhost sshd[1084]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:25 localhost sshd[1084]: Server listening on :: port 22.
+Jan  1 00:00:26 localhost login[1108]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:26 localhost login[1108]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:26 localhost login[1110]: ROOT LOGIN  on '/dev/tty1'
+Aug  1 09:09:30 localhost sshd[1114]: Accepted password for root from 10.1.16.10 port 51554 ssh2
+Aug  1 09:09:30 localhost sshd[1114]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 09:12:28 localhost sshd[1319]: Accepted password for root from 10.1.16.10 port 51577 ssh2
+Aug  1 09:12:28 localhost sshd[1319]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 09:29:07 localhost sshd[1084]: Received signal 15; terminating.
+Aug  1 09:29:07 localhost sshd[10103]: Server listening on 0.0.0.0 port 22.
+Aug  1 09:29:07 localhost sshd[10103]: Server listening on :: port 22.
+Jan  1 00:00:34 localhost sshd[1117]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:34 localhost sshd[1117]: Server listening on :: port 22.
+Jan  1 00:00:34 localhost login[1143]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:34 localhost login[1143]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:34 localhost login[1145]: ROOT LOGIN  on '/dev/tty1'
+Jan  1 00:00:40 localhost sshd[1124]: pam_unix(sshd:account): account root has password changed in future
+Jan  1 00:00:40 localhost sshd[1124]: Accepted password for root from 10.1.16.10 port 51816 ssh2
+Jan  1 00:00:40 localhost sshd[1124]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 10:15:25 localhost sshd[5492]: Accepted password for root from 10.1.16.10 port 51895 ssh2
+Aug  1 10:15:26 localhost sshd[5492]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 10:17:04 localhost CRON[5759]: pam_unix(cron:session): session opened for user root by (uid=0)
+Aug  1 10:17:05 localhost CRON[5759]: pam_unix(cron:session): session closed for user root
+Aug  1 10:26:46 localhost sshd[5492]: pam_unix(sshd:session): session closed for user root
+Jan  1 00:00:40 localhost sshd[1126]: Server listening on 0.0.0.0 port 22.
+Jan  1 00:00:40 localhost sshd[1126]: Server listening on :: port 22.
+Jan  1 00:00:40 localhost login[1150]: pam_unix(login:account): account root has password changed in future
+Jan  1 00:00:40 localhost login[1150]: pam_unix(login:session): session opened for user root by (uid=0)
+Jan  1 00:00:40 localhost login[1152]: ROOT LOGIN  on '/dev/tty1'
+Aug  1 10:31:53 localhost sshd[1173]: Accepted password for root from 10.1.16.10 port 52081 ssh2
+Aug  1 10:31:53 localhost sshd[1173]: pam_unix(sshd:session): session opened for user root by (uid=0)
+Aug  1 10:46:23 localhost sshd[1126]: Received signal 15; terminating.
+Aug  1 10:46:23 localhost sshd[1173]: Exiting on signal 15
+Aug  1 10:46:23 localhost sshd[1173]: pam_unix(sshd:session): session closed for user root

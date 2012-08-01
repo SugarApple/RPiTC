@@ -1,0 +1,7 @@
+/.
+/usr
+/usr/lib
+/usr/lib/vworkspace
+/usr/lib/vworkspace/gstreamer-0.10
+/usr/lib/vworkspace/gstreamer-0.10/libgstximagesink.so
+/usr/lib/vworkspace/gstreamer-0.10/libgstxvimagesink.so

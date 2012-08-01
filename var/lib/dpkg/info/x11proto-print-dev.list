@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/include
+/usr/include/X11
+/usr/include/X11/extensions
+/usr/include/X11/extensions/Print.h
+/usr/include/X11/extensions/Printstr.h
+/usr/share
+/usr/share/doc
+/usr/share/doc/x11proto-print-dev
+/usr/share/doc/x11proto-print-dev/changelog.Debian.gz
+/usr/share/doc/x11proto-print-dev/changelog.gz
+/usr/share/doc/x11proto-print-dev/copyright
+/usr/lib
+/usr/lib/pkgconfig
+/usr/lib/pkgconfig/printproto.pc

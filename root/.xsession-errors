@@ -1,0 +1,19 @@
+Xsession: X session started for root at Tue Jul 31 20:22:52 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Xsession: X session started for root at Tue Jul 31 20:25:06 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+** (lxsession-logout:1210): WARNING **: dbus-interface.c:66: Failed to connect to the system message bus: Failed to connect to socket /var/run/dbus/system_bus_socket: No such file or directory
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 3704 requests (3557 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 0 (Success) on X server :0.
+Xsession: X session started for root at Wed Aug  1 08:53:19 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2386 requests (2383 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
