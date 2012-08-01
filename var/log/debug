@@ -39,3 +39,7 @@ Jan  1 00:00:38 localhost kernel: Module dwc_common_port init
 Jan  1 00:00:38 localhost kernel: Registered led device: mmc0::
 Jan  1 00:00:38 localhost kernel: Registered led device: led0
 Jan  1 00:00:38 localhost kernel: eth0: no IPv6 routers present
+Jan  1 00:00:19 localhost kernel: Module dwc_common_port init
+Jan  1 00:00:19 localhost kernel: Registered led device: mmc0::
+Jan  1 00:00:19 localhost kernel: Registered led device: led0
+Jan  1 00:00:25 localhost kernel: eth0: no IPv6 routers present

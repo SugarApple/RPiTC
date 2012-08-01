@@ -85,6 +85,16 @@ Programs for Internet access such as web and email
 applications-internet
 lxde-network.directory
 2
+-wfcmgr.desktop
+Citrix Receiver
+
+/opt/Citrix/ICAClient/icons/manager.png
+
+7
+Citrix Receiver
+/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient
+0
+0
 -iceweasel.desktop
 Iceweasel
 Browse the World Wide Web

@@ -17,3 +17,10 @@ Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.
 XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
       after 2386 requests (2383 known processed) with 0 events remaining.
 pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for root at Wed Aug  1 21:09:10 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 19681 requests (19678 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.

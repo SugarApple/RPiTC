@@ -1,34 +1,26 @@
 lease {
   interface "eth0";
-  fixed-address 10.1.100.3;
-  option subnet-mask 255.255.0.0;
-  option dhcp-lease-time 86400;
-  option routers 10.1.255.1;
+  fixed-address 192.168.0.100;
+  option subnet-mask 255.255.255.0;
+  option dhcp-lease-time 315360000;
+  option routers 192.168.0.1;
   option dhcp-message-type 5;
-  option dhcp-server-identifier 10.1.244.10;
-  option domain-name-servers 10.1.244.1,10.1.244.10;
-  option dhcp-renewal-time 43200;
-  option dhcp-rebinding-time 75600;
-  option netbios-name-servers 10.1.244.1;
-  option domain-name "italy.fracarro.lan, fracarro.lan, fracarro.com";
-  renew 3 2012/08/01 20:03:38;
-  rebind 4 2012/08/02 07:29:59;
-  expire 4 2012/08/02 10:29:59;
+  option dhcp-server-identifier 192.168.0.234;
+  option domain-name-servers 192.168.0.1;
+  renew 5 1974/03/01 23:26:23;
+  rebind 5 1978/09/29 18:00:16;
+  expire 0 1979/12/30 00:00:16;
 }
 lease {
   interface "eth0";
-  fixed-address 10.1.100.3;
-  option subnet-mask 255.255.0.0;
-  option dhcp-lease-time 86400;
-  option routers 10.1.255.1;
+  fixed-address 192.168.0.100;
+  option subnet-mask 255.255.255.0;
+  option dhcp-lease-time 315360000;
+  option routers 192.168.0.1;
   option dhcp-message-type 5;
-  option dhcp-server-identifier 10.1.244.10;
-  option domain-name-servers 10.1.244.1,10.1.244.10;
-  option dhcp-renewal-time 43200;
-  option dhcp-rebinding-time 75600;
-  option netbios-name-servers 10.1.244.1;
-  option domain-name "italy.fracarro.lan, fracarro.lan, fracarro.com";
-  renew 3 2012/08/01 10:46:24;
-  rebind 3 2012/08/01 10:46:24;
-  expire 3 2012/08/01 10:46:24;
+  option dhcp-server-identifier 192.168.0.234;
+  option domain-name-servers 192.168.0.1;
+  renew 3 2012/08/01 21:11:33;
+  rebind 3 2012/08/01 21:11:33;
+  expire 3 2012/08/01 21:11:33;
 }
