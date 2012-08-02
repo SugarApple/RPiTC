@@ -1,0 +1,1 @@
+update-rc.d fake-hwclock start 02 S . stop 02 0 1 6 .

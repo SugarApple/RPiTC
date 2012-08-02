@@ -1,0 +1,14 @@
+Aug  1 21:10:35 localhost qrdesktop[1252]: +
+Aug  1 21:10:35 localhost qrdesktop[1252]: Starting qrdesktop.  Build date: Jul 20 2010 Build time: 16:08:06.
+Aug  1 21:10:35 localhost qrdesktop[1252]: App version: 7.0 Build 012 (GA).
+Aug  1 21:10:35 localhost qrdesktop[1252]: Description: WARNING: DEBUG BUILD (except for qrdesktop)
+Aug  1 21:10:35 localhost qrdesktop[1252]: +
+Aug  1 21:11:14 localhost shutdown[1255]: shutting down for system halt
+Aug  1 21:27:49 localhost shutdown[1888]: shutting down for system reboot
+Jan  1 00:03:04 localhost shutdown[1231]: shutting down for system reboot
+Aug  1 21:33:21 localhost shutdown[1253]: shutting down for system halt
+Aug  1 21:35:56 localhost shutdown[1199]: shutting down for system reboot
+Aug  1 21:49:31 localhost shutdown[1248]: shutting down for system reboot
+Aug  1 21:58:59 localhost shutdown[1258]: shutting down for system reboot
+Aug  1 22:13:08 localhost shutdown[3802]: shutting down for system reboot
+Aug  1 22:14:11 localhost shutdown[1274]: shutting down for system halt

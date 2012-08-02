@@ -1,0 +1,988 @@
+Jan  1 00:00:20 localhost ntpd[1094]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Jan  1 00:00:20 localhost ntpd[1095]: proto: precision = 2.000 usec
+Jan  1 00:00:20 localhost ntpd[1095]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan  1 00:00:20 localhost ntpd[1095]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan  1 00:00:20 localhost ntpd[1095]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan  1 00:00:20 localhost ntpd[1095]: Listen normally on 3 eth0 192.168.0.100 UDP 123
+Jan  1 00:00:20 localhost ntpd[1095]: Listen normally on 4 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Jan  1 00:00:20 localhost ntpd[1095]: Listen normally on 5 lo ::1 UDP 123
+Jan  1 00:00:20 localhost ntpd[1095]: peers refreshed
+Jan  1 00:00:20 localhost ntpd[1095]: Listening on routing socket on fd #22 for interface updates
+Aug  1 21:11:20 localhost init: Switching to runlevel: 0
+Aug  1 21:11:32 localhost ntpd[1095]: ntpd exiting on signal 15
+Jan  1 00:00:23 localhost ntpd[1089]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Jan  1 00:00:23 localhost ntpd[1090]: proto: precision = 2.000 usec
+Jan  1 00:00:23 localhost ntpd[1090]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan  1 00:00:23 localhost ntpd[1090]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan  1 00:00:23 localhost ntpd[1090]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan  1 00:00:23 localhost ntpd[1090]: Listen normally on 3 eth0 192.168.0.100 UDP 123
+Jan  1 00:00:23 localhost ntpd[1090]: Listen normally on 4 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Jan  1 00:00:23 localhost ntpd[1090]: Listen normally on 5 lo ::1 UDP 123
+Jan  1 00:00:23 localhost ntpd[1090]: peers refreshed
+Jan  1 00:00:23 localhost ntpd[1090]: Listening on routing socket on fd #22 for interface updates
+Aug  1 21:26:50 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:50 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:51 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:51 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:51 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:51 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:51 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:51 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:53 localhost dbus[1695]: [system] Reloaded configuration
+Aug  1 21:26:54 localhost NetworkManager[1817]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 21:26:54 localhost NetworkManager[1817]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: init!
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: end _init.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:26:55 localhost NetworkManager[1817]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: (33187408) ... get_connections.
+Aug  1 21:26:55 localhost NetworkManager[1817]:    SCPlugin-Ifupdown: (33187408) ... get_connections (managed=false): return empty list.
+Aug  1 21:26:55 localhost NetworkManager[1817]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> trying to start the modem manager...
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Networking is enabled by state file
+Aug  1 21:26:55 localhost NetworkManager[1817]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): carrier is ON
+Aug  1 21:26:55 localhost NetworkManager[1817]: <error> [1343856415.350059] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): now managed
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): preparing device.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 21:26:55 localhost NetworkManager[1817]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): device state change: unavailable -> disconnected (reason 'none') [20 30 0]
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> dhclient started with pid 1847
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 21:26:55 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 21:26:55 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 21:26:55 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 21:26:55 localhost dhclient: All rights reserved.
+Aug  1 21:26:55 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 21:26:55 localhost dhclient: 
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 21:26:57 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:26:57 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:26:57 localhost dhclient: Sending on   Socket/fallback
+Aug  1 21:26:57 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 5
+Aug  1 21:26:57 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 21:26:57 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 21:26:57 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info>   address 192.168.0.100
+Aug  1 21:26:57 localhost dhclient: bound to 192.168.0.100 -- renewal in 136778870 seconds.
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info>   prefix 24 (255.255.255.0)
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info>   gateway 192.168.0.1
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info>   nameserver '192.168.0.1'
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 21:26:57 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 21:26:57 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 4
+Aug  1 21:26:57 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 21:26:57 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 21:26:57 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 21:26:57 localhost dhclient: bound to 192.168.0.100 -- renewal in 120936661 seconds.
+Aug  1 21:26:59 localhost NetworkManager[1817]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 21:26:59 localhost NetworkManager[1817]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 21:26:59 localhost NetworkManager[1817]: <info> Activation (eth0) successful, device activated.
+Aug  1 21:26:59 localhost dbus[1695]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 21:26:59 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 21:26:59 localhost dbus[1695]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 21:27:16 localhost NetworkManager[1817]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 21:27:16 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 21:27:16 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 21:27:16 localhost NetworkManager[1817]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 21:27:56 localhost init: Switching to runlevel: 6
+Aug  1 21:27:57 localhost NetworkManager[1817]: <info> caught signal 15, shutting down normally.
+Aug  1 21:27:57 localhost NetworkManager[1817]: <warn> quit request received, terminating...
+Aug  1 21:27:57 localhost NetworkManager[1817]: <info> exiting (success)
+Aug  1 21:28:03 localhost ntpd[1090]: ntpd exiting on signal 15
+Jan  1 00:00:16 localhost NetworkManager[1050]: <info> NetworkManager (version 0.9.4.0) is starting...
+Jan  1 00:00:16 localhost NetworkManager[1050]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: init!
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: update_system_hostname
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPluginIfupdown: management mode: unmanaged
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: end _init.
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Jan  1 00:00:17 localhost NetworkManager[1050]:    Ifupdown: get unmanaged devices count: 0
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: (4173512) ... get_connections.
+Jan  1 00:00:17 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: (4173512) ... get_connections (managed=false): return empty list.
+Jan  1 00:00:17 localhost NetworkManager[1050]:    Ifupdown: get unmanaged devices count: 0
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> trying to start the modem manager...
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> WiFi enabled by radio killswitch; enabled by state file
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> WWAN enabled by radio killswitch; enabled by state file
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> Networking is enabled by state file
+Jan  1 00:00:17 localhost NetworkManager[1050]: <warn> failed to allocate link cache: (-12) Object not found
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): carrier is OFF
+Jan  1 00:00:17 localhost NetworkManager[1050]: <error> [17.284957] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): now managed
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): bringing up device.
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): preparing device.
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> (eth0): deactivating device (reason 'managed') [2]
+Jan  1 00:00:17 localhost NetworkManager[1050]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Jan  1 00:00:17 localhost ntpd[1079]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Jan  1 00:00:17 localhost NetworkManager[1050]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Jan  1 00:00:17 localhost ntpd[1080]: proto: precision = 2.000 usec
+Jan  1 00:00:17 localhost ntpd[1080]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan  1 00:00:17 localhost ntpd[1080]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan  1 00:00:17 localhost ntpd[1080]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan  1 00:00:17 localhost ntpd[1080]: Listen normally on 3 lo ::1 UDP 123
+Jan  1 00:00:17 localhost ntpd[1080]: peers refreshed
+Jan  1 00:00:17 localhost ntpd[1080]: Listening on routing socket on fd #20 for interface updates
+Jan  1 00:00:17 localhost ntpd[1080]: Deferring DNS for 0.debian.pool.ntp.org 1
+Jan  1 00:00:17 localhost ntpd[1080]: Deferring DNS for 1.debian.pool.ntp.org 1
+Jan  1 00:00:17 localhost ntpd[1080]: Deferring DNS for 2.debian.pool.ntp.org 1
+Jan  1 00:00:17 localhost ntpd[1080]: Deferring DNS for 3.debian.pool.ntp.org 1
+Jan  1 00:00:17 localhost ntpd[1098]: signal_no_reset: signal 17 had flags 4000000
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> (eth0): carrier now ON (device state 20)
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Auto-activating connection 'Wired connection 1'.
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan  1 00:00:18 localhost NetworkManager[1050]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> dhclient started with pid 1147
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> Activation (eth0) Beginning IP6 addrconf.
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan  1 00:00:19 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Jan  1 00:00:19 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Jan  1 00:00:19 localhost dhclient: All rights reserved.
+Jan  1 00:00:19 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan  1 00:00:19 localhost dhclient: 
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan  1 00:00:19 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Jan  1 00:00:19 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Jan  1 00:00:19 localhost dhclient: Sending on   Socket/fallback
+Jan  1 00:00:19 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 4
+Jan  1 00:00:19 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Jan  1 00:00:19 localhost dhclient: DHCPOFFER from 192.168.0.234
+Jan  1 00:00:19 localhost dhclient: DHCPACK from 192.168.0.234
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info>   address 192.168.0.100
+Jan  1 00:00:19 localhost dhclient: bound to 192.168.0.100 -- renewal in 121635637 seconds.
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info>   prefix 24 (255.255.255.0)
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info>   gateway 192.168.0.1
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info>   nameserver '192.168.0.1'
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Jan  1 00:00:19 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Jan  1 00:00:19 localhost ntpd_intres[1098]: DNS 0.debian.pool.ntp.org -> 212.45.144.59
+Jan  1 00:00:19 localhost ntpd_intres[1098]: DNS 1.debian.pool.ntp.org -> 2.228.78.68
+Jan  1 00:00:20 localhost ntpd_intres[1098]: DNS 2.debian.pool.ntp.org -> 2001:4b78:1002:21::7
+Jan  1 00:00:20 localhost ntpd_intres[1098]: DNS 3.debian.pool.ntp.org -> 212.45.144.88
+Jan  1 00:00:20 localhost ntpd[1080]: Listen normally on 4 eth0 192.168.0.100 UDP 123
+Jan  1 00:00:20 localhost ntpd[1080]: peers refreshed
+Jan  1 00:00:22 localhost ntpd[1080]: Listen normally on 5 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Jan  1 00:00:22 localhost ntpd[1080]: peers refreshed
+Jan  1 00:00:22 localhost NetworkManager[1050]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Jan  1 00:00:24 localhost NetworkManager[1050]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan  1 00:00:24 localhost NetworkManager[1050]: <info> Activation (eth0) successful, device activated.
+Jan  1 00:00:24 localhost dbus[1025]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Jan  1 00:00:24 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Jan  1 00:00:24 localhost dbus[1025]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan  1 00:00:39 localhost NetworkManager[1050]: <info> (eth0): IP6 addrconf timed out or failed.
+Jan  1 00:00:39 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Jan  1 00:00:39 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Jan  1 00:00:39 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Jan  1 00:03:09 localhost init: Switching to runlevel: 6
+Jan  1 00:03:11 localhost NetworkManager[1050]: <info> caught signal 15, shutting down normally.
+Jan  1 00:03:11 localhost NetworkManager[1050]: <warn> quit request received, terminating...
+Jan  1 00:03:11 localhost NetworkManager[1050]: <info> exiting (success)
+Jan  1 00:03:19 localhost ntpd[1080]: ntpd exiting on signal 15
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> NetworkManager (version 0.9.4.0) is starting...
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: init!
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: update_system_hostname
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPluginIfupdown: management mode: unmanaged
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: end _init.
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Jan  1 00:03:22 localhost NetworkManager[1054]:    Ifupdown: get unmanaged devices count: 0
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: (8228552) ... get_connections.
+Jan  1 00:03:22 localhost NetworkManager[1054]:    SCPlugin-Ifupdown: (8228552) ... get_connections (managed=false): return empty list.
+Jan  1 00:03:22 localhost NetworkManager[1054]:    Ifupdown: get unmanaged devices count: 0
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> trying to start the modem manager...
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> WiFi enabled by radio killswitch; enabled by state file
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> WWAN enabled by radio killswitch; enabled by state file
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> Networking is enabled by state file
+Jan  1 00:03:22 localhost NetworkManager[1054]: <warn> failed to allocate link cache: (-12) Object not found
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): carrier is OFF
+Jan  1 00:03:22 localhost NetworkManager[1054]: <error> [202.910420] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): now managed
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): bringing up device.
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): preparing device.
+Jan  1 00:03:22 localhost NetworkManager[1054]: <info> (eth0): deactivating device (reason 'managed') [2]
+Jan  1 00:03:23 localhost NetworkManager[1054]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Jan  1 00:03:23 localhost ntpd[1083]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Jan  1 00:03:23 localhost NetworkManager[1054]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Jan  1 00:03:23 localhost ntpd[1085]: proto: precision = 2.000 usec
+Jan  1 00:03:23 localhost ntpd[1085]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan  1 00:03:23 localhost ntpd[1085]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan  1 00:03:23 localhost ntpd[1085]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan  1 00:03:23 localhost ntpd[1085]: Listen normally on 3 lo ::1 UDP 123
+Jan  1 00:03:23 localhost ntpd[1085]: peers refreshed
+Jan  1 00:03:23 localhost ntpd[1085]: Listening on routing socket on fd #20 for interface updates
+Jan  1 00:03:23 localhost ntpd[1085]: Deferring DNS for 0.debian.pool.ntp.org 1
+Jan  1 00:03:23 localhost ntpd[1085]: Deferring DNS for 1.debian.pool.ntp.org 1
+Jan  1 00:03:23 localhost ntpd[1085]: Deferring DNS for 2.debian.pool.ntp.org 1
+Jan  1 00:03:23 localhost ntpd[1085]: Deferring DNS for 3.debian.pool.ntp.org 1
+Jan  1 00:03:23 localhost ntpd[1102]: signal_no_reset: signal 17 had flags 4000000
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): carrier now ON (device state 20)
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Auto-activating connection 'Wired connection 1'.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> dhclient started with pid 1151
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Beginning IP6 addrconf.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Jan  1 00:03:24 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Jan  1 00:03:24 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Jan  1 00:03:24 localhost dhclient: All rights reserved.
+Jan  1 00:03:24 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Jan  1 00:03:24 localhost dhclient: 
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Jan  1 00:03:24 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Jan  1 00:03:24 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Jan  1 00:03:24 localhost dhclient: Sending on   Socket/fallback
+Jan  1 00:03:24 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 6
+Jan  1 00:03:24 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Jan  1 00:03:24 localhost dhclient: DHCPOFFER from 192.168.0.234
+Jan  1 00:03:24 localhost dhclient: DHCPACK from 192.168.0.234
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info>   address 192.168.0.100
+Jan  1 00:03:24 localhost dhclient: bound to 192.168.0.100 -- renewal in 132176522 seconds.
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info>   prefix 24 (255.255.255.0)
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info>   gateway 192.168.0.1
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info>   nameserver '192.168.0.1'
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Jan  1 00:03:24 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Jan  1 00:03:25 localhost ntpd_intres[1102]: DNS 0.debian.pool.ntp.org -> 212.45.144.59
+Jan  1 00:03:25 localhost ntpd_intres[1102]: DNS 1.debian.pool.ntp.org -> 2.228.78.68
+Jan  1 00:03:25 localhost ntpd_intres[1102]: DNS 2.debian.pool.ntp.org -> 2001:4b78:1002:21::7
+Jan  1 00:03:25 localhost ntpd_intres[1102]: DNS 3.debian.pool.ntp.org -> 212.45.144.88
+Jan  1 00:03:26 localhost ntpd[1085]: Listen normally on 4 eth0 192.168.0.100 UDP 123
+Jan  1 00:03:26 localhost ntpd[1085]: peers refreshed
+Jan  1 00:03:28 localhost ntpd[1085]: Listen normally on 5 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Jan  1 00:03:28 localhost ntpd[1085]: peers refreshed
+Jan  1 00:03:28 localhost NetworkManager[1054]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Jan  1 00:03:29 localhost NetworkManager[1054]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Jan  1 00:03:29 localhost NetworkManager[1054]: <info> Activation (eth0) successful, device activated.
+Jan  1 00:03:29 localhost dbus[1029]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Jan  1 00:03:29 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Jan  1 00:03:30 localhost dbus[1029]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Jan  1 00:03:44 localhost NetworkManager[1054]: <info> (eth0): IP6 addrconf timed out or failed.
+Jan  1 00:03:44 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Jan  1 00:03:44 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Jan  1 00:03:44 localhost NetworkManager[1054]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Jan  1 00:04:26 localhost ntpd[1085]: ntpd exiting on signal 15
+Jan  1 00:04:28 localhost ntpd[1228]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Jan  1 00:04:28 localhost ntpd[1229]: proto: precision = 2.000 usec
+Jan  1 00:04:28 localhost ntpd[1229]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Jan  1 00:04:28 localhost ntpd[1229]: Listen and drop on 1 v6wildcard :: UDP 123
+Jan  1 00:04:28 localhost ntpd[1229]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Jan  1 00:04:28 localhost ntpd[1229]: Listen normally on 3 eth0 192.168.0.100 UDP 123
+Jan  1 00:04:28 localhost ntpd[1229]: Listen normally on 4 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Jan  1 00:04:28 localhost ntpd[1229]: Listen normally on 5 lo ::1 UDP 123
+Jan  1 00:04:28 localhost ntpd[1229]: peers refreshed
+Jan  1 00:04:28 localhost ntpd[1229]: Listening on routing socket on fd #22 for interface updates
+Aug  1 21:33:23 localhost init: Switching to runlevel: 0
+Aug  1 21:33:25 localhost NetworkManager[1054]: <info> caught signal 15, shutting down normally.
+Aug  1 21:33:25 localhost NetworkManager[1054]: <warn> quit request received, terminating...
+Aug  1 21:33:25 localhost NetworkManager[1054]: <info> exiting (success)
+Aug  1 21:33:31 localhost ntpd[1229]: ntpd exiting on signal 15
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: init!
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: end _init.
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:33:36 localhost NetworkManager[1056]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: (26783432) ... get_connections.
+Aug  1 21:33:36 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: (26783432) ... get_connections (managed=false): return empty list.
+Aug  1 21:33:36 localhost NetworkManager[1056]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> trying to start the modem manager...
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> Networking is enabled by state file
+Aug  1 21:33:36 localhost NetworkManager[1056]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> (eth0): carrier is OFF
+Aug  1 21:33:36 localhost NetworkManager[1056]: <error> [1343856816.941226] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> (eth0): now managed
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 21:33:36 localhost NetworkManager[1056]: <info> (eth0): bringing up device.
+Aug  1 21:33:37 localhost NetworkManager[1056]: <info> (eth0): preparing device.
+Aug  1 21:33:37 localhost NetworkManager[1056]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 21:33:37 localhost NetworkManager[1056]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 21:33:37 localhost ntpd[1085]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  1 21:33:37 localhost NetworkManager[1056]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 21:33:37 localhost ntpd[1086]: proto: precision = 2.000 usec
+Aug  1 21:33:37 localhost ntpd[1086]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  1 21:33:37 localhost ntpd[1086]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  1 21:33:37 localhost ntpd[1086]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Aug  1 21:33:37 localhost ntpd[1086]: Listen normally on 3 lo ::1 UDP 123
+Aug  1 21:33:37 localhost ntpd[1086]: peers refreshed
+Aug  1 21:33:37 localhost ntpd[1086]: Listening on routing socket on fd #20 for interface updates
+Aug  1 21:33:37 localhost ntpd[1086]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  1 21:33:37 localhost ntpd[1086]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  1 21:33:37 localhost ntpd[1086]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  1 21:33:37 localhost ntpd[1086]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  1 21:33:37 localhost ntpd[1103]: signal_no_reset: signal 17 had flags 4000000
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): carrier now ON (device state 20)
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> dhclient started with pid 1153
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 21:33:38 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 21:33:38 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 21:33:38 localhost dhclient: All rights reserved.
+Aug  1 21:33:38 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 21:33:38 localhost dhclient: 
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 21:33:38 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:33:38 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:33:38 localhost dhclient: Sending on   Socket/fallback
+Aug  1 21:33:38 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 6
+Aug  1 21:33:38 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 21:33:38 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 21:33:38 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info>   address 192.168.0.100
+Aug  1 21:33:38 localhost dhclient: bound to 192.168.0.100 -- renewal in 147368337 seconds.
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info>   prefix 24 (255.255.255.0)
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info>   gateway 192.168.0.1
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info>   nameserver '192.168.0.1'
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 21:33:38 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 21:33:39 localhost ntpd_intres[1103]: DNS 0.debian.pool.ntp.org -> 194.116.87.4
+Aug  1 21:33:39 localhost ntpd_intres[1103]: DNS 1.debian.pool.ntp.org -> 109.168.118.249
+Aug  1 21:33:39 localhost ntpd_intres[1103]: DNS 2.debian.pool.ntp.org -> 2001:4b78:1002:21::7
+Aug  1 21:33:39 localhost ntpd_intres[1103]: DNS 3.debian.pool.ntp.org -> 83.149.158.215
+Aug  1 21:33:41 localhost ntpd[1086]: Listen normally on 4 eth0 192.168.0.100 UDP 123
+Aug  1 21:33:41 localhost ntpd[1086]: Listen normally on 5 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  1 21:33:41 localhost ntpd[1086]: peers refreshed
+Aug  1 21:33:42 localhost NetworkManager[1056]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 21:33:43 localhost NetworkManager[1056]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 21:33:43 localhost NetworkManager[1056]: <info> Activation (eth0) successful, device activated.
+Aug  1 21:33:43 localhost dbus[1031]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 21:33:43 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 21:33:43 localhost dbus[1031]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 21:33:58 localhost NetworkManager[1056]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 21:33:58 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 21:33:58 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 21:33:58 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 21:34:17 localhost ntpd[1178]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  1 21:34:17 localhost ntpd[1179]: proto: precision = 2.000 usec
+Aug  1 21:34:17 localhost ntpd[1179]: unable to bind to wildcard address 0.0.0.0 - another process may be running - EXITING
+Aug  1 21:35:59 localhost init: Switching to runlevel: 6
+Aug  1 21:36:01 localhost NetworkManager[1056]: <info> caught signal 15, shutting down normally.
+Aug  1 21:36:01 localhost NetworkManager[1056]: <warn> quit request received, terminating...
+Aug  1 21:36:01 localhost NetworkManager[1056]: <info> exiting (success)
+Aug  1 21:36:09 localhost ntpd[1086]: ntpd exiting on signal 15
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: init!
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: end _init.
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:36:12 localhost NetworkManager[1056]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: (12345704) ... get_connections.
+Aug  1 21:36:12 localhost NetworkManager[1056]:    SCPlugin-Ifupdown: (12345704) ... get_connections (managed=false): return empty list.
+Aug  1 21:36:12 localhost NetworkManager[1056]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> trying to start the modem manager...
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> Networking is enabled by state file
+Aug  1 21:36:12 localhost NetworkManager[1056]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): carrier is OFF
+Aug  1 21:36:12 localhost NetworkManager[1056]: <error> [1343856972.872583] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): now managed
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): bringing up device.
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): preparing device.
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 21:36:12 localhost NetworkManager[1056]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 21:36:13 localhost ntpd[1085]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  1 21:36:13 localhost NetworkManager[1056]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 21:36:13 localhost ntpd[1087]: proto: precision = 2.000 usec
+Aug  1 21:36:13 localhost ntpd[1087]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  1 21:36:13 localhost ntpd[1087]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  1 21:36:13 localhost ntpd[1087]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Aug  1 21:36:13 localhost ntpd[1087]: Listen normally on 3 lo ::1 UDP 123
+Aug  1 21:36:13 localhost ntpd[1087]: peers refreshed
+Aug  1 21:36:13 localhost ntpd[1087]: Listening on routing socket on fd #20 for interface updates
+Aug  1 21:36:13 localhost ntpd[1087]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  1 21:36:13 localhost ntpd[1087]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  1 21:36:13 localhost ntpd[1087]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  1 21:36:13 localhost ntpd[1087]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  1 21:36:13 localhost ntpd[1106]: signal_no_reset: signal 17 had flags 4000000
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): carrier now ON (device state 20)
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> dhclient started with pid 1153
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 21:36:14 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 21:36:14 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 21:36:14 localhost dhclient: All rights reserved.
+Aug  1 21:36:14 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 21:36:14 localhost dhclient: 
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 21:36:14 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:36:14 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:36:14 localhost dhclient: Sending on   Socket/fallback
+Aug  1 21:36:14 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Aug  1 21:36:14 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 21:36:14 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 21:36:14 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info>   address 192.168.0.100
+Aug  1 21:36:14 localhost dhclient: bound to 192.168.0.100 -- renewal in 151264661 seconds.
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info>   prefix 24 (255.255.255.0)
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info>   gateway 192.168.0.1
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info>   nameserver '192.168.0.1'
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 21:36:14 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 21:36:15 localhost ntpd_intres[1106]: DNS 0.debian.pool.ntp.org -> 93.62.188.182
+Aug  1 21:36:15 localhost ntpd_intres[1106]: DNS 1.debian.pool.ntp.org -> 212.45.144.206
+Aug  1 21:36:15 localhost ntpd_intres[1106]: DNS 2.debian.pool.ntp.org -> 2a00:dcc0:eda:3749:247:49:206:1
+Aug  1 21:36:15 localhost ntpd_intres[1106]: DNS 3.debian.pool.ntp.org -> 212.45.144.88
+Aug  1 21:36:17 localhost ntpd[1087]: Listen normally on 4 eth0 192.168.0.100 UDP 123
+Aug  1 21:36:17 localhost ntpd[1087]: Listen normally on 5 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  1 21:36:17 localhost ntpd[1087]: peers refreshed
+Aug  1 21:36:18 localhost NetworkManager[1056]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 21:36:19 localhost NetworkManager[1056]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 21:36:19 localhost NetworkManager[1056]: <info> Activation (eth0) successful, device activated.
+Aug  1 21:36:19 localhost dbus[1031]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 21:36:19 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 21:36:20 localhost dbus[1031]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 21:36:34 localhost NetworkManager[1056]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 21:36:34 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 21:36:34 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 21:36:34 localhost NetworkManager[1056]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 21:49:34 localhost init: Switching to runlevel: 6
+Aug  1 21:49:36 localhost NetworkManager[1056]: <info> caught signal 15, shutting down normally.
+Aug  1 21:49:36 localhost NetworkManager[1056]: <warn> quit request received, terminating...
+Aug  1 21:49:36 localhost NetworkManager[1056]: <info> exiting (success)
+Aug  1 21:49:43 localhost ntpd[1087]: ntpd exiting on signal 15
+Aug  1 21:49:45 localhost NetworkManager[1052]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 21:49:45 localhost NetworkManager[1052]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: init!
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: end _init.
+Aug  1 21:49:45 localhost NetworkManager[1052]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:49:45 localhost NetworkManager[1052]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:49:45 localhost NetworkManager[1052]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: (29408968) ... get_connections.
+Aug  1 21:49:45 localhost NetworkManager[1052]:    SCPlugin-Ifupdown: (29408968) ... get_connections (managed=false): return empty list.
+Aug  1 21:49:45 localhost NetworkManager[1052]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:49:45 localhost NetworkManager[1052]: <info> trying to start the modem manager...
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> Networking is enabled by state file
+Aug  1 21:49:46 localhost NetworkManager[1052]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): carrier is OFF
+Aug  1 21:49:46 localhost NetworkManager[1052]: <error> [1343857786.108412] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): now managed
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): bringing up device.
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): preparing device.
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 21:49:46 localhost NetworkManager[1052]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 21:49:46 localhost ntpd[1081]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  1 21:49:46 localhost NetworkManager[1052]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 21:49:46 localhost ntpd[1082]: proto: precision = 2.000 usec
+Aug  1 21:49:46 localhost ntpd[1082]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  1 21:49:46 localhost ntpd[1082]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  1 21:49:46 localhost ntpd[1082]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Aug  1 21:49:46 localhost ntpd[1082]: Listen normally on 3 lo ::1 UDP 123
+Aug  1 21:49:46 localhost ntpd[1082]: peers refreshed
+Aug  1 21:49:46 localhost ntpd[1082]: Listening on routing socket on fd #20 for interface updates
+Aug  1 21:49:46 localhost ntpd[1082]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  1 21:49:46 localhost ntpd[1082]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  1 21:49:46 localhost ntpd[1082]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  1 21:49:46 localhost ntpd[1082]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  1 21:49:46 localhost ntpd[1099]: signal_no_reset: signal 17 had flags 4000000
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> (eth0): carrier now ON (device state 20)
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 21:49:47 localhost NetworkManager[1052]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> dhclient started with pid 1149
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 21:49:48 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 21:49:48 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 21:49:48 localhost dhclient: All rights reserved.
+Aug  1 21:49:48 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 21:49:48 localhost dhclient: 
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 21:49:48 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:49:48 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:49:48 localhost dhclient: Sending on   Socket/fallback
+Aug  1 21:49:48 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 6
+Aug  1 21:49:48 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 21:49:48 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 21:49:48 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info>   address 192.168.0.100
+Aug  1 21:49:48 localhost dhclient: bound to 192.168.0.100 -- renewal in 130815189 seconds.
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info>   prefix 24 (255.255.255.0)
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info>   gateway 192.168.0.1
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info>   nameserver '192.168.0.1'
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 21:49:48 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 21:49:48 localhost ntpd_intres[1099]: DNS 0.debian.pool.ntp.org -> 194.116.87.4
+Aug  1 21:49:48 localhost ntpd_intres[1099]: DNS 1.debian.pool.ntp.org -> 85.18.189.242
+Aug  1 21:49:48 localhost ntpd_intres[1099]: DNS 2.debian.pool.ntp.org -> 2001:4b78:1002:21::7
+Aug  1 21:49:48 localhost ntpd_intres[1099]: DNS 3.debian.pool.ntp.org -> 212.45.144.88
+Aug  1 21:49:49 localhost ntpd[1082]: Listen normally on 4 eth0 192.168.0.100 UDP 123
+Aug  1 21:49:49 localhost ntpd[1082]: peers refreshed
+Aug  1 21:49:51 localhost ntpd[1082]: Listen normally on 5 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  1 21:49:51 localhost ntpd[1082]: peers refreshed
+Aug  1 21:49:51 localhost NetworkManager[1052]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 21:49:53 localhost NetworkManager[1052]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 21:49:53 localhost NetworkManager[1052]: <info> Activation (eth0) successful, device activated.
+Aug  1 21:49:53 localhost dbus[1027]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 21:49:53 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 21:49:53 localhost dbus[1027]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 21:50:08 localhost NetworkManager[1052]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 21:50:08 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 21:50:08 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 21:50:08 localhost NetworkManager[1052]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 21:59:06 localhost init: Switching to runlevel: 6
+Aug  1 21:59:08 localhost NetworkManager[1052]: <info> caught signal 15, shutting down normally.
+Aug  1 21:59:08 localhost NetworkManager[1052]: <warn> quit request received, terminating...
+Aug  1 21:59:08 localhost NetworkManager[1052]: <info> exiting (success)
+Aug  1 21:59:16 localhost ntpd[1082]: ntpd exiting on signal 15
+Aug  1 21:59:18 localhost NetworkManager[1006]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 21:59:18 localhost NetworkManager[1006]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: init!
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: end _init.
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 21:59:19 localhost NetworkManager[1006]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: (15040200) ... get_connections.
+Aug  1 21:59:19 localhost NetworkManager[1006]:    SCPlugin-Ifupdown: (15040200) ... get_connections (managed=false): return empty list.
+Aug  1 21:59:19 localhost NetworkManager[1006]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> trying to start the modem manager...
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> Networking is enabled by state file
+Aug  1 21:59:19 localhost NetworkManager[1006]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): carrier is OFF
+Aug  1 21:59:19 localhost NetworkManager[1006]: <error> [1343858359.353477] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): now managed
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): bringing up device.
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): preparing device.
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 21:59:19 localhost NetworkManager[1006]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 21:59:19 localhost ntpd[1038]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  1 21:59:19 localhost NetworkManager[1006]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 21:59:19 localhost ntpd[1039]: proto: precision = 2.000 usec
+Aug  1 21:59:19 localhost ntpd[1039]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  1 21:59:19 localhost ntpd[1039]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  1 21:59:19 localhost ntpd[1039]: Listening on routing socket on fd #18 for interface updates
+Aug  1 21:59:19 localhost ntpd[1039]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  1 21:59:19 localhost ntpd[1039]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  1 21:59:19 localhost ntpd[1039]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  1 21:59:19 localhost ntpd[1039]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  1 21:59:19 localhost ntpd[1057]: signal_no_reset: signal 17 had flags 4000000
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): carrier now ON (device state 20)
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> dhclient started with pid 1112
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 21:59:21 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 21:59:21 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 21:59:21 localhost dhclient: All rights reserved.
+Aug  1 21:59:21 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 21:59:21 localhost dhclient: 
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 21:59:21 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:59:21 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 21:59:21 localhost dhclient: Sending on   Socket/fallback
+Aug  1 21:59:21 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 6
+Aug  1 21:59:21 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 21:59:21 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 21:59:21 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info>   address 192.168.0.100
+Aug  1 21:59:21 localhost dhclient: bound to 192.168.0.100 -- renewal in 156988098 seconds.
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info>   prefix 24 (255.255.255.0)
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info>   gateway 192.168.0.1
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info>   nameserver '192.168.0.1'
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 21:59:21 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 21:59:21 localhost ntpd_intres[1057]: DNS 0.debian.pool.ntp.org -> 194.116.87.4
+Aug  1 21:59:21 localhost ntpd_intres[1057]: openntp: connect() failed: Network is unreachable
+Aug  1 21:59:22 localhost ntpd[1039]: Listen normally on 2 eth0 192.168.0.100 UDP 123
+Aug  1 21:59:22 localhost ntpd[1039]: peers refreshed
+Aug  1 21:59:24 localhost ntpd[1039]: Listen normally on 3 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  1 21:59:24 localhost ntpd[1039]: peers refreshed
+Aug  1 21:59:25 localhost NetworkManager[1006]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 21:59:26 localhost NetworkManager[1006]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 21:59:26 localhost NetworkManager[1006]: <info> Activation (eth0) successful, device activated.
+Aug  1 21:59:26 localhost dbus[981]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 21:59:26 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 21:59:26 localhost dbus[981]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 21:59:41 localhost NetworkManager[1006]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 21:59:41 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 21:59:41 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 21:59:41 localhost NetworkManager[1006]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 22:07:14 localhost NetworkManager[1006]: <info> caught signal 15, shutting down normally.
+Aug  1 22:07:14 localhost NetworkManager[1006]: <warn> quit request received, terminating...
+Aug  1 22:07:14 localhost NetworkManager[1006]: <info> exiting (success)
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: init!
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: end _init.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 22:07:15 localhost NetworkManager[2604]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: (26439360) ... get_connections.
+Aug  1 22:07:15 localhost NetworkManager[2604]:    SCPlugin-Ifupdown: (26439360) ... get_connections (managed=false): return empty list.
+Aug  1 22:07:15 localhost NetworkManager[2604]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> trying to start the modem manager...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Networking is enabled by state file
+Aug  1 22:07:15 localhost NetworkManager[2604]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): carrier is ON
+Aug  1 22:07:15 localhost NetworkManager[2604]: <error> [1343858835.838777] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): now managed
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): preparing device.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 22:07:15 localhost NetworkManager[2604]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): device state change: unavailable -> disconnected (reason 'none') [20 30 0]
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> dhclient started with pid 2627
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 22:07:15 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 22:07:16 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 22:07:16 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 22:07:16 localhost dhclient: All rights reserved.
+Aug  1 22:07:16 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 22:07:16 localhost dhclient: 
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 22:07:16 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 22:07:16 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 22:07:16 localhost dhclient: Sending on   Socket/fallback
+Aug  1 22:07:16 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3
+Aug  1 22:07:16 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 22:07:16 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 22:07:16 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info>   address 192.168.0.100
+Aug  1 22:07:16 localhost dhclient: bound to 192.168.0.100 -- renewal in 125298335 seconds.
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info>   prefix 24 (255.255.255.0)
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info>   gateway 192.168.0.1
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info>   nameserver '192.168.0.1'
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 22:07:16 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 22:07:17 localhost NetworkManager[2604]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 22:07:21 localhost NetworkManager[2604]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 22:07:21 localhost NetworkManager[2604]: <info> Activation (eth0) successful, device activated.
+Aug  1 22:07:21 localhost dbus[981]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 22:07:21 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 22:07:21 localhost dbus[981]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 22:07:36 localhost NetworkManager[2604]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 22:07:36 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 22:07:36 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 22:07:36 localhost NetworkManager[2604]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 22:13:11 localhost init: Switching to runlevel: 6
+Aug  1 22:13:12 localhost NetworkManager[2604]: <info> caught signal 15, shutting down normally.
+Aug  1 22:13:12 localhost NetworkManager[2604]: <warn> quit request received, terminating...
+Aug  1 22:13:12 localhost NetworkManager[2604]: <info> exiting (success)
+Aug  1 22:13:21 localhost ntpd[1039]: ntpd exiting on signal 15
+Aug  1 22:13:22 localhost NetworkManager[1009]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  1 22:13:22 localhost NetworkManager[1009]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: init!
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPluginIfupdown: management mode: unmanaged
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: end _init.
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  1 22:13:23 localhost NetworkManager[1009]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: (1085800) ... get_connections.
+Aug  1 22:13:23 localhost NetworkManager[1009]:    SCPlugin-Ifupdown: (1085800) ... get_connections (managed=false): return empty list.
+Aug  1 22:13:23 localhost NetworkManager[1009]:    Ifupdown: get unmanaged devices count: 0
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> trying to start the modem manager...
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> Networking is enabled by state file
+Aug  1 22:13:23 localhost NetworkManager[1009]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): carrier is OFF
+Aug  1 22:13:23 localhost NetworkManager[1009]: <error> [1343859203.311775] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): now managed
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): bringing up device.
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): preparing device.
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  1 22:13:23 localhost NetworkManager[1009]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  1 22:13:23 localhost ntpd[1041]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  1 22:13:23 localhost NetworkManager[1009]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  1 22:13:23 localhost ntpd[1043]: proto: precision = 2.000 usec
+Aug  1 22:13:23 localhost ntpd[1043]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  1 22:13:23 localhost ntpd[1043]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  1 22:13:23 localhost ntpd[1043]: Listening on routing socket on fd #18 for interface updates
+Aug  1 22:13:23 localhost ntpd[1043]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  1 22:13:23 localhost ntpd[1043]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  1 22:13:23 localhost ntpd[1043]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  1 22:13:23 localhost ntpd[1043]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  1 22:13:23 localhost ntpd[1061]: signal_no_reset: signal 17 had flags 4000000
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> (eth0): carrier now ON (device state 20)
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> dhclient started with pid 1112
+Aug  1 22:13:24 localhost NetworkManager[1009]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  1 22:13:25 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  1 22:13:25 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  1 22:13:25 localhost dhclient: All rights reserved.
+Aug  1 22:13:25 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  1 22:13:25 localhost dhclient: 
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  1 22:13:25 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 22:13:25 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  1 22:13:25 localhost dhclient: Sending on   Socket/fallback
+Aug  1 22:13:25 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 3
+Aug  1 22:13:25 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  1 22:13:25 localhost dhclient: DHCPOFFER from 192.168.0.234
+Aug  1 22:13:25 localhost dhclient: DHCPACK from 192.168.0.234
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info>   address 192.168.0.100
+Aug  1 22:13:25 localhost dhclient: bound to 192.168.0.100 -- renewal in 126751483 seconds.
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info>   prefix 24 (255.255.255.0)
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info>   gateway 192.168.0.1
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info>   nameserver '192.168.0.1'
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  1 22:13:25 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  1 22:13:25 localhost ntpd_intres[1061]: DNS 0.debian.pool.ntp.org -> 212.45.144.16
+Aug  1 22:13:25 localhost ntpd_intres[1061]: openntp: connect() failed: Network is unreachable
+Aug  1 22:13:26 localhost NetworkManager[1009]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  1 22:13:27 localhost ntpd[1043]: Listen normally on 2 eth0 192.168.0.100 UDP 123
+Aug  1 22:13:27 localhost ntpd[1043]: Listen normally on 3 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  1 22:13:27 localhost ntpd[1043]: peers refreshed
+Aug  1 22:13:31 localhost NetworkManager[1009]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  1 22:13:31 localhost NetworkManager[1009]: <info> Activation (eth0) successful, device activated.
+Aug  1 22:13:31 localhost dbus[984]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  1 22:13:31 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  1 22:13:31 localhost dbus[984]: [system] Successfully activated service 'org.freedesktop.nm_dispatcher'
+Aug  1 22:13:45 localhost NetworkManager[1009]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  1 22:13:45 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  1 22:13:45 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  1 22:13:45 localhost NetworkManager[1009]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  1 22:14:15 localhost init: Switching to runlevel: 0
+Aug  1 22:14:17 localhost NetworkManager[1009]: <info> caught signal 15, shutting down normally.
+Aug  1 22:14:17 localhost NetworkManager[1009]: <warn> quit request received, terminating...
+Aug  1 22:14:17 localhost NetworkManager[1009]: <info> exiting (success)
+Aug  1 22:14:24 localhost ntpd[1043]: ntpd exiting on signal 15
