@@ -83,3 +83,12 @@ Start-Date: 2012-08-01  10:38:07
 Commandline: apt-get -f install
 Remove: vmware-view-client:armel (5.0-1.5.1-739969)
 End-Date: 2012-08-01  10:38:12
+
+Start-Date: 2012-08-01  21:25:53
+Install: libpolkit-gobject-1-0:armel (0.105-1, automatic), libnl-3-200:armel (3.2.7-4, automatic), network-manager:armel (0.9.4.0-5), libnm-util2:armel (0.9.4.0-5, automatic), libnl-route-3-200:armel (3.2.7-4, automatic), dbus:armel (1.6.0-1, automatic), libnm-glib4:armel (0.9.4.0-5, automatic), libgudev-1.0-0:armel (175-3.1, automatic), libsystemd-login0:armel (44-4, automatic), wpasupplicant:armel (1.0-2, automatic), libnl-genl-3-200:armel (3.2.7-4, automatic)
+End-Date: 2012-08-01  21:26:59
+
+Start-Date: 1970-01-01  00:02:10
+Commandline: apt-get install fake-hwclock
+Install: fake-hwclock:armel (0.5)
+End-Date: 1970-01-01  00:02:36

@@ -1110,3 +1110,56 @@ Log started: 2012-08-01  10:38:07
 (Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44548 files and directories currently installed.)
 Removing vmware-view-client ...
 Log ended: 2012-08-01  10:38:12
+
+Log started: 2012-08-01  21:25:53
+Selecting previously unselected package libgudev-1.0-0:armel.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44548 files and directories currently installed.)
+Unpacking libgudev-1.0-0:armel (from .../libgudev-1.0-0_175-3.1_armel.deb) ...
+Selecting previously unselected package libnl-3-200:armel.
+Unpacking libnl-3-200:armel (from .../libnl-3-200_3.2.7-4_armel.deb) ...
+Selecting previously unselected package libnl-genl-3-200:armel.
+Unpacking libnl-genl-3-200:armel (from .../libnl-genl-3-200_3.2.7-4_armel.deb) ...
+Selecting previously unselected package libnl-route-3-200:armel.
+Unpacking libnl-route-3-200:armel (from .../libnl-route-3-200_3.2.7-4_armel.deb) ...
+Selecting previously unselected package libpolkit-gobject-1-0:armel.
+Unpacking libpolkit-gobject-1-0:armel (from .../libpolkit-gobject-1-0_0.105-1_armel.deb) ...
+Selecting previously unselected package libnm-util2.
+Unpacking libnm-util2 (from .../libnm-util2_0.9.4.0-5_armel.deb) ...
+Selecting previously unselected package libnm-glib4.
+Unpacking libnm-glib4 (from .../libnm-glib4_0.9.4.0-5_armel.deb) ...
+Selecting previously unselected package wpasupplicant.
+Unpacking wpasupplicant (from .../wpasupplicant_1.0-2_armel.deb) ...
+Selecting previously unselected package libsystemd-login0:armel.
+Unpacking libsystemd-login0:armel (from .../libsystemd-login0_44-4_armel.deb) ...
+Selecting previously unselected package dbus.
+Unpacking dbus (from .../dbus_1.6.0-1_armel.deb) ...
+Selecting previously unselected package network-manager.
+Unpacking network-manager (from .../network-manager_0.9.4.0-5_armel.deb) ...
+Processing triggers for man-db ...
+Setting up libgudev-1.0-0:armel (175-3.1) ...
+Setting up libnl-3-200:armel (3.2.7-4) ...
+Setting up libnl-genl-3-200:armel (3.2.7-4) ...
+Setting up libnl-route-3-200:armel (3.2.7-4) ...
+Setting up libpolkit-gobject-1-0:armel (0.105-1) ...
+Setting up libnm-util2 (0.9.4.0-5) ...
+Setting up libnm-glib4 (0.9.4.0-5) ...
+Setting up wpasupplicant (1.0-2) ...
+Setting up libsystemd-login0:armel (44-4) ...
+Setting up dbus (1.6.0-1) ...
+[....] Starting system message bus: dbus[?25l[?1c7[1G[[32m ok [39;49m8[?25h[?0c.
+Setting up network-manager (0.9.4.0-5) ...
+[....] Reloading system message bus config...[?25l[?1c7[1G[[32m ok [39;49m8[?25h[?0cdone.
+Disabling interfaces configured with plain DHCP in /etc/network/interfaces so that NetworkManager can take them over
+Auto interfaces found: lo eth0
+iface to disable = eth0
+Disabling interface: eth0 ... done.
+[....] Starting network connection manager: NetworkManager[?25l[?1c7[1G[[32m ok [39;49m8[?25h[?0c.
+Log ended: 2012-08-01  21:26:59
+
+Log started: 1970-01-01  00:02:10
+Selecting previously unselected package fake-hwclock.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44799 files and directories currently installed.)
+Unpacking fake-hwclock (from .../fake-hwclock_0.5_all.deb) ...
+Processing triggers for man-db ...
+Setting up fake-hwclock (0.5) ...
+Log ended: 1970-01-01  00:02:36

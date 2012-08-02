@@ -21,15 +21,25 @@
 
 # Registers:
 ""-	CHAR	0
-	i
+	 
 
 # File marks:
-'0  1  0  /etc/hosts
-'1  1  4  /etc/hostname
-'2  1  0  /etc/host
-'3  1  24  /etc/apt/sources.list
+'0  5  19  /etc/init.d/ntp
+'1  2  15  /etc/network/interfaces
+'2  7  1  /etc/init.d/ntp
+'3  1  0  /etc/ntp.conf
+'4  1  0  /etc/hosts
+'5  1  4  /etc/hostname
+'6  1  0  /etc/host
+'7  1  24  /etc/apt/sources.list
 
 # Jumplist (newest first):
+-'  5  19  /etc/init.d/ntp
+-'  1  0  /etc/init.d/ntp
+-'  2  15  /etc/network/interfaces
+-'  1  0  /etc/network/interfaces
+-'  7  1  /etc/init.d/ntp
+-'  1  0  /etc/ntp.conf
 -'  1  0  /etc/hosts
 -'  1  4  /etc/hostname
 -'  1  0  /etc/host
@@ -57,8 +67,91 @@
 -'  1  0  /etc/host
 -'  1  24  /etc/apt/sources.list
 -'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/hosts
+-'  1  4  /etc/hostname
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  4  /etc/hostname
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/hosts
+-'  1  4  /etc/hostname
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  4  /etc/hostname
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/hosts
+-'  1  4  /etc/hostname
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
+-'  1  24  /etc/apt/sources.list
+-'  1  0  /etc/host
+-'  1  24  /etc/apt/sources.list
 
 # History of marks within files (newest to oldest):
+
+> /etc/init.d/ntp
+	"	5	19
+	^	5	36
+	.	5	19
+	+	8	23
+	+	7	0
+	+	8	0
+	+	7	22
+	+	5	19
+
+> /etc/network/interfaces
+	"	2	15
+	^	2	16
+	.	2	15
+	+	2	15
+
+> /etc/ntp.conf
+	"	1	0
 
 > /etc/hosts
 	"	1	0

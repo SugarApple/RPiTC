@@ -120,6 +120,26 @@ Description: POSIX-compliant shell
  failures), it is used as the default system shell on Debian systems.
 Homepage: http://gondor.apana.org.au/~herbert/dash/
 
+Package: libpolkit-gobject-1-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 142
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: policykit-1
+Version: 0.105-1
+Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.31.8)
+Pre-Depends: multiarch-support
+Breaks: libpolkit-agent-1-0 (<< 0.99), libpolkit-backend-1-0 (<< 0.99), libpolkit-gtk-1-0 (<< 0.99), policykit-1 (<< 0.99)
+Description: PolicyKit Authorization API
+ PolicyKit is a toolkit for defining and handling the policy that
+ allows unprivileged processes to speak to privileged processes.
+ .
+ This package contains a library for accessing PolicyKit.
+Homepage: http://hal.freedesktop.org/docs/PolicyKit/
+
 Package: shared-mime-info
 Status: install ok installed
 Priority: optional
@@ -189,6 +209,27 @@ Description: free implementation of the OpenGL API -- DRI modules
  .
  The tdfx DRI module needs libglide3 to enable direct rendering.
 Homepage: http://mesa3d.sourceforge.net/
+
+Package: libnl-3-200
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 138
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libnl3
+Version: 3.2.7-4
+Depends: libc6 (>= 2.8), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Conffiles:
+ /etc/libnl-3/classid 3e07259e58674631830b152e983ca995
+ /etc/libnl-3/pktloc 02e59c3b2bba388ba64b2d120a76bab7
+Description: library for dealing with netlink sockets
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+Homepage: http://people.suug.ch/~tgr/libnl/
 
 Package: coreutils
 Essential: yes
@@ -1047,6 +1088,30 @@ Description: GNU C++ compiler
  This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
 Homepage: http://gcc.gnu.org/
 
+Package: wpasupplicant
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 1159
+Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: wpa
+Version: 1.0-2
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.1.4), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libpcsclite1, libssl1.0.0 (>= 1.0.0), lsb-base (>= 3.0-6), adduser, initscripts (>= 2.88dsf-13.3)
+Suggests: wpagui, libengine-pkcs11-openssl
+Conffiles:
+ /etc/wpa_supplicant/functions.sh 550c42ecf41ce2bf299383c50dacdf1c
+ /etc/wpa_supplicant/action_wpa.sh 5269e292cd68ebf9698e26d3026e817e
+ /etc/wpa_supplicant/ifupdown.sh 4c82dbf7e1d8c5ddd70e40b9665cfeee
+ /etc/dbus-1/system.d/wpa_supplicant.conf b6e52e30f79834d19db8311417ee0a86
+Description: client support for WPA and WPA2 (IEEE 802.11i)
+ WPA and WPA2 are methods for securing wireless networks, the former
+ using IEEE 802.1X, and the latter using IEEE 802.11i. This software
+ provides key negotiation with the WPA Authenticator, and controls
+ association with IEEE 802.11i networks.
+Homepage: http://w1.fi/wpa_supplicant/
+
 Package: libqtgui4
 Status: install ok installed
 Priority: optional
@@ -1512,6 +1577,24 @@ Description: X11 keyboard file manipulation library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libxkbfile
 
+Package: libgudev-1.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 164
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: armel
+Multi-Arch: same
+Source: udev
+Version: 175-3.1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.22.0), libudev0 (>= 165)
+Pre-Depends: multiarch-support
+Description: GObject-based wrapper library for libudev
+ This library makes it much simpler to use libudev from programs already using
+ GObject. It also makes it possible to easily use libudev from other
+ programming languages, such as Javascript, because of GObject introspection
+ support.
+
 Package: lxsession-edit
 Status: install ok installed
 Priority: optional
@@ -1549,6 +1632,27 @@ Description: X.Org X server -- S3 ViRGE display driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-video-s3virge driver module.
+
+Package: libnm-util2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 592
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: network-manager
+Version: 0.9.4.0-5
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libuuid1 (>= 2.16)
+Description: network management framework (shared library)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, WiFi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package contains a convenience library to ease the access to
+ NetworkManager.
+Homepage: http://www.gnome.org/projects/NetworkManager/
 
 Package: libc6-dev
 Status: install ok installed
@@ -2675,6 +2779,41 @@ Description: Embedded GNU C Library: Development binaries
  development package.
 Homepage: http://www.eglibc.org
 
+Package: dbus
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 827
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 1.6.0-1
+Depends: libc6 (>= 2.10), libdbus-1-3 (>= 1.0.2), libexpat1 (>= 2.0.1), libselinux1 (>= 1.32), libsystemd-login0 (>= 31), adduser, lsb-base (>= 3.2-14)
+Suggests: dbus-x11
+Conffiles:
+ /etc/default/dbus 0d0f25a2f993509c857eb262f6e22015
+ /etc/dbus-1/system.conf 3ecc20abdab563c7f463daf76d57e009
+ /etc/dbus-1/session.conf 3ec4497bcff6f8e1445db64b23bda595
+ /etc/init.d/dbus dfa067b2ace1fc88114695d93be749d3
+Description: simple interprocess messaging system (daemon and utilities)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ D-Bus supports broadcast messages, asynchronous messages (thus
+ decreasing latency), authentication, and more. It is designed to be
+ low-overhead; messages are sent using a binary protocol, not using
+ XML. D-Bus also supports a method call mapping for its messages, but
+ it is not required; this makes using the system quite simple.
+ .
+ It comes with several bindings, including GLib, Python, Qt and Java.
+ .
+ This package contains the D-Bus daemon and related utilities.
+ .
+ The client-side library can be found in the libdbus-1-3 package, as it is no
+ longer contained in this package.
+Homepage: http://dbus.freedesktop.org/
+
 Package: xserver-xorg-video-savage
 Status: install ok installed
 Priority: optional
@@ -3387,24 +3526,6 @@ Description: deb package format runtime library
  from deb packages. This includes the control data and the package
  file content.
 
-Package: libboost-date-time1.49-dev
-Status: install ok installed
-Priority: optional
-Section: libdevel
-Installed-Size: 202
-Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
-Architecture: armel
-Source: boost1.49
-Version: 1.49.0-3.1
-Depends: libboost1.49-dev (= 1.49.0-3.1), libboost-date-time1.49.0 (= 1.49.0-3.1), libboost-serialization1.49-dev (= 1.49.0-3.1)
-Conflicts: libboost-date-time1.42-dev, libboost-date-time1.46-dev, libboost-date-time1.48-dev
-Description: set of date-time libraries based on generic programming concepts
- This package forms part of the Boost C++ Libraries collection.
- .
- These libraries are intended to make programming with dates and times
- almost as simple and natural as programming with strings and integers.
-Homepage: http://www.boost.org/libs/date_time/
-
 Package: adduser
 Status: install ok installed
 Priority: important
@@ -3441,6 +3562,24 @@ Description: add and remove users and groups
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
 Homepage: http://alioth.debian.org/projects/adduser/
+
+Package: libboost-date-time1.49-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 202
+Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
+Architecture: armel
+Source: boost1.49
+Version: 1.49.0-3.1
+Depends: libboost1.49-dev (= 1.49.0-3.1), libboost-date-time1.49.0 (= 1.49.0-3.1), libboost-serialization1.49-dev (= 1.49.0-3.1)
+Conflicts: libboost-date-time1.42-dev, libboost-date-time1.46-dev, libboost-date-time1.48-dev
+Description: set of date-time libraries based on generic programming concepts
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ These libraries are intended to make programming with dates and times
+ almost as simple and natural as programming with strings and integers.
+Homepage: http://www.boost.org/libs/date_time/
 
 Package: libxcb1
 Status: install ok installed
@@ -4850,6 +4989,23 @@ Description: set of date-time libraries based on generic programming concepts
  almost as simple and natural as programming with strings and integers.
 Homepage: http://www.boost.org/libs/date_time/
 
+Package: libsystemd-login0
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 78
+Maintainer: Tollef Fog Heen <tfheen@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: systemd
+Version: 44-4
+Depends: libc6 (>= 2.9), libcap2 (>= 2.10), libgcc1 (>= 1:4.4.0), libselinux1 (>= 2.0.65)
+Pre-Depends: multiarch-support
+Description: systemd login utility library
+ The libsystemd-login library provides an interface for the
+ systemd-logind service which is used to track user sessions and seats.
+Homepage: http://www.freedesktop.org/wiki/Software/systemd
+
 Package: leafpad
 Status: install ok installed
 Priority: optional
@@ -5317,6 +5473,31 @@ Description: GNU troff text-formatting system (base system components)
  install the groff package.
 Homepage: http://groff.ffii.org/
 
+Package: fake-hwclock
+Status: install ok unpacked
+Priority: extra
+Section: admin
+Installed-Size: 58
+Maintainer: Steve McIntyre <93sam@debian.org>
+Architecture: all
+Version: 0.5
+Suggests: cron, ntp
+Conffiles:
+ /etc/default/fake-hwclock newconffile
+ /etc/init.d/fake-hwclock newconffile
+ /etc/cron.hourly/fake-hwclock newconffile
+Description: Save/restore system clock on machines without working RTC hardware
+ Some machines don't have a working realtime clock (RTC) unit, or no
+ driver for the hardware that does exist. fake-hwclock is a simple set
+ of scripts to save the kernel's current clock periodically (including
+ at shutdown) and restore it at boot so that the system clock keeps at
+ least close to realtime. This will stop some of the problems that may
+ be caused by a system believing it has travelled in time back to
+ 1970, such as needing to perform filesystem checks at every boot.
+ .
+ On top of this, use of NTP is still recommended to deal with the fake
+ clock "drifting" while the hardware is halted or rebooting.
+
 Package: ntp
 Status: install ok installed
 Priority: optional
@@ -5706,6 +5887,27 @@ Description: GNU grep, egrep and fgrep
  than Unix grep or egrep. (Regular expressions containing backreferencing
  will run more slowly, however.)
 Homepage: http://www.gnu.org/software/grep/
+
+Package: libnl-genl-3-200
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 58
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libnl3
+Version: 3.2.7-4
+Depends: libnl-3-200 (= 3.2.7-4), libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: library for dealing with netlink sockets - generic netlink
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ API to the generic netlink protocol, an extended version of the netlink
+ protocol.
+Homepage: http://people.suug.ch/~tgr/libnl/
 
 Package: lxinput
 Status: install ok installed
@@ -6324,6 +6526,26 @@ Description: Runtime support for the PAM library
  authentication  to work on Debian systems.  This package is required
  on almost all installations.
 Homepage: http://pam.sourceforge.net/
+
+Package: libnl-route-3-200
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 259
+Maintainer: Heiko Stuebner <mmind@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libnl3
+Version: 3.2.7-4
+Depends: libnl-3-200 (= 3.2.7-4), libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Description: library for dealing with netlink sockets - route interface
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+ .
+ API to the configuration interfaces of the NETLINK_ROUTE family.
+Homepage: http://people.suug.ch/~tgr/libnl/
 
 Package: libaudio2
 Status: install ok installed
@@ -8067,6 +8289,67 @@ Description: X.Org X server -- ATI Mach64 display driver
  .
  This package is built from the X.org xf86-video-mach64 driver module.
 
+Package: libnm-glib4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 442
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: network-manager
+Version: 0.9.4.0-5
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgudev-1.0-0 (>= 146), libnm-util2 (>= 0.9.4.0), libuuid1 (>= 2.16)
+Description: network management framework (GLib shared library)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, WiFi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package provides the shared library that applications can use to query
+ connection status via NetworkManager.
+Homepage: http://www.gnome.org/projects/NetworkManager/
+
+Package: network-manager
+Status: install ok installed
+Priority: optional
+Section: net
+Installed-Size: 3821
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Version: 0.9.4.0-5
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgudev-1.0-0 (>= 146), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200, libnm-glib4 (>= 0.9.4.0), libnm-util2 (>= 0.9.4.0), libpolkit-gobject-1-0 (>= 0.99), libuuid1 (>= 2.16), lsb-base (>= 3.2-14), wpasupplicant (>= 0.7.3-1), dbus (>= 1.1.2), udev, adduser, isc-dhcp-client (>= 4.1.1-P1-4)
+Pre-Depends: dpkg (>= 1.15.7.2)
+Recommends: policykit-1, ppp (>= 2.4.5), dnsmasq-base, iptables, modemmanager, crda
+Suggests: avahi-autoipd
+Breaks: network-manager-gnome (<< 0.9), network-manager-kde (<< 1:0.9), network-manager-openconnect (<< 0.9), network-manager-openvpn (<< 0.9), network-manager-pptp (<< 0.9), network-manager-vpnc (<< 0.9), plasma-widget-networkmanagement (<< 0.9~), ppp (<< 2.4.5)
+Conffiles:
+ /etc/NetworkManager/dispatcher.d/01ifupdown 9c08ef6e3612599c97d2404e3a9551a0
+ /etc/NetworkManager/NetworkManager.conf 914f22205f2ed4d4bc84f3682ecd3153
+ /etc/init.d/network-manager ff16e17e89d1aa858485570e90f6f04a
+ /etc/dbus-1/system.d/nm-dhcp-client.conf 06b1ecfd8f1fa2a501a5f352e2e5e88e
+ /etc/dbus-1/system.d/nm-dispatcher.conf 5711a76c31a3763750fe2c331741f679
+ /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 9304d09c8cbdb96038b5784907ab03bf
+ /etc/dbus-1/system.d/nm-avahi-autoipd.conf 91ab68968b0dc06c3a55b482b50b3028
+Description: network management framework (daemon and userspace tools)
+ NetworkManager is a system network service that manages your network devices
+ and connections, attempting to keep active network connectivity when
+ available. It manages ethernet, WiFi, mobile broadband (WWAN), and PPPoE
+ devices, and provides VPN integration with a variety of different VPN
+ services.
+ .
+ This package provides the userspace daemons and a command line interface to
+ interact with NetworkManager.
+ .
+ Optional dependencies:
+  * policykit-1: Required for reading and writing system connections.
+  * ppp: Required for establishing dial-up connections (e.g. via GSM).
+  * dnsmasq-base/iptables: Required for creating Ad-hoc connections and
+    connection sharing.
+  * avahi-autoipd: Used for IPv4LL, a protocol for automatic Link-Local IP
+    address configuration.
+Homepage: http://www.gnome.org/projects/NetworkManager/
+
 Package: libtinfo5
 Status: install ok installed
 Priority: required
@@ -9381,20 +9664,6 @@ Description: X cursor management library
  CreateCursor request for rendering cursors.  Where the Render extension is
  not supported, Xcursor maps the cursor image to a standard X cursor and uses
  the core X protocol CreateCursor request.
-
-Package: vmware-view-client
-Status: install ok unpacked
-Priority: optional
-Section: non-free/x11
-Maintainer: jacob berkman  <jberkman@vmware.com>
-Architecture: armel
-Version: 5.0-1.5.1-739969
-Replaces: vmware-vdm-client, vmware-view-open-client, hptc-view-client
-Depends: hptc-rdesktop (>= 1.4.1), libc6, libssl0.9.8, libgtk2.0-0 (>= 2.8.0), libglib2.0-0 (>= 2.8.0), libxml2 (>= 2.6.0), libpng12-0 (>= 1.2.0), zlib1g (>= 1.2.3)
-Conflicts: vmware-vdm-client, vmware-view-open-client, hptc-view-client
-Description: VMware View Client
- VMware View Client allows users to connect to desktops on a
- View Connection Server.
 
 Package: xfonts-utils
 Status: install ok installed

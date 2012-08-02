@@ -325,3 +325,26 @@ Will install 11 packages, and remove 0 packages.
 ===============================================================================
 
 Log complete.
+Aptitude 0.6.8: log report
+Wed, Aug  1 2012 21:25:44 +0000
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 11 packages, and remove 0 packages.
+7864 kB of disk space will be used
+===============================================================================
+[INSTALL, DEPENDENCIES] dbus:armel
+[INSTALL, DEPENDENCIES] libgudev-1.0-0:armel
+[INSTALL, DEPENDENCIES] libnl-3-200:armel
+[INSTALL, DEPENDENCIES] libnl-genl-3-200:armel
+[INSTALL, DEPENDENCIES] libnl-route-3-200:armel
+[INSTALL, DEPENDENCIES] libnm-glib4:armel
+[INSTALL, DEPENDENCIES] libnm-util2:armel
+[INSTALL, DEPENDENCIES] libpolkit-gobject-1-0:armel
+[INSTALL, DEPENDENCIES] libsystemd-login0:armel
+[INSTALL, DEPENDENCIES] wpasupplicant:armel
+[INSTALL] network-manager:armel
+===============================================================================
+
+Log complete.

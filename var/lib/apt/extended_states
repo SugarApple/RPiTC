@@ -962,3 +962,43 @@ Package: libboost-thread1.49-dev
 Architecture: armel
 Auto-Installed: 1
 
+Package: libpolkit-gobject-1-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnl-3-200
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnm-util2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnl-route-3-200
+Architecture: armel
+Auto-Installed: 1
+
+Package: dbus
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnm-glib4
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgudev-1.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsystemd-login0
+Architecture: armel
+Auto-Installed: 1
+
+Package: wpasupplicant
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnl-genl-3-200
+Architecture: armel
+Auto-Installed: 1
+
