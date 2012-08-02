@@ -1,0 +1,10 @@
+TARGETS = rsyslog ctxusbd bootlogs killprocs dbus single ntp rsync ssh network-manager rmnologin rc.local
+INTERACTIVE =
+dbus: rsyslog
+single: killprocs bootlogs
+ntp: rsyslog
+rsync: rsyslog
+ssh: rsyslog
+network-manager: dbus rsyslog
+rmnologin: network-manager dbus rsyslog ctxusbd bootlogs ntp rsync ssh
+rc.local: network-manager dbus rsyslog ctxusbd bootlogs ntp rsync ssh
