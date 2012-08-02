@@ -1,10 +1,8 @@
 rpitc.blogspot.com
 RPiTC full file system
-missing folder to create on ext4 filesystem: /boot /dev /lost+found /media /mnt /proc /run /selinux /svr /sys /tmp
-fs will be:
-bin  boot  dev  etc  home  lib  lost+found  media  mnt  opt  proc  README  root  run  sbin  selinux  srv  sys  tmp  usr  var
-
-#---------------------------HOWTO:
+#---------------------------AUTOSTEP to prepare sdcard+download rpitc and firmware
+use the script: rpitcCreator.sh from a linux pc, usage: ./rpitcCreator.sh /dev/mmcblk0 (or your destination path ex.: /dev/sdb)
+#---------------------------MANUALSTEP:
 create 2 partition
 1 fat16 lba 60Mb (my mount point is: /media/BOOT/)
 2 ext4 at least 1Gb (my mount point is /media/rpitc)
@@ -13,7 +11,11 @@ git clone RPiTC-Kernel on fat16 partition ( git clone https://github.com/Gibbio/
 git clone RPiTC full file system on ext4 partition ( git clone https://github.com/Gibbio/RPiTC.git /media/rpitc/ )
 then on ext4:
 mkdir boot dev lost+found media mnt proc run selinux svr sys tmp
-after the first boot recreate ssh_host_keys!!!!
+
+
+
+#--------------------------POSTINSTALL:
+#after the first boot recreate ssh_host_keys!!!!
 rm -fr /etc/ssh/ssh_host_*
 ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
 ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa

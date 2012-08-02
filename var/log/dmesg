@@ -1,4 +1,4 @@
-state: slot_zero = 0xffd80000, is_master = 0
+ot_zero = 0xffd80000, is_master = 0
 vcos: [1]: vchiq_init_state: called
 vcos: [1]: vchiq: initialised - version 2 (min 2), device 253.0
 usbcore: registered new interface driver smsc95xx
@@ -49,14 +49,15 @@ NET: Registered protocol family 17
 Registering the dns_resolver key type
 VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
 Waiting for root device /dev/mmcblk0p2...
+mmc0: problem reading SD Status register.
 mmc0: new high speed SDHC card at address b368
-mmcblk0: mmc0:b368       7.45 GiB 
+mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
  mmcblk0: p1 p2
+usb 1-1: new high speed USB device number 2 using dwc_otg
 EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
 VFS: Mounted root (ext4 filesystem) on device 179:2.
 devtmpfs: mounted
 Freeing init memory: 112K
-usb 1-1: new high speed USB device number 2 using dwc_otg
 usb 1-1: New USB device found, idVendor=0424, idProduct=9512
 usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
 hub 1-1:1.0: USB hub found
@@ -67,12 +68,12 @@ usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
 smsc95xx v1.0.4
 smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
 usb 1-1.3: new low speed USB device number 4 using dwc_otg
-usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
 usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
-usb 1-1.3: Product: USB Multimedia Keyboard
-usb 1-1.3: Manufacturer: LITEON Technology
-input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
-generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+usb 1-1.3: Product: HP Basic USB Keyboard
+usb 1-1.3: Manufacturer: CHICONY
+input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+generic-usb 0003:03F0:0024.0001: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
 udevd[116]: starting version 175
 EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
 EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
