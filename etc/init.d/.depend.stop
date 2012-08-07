@@ -1,10 +1,9 @@
-TARGETS = ctxusbd fake-hwclock network-manager urandom sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+TARGETS = ctxusbd fake-hwclock network-manager urandom sendsigs rsyslog umountnfs.sh networking umountfs umountroot halt reboot
 sendsigs: network-manager
 rsyslog: sendsigs network-manager
-umountnfs.sh: rsyslog network-manager sendsigs
-hwclock.sh: rsyslog
+umountnfs.sh: sendsigs rsyslog network-manager
 networking: umountnfs.sh
-umountfs: network-manager urandom networking hwclock.sh umountnfs.sh
+umountfs: networking urandom umountnfs.sh network-manager
 umountroot: umountfs fake-hwclock
 halt: umountroot
 reboot: umountroot

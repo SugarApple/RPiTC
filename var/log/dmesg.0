@@ -1,0 +1,85 @@
+new interface driver cdc_ncm
+dwc_otg: version 2.90b 6-MAY-2010 (platform bus)
+Core Release: 2.80a
+Setting default values for core params
+Finished setting default values for core params
+cf840008 -> 1
+Using Buffer DMA mode
+Periodic Transfer Interrupt Enhancement - disabled
+Multiprocessor Interrupt Enhancement - disabled
+dwc_otg bcm2708_usb: DWC OTG Controller
+dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Init: Port Power? op_state=1
+Init: Power Port (0)
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: DWC OTG Controller
+usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+usb usb1: SerialNumber: bcm2708_usb
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+Module dwc_common_port init
+usbcore: registered new interface driver uas
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver libusual
+mousedev: PS/2 mouse device common for all mice
+cpuidle: using governor ladder
+cpuidle: using governor menu
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+bcm_power_open() -> 1
+Registered led device: mmc0::
+mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+sdhci-pltfm: SDHCI platform and OF driver helper
+Registered led device: led0
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+Registering the dns_resolver key type
+VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Waiting for root device /dev/mmcblk0p2...
+mmc0: problem reading SD Status register.
+mmc0: new high speed SDHC card at address b368
+mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+ mmcblk0: p1 p2
+EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) on device 179:2.
+devtmpfs: mounted
+Freeing init memory: 112K
+usb 1-1: new high speed USB device number 2 using dwc_otg
+usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 3 ports detected
+usb 1-1.1: new high speed USB device number 3 using dwc_otg
+usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+smsc95xx v1.0.4
+smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+usb 1-1.3: new low speed USB device number 4 using dwc_otg
+usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
+usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.3: Product: HP Basic USB Keyboard
+usb 1-1.3: Manufacturer: CHICONY
+input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+generic-usb 0003:03F0:0024.0001: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
+udevd[116]: starting version 175
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+### snd_bcm2835_alsa_probe c039e4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Creating card...
+Creating device/chip ..
+Adding controls ..
+Registering card ....
+bcm2835 ALSA CARD CREATED!
+### BCM2835 ALSA driver init OK ### 
+mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+mmc0: DMA IRQ 6 ignored - results were reset
+mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+mmc0: DMA IRQ 6 ignored - results were reset

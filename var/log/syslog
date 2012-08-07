@@ -3334,3 +3334,657 @@ Aug  2 12:00:55 localhost NetworkManager[1048]: <info> caught signal 15, shuttin
 Aug  2 12:00:55 localhost NetworkManager[1048]: <warn> quit request received, terminating...
 Aug  2 12:00:55 localhost NetworkManager[1048]: <info> exiting (success)
 Aug  2 12:00:59 localhost ntpd[1079]: ntpd exiting on signal 15
+Aug  2 12:01:04 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug  2 12:01:04 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="1001" x-info="http://www.rsyslog.com"] start
+Aug  2 12:01:04 localhost rsyslogd-2181: $WorkDirectory: /var/spool/rsyslog can not be accessed, probably does not exist - directive ignored [try http://www.rsyslog.com/e/2181 ]
+Aug  2 12:01:04 localhost rsyslogd: the last error occured in /etc/rsyslog.conf, line 46:"$WorkDirectory /var/spool/rsyslog"
+Aug  2 12:01:04 localhost rsyslogd-2124: CONFIG ERROR: could not interpret master config file '/etc/rsyslog.conf'. [try http://www.rsyslog.com/e/2124 ]
+Aug  2 12:01:04 localhost kernel: min 2), device 253.0
+Aug  2 12:01:04 localhost kernel: usbcore: registered new interface driver smsc95xx
+Aug  2 12:01:04 localhost kernel: cdc_ncm: 04-Aug-2011
+Aug  2 12:01:04 localhost kernel: usbcore: registered new interface driver cdc_ncm
+Aug  2 12:01:04 localhost kernel: dwc_otg: version 2.90b 6-MAY-2010 (platform bus)
+Aug  2 12:01:04 localhost kernel: Core Release: 2.80a
+Aug  2 12:01:04 localhost kernel: Setting default values for core params
+Aug  2 12:01:04 localhost kernel: Finished setting default values for core params
+Aug  2 12:01:04 localhost kernel: cf840008 -> 1
+Aug  2 12:01:04 localhost kernel: Using Buffer DMA mode
+Aug  2 12:01:04 localhost kernel: Periodic Transfer Interrupt Enhancement - disabled
+Aug  2 12:01:04 localhost kernel: Multiprocessor Interrupt Enhancement - disabled
+Aug  2 12:01:04 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug  2 12:01:04 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug  2 12:01:04 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug  2 12:01:04 localhost kernel: Init: Port Power? op_state=1
+Aug  2 12:01:04 localhost kernel: Init: Power Port (0)
+Aug  2 12:01:04 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug  2 12:01:04 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug  2 12:01:04 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug  2 12:01:04 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug  2 12:01:04 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug  2 12:01:04 localhost kernel: hub 1-0:1.0: USB hub found
+Aug  2 12:01:04 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug  2 12:01:04 localhost kernel: Module dwc_common_port init
+Aug  2 12:01:04 localhost kernel: usbcore: registered new interface driver uas
+Aug  2 12:01:04 localhost kernel: Initializing USB Mass Storage driver...
+Aug  2 12:01:04 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug  2 12:01:04 localhost kernel: USB Mass Storage support registered.
+Aug  2 12:01:04 localhost kernel: usbcore: registered new interface driver libusual
+Aug  2 12:01:04 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug  2 12:01:04 localhost kernel: cpuidle: using governor ladder
+Aug  2 12:01:04 localhost kernel: cpuidle: using governor menu
+Aug  2 12:01:04 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug  2 12:01:04 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug  2 12:01:04 localhost kernel: bcm_power_open() -> 1
+Aug  2 12:01:04 localhost kernel: Registered led device: mmc0::
+Aug  2 12:01:04 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug  2 12:01:04 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug  2 12:01:04 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug  2 12:01:04 localhost kernel: Registered led device: led0
+Aug  2 12:01:04 localhost kernel: usbcore: registered new interface driver usbhid
+Aug  2 12:01:04 localhost kernel: usbhid: USB HID core driver
+Aug  2 12:01:04 localhost kernel: TCP cubic registered
+Aug  2 12:01:04 localhost kernel: Initializing XFRM netlink socket
+Aug  2 12:01:04 localhost kernel: NET: Registered protocol family 17
+Aug  2 12:01:04 localhost kernel: Registering the dns_resolver key type
+Aug  2 12:01:04 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug  2 12:01:04 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug  2 12:01:04 localhost kernel: mmc0: problem reading SD Status register.
+Aug  2 12:01:04 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug  2 12:01:04 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug  2 12:01:04 localhost kernel: mmcblk0: p1 p2
+Aug  2 12:01:04 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug  2 12:01:04 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug  2 12:01:04 localhost kernel: devtmpfs: mounted
+Aug  2 12:01:04 localhost kernel: Freeing init memory: 112K
+Aug  2 12:01:04 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug  2 12:01:04 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug  2 12:01:04 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  2 12:01:04 localhost kernel: hub 1-1:1.0: USB hub found
+Aug  2 12:01:04 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug  2 12:01:04 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug  2 12:01:04 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug  2 12:01:04 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  2 12:01:04 localhost kernel: smsc95xx v1.0.4
+Aug  2 12:01:04 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug  2 12:01:04 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug  2 12:01:04 localhost kernel: usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
+Aug  2 12:01:04 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug  2 12:01:04 localhost kernel: usb 1-1.3: Product: HP Basic USB Keyboard
+Aug  2 12:01:04 localhost kernel: usb 1-1.3: Manufacturer: CHICONY
+Aug  2 12:01:04 localhost kernel: input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug  2 12:01:04 localhost kernel: generic-usb 0003:03F0:0024.0001: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug  2 12:01:04 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  2 12:01:04 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  2 12:01:04 localhost kernel: ### snd_bcm2835_alsa_probe c039e4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug  2 12:01:04 localhost kernel: Creating card...
+Aug  2 12:01:04 localhost kernel: Creating device/chip ..
+Aug  2 12:01:04 localhost kernel: Adding controls ..
+Aug  2 12:01:04 localhost kernel: Registering card ....
+Aug  2 12:01:04 localhost kernel: bcm2835 ALSA CARD CREATED!
+Aug  2 12:01:04 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug  2 12:01:04 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug  2 12:01:04 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug  2 12:01:05 localhost NetworkManager[1061]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  2 12:01:05 localhost NetworkManager[1061]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: init!
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPluginIfupdown: management mode: unmanaged
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: end _init.
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  2 12:01:06 localhost NetworkManager[1061]:    Ifupdown: get unmanaged devices count: 0
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: (19366248) ... get_connections.
+Aug  2 12:01:06 localhost NetworkManager[1061]:    SCPlugin-Ifupdown: (19366248) ... get_connections (managed=false): return empty list.
+Aug  2 12:01:06 localhost NetworkManager[1061]:    keyfile: Cannot read directory '/etc/NetworkManager/system-connections': (4) Error opening directory '/etc/NetworkManager/system-connections': No such file or directory
+Aug  2 12:01:06 localhost NetworkManager[1061]:    Ifupdown: get unmanaged devices count: 0
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> trying to start the modem manager...
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> Networking is enabled by state file
+Aug  2 12:01:06 localhost NetworkManager[1061]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): carrier is OFF
+Aug  2 12:01:06 localhost NetworkManager[1061]: <error> [1343908866.292107] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): now managed
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): bringing up device.
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): preparing device.
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  2 12:01:06 localhost NetworkManager[1061]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  2 12:01:06 localhost ntpd[1090]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  2 12:01:06 localhost NetworkManager[1061]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  2 12:01:06 localhost ntpd[1092]: proto: precision = 2.000 usec
+Aug  2 12:01:06 localhost kernel: NET: Registered protocol family 10
+Aug  2 12:01:06 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug  2 12:01:06 localhost ntpd[1092]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  2 12:01:06 localhost ntpd[1092]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  2 12:01:06 localhost ntpd[1092]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Aug  2 12:01:06 localhost ntpd[1092]: Listen normally on 3 lo ::1 UDP 123
+Aug  2 12:01:06 localhost ntpd[1092]: peers refreshed
+Aug  2 12:01:06 localhost ntpd[1092]: Listening on routing socket on fd #20 for interface updates
+Aug  2 12:01:06 localhost ntpd[1092]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  2 12:01:06 localhost ntpd[1092]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  2 12:01:06 localhost ntpd[1092]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  2 12:01:06 localhost ntpd[1092]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  2 12:01:06 localhost ntpd[1109]: signal_no_reset: signal 17 had flags 4000000
+Aug  2 12:01:07 localhost NetworkManager[1061]: <info> (eth0): carrier now ON (device state 20)
+Aug  2 12:01:08 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug  2 12:01:08 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0xC1E1
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> dhclient started with pid 1158
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  2 12:01:08 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  2 12:01:08 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  2 12:01:08 localhost dhclient: All rights reserved.
+Aug  2 12:01:08 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  2 12:01:08 localhost dhclient: 
+Aug  2 12:01:08 localhost NetworkManager[1061]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  2 12:01:08 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  2 12:01:08 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  2 12:01:08 localhost dhclient: Sending on   Socket/fallback
+Aug  2 12:01:08 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 5
+Aug  2 12:01:08 localhost ntpd_intres[1109]: host name not found: 0.debian.pool.ntp.org
+Aug  2 12:01:08 localhost ntpd_intres[1109]: host name not found: 1.debian.pool.ntp.org
+Aug  2 12:01:08 localhost ntpd_intres[1109]: host name not found: 2.debian.pool.ntp.org
+Aug  2 12:01:08 localhost ntpd_intres[1109]: host name not found: 3.debian.pool.ntp.org
+Aug  2 12:01:10 localhost ntpd[1092]: Listen normally on 4 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  2 12:01:10 localhost ntpd[1092]: peers refreshed
+Aug  2 12:01:12 localhost ntpd_intres[1109]: host name not found: 0.debian.pool.ntp.org
+Aug  2 12:01:12 localhost ntpd_intres[1109]: host name not found: 1.debian.pool.ntp.org
+Aug  2 12:01:12 localhost ntpd_intres[1109]: host name not found: 2.debian.pool.ntp.org
+Aug  2 12:01:12 localhost ntpd_intres[1109]: host name not found: 3.debian.pool.ntp.org
+Aug  2 12:01:13 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 8
+Aug  2 12:01:13 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  2 12:01:13 localhost dhclient: DHCPOFFER from 10.1.244.10
+Aug  2 12:01:13 localhost dhclient: DHCPACK from 10.1.244.10
+Aug  2 12:01:13 localhost dhclient: suspect value in domain_name option - discarded
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info>   address 10.1.100.3
+Aug  2 12:01:13 localhost dhclient: bound to 10.1.100.3 -- renewal in 41706 seconds.
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info>   prefix 16 (255.255.0.0)
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info>   gateway 10.1.255.1
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info>   nameserver '10.1.244.1'
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info>   nameserver '10.1.244.10'
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info>   wins '10.1.244.1'
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  2 12:01:13 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  2 12:01:14 localhost ntpd[1092]: Listen normally on 5 eth0 10.1.100.3 UDP 123
+Aug  2 12:01:14 localhost ntpd[1092]: peers refreshed
+Aug  2 12:01:14 localhost NetworkManager[1061]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  2 12:01:16 localhost ntpd_intres[1109]: DNS 0.debian.pool.ntp.org -> 62.101.81.203
+Aug  2 12:01:17 localhost ntpd_intres[1109]: DNS 1.debian.pool.ntp.org -> 212.45.144.206
+Aug  2 12:01:17 localhost ntpd_intres[1109]: DNS 2.debian.pool.ntp.org -> 2a00:dcc0:eda:3749:247:49:206:1
+Aug  2 12:01:17 localhost ntpd_intres[1109]: DNS 3.debian.pool.ntp.org -> 37.247.49.133
+Aug  2 12:01:18 localhost NetworkManager[1061]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  2 12:01:18 localhost NetworkManager[1061]: <info> Activation (eth0) successful, device activated.
+Aug  2 12:01:18 localhost dbus[1036]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  2 12:01:18 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  2 12:01:18 localhost kernel: eth0: no IPv6 routers present
+Aug  2 12:01:18 localhost dbus[1036]: [system] Activated service 'org.freedesktop.nm_dispatcher' failed: The permission of the setuid helper is not correct
+Aug  2 12:01:28 localhost NetworkManager[1061]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  2 12:01:28 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  2 12:01:28 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  2 12:01:28 localhost NetworkManager[1061]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  2 12:07:58 localhost shutdown[1369]: shutting down for system reboot
+Aug  2 12:08:02 localhost init: Switching to runlevel: 6
+Aug  2 12:08:03 localhost NetworkManager[1061]: <info> caught signal 15, shutting down normally.
+Aug  2 12:08:03 localhost NetworkManager[1061]: <warn> quit request received, terminating...
+Aug  2 12:08:03 localhost NetworkManager[1061]: <info> exiting (success)
+Aug  2 12:08:10 localhost ntpd[1092]: ntpd exiting on signal 15
+Aug  2 12:08:12 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug  2 12:08:12 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="990" x-info="http://www.rsyslog.com"] start
+Aug  2 12:08:12 localhost rsyslogd-2181: $WorkDirectory: /var/spool/rsyslog can not be accessed, probably does not exist - directive ignored [try http://www.rsyslog.com/e/2181 ]
+Aug  2 12:08:12 localhost rsyslogd: the last error occured in /etc/rsyslog.conf, line 46:"$WorkDirectory /var/spool/rsyslog"
+Aug  2 12:08:12 localhost rsyslogd-2124: CONFIG ERROR: could not interpret master config file '/etc/rsyslog.conf'. [try http://www.rsyslog.com/e/2124 ]
+Aug  2 12:08:12 localhost kernel: new interface driver cdc_ncm
+Aug  2 12:08:12 localhost kernel: dwc_otg: version 2.90b 6-MAY-2010 (platform bus)
+Aug  2 12:08:12 localhost kernel: Core Release: 2.80a
+Aug  2 12:08:12 localhost kernel: Setting default values for core params
+Aug  2 12:08:12 localhost kernel: Finished setting default values for core params
+Aug  2 12:08:12 localhost kernel: cf840008 -> 1
+Aug  2 12:08:12 localhost kernel: Using Buffer DMA mode
+Aug  2 12:08:12 localhost kernel: Periodic Transfer Interrupt Enhancement - disabled
+Aug  2 12:08:12 localhost kernel: Multiprocessor Interrupt Enhancement - disabled
+Aug  2 12:08:12 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug  2 12:08:12 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug  2 12:08:12 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug  2 12:08:12 localhost kernel: Init: Port Power? op_state=1
+Aug  2 12:08:12 localhost kernel: Init: Power Port (0)
+Aug  2 12:08:12 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug  2 12:08:12 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug  2 12:08:12 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug  2 12:08:12 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug  2 12:08:12 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug  2 12:08:12 localhost kernel: hub 1-0:1.0: USB hub found
+Aug  2 12:08:12 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug  2 12:08:12 localhost kernel: Module dwc_common_port init
+Aug  2 12:08:12 localhost kernel: usbcore: registered new interface driver uas
+Aug  2 12:08:12 localhost kernel: Initializing USB Mass Storage driver...
+Aug  2 12:08:12 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug  2 12:08:12 localhost kernel: USB Mass Storage support registered.
+Aug  2 12:08:12 localhost kernel: usbcore: registered new interface driver libusual
+Aug  2 12:08:12 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug  2 12:08:12 localhost kernel: cpuidle: using governor ladder
+Aug  2 12:08:12 localhost kernel: cpuidle: using governor menu
+Aug  2 12:08:12 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug  2 12:08:12 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug  2 12:08:12 localhost kernel: bcm_power_open() -> 1
+Aug  2 12:08:12 localhost kernel: Registered led device: mmc0::
+Aug  2 12:08:12 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug  2 12:08:12 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug  2 12:08:12 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug  2 12:08:12 localhost kernel: Registered led device: led0
+Aug  2 12:08:12 localhost kernel: usbcore: registered new interface driver usbhid
+Aug  2 12:08:12 localhost kernel: usbhid: USB HID core driver
+Aug  2 12:08:12 localhost kernel: TCP cubic registered
+Aug  2 12:08:12 localhost kernel: Initializing XFRM netlink socket
+Aug  2 12:08:12 localhost kernel: NET: Registered protocol family 17
+Aug  2 12:08:12 localhost kernel: Registering the dns_resolver key type
+Aug  2 12:08:12 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug  2 12:08:12 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug  2 12:08:12 localhost kernel: mmc0: problem reading SD Status register.
+Aug  2 12:08:12 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug  2 12:08:12 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug  2 12:08:12 localhost kernel: mmcblk0: p1 p2
+Aug  2 12:08:12 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug  2 12:08:12 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug  2 12:08:12 localhost kernel: devtmpfs: mounted
+Aug  2 12:08:12 localhost kernel: Freeing init memory: 112K
+Aug  2 12:08:12 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug  2 12:08:12 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug  2 12:08:12 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  2 12:08:12 localhost kernel: hub 1-1:1.0: USB hub found
+Aug  2 12:08:12 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug  2 12:08:12 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug  2 12:08:12 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug  2 12:08:12 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  2 12:08:12 localhost kernel: smsc95xx v1.0.4
+Aug  2 12:08:12 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug  2 12:08:12 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug  2 12:08:12 localhost kernel: usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
+Aug  2 12:08:12 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug  2 12:08:12 localhost kernel: usb 1-1.3: Product: HP Basic USB Keyboard
+Aug  2 12:08:12 localhost kernel: usb 1-1.3: Manufacturer: CHICONY
+Aug  2 12:08:12 localhost kernel: input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug  2 12:08:12 localhost kernel: generic-usb 0003:03F0:0024.0001: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug  2 12:08:12 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  2 12:08:12 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  2 12:08:12 localhost kernel: ### snd_bcm2835_alsa_probe c039e4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug  2 12:08:12 localhost kernel: Creating card...
+Aug  2 12:08:12 localhost kernel: Creating device/chip ..
+Aug  2 12:08:12 localhost kernel: Adding controls ..
+Aug  2 12:08:12 localhost kernel: Registering card ....
+Aug  2 12:08:12 localhost kernel: bcm2835 ALSA CARD CREATED!
+Aug  2 12:08:12 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug  2 12:08:12 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug  2 12:08:12 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug  2 12:08:12 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug  2 12:08:12 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug  2 12:08:13 localhost NetworkManager[1050]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  2 12:08:13 localhost NetworkManager[1050]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: init!
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPluginIfupdown: management mode: unmanaged
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: end _init.
+Aug  2 12:08:13 localhost NetworkManager[1050]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  2 12:08:13 localhost NetworkManager[1050]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  2 12:08:13 localhost NetworkManager[1050]:    Ifupdown: get unmanaged devices count: 0
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: (3890368) ... get_connections.
+Aug  2 12:08:13 localhost NetworkManager[1050]:    SCPlugin-Ifupdown: (3890368) ... get_connections (managed=false): return empty list.
+Aug  2 12:08:13 localhost NetworkManager[1050]:    keyfile: Cannot read directory '/etc/NetworkManager/system-connections': (4) Error opening directory '/etc/NetworkManager/system-connections': No such file or directory
+Aug  2 12:08:13 localhost NetworkManager[1050]:    Ifupdown: get unmanaged devices count: 0
+Aug  2 12:08:13 localhost NetworkManager[1050]: <info> trying to start the modem manager...
+Aug  2 12:08:13 localhost NetworkManager[1050]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> Networking is enabled by state file
+Aug  2 12:08:14 localhost NetworkManager[1050]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): carrier is OFF
+Aug  2 12:08:14 localhost NetworkManager[1050]: <error> [1343909294.57814] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): now managed
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): bringing up device.
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): preparing device.
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  2 12:08:14 localhost NetworkManager[1050]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  2 12:08:14 localhost ntpd[1079]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  2 12:08:14 localhost NetworkManager[1050]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  2 12:08:14 localhost ntpd[1081]: proto: precision = 2.000 usec
+Aug  2 12:08:14 localhost kernel: NET: Registered protocol family 10
+Aug  2 12:08:14 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug  2 12:08:14 localhost ntpd[1081]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  2 12:08:14 localhost ntpd[1081]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  2 12:08:14 localhost ntpd[1081]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Aug  2 12:08:14 localhost ntpd[1081]: Listen normally on 3 lo ::1 UDP 123
+Aug  2 12:08:14 localhost ntpd[1081]: peers refreshed
+Aug  2 12:08:14 localhost ntpd[1081]: Listening on routing socket on fd #20 for interface updates
+Aug  2 12:08:14 localhost ntpd[1081]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  2 12:08:14 localhost ntpd[1081]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  2 12:08:14 localhost ntpd[1081]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  2 12:08:14 localhost ntpd[1081]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  2 12:08:14 localhost ntpd[1097]: signal_no_reset: signal 17 had flags 4000000
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> (eth0): carrier now ON (device state 20)
+Aug  2 12:08:15 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug  2 12:08:15 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0xC1E1
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> dhclient started with pid 1147
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  2 12:08:15 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  2 12:08:15 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  2 12:08:15 localhost dhclient: All rights reserved.
+Aug  2 12:08:15 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  2 12:08:15 localhost dhclient: 
+Aug  2 12:08:15 localhost NetworkManager[1050]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  2 12:08:16 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  2 12:08:16 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  2 12:08:16 localhost dhclient: Sending on   Socket/fallback
+Aug  2 12:08:16 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 4
+Aug  2 12:08:16 localhost ntpd_intres[1097]: host name not found: 0.debian.pool.ntp.org
+Aug  2 12:08:16 localhost ntpd_intres[1097]: host name not found: 1.debian.pool.ntp.org
+Aug  2 12:08:16 localhost ntpd_intres[1097]: host name not found: 2.debian.pool.ntp.org
+Aug  2 12:08:16 localhost ntpd_intres[1097]: host name not found: 3.debian.pool.ntp.org
+Aug  2 12:08:18 localhost ntpd[1081]: Listen normally on 4 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  2 12:08:18 localhost ntpd[1081]: peers refreshed
+Aug  2 12:08:20 localhost ntpd_intres[1097]: host name not found: 0.debian.pool.ntp.org
+Aug  2 12:08:20 localhost ntpd_intres[1097]: host name not found: 1.debian.pool.ntp.org
+Aug  2 12:08:20 localhost ntpd_intres[1097]: host name not found: 2.debian.pool.ntp.org
+Aug  2 12:08:20 localhost ntpd_intres[1097]: host name not found: 3.debian.pool.ntp.org
+Aug  2 12:08:20 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 7
+Aug  2 12:08:20 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  2 12:08:20 localhost dhclient: DHCPOFFER from 10.1.244.10
+Aug  2 12:08:20 localhost dhclient: DHCPACK from 10.1.244.10
+Aug  2 12:08:20 localhost dhclient: suspect value in domain_name option - discarded
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info>   address 10.1.100.3
+Aug  2 12:08:20 localhost dhclient: bound to 10.1.100.3 -- renewal in 43163 seconds.
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info>   prefix 16 (255.255.0.0)
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info>   gateway 10.1.255.1
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info>   nameserver '10.1.244.1'
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info>   nameserver '10.1.244.10'
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info>   wins '10.1.244.1'
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  2 12:08:20 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  2 12:08:22 localhost ntpd[1081]: Listen normally on 5 eth0 10.1.100.3 UDP 123
+Aug  2 12:08:22 localhost ntpd[1081]: peers refreshed
+Aug  2 12:08:22 localhost NetworkManager[1050]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  2 12:08:23 localhost NetworkManager[1050]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  2 12:08:23 localhost NetworkManager[1050]: <info> Activation (eth0) successful, device activated.
+Aug  2 12:08:23 localhost dbus[1025]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  2 12:08:23 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  2 12:08:23 localhost dbus[1025]: [system] Activated service 'org.freedesktop.nm_dispatcher' failed: The permission of the setuid helper is not correct
+Aug  2 12:08:24 localhost ntpd_intres[1097]: DNS 0.debian.pool.ntp.org -> 77.242.176.254
+Aug  2 12:08:24 localhost ntpd_intres[1097]: DNS 1.debian.pool.ntp.org -> 212.45.144.206
+Aug  2 12:08:24 localhost ntpd_intres[1097]: DNS 2.debian.pool.ntp.org -> 85.18.189.242
+Aug  2 12:08:24 localhost ntpd_intres[1097]: DNS 3.debian.pool.ntp.org -> 62.48.53.90
+Aug  2 12:08:25 localhost kernel: eth0: no IPv6 routers present
+Aug  7 10:58:52 localhost NetworkManager[1050]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  7 10:58:52 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  7 10:58:52 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  7 10:58:52 localhost NetworkManager[1050]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  7 11:00:24 localhost shutdown[1302]: shutting down for system reboot
+Aug  7 11:00:25 localhost init: Switching to runlevel: 6
+Aug  7 11:00:25 localhost NetworkManager[1050]: <info> caught signal 15, shutting down normally.
+Aug  7 11:00:25 localhost NetworkManager[1050]: <warn> quit request received, terminating...
+Aug  7 11:00:25 localhost NetworkManager[1050]: <info> exiting (success)
+Aug  7 11:00:30 localhost ntpd[1081]: ntpd exiting on signal 15
+Aug  7 11:00:34 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug  7 11:00:34 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="991" x-info="http://www.rsyslog.com"] start
+Aug  7 11:00:34 localhost rsyslogd-2181: $WorkDirectory: /var/spool/rsyslog can not be accessed, probably does not exist - directive ignored [try http://www.rsyslog.com/e/2181 ]
+Aug  7 11:00:34 localhost rsyslogd: the last error occured in /etc/rsyslog.conf, line 46:"$WorkDirectory /var/spool/rsyslog"
+Aug  7 11:00:34 localhost rsyslogd-2124: CONFIG ERROR: could not interpret master config file '/etc/rsyslog.conf'. [try http://www.rsyslog.com/e/2124 ]
+Aug  7 11:00:34 localhost kernel: new interface driver cdc_ncm
+Aug  7 11:00:34 localhost kernel: dwc_otg: version 2.90b 6-MAY-2010 (platform bus)
+Aug  7 11:00:34 localhost kernel: Core Release: 2.80a
+Aug  7 11:00:34 localhost kernel: Setting default values for core params
+Aug  7 11:00:34 localhost kernel: Finished setting default values for core params
+Aug  7 11:00:34 localhost kernel: cf840008 -> 1
+Aug  7 11:00:34 localhost kernel: Using Buffer DMA mode
+Aug  7 11:00:34 localhost kernel: Periodic Transfer Interrupt Enhancement - disabled
+Aug  7 11:00:34 localhost kernel: Multiprocessor Interrupt Enhancement - disabled
+Aug  7 11:00:34 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug  7 11:00:34 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug  7 11:00:34 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug  7 11:00:34 localhost kernel: Init: Port Power? op_state=1
+Aug  7 11:00:34 localhost kernel: Init: Power Port (0)
+Aug  7 11:00:34 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug  7 11:00:34 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug  7 11:00:34 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug  7 11:00:34 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug  7 11:00:34 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug  7 11:00:34 localhost kernel: hub 1-0:1.0: USB hub found
+Aug  7 11:00:34 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug  7 11:00:34 localhost kernel: Module dwc_common_port init
+Aug  7 11:00:34 localhost kernel: usbcore: registered new interface driver uas
+Aug  7 11:00:34 localhost kernel: Initializing USB Mass Storage driver...
+Aug  7 11:00:34 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug  7 11:00:34 localhost kernel: USB Mass Storage support registered.
+Aug  7 11:00:34 localhost kernel: usbcore: registered new interface driver libusual
+Aug  7 11:00:34 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug  7 11:00:34 localhost kernel: cpuidle: using governor ladder
+Aug  7 11:00:34 localhost kernel: cpuidle: using governor menu
+Aug  7 11:00:34 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug  7 11:00:34 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug  7 11:00:34 localhost kernel: bcm_power_open() -> 1
+Aug  7 11:00:34 localhost kernel: Registered led device: mmc0::
+Aug  7 11:00:34 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug  7 11:00:34 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug  7 11:00:34 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug  7 11:00:34 localhost kernel: Registered led device: led0
+Aug  7 11:00:34 localhost kernel: usbcore: registered new interface driver usbhid
+Aug  7 11:00:34 localhost kernel: usbhid: USB HID core driver
+Aug  7 11:00:34 localhost kernel: TCP cubic registered
+Aug  7 11:00:34 localhost kernel: Initializing XFRM netlink socket
+Aug  7 11:00:34 localhost kernel: NET: Registered protocol family 17
+Aug  7 11:00:34 localhost kernel: Registering the dns_resolver key type
+Aug  7 11:00:34 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug  7 11:00:34 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug  7 11:00:34 localhost kernel: mmc0: problem reading SD Status register.
+Aug  7 11:00:34 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug  7 11:00:34 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug  7 11:00:34 localhost kernel: mmcblk0: p1 p2
+Aug  7 11:00:34 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug  7 11:00:34 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug  7 11:00:34 localhost kernel: devtmpfs: mounted
+Aug  7 11:00:34 localhost kernel: Freeing init memory: 112K
+Aug  7 11:00:34 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug  7 11:00:34 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug  7 11:00:34 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  7 11:00:34 localhost kernel: hub 1-1:1.0: USB hub found
+Aug  7 11:00:34 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug  7 11:00:34 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug  7 11:00:34 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug  7 11:00:34 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  7 11:00:34 localhost kernel: smsc95xx v1.0.4
+Aug  7 11:00:34 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug  7 11:00:34 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug  7 11:00:34 localhost kernel: usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
+Aug  7 11:00:34 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug  7 11:00:34 localhost kernel: usb 1-1.3: Product: HP Basic USB Keyboard
+Aug  7 11:00:34 localhost kernel: usb 1-1.3: Manufacturer: CHICONY
+Aug  7 11:00:34 localhost kernel: input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug  7 11:00:34 localhost kernel: generic-usb 0003:03F0:0024.0001: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug  7 11:00:34 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  7 11:00:34 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  7 11:00:34 localhost kernel: ### snd_bcm2835_alsa_probe c039e4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug  7 11:00:34 localhost kernel: Creating card...
+Aug  7 11:00:34 localhost kernel: Creating device/chip ..
+Aug  7 11:00:34 localhost kernel: Adding controls ..
+Aug  7 11:00:34 localhost kernel: Registering card ....
+Aug  7 11:00:34 localhost kernel: bcm2835 ALSA CARD CREATED!
+Aug  7 11:00:34 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug  7 11:00:34 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug  7 11:00:34 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug  7 11:00:34 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug  7 11:00:34 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> NetworkManager (version 0.9.4.0) is starting...
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> Read config file /etc/NetworkManager/NetworkManager.conf
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: init!
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: update_system_hostname
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPluginIfupdown: management mode: unmanaged
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0)
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: device added (path: /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0, iface: eth0): no ifupdown configuration found.
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: devices added (path: /sys/devices/virtual/net/lo, iface: lo)
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: device added (path: /sys/devices/virtual/net/lo, iface: lo): no ifupdown configuration found.
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: end _init.
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> Loaded plugin ifupdown: (C) 2008 Canonical Ltd.  To report bugs please use the NetworkManager mailing list.
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> Loaded plugin keyfile: (c) 2007 - 2010 Red Hat, Inc.  To report bugs please use the NetworkManager mailing list.
+Aug  7 11:00:35 localhost NetworkManager[1051]:    Ifupdown: get unmanaged devices count: 0
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: (4058824) ... get_connections.
+Aug  7 11:00:35 localhost NetworkManager[1051]:    SCPlugin-Ifupdown: (4058824) ... get_connections (managed=false): return empty list.
+Aug  7 11:00:35 localhost NetworkManager[1051]:    keyfile: Cannot read directory '/etc/NetworkManager/system-connections': (4) Error opening directory '/etc/NetworkManager/system-connections': No such file or directory
+Aug  7 11:00:35 localhost NetworkManager[1051]:    Ifupdown: get unmanaged devices count: 0
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> trying to start the modem manager...
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> monitoring kernel firmware directory '/lib/firmware'.
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> WiFi enabled by radio killswitch; enabled by state file
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> WWAN enabled by radio killswitch; enabled by state file
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> WiMAX enabled by radio killswitch; enabled by state file
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> Networking is enabled by state file
+Aug  7 11:00:35 localhost NetworkManager[1051]: <warn> failed to allocate link cache: (-12) Object not found
+Aug  7 11:00:35 localhost NetworkManager[1051]: <info> (eth0): carrier is OFF
+Aug  7 11:00:36 localhost NetworkManager[1051]: <error> [1344337236.13891] [nm-device-ethernet.c:456] real_update_permanent_hw_address(): (eth0): unable to read permanent MAC address (error 0)
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): new Ethernet device (driver: 'smsc95xx' ifindex: 2)
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): exported as /org/freedesktop/NetworkManager/Devices/0
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): now managed
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): device state change: unmanaged -> unavailable (reason 'managed') [10 20 2]
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): bringing up device.
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): preparing device.
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> (eth0): deactivating device (reason 'managed') [2]
+Aug  7 11:00:36 localhost NetworkManager[1051]: <info> Added default wired connection 'Wired connection 1' for /sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.1/1-1.1:1.0/net/eth0
+Aug  7 11:00:36 localhost ntpd[1080]: ntpd 4.2.6p5@1.2349-o Sat May 12 10:38:11 UTC 2012 (1)
+Aug  7 11:00:36 localhost NetworkManager[1051]: <warn> bluez error getting default adapter: The name org.bluez was not provided by any .service files
+Aug  7 11:00:36 localhost kernel: NET: Registered protocol family 10
+Aug  7 11:00:36 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug  7 11:00:36 localhost ntpd[1081]: proto: precision = 2.000 usec
+Aug  7 11:00:36 localhost ntpd[1081]: Listen and drop on 0 v4wildcard 0.0.0.0 UDP 123
+Aug  7 11:00:36 localhost ntpd[1081]: Listen and drop on 1 v6wildcard :: UDP 123
+Aug  7 11:00:36 localhost ntpd[1081]: Listen normally on 2 lo 127.0.0.1 UDP 123
+Aug  7 11:00:36 localhost ntpd[1081]: Listen normally on 3 lo ::1 UDP 123
+Aug  7 11:00:36 localhost ntpd[1081]: peers refreshed
+Aug  7 11:00:36 localhost ntpd[1081]: Listening on routing socket on fd #20 for interface updates
+Aug  7 11:00:36 localhost ntpd[1081]: Deferring DNS for 0.debian.pool.ntp.org 1
+Aug  7 11:00:36 localhost ntpd[1081]: Deferring DNS for 1.debian.pool.ntp.org 1
+Aug  7 11:00:36 localhost ntpd[1081]: Deferring DNS for 2.debian.pool.ntp.org 1
+Aug  7 11:00:36 localhost ntpd[1081]: Deferring DNS for 3.debian.pool.ntp.org 1
+Aug  7 11:00:36 localhost ntpd[1097]: signal_no_reset: signal 17 had flags 4000000
+Aug  7 11:00:37 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> (eth0): carrier now ON (device state 20)
+Aug  7 11:00:37 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0xC1E1
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> (eth0): device state change: unavailable -> disconnected (reason 'carrier-changed') [20 30 40]
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Auto-activating connection 'Wired connection 1'.
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) starting connection 'Wired connection 1'
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> (eth0): device state change: disconnected -> prepare (reason 'none') [30 40 0]
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) scheduled...
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) started...
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) scheduled...
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 1 of 5 (Device Prepare) complete.
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) starting...
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> (eth0): device state change: prepare -> config (reason 'none') [40 50 0]
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) successful.
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) scheduled.
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 2 of 5 (Device Configure) complete.
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) started...
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> (eth0): device state change: config -> ip-config (reason 'none') [50 70 0]
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Beginning DHCPv4 transaction (timeout in 45 seconds)
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> dhclient started with pid 1148
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Beginning IP6 addrconf.
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 3 of 5 (IP Configure Start) complete.
+Aug  7 11:00:37 localhost dhclient: Internet Systems Consortium DHCP Client 4.2.2
+Aug  7 11:00:37 localhost dhclient: Copyright 2004-2011 Internet Systems Consortium.
+Aug  7 11:00:37 localhost dhclient: All rights reserved.
+Aug  7 11:00:37 localhost dhclient: For info, please visit https://www.isc.org/software/dhcp/
+Aug  7 11:00:37 localhost dhclient: 
+Aug  7 11:00:37 localhost NetworkManager[1051]: <info> (eth0): DHCPv4 state changed nbi -> preinit
+Aug  7 11:00:37 localhost dhclient: Listening on LPF/eth0/b8:27:eb:c2:49:ab
+Aug  7 11:00:37 localhost dhclient: Sending on   LPF/eth0/b8:27:eb:c2:49:ab
+Aug  7 11:00:37 localhost dhclient: Sending on   Socket/fallback
+Aug  7 11:00:37 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 5
+Aug  7 11:00:38 localhost ntpd_intres[1097]: host name not found: 0.debian.pool.ntp.org
+Aug  7 11:00:38 localhost ntpd_intres[1097]: host name not found: 1.debian.pool.ntp.org
+Aug  7 11:00:38 localhost ntpd_intres[1097]: host name not found: 2.debian.pool.ntp.org
+Aug  7 11:00:38 localhost ntpd_intres[1097]: host name not found: 3.debian.pool.ntp.org
+Aug  7 11:00:41 localhost ntpd[1081]: Listen normally on 4 eth0 fe80::ba27:ebff:fec2:49ab UDP 123
+Aug  7 11:00:41 localhost ntpd[1081]: peers refreshed
+Aug  7 11:00:42 localhost dhclient: DHCPDISCOVER on eth0 to 255.255.255.255 port 67 interval 11
+Aug  7 11:00:42 localhost dhclient: DHCPREQUEST on eth0 to 255.255.255.255 port 67
+Aug  7 11:00:42 localhost dhclient: DHCPOFFER from 10.1.244.10
+Aug  7 11:00:42 localhost dhclient: DHCPACK from 10.1.244.10
+Aug  7 11:00:42 localhost dhclient: suspect value in domain_name option - discarded
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info> (eth0): DHCPv4 state changed preinit -> bound
+Aug  7 11:00:42 localhost dhclient: bound to 10.1.100.3 -- renewal in 35521 seconds.
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info>   address 10.1.100.3
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info>   prefix 16 (255.255.0.0)
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info>   gateway 10.1.255.1
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info>   nameserver '10.1.244.1'
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info>   nameserver '10.1.244.10'
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info>   wins '10.1.244.1'
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Configure Commit) scheduled...
+Aug  7 11:00:42 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) started...
+Aug  7 11:00:43 localhost ntpd_intres[1097]: DNS 0.debian.pool.ntp.org -> 77.242.176.254
+Aug  7 11:00:43 localhost ntpd_intres[1097]: DNS 1.debian.pool.ntp.org -> 212.45.144.206
+Aug  7 11:00:43 localhost ntpd_intres[1097]: DNS 2.debian.pool.ntp.org -> 2a00:dcc0:eda:3749:247:49:206:1
+Aug  7 11:00:43 localhost ntpd_intres[1097]: DNS 3.debian.pool.ntp.org -> 62.48.53.90
+Aug  7 11:00:43 localhost NetworkManager[1051]: <info> (eth0): device state change: ip-config -> activated (reason 'none') [70 100 0]
+Aug  7 11:00:44 localhost ntpd[1081]: Listen normally on 5 eth0 10.1.100.3 UDP 123
+Aug  7 11:00:44 localhost ntpd[1081]: peers refreshed
+Aug  7 11:00:44 localhost NetworkManager[1051]: <info> Policy set 'Wired connection 1' (eth0) as default for IPv4 routing and DNS.
+Aug  7 11:00:44 localhost NetworkManager[1051]: <info> Activation (eth0) successful, device activated.
+Aug  7 11:00:44 localhost dbus[1026]: [system] Activating service name='org.freedesktop.nm_dispatcher' (using servicehelper)
+Aug  7 11:00:44 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 5 of 5 (IPv4 Commit) complete.
+Aug  7 11:00:44 localhost dbus[1026]: [system] Activated service 'org.freedesktop.nm_dispatcher' failed: The permission of the setuid helper is not correct
+Aug  7 11:00:48 localhost kernel: eth0: no IPv6 routers present
+Aug  7 11:00:57 localhost NetworkManager[1051]: <info> (eth0): IP6 addrconf timed out or failed.
+Aug  7 11:00:57 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) scheduled...
+Aug  7 11:00:57 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) started...
+Aug  7 11:00:57 localhost NetworkManager[1051]: <info> Activation (eth0) Stage 4 of 5 (IPv6 Configure Timeout) complete.
+Aug  7 11:01:30 localhost shutdown[1155]: shutting down for system halt
+Aug  7 11:01:31 localhost init: Switching to runlevel: 0
+Aug  7 11:01:33 localhost NetworkManager[1051]: <info> caught signal 15, shutting down normally.
+Aug  7 11:01:33 localhost NetworkManager[1051]: <warn> quit request received, terminating...
+Aug  7 11:01:33 localhost NetworkManager[1051]: <info> exiting (success)
+Aug  7 11:01:38 localhost ntpd[1081]: ntpd exiting on signal 15
