@@ -3581,6 +3581,30 @@ Description: fast, versatile, remote (and local) file-copying tool
  daemon functionality.
 Homepage: http://rsync.samba.org/
 
+Package: lockfile-progs
+Priority: optional
+Section: misc
+Installed-Size: 84
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: armel
+Version: 0.1.16
+Depends: libc6 (>= 2.4), liblockfile1 (>= 1.0)
+Size: 10346
+Description: Programs for locking and unlocking files and mailboxes
+ This package includes several programs to safely lock and unlock
+ files and mailboxes from the command line.  These include:
+ .
+   lockfile-create
+   lockfile-remove
+   lockfile-touchlock
+   mail-lock
+   mail-unlock
+   mail-touchlock
+ .
+ These programs use liblockfile to perform the file locking and
+ unlocking, so they are guaranteed compatible with Debian's
+ file locking policies.
+
 Package: tasksel-data
 Priority: important
 Section: admin
@@ -4136,6 +4160,23 @@ Description: X C Binding, render extension
   * Easy creation of new extensions: automatically generates interface from
     machine-parsable protocol descriptions
 Homepage: http://xcb.freedesktop.org
+
+Package: liblockfile-bin
+Priority: standard
+Section: utils
+Installed-Size: 70
+Maintainer: Miquel van Smoorenburg <miquels@cistron.nl>
+Architecture: armel
+Multi-Arch: foreign
+Source: liblockfile
+Version: 1.09-4
+Replaces: liblockfile1 (<< 1.09-1)
+Depends: libc6 (>= 2.4)
+Breaks: liblockfile1 (<< 1.09-1)
+Size: 17780
+Description: support binaries for and cli utilities based on liblockfile
+ This package contains support binaries for the liblockfile library,
+ and the command-line utility ``dotlockfile''.
 
 Package: libgtk2.0-common
 Priority: optional
@@ -4983,6 +5024,37 @@ Description: X11 Font Services library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libFS
+
+Package: usbmount
+Priority: extra
+Section: admin
+Installed-Size: 116
+Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Architecture: all
+Version: 0.0.22
+Depends: lockfile-progs, udev, util-linux (>> 2.16)
+Recommends: pmount
+Size: 17666
+Description: automatically mount and unmount USB mass storage devices
+ This package automatically mounts USB mass storage devices (typically
+ USB pens) when they are plugged in, and unmounts them when they are
+ removed. The mountpoints (/media/usb[0-7] by default), filesystem types
+ to consider, and mount options are configurable. When multiple devices
+ are plugged in, the first available mountpoint is automatically
+ selected. If the device provides a model name, a symbolic link
+ /var/run/usbmount/MODELNAME pointing to the mountpoint is automatically
+ created.
+ .
+ The script that does the mounting is called by the udev daemon.
+ Therefore, USBmount requires a 2.6 (or newer) Linux kernel.
+ .
+ Firewire devices are also supported by USBmount.
+ .
+ USBmount is intended as a lightweight solution which is independent of
+ a desktop environment. Users which would like an icon to appear when an
+ USB device is plugged in should use the pmount and hal packages
+ instead.
+Homepage: http://usbmount.alioth.debian.org/
 
 Package: debconf-i18n
 Priority: important
@@ -7125,6 +7197,33 @@ Description: Window Navigator Construction Kit - common files
  .
  This package contains internationalization files.
 
+Package: autofs
+Priority: extra
+Section: utils
+Installed-Size: 1448
+Maintainer: Dmitry Smirnov <onlyjob@member.fsf.org>
+Architecture: armel
+Version: 5.0.6-2
+Replaces: autofs5 (<< 5.0.6-1~)
+Provides: autofs5
+Depends: libc6 (>= 2.4), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), ucf
+Pre-Depends: multiarch-support
+Recommends: nfs-common, kmod | module-init-tools
+Breaks: autofs5 (<< 5.0.6-1~)
+Size: 693880
+Description: kernel-based automounter for Linux
+ Autofs controls the operation of the automount daemons. The
+ automount daemons automatically mount filesystems when they
+ are used and unmount them after a period of inactivity. This
+ is done based on a set of pre-configured maps.
+ .
+ The kernel automounter implements an almost complete SunOS
+ style automounter under Linux. A recent version of the kernel
+ autofs4 module (builtin or separate) is required.
+ .
+ This is the autofs daemon.
+Homepage: http://www.kernel.org/pub/linux/daemons/autofs/v5/
+
 Package: unzip
 Priority: optional
 Section: utils
@@ -8771,6 +8870,21 @@ Description: MIT Kerberos runtime libraries
  This package contains the runtime library for the main Kerberos v5 API
  used by applications and Kerberos clients.
 Homepage: http://web.mit.edu/kerberos/
+
+Package: liblockfile1
+Priority: standard
+Section: libs
+Installed-Size: 52
+Maintainer: Miquel van Smoorenburg <miquels@cistron.nl>
+Architecture: armel
+Multi-Arch: same
+Source: liblockfile
+Version: 1.09-4
+Depends: libc6 (>= 2.4), liblockfile-bin (>= 1.09-4)
+Pre-Depends: multiarch-support
+Size: 14254
+Description: NFS-safe locking library
+ Liblockfile is a shared library with NFS-safe locking functions.
 
 Package: libssh2-1
 Priority: optional

@@ -3035,24 +3035,6 @@ Description: deb package format runtime library
  from deb packages. This includes the control data and the package
  file content.
 
-Package: libboost-date-time1.49-dev
-Priority: optional
-Section: libdevel
-Installed-Size: 202
-Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
-Architecture: armel
-Source: boost1.49
-Version: 1.49.0-3.1
-Depends: libboost1.49-dev (= 1.49.0-3.1), libboost-date-time1.49.0 (= 1.49.0-3.1), libboost-serialization1.49-dev (= 1.49.0-3.1)
-Conflicts: libboost-date-time1.42-dev, libboost-date-time1.46-dev, libboost-date-time1.48-dev
-Size: 52306
-Description: set of date-time libraries based on generic programming concepts
- This package forms part of the Boost C++ Libraries collection.
- .
- These libraries are intended to make programming with dates and times
- almost as simple and natural as programming with strings and integers.
-Homepage: http://www.boost.org/libs/date_time/
-
 Package: adduser
 Priority: important
 Section: admin
@@ -3087,6 +3069,24 @@ Description: add and remove users and groups
   Development mailing list:
     http://lists.alioth.debian.org/mailman/listinfo/adduser-devel/
 Homepage: http://alioth.debian.org/projects/adduser/
+
+Package: libboost-date-time1.49-dev
+Priority: optional
+Section: libdevel
+Installed-Size: 202
+Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
+Architecture: armel
+Source: boost1.49
+Version: 1.49.0-3.1
+Depends: libboost1.49-dev (= 1.49.0-3.1), libboost-date-time1.49.0 (= 1.49.0-3.1), libboost-serialization1.49-dev (= 1.49.0-3.1)
+Conflicts: libboost-date-time1.42-dev, libboost-date-time1.46-dev, libboost-date-time1.48-dev
+Size: 52306
+Description: set of date-time libraries based on generic programming concepts
+ This package forms part of the Boost C++ Libraries collection.
+ .
+ These libraries are intended to make programming with dates and times
+ almost as simple and natural as programming with strings and integers.
+Homepage: http://www.boost.org/libs/date_time/
 
 Package: libxcb1
 Priority: optional
@@ -4707,6 +4707,27 @@ Description: GNU troff text-formatting system (base system components)
  the standard set of devices, fonts, macros, and documentation, should
  install the groff package.
 Homepage: http://groff.ffii.org/
+
+Package: fake-hwclock
+Priority: extra
+Section: admin
+Installed-Size: 58
+Maintainer: Steve McIntyre <93sam@debian.org>
+Architecture: all
+Version: 0.5
+Suggests: cron, ntp
+Size: 5326
+Description: Save/restore system clock on machines without working RTC hardware
+ Some machines don't have a working realtime clock (RTC) unit, or no
+ driver for the hardware that does exist. fake-hwclock is a simple set
+ of scripts to save the kernel's current clock periodically (including
+ at shutdown) and restore it at boot so that the system clock keeps at
+ least close to realtime. This will stop some of the problems that may
+ be caused by a system believing it has travelled in time back to
+ 1970, such as needing to perform filesystem checks at every boot.
+ .
+ On top of this, use of NTP is still recommended to deal with the fake
+ clock "drifting" while the hardware is halted or rebooting.
 
 Package: ntp
 Priority: optional
@@ -7103,6 +7124,33 @@ Description: Window Navigator Construction Kit - common files
  A library to use for writing pagers and task lists.
  .
  This package contains internationalization files.
+
+Package: autofs
+Priority: extra
+Section: utils
+Installed-Size: 1448
+Maintainer: Dmitry Smirnov <onlyjob@member.fsf.org>
+Architecture: armel
+Version: 5.0.6-2
+Replaces: autofs5 (<< 5.0.6-1~)
+Provides: autofs5
+Depends: libc6 (>= 2.4), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4), ucf
+Pre-Depends: multiarch-support
+Recommends: nfs-common, kmod | module-init-tools
+Breaks: autofs5 (<< 5.0.6-1~)
+Size: 693880
+Description: kernel-based automounter for Linux
+ Autofs controls the operation of the automount daemons. The
+ automount daemons automatically mount filesystems when they
+ are used and unmount them after a period of inactivity. This
+ is done based on a set of pre-configured maps.
+ .
+ The kernel automounter implements an almost complete SunOS
+ style automounter under Linux. A recent version of the kernel
+ autofs4 module (builtin or separate) is required.
+ .
+ This is the autofs daemon.
+Homepage: http://www.kernel.org/pub/linux/daemons/autofs/v5/
 
 Package: unzip
 Priority: optional

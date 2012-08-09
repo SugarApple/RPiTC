@@ -12419,7 +12419,7 @@ Remove-Reason: 0
 Package: autofs
 Architecture: armel
 Unseen: yes
-State: 3
+State: 1
 Dselect-State: 0
 Remove-Reason: 0
 
@@ -15220,9 +15220,8 @@ Package: libpolkit-gobject-1-0
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: mgltools-pybabel
 Architecture: armel
@@ -17209,9 +17208,8 @@ Package: libnl-3-200
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: clusterssh
 Architecture: armel
@@ -40835,7 +40833,7 @@ Package: network-manager
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: cyrus-replication-2.4
@@ -56059,7 +56057,7 @@ Remove-Reason: 0
 Package: usbmount
 Architecture: armel
 Unseen: yes
-State: 3
+State: 1
 Dselect-State: 0
 Remove-Reason: 0
 
@@ -60113,9 +60111,8 @@ Package: libnm-util2
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: libgeoip-dev
 Architecture: armel
@@ -69395,9 +69392,10 @@ Remove-Reason: 0
 Package: lockfile-progs
 Architecture: armel
 Unseen: yes
-State: 3
+State: 1
 Dselect-State: 0
 Remove-Reason: 0
+Auto-New-Install: yes
 
 Package: libalsaplayer0
 Architecture: armel
@@ -91446,9 +91444,8 @@ Package: libnl-route-3-200
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: gretl-common
 Architecture: armel
@@ -118691,9 +118688,8 @@ Package: dbus
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: emacsen-common
 Architecture: armel
@@ -144172,9 +144168,8 @@ Package: libnm-glib4
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: taxbird
 Architecture: armel
@@ -160693,9 +160688,8 @@ Package: libgudev-1.0-0
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: libxml-dom-xpath-perl
 Architecture: armel
@@ -173104,9 +173098,10 @@ Remove-Reason: 0
 Package: liblockfile-bin
 Architecture: armel
 Unseen: yes
-State: 3
+State: 1
 Dselect-State: 0
 Remove-Reason: 0
+Auto-New-Install: yes
 
 Package: libfilesystem-ruby1.8
 Architecture: armel
@@ -185565,9 +185560,8 @@ Package: libsystemd-login0
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: libxcomposite-dev
 Architecture: armel
@@ -191586,9 +191580,8 @@ Package: wpasupplicant
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: ruby-uuidtools
 Architecture: armel
@@ -218347,8 +218340,8 @@ Remove-Reason: 0
 Package: fake-hwclock
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: texlive-font-utils
@@ -220945,9 +220938,8 @@ Package: libnl-genl-3-200
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 0
+Dselect-State: 1
 Remove-Reason: 0
-Auto-New-Install: yes
 
 Package: winbind
 Architecture: armel
@@ -252676,9 +252668,10 @@ Remove-Reason: 0
 Package: liblockfile1
 Architecture: armel
 Unseen: yes
-State: 3
+State: 1
 Dselect-State: 0
 Remove-Reason: 0
+Auto-New-Install: yes
 
 Package: libwraster3-dev
 Architecture: armel

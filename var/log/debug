@@ -114,3 +114,21 @@ Aug  7 11:00:34 localhost kernel: Registered led device: mmc0::
 Aug  7 11:00:34 localhost kernel: Registered led device: led0
 Aug  7 11:00:36 localhost ntpd[1097]: signal_no_reset: signal 17 had flags 4000000
 Aug  7 11:00:48 localhost kernel: eth0: no IPv6 routers present
+Aug  7 11:01:43 localhost kernel: Module dwc_common_port init
+Aug  7 11:01:43 localhost kernel: Registered led device: mmc0::
+Aug  7 11:01:43 localhost kernel: Registered led device: led0
+Aug  7 11:01:43 localhost kernel: sd 0:0:0:0: [sda] Mode Sense: 0b 00 00 08
+Aug  7 11:01:45 localhost ntpd[1117]: signal_no_reset: signal 17 had flags 4000000
+Aug  7 11:01:57 localhost kernel: eth0: no IPv6 routers present
+Aug  9 07:28:30 localhost kernel: sd 1:0:0:0: [sda] Mode Sense: 0b 00 00 08
+Aug  9 07:43:54 localhost kernel: Module dwc_common_port init
+Aug  9 07:43:54 localhost kernel: Registered led device: mmc0::
+Aug  9 07:43:54 localhost kernel: Registered led device: led0
+Aug  9 07:43:54 localhost kernel: sd 0:0:0:0: [sda] Mode Sense: 0b 00 00 08
+Aug  9 07:43:56 localhost ntpd[1191]: signal_no_reset: signal 17 had flags 4000000
+Aug  9 07:44:07 localhost kernel: eth0: no IPv6 routers present
+Aug  9 07:43:54 localhost kernel: Registered led device: mmc0::
+Aug  9 07:43:54 localhost kernel: Registered led device: led0
+Aug  9 07:43:54 localhost kernel: sd 0:0:0:0: [sda] Mode Sense: 0b 00 00 08
+Aug  9 07:43:56 localhost ntpd[1286]: signal_no_reset: signal 17 had flags 4000000
+Aug  9 07:44:08 localhost kernel: eth0: no IPv6 routers present

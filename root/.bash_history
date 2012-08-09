@@ -85,3 +85,66 @@ dpkg-reconfigure insserv
 reboot 
 free -tm
 halt
+ls
+ls -latr
+ls
+ls -latr
+fdisk -l
+apt-get install autofs
+aptitude --without-recommends install autofs
+ls
+df -h
+df -h
+fdisk -l
+ls -latr
+/var/autofs/removable   /etc/auto.removable --timeout=2,sync,nodev,nosuid
+/var/
+ls
+cd /var/
+ls
+cd ..
+ls
+cd /mne
+cd /var/lib/dpkg/info/
+more autofs.list 
+automount 
+cd /etc/
+ls
+more auto.master 
+cd /var/
+ls
+cd ..
+ls
+man 5 autofs
+ls
+cd /etc/
+ls
+vi auto.master 
+vi auto.master 
+fdisk -l
+apt-get install usbmount
+apt-get remove --purge autofs
+ls
+aptitude --without-recommends install usbmount
+reboot 
+strtx
+startx
+free -tm
+history 
+ls
+ls
+ls -altr
+cd .rdesktop/
+ls
+ls -altr
+cd cache/
+ls
+ls -altr
+cd ..
+ls
+cd ..
+ls
+rm -fr .rdesktop/
+ls
+ls -altr
+halt

@@ -4144,6 +4144,30 @@ Description: fast, versatile, remote (and local) file-copying tool
  daemon functionality.
 Homepage: http://rsync.samba.org/
 
+Package: lockfile-progs
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 84
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: armel
+Version: 0.1.16
+Depends: libc6 (>= 2.4), liblockfile1 (>= 1.0)
+Description: Programs for locking and unlocking files and mailboxes
+ This package includes several programs to safely lock and unlock
+ files and mailboxes from the command line.  These include:
+ .
+   lockfile-create
+   lockfile-remove
+   lockfile-touchlock
+   mail-lock
+   mail-unlock
+   mail-touchlock
+ .
+ These programs use liblockfile to perform the file locking and
+ unlocking, so they are guaranteed compatible with Debian's
+ file locking policies.
+
 Package: tasksel-data
 Status: install ok installed
 Priority: important
@@ -4805,6 +4829,23 @@ Description: X C Binding, render extension
   * Easy creation of new extensions: automatically generates interface from
     machine-parsable protocol descriptions
 Homepage: http://xcb.freedesktop.org
+
+Package: liblockfile-bin
+Status: install ok installed
+Priority: standard
+Section: utils
+Installed-Size: 70
+Maintainer: Miquel van Smoorenburg <miquels@cistron.nl>
+Architecture: armel
+Multi-Arch: foreign
+Source: liblockfile
+Version: 1.09-4
+Replaces: liblockfile1 (<< 1.09-1)
+Depends: libc6 (>= 2.4)
+Breaks: liblockfile1 (<< 1.09-1)
+Description: support binaries for and cli utilities based on liblockfile
+ This package contains support binaries for the liblockfile library,
+ and the command-line utility ``dotlockfile''.
 
 Package: libgtk2.0-common
 Status: install ok installed
@@ -5796,6 +5837,41 @@ Description: X11 Font Services library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libFS
+
+Package: usbmount
+Status: install ok installed
+Priority: extra
+Section: admin
+Installed-Size: 116
+Maintainer: Rogério Brito <rbrito@ime.usp.br>
+Architecture: all
+Version: 0.0.22
+Depends: lockfile-progs, udev, util-linux (>> 2.16)
+Recommends: pmount
+Conffiles:
+ /etc/usbmount/mount.d/00_create_model_symlink 13ef81167c202627ca43b1fe6c7cd0bf
+ /etc/usbmount/umount.d/00_remove_model_symlink 06304855418cfe29f6cec46042bdd857
+ /etc/usbmount/usbmount.conf a78d1be4f28c20bdb0b88b23cc01cf5d
+Description: automatically mount and unmount USB mass storage devices
+ This package automatically mounts USB mass storage devices (typically
+ USB pens) when they are plugged in, and unmounts them when they are
+ removed. The mountpoints (/media/usb[0-7] by default), filesystem types
+ to consider, and mount options are configurable. When multiple devices
+ are plugged in, the first available mountpoint is automatically
+ selected. If the device provides a model name, a symbolic link
+ /var/run/usbmount/MODELNAME pointing to the mountpoint is automatically
+ created.
+ .
+ The script that does the mounting is called by the udev daemon.
+ Therefore, USBmount requires a 2.6 (or newer) Linux kernel.
+ .
+ Firewire devices are also supported by USBmount.
+ .
+ USBmount is intended as a lightweight solution which is independent of
+ a desktop environment. Users which would like an icon to appear when an
+ USB device is plugged in should use the pmount and hal packages
+ instead.
+Homepage: http://usbmount.alioth.debian.org/
 
 Package: debconf-i18n
 Status: install ok installed
@@ -10369,6 +10445,21 @@ Description: MIT Kerberos runtime libraries
  This package contains the runtime library for the main Kerberos v5 API
  used by applications and Kerberos clients.
 Homepage: http://web.mit.edu/kerberos/
+
+Package: liblockfile1
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 52
+Maintainer: Miquel van Smoorenburg <miquels@cistron.nl>
+Architecture: armel
+Multi-Arch: same
+Source: liblockfile
+Version: 1.09-4
+Depends: libc6 (>= 2.4), liblockfile-bin (>= 1.09-4)
+Pre-Depends: multiarch-support
+Description: NFS-safe locking library
+ Liblockfile is a shared library with NFS-safe locking functions.
 
 Package: libssh2-1
 Status: install ok installed

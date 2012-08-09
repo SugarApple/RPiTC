@@ -1,0 +1,47 @@
+
+Log started: 2012-08-09  07:26:38
+Selecting previously unselected package autofs.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44807 files and directories currently installed.)
+Unpacking autofs (from .../autofs_5.0.6-2_armel.deb) ...
+Processing triggers for man-db ...
+fopen: Permission denied
+Setting up autofs (5.0.6-2) ...
+
+Creating config file /etc/auto.master with new version
+
+Creating config file /etc/auto.net with new version
+
+Creating config file /etc/auto.misc with new version
+
+Creating config file /etc/auto.smb with new version
+
+Creating config file /etc/default/autofs with new version
+[....] Starting automount automount...[?25l7[1G[[32m ok [39;49m8[?12l[?25h.
+Log ended: 2012-08-09  07:27:40
+
+Log started: 2012-08-09  07:41:08
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44856 files and directories currently installed.)
+Removing autofs ...
+[....] $Stopping automount: ...[?25l7[1G[[32m ok [39;49m8[?12l[?25hdone.
+Purging configuration files for autofs ...
+Processing triggers for man-db ...
+fopen: Permission denied
+Log ended: 2012-08-09  07:41:22
+
+Log started: 2012-08-09  07:42:41
+Selecting previously unselected package liblockfile-bin.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 44807 files and directories currently installed.)
+Unpacking liblockfile-bin (from .../liblockfile-bin_1.09-4_armel.deb) ...
+Selecting previously unselected package liblockfile1:armel.
+Unpacking liblockfile1:armel (from .../liblockfile1_1.09-4_armel.deb) ...
+Selecting previously unselected package lockfile-progs.
+Unpacking lockfile-progs (from .../lockfile-progs_0.1.16_armel.deb) ...
+Selecting previously unselected package usbmount.
+Unpacking usbmount (from .../usbmount_0.0.22_all.deb) ...
+Processing triggers for man-db ...
+fopen: Permission denied
+Setting up liblockfile-bin (1.09-4) ...
+Setting up liblockfile1:armel (1.09-4) ...
+Setting up lockfile-progs (0.1.16) ...
+Setting up usbmount (0.0.22) ...
+Log ended: 2012-08-09  07:43:09

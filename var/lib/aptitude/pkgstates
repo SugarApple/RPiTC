@@ -12419,7 +12419,7 @@ Remove-Reason: 0
 Package: autofs
 Architecture: armel
 Unseen: yes
-State: 3
+State: 1
 Dselect-State: 0
 Remove-Reason: 0
 
@@ -56057,8 +56057,8 @@ Remove-Reason: 0
 Package: usbmount
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: steghide
@@ -69392,8 +69392,8 @@ Remove-Reason: 0
 Package: lockfile-progs
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libalsaplayer0
@@ -173097,8 +173097,8 @@ Remove-Reason: 0
 Package: liblockfile-bin
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libfilesystem-ruby1.8
@@ -218338,8 +218338,8 @@ Remove-Reason: 0
 Package: fake-hwclock
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: texlive-font-utils
@@ -252666,8 +252666,8 @@ Remove-Reason: 0
 Package: liblockfile1
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libwraster3-dev

@@ -1,8 +1,8 @@
 Log of fsck -C -a -t ext4 /dev/mmcblk0p2 
-Tue Aug  7 11:00:27 2012
+Thu Aug  9 07:43:47 2012
 
 fsck from util-linux 2.20.1
-rpitc: clean, 49405/128000 files, 332157/512000 blocks
+rpitc: clean, 49602/128000 files, 337115/512000 blocks
 
-Tue Aug  7 11:00:27 2012
+Thu Aug  9 07:43:47 2012
 ----------------

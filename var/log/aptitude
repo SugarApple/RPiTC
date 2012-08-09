@@ -348,3 +348,32 @@ Will install 11 packages, and remove 0 packages.
 ===============================================================================
 
 Log complete.
+Aptitude 0.6.8: log report
+Thu, Aug  9 2012 07:26:28 +0000
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 1 packages, and remove 0 packages.
+1483 kB of disk space will be used
+===============================================================================
+[INSTALL] autofs:armel
+===============================================================================
+
+Log complete.
+Aptitude 0.6.8: log report
+Thu, Aug  9 2012 07:42:37 +0000
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 4 packages, and remove 0 packages.
+330 kB of disk space will be used
+===============================================================================
+[INSTALL, DEPENDENCIES] liblockfile-bin:armel
+[INSTALL, DEPENDENCIES] liblockfile1:armel
+[INSTALL, DEPENDENCIES] lockfile-progs:armel
+[INSTALL] usbmount:armel
+===============================================================================
+
+Log complete.

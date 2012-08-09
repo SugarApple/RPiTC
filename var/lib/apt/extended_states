@@ -1002,3 +1002,15 @@ Package: libnl-genl-3-200
 Architecture: armel
 Auto-Installed: 1
 
+Package: lockfile-progs
+Architecture: armel
+Auto-Installed: 1
+
+Package: liblockfile-bin
+Architecture: armel
+Auto-Installed: 1
+
+Package: liblockfile1
+Architecture: armel
+Auto-Installed: 1
+

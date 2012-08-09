@@ -1,0 +1,2 @@
+initscripts 	 /etc/default/rcS
+autofs 	 /etc/default/autofs
