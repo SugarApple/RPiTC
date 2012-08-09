@@ -1923,3 +1923,94 @@ Aug  9 08:15:05 localhost kernel: bcm2708_fb_check_var var(cea8dd14) 1280x1024 (
 Aug  9 08:15:05 localhost kernel: bcm2708_fb_set_par info(ce894000) 1280x1024 (1280x1024), 2621440, 16
 Aug  9 08:15:05 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1280, height=1024, bpp=16, pitch=2560 size=2621440 success=0
 Aug  9 08:15:40 localhost shutdown[1432]: shutting down for system halt
+Aug  9 08:15:53 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug  9 08:15:53 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="989" x-info="http://www.rsyslog.com"] start
+Aug  9 08:15:53 localhost kernel: ot_zero = 0xffd80000, is_master = 0
+Aug  9 08:15:53 localhost kernel: vcos: [1]: vchiq_init_state: called
+Aug  9 08:15:53 localhost kernel: usbcore: registered new interface driver smsc95xx
+Aug  9 08:15:53 localhost kernel: cdc_ncm: 04-Aug-2011
+Aug  9 08:15:53 localhost kernel: usbcore: registered new interface driver cdc_ncm
+Aug  9 08:15:53 localhost kernel: dwc_otg: version 2.90b 6-MAY-2010 (platform bus)
+Aug  9 08:15:53 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug  9 08:15:53 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug  9 08:15:53 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug  9 08:15:53 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug  9 08:15:53 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug  9 08:15:53 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug  9 08:15:53 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug  9 08:15:53 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug  9 08:15:53 localhost kernel: hub 1-0:1.0: USB hub found
+Aug  9 08:15:53 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug  9 08:15:53 localhost kernel: usbcore: registered new interface driver uas
+Aug  9 08:15:53 localhost kernel: Initializing USB Mass Storage driver...
+Aug  9 08:15:53 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug  9 08:15:53 localhost kernel: USB Mass Storage support registered.
+Aug  9 08:15:53 localhost kernel: usbcore: registered new interface driver libusual
+Aug  9 08:15:53 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug  9 08:15:53 localhost kernel: cpuidle: using governor ladder
+Aug  9 08:15:53 localhost kernel: cpuidle: using governor menu
+Aug  9 08:15:53 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug  9 08:15:53 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug  9 08:15:53 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug  9 08:15:53 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug  9 08:15:53 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug  9 08:15:53 localhost kernel: usbcore: registered new interface driver usbhid
+Aug  9 08:15:53 localhost kernel: usbhid: USB HID core driver
+Aug  9 08:15:53 localhost kernel: TCP cubic registered
+Aug  9 08:15:53 localhost kernel: Initializing XFRM netlink socket
+Aug  9 08:15:53 localhost kernel: NET: Registered protocol family 17
+Aug  9 08:15:53 localhost kernel: Registering the dns_resolver key type
+Aug  9 08:15:53 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug  9 08:15:53 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug  9 08:15:53 localhost kernel: mmc0: problem reading SD Status register.
+Aug  9 08:15:53 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug  9 08:15:53 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug  9 08:15:53 localhost kernel: mmcblk0: p1 p2
+Aug  9 08:15:53 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug  9 08:15:53 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug  9 08:15:53 localhost kernel: devtmpfs: mounted
+Aug  9 08:15:53 localhost kernel: Freeing init memory: 112K
+Aug  9 08:15:53 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug  9 08:15:53 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug  9 08:15:53 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  9 08:15:53 localhost kernel: hub 1-1:1.0: USB hub found
+Aug  9 08:15:53 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug  9 08:15:53 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug  9 08:15:53 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug  9 08:15:53 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug  9 08:15:53 localhost kernel: smsc95xx v1.0.4
+Aug  9 08:15:53 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug  9 08:15:53 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug  9 08:15:53 localhost kernel: usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
+Aug  9 08:15:53 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug  9 08:15:53 localhost kernel: usb 1-1.3: Product: HP Basic USB Keyboard
+Aug  9 08:15:53 localhost kernel: usb 1-1.3: Manufacturer: CHICONY
+Aug  9 08:15:53 localhost kernel: input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug  9 08:15:53 localhost kernel: generic-usb 0003:03F0:0024.0001: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug  9 08:15:53 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  9 08:15:53 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug  9 08:15:53 localhost kernel: ### snd_bcm2835_alsa_probe c039e4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug  9 08:15:53 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug  9 08:15:54 localhost kernel: NET: Registered protocol family 10
+Aug  9 08:15:54 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug  9 08:15:56 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug  9 08:15:56 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0xC1E1
+Aug  9 08:56:13 localhost kernel: usb 1-1.2: new high speed USB device number 5 using dwc_otg
+Aug  9 08:56:13 localhost kernel: usb 1-1.2: New USB device found, idVendor=0951, idProduct=1607
+Aug  9 08:56:13 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=3
+Aug  9 08:56:13 localhost kernel: usb 1-1.2: Product: DataTraveler 2.0
+Aug  9 08:56:13 localhost kernel: usb 1-1.2: Manufacturer: Kingston
+Aug  9 08:56:13 localhost kernel: usb 1-1.2: SerialNumber: 000AEB91BD075C891B130018
+Aug  9 08:56:13 localhost kernel: scsi0 : usb-storage 1-1.2:1.0
+Aug  9 08:56:14 localhost kernel: scsi 0:0:0:0: Direct-Access     Kingston DataTraveler 2.0 1.00 PQ: 0 ANSI: 2
+Aug  9 08:56:14 localhost kernel: sd 0:0:0:0: [sda] 7821183 512-byte logical blocks: (4.00 GB/3.72 GiB)
+Aug  9 08:56:14 localhost kernel: sd 0:0:0:0: [sda] Write Protect is off
+Aug  9 08:56:14 localhost kernel: sda: sda1 sda2
+Aug  9 08:56:14 localhost kernel: sd 0:0:0:0: [sda] Attached SCSI removable disk
+Aug  9 08:56:14 localhost usbmount[1164]: /dev/sda does not contain a filesystem or disklabel
+Aug  9 08:56:20 localhost usbmount[1192]: executing command: mount -tvfat -osync,noexec,nodev,noatime,nodiratime /dev/sda1 /media/usb0
+Aug  9 08:56:20 localhost usbmount[1192]: executing command: run-parts /etc/usbmount/mount.d
+Aug  9 08:56:45 localhost kernel: usb 1-1.2: USB disconnect, device number 5
+Aug  9 08:56:45 localhost usbmount[1250]: executing command: umount -l /media/usb0
+Aug  9 08:56:45 localhost usbmount[1250]: executing command: run-parts /etc/usbmount/umount.d
+Aug  9 08:56:54 localhost shutdown[1269]: shutting down for system halt
