@@ -1,7 +1,10 @@
 #!/bin/bash
-
+#FAT16 lba boot partition with kernel.img .elf and .bin
 bootsize="64M"
+#EXT4 root file system
 rootsize="2000M"
+#size of your sdcard erase block size, needed to correctly align partitions
+delblocksize="128"
 device=$1
 
 if [ $EUID -ne 0 ]; then
@@ -32,7 +35,7 @@ p
 x
 b
 1
-128
+$delblocksize
 r
 t
 c
@@ -65,7 +68,6 @@ rm -fr /media/rpitc/lost+found/
 
 #cloning boot and system
 git clone https://github.com/Gibbio/RPiTC-Kernel.git /media/BOOT/
-mkdir /media/BOOT/asd/
 git clone https://github.com/Gibbio/RPiTC.git /media/rpitc/
 
 #creating needed (and missing) directory: boot dev lost+found media mnt proc run selinux svr sys tmp
