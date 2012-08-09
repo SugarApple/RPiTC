@@ -1,5 +1,4 @@
-ot_zero = 0xffd80000, is_master = 0
-vcos: [1]: vchiq_init_state: called
+s: [1]: vchiq_init_state: called
 vcos: [1]: vchiq: initialised - version 2 (min 2), device 253.0
 usbcore: registered new interface driver smsc95xx
 cdc_ncm: 04-Aug-2011
@@ -53,11 +52,12 @@ mmc0: problem reading SD Status register.
 mmc0: new high speed SDHC card at address b368
 mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
  mmcblk0: p1 p2
+EXT4-fs (mmcblk0p2): recovery complete
 EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
 VFS: Mounted root (ext4 filesystem) on device 179:2.
+usb 1-1: new high speed USB device number 2 using dwc_otg
 devtmpfs: mounted
 Freeing init memory: 112K
-usb 1-1: new high speed USB device number 2 using dwc_otg
 usb 1-1: New USB device found, idVendor=0424, idProduct=9512
 usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
 hub 1-1:1.0: USB hub found
