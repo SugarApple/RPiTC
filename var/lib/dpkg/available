@@ -2062,6 +2062,28 @@ Description: Boost C++ Libraries development files
  regex, serialization, signals, system, test, thread, timer, and wave.
 Homepage: http://www.boost.org/
 
+Package: libelfg0
+Priority: optional
+Section: libs
+Installed-Size: 176
+Maintainer: Alex Pennace <alex@pennace.org>
+Architecture: armel
+Source: libelf
+Version: 0.8.13-3
+Depends: libc6 (>= 2.4)
+Conflicts: libelf, libelf0 (<= 0.6.4-5)
+Size: 55524
+Description: an ELF object file access library
+ libelf provides routines to access and manipulate ELF object
+ files. It is still not complete, but is required for a number of programs,
+ such as Eli (a state of the art compiler generation system), and Elk (the
+ Extension Language Kit - an implementation of the Scheme programming
+ language.)
+ .
+ This shared library may be needed by pre-packaged programs. To compile
+ programs with this library, you will need to install the libelfg0-dev
+ package as well.
+
 Package: libudev0
 Priority: important
 Section: libs
@@ -4870,6 +4892,28 @@ Description: Not Erik's Windowing Toolkit - text mode windowing with slang
  to provide extra functionality. This package contains the shared library
  for programs that have been built with newt.
 Homepage: https://fedorahosted.org/newt/
+
+Package: ltrace
+Priority: optional
+Section: utils
+Installed-Size: 216
+Maintainer: Juan Cespedes <cespedes@debian.org>
+Architecture: armel
+Version: 0.5.3-2.1
+Depends: libc6 (>= 2.7), libelfg0 (>= 0.8.12), libgcc1 (>= 1:4.4.0)
+Size: 82456
+Description: Tracks runtime library calls in dynamically linked programs
+ ltrace is a debugging program which runs a specified command until it
+ exits.  While the command is executing, ltrace intercepts and records
+ the dynamic library calls which are called by
+ the executed process and the signals received by that process.
+ It can also intercept and print the system calls executed by the program.
+ .
+ The program to be traced need not be recompiled for this, so you can
+ use it on binaries for which you don't have the source handy.
+ .
+ You should install ltrace if you need a sysadmin tool for tracking the
+ execution of processes.
 
 Package: x11-apps
 Priority: optional
@@ -8501,6 +8545,26 @@ Description: Common CA certificates
  have in any way been audited for trustworthiness or RFC 3647 compliance.
  Full responsibility to assess them belongs to the local system
  administrator.
+
+Package: strace
+Priority: optional
+Section: utils
+Installed-Size: 316
+Maintainer: Frederik Schüler <fs@debian.org>
+Architecture: armel
+Version: 4.5.20-2.3
+Depends: libc6 (>= 2.4)
+Size: 124626
+Description: A system call tracer
+ strace is a system call tracer, i.e. a debugging tool which prints out
+ a trace of all the system calls made by a another process/program.
+ The program to be traced need not be recompiled for this, so you can
+ use it on binaries for which you don't have source.
+ .
+ System calls and signals are events that happen at the user/kernel
+ interface. A close examination of this boundary is very useful for bug
+ isolation, sanity checking and attempting to capture race conditions.
+Homepage: http://sourceforge.net/projects/strace/
 
 Package: vim-tiny
 Priority: important

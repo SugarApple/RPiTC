@@ -143,3 +143,8 @@ Aug  9 08:57:47 localhost kernel: Registered led device: mmc0::
 Aug  9 08:57:47 localhost kernel: Registered led device: led0
 Aug  9 08:57:49 localhost ntpd[1093]: signal_no_reset: signal 17 had flags 4000000
 Aug  9 08:58:01 localhost kernel: eth0: no IPv6 routers present
+Aug  9 09:34:52 localhost kernel: Module dwc_common_port init
+Aug  9 09:34:52 localhost kernel: Registered led device: mmc0::
+Aug  9 09:34:52 localhost kernel: Registered led device: led0
+Aug  9 09:34:54 localhost ntpd[1100]: signal_no_reset: signal 17 had flags 4000000
+Aug  9 09:35:07 localhost kernel: eth0: no IPv6 routers present
