@@ -11,12 +11,3 @@ git clone RPiTC-Kernel on fat16 partition ( git clone https://github.com/Gibbio/
 git clone RPiTC full file system on ext4 partition ( git clone https://github.com/Gibbio/RPiTC.git /media/rpitc/ )
 then on ext4:
 mkdir boot dev lost+found media mnt proc run selinux svr sys tmp
-
-
-
-#--------------------------POSTINSTALL:
-#after the first boot recreate ssh_host_keys!!!!
-rm -fr /etc/ssh/ssh_host_*
-ssh-keygen -f /etc/ssh/ssh_host_rsa_key -N '' -t rsa
-ssh-keygen -f /etc/ssh/ssh_host_dsa_key -N '' -t dsa
-ssh-keygen -f /etc/ssh/ssh_host_ecdsa_key -N '' -t ecdsa
