@@ -1,0 +1,1 @@
+../../../../share/pyshared/wicd/__init__.py

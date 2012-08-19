@@ -1,34 +1,70 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<openbox_menu xmlns="http://openbox.org/"
-        xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xsi:schemaLocation="http://openbox.org/
-                file:///usr/share/openbox/menu.xsd">
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
 
-<menu id="root-menu" label="Openbox 3">
-  <item label="Terminal emulator">
-    <action name="Execute"><execute>x-terminal-emulator</execute></action>
+<menu id="apps-menu" label="Applications">
+  <item label="FileBrowser">
+    <action name="Execute"><command>pcmanfm</command></action>
   </item>
-  <item label="Web browser">
-    <action name="Execute"><execute>x-www-browser</execute></action>
+  <item label="LXTerminal">
+    <action name="Execute"><command>lxterminal</command></action>
   </item>
-  <!-- This requires the presence of the 'menu' package to work -->
-  <menu id="/Debian" />
+  <item label="IceWeasel">
+    <action name="Execute"><command>iceweasel</command></action>
+  </item>
+</menu>
+
+<menu id="rpitc-apps" label="RPi-TC Apps">
+  <item label="Citrix Receiver 12.2.3">
+    <action name="Execute"><command>/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient</command></action>
+  </item>
+  <item label="VMWareView Client 1.5.1">
+    <action name="Execute"><command>vmware-view</command></action>
+  </item>
+  <item label="Quest vWorkspaces 7.00b1">
+    <action name="Execute"><command>connmanager</command></action>
+  </item>
+  <item label="xFreeRDP 1.0.1">
+    <action name="Execute"><command>lxterminal -e "echo asd"</command></action>
+  </item>
+</menu>
+
+<menu id="conf-menu" label="Configurations">
+  <item label="Network Management">
+    <action name="Execute"><command>wicd-gtk</command></action>
+  </item>
+  <item label="Desktop Settings">
+    <action name="Execute">
+      <startupnotify><enabled>yes</enabled></startupnotify>
+      <command>pcmanfm --desktop-pref</command>
+    </action>
+  </item>
+  <item label="Window Management Settings">
+    <action name="Execute">
+      <startupnotify><enabled>yes</enabled><icon>openbox</icon></startupnotify>
+      <command>obconf</command>
+    </action>
+  </item>
+  <item label="Change This Menu">
+    <action name="Execute"><command>leafpad /etc/xdg/openbox/menu.xml</command></action>
+  </item>
+  <item label="Reload Menu Files">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="RaspberryPi - ThinClient">
+  <separator label="RaspberryPi - ThinClient" />
+  <menu id="rpitc-apps" />
+  <separator />
+  <menu id="apps-menu" />
+  <separator />
+  <menu id="conf-menu" />
   <separator />
   <menu id="client-list-menu" />
   <separator />
-  <item label="ObConf">
-    <action name="Execute"><execute>obconf</execute></action>
-  </item>
-  <item label="Reconfigure">
-    <action name="Reconfigure" />
-  </item>
-  <item label="Restart">
-    <action name="Restart" />
-  </item>
-  <separator />
   <item label="Exit">
-    <action name="Exit" />
+    <action name="Execute"><command>lxde-logout</command></action>
   </item>
 </menu>
 

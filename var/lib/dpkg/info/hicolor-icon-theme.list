@@ -9,9 +9,7 @@
 /usr/share/doc/hicolor-icon-theme/README
 /usr/share/icons
 /usr/share/icons/hicolor
-/usr/share/icons/hicolor/96x96
 /usr/share/icons/hicolor/96x96/intl
-/usr/share/icons/hicolor/96x96/apps
 /usr/share/icons/hicolor/96x96/status
 /usr/share/icons/hicolor/96x96/places
 /usr/share/icons/hicolor/96x96/devices
@@ -113,9 +111,7 @@
 /usr/share/icons/hicolor/256x256/categories
 /usr/share/icons/hicolor/256x256/emotes
 /usr/share/icons/hicolor/256x256/animations
-/usr/share/icons/hicolor/128x128
 /usr/share/icons/hicolor/128x128/intl
-/usr/share/icons/hicolor/128x128/apps
 /usr/share/icons/hicolor/128x128/status
 /usr/share/icons/hicolor/128x128/places
 /usr/share/icons/hicolor/128x128/devices

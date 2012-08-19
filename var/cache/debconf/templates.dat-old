@@ -3102,6 +3102,7 @@ Description-ml.utf-8: ബിറ്റ്മാപ് ചെയ്ത അക്�
 Description-nb.utf-8: Slå på bitkartskrift som standard?
 Description-nl.utf-8: Bitmap-lettertypen standaard activeren?
 Description-no.utf-8: Slå på bitkartskrift som standard?
+Description-pl.utf-8: Włączyć domyślnie fonty bitmapowe?
 Description-pt.utf-8: Activar tipos de letra bitmap por omissão?
 Description-pt_br.utf-8: Habilitar fontes "bitmapped" por padrão?
 Description-ro.utf-8: Se activează implicit fonturile bitmap?
@@ -3117,7 +3118,7 @@ Extended_description-ar.utf-8: افتراضياً، تستخدم خطوط outlin
 Extended_description-cs.utf-8: Ve výchozím nastavení jsou v aplikacích podporujících fontconfig používány pouze obrysová písma.\n\nObrysová písma se velmi dobře zvětšují a zmenšují. Oproti nim mohou škálovaná bitmapová písma vypadat hůře. Tato volba ovlivní výchozí nastavení celého systému, nicméně uživatelé si ji mohou změnit ve svém osobním nastavení.
 Extended_description-da.utf-8: Som standard bruges kun omridsskrifter af programmer som understøtter fontconfig.\n\nOmridsskrifter er skrifter som er gode til at blive skaleret til forskellige størrelser. Aktivering af denne funktion vil påvirke hele systemets standardindstilling. Denne og mange andre fontconfig-indstillinger kan aktiveres eller deaktiveres for hver enkelt bruger.
 Extended_description-de.utf-8: Standardmäßig nutzen Anwendungen, die fontconfig unterstützen, nur Outline-Schriftarten.\n\nOutline-Schriftarten können gut in verschiedene Größen skaliert werden. Bitmap-Schriftarten sind im Gegensatz dazu oft von geringerer Qualität. Wenn Sie hier zustimmen, beeinflussen Sie die systemweite Standardeinstellung; diese und viele andere Einstellungen von Fontconfig können benutzerbezogen ein- und ausgeschaltet werden.
-Extended_description-es.utf-8: Por omisión, las aplicaciones que soportan fontconfig sólo utilizan los tipos de letra «outline».\n\nLos tipos de letra «outline» escalan bastante bien a distintos tamaños. En cambio, los tipos de letra «bitmapped» generalmente tienen peor calidad. Si activa esta opción afectará al valor por omisión de todo el sistema; los usuarios podrán, de forma individual, activar ésta y muchas otras opciones de fontconfig.
+Extended_description-es.utf-8: Por omisión, las aplicaciones compatibles con fontconfig sólo utilizan los tipos de letra «outline».\n\nLos tipos de letra «outline» escalan bastante bien a distintos tamaños. En cambio, los tipos de letra «bitmapped» generalmente tienen peor calidad. Si activa esta opción afectará al valor por omisión de todo el sistema; los usuarios podrán, de forma individual, activar ésta y muchas otras opciones de fontconfig.
 Extended_description-eu.utf-8: Lehenespen bezala bakarrik 'eskema' letra tipoak erabiltzen dituzte fontconfig onartzen duten aplikazioek.\n\nEskema letra-tipoak behar bezala tamaina ezberdinetara eskalatu daitezke, beste aldetik biit-mapadunek kalitate baxuagoa ematen dute. Aukera hau gaitzeak sistema osoko lehenespenari eragingo dio; hau eta beste zenbait fontconfig aukera erabiltzaileek gaitu edo ezgaitu ditzakete bere erabiltzailearentzat.
 Extended_description-fi.utf-8: Oletuksena ohjelmissa, jotka tukevat fontconfigia, käytetään vain vektorifontteja.\n\nVektorifontit ovat fontteja, jotka skaalautuvat hyvin eri kokoihin. Sitä vastoin rasterifontit ovat usein huonompilaatuisia. Tämä valinta vaikuttaa järjestelmän oletusarvoon. Tätä ja monia muita fontconfigin asetuksia voidaan ottaa käyttöön tai poistaa käytöstä käyttäjätasolla.
 Extended_description-fr.utf-8: Par défaut, seules les polices de type contour (« outline ») sont utilisées par les applications qui se servent de fontconfig.\n\nCes polices gardent toutes leurs qualités dans les différentes tailles. Les polices de type « bitmap », au contraire, ont souvent une qualité moindre. Cette option affectera la valeur par défaut pour tout le système ; chaque utilisateur peut activer ou désactiver cette option ainsi que d'autres options de fontconfig.
@@ -3131,6 +3132,7 @@ Extended_description-ml.utf-8: ഫോണ്ട്കോണ്‍ഫിഗിന�
 Extended_description-nb.utf-8: Som standard er bare konturskrifttyper brukt i programmer som støtter fontconfig.\n\nKonturskrifter er skrifter som skalerer godt til forskjellige størrelser. Bitkart-skrifter har ofte dårligere kvalitet. Om dette slås på, så påvirkes systemets standardvalg. Dette og mange andre fontconfig-valg kan slås på eller av for hver bruker.
 Extended_description-nl.utf-8: Standaard worden alleen 'outline'-lettertypen gebruikt door applicaties die fontconfig ondersteunen.\n\n'Outline'-lettertypen zijn lettertypen die goed geschaald kunnen worden naar verschillende lettergroottes. Daarentegen zijn 'bitmapped'-lettertypen vaak van een lagere kwaliteit. De instelling van deze optie geldt voor het gehele systeem; deze (en vele andere) opties van fontconfig kunnen ook voor elke gebruiker afzonderlijk ingesteld worden.
 Extended_description-no.utf-8: Som standard er bare konturskrifttyper brukt i programmer som støtter fontconfig.\n\nKonturskrifter er skrifter som skalerer godt til forskjellige størrelser. Bitkart-skrifter har ofte dårligere kvalitet. Om dette slås på, så påvirkes systemets standardvalg. Dette og mange andre fontconfig-valg kan slås på eller av for hver bruker.
+Extended_description-pl.utf-8: Domyślnie, aplikacje obsługujące fontconfig używają wyłącznie fontów wektorowych.\n\nFonty wektorowe są fontami dobrze skalującymi się do wielu rozmiarów, natomiast fonty bitmapowe często mają niższą jakość. Włączenie tej opcji wpłynie na domyślne opcje systemowe: ta i wiele innych opcji fontconfig może być również włączona lub wyłączona indywidualnie przez każdego użytkownika.
 Extended_description-pt.utf-8: Por defeito, apenas os tipos de letra de contorno são utilizados por aplicações que suportem o fontconfig.\n\nTipos de letra de contorno redimensionam bem para vários tamanhos. Em contraste, tipos de letra bitmap são muitas vezes de qualidade inferior. Se activar esta opção irá afectar os valores por omissão de todo o sistema; esta e muitas outras opções do fontconfig podem ser activadas ou desactivadas individualmente por utilizador.
 Extended_description-pt_br.utf-8: Por padrão, somente fontes desenhadas são usadas por aplicações que suportam fontconfig.\n\nFontes desenhadas ("outline") são fontes que escalam bem em diversos tamanhos. Em contraste, fontes "bitmapped" são geralmente de uma qualidade menor. Habilitar esta opção afetará o padrão de todo o sistema; essa e muitas outras opções do fontconfig podem ser habilitadas ou desabilitadas para cada usuário.
 Extended_description-ro.utf-8: În mod implicit, numai fonturile vectoriale sunt folosite de aplicațiile caresuportă fontconfig.\n\nImplicit, aplicațiile care suportă fontconfig folosesc doar fonturi vectoriale. Fonturile vectoriale sunt fonturi care arată bine indiferent de mărimea caracterului, spre deosebire de fonturile bitmap nu arată bine la dimensiuni mai mari. Această opțiune afectează valoarea implicită a sistemului și poate fi activată sau deazactivată, pentru fiecare utilizator în parte, la fel ca multe alte opțiuni fontconfig.
@@ -3164,6 +3166,7 @@ Choices-ml.utf-8: നാറ്റീവ്, ഓട്ടോഹിന്റര്
 Choices-nb.utf-8: Innebygd, Autohinter, ingen
 Choices-nl.utf-8: Standaard, Autohinter, Niet optimaliseren
 Choices-no.utf-8: Innebygd, Autohinter, ingen
+Choices-pl.utf-8: natywna, autohinting, brak
 Choices-pt.utf-8: Nativo, Desenho automático (Autohinter), Nenhum
 Choices-pt_br.utf-8: Nativo, "Autohinter", Nenhum
 Choices-ro.utf-8: nativ, autohinter, nici unul
@@ -3176,18 +3179,24 @@ Choices-vi.utf-8: Sở hữu riêng, Tự động gợi ý, Không có
 Choices-zh_tw.utf-8: 原生, 自動微調, 無
 Default: Native
 Description: Font tuning method for screen (system default):
+Description-cs.utf-8: Způsob vyladění písem pro obrazovku (výchozí pro celý systém):
 Description-da.utf-8: Skriftjusteringsmetode for skærm (systemstandard):
 Description-de.utf-8: Schriftverbesserung für den Bildschirm (Systemvorgabe):
+Description-es.utf-8: Método para el ajuste de tipo de letra para pantalla (valorpredefinido del sistema):
 Description-fr.utf-8: Méthode d'amélioration des polices d'affichage par défaut du système :
 Description-nl.utf-8: Optimalisatie van weergave van lettertypen op beeldscherm (systeemstandaard):
+Description-pl.utf-8: Metoda poprawiania wyświetlania fontów na ekranie (domyślna dla systemu):
 Description-pt.utf-8: Método de optimização de tipos de letra para ecrã (predefinido):
 Description-ru.utf-8: Способ подстройки шрифтов для экрана (системная настройка по умолчанию):
 Description-sv.utf-8: Metod för justerings av typsnitt för skärm (systemstandard):
 Extended_description: Please select the preferred method for tuning fonts for screen rendering.\n\nSelect 'Native' if you mostly use DejaVu (the default in Debian) or any of the Microsoft fonts. Select 'Autohinter' if you mostly use other TrueType fonts. Select 'None' if you want blurry text.
+Extended_description-cs.utf-8: Zvolte prosím preferovaný způsob vyladění písem pro čtení na obrazovce.\n\nPoužíváte-li většinou DejaVu (v Debianu výchozí) nebo některé z písem Microsoftu, vyberte „Nativní“. „Autohinter“ je vhodný pro ostatní TrueTypová písma. Chcete-li rozmazaný text, zvolte „Nijak“.
 Extended_description-da.utf-8: Vælg venligst den foretrukne metode til skriftjustering til skærmoptegning.\n\nVælg »Indbygget« hvis du mest benytter DejaVu (standarden i Debian) eller nogen af Microsoftskrifttyperne. Vælg »Autohinter« hvis du mest benytter andre Truetype-skrifter. Vælg »Ingen« hvis du ønsker utydelig tekst.
 Extended_description-de.utf-8: Bitte wählen Sie die bevorzugte Art der Schriftverbesserung bei der Bildschirmdarstellung aus.\n\nWählen Sie »Nativ« aus, wenn Sie überwiegend DejaVu (Standard in Debian) oder Microsoft-Schriftarten verwenden. Wählen Sie »Autohinter« aus, wenn sie überwiegend True-Type-Schriftarten verwenden. Wählen Sie »Keine« aus, wenn Sie verschwommenen Text wollen.
+Extended_description-es.utf-8: Seleccione el método que prefiere para el ajuste de los tipos de letra para la reproducción en pantalla.\n\nElija «Nativo» si va a utilizar DejaVu (el predeterminado en Debian) o cualquiera de los tipos de letra de Microsoft. Elija «Autosugerido» si generalmente utiliza otros tipos de letra «TrueType». Elija «Ninguno» si desea texto difuso.
 Extended_description-fr.utf-8: Veuillez choisir la méthode que vous souhaitez utiliser pour l'amélioration de l'affichage des polices à l'écran.\n\nVeuillez choisir « Natif » si vous utilisez couramment DejaVu (par défaut dans Debian) ou une police de Microsoft. Choisissez plutôt « Automatique » si vous utilisez couramment d'autres polices « TrueType ». Choisissez « Aucun » si vous voulez du texte brut.
 Extended_description-nl.utf-8: Selecteer de gewenste methode voor de optimalisatie van de weergave van lettertypen op het beeldscherm.\n\nSelecteer "Standaard" als u voornamelijk het lettertype DejaVu (de standaard in Debian) of een van de Microsoft-lettertypen gebruikt. Selecteer "Autohinter" als u voornamelijk andere TrueType-lettertypen gebruikt. Selecteer "Niet optimaliseren" als u de voorkeur geeft aan wazige tekst.
+Extended_description-pl.utf-8: Proszę wybrać preferowaną metodę poprawiania, wyświetlanego na ekranie, wyglądu fontów.\n\nProszę wybrać: "natywna", w przypadku najczęstszego używania DejaVu (domyślna konfiguracja Debiana) lub któregoś z fontów firmy Microsoft; "autohinting" jeśli z reguły używane są inne fonty TrueType; "brak" aby wyświetlany był nieostry tekst.
 Extended_description-pt.utf-8: Por favor seleccione o método preferido para optimizar os tipos de letra para o seu desenho no ecrã.\n\nSeleccione 'Nativo' se utiliza mais o tipo de letra DejaVu (utilizado por omissão em Debian) ou quaisquer dos tipos de letra da Microsoft. Seleccione 'Desenho Automático' (Autohinter)' se utiliza maioritariamente outros tipos de letra TrueType. Selecione 'Nenhum' se desejar ter texto desfocado.
 Extended_description-ru.utf-8: Пожалуйста, выберите предпочтительный метод подстройки шрифтов при отрисовке на экране.\n\nВыберите «Native», если чаще всего используете шрифт DejaVu (используется по умолчанию в Debian) или любой из шрифтов Microsoft. Выберите «Autohinter», если чаще всего используете шрифты TrueType. Выберите «Без подстройки», если хотите видеть текст нечётким.
 Extended_description-sv.utf-8: Välj den metod som föredras för justering av skärmrendering av typsnitt.\n\nVälj 'Native' om du mestadels använder DejaVu (standard i Debian) eller någon av Microsofts typsnitt. Välj 'Autohinter' om du mestadels använder andra TrueType-typsnitt. Välj 'Ingen' om du vill ha suddig text.
@@ -3214,6 +3223,7 @@ Choices-ml.utf-8: സ്വതവേ, എല്ലായ്പോഴും, ഒ�
 Choices-nb.utf-8: Automatisk, Alltid, Aldri
 Choices-nl.utf-8: Automatisch, Altijd, Nooit
 Choices-no.utf-8: Automatisk, Alltid, Aldri
+Choices-pl.utf-8: automatyczne, zawsze, brak
 Choices-pt.utf-8: Automático, Sempre, Nunca
 Choices-pt_br.utf-8: Automático, Sempre, Nunca
 Choices-ro.utf-8: automat, mereu, niciodată
@@ -3231,7 +3241,7 @@ Description-ca.utf-8: Voleu habilitar la renderització a nivell de sub-píxels?
 Description-cs.utf-8: Povolit podpixelové vykreslování textu:
 Description-da.utf-8: Aktiver delpiksel-tekstoptegning for skærm:
 Description-de.utf-8: Subpixel-Rendering für den Bildschirm einschalten:
-Description-es.utf-8: Activar el acabado de sub-pixel para pantalla:
+Description-es.utf-8: Activar el acabado de subpixel para pantalla:
 Description-eu.utf-8: Pantailaren azpi-pixel errenderizazioa gaitu:
 Description-fi.utf-8: Otetaanko käyttöön osapikselipiirto näytöllä?
 Description-fr.utf-8: Activation du lissage de sous-pixels pour l'affichage :
@@ -3245,6 +3255,7 @@ Description-ml.utf-8: സ്ക്രീനിന് സബ്പിക്സല
 Description-nb.utf-8: Slå på subpiksel-tegning for skjerm:
 Description-nl.utf-8: Activeren van subpixel-weergave voor beeldscherm:
 Description-no.utf-8: Slå på subpiksel-tegning for skjerm:
+Description-pl.utf-8: Włączenie wygładzania podpikselowego:
 Description-pt.utf-8: Activar desenho de subpixels para o ecrã:
 Description-pt_br.utf-8: Habilitar renderização subpixel para a tela:
 Description-ro.utf-8: Activează randarea textului pe ecran la nivel de subpixel:
@@ -3258,10 +3269,10 @@ Description-zh_tw.utf-8: 在螢幕上啟用次像素渲染 (subpixel rendering)�
 Extended_description: Rendering text at a subpixel level generally makes it look a bit better on flat (LCD) screens, but can show color artifacts on CRT screens. The "Automatic" choice will enable it only if a LCD screen is detected.
 Extended_description-ar.utf-8: تصيير النص بمستوى تحت بكسلي يتسبب عامة بجعله يظهر بشكل أفضل قليلاً على شاشات LCD المسطحة، ولكنه قد لا يكون مناسباً لشاشات CRT. سيقوم الخيار `آلي` بتمكين هذا الخيار فقط إن عثر على شاشة مسطحة.
 Extended_description-ca.utf-8: El text renderitzat a nivell de sub-píxels normalment es veu millor en pantalles planes (LCD), però pot provocar efectes no desitjats en pantalles CRT. L'opció «Automàtic» només habilitarà la renderització a nivell de sub-píxels si es detecta una pantalla LCD.
-Extended_description-cs.utf-8: Vykreslování textu na podpixelové úrovni způsobí, že na plochých (LCD) obrazovkách vypadá o něco lépe, ale na CRT monitorech může zobrazovat barevné artefakty. Možnost "Automaticky" povolí podpixelové vykreslování pouze pokud bude rozpoznán LCD monitor.
+Extended_description-cs.utf-8: Vykreslování textu na podpixelové úrovni způsobí, že na plochých (LCD) obrazovkách vypadá o něco lépe, ale na CRT monitorech může zobrazovat barevné artefakty. Možnost „Automaticky“ povolí podpixelové vykreslování pouze pokud bude rozpoznán LCD monitor.
 Extended_description-da.utf-8: Optegningen af tekst på delpikselniveau får generelt teksten til at se bedre ud på fladskærme (LCD), men kan give uønskede farver i kanterne på CRT-skærme. Valget »Automatisk« vil kun aktivere delpiksel-tekstoptegningen, hvis der detekteres en LCD-skærm.
 Extended_description-de.utf-8: Text-Darstellung auf Subpixel-Ebene verbessert das Aussehen auf Flachbildschirmen (LCD), kann aber Farbfehler auf Röhrenmonitoren (CRT) verursachen. Mit der Einstellung »automatisch« wird es nur eingeschaltet, wenn ein LCD erkannt wurde.
-Extended_description-es.utf-8: El acabado de texto a nivel de subpixel generalmente hace éste que se vea mejor en las pantallas planas (LCD), pero puede presentar problemas de color en pantallas CRT. La opción «Automático» lo activará únicamente si se detecta una pantalla LCD.
+Extended_description-es.utf-8: El acabado de texto a nivel de subpixel generalmente hace que éste se vea mejor en las pantallas planas (LCD), pero puede presentar problemas de color en pantallas CRT. La opción «Automático» lo activará únicamente si se detecta una pantalla LCD.
 Extended_description-eu.utf-8: Azpi-pixel mailan testu errenderizazioak normalean berau pantaila lauetan (LCD) hobe ikustea eragiten du, baina kolore nahasmenak eragin ditzake CRT pantailetan. "Autmoatikoa" aukera LCD pantaila bat atzematen bada bakarrik gaituko da.
 Extended_description-fi.utf-8: Tekstin piirto osapikselien tasolla tekee siitä yleensä hieman paremman näköistä litteillä (LCD) näytöillä, mutta voi aiheuttaa värivirheitä CRT-näytöillä. Valinta ”Automaattinen” ottaa piirron käyttöön vain, jos löydetään LCD-näyttö.
 Extended_description-fr.utf-8: Le lissage des sous-pixels donne un meilleur rendu sur un écran plat (LCD), mais peut faire apparaître des artefacts sur les écrans traditionnels (CRT). Si vous choisissez « Automatique », ce rendu sera activé si un écran LCD est détecté.
@@ -3275,6 +3286,7 @@ Extended_description-ml.utf-8: സബ്പിക്സല്‍ ലെവലി
 Extended_description-nb.utf-8: Å tegne tekst på subpiksel-nivå gjør som regel at den ser litt bedre ut på flate (LCD-)skjermer, men kan vise fargefeil på CRT-skjermer. Valget «Automatisk» slår på slik opptegning bare hvis det oppdages en LCD-skjerm.
 Extended_description-nl.utf-8: Het genereren van tekst op subpixel-niveau zorgt over het algemeen voor een verbetering van de weergave op platte beeldschermen (LCD), maar kan op een CRT-scherm leiden tot verkleuringen. De keuze "Automatisch" zal deze optie alleen inschakelen als een LCD-scherm wordt gedetecteerd.
 Extended_description-no.utf-8: Å tegne tekst på subpiksel-nivå gjør som regel at den ser litt bedre ut på flate (LCD-)skjermer, men kan vise fargefeil på CRT-skjermer. Valget «Automatisk» slår på slik opptegning bare hvis det oppdages en LCD-skjerm.
+Extended_description-pl.utf-8: Renderowanie tekstu na poziomie podpikseli zwykle powoduje, że wygląda on nieco lepiej na płaskich ekranach (LCD), ale może powodować przekłamania kolorów na ekranach CRT. Wybranie opcji "automatycznie" włączy ją jedynie gdy zostanie wykryty ekran LCD.
 Extended_description-pt.utf-8: Desenhar o texto a um nível de subpixel torna-o em geral mais agradável para o olhar em ecrãs planos (LCD), mas poderá apresentar artefactos de cor em ecrãs CRT. A escolha "Automático" apenas activará esta opção se for detectado um ecrã LCD.
 Extended_description-pt_br.utf-8: Renderização de texto no nível do subpixel geralmente torna a exibição um pouco melhor em telas plana (LCD), mas pode exibir artefatos coloridos em telas CRT. A escolha "Automática" habilitará esta opção somente se uma tela LCD for detectada.
 Extended_description-ro.utf-8: Randarea textului la nivel de subpixel face ca textul să arate, în general, mai bine pe monitoare plate (LCD), dar generează artefacte pe monitoarele CRT. Dacă alegeți „automat” se va activa randarea la nivel de subpixel doar dacă este detectat un monitor LCD.
@@ -8698,6 +8710,49 @@ Extended_description-sk.utf-8: /etc/fstab obsahuje aspoň jednu položku, ktorá
 Extended_description-sv.utf-8: /etc/fstab innehåller åtminstone en post som är markerad som "noauto" med ett genomgångstal (eng. pass number) skilt från noll (detta innebär att filsystemet inte monteras automatiskt vid systemstart, men att det ska kontrolleras av fsck, vertyget för filsystemkontroll).\n\nFrån och med denna utgåva kommer fsck returnera en felstatus för filsystem som har ett genomgångstal skilt från noll och som inte är tillgängliga (exempelvis för att de inte kopplats in) då fsck körs. Detta kommer leda till att systemet påbörjar reparation av filsystem vid uppstart.\n\nDetta problem undviks genom att justera sådana fstab-poster för borttagbara enheter, antingen genom att sätta deras genomgångstal till noll, eller genom att lägga till flaggan "nofail". Se mount(8) för fler detaljer.
 Type: note
 Owners: util-linux/noauto-with-nonzero-passnum
+
+Name: wicd/users
+Choices: ${users}
+Description: Users to add to the netdev group:
+Description-cs.utf-8: Uživatelé přidaní do skupiny netdev:
+Description-da.utf-8: Brugere at tilføje til netdev-gruppen:
+Description-de.utf-8: Benutzer, die zur Gruppe »netdev« hinzugefügt werden sollen:
+Description-es.utf-8: Usuarios a añadir al grupo netdev:
+Description-eu.utf-8: netdev taldera gehitzeko erabiltzaileak:
+Description-fi.utf-8: Ryhmään ”netdev” lisättävät käyttäjät:
+Description-fr.utf-8: Utilisateurs à ajouter au groupe netdev :
+Description-id.utf-8: Pengguna yang ditambahkan ke grup netdev:
+Description-it.utf-8: Utenti da aggiungere al gruppo netdev:
+Description-ja.utf-8: netdev グループに追加するユーザ:
+Description-nl.utf-8: Gebruikers die aan de netdev-groep moeten worden toegevoegd:
+Description-pt.utf-8: Utilizadores a adicionar ao grupo netdev:
+Description-pt_br.utf-8: Usuários a adicionar ao grupo netdev:
+Description-ru.utf-8: Пользователи, добавляемые в группу netdev:
+Description-sr.utf-8: Кориснике које желите додати (netdev) групи:
+Description-sr@latin.utf-8: Korisnike koje želite dodati (netdev) grupi:
+Description-sv.utf-8: Användare att lägga till i gruppen netdev:
+Description-zh_cn.utf-8: 要加入 netdev 组中的用户：
+Extended_description: Users who should be able to run wicd clients need to be added to the group "netdev".
+Extended_description-cs.utf-8: Uživatele, kteří budou spouštět klienty wicd, je třeba přidat do skupiny "netdev".
+Extended_description-da.utf-8: Brugere, som skal være i stand til at køre wicd-klienter, skal tilføjes til gruppen »netdev«.
+Extended_description-de.utf-8: Benutzer, die die Clients von Wicd ausführen sollen, müssen zu der Gruppe »netdev« hinzugefügt werden.
+Extended_description-es.utf-8: Los usuarios que deberían poder ejecutar los clientes de wicd se deben añadir al grupo «netdev».
+Extended_description-eu.utf-8: Wicd bezeroak exekutatzeko gai diren erabiltzaileak "netdev" taldean gehitu behar dira.
+Extended_description-fi.utf-8: Käyttäjien tulee kuulua ryhmään ”netdev” voidakseen ajaa wicd-asiakkaita.
+Extended_description-fr.utf-8: Les utilisateurs désirant utiliser wicd doivent être ajoutés au groupe « netdev ».
+Extended_description-id.utf-8: Pengguna yang dapat menjalankan klien wicd perlu di tambahkan ke grup "netdev".
+Extended_description-it.utf-8: Gli utenti che dovrebbero essere abilitati all'esecuzione dei client wicd devono essere aggiunti al gruppo "netdev".
+Extended_description-ja.utf-8: wicd クライアントを動作可能なユーザは「netdev」グループに追加されている必要があります。
+Extended_description-nl.utf-8: Gebruikers die wicd-clients moeten kunnen uitvoeren moeten worden toegevoegd aan de groep 'netdev'.
+Extended_description-pt.utf-8: Os utilizadores com permissão de usar os clientes do wicd necessitam de ser adicionados ao grupo "netdev".
+Extended_description-pt_br.utf-8: Os usuários que devem ser capazes de executar clientes wicd precisam ser adicionados ao grupo "netdev".
+Extended_description-ru.utf-8: Пользователи, которым разрешено запускать клиентов wicd, должны быть добавлены в группу "netdev".
+Extended_description-sr.utf-8: Корисници који би требали покретати (wicd) клијенте требају бити додани"netdev" групи.
+Extended_description-sr@latin.utf-8: Korisnici koji bi trebali pokretati (wicd) klijente trebaju biti dodani"netdev" grupi.
+Extended_description-sv.utf-8: Användare som ska kunna köra wicd-klienter måste läggas till i gruppen "netdev".
+Extended_description-zh_cn.utf-8: 要运行 wicd 客户端的用户需要加入到“netdev”组中。
+Type: multiselect
+Owners: wicd/users
 
 Name: x11-common/xwrapper/actual_allowed_users
 Description: for internal use

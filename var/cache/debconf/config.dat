@@ -335,11 +335,11 @@ Owners: libssl0.9.8
 
 Name: libssl1.0.0/restart-failed
 Template: libssl1.0.0/restart-failed
-Owners: libssl1.0.0:armel
+Owners: libssl1.0.0, libssl1.0.0:armel
 
 Name: libssl1.0.0/restart-services
 Template: libssl1.0.0/restart-services
-Owners: libssl1.0.0:armel
+Owners: libssl1.0.0, libssl1.0.0:armel
 
 Name: locales/default_environment_locale
 Template: locales/default_environment_locale
@@ -502,6 +502,14 @@ Owners: udev
 Name: util-linux/noauto-with-nonzero-passnum
 Template: util-linux/noauto-with-nonzero-passnum
 Owners: util-linux
+
+Name: wicd/users
+Template: wicd/users
+Value: 
+Owners: wicd-daemon
+Flags: seen
+Variables:
+ users = 
 
 Name: x11-common/xwrapper/actual_allowed_users
 Template: x11-common/xwrapper/actual_allowed_users

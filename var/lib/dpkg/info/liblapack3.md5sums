@@ -1,0 +1,5 @@
+ba37d98176914e21bb6d2010eeb5a3e7  usr/lib/lapack/liblapack.so.3.0
+a02352970f1854f868b33fde8244098b  usr/share/doc/liblapack3/README.gz
+510e131df34bf331d1404413d5ce779c  usr/share/doc/liblapack3/changelog.Debian.gz
+ffcf0242c2b5c5624f4bbd6a4797c17b  usr/share/doc/liblapack3/copyright
+a74a496835554ddf4054f9527aa31c7b  usr/share/doc/liblapack3/test_results.gz

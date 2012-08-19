@@ -1,0 +1,6 @@
+#! /bin/sh
+set -e
+if [ "$1" = rtupdate ]; then
+	pyclean -p wicd-daemon /usr/share/wicd/daemon
+	pycompile -p wicd-daemon  /usr/share/wicd/daemon
+fi

@@ -1,10 +1,11 @@
-TARGETS = rsyslog ctxusbd bootlogs killprocs dbus single ntp rsync ssh network-manager rmnologin rc.local
+TARGETS = rsyslog ctxusbd killprocs bootlogs dbus single rsync ntp ssh first-boot-config.sh wicd rmnologin rc.local
 INTERACTIVE =
 dbus: rsyslog
 single: killprocs bootlogs
-ntp: rsyslog
 rsync: rsyslog
+ntp: rsyslog
 ssh: rsyslog
-network-manager: dbus rsyslog
-rmnologin: rsyslog ctxusbd network-manager dbus bootlogs ntp rsync ssh
-rc.local: rsyslog ctxusbd network-manager dbus bootlogs ntp rsync ssh
+first-boot-config.sh: rsyslog
+wicd: dbus
+rmnologin: rsyslog ctxusbd wicd dbus bootlogs rsync ntp ssh first-boot-config.sh
+rc.local: rsyslog ctxusbd wicd dbus bootlogs rsync ntp ssh first-boot-config.sh

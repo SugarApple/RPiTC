@@ -1,0 +1,23 @@
+
+Start-Date: 2012-08-17  19:32:49
+Install: libxmmsclient6:armel (0.8+dfsg-4, automatic), libaudclient2:armel (3.2.3-1, automatic), conky-std:armel (1.9.0-2), conky:armel (1.9.0-2), liblua5.1-0:armel (5.1.5-2, automatic)
+End-Date: 2012-08-17  19:33:22
+
+Start-Date: 2012-08-17  21:01:49
+Commandline: apt-get upgrade
+Upgrade: libglapi-mesa:armel (8.0.3-1, 8.0.4-1), libgtk2.0-common:armel (2.24.10-1, 2.24.10-2), libkrb5-3:armel (1.10.1+dfsg-1, 1.10.1+dfsg-2), ttf-dejavu-core:armel (2.33-2, 2.33-3), libkrb5support0:armel (1.10.1+dfsg-1, 1.10.1+dfsg-2), vim-common:armel (7.3.547-3, 7.3.547-4), libavutil51:armel (0.8.3-4, 0.8.3-6), libwrap0:armel (7.6.q-23, 7.6.q-24), libcomerr2:armel (1.42.4-3, 1.42.5-1), qdbus:armel (4.8.2-1, 4.8.2-2), krb5-locales:armel (1.10.1+dfsg-1, 1.10.1+dfsg-2), libbz2-1.0:armel (1.0.6-3, 1.0.6-4), libqt4-test:armel (4.8.2-1, 4.8.2-2), libqt4-dbus:armel (4.8.2-1, 4.8.2-2), libglu1-mesa:armel (8.0.3-1, 8.0.4-1), xserver-common:armel (1.12.1.902-1, 1.12.3-1), libsasl2-modules:armel (2.1.25.dfsg1-4+b1, 2.1.25.dfsg1-5), libqt4-core:armel (4.8.2-1, 4.8.2-2), libfontconfig1:armel (2.9.0-6, 2.9.0-7), fontconfig-config:armel (2.9.0-6, 2.9.0-7), xserver-xorg-core:armel (1.12.1.902-1, 1.12.3-1), e2fsprogs:armel (1.42.4-3, 1.42.5-1), libk5crypto3:armel (1.10.1+dfsg-1, 1.10.1+dfsg-2), tcpd:armel (7.6.q-23, 7.6.q-24), vim-tiny:armel (7.3.547-3, 7.3.547-4), fontconfig:armel (2.9.0-6, 2.9.0-7), libqtcore4:armel (4.8.2-1, 4.8.2-2), libxml2:armel (2.8.0+dfsg1-4, 2.8.0+dfsg1-5), libasound2:armel (1.0.25-3, 1.0.25-4), e2fslibs:armel (1.42.4-3, 1.42.5-1), libqt4-xml:armel (4.8.2-1, 4.8.2-2), vim:armel (7.3.547-3, 7.3.547-4), libqt4-network:armel (4.8.2-1, 4.8.2-2), libgl1-mesa-dri:armel (8.0.3-1, 8.0.4-1), libqtgui4:armel (4.8.2-1, 4.8.2-2), libavcodec53:armel (0.8.3-4, 0.8.3-6), vim-runtime:armel (7.3.547-3, 7.3.547-4), libgl1-mesa-glx:armel (8.0.3-1, 8.0.4-1), libsasl2-2:armel (2.1.25.dfsg1-4+b1, 2.1.25.dfsg1-5), openssl:armel (1.0.1c-3, 1.0.1c-4), libss2:armel (1.42.4-3, 1.42.5-1), libgssapi-krb5-2:armel (1.10.1+dfsg-1, 1.10.1+dfsg-2), libqt4-script:armel (4.8.2-1, 4.8.2-2), iptables:armel (1.4.14-2, 1.4.14-3), libgtk2.0-0:armel (2.24.10-1, 2.24.10-2), libssl1.0.0:armel (1.0.1c-3, 1.0.1c-4)
+End-Date: 2012-08-17  21:09:46
+
+Start-Date: 2012-08-17  21:14:39
+Install: python-support:armel (1.0.15, automatic), mime-support:armel (3.52-1, automatic), wireless-tools:armel (30~pre9-8, automatic), libgfortran3:armel (4.7.1-2, automatic), python-dbus-dev:armel (1.1.1-1, automatic), psmisc:armel (22.19-1, automatic), python2.7:armel (2.7.3~rc2-2.1, automatic), python-minimal:armel (2.7.3~rc2-1, automatic), python2.7-minimal:armel (2.7.3~rc2-2.1, automatic), python-gi:armel (3.2.2-1, automatic), python-numpy:armel (1.6.2-1, automatic), libblas3:armel (1.2.20110419-5), python-glade2:armel (2.24.0-3, automatic), python:armel (2.7.3~rc2-1, automatic), gir1.2-glib-2.0:armel (1.32.1-1, automatic), python-dbus:armel (1.1.1-1, automatic), libgirepository-1.0-1:armel (1.32.1-1, automatic), wicd:armel (1.7.2.4-2), libblas3gf:armel (1.2.20110419-5, automatic), liblapack3gf:armel (3.4.1-5, automatic), python-wicd:armel (1.7.2.4-2, automatic), liblapack3:armel (3.4.1-5), python-gobject-2:armel (2.28.6-10, automatic), wicd-daemon:armel (1.7.2.4-2, automatic), wicd-gtk:armel (1.7.2.4-2, automatic), python-gtk2:armel (2.24.0-3, automatic), python-cairo:armel (1.8.8-1+b2, automatic), python-gobject:armel (3.2.2-1, automatic)
+End-Date: 2012-08-17  21:20:36
+
+Start-Date: 2012-08-17  21:22:25
+Commandline: apt-get remove --purge network-manager
+Purge: network-manager:armel (0.9.4.0-5)
+End-Date: 2012-08-17  21:22:51
+
+Start-Date: 2012-08-17  21:23:20
+Commandline: apt-get autoremove
+Remove: libpolkit-gobject-1-0:armel (0.105-1), libnm-util2:armel (0.9.4.0-5), libnl-route-3-200:armel (3.2.7-4), libnm-glib4:armel (0.9.4.0-5), libgudev-1.0-0:armel (175-3.1)
+End-Date: 2012-08-17  21:23:28

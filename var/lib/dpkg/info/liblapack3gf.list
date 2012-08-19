@@ -1,0 +1,10 @@
+/.
+/usr
+/usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/liblapack3gf
+/usr/share/doc
+/usr/share/doc/liblapack3gf
+/usr/share/doc/liblapack3gf/changelog.Debian.gz
+/usr/share/doc/liblapack3gf/copyright

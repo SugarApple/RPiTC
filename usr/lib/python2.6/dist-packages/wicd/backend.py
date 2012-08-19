@@ -1,0 +1,1 @@
+../../../../share/pyshared/wicd/backend.py

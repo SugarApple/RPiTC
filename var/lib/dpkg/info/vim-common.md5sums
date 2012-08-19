@@ -1,9 +1,9 @@
 ad9f0ec4783a603ed440863c1a7aee30  usr/bin/helpztags
-6e544695cc0ee30aa4e252bcfa3bdcb2  usr/bin/xxd
+66409bfc8b8d890017991d163c3c8fac  usr/bin/xxd
 5e1366e8d7404c25fd837e0e34efe34b  usr/lib/mime/packages/vim-common
 62484f0c973a80abaa83ff9e409ca541  usr/share/doc/vim-common/NEWS.Debian.gz
 6526c81a17c68d8a6d514ffa50742fed  usr/share/doc/vim-common/README.Debian
-cd0200d93a95828af2ffc6f1b339d807  usr/share/doc/vim-common/changelog.Debian.gz
+d52f2284dc91de2060107203333d3c87  usr/share/doc/vim-common/changelog.Debian.gz
 4065ea08a34883bda7f6be75c09ef224  usr/share/doc/vim-common/copyright
 850070014c115c3db551cfa731495e61  usr/share/man/fr/man1/vim.1.gz
 3969fcac9d4a08833fc56f99987bd77a  usr/share/man/fr/man1/vimdiff.1.gz

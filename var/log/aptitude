@@ -377,3 +377,60 @@ Will install 4 packages, and remove 0 packages.
 ===============================================================================
 
 Log complete.
+Aptitude 0.6.8: log report
+Fri, Aug 17 2012 19:32:44 +0000
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 5 packages, and remove 0 packages.
+1807 kB of disk space will be used
+===============================================================================
+[INSTALL, DEPENDENCIES] libaudclient2:armel
+[INSTALL, DEPENDENCIES] liblua5.1-0:armel
+[INSTALL, DEPENDENCIES] libxmmsclient6:armel
+[INSTALL] conky:armel
+[INSTALL] conky-std:armel
+===============================================================================
+
+Log complete.
+Aptitude 0.6.8: log report
+Fri, Aug 17 2012 21:14:30 +0000
+
+IMPORTANT: this log only lists intended actions; actions which fail due to
+dpkg problems may not be completed.
+
+Will install 28 packages, and remove 0 packages.
+49.1 MB of disk space will be used
+===============================================================================
+[INSTALL, DEPENDENCIES] gir1.2-glib-2.0:armel
+[INSTALL, DEPENDENCIES] libblas3gf:armel
+[INSTALL, DEPENDENCIES] libgfortran3:armel
+[INSTALL, DEPENDENCIES] libgirepository-1.0-1:armel
+[INSTALL, DEPENDENCIES] liblapack3gf:armel
+[INSTALL, DEPENDENCIES] mime-support:armel
+[INSTALL, DEPENDENCIES] psmisc:armel
+[INSTALL, DEPENDENCIES] python:armel
+[INSTALL, DEPENDENCIES] python-cairo:armel
+[INSTALL, DEPENDENCIES] python-dbus:armel
+[INSTALL, DEPENDENCIES] python-dbus-dev:armel
+[INSTALL, DEPENDENCIES] python-gi:armel
+[INSTALL, DEPENDENCIES] python-glade2:armel
+[INSTALL, DEPENDENCIES] python-gobject:armel
+[INSTALL, DEPENDENCIES] python-gobject-2:armel
+[INSTALL, DEPENDENCIES] python-gtk2:armel
+[INSTALL, DEPENDENCIES] python-minimal:armel
+[INSTALL, DEPENDENCIES] python-numpy:armel
+[INSTALL, DEPENDENCIES] python-support:armel
+[INSTALL, DEPENDENCIES] python-wicd:armel
+[INSTALL, DEPENDENCIES] python2.7:armel
+[INSTALL, DEPENDENCIES] python2.7-minimal:armel
+[INSTALL, DEPENDENCIES] wicd-daemon:armel
+[INSTALL, DEPENDENCIES] wicd-gtk:armel
+[INSTALL, DEPENDENCIES] wireless-tools:armel
+[INSTALL] libblas3:armel
+[INSTALL] liblapack3:armel
+[INSTALL] wicd:armel
+===============================================================================
+
+Log complete.

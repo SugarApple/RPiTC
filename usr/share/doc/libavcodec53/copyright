@@ -92,3 +92,7 @@ The rest of the code is licensed under the GNU LGPL:
 On Debian GNU/Linux systems, the complete text of the GNU General Public
 License can be found in `/usr/share/common-licenses/GPL' and the text of the
 GNU Lesser General Public License is in `/usr/share/common-licenses/LGPL'.
+
+Note: Because the libavcodec-extra-53 package links against libraries that
+are licensed under Apache License 2.0, it is distributed under the GPL
+version 3. The libav-dbg package does also contain its debug symbols.

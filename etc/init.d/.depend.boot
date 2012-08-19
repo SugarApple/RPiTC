@@ -1,4 +1,4 @@
-TARGETS = mountkernfs.sh fake-hwclock hostname.sh udev mountdevsubfs.sh keymap.sh keyboard-setup console-setup networking mountall.sh mountoverflowtmp urandom mountnfs.sh mountnfs-bootclean.sh checkroot.sh mountall-bootclean.sh procps udev-mtab mtab.sh checkfs.sh bootmisc.sh x11-common kbd kmod
+TARGETS = mountkernfs.sh fake-hwclock hostname.sh udev mountdevsubfs.sh keymap.sh keyboard-setup console-setup networking mountall.sh mountoverflowtmp mountnfs.sh mountnfs-bootclean.sh checkroot.sh urandom mtab.sh checkfs.sh procps bootmisc.sh mountall-bootclean.sh udev-mtab kbd kmod x11-common
 INTERACTIVE = udev keymap.sh keyboard-setup console-setup checkroot.sh checkfs.sh kbd
 udev: mountkernfs.sh
 mountdevsubfs.sh: mountkernfs.sh udev
@@ -8,16 +8,16 @@ console-setup: mountall.sh mountoverflowtmp mountnfs.sh mountnfs-bootclean.sh kb
 networking: mountkernfs.sh mountall.sh mountoverflowtmp
 mountall.sh: checkfs.sh
 mountoverflowtmp: mountall-bootclean.sh
-urandom: mountall.sh mountoverflowtmp
 mountnfs.sh: mountall.sh mountoverflowtmp networking
 mountnfs-bootclean.sh: mountall.sh mountoverflowtmp mountnfs.sh
-checkroot.sh: fake-hwclock mountdevsubfs.sh hostname.sh keymap.sh keyboard-setup
-mountall-bootclean.sh: mountall.sh
-procps: mountkernfs.sh mountall.sh mountoverflowtmp udev
-udev-mtab: udev mountall.sh mountoverflowtmp
+checkroot.sh: fake-hwclock keyboard-setup mountdevsubfs.sh hostname.sh keymap.sh
+urandom: mountall.sh mountoverflowtmp
 mtab.sh: checkroot.sh
 checkfs.sh: checkroot.sh mtab.sh
+procps: mountkernfs.sh mountall.sh mountoverflowtmp udev
 bootmisc.sh: mountall.sh mountoverflowtmp mountnfs.sh mountnfs-bootclean.sh udev
-x11-common: mountall.sh mountoverflowtmp mountnfs.sh mountnfs-bootclean.sh
+mountall-bootclean.sh: mountall.sh
+udev-mtab: udev mountall.sh mountoverflowtmp
 kbd: mountall.sh mountoverflowtmp mountnfs.sh mountnfs-bootclean.sh
 kmod: checkroot.sh
+x11-common: mountall.sh mountoverflowtmp mountnfs.sh mountnfs-bootclean.sh

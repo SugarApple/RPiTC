@@ -1,6 +1,6 @@
-4d35029c15a3831ee2b5b34a103468eb  usr/lib/arm-linux-gnueabi/libQtTest.so.4.8.2
+87239bce01317032db3a476f63a4d2c1  usr/lib/arm-linux-gnueabi/libQtTest.so.4.8.2
 411080a56ff917a5a1aa08c98acae354  usr/share/doc/libqt4-test/LGPL_EXCEPTION.txt
-2e348e51edcb02a86019b2f51cfb8c0d  usr/share/doc/libqt4-test/changelog.Debian.gz
+29e305311916aa31c7d6f72c9f8c7ba0  usr/share/doc/libqt4-test/changelog.Debian.gz
 99d380476d9154b80ffdd772a32eac0a  usr/share/doc/libqt4-test/changelog.gz
 6554abaa9d7013bd3a7b13294c73b55c  usr/share/doc/libqt4-test/copyright
 b7551efc776b341acaca421386ce6012  usr/share/lintian/overrides/libqt4-test

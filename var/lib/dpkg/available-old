@@ -6,10 +6,10 @@ Maintainer: Marco d'Itri <md@linux.it>
 Architecture: armel
 Multi-Arch: foreign
 Source: tcp-wrappers
-Version: 7.6.q-23
+Version: 7.6.q-24
 Replaces: libwrap0 (<< 7.6-8)
 Depends: libc6 (>= 2.4), libwrap0 (>= 7.6-4~)
-Size: 28048
+Size: 28058
 Description: Wietse Venema's TCP wrapper utilities
  Wietse Venema's network logger, also known as TCPD or LOG_TCP.
  .
@@ -43,15 +43,15 @@ Description: Debian configuration management system
 Package: xserver-common
 Priority: optional
 Section: x11
-Installed-Size: 1490
+Installed-Size: 1506
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: all
 Source: xorg-server
-Version: 2:1.12.1.902-1
+Version: 2:1.12.3-1
 Replaces: xserver-xorg-core (<< 2:1.5.2)
 Depends: x11-common, xkb-data, x11-xkb-utils
 Recommends: xfonts-base, xauth
-Size: 1382164
+Size: 1386692
 Description: common files used by various X servers
  This package provides files necessary for all X.Org based X servers.
 
@@ -119,18 +119,18 @@ Description: X11 Display Manager Control Protocol library
 Package: libgl1-mesa-dri
 Priority: optional
 Section: libs
-Installed-Size: 27446
+Installed-Size: 27458
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: mesa
-Version: 8.0.3-1
+Version: 8.0.4-1
 Replaces: libgl1-mesa-dri-experimental (<< 7.11.1), xlibmesa-dri (<< 1:7.0.0)
 Depends: libc6 (>= 2.4), libdrm-nouveau1a (>= 2.4.23), libdrm-radeon1 (>= 2.4.17), libdrm2 (>= 2.4.3), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.3.0)
 Suggests: libglide3
 Breaks: libgl1-mesa-dri-experimental (<< 7.11.1), libgl1-mesa-glx (<< 7.10.2-4), libgl1-mesa-glx-no-multiarch, xserver-xorg-core (<< 2:1.10.2-2), xserver-xorg-core-no-multiarch
 Conflicts: xlibmesa-dri (<< 1:7.0.0)
-Size: 9919522
+Size: 9924690
 Description: free implementation of the OpenGL API -- DRI modules
  This version of Mesa provides GLX and DRI capabilities: it is capable of
  both direct and indirect rendering.  For direct rendering, it can use DRI
@@ -354,11 +354,11 @@ Installed-Size: 1554
 Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
-Version: 2.8.0+dfsg1-4
-Depends: libc6 (>= 2.7), liblzma5 (>= 5.1.1alpha+20110809), zlib1g (>= 1:1.2.3.3)
+Version: 2.8.0+dfsg1-5
+Depends: libc6 (>= 2.7), liblzma5 (>= 5.1.1alpha+20120614), zlib1g (>= 1:1.2.3.3)
 Pre-Depends: multiarch-support
 Recommends: xml-core
-Size: 823988
+Size: 824866
 Description: GNOME XML library
  XML is a metalanguage to let you design your own markup language.
  A regular markup language defines a way to describe information in
@@ -441,16 +441,15 @@ Description: Utilities for .desktop files
 Package: libssl1.0.0
 Priority: important
 Section: libs
-Installed-Size: 2321
+Installed-Size: 2322
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: openssl
-Version: 1.0.1c-3
+Version: 1.0.1c-4
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
 Pre-Depends: multiarch-support
-Breaks: openssh-client (<< 1:5.9p1-4), openssh-server (<< 1:5.9p1-4)
-Size: 1073834
+Size: 1074126
 Description: SSL shared libraries
  libssl and libcrypto shared libraries needed by programs like
  apache-ssl, telnet-ssl and openssh.
@@ -599,16 +598,16 @@ Homepage: http://directory.fsf.org/project/gdbm/
 Package: libavcodec53
 Priority: optional
 Section: libs
-Installed-Size: 19818
+Installed-Size: 19819
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.3-4
-Depends: libavutil51 (>= 6:0.8.3-4), libc6 (>= 2.7), libdirac-encoder0, libgcc1 (>= 1:4.4.0), libgsm1 (>= 1.0.13), libmp3lame0, libopenjpeg2, libschroedinger-1.0-0 (>= 1.0.0), libspeex1 (>= 1.2~beta3-1), libtheora0 (>= 1.0), libva1 (>> 1.0.15~), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx1 (>= 1.0.0), libx264-123, libxvidcore4 (>= 1.2.2), zlib1g (>= 1:1.2.0)
+Version: 6:0.8.3-6
+Depends: libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.7), libdirac-encoder0, libgcc1 (>= 1:4.4.0), libgsm1 (>= 1.0.13), libmp3lame0, libopenjpeg2, libschroedinger-1.0-0 (>= 1.0.0), libspeex1 (>= 1.2~beta3-1), libtheora0 (>= 1.0), libva1 (>> 1.0.15~), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx1 (>= 1.0.0), libx264-123, libxvidcore4 (>= 1.2.2), zlib1g (>= 1:1.2.0)
 Pre-Depends: multiarch-support
 Breaks: libavcodec-extra-53, mplayer (<< 2:1.0~rc4.dfsg1+svn34540-1~)
-Size: 9689698
+Size: 9691858
 Description: Libav codec library
  Libav is a complete, cross-platform solution to decode, encode, record,
  convert and stream audio and video.
@@ -827,10 +826,10 @@ Installed-Size: 466
 Maintainer: Keith Packard <keithp@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 2.9.0-6
+Version: 2.9.0-7
 Replaces: fontconfig-config (<< 2.5.93-1)
 Depends: libc6 (>= 2.4), libfontconfig1 (>= 2.9.0), fontconfig-config
-Size: 348768
+Size: 349628
 Description: generic font configuration library - support binaries
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -949,19 +948,19 @@ Homepage: http://w1.fi/wpa_supplicant/
 Package: libqtgui4
 Priority: optional
 Section: libs
-Installed-Size: 10623
+Installed-Size: 10624
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: qt4-x11
-Version: 4:4.8.2-1
+Version: 4:4.8.2-2
 Replaces: libqt4-core (<< 4.0.1-3), libqt4-designer (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0), qt4-designer (<< 4.1.4)
-Depends: fontconfig, libaudio2, libc6 (>= 2.11), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libice6 (>= 1:1.0.0), libjpeg8 (>= 8c), libmng1 (>= 1.0.10), libpng12-0 (>= 1.2.13-4), libqtcore4 (= 4:4.8.2-1), libsm6, libstdc++6 (>= 4.4.0), libtiff4 (>> 3.9.5-3~), libx11-6, libxext6, libxrender1, zlib1g (>= 1:1.1.4)
+Depends: fontconfig, libaudio2, libc6 (>= 2.11), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libice6 (>= 1:1.0.0), libjpeg8 (>= 8c), libmng1 (>= 1.0.10), libpng12-0 (>= 1.2.13-4), libqtcore4 (= 4:4.8.2-2), libsm6, libstdc++6 (>= 4.4.0), libtiff4 (>> 3.9.5-3~), libx11-6, libxext6, libxrender1, zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
 Recommends: libcups2
 Suggests: qt4-qtconfig
 Breaks: libqt4-core (<< 4.0.1-3), libqt4-designer (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0), qt4-designer (<< 4.1.4)
-Size: 4773500
+Size: 4773740
 Description: Qt 4 GUI module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -995,16 +994,17 @@ Homepage: http://www.speex.org/
 Package: libgssapi-krb5-2
 Priority: standard
 Section: libs
-Installed-Size: 276
+Installed-Size: 277
 Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-1
-Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.10.1+dfsg-1), libkrb5support0 (>= 1.7dfsg~beta2)
+Version: 1.10.1+dfsg-2
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.10.1+dfsg-2), libkrb5support0 (>= 1.7dfsg~beta2)
 Pre-Depends: multiarch-support
 Suggests: krb5-doc, krb5-user
-Size: 130846
+Breaks: libgssglue1 (<< 0.2-2)
+Size: 131280
 Description: MIT Kerberos runtime libraries - krb5 GSS-API Mechanism
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a
@@ -1268,6 +1268,35 @@ Description: X.Org X server -- Voodoo display driver
  .
  This package is built from the X.org xf86-video-voodoo driver module.
 
+Package: conky-std
+Priority: optional
+Section: utils
+Installed-Size: 1085
+Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Architecture: armel
+Source: conky
+Version: 1.9.0-2
+Replaces: conky-all, conky-cli
+Depends: libaudclient2 (>= 2.3), libc6 (>= 2.8), libcairo2 (>= 1.8.0), libcurl3-gnutls (>= 7.16.2), libdbus-glib-1-2 (>= 0.78), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libimlib2, libiw30 (>= 30~pre1), liblua5.1-0, libncurses5 (>= 5.5-5~), libtinfo5, libx11-6, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxft2 (>> 2.1.1), libxml2 (>= 2.7.4), libxmmsclient6 (>= 0.7DrNo)
+Suggests: apcupsd, audacious, moc, mpd, xmms2
+Conflicts: conky-all, conky-cli
+Size: 390612
+Description: highly configurable system monitor (default version)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This package should be a good compromise for most users that do not
+ need special features.
+ It includes the following support:
+ .
+ X11, XDamage, XDBE, Xft, MPD, MOC, math, hddtemp, portmon, RSS,
+ Weather, wireless, Imlib2, ALSA mixer, apcupsd, I/O stats, argb, Lua
+ and the cairo and imlib2 lua bindings, Audacious, and XMMS2.
+Homepage: http://conky.sourceforge.net/
+
 Package: install-info
 Priority: important
 Section: doc
@@ -1467,14 +1496,14 @@ Description: sends desktop notifications to a notification daemon
 Package: vim-common
 Priority: important
 Section: editors
-Installed-Size: 286
+Installed-Size: 287
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: vim
-Version: 2:7.3.547-3
+Version: 2:7.3.547-4
 Depends: libc6 (>= 2.4)
 Recommends: vim | vim-gnome | vim-gtk | vim-athena | vim-nox | vim-tiny
-Size: 164048
+Size: 163286
 Description: Vi IMproved - Common files
  Vim is an almost compatible version of the UNIX editor Vi.
  .
@@ -1537,13 +1566,13 @@ Homepage: http://www.lxde.org/
 Package: openssl
 Priority: optional
 Section: utils
-Installed-Size: 1036
+Installed-Size: 1037
 Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armel
-Version: 1.0.1c-3
+Version: 1.0.1c-4
 Depends: libc6 (>= 2.7), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4)
 Suggests: ca-certificates
-Size: 701634
+Size: 701802
 Description: Secure Socket Layer (SSL) binary and related cryptographic tools
  This package contains the openssl binary and related tools.
  .
@@ -1859,13 +1888,13 @@ Installed-Size: 3760
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Source: xorg-server
-Version: 2:1.12.1.902-1
+Version: 2:1.12.3-1
 Provides: xorg-input-abi-16, xorg-video-abi-12
-Depends: xserver-common (>= 2:1.12.1.902-1), keyboard-configuration, udev (>= 149), libaudit0 (>= 1.7.13), libc6 (>= 2.8), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.21.6), libselinux1 (>= 2.0.82), libudev0 (>= 154), libxau6, libxdmcp6, libxfont1 (>= 1:1.4.2)
+Depends: xserver-common (>= 2:1.12.3-1), keyboard-configuration, udev (>= 149), libaudit0 (>= 1.7.13), libc6 (>= 2.8), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.21.6), libselinux1 (>= 2.0.82), libudev0 (>= 154), libxau6, libxdmcp6, libxfont1 (>= 1:1.4.2)
 Recommends: libgl1-mesa-dri (>= 7.10.2-4)
 Suggests: xfonts-100dpi | xfonts-75dpi, xfonts-scalable
 Breaks: libgl1-mesa-dri (<< 7.10.2-4), libgl1-mesa-dri-experimental (<< 7.10.2-4), xserver-xorg-input, xserver-xorg-input-2, xserver-xorg-input-2.1, xserver-xorg-input-4, xserver-xorg-input-7, xserver-xorg-input-joystick (<= 1:1.5.0-3), xserver-xorg-input-synaptics (<= 1.2.2-1), xserver-xorg-input-tslib (<= 0.0.6-3), xserver-xorg-input-vmmouse (<= 1:12.6.5-4), xserver-xorg-input-wacom (<= 0.10.5+20100415-1), xserver-xorg-video, xserver-xorg-video-1.0, xserver-xorg-video-1.9, xserver-xorg-video-2, xserver-xorg-video-4, xserver-xorg-video-5, xserver-xorg-video-6, xserver-xorg-video-cyrix (<= 1:1.1.0-8), xserver-xorg-video-i810 (<< 2:2.4), xserver-xorg-video-imstt (<= 1:1.1.0-7), xserver-xorg-video-nsc (<= 1:2.8.3-4), xserver-xorg-video-sunbw2 (<= 1:1.1.0-5), xserver-xorg-video-v4l (<< 1:0.2.0), xserver-xorg-video-vga (<= 1:4.1.0-8)
-Size: 1632238
+Size: 1630290
 Description: Xorg X server - core server
  The Xorg X server is an X server for several architectures and operating
  systems, which is derived from the XFree86 4.x series of X servers.
@@ -1886,13 +1915,13 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-1
+Version: 1.10.1+dfsg-2
 Depends: libc6 (>= 2.4), libkeyutils1, libkrb5support0 (>= 1.7dfsg~beta2)
 Pre-Depends: multiarch-support
 Suggests: krb5-doc, krb5-user
 Breaks: libgssapi-krb5-2 (<= 1.10+dfsg~alpha1), libkrb5-3 (<= 1.8~aa)
 Conflicts: libkrb53
-Size: 109822
+Size: 110420
 Description: MIT Kerberos runtime libraries - Crypto Library
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a
@@ -2062,6 +2091,28 @@ Description: Boost C++ Libraries development files
  regex, serialization, signals, system, test, thread, timer, and wave.
 Homepage: http://www.boost.org/
 
+Package: libelfg0
+Priority: optional
+Section: libs
+Installed-Size: 176
+Maintainer: Alex Pennace <alex@pennace.org>
+Architecture: armel
+Source: libelf
+Version: 0.8.13-3
+Depends: libc6 (>= 2.4)
+Conflicts: libelf, libelf0 (<= 0.6.4-5)
+Size: 55524
+Description: an ELF object file access library
+ libelf provides routines to access and manipulate ELF object
+ files. It is still not complete, but is required for a number of programs,
+ such as Eli (a state of the art compiler generation system), and Elk (the
+ Extension Language Kit - an implementation of the Scheme programming
+ language.)
+ .
+ This shared library may be needed by pre-packaged programs. To compile
+ programs with this library, you will need to install the libelfg0-dev
+ package as well.
+
 Package: libudev0
 Priority: important
 Section: libs
@@ -2085,11 +2136,11 @@ Maintainer: Keith Packard <keithp@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: fontconfig
-Version: 2.9.0-6
+Version: 2.9.0-7
 Provides: libfontconfig
-Depends: libc6 (>= 2.7), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.2.1), zlib1g (>= 1:1.1.4), fontconfig-config (= 2.9.0-6)
+Depends: libc6 (>= 2.7), libexpat1 (>= 2.0.1), libfreetype6 (>= 2.2.1), zlib1g (>= 1:1.1.4), fontconfig-config (= 2.9.0-7)
 Pre-Depends: multiarch-support
-Size: 287018
+Size: 287054
 Description: generic font configuration library - runtime
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -2676,18 +2727,18 @@ Homepage: http://gstreamer.freedesktop.org
 Package: libgtk2.0-0
 Priority: optional
 Section: libs
-Installed-Size: 5367
+Installed-Size: 5337
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gtk+2.0
-Version: 2.24.10-1
+Version: 2.24.10-2
 Provides: gtk2.0-binver-2.10.0
-Depends: libgtk2.0-common, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.6.4-6.1), libcomerr2 (>= 1.01), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.30.0), libgnutls26 (>= 2.12.6.1-0), libgssapi-krb5-2 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libpango1.0-0 (>= 1.28.3), libx11-6, libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6, libxinerama1, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), shared-mime-info
+Depends: libgtk2.0-common, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.6.4-6.1), libcomerr2 (>= 1.01), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgssapi-krb5-2 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libpango1.0-0 (>= 1.28.3), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6, libxinerama1, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), shared-mime-info
 Pre-Depends: multiarch-support
 Recommends: hicolor-icon-theme, libgtk2.0-bin
 Suggests: librsvg2-common, gvfs
-Size: 2488200
+Size: 1901154
 Description: GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -2910,6 +2961,28 @@ Description: block device id library
  The device mounting library, used by mount and mount helpers.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
 
+Package: libqtcore4
+Priority: optional
+Section: libs
+Installed-Size: 8602
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.2-2
+Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0~beta1-1)
+Depends: libc6 (>= 2.9), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.22.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: libthai0, libicu48
+Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-gui (<< 4.4.0~beta1-1)
+Size: 3053516
+Description: Qt 4 core module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtCore module contains core non-GUI functionality.
+Homepage: http://qt-project.org/
+
 Package: obconf
 Priority: optional
 Section: x11
@@ -2996,13 +3069,13 @@ Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: mesa
-Version: 8.0.3-1
+Version: 8.0.4-1
 Replaces: libglu1
 Provides: libglu1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgl1-mesa-glx | libgl1, libstdc++6 (>= 4.3.0)
 Pre-Depends: multiarch-support
 Conflicts: libglu1, mesag3 (<< 5.0.0-1), xlibmesa3
-Size: 206570
+Size: 206670
 Description: Mesa OpenGL utility library (GLU)
  GLU offers simple interfaces for building mipmaps; checking for the
  presence of extensions in the OpenGL (or other libraries which follow
@@ -3356,12 +3429,12 @@ Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: alsa-lib
-Version: 1.0.25-3
+Version: 1.0.25-4
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Suggests: libasound2-plugins (>= 1.0.18)
 Breaks: bluez-alsa (<= 4.94-2), libasound2-plugin-equal (<= 0.6-1), libasound2-plugins (<< 1.0.24)
-Size: 411510
+Size: 411386
 Description: shared library for ALSA applications
  This package contains the ALSA library and its standard plugins, as well
  as the required configuration files.
@@ -3539,11 +3612,11 @@ Section: editors
 Installed-Size: 1593
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: armel
-Version: 2:7.3.547-3
+Version: 2:7.3.547-4
 Provides: editor
-Depends: vim-common (= 2:7.3.547-3), vim-runtime (= 2:7.3.547-3), libacl1 (>= 2.2.51-8), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libgpm2 (>= 1.20.4), libselinux1 (>= 1.32), libtinfo5
+Depends: vim-common (= 2:7.3.547-4), vim-runtime (= 2:7.3.547-4), libacl1 (>= 2.2.51-8), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libgpm2 (>= 1.20.4), libselinux1 (>= 1.32), libtinfo5
 Suggests: ctags, vim-doc, vim-scripts
-Size: 869072
+Size: 869056
 Description: Vi IMproved - enhanced vi editor
  Vim is an almost compatible version of the UNIX editor Vi.
  .
@@ -3580,6 +3653,26 @@ Description: fast, versatile, remote (and local) file-copying tool
  This package provides both the rsync command line tool and optional
  daemon functionality.
 Homepage: http://rsync.samba.org/
+
+Package: conky
+Priority: extra
+Section: oldlibs
+Installed-Size: 60
+Maintainer: Vincent Cheng <Vincentc1208@gmail.com>
+Architecture: all
+Version: 1.9.0-2
+Depends: conky-std | conky-cli | conky-all
+Size: 34032
+Description: highly configurable system monitor (transitional package)
+ Conky is a system monitor that can display just about anything,
+ either on your root desktop or in its own window.
+ Conky has many built-in objects, as well as the ability to execute
+ external programs or scripts (either external or through built-in
+ lua support).
+ .
+ This is a dummy package to ease transition to the new packaging scheme.
+ It may be safely removed after upgrade/installation.
+Homepage: http://conky.sourceforge.net/
 
 Package: lockfile-progs
 Priority: optional
@@ -3631,6 +3724,28 @@ Depends: libc6
 Size: 249134
 Description: vWorkspace's MMR extension binaries
 Subversion: 8799
+
+Package: libqt4-network
+Priority: optional
+Section: libs
+Installed-Size: 1802
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.2-2
+Replaces: libqt4-core (<< 4.4.0~beta1-1)
+Depends: libc6 (>= 2.10), libgcc1 (>= 1:4.4.0), libqt4-dbus (= 4:4.8.2-2), libqtcore4 (= 4:4.8.2-2), libstdc++6 (>= 4.4.0), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Breaks: libqt4-core (<< 4.4.0~beta1-1)
+Size: 698598
+Description: Qt 4 network module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtNetwork module offers classes that allow you to write TCP/IP clients and
+ servers. It provides classes to make network programming easier and portable.
+Homepage: http://qt-project.org/
 
 Package: libnspr4
 Priority: optional
@@ -3923,12 +4038,12 @@ Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: qt4-x11
-Version: 4:4.8.2-1
+Version: 4:4.8.2-2
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqt4-dbus (= 4:4.8.2-1), libqtcore4 (= 4:4.8.2-1), libstdc++6 (>= 4.4.0)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqt4-dbus (= 4:4.8.2-2), libqtcore4 (= 4:4.8.2-2), libstdc++6 (>= 4.4.0)
 Pre-Depends: multiarch-support
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Size: 932234
+Size: 932416
 Description: Qt 4 script module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -4053,8 +4168,8 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: krb5
-Version: 1.10.1+dfsg-1
-Size: 1501690
+Version: 1.10.1+dfsg-2
+Size: 1502354
 Description: Internationalization support for MIT Kerberos
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a
@@ -4065,6 +4180,32 @@ Description: Internationalization support for MIT Kerberos
  .
  This package contains internationalized messages for MIT Kerberos.
 Homepage: http://web.mit.edu/kerberos/
+
+Package: libqt4-dbus
+Priority: optional
+Section: libs
+Installed-Size: 620
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.2-2
+Replaces: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
+Depends: qdbus (= 4:4.8.2-2), libc6 (>= 2.4), libdbus-1-3 (>= 1.3.1), libgcc1 (>= 1:4.4.0), libqt4-xml (= 4:4.8.2-2), libqtcore4 (= 4:4.8.2-2), libstdc++6 (>= 4.4.0)
+Pre-Depends: multiarch-support
+Breaks: libqt4-core (<< 4.4.0~beta1-1), libqt4-dev (<< 4:4.7.1)
+Size: 248814
+Description: Qt 4 D-Bus module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtDBus module is a Unix-only library that you can use to make Inter-Process
+ Communication using the D-Bus protocol.
+ .
+ Applications using the QtDBus module can provide services to other, remote
+ applications by exporting objects, as well as use services exported by those
+ applications by placing calls and accessing properties.
+Homepage: http://qt-project.org/
 
 Package: libmpc2
 Priority: extra
@@ -4181,16 +4322,16 @@ Description: support binaries for and cli utilities based on liblockfile
 Package: libgtk2.0-common
 Priority: optional
 Section: misc
-Installed-Size: 20626
+Installed-Size: 20627
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: gtk+2.0
-Version: 2.24.10-1
+Version: 2.24.10-2
 Replaces: libgtk2.0-0 (<< 2.24.8-2)
 Recommends: libgtk2.0-0
 Breaks: libgtk2.0-0 (<< 2.24.8-2)
-Size: 6878796
+Size: 3081010
 Description: common files for the GTK+ graphical user interface library
  GTK+ is a multi-platform toolkit for creating graphical user
  interfaces. Offering a complete set of widgets, GTK+ is suitable
@@ -4304,10 +4445,10 @@ Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: mesa
-Version: 8.0.3-1
+Version: 8.0.4-1
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
-Size: 65492
+Size: 65678
 Description: free implementation of the GL API -- shared library
  The Mesa GL API module is responsible for dispatching all the gl*
  functions. It is intended to be mainly used by both the libgles1-mesa
@@ -4403,6 +4544,31 @@ Description: GTK+ based simple text editor
  and to be as useful as them.
 Homepage: http://tarot.freeshell.org/leafpad/
 
+Package: e2fslibs
+Priority: required
+Section: libs
+Installed-Size: 359
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Architecture: armel
+Multi-Arch: same
+Source: e2fsprogs
+Version: 1.42.5-1
+Replaces: e2fsprogs (<< 1.34-1)
+Provides: libe2p2, libext2fs2
+Depends: libc6 (>= 2.10), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Size: 187830
+Description: ext2/ext3/ext4 file system libraries
+ The ext2, ext3 and ext4 file systems are successors of the original ext
+ ("extended") file system. They are the main file system types used for
+ hard disks on Debian and other Linux systems.
+ .
+ This package provides the ext2fs and e2p libraries, for userspace software
+ that directly accesses extended file systems. Programs that use libext2fs
+ include e2fsck, mke2fs, and tune2fs. Programs that use libe2p include
+ dumpe2fs, chattr, and lsattr.
+Homepage: http://e2fsprogs.sourceforge.net
+
 Package: xfonts-scalable
 Priority: optional
 Section: fonts
@@ -4463,11 +4629,11 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-1
+Version: 1.10.1+dfsg-2
 Depends: libc6 (>= 2.4), libkeyutils1
 Pre-Depends: multiarch-support
 Conflicts: libkrb53
-Size: 45606
+Size: 45836
 Description: MIT Kerberos runtime libraries - Support library
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a
@@ -4567,15 +4733,15 @@ Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: mesa
-Version: 8.0.3-1
+Version: 8.0.4-1
 Replaces: libgl1, libgl1-mesa-dri (<< 6.4.0)
 Provides: libgl1
-Depends: libc6 (>= 2.4), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libglapi-mesa (= 8.0.3-1), libstdc++6 (>= 4.1.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb-glx0 (>= 1.8), libxcb1, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxxf86vm1
+Depends: libc6 (>= 2.4), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libglapi-mesa (= 8.0.4-1), libstdc++6 (>= 4.1.1), libx11-6 (>= 2:1.4.99.1), libx11-xcb1, libxcb-glx0 (>= 1.8), libxcb1, libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxxf86vm1
 Pre-Depends: multiarch-support
 Recommends: libgl1-mesa-dri (>= 7.2)
 Breaks: fglrx-glx (<< 1:11-6-1), libgl1-nvidia-alternatives (<= 275.09.07-1)
 Conflicts: libgl1, libgl1-mesa-dri (<< 6.4.0)
-Size: 158656
+Size: 158596
 Description: free implementation of the OpenGL API -- GLX runtime
  This version of Mesa provides GLX and DRI capabilities: it is capable of
  both direct and indirect rendering.  For direct rendering, it can use DRI
@@ -4679,6 +4845,26 @@ Size: 1830216
 Description: Web browser based on Firefox
  Iceweasel is Firefox, rebranded. It is a powerful, extensible web browser
  with support for modern web application technologies.
+
+Package: libcomerr2
+Priority: required
+Section: libs
+Installed-Size: 91
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Architecture: armel
+Multi-Arch: same
+Source: e2fsprogs
+Version: 1.42.5-1
+Replaces: e2fsprogs (<< 1.34-1)
+Provides: libcomerr-kth-compat
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 54978
+Description: common error description library
+ libcomerr is an attempt to present a common error-handling mechanism to
+ manipulate the most common form of error code in a fashion that does not
+ have the problems identified with mechanisms commonly in use.
+Homepage: http://e2fsprogs.sourceforge.net
 
 Package: liborc-0.4-0
 Priority: optional
@@ -4870,6 +5056,28 @@ Description: Not Erik's Windowing Toolkit - text mode windowing with slang
  to provide extra functionality. This package contains the shared library
  for programs that have been built with newt.
 Homepage: https://fedorahosted.org/newt/
+
+Package: ltrace
+Priority: optional
+Section: utils
+Installed-Size: 216
+Maintainer: Juan Cespedes <cespedes@debian.org>
+Architecture: armel
+Version: 0.5.3-2.1
+Depends: libc6 (>= 2.7), libelfg0 (>= 0.8.12), libgcc1 (>= 1:4.4.0)
+Size: 82456
+Description: Tracks runtime library calls in dynamically linked programs
+ ltrace is a debugging program which runs a specified command until it
+ exits.  While the command is executing, ltrace intercepts and records
+ the dynamic library calls which are called by
+ the executed process and the signals received by that process.
+ It can also intercept and print the system calls executed by the program.
+ .
+ The program to be traced need not be recompiled for this, so you can
+ use it on binaries for which you don't have the source handy.
+ .
+ You should install ltrace if you need a sysadmin tool for tracking the
+ execution of processes.
 
 Package: x11-apps
 Priority: optional
@@ -5447,11 +5655,11 @@ Installed-Size: 242
 Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: cyrus-sasl2 (2.1.25.dfsg1-4)
-Version: 2.1.25.dfsg1-4+b1
-Depends: libsasl2-2 (= 2.1.25.dfsg1-4+b1), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
+Source: cyrus-sasl2
+Version: 2.1.25.dfsg1-5
+Depends: libsasl2-2 (= 2.1.25.dfsg1-5), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
 Suggests: libsasl2-modules-otp, libsasl2-modules-ldap, libsasl2-modules-sql, libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
-Size: 104194
+Size: 104452
 Description: Cyrus SASL - pluggable authentication modules
  This is the Cyrus SASL API implementation, version 2.1. See package
  libsasl2-2 and RFC 2222 for more information.
@@ -5463,18 +5671,18 @@ Homepage: http://www.cyrusimap.org/
 Package: libsasl2-2
 Priority: standard
 Section: libs
-Installed-Size: 207
+Installed-Size: 208
 Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: cyrus-sasl2 (2.1.25.dfsg1-4)
-Version: 2.1.25.dfsg1-4+b1
+Source: cyrus-sasl2
+Version: 2.1.25.dfsg1-5
 Replaces: libsasl2
 Depends: libc6 (>= 2.4), libdb5.1
 Pre-Depends: multiarch-support
-Recommends: libsasl2-modules (= 2.1.25.dfsg1-4+b1)
+Recommends: libsasl2-modules (= 2.1.25.dfsg1-5)
 Breaks: postfix (<= 2.8.3-1), slapd (<= 2.4.25-3)
-Size: 109778
+Size: 110014
 Description: Cyrus SASL - authentication abstraction library
  This is the Cyrus SASL API implementation, version 2.1.
  .
@@ -5794,6 +6002,27 @@ Description: Double-array trie library
  datrie library. It is usually automatically installed.
 Homepage: http://linux.thai.net/projects/libthai
 
+Package: libss2
+Priority: required
+Section: libs
+Installed-Size: 99
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Architecture: armel
+Multi-Arch: same
+Source: e2fsprogs
+Version: 1.42.5-1
+Replaces: e2fsprogs (<< 1.34-1)
+Depends: libcomerr2, libc6 (>= 2.11)
+Pre-Depends: multiarch-support
+Size: 59538
+Description: command-line interface parsing library
+ libss provides a simple command-line interface parser which will
+ accept input from the user, parse the command into an argv argument
+ vector, and then dispatch it to a handler function.
+ .
+ It was originally inspired by the Multics SubSystem library.
+Homepage: http://e2fsprogs.sourceforge.net
+
 Package: libavahi-common-data
 Priority: optional
 Section: libs
@@ -5898,6 +6127,39 @@ Description: XZ-format compression utilities
   * improved support for multithreading (not used in xz-utils);
   * support for flushing the encoder.
 Homepage: http://tukaani.org/xz/
+
+Package: libaudclient2
+Priority: optional
+Section: sound
+Installed-Size: 75
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: audacious
+Version: 3.2.3-1
+Depends: libc6 (>= 2.4), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.12.0)
+Pre-Depends: multiarch-support
+Size: 25230
+Description: audacious dbus remote control library
+ Audacious is a fork of beep-media-player which supports winamp skins
+ and many codecs.
+ .
+ In the default install, the following codecs are supported:
+ .
+  * MP3
+  * Ogg Vorbis / Theora
+  * AAC and AAC+
+  * FLAC
+  * ALAC
+  * Windows Media (WMA)
+  * WAVE
+ .
+ Additionally, Audacious is extendable through plugins, and contains
+ other useful features like LIRC support. Support for many more codecs
+ can also be added through plugins.
+ .
+ This package contains a library used to remote control audacious.
+Homepage: http://www.audacious-media-player.org/
 
 Package: libstdc++6-4.4-dev
 Priority: optional
@@ -6097,6 +6359,29 @@ Description: fast, scalable, distributed revision control system (manual pages)
  This package provides reference documentation for use by the 'man'
  utility and the 'git help' command.
 Homepage: http://git-scm.com/
+
+Package: e2fsprogs
+Essential: yes
+Priority: required
+Section: admin
+Installed-Size: 2322
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Architecture: armel
+Multi-Arch: foreign
+Version: 1.42.5-1
+Replaces: hurd (<= 20040301-1), libblkid1 (<< 1.38+1.39-WIP-2005.12.10-2), libuuid1 (<< 1.38+1.39-WIP-2005.12.10-2)
+Pre-Depends: e2fslibs (= 1.42.5-1), libblkid1 (>= 2.17.2), libc6 (>= 2.11), libcomerr2 (>= 1.42~WIP-2011-10-05-1), libgcc1 (>= 1:4.4.0), libss2 (>= 1.34-1), libuuid1 (>= 2.16), util-linux (>= 2.15~rc1-1)
+Suggests: gpart, parted, e2fsck-static
+Conflicts: dump (<< 0.4b4-4), initscripts (<< 2.85-4), quota (<< 1.55-8.1), sysvinit (<< 2.85-4)
+Size: 994146
+Description: ext2/ext3/ext4 file system utilities
+ The ext2, ext3 and ext4 file systems are successors of the original ext
+ ("extended") file system. They are the main file system types used for
+ hard disks on Debian and other Linux systems.
+ .
+ This package contains programs for creating, checking, and maintaining
+ ext2/3/4-based file systems.
+Homepage: http://e2fsprogs.sourceforge.net
 
 Package: libsigc++-2.0-0c2a
 Priority: optional
@@ -6607,18 +6892,18 @@ Homepage: http://pkg-isocodes.alioth.debian.org/
 Package: libavutil51
 Priority: optional
 Section: libs
-Installed-Size: 414
+Installed-Size: 415
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.3-4
+Version: 6:0.8.3-6
 Replaces: libavutil-extra-51
 Provides: libavutil-extra-51
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Breaks: libavutil-extra-51 (<< 5:0.8.1-2)
-Size: 218450
+Size: 219264
 Description: Libav utility library
  Libav is a complete, cross-platform solution to decode, encode, record,
  convert and stream audio and video.
@@ -6809,15 +7094,16 @@ Description: Tools to test the reachability of network hosts
 Package: ttf-dejavu-core
 Priority: optional
 Section: fonts
-Installed-Size: 2868
+Installed-Size: 2804
 Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: ttf-dejavu
-Version: 2.33-2
+Version: 2.33-3
 Replaces: ttf-dejavu (<< 2.20-1)
+Pre-Depends: dpkg (>= 1.15.6~)
 Conflicts: ttf-dejavu (<< 2.20-1)
-Size: 1551508
+Size: 1020882
 Description: Vera font family derivate with additional characters
  DejaVu provides an expanded version of the Vera font family aiming for
  quality and broader Unicode coverage while retaining the original Vera
@@ -6903,6 +7189,27 @@ Description: file management support (core library)
  This package contains the core library.
 Homepage: http://pcmanfm.sourceforge.net/
 
+Package: qdbus
+Priority: optional
+Section: utils
+Installed-Size: 180
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: qt4-x11
+Version: 4:4.8.2-2
+Replaces: libqt4-dbus (<< 4:4.7.4-1)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqt4-dbus (= 4:4.8.2-2), libqt4-xml (= 4:4.8.2-2), libqtcore4 (= 4:4.8.2-2), libstdc++6 (>= 4.4.0)
+Breaks: libqt4-dbus (<< 4:4.7.4-1)
+Size: 72354
+Description: Qt 4 D-Bus tool
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ This package contains qdbus, a command-line tool interface to D-Bus that uses
+ the QtDBus library.
+Homepage: http://qt-project.org/
+
 Package: aptitude-common
 Priority: important
 Section: admin
@@ -6925,6 +7232,36 @@ Description: architecture indepedent files for the aptitude package manager
  This package contains the data files and translations used by
  aptitude.
 Homepage: http://aptitude.alioth.debian.org/
+
+Package: libbz2-1.0
+Priority: important
+Section: libs
+Installed-Size: 116
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: bzip2
+Version: 1.0.6-4
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Size: 49878
+Description: high-quality block-sorting file compressor library - runtime
+ This package contains libbzip2 which is used by the bzip2 compressor.
+ .
+ bzip2 is a freely available, patent free, high-quality data compressor.
+ It typically compresses files to within 10% to 15% of the best available
+ techniques, whilst being around twice as fast at compression and six
+ times faster at decompression.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding. Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+Homepage: http://www.bzip.org/
 
 Package: git
 Priority: optional
@@ -7001,6 +7338,28 @@ Description: Larry Wall's Practical Extraction and Report Language
  setuid scripts and is extensible via modules that can interface to C
  libraries.
 Homepage: http://dev.perl.org/perl5/
+
+Package: libxmmsclient6
+Priority: optional
+Section: libs
+Installed-Size: 229
+Maintainer: Benjamin Drung <bdrung@debian.org>
+Architecture: armel
+Source: xmms2
+Version: 0.8+dfsg-4
+Replaces: libxmmsclient2, libxmmsclient3, libxmmsclient4, libxmmsclient5
+Depends: libc6 (>= 2.4)
+Breaks: xmms2-core (<< 0.6DrMattDestruction)
+Conflicts: libxmmsclient2, libxmmsclient3, libxmmsclient4, libxmmsclient5
+Size: 69008
+Description: XMMS2 - client library
+ XMMS2 is a redesign of the XMMS music player. It features a client-server
+ model, allowing multiple (even simultaneous!) user interfaces, both textual
+ and graphical. All common audio formats are supported using plug-ins. On top of
+ this, there is a flexible media library to organize your music.
+ .
+ This package contains a client library written in c.
+Homepage: http://xmms2.org/
 
 Package: libmp3lame0
 Priority: optional
@@ -7117,6 +7476,29 @@ Description: shared low-level terminfo library for terminal handling
  This package contains the shared low-level terminfo library.
 Homepage: http://invisible-island.net/ncurses/
 
+Package: liblua5.1-0
+Priority: optional
+Section: libs
+Installed-Size: 316
+Maintainer: John V. Belmonte <jbelmonte@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: lua5.1
+Version: 5.1.5-2
+Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.1.1)
+Pre-Depends: multiarch-support
+Size: 147498
+Description: Shared library for the Lua interpreter version 5.1
+ Lua is a powerful, light-weight programming language designed for extending
+ applications.  The language engine is accessible as a library, having a C
+ API which allows the application to exchange data with Lua programs and also
+ to extend Lua with C functions.  Lua is also used as a general-purpose,
+ stand-alone language through the simple command line interpreter provided.
+ .
+ This package contains runtime libraries.  You shouldn't need to install it
+ explicitly.
+Homepage: http://www.lua.org
+
 Package: libqt4-core
 Priority: extra
 Section: oldlibs
@@ -7124,9 +7506,9 @@ Installed-Size: 109
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Architecture: armel
 Source: qt4-x11
-Version: 4:4.8.2-1
-Depends: libqt4-dbus (= 4:4.8.2-1), libqt4-network (= 4:4.8.2-1), libqt4-script (= 4:4.8.2-1), libqt4-test (= 4:4.8.2-1), libqt4-xml (= 4:4.8.2-1), libqtcore4 (= 4:4.8.2-1)
-Size: 44992
+Version: 4:4.8.2-2
+Depends: libqt4-dbus (= 4:4.8.2-2), libqt4-network (= 4:4.8.2-2), libqt4-script (= 4:4.8.2-2), libqt4-test (= 4:4.8.2-2), libqt4-xml (= 4:4.8.2-2), libqtcore4 (= 4:4.8.2-2)
+Size: 45114
 Description: transitional package for Qt 4 core non-GUI runtime libraries
  Qt is a cross-platform C++ application framework.  Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -7431,6 +7813,28 @@ Description: process scheduling daemon
  as checksecurity.
 Homepage: http://ftp.isc.org/isc/cron/
 
+Package: libqt4-xml
+Priority: optional
+Section: libs
+Installed-Size: 391
+Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: qt4-x11
+Version: 4:4.8.2-2
+Replaces: libqt4-core (<< 4.4.0~beta1-1)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqtcore4 (= 4:4.8.2-2), libstdc++6 (>= 4.3.0)
+Pre-Depends: multiarch-support
+Breaks: libqt4-core (<< 4.4.0~beta1-1)
+Size: 143238
+Description: Qt 4 XML module
+ Qt is a cross-platform C++ application framework. Qt's primary feature
+ is its rich set of widgets that provide standard GUI functionality.
+ .
+ The QtXml module provides a stream reader and writer for XML documents,
+ and C++ implementations of SAX and DOM.
+Homepage: http://qt-project.org/
+
 Package: xserver-xorg-input-all
 Priority: optional
 Section: x11
@@ -7450,16 +7854,16 @@ Description: X.Org X server -- input driver metapackage
 Package: fontconfig-config
 Priority: optional
 Section: fonts
-Installed-Size: 343
+Installed-Size: 345
 Maintainer: Keith Packard <keithp@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: fontconfig
-Version: 2.9.0-6
+Version: 2.9.0-7
 Replaces: fontconfig (<< 2.3.2-2)
 Depends: debconf (>= 0.5) | debconf-2.0, ucf (>= 0.29), ttf-dejavu-core | ttf-bitstream-vera | ttf-freefont | gsfonts-x11
 Conflicts: fontconfig (<< 2.3.2-2)
-Size: 231578
+Size: 232604
 Description: generic font configuration library - configuration
  Fontconfig is a font configuration and customization library, which
  does not depend on the X Window System. It is designed to locate
@@ -7830,11 +8234,11 @@ Installed-Size: 22368
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: all
 Source: vim
-Version: 2:7.3.547-3
+Version: 2:7.3.547-4
 Recommends: vim | vim-gnome | vim-gtk | vim-athena | vim-nox | vim-tiny
-Breaks: vim-tiny (<< 2:7.3.547-3)
+Breaks: vim-tiny (<< 2:7.3.547-4)
 Enhances: vim-tiny
-Size: 6282824
+Size: 6282398
 Description: Vi IMproved - Runtime files
  Vim is an almost compatible version of the UNIX editor Vi.
  .
@@ -7891,17 +8295,17 @@ Description: X11 Session Management library
 Package: libqt4-test
 Priority: optional
 Section: libs
-Installed-Size: 267
+Installed-Size: 268
 Maintainer: Debian Qt/KDE Maintainers <debian-qt-kde@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: qt4-x11
-Version: 4:4.8.2-1
+Version: 4:4.8.2-2
 Replaces: libqt4-core (<< 4.4.0~beta1-1)
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqtcore4 (= 4:4.8.2-1), libstdc++6 (>= 4.4.0)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqtcore4 (= 4:4.8.2-2), libstdc++6 (>= 4.4.0)
 Pre-Depends: multiarch-support
 Breaks: libqt4-core (<< 4.4.0~beta1-1)
-Size: 105722
+Size: 105826
 Description: Qt 4 test module
  Qt is a cross-platform C++ application framework. Qt's primary feature
  is its rich set of widgets that provide standard GUI functionality.
@@ -8064,9 +8468,9 @@ Section: net
 Installed-Size: 1088
 Maintainer: Laurence J. Lane <ljlane@debian.org>
 Architecture: armel
-Version: 1.4.14-2
+Version: 1.4.14-3
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libnfnetlink0 (>= 1.0.0)
-Size: 359942
+Size: 359732
 Description: administration tools for packet filtering and NAT
  These are the user-space administration tools for the Linux
  kernel's netfilter and iptables. netfilter and iptables provide
@@ -8502,6 +8906,26 @@ Description: Common CA certificates
  Full responsibility to assess them belongs to the local system
  administrator.
 
+Package: strace
+Priority: optional
+Section: utils
+Installed-Size: 316
+Maintainer: Frederik Schüler <fs@debian.org>
+Architecture: armel
+Version: 4.5.20-2.3
+Depends: libc6 (>= 2.4)
+Size: 124626
+Description: A system call tracer
+ strace is a system call tracer, i.e. a debugging tool which prints out
+ a trace of all the system calls made by a another process/program.
+ The program to be traced need not be recompiled for this, so you can
+ use it on binaries for which you don't have source.
+ .
+ System calls and signals are events that happen at the user/kernel
+ interface. A close examination of this boundary is very useful for bug
+ isolation, sanity checking and attempting to capture race conditions.
+Homepage: http://sourceforge.net/projects/strace/
+
 Package: vim-tiny
 Priority: important
 Section: editors
@@ -8509,11 +8933,11 @@ Installed-Size: 704
 Maintainer: Debian Vim Maintainers <pkg-vim-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: vim
-Version: 2:7.3.547-3
+Version: 2:7.3.547-4
 Provides: editor
-Depends: vim-common (= 2:7.3.547-3), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32), libtinfo5
+Depends: vim-common (= 2:7.3.547-4), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32), libtinfo5
 Suggests: indent
-Size: 357102
+Size: 357080
 Description: Vi IMproved - enhanced vi editor - compact version
  Vim is an almost compatible version of the UNIX editor Vi.
  .
@@ -8825,13 +9249,13 @@ Maintainer: Marco d'Itri <md@linux.it>
 Architecture: armel
 Multi-Arch: same
 Source: tcp-wrappers
-Version: 7.6.q-23
+Version: 7.6.q-24
 Replaces: tcpd (<< 7.6.q-20)
 Depends: libc6 (>= 2.11)
 Pre-Depends: multiarch-support
 Recommends: tcpd
 Breaks: tcpd (<< 7.6.q-20)
-Size: 59234
+Size: 59680
 Description: Wietse Venema's TCP wrappers library
  Wietse Venema's network logger, also known as TCPD or LOG_TCP.
  .
@@ -8851,14 +9275,14 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-1
-Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libgcc1 (>= 1:4.4.0), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.10.1+dfsg-1)
+Version: 1.10.1+dfsg-2
+Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libgcc1 (>= 1:4.4.0), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.10.1+dfsg-2)
 Pre-Depends: multiarch-support
 Recommends: krb5-locales
 Suggests: krb5-doc, krb5-user
 Breaks: libsmbclient (<= 2:3.6.1-2), sssd (<= 1.2.1-4.3)
 Conflicts: libkrb53
-Size: 340362
+Size: 341914
 Description: MIT Kerberos runtime libraries
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a

@@ -1,4 +1,4 @@
-bcb968f4d1fa88c81d8f28050f97d279  usr/lib/arm-linux-gnueabi/libasound.so.2.0.0
+8769976c0ac6c62602971124d497c038  usr/lib/arm-linux-gnueabi/libasound.so.2.0.0
 baa875f1767e22550ec85c0b99bd8f9d  usr/share/alsa/alsa.conf
 7c708db5587cf53a6b4da28fb3118c01  usr/share/alsa/alsa.conf.d/README
 ed1423f966d181095a576dd2cc0f53ae  usr/share/alsa/cards/AACI.conf
@@ -77,7 +77,7 @@ feaa19470e4a7271ec8174615cee45aa  usr/share/alsa/pcm/surround41.conf
 b43faf4629b503260f65abfd0a25800f  usr/share/alsa/smixer.conf
 0b375c3957371c0ac5f2bbcb5100c845  usr/share/alsa/sndo-mixer.alisp
 e4a904cb9280a41da02bc54b475a3f7c  usr/share/doc/libasound2/NEWS.Debian.gz
-1cb479970750bacd87512e06f80fae26  usr/share/doc/libasound2/changelog.Debian.gz
+23877da630f05f377b9c3f30bb6aa793  usr/share/doc/libasound2/changelog.Debian.gz
 c876786d871b985d73a9dce71e20eeac  usr/share/doc/libasound2/changelog.gz
 2c0a07f354a690f72462dfa9631227d8  usr/share/doc/libasound2/copyright
 452e21ca23de6b02cc7f581e4a40ce42  usr/share/doc/libasound2/examples/asoundrc.txt.gz

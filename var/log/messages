@@ -2172,3 +2172,1311 @@ Aug  9 09:34:54 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
 Aug  9 09:34:56 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
 Aug  9 09:34:56 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0xC1E1
 Aug 10 15:40:40 localhost shutdown[15186]: shutting down for system halt
+Aug 10 15:40:52 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 10 15:40:52 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="989" x-info="http://www.rsyslog.com"] start
+Aug 10 15:40:52 localhost kernel: 1-DEC-2011) (platform bus)
+Aug 10 15:40:52 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 10 15:40:52 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 10 15:40:52 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 10 15:40:52 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 10 15:40:52 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 10 15:40:52 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 10 15:40:52 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 10 15:40:52 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 10 15:40:52 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 10 15:40:52 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 10 15:40:52 localhost kernel: usbcore: registered new interface driver uas
+Aug 10 15:40:52 localhost kernel: Initializing USB Mass Storage driver...
+Aug 10 15:40:52 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 10 15:40:52 localhost kernel: USB Mass Storage support registered.
+Aug 10 15:40:52 localhost kernel: usbcore: registered new interface driver libusual
+Aug 10 15:40:52 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 10 15:40:52 localhost kernel: cpuidle: using governor ladder
+Aug 10 15:40:52 localhost kernel: cpuidle: using governor menu
+Aug 10 15:40:52 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 10 15:40:52 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 10 15:40:52 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 10 15:40:52 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 10 15:40:52 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 10 15:40:52 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 10 15:40:52 localhost kernel: usbhid: USB HID core driver
+Aug 10 15:40:52 localhost kernel: TCP cubic registered
+Aug 10 15:40:52 localhost kernel: Initializing XFRM netlink socket
+Aug 10 15:40:52 localhost kernel: NET: Registered protocol family 17
+Aug 10 15:40:52 localhost kernel: Registering the dns_resolver key type
+Aug 10 15:40:52 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 10 15:40:52 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 10 15:40:52 localhost kernel: mmc0: problem reading SD Status register.
+Aug 10 15:40:52 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 10 15:40:52 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 10 15:40:52 localhost kernel: mmcblk0: p1 p2
+Aug 10 15:40:52 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 10 15:40:52 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 10 15:40:52 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 10 15:40:52 localhost kernel: devtmpfs: mounted
+Aug 10 15:40:52 localhost kernel: Freeing init memory: 112K
+Aug 10 15:40:52 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 10 15:40:52 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 10 15:40:52 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 10 15:40:52 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 10 15:40:52 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 10 15:40:52 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 10 15:40:52 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 10 15:40:52 localhost kernel: smsc95xx v1.0.4
+Aug 10 15:40:52 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 10 15:40:52 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 10 15:40:52 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 10 15:40:52 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 10 15:40:52 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 10 15:40:52 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 10 15:40:52 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 10 15:40:52 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 10 15:40:52 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 10 15:40:52 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 10 15:40:52 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 10 15:40:52 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 10 15:40:52 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 10 15:40:52 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 10 15:40:54 localhost kernel: NET: Registered protocol family 10
+Aug 10 15:40:54 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 10 15:40:55 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 10 15:40:55 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 17 19:10:12 localhost kernel: usb 1-1.2: new low speed USB device number 5 using dwc_otg
+Aug 17 19:10:12 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 17 19:10:12 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 19:10:12 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 17 19:10:12 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 17 19:10:12 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input1
+Aug 17 19:10:12 localhost kernel: generic-usb 0003:046D:C05A.0002: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 17 19:13:12 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 19:13:12 localhost kernel: bcm2708_fb_check_var var(cdd3bd14) 1824x984 (1824x984), 16, 1809408
+Aug 17 19:13:12 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 19:13:12 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 17 19:43:05 localhost shutdown[1637]: shutting down for system reboot
+Aug 17 19:43:05 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 19:43:05 localhost kernel: bcm2708_fb_check_var var(cebbbd14) 1824x984 (1824x984), 16, 1809408
+Aug 17 19:43:05 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 19:43:05 localhost kernel: BCM2708FB: start = d0400000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 17 19:43:14 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 17 19:43:14 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="988" x-info="http://www.rsyslog.com"] start
+Aug 17 19:43:14 localhost kernel: _otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 17 19:43:14 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 17 19:43:14 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 17 19:43:14 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 17 19:43:14 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 17 19:43:14 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 17 19:43:14 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 17 19:43:14 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 17 19:43:14 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 17 19:43:14 localhost kernel: usbcore: registered new interface driver uas
+Aug 17 19:43:14 localhost kernel: Initializing USB Mass Storage driver...
+Aug 17 19:43:14 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 17 19:43:14 localhost kernel: USB Mass Storage support registered.
+Aug 17 19:43:14 localhost kernel: usbcore: registered new interface driver libusual
+Aug 17 19:43:14 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 17 19:43:14 localhost kernel: cpuidle: using governor ladder
+Aug 17 19:43:14 localhost kernel: cpuidle: using governor menu
+Aug 17 19:43:14 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 17 19:43:14 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 17 19:43:14 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 17 19:43:14 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 17 19:43:14 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 17 19:43:14 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 17 19:43:14 localhost kernel: usbhid: USB HID core driver
+Aug 17 19:43:14 localhost kernel: TCP cubic registered
+Aug 17 19:43:14 localhost kernel: Initializing XFRM netlink socket
+Aug 17 19:43:14 localhost kernel: NET: Registered protocol family 17
+Aug 17 19:43:14 localhost kernel: Registering the dns_resolver key type
+Aug 17 19:43:14 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 17 19:43:14 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 17 19:43:14 localhost kernel: mmc0: problem reading SD Status register.
+Aug 17 19:43:14 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 17 19:43:14 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 17 19:43:14 localhost kernel: mmcblk0: p1 p2
+Aug 17 19:43:14 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 17 19:43:14 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 17 19:43:14 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 17 19:43:14 localhost kernel: devtmpfs: mounted
+Aug 17 19:43:14 localhost kernel: Freeing init memory: 112K
+Aug 17 19:43:14 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 17 19:43:14 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 19:43:14 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 17 19:43:14 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 17 19:43:14 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 17 19:43:14 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 17 19:43:14 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 19:43:14 localhost kernel: smsc95xx v1.0.4
+Aug 17 19:43:14 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 17 19:43:14 localhost kernel: usb 1-1.2: new low speed USB device number 4 using dwc_otg
+Aug 17 19:43:14 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 17 19:43:14 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 19:43:14 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 17 19:43:14 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 17 19:43:14 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
+Aug 17 19:43:14 localhost kernel: generic-usb 0003:046D:C05A.0001: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 17 19:43:14 localhost kernel: usb 1-1.3: new low speed USB device number 5 using dwc_otg
+Aug 17 19:43:14 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 17 19:43:14 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 19:43:14 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 17 19:43:14 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 17 19:43:14 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input1
+Aug 17 19:43:14 localhost kernel: generic-usb 0003:046D:C312.0002: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 17 19:43:14 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 19:43:14 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 19:43:14 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 17 19:43:14 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 17 19:43:16 localhost kernel: NET: Registered protocol family 10
+Aug 17 19:43:16 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 17 19:43:18 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 17 19:43:18 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 17 19:48:27 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 19:48:27 localhost kernel: bcm2708_fb_check_var var(cea37d14) 1824x984 (1824x984), 16, 1809408
+Aug 17 19:48:27 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 19:48:27 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 17 20:14:27 localhost shutdown[1720]: shutting down for system reboot
+Aug 17 20:14:31 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 20:14:31 localhost kernel: bcm2708_fb_check_var var(cdc81d14) 1824x984 (1824x984), 16, 1809408
+Aug 17 20:14:31 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 20:14:31 localhost kernel: BCM2708FB: start = d0400000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 17 20:14:41 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 17 20:14:41 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="990" x-info="http://www.rsyslog.com"] start
+Aug 17 20:14:41 localhost kernel: _otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 17 20:14:41 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 17 20:14:41 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 17 20:14:41 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 17 20:14:41 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 17 20:14:41 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 17 20:14:41 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 17 20:14:41 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 17 20:14:41 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 17 20:14:41 localhost kernel: usbcore: registered new interface driver uas
+Aug 17 20:14:41 localhost kernel: Initializing USB Mass Storage driver...
+Aug 17 20:14:41 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 17 20:14:41 localhost kernel: USB Mass Storage support registered.
+Aug 17 20:14:41 localhost kernel: usbcore: registered new interface driver libusual
+Aug 17 20:14:41 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 17 20:14:41 localhost kernel: cpuidle: using governor ladder
+Aug 17 20:14:41 localhost kernel: cpuidle: using governor menu
+Aug 17 20:14:41 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 17 20:14:41 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 17 20:14:41 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 17 20:14:41 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 17 20:14:41 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 17 20:14:41 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 17 20:14:41 localhost kernel: usbhid: USB HID core driver
+Aug 17 20:14:41 localhost kernel: TCP cubic registered
+Aug 17 20:14:41 localhost kernel: Initializing XFRM netlink socket
+Aug 17 20:14:41 localhost kernel: NET: Registered protocol family 17
+Aug 17 20:14:41 localhost kernel: Registering the dns_resolver key type
+Aug 17 20:14:41 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 17 20:14:41 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 17 20:14:41 localhost kernel: mmc0: problem reading SD Status register.
+Aug 17 20:14:41 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 17 20:14:41 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 17 20:14:41 localhost kernel: mmcblk0: p1 p2
+Aug 17 20:14:41 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 17 20:14:41 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 17 20:14:41 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 17 20:14:41 localhost kernel: devtmpfs: mounted
+Aug 17 20:14:41 localhost kernel: Freeing init memory: 112K
+Aug 17 20:14:41 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 17 20:14:41 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 20:14:41 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 17 20:14:41 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 17 20:14:41 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 17 20:14:41 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 17 20:14:41 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 20:14:41 localhost kernel: smsc95xx v1.0.4
+Aug 17 20:14:41 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 17 20:14:41 localhost kernel: usb 1-1.2: new low speed USB device number 4 using dwc_otg
+Aug 17 20:14:41 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 17 20:14:41 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 20:14:41 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 17 20:14:41 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 17 20:14:41 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
+Aug 17 20:14:41 localhost kernel: generic-usb 0003:046D:C05A.0001: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 17 20:14:41 localhost kernel: usb 1-1.3: new low speed USB device number 5 using dwc_otg
+Aug 17 20:14:41 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 17 20:14:41 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 20:14:41 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 17 20:14:41 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 17 20:14:41 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input1
+Aug 17 20:14:41 localhost kernel: generic-usb 0003:046D:C312.0002: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 17 20:14:41 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 20:14:41 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 20:14:41 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 17 20:14:41 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 17 20:14:43 localhost kernel: NET: Registered protocol family 10
+Aug 17 20:14:43 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 17 20:14:44 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 17 20:14:44 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 17 21:36:23 localhost shutdown[19880]: shutting down for system reboot
+Aug 17 21:36:26 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 21:36:26 localhost kernel: bcm2708_fb_check_var var(ceb69d14) 1824x984 (1824x984), 16, 1809408
+Aug 17 21:36:26 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 17 21:36:26 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 17 21:36:45 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 17 21:36:45 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="1045" x-info="http://www.rsyslog.com"] start
+Aug 17 21:36:45 localhost kernel: OTG Controller
+Aug 17 21:36:45 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 17 21:36:45 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 17 21:36:45 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 17 21:36:45 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 17 21:36:45 localhost kernel: usbcore: registered new interface driver uas
+Aug 17 21:36:45 localhost kernel: Initializing USB Mass Storage driver...
+Aug 17 21:36:45 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 17 21:36:45 localhost kernel: USB Mass Storage support registered.
+Aug 17 21:36:45 localhost kernel: usbcore: registered new interface driver libusual
+Aug 17 21:36:45 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 17 21:36:45 localhost kernel: cpuidle: using governor ladder
+Aug 17 21:36:45 localhost kernel: cpuidle: using governor menu
+Aug 17 21:36:45 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 17 21:36:45 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 17 21:36:45 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 17 21:36:45 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 17 21:36:45 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 17 21:36:45 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 17 21:36:45 localhost kernel: usbhid: USB HID core driver
+Aug 17 21:36:45 localhost kernel: TCP cubic registered
+Aug 17 21:36:45 localhost kernel: Initializing XFRM netlink socket
+Aug 17 21:36:45 localhost kernel: NET: Registered protocol family 17
+Aug 17 21:36:45 localhost kernel: Registering the dns_resolver key type
+Aug 17 21:36:45 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 17 21:36:45 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 17 21:36:45 localhost kernel: mmc0: problem reading SD Status register.
+Aug 17 21:36:45 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 17 21:36:45 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 17 21:36:45 localhost kernel: mmcblk0: p1 p2
+Aug 17 21:36:45 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 17 21:36:45 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 17 21:36:45 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 17 21:36:45 localhost kernel: devtmpfs: mounted
+Aug 17 21:36:45 localhost kernel: Freeing init memory: 112K
+Aug 17 21:36:45 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 17 21:36:45 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 21:36:45 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 17 21:36:45 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 17 21:36:45 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 17 21:36:45 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 17 21:36:45 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 21:36:45 localhost kernel: smsc95xx v1.0.4
+Aug 17 21:36:45 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 17 21:36:45 localhost kernel: usb 1-1.2: new low speed USB device number 4 using dwc_otg
+Aug 17 21:36:45 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 17 21:36:45 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 21:36:45 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 17 21:36:45 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 17 21:36:45 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
+Aug 17 21:36:45 localhost kernel: generic-usb 0003:046D:C05A.0001: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 17 21:36:45 localhost kernel: usb 1-1.3: new low speed USB device number 5 using dwc_otg
+Aug 17 21:36:45 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 17 21:36:45 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 21:36:45 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 17 21:36:45 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 17 21:36:45 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input1
+Aug 17 21:36:45 localhost kernel: generic-usb 0003:046D:C312.0002: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 17 21:36:45 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 21:36:45 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 21:36:45 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 17 21:36:45 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 17 21:36:45 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 17 21:36:45 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 17 21:36:45 localhost kernel: NET: Registered protocol family 10
+Aug 17 21:36:45 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 17 21:36:45 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 17 21:36:45 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 17 21:38:48 localhost shutdown[1234]: shutting down for system halt
+Aug 17 21:39:09 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 17 21:39:09 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="1034" x-info="http://www.rsyslog.com"] start
+Aug 17 21:39:09 localhost kernel: - disabled
+Aug 17 21:39:09 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 17 21:39:09 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 17 21:39:09 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 17 21:39:09 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 17 21:39:09 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 17 21:39:09 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 17 21:39:09 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 17 21:39:09 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 17 21:39:09 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 17 21:39:09 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 17 21:39:09 localhost kernel: usbcore: registered new interface driver uas
+Aug 17 21:39:09 localhost kernel: Initializing USB Mass Storage driver...
+Aug 17 21:39:09 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 17 21:39:09 localhost kernel: USB Mass Storage support registered.
+Aug 17 21:39:09 localhost kernel: usbcore: registered new interface driver libusual
+Aug 17 21:39:09 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 17 21:39:09 localhost kernel: cpuidle: using governor ladder
+Aug 17 21:39:09 localhost kernel: cpuidle: using governor menu
+Aug 17 21:39:09 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 17 21:39:09 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 17 21:39:09 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 17 21:39:09 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 17 21:39:09 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 17 21:39:09 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 17 21:39:09 localhost kernel: usbhid: USB HID core driver
+Aug 17 21:39:09 localhost kernel: TCP cubic registered
+Aug 17 21:39:09 localhost kernel: Initializing XFRM netlink socket
+Aug 17 21:39:09 localhost kernel: NET: Registered protocol family 17
+Aug 17 21:39:09 localhost kernel: Registering the dns_resolver key type
+Aug 17 21:39:09 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 17 21:39:09 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 17 21:39:09 localhost kernel: mmc0: problem reading SD Status register.
+Aug 17 21:39:09 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 17 21:39:09 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 17 21:39:09 localhost kernel: mmcblk0: p1 p2
+Aug 17 21:39:09 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 17 21:39:09 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 17 21:39:09 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 17 21:39:09 localhost kernel: devtmpfs: mounted
+Aug 17 21:39:09 localhost kernel: Freeing init memory: 112K
+Aug 17 21:39:09 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 17 21:39:09 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 21:39:09 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 17 21:39:09 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 17 21:39:09 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 17 21:39:09 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 17 21:39:09 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 17 21:39:09 localhost kernel: smsc95xx v1.0.4
+Aug 17 21:39:09 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 17 21:39:09 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 17 21:39:09 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 17 21:39:09 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 17 21:39:09 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 17 21:39:09 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 17 21:39:09 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 17 21:39:09 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 17 21:39:09 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 21:39:09 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 17 21:39:09 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 17 21:39:09 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 17 21:39:09 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 17 21:39:09 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 17 21:39:09 localhost kernel: NET: Registered protocol family 10
+Aug 17 21:39:09 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 17 21:39:09 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 17 21:39:09 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 07:07:47 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 07:07:48 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 07:08:12 localhost shutdown[1441]: shutting down for system reboot
+Aug 19 07:08:29 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 07:08:29 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="995" x-info="http://www.rsyslog.com"] start
+Aug 19 07:08:29 localhost kernel: 1-DEC-2011) (platform bus)
+Aug 19 07:08:29 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 07:08:29 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 07:08:29 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 07:08:29 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 07:08:29 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 07:08:29 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 07:08:29 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 07:08:29 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 07:08:29 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 07:08:29 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 07:08:29 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 07:08:29 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 07:08:29 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 07:08:29 localhost kernel: USB Mass Storage support registered.
+Aug 19 07:08:29 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 07:08:29 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 07:08:29 localhost kernel: cpuidle: using governor ladder
+Aug 19 07:08:29 localhost kernel: cpuidle: using governor menu
+Aug 19 07:08:29 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 07:08:29 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 07:08:29 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 07:08:29 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 07:08:29 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 07:08:29 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 07:08:29 localhost kernel: usbhid: USB HID core driver
+Aug 19 07:08:29 localhost kernel: TCP cubic registered
+Aug 19 07:08:29 localhost kernel: Initializing XFRM netlink socket
+Aug 19 07:08:29 localhost kernel: NET: Registered protocol family 17
+Aug 19 07:08:29 localhost kernel: Registering the dns_resolver key type
+Aug 19 07:08:29 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 07:08:29 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 07:08:29 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 07:08:29 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 07:08:29 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 07:08:29 localhost kernel: mmcblk0: p1 p2
+Aug 19 07:08:29 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 07:08:29 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 07:08:29 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 07:08:29 localhost kernel: devtmpfs: mounted
+Aug 19 07:08:29 localhost kernel: Freeing init memory: 112K
+Aug 19 07:08:29 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 07:08:29 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 07:08:29 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 07:08:29 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 07:08:29 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 07:08:29 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 07:08:29 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 07:08:29 localhost kernel: smsc95xx v1.0.4
+Aug 19 07:08:29 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 07:08:29 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 07:08:29 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 07:08:29 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 07:08:29 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 07:08:29 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 07:08:29 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 07:08:29 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 07:08:29 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 07:08:29 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 07:08:29 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 07:08:29 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 07:08:29 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 07:08:29 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 07:08:30 localhost kernel: NET: Registered protocol family 10
+Aug 19 07:08:45 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 07:08:46 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 07:08:46 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 07:08:55 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 07:14:13 localhost kernel: usb 1-1.2: new low speed USB device number 5 using dwc_otg
+Aug 19 07:14:13 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 19 07:14:13 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 07:14:13 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 19 07:14:13 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 19 07:14:13 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input1
+Aug 19 07:14:13 localhost kernel: generic-usb 0003:046D:C05A.0002: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 19 07:43:01 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 19 07:43:01 localhost kernel: bcm2708_fb_check_var var(cdc83d14) 1824x984 (1824x984), 16, 1809408
+Aug 19 07:43:01 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 19 07:43:01 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 07:43:05 localhost shutdown[2507]: shutting down for system reboot
+Aug 19 07:43:20 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 07:43:20 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="1000" x-info="http://www.rsyslog.com"] start
+Aug 19 07:43:20 localhost kernel: : Port Power? op_state=1
+Aug 19 07:43:20 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 07:43:20 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 07:43:20 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 07:43:20 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 07:43:20 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 07:43:20 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 07:43:20 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 07:43:20 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 07:43:20 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 07:43:20 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 07:43:20 localhost kernel: USB Mass Storage support registered.
+Aug 19 07:43:20 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 07:43:20 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 07:43:20 localhost kernel: cpuidle: using governor ladder
+Aug 19 07:43:20 localhost kernel: cpuidle: using governor menu
+Aug 19 07:43:20 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 07:43:20 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 07:43:20 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 07:43:20 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 07:43:20 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 07:43:20 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 07:43:20 localhost kernel: usbhid: USB HID core driver
+Aug 19 07:43:20 localhost kernel: TCP cubic registered
+Aug 19 07:43:20 localhost kernel: Initializing XFRM netlink socket
+Aug 19 07:43:20 localhost kernel: NET: Registered protocol family 17
+Aug 19 07:43:20 localhost kernel: Registering the dns_resolver key type
+Aug 19 07:43:20 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 07:43:20 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 07:43:20 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 07:43:20 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 07:43:20 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 07:43:20 localhost kernel: mmcblk0: p1 p2
+Aug 19 07:43:20 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 07:43:20 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 07:43:20 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 07:43:20 localhost kernel: devtmpfs: mounted
+Aug 19 07:43:20 localhost kernel: Freeing init memory: 112K
+Aug 19 07:43:20 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 07:43:20 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 07:43:20 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 07:43:20 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 07:43:20 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 07:43:20 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 07:43:20 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 07:43:20 localhost kernel: smsc95xx v1.0.4
+Aug 19 07:43:20 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 07:43:20 localhost kernel: usb 1-1.2: new low speed USB device number 4 using dwc_otg
+Aug 19 07:43:20 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 19 07:43:20 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 07:43:20 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 19 07:43:20 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 19 07:43:20 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
+Aug 19 07:43:20 localhost kernel: generic-usb 0003:046D:C05A.0001: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 19 07:43:20 localhost kernel: usb 1-1.3: new low speed USB device number 5 using dwc_otg
+Aug 19 07:43:20 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 07:43:20 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 07:43:20 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 07:43:20 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 07:43:20 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input1
+Aug 19 07:43:20 localhost kernel: generic-usb 0003:046D:C312.0002: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 07:43:20 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 07:43:20 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 07:43:20 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 07:43:20 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 07:43:20 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 07:43:20 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 07:43:21 localhost kernel: NET: Registered protocol family 10
+Aug 19 07:43:37 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 07:43:38 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 07:43:38 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 07:43:49 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 08:02:57 localhost kernel: bcm2708_fb_check_var info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 19 08:02:57 localhost kernel: bcm2708_fb_check_var var(cd967d14) 1824x984 (1824x984), 16, 1809408
+Aug 19 08:02:57 localhost kernel: bcm2708_fb_set_par info(ce894000) 1824x984 (1824x984), 3618816, 16
+Aug 19 08:02:57 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 08:03:28 localhost shutdown[1981]: shutting down for system halt
+Aug 19 08:03:42 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 08:03:42 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="995" x-info="http://www.rsyslog.com"] start
+Aug 19 08:03:42 localhost kernel: tered new interface driver cdc_ncm
+Aug 19 08:03:42 localhost kernel: dwc_otg: version 2.94b 27-OCT-2011 (rev 01-DEC-2011) (platform bus)
+Aug 19 08:03:42 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 08:03:42 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 08:03:42 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 08:03:42 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 08:03:42 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 08:03:42 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 08:03:42 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 08:03:42 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 08:03:42 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 08:03:42 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 08:03:42 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 08:03:42 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 08:03:42 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 08:03:42 localhost kernel: USB Mass Storage support registered.
+Aug 19 08:03:42 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 08:03:42 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 08:03:42 localhost kernel: cpuidle: using governor ladder
+Aug 19 08:03:42 localhost kernel: cpuidle: using governor menu
+Aug 19 08:03:42 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 08:03:42 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 08:03:42 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 08:03:42 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 08:03:42 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 08:03:42 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 08:03:42 localhost kernel: usbhid: USB HID core driver
+Aug 19 08:03:42 localhost kernel: TCP cubic registered
+Aug 19 08:03:42 localhost kernel: Initializing XFRM netlink socket
+Aug 19 08:03:42 localhost kernel: NET: Registered protocol family 17
+Aug 19 08:03:42 localhost kernel: Registering the dns_resolver key type
+Aug 19 08:03:42 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 08:03:42 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 08:03:42 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 08:03:42 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 08:03:42 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 08:03:42 localhost kernel: mmcblk0: p1 p2
+Aug 19 08:03:42 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 08:03:42 localhost kernel: EXT4-fs (mmcblk0p2): recovery complete
+Aug 19 08:03:42 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 08:03:42 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 08:03:42 localhost kernel: devtmpfs: mounted
+Aug 19 08:03:42 localhost kernel: Freeing init memory: 112K
+Aug 19 08:03:42 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 08:03:42 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 08:03:42 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 08:03:42 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 08:03:42 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 08:03:42 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 08:03:42 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 08:03:42 localhost kernel: smsc95xx v1.0.4
+Aug 19 08:03:42 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 08:03:42 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 08:03:42 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 08:03:42 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 08:03:42 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 08:03:42 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 08:03:42 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 08:03:42 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 08:03:42 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 08:03:42 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 08:03:42 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 08:03:42 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 08:03:43 localhost kernel: NET: Registered protocol family 10
+Aug 19 08:03:58 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 08:03:59 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 08:03:59 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 08:04:10 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 13:55:58 localhost shutdown[1415]: shutting down for system reboot
+Aug 19 13:56:14 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 13:56:14 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="992" x-info="http://www.rsyslog.com"] start
+Aug 19 13:56:14 localhost kernel: 
+Aug 19 13:56:14 localhost kernel: cdc_ncm: 04-Aug-2011
+Aug 19 13:56:14 localhost kernel: usbcore: registered new interface driver cdc_ncm
+Aug 19 13:56:14 localhost kernel: dwc_otg: version 2.94b 27-OCT-2011 (rev 01-DEC-2011) (platform bus)
+Aug 19 13:56:14 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 13:56:14 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 13:56:14 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 13:56:14 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 13:56:14 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 13:56:14 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 13:56:14 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 13:56:14 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 13:56:14 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 13:56:14 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 13:56:14 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 13:56:14 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 13:56:14 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 13:56:14 localhost kernel: USB Mass Storage support registered.
+Aug 19 13:56:14 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 13:56:14 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 13:56:14 localhost kernel: cpuidle: using governor ladder
+Aug 19 13:56:14 localhost kernel: cpuidle: using governor menu
+Aug 19 13:56:14 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 13:56:14 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 13:56:14 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 13:56:14 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 13:56:14 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 13:56:14 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 13:56:14 localhost kernel: usbhid: USB HID core driver
+Aug 19 13:56:14 localhost kernel: TCP cubic registered
+Aug 19 13:56:14 localhost kernel: Initializing XFRM netlink socket
+Aug 19 13:56:14 localhost kernel: NET: Registered protocol family 17
+Aug 19 13:56:14 localhost kernel: Registering the dns_resolver key type
+Aug 19 13:56:14 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 13:56:14 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 13:56:14 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 13:56:14 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 13:56:14 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 13:56:14 localhost kernel: mmcblk0: p1 p2
+Aug 19 13:56:14 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 13:56:14 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 13:56:14 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 13:56:14 localhost kernel: devtmpfs: mounted
+Aug 19 13:56:14 localhost kernel: Freeing init memory: 112K
+Aug 19 13:56:14 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 13:56:14 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 13:56:14 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 13:56:14 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 13:56:14 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 13:56:14 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 13:56:14 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 13:56:14 localhost kernel: smsc95xx v1.0.4
+Aug 19 13:56:14 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 13:56:14 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 13:56:14 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 13:56:14 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 13:56:14 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 13:56:14 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 13:56:14 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 13:56:14 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 13:56:14 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 13:56:14 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 13:56:14 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 13:56:14 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 13:56:16 localhost kernel: NET: Registered protocol family 10
+Aug 19 13:56:42 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 13:56:43 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 13:56:43 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 13:56:47 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:00:22 localhost shutdown[1306]: shutting down for system reboot
+Aug 19 14:00:39 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:00:39 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="994" x-info="http://www.rsyslog.com"] start
+Aug 19 14:00:39 localhost kernel: 
+Aug 19 14:00:39 localhost kernel: cdc_ncm: 04-Aug-2011
+Aug 19 14:00:39 localhost kernel: usbcore: registered new interface driver cdc_ncm
+Aug 19 14:00:39 localhost kernel: dwc_otg: version 2.94b 27-OCT-2011 (rev 01-DEC-2011) (platform bus)
+Aug 19 14:00:39 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:00:39 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:00:39 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:00:39 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:00:39 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:00:39 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:00:39 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:00:39 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:00:39 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:00:39 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:00:39 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:00:39 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:00:39 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:00:39 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:00:39 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:00:39 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:00:39 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:00:39 localhost kernel: cpuidle: using governor menu
+Aug 19 14:00:39 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:00:39 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:00:39 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:00:39 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:00:39 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:00:39 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:00:39 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:00:39 localhost kernel: TCP cubic registered
+Aug 19 14:00:39 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:00:39 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:00:39 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:00:39 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:00:39 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:00:39 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 14:00:39 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:00:39 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:00:39 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:00:39 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:00:39 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:00:39 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:00:39 localhost kernel: devtmpfs: mounted
+Aug 19 14:00:39 localhost kernel: Freeing init memory: 112K
+Aug 19 14:00:39 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:00:39 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:00:39 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:00:39 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:00:39 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:00:39 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:00:39 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:00:39 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:00:39 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:00:39 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:00:39 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:00:39 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:00:39 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:00:39 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:00:39 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:00:39 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:00:39 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:00:39 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:00:39 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:00:39 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:00:40 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:01:03 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:01:04 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:01:04 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:01:12 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:03:22 localhost shutdown[1292]: shutting down for system reboot
+Aug 19 14:03:37 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:03:37 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="993" x-info="http://www.rsyslog.com"] start
+Aug 19 14:03:37 localhost kernel: 1-DEC-2011) (platform bus)
+Aug 19 14:03:37 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:03:37 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:03:37 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:03:37 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:03:37 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:03:37 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:03:37 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:03:37 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:03:37 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:03:37 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:03:37 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:03:37 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:03:37 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:03:37 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:03:37 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:03:37 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:03:37 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:03:37 localhost kernel: cpuidle: using governor menu
+Aug 19 14:03:37 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:03:37 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:03:37 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:03:37 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:03:37 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:03:37 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:03:37 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:03:37 localhost kernel: TCP cubic registered
+Aug 19 14:03:37 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:03:37 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:03:37 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:03:37 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:03:37 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:03:37 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 14:03:37 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:03:37 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:03:37 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:03:37 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:03:37 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:03:37 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:03:37 localhost kernel: devtmpfs: mounted
+Aug 19 14:03:37 localhost kernel: Freeing init memory: 112K
+Aug 19 14:03:37 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:03:37 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:03:37 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:03:37 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:03:37 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:03:37 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:03:37 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:03:37 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:03:37 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:03:37 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:03:37 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:03:37 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:03:37 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:03:37 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:03:37 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:03:37 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:03:37 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:03:37 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:03:37 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:03:37 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:03:37 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:03:37 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:03:39 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:04:05 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:04:07 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:04:07 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:04:14 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:13:39 localhost shutdown[1388]: shutting down for system reboot
+Aug 19 14:13:52 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:13:52 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="995" x-info="http://www.rsyslog.com"] start
+Aug 19 14:13:52 localhost kernel: 1-DEC-2011) (platform bus)
+Aug 19 14:13:52 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:13:52 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:13:52 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:13:52 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:13:52 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:13:52 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:13:52 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:13:52 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:13:52 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:13:52 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:13:52 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:13:52 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:13:52 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:13:52 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:13:52 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:13:52 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:13:52 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:13:52 localhost kernel: cpuidle: using governor menu
+Aug 19 14:13:52 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:13:52 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:13:52 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:13:52 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:13:52 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:13:52 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:13:52 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:13:52 localhost kernel: TCP cubic registered
+Aug 19 14:13:52 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:13:52 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:13:52 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:13:52 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:13:52 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:13:52 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 14:13:52 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:13:52 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:13:52 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:13:52 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:13:52 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:13:52 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:13:52 localhost kernel: devtmpfs: mounted
+Aug 19 14:13:52 localhost kernel: Freeing init memory: 112K
+Aug 19 14:13:52 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:13:52 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:13:52 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:13:52 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:13:52 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:13:52 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:13:52 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:13:52 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:13:52 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:13:52 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:13:52 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:13:52 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:13:52 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:13:52 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:13:52 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:13:52 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:13:52 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:13:52 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:13:52 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:13:52 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:13:52 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:13:52 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:13:54 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:14:21 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:14:22 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:14:22 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:14:30 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:15:26 localhost shutdown[1292]: shutting down for system reboot
+Aug 19 14:15:41 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:15:41 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="996" x-info="http://www.rsyslog.com"] start
+Aug 19 14:15:41 localhost kernel: 1-DEC-2011) (platform bus)
+Aug 19 14:15:41 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:15:41 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:15:41 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:15:41 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:15:41 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:15:41 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:15:41 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:15:41 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:15:41 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:15:41 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:15:41 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:15:41 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:15:41 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:15:41 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:15:41 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:15:41 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:15:41 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:15:41 localhost kernel: cpuidle: using governor menu
+Aug 19 14:15:41 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:15:41 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:15:41 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:15:41 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:15:41 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:15:41 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:15:41 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:15:41 localhost kernel: TCP cubic registered
+Aug 19 14:15:41 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:15:41 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:15:41 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:15:41 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:15:41 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:15:41 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 14:15:41 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:15:41 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:15:41 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:15:41 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:15:41 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:15:41 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:15:41 localhost kernel: devtmpfs: mounted
+Aug 19 14:15:41 localhost kernel: Freeing init memory: 112K
+Aug 19 14:15:41 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:15:41 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:15:41 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:15:41 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:15:41 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:15:41 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:15:41 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:15:41 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:15:41 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:15:41 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:15:41 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:15:41 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:15:41 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:15:41 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:15:41 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:15:41 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:15:41 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:15:41 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:15:41 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:15:41 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:15:41 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:15:41 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:15:43 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:16:08 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:16:09 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:16:09 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:16:11 localhost shutdown[1222]: shutting down for system reboot
+Aug 19 14:16:26 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:16:31 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:16:38 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:16:38 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="991" x-info="http://www.rsyslog.com"] start
+Aug 19 14:16:38 localhost kernel: ore: registered new interface driver smsc95xx
+Aug 19 14:16:38 localhost kernel: cdc_ncm: 04-Aug-2011
+Aug 19 14:16:38 localhost kernel: usbcore: registered new interface driver cdc_ncm
+Aug 19 14:16:38 localhost kernel: dwc_otg: version 2.94b 27-OCT-2011 (rev 01-DEC-2011) (platform bus)
+Aug 19 14:16:38 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:16:38 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:16:38 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:16:38 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:16:38 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:16:38 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:16:38 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:16:38 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:16:38 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:16:38 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:16:38 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:16:38 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:16:38 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:16:38 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:16:38 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:16:38 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:16:38 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:16:38 localhost kernel: cpuidle: using governor menu
+Aug 19 14:16:38 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:16:38 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:16:38 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:16:38 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:16:38 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:16:38 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:16:38 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:16:38 localhost kernel: TCP cubic registered
+Aug 19 14:16:38 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:16:38 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:16:38 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:16:38 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:16:38 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:16:38 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:16:38 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:16:38 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:16:38 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:16:38 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:16:38 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:16:38 localhost kernel: devtmpfs: mounted
+Aug 19 14:16:38 localhost kernel: Freeing init memory: 112K
+Aug 19 14:16:38 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:16:38 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:16:38 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:16:38 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:16:38 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:16:38 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:16:38 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:16:38 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:16:38 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:16:38 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:16:38 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:16:38 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:16:38 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:16:38 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:16:38 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:16:38 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:16:38 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:16:38 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:16:38 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:16:38 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:16:39 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:17:03 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:17:04 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:17:04 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:17:11 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:18:59 localhost shutdown[1422]: shutting down for system reboot
+Aug 19 14:19:16 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:19:16 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="991" x-info="http://www.rsyslog.com"] start
+Aug 19 14:19:16 localhost kernel: for core params
+Aug 19 14:19:16 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:19:16 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:19:16 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:19:16 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:19:16 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:19:16 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:19:16 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:19:16 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:19:16 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:19:16 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:19:16 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:19:16 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:19:16 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:19:16 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:19:16 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:19:16 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:19:16 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:19:16 localhost kernel: cpuidle: using governor menu
+Aug 19 14:19:16 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:19:16 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:19:16 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:19:16 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:19:16 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:19:16 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:19:16 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:19:16 localhost kernel: TCP cubic registered
+Aug 19 14:19:16 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:19:16 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:19:16 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:19:16 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:19:16 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:19:16 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:19:16 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:19:16 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:19:16 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:19:16 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:19:16 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:19:16 localhost kernel: devtmpfs: mounted
+Aug 19 14:19:16 localhost kernel: Freeing init memory: 112K
+Aug 19 14:19:16 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:19:16 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:19:16 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:19:16 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:19:16 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:19:16 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:19:16 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:19:16 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:19:16 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:19:16 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:19:16 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:19:16 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:19:16 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:19:16 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:19:16 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:19:16 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:19:16 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:19:16 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:19:16 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:19:16 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:19:16 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:19:16 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:19:16 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:19:16 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:19:17 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:19:39 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:19:41 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:19:41 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:19:48 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:20:33 localhost shutdown[1407]: shutting down for system reboot
+Aug 19 14:20:45 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:20:45 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="991" x-info="http://www.rsyslog.com"] start
+Aug 19 14:20:45 localhost kernel: 
+Aug 19 14:20:45 localhost kernel: cdc_ncm: 04-Aug-2011
+Aug 19 14:20:45 localhost kernel: usbcore: registered new interface driver cdc_ncm
+Aug 19 14:20:45 localhost kernel: dwc_otg: version 2.94b 27-OCT-2011 (rev 01-DEC-2011) (platform bus)
+Aug 19 14:20:45 localhost kernel: dwc_otg bcm2708_usb: DWC OTG Controller
+Aug 19 14:20:45 localhost kernel: dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+Aug 19 14:20:45 localhost kernel: dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Aug 19 14:20:45 localhost kernel: usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+Aug 19 14:20:45 localhost kernel: usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+Aug 19 14:20:45 localhost kernel: usb usb1: Product: DWC OTG Controller
+Aug 19 14:20:45 localhost kernel: usb usb1: Manufacturer: Linux 3.1.9-rpitc+ dwc_otg_hcd
+Aug 19 14:20:45 localhost kernel: usb usb1: SerialNumber: bcm2708_usb
+Aug 19 14:20:45 localhost kernel: hub 1-0:1.0: USB hub found
+Aug 19 14:20:45 localhost kernel: hub 1-0:1.0: 1 port detected
+Aug 19 14:20:45 localhost kernel: usbcore: registered new interface driver uas
+Aug 19 14:20:45 localhost kernel: Initializing USB Mass Storage driver...
+Aug 19 14:20:45 localhost kernel: usbcore: registered new interface driver usb-storage
+Aug 19 14:20:45 localhost kernel: USB Mass Storage support registered.
+Aug 19 14:20:45 localhost kernel: usbcore: registered new interface driver libusual
+Aug 19 14:20:45 localhost kernel: mousedev: PS/2 mouse device common for all mice
+Aug 19 14:20:45 localhost kernel: cpuidle: using governor ladder
+Aug 19 14:20:45 localhost kernel: cpuidle: using governor menu
+Aug 19 14:20:45 localhost kernel: sdhci: Secure Digital Host Controller Interface driver
+Aug 19 14:20:45 localhost kernel: sdhci: Copyright(c) Pierre Ossman
+Aug 19 14:20:45 localhost kernel: mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+Aug 19 14:20:45 localhost kernel: mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+Aug 19 14:20:45 localhost kernel: sdhci-pltfm: SDHCI platform and OF driver helper
+Aug 19 14:20:45 localhost kernel: usbcore: registered new interface driver usbhid
+Aug 19 14:20:45 localhost kernel: usbhid: USB HID core driver
+Aug 19 14:20:45 localhost kernel: TCP cubic registered
+Aug 19 14:20:45 localhost kernel: Initializing XFRM netlink socket
+Aug 19 14:20:45 localhost kernel: NET: Registered protocol family 17
+Aug 19 14:20:45 localhost kernel: Registering the dns_resolver key type
+Aug 19 14:20:45 localhost kernel: VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Aug 19 14:20:45 localhost kernel: Waiting for root device /dev/mmcblk0p2...
+Aug 19 14:20:45 localhost kernel: mmc0: problem reading SD Status register.
+Aug 19 14:20:45 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:20:45 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:20:45 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:20:45 localhost kernel: usb 1-1: new high speed USB device number 2 using dwc_otg
+Aug 19 14:20:45 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:20:45 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:20:45 localhost kernel: devtmpfs: mounted
+Aug 19 14:20:45 localhost kernel: Freeing init memory: 112K
+Aug 19 14:20:45 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:20:45 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:20:45 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:20:45 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:20:45 localhost kernel: usb 1-1.1: new high speed USB device number 3 using dwc_otg
+Aug 19 14:20:45 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:20:45 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:20:45 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:20:45 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:20:45 localhost kernel: usb 1-1.3: new low speed USB device number 4 using dwc_otg
+Aug 19 14:20:45 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:20:45 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:20:45 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:20:45 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:20:45 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:20:45 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:20:45 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:20:45 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:20:45 localhost kernel: ### snd_bcm2835_alsa_probe c03ac4a0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:20:45 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:20:46 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:21:01 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:21:02 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:21:02 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:21:13 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:21:14 localhost shutdown[1207]: shutting down for system halt
+Aug 19 14:22:05 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 14:22:05 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="1001" x-info="http://www.rsyslog.com"] start
+Aug 19 14:22:05 localhost kernel: for root device /dev/mmcblk0p2...
+Aug 19 14:22:05 localhost kernel: mmc0: new high speed SDHC card at address b368
+Aug 19 14:22:05 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 14:22:05 localhost kernel: mmcblk0: p1 p2
+Aug 19 14:22:05 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 14:22:05 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 14:22:05 localhost kernel: usb 1-1: new high-speed USB device number 2 using dwc_otg
+Aug 19 14:22:05 localhost kernel: devtmpfs: mounted
+Aug 19 14:22:05 localhost kernel: Freeing init memory: 116K
+Aug 19 14:22:05 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 14:22:05 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:22:05 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 14:22:05 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 14:22:05 localhost kernel: usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+Aug 19 14:22:05 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 14:22:05 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 14:22:05 localhost kernel: smsc95xx v1.0.4
+Aug 19 14:22:05 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 14:22:05 localhost kernel: usb 1-1.3: new low-speed USB device number 4 using dwc_otg
+Aug 19 14:22:05 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 14:22:05 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:22:05 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 14:22:05 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 14:22:05 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 14:22:05 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 14:22:05 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:22:05 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 14:22:05 localhost kernel: vmalloc: allocation failure: 0 bytes
+Aug 19 14:22:05 localhost kernel: modprobe: page allocation failure: order:0, mode:0xd0
+Aug 19 14:22:05 localhost kernel: ### snd_bcm2835_alsa_probe c03b2158 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 14:22:05 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 14:22:05 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:22:05 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:22:05 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:22:05 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:22:06 localhost kernel: NET: Registered protocol family 10
+Aug 19 14:22:32 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 14:22:33 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 14:22:33 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:22:38 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 14:26:55 localhost kernel: usb 1-1.2: new low-speed USB device number 5 using dwc_otg
+Aug 19 14:26:55 localhost kernel: usb 1-1.2: New USB device found, idVendor=046d, idProduct=c05a
+Aug 19 14:26:55 localhost kernel: usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 14:26:55 localhost kernel: usb 1-1.2: Product: USB Optical Mouse
+Aug 19 14:26:55 localhost kernel: usb 1-1.2: Manufacturer: Logitech
+Aug 19 14:26:55 localhost kernel: input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input1
+Aug 19 14:26:55 localhost kernel: generic-usb 0003:046D:C05A.0002: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+Aug 19 14:39:34 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:39:34 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:39:34 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 14:39:34 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 14:47:58 localhost kernel: bcm2708_fb_check_var info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 14:47:58 localhost kernel: bcm2708_fb_check_var var(cd811d14) 1824x984 (1824x984), 16, 1809408
+Aug 19 14:47:58 localhost kernel: bcm2708_fb_set_par info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 14:47:58 localhost kernel: BCM2708FB: start = d0000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 14:52:17 localhost kernel: bcm2708_fb_check_var info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 14:52:17 localhost kernel: bcm2708_fb_check_var var(cd9edd14) 1824x984 (1824x984), 16, 1809408
+Aug 19 14:52:17 localhost kernel: bcm2708_fb_set_par info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 14:52:17 localhost kernel: BCM2708FB: start = d0400000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 15:04:36 localhost kernel: bcm2708_fb_check_var info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 15:04:36 localhost kernel: bcm2708_fb_check_var var(cea73d14) 1824x984 (1824x984), 16, 1809408
+Aug 19 15:04:36 localhost kernel: bcm2708_fb_set_par info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 15:04:36 localhost kernel: BCM2708FB: start = d0800000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 15:05:43 localhost kernel: bcm2708_fb_check_var info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 15:05:43 localhost kernel: bcm2708_fb_check_var var(cd811d14) 1824x984 (1824x984), 16, 1809408
+Aug 19 15:05:43 localhost kernel: bcm2708_fb_set_par info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 15:05:43 localhost kernel: BCM2708FB: start = d0c00000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 15:08:58 localhost shutdown[3006]: shutting down for system halt
+Aug 19 15:09:01 localhost kernel: bcm2708_fb_check_var info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 15:09:01 localhost kernel: bcm2708_fb_check_var var(cd92dd14) 1824x984 (1824x984), 16, 1809408
+Aug 19 15:09:01 localhost kernel: bcm2708_fb_set_par info(ce8ecc00) 1824x984 (1824x984), 3618816, 16
+Aug 19 15:09:01 localhost kernel: BCM2708FB: start = d1000000,4f585000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Aug 19 15:09:12 localhost kernel: imklog 5.8.11, log source = /proc/kmsg started.
+Aug 19 15:09:12 localhost rsyslogd: [origin software="rsyslogd" swVersion="5.8.11" x-pid="996" x-info="http://www.rsyslog.com"] start
+Aug 19 15:09:12 localhost kernel: c0: new high speed SDHC card at address b368
+Aug 19 15:09:12 localhost kernel: mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
+Aug 19 15:09:12 localhost kernel: mmcblk0: p1 p2
+Aug 19 15:09:12 localhost kernel: EXT4-fs (mmcblk0p2): recovery complete
+Aug 19 15:09:12 localhost kernel: EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+Aug 19 15:09:12 localhost kernel: usb 1-1: new high-speed USB device number 2 using dwc_otg
+Aug 19 15:09:12 localhost kernel: VFS: Mounted root (ext4 filesystem) on device 179:2.
+Aug 19 15:09:12 localhost kernel: devtmpfs: mounted
+Aug 19 15:09:12 localhost kernel: Freeing init memory: 116K
+Aug 19 15:09:12 localhost kernel: usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+Aug 19 15:09:12 localhost kernel: usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 15:09:12 localhost kernel: hub 1-1:1.0: USB hub found
+Aug 19 15:09:12 localhost kernel: hub 1-1:1.0: 3 ports detected
+Aug 19 15:09:12 localhost kernel: usb 1-1.1: new high-speed USB device number 3 using dwc_otg
+Aug 19 15:09:12 localhost kernel: usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
+Aug 19 15:09:12 localhost kernel: usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+Aug 19 15:09:12 localhost kernel: smsc95xx v1.0.4
+Aug 19 15:09:12 localhost kernel: smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
+Aug 19 15:09:12 localhost kernel: usb 1-1.3: new low-speed USB device number 4 using dwc_otg
+Aug 19 15:09:12 localhost kernel: usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+Aug 19 15:09:12 localhost kernel: usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+Aug 19 15:09:12 localhost kernel: usb 1-1.3: Product: USB Multimedia Keyboard
+Aug 19 15:09:12 localhost kernel: usb 1-1.3: Manufacturer: LITEON Technology
+Aug 19 15:09:12 localhost kernel: input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
+Aug 19 15:09:12 localhost kernel: generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+Aug 19 15:09:12 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 15:09:12 localhost kernel: EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
+Aug 19 15:09:12 localhost kernel: vmalloc: allocation failure: 0 bytes
+Aug 19 15:09:12 localhost kernel: modprobe: page allocation failure: order:0, mode:0xd0
+Aug 19 15:09:12 localhost kernel: ### snd_bcm2835_alsa_probe c03b2158 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+Aug 19 15:09:12 localhost kernel: ### BCM2835 ALSA driver init OK ### 
+Aug 19 15:09:12 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 15:09:12 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 15:09:12 localhost kernel: mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
+Aug 19 15:09:12 localhost kernel: mmc0: DMA IRQ 6 ignored - results were reset
+Aug 19 15:09:13 localhost kernel: NET: Registered protocol family 10
+Aug 19 15:09:30 localhost kernel: ADDRCONF(NETDEV_UP): eth0: link is not ready
+Aug 19 15:09:31 localhost kernel: ADDRCONF(NETDEV_CHANGE): eth0: link becomes ready
+Aug 19 15:09:31 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 15:09:41 localhost kernel: smsc95xx 1-1.1:1.0: eth0: link up, 100Mbps, full-duplex, lpa 0x45E1
+Aug 19 15:11:54 localhost shutdown[1258]: shutting down for system halt

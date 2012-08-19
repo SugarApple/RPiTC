@@ -1,33 +1,33 @@
-[   102.106] 
-X.Org X Server 1.12.1.902 (1.12.2 RC 2)
-Release Date: 2012-05-19
-[   102.112] X Protocol Version 11, Revision 0
-[   102.113] Build Operating System: Linux 2.6.32 armv5tel Debian
-[   102.114] Current Operating System: Linux rpitc 3.1.9-rpitc+ #4 PREEMPT Wed Aug 1 22:50:49 CEST 2012 armv6l
-[   102.115] Kernel command line: dma.dmachans=0x3c bcm2708_fb.fbwidth=1280 bcm2708_fb.fbheight=1024 bcm2708.boardrev=0x2 bcm2708.serial=0x4c249ab smsc95xx.macaddr=B8:27:EB:C2:49:AB dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 rootwait
-[   102.120] Build Date: 21 May 2012  05:22:58AM
-[   102.121] xorg-server 2:1.12.1.902-1 (Cyril Brulebois <kibi@debian.org>) 
-[   102.122] Current version of pixman: 0.26.0
-[   102.123] 	Before reporting problems, check http://wiki.x.org
+[  2348.274] 
+X.Org X Server 1.12.3
+Release Date: 2012-07-09
+[  2348.304] X Protocol Version 11, Revision 0
+[  2348.314] Build Operating System: Linux 2.6.32 armv5tel Debian
+[  2348.325] Current Operating System: Linux rpitc 3.2.27-rpitc+ #1 PREEMPT Sun Aug 19 16:17:43 CEST 2012 armv6l
+[  2348.326] Kernel command line: dma.dmachans=0x3c bcm2708_fb.fbwidth=1824 bcm2708_fb.fbheight=984 bcm2708.boardrev=0x2 bcm2708.serial=0x4c249ab smsc95xx.macaddr=B8:27:EB:C2:49:AB dwc_otg.lpm_enable=0 console=ttyAMA0,115200 kgdboc=ttyAMA0,115200 console=tty1 root=/dev/mmcblk0p2 rootfstype=ext4 rootwait
+[  2348.359] Build Date: 18 July 2012  09:34:46AM
+[  2348.370] xorg-server 2:1.12.3-1 (Julien Cristau <jcristau@debian.org>) 
+[  2348.381] Current version of pixman: 0.26.0
+[  2348.403] 	Before reporting problems, check http://wiki.x.org
 	to make sure that you have the latest version.
-[   102.124] Markers: (--) probed, (**) from config file, (==) default setting,
+[  2348.404] Markers: (--) probed, (**) from config file, (==) default setting,
 	(++) from command line, (!!) notice, (II) informational,
 	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
-[   102.131] (==) Log file: "/var/log/Xorg.0.log", Time: Thu Aug  9 07:45:44 2012
-[   102.146] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
-[   102.150] (==) No Layout section.  Using the first Screen section.
-[   102.150] (==) No screen section available. Using defaults.
-[   102.150] (**) |-->Screen "Default Screen Section" (0)
-[   102.150] (**) |   |-->Monitor "<default monitor>"
-[   102.158] (==) No monitor specified for screen "Default Screen Section".
+[  2348.450] (==) Log file: "/var/log/Xorg.0.log", Time: Sun Aug 19 15:04:43 2012
+[  2348.462] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[  2348.464] (==) No Layout section.  Using the first Screen section.
+[  2348.465] (==) No screen section available. Using defaults.
+[  2348.465] (**) |-->Screen "Default Screen Section" (0)
+[  2348.465] (**) |   |-->Monitor "<default monitor>"
+[  2348.467] (==) No monitor specified for screen "Default Screen Section".
 	Using a default monitor configuration.
-[   102.158] (==) Automatically adding devices
-[   102.159] (==) Automatically enabling devices
-[   102.178] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
-[   102.178] 	Entry deleted from font path.
-[   102.191] (WW) The directory "/var/lib/defoma/x-ttcidfont-conf.d/dirs/TrueType" does not exist.
-[   102.191] 	Entry deleted from font path.
-[   102.192] (==) FontPath set to:
+[  2348.468] (==) Automatically adding devices
+[  2348.468] (==) Automatically enabling devices
+[  2348.469] (WW) The directory "/usr/share/fonts/X11/cyrillic" does not exist.
+[  2348.469] 	Entry deleted from font path.
+[  2348.469] (WW) The directory "/var/lib/defoma/x-ttcidfont-conf.d/dirs/TrueType" does not exist.
+[  2348.469] 	Entry deleted from font path.
+[  2348.470] (==) FontPath set to:
 	/usr/share/fonts/X11/misc,
 	/usr/share/fonts/X11/100dpi/:unscaled,
 	/usr/share/fonts/X11/75dpi/:unscaled,
@@ -35,159 +35,177 @@ Release Date: 2012-05-19
 	/usr/share/fonts/X11/100dpi,
 	/usr/share/fonts/X11/75dpi,
 	built-ins
-[   102.192] (==) ModulePath set to "/usr/lib/xorg/modules"
-[   102.192] (II) The server relies on udev to provide the list of input devices.
+[  2348.470] (==) ModulePath set to "/usr/lib/xorg/modules"
+[  2348.470] (II) The server relies on udev to provide the list of input devices.
 	If no devices become available, reconfigure udev or disable AutoAddDevices.
-[   102.192] (II) Loader magic: 0x4020fcf0
-[   102.192] (II) Module ABI versions:
-[   102.192] 	X.Org ANSI C Emulation: 0.4
-[   102.193] 	X.Org Video Driver: 12.0
-[   102.193] 	X.Org XInput driver : 16.0
-[   102.193] 	X.Org Server Extension : 6.0
-[   102.194] (II) LoadModule: "extmod"
-[   102.203] (II) Loading /usr/lib/xorg/modules/extensions/libextmod.so
-[   102.216] (II) Module extmod: vendor="X.Org Foundation"
-[   102.217] 	compiled for 1.12.1.902, module version = 1.0.0
-[   102.217] 	Module class: X.Org Server Extension
-[   102.217] 	ABI class: X.Org Server Extension, version 6.0
-[   102.217] (II) Loading extension SELinux
-[   102.217] (II) Loading extension MIT-SCREEN-SAVER
-[   102.218] (II) Loading extension XFree86-VidModeExtension
-[   102.218] (II) Loading extension XFree86-DGA
-[   102.218] (II) Loading extension DPMS
-[   102.218] (II) Loading extension XVideo
-[   102.218] (II) Loading extension XVideo-MotionCompensation
-[   102.218] (II) Loading extension X-Resource
-[   102.219] (II) LoadModule: "dbe"
-[   102.221] (II) Loading /usr/lib/xorg/modules/extensions/libdbe.so
-[   102.225] (II) Module dbe: vendor="X.Org Foundation"
-[   102.225] 	compiled for 1.12.1.902, module version = 1.0.0
-[   102.225] 	Module class: X.Org Server Extension
-[   102.225] 	ABI class: X.Org Server Extension, version 6.0
-[   102.226] (II) Loading extension DOUBLE-BUFFER
-[   102.226] (II) LoadModule: "glx"
-[   102.228] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
-[   102.250] (II) Module glx: vendor="X.Org Foundation"
-[   102.250] 	compiled for 1.12.1.902, module version = 1.0.0
-[   102.250] 	ABI class: X.Org Server Extension, version 6.0
-[   102.251] (==) AIGLX enabled
-[   102.251] (II) Loading extension GLX
-[   102.251] (II) LoadModule: "record"
-[   102.253] (II) Loading /usr/lib/xorg/modules/extensions/librecord.so
-[   102.259] (II) Module record: vendor="X.Org Foundation"
-[   102.259] 	compiled for 1.12.1.902, module version = 1.13.0
-[   102.259] 	Module class: X.Org Server Extension
-[   102.259] 	ABI class: X.Org Server Extension, version 6.0
-[   102.259] (II) Loading extension RECORD
-[   102.260] (II) LoadModule: "dri"
-[   102.262] (II) Loading /usr/lib/xorg/modules/extensions/libdri.so
-[   102.273] (II) Module dri: vendor="X.Org Foundation"
-[   102.273] 	compiled for 1.12.1.902, module version = 1.0.0
-[   102.273] 	ABI class: X.Org Server Extension, version 6.0
-[   102.274] (II) Loading extension XFree86-DRI
-[   102.274] (II) LoadModule: "dri2"
-[   102.276] (II) Loading /usr/lib/xorg/modules/extensions/libdri2.so
-[   102.281] (II) Module dri2: vendor="X.Org Foundation"
-[   102.281] 	compiled for 1.12.1.902, module version = 1.2.0
-[   102.281] 	ABI class: X.Org Server Extension, version 6.0
-[   102.281] (II) Loading extension DRI2
-[   102.282] (==) Matched fbdev as autoconfigured driver 0
-[   102.282] (==) Assigned the driver to the xf86ConfigLayout
-[   102.282] (II) LoadModule: "fbdev"
-[   102.283] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
-[   102.286] (II) Module fbdev: vendor="X.Org Foundation"
-[   102.287] 	compiled for 1.12.1, module version = 0.4.2
-[   102.287] 	ABI class: X.Org Video Driver, version 12.0
-[   102.287] (II) FBDEV: driver for framebuffer: fbdev
-[   102.288] (--) using VT number 3
+[  2348.470] (II) Loader magic: 0x40259cf0
+[  2348.471] (II) Module ABI versions:
+[  2348.471] 	X.Org ANSI C Emulation: 0.4
+[  2348.471] 	X.Org Video Driver: 12.0
+[  2348.471] 	X.Org XInput driver : 16.0
+[  2348.471] 	X.Org Server Extension : 6.0
+[  2348.472] (II) LoadModule: "extmod"
+[  2348.474] (II) Loading /usr/lib/xorg/modules/extensions/libextmod.so
+[  2348.479] (II) Module extmod: vendor="X.Org Foundation"
+[  2348.479] 	compiled for 1.12.3, module version = 1.0.0
+[  2348.479] 	Module class: X.Org Server Extension
+[  2348.479] 	ABI class: X.Org Server Extension, version 6.0
+[  2348.480] (II) Loading extension SELinux
+[  2348.480] (II) Loading extension MIT-SCREEN-SAVER
+[  2348.480] (II) Loading extension XFree86-VidModeExtension
+[  2348.480] (II) Loading extension XFree86-DGA
+[  2348.480] (II) Loading extension DPMS
+[  2348.481] (II) Loading extension XVideo
+[  2348.481] (II) Loading extension XVideo-MotionCompensation
+[  2348.481] (II) Loading extension X-Resource
+[  2348.481] (II) LoadModule: "dbe"
+[  2348.482] (II) Loading /usr/lib/xorg/modules/extensions/libdbe.so
+[  2348.483] (II) Module dbe: vendor="X.Org Foundation"
+[  2348.484] 	compiled for 1.12.3, module version = 1.0.0
+[  2348.484] 	Module class: X.Org Server Extension
+[  2348.484] 	ABI class: X.Org Server Extension, version 6.0
+[  2348.484] (II) Loading extension DOUBLE-BUFFER
+[  2348.485] (II) LoadModule: "glx"
+[  2348.486] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[  2348.488] (II) Module glx: vendor="X.Org Foundation"
+[  2348.488] 	compiled for 1.12.3, module version = 1.0.0
+[  2348.488] 	ABI class: X.Org Server Extension, version 6.0
+[  2348.489] (==) AIGLX enabled
+[  2348.489] (II) Loading extension GLX
+[  2348.489] (II) LoadModule: "record"
+[  2348.491] (II) Loading /usr/lib/xorg/modules/extensions/librecord.so
+[  2348.492] (II) Module record: vendor="X.Org Foundation"
+[  2348.492] 	compiled for 1.12.3, module version = 1.13.0
+[  2348.493] 	Module class: X.Org Server Extension
+[  2348.493] 	ABI class: X.Org Server Extension, version 6.0
+[  2348.493] (II) Loading extension RECORD
+[  2348.493] (II) LoadModule: "dri"
+[  2348.494] (II) Loading /usr/lib/xorg/modules/extensions/libdri.so
+[  2348.497] (II) Module dri: vendor="X.Org Foundation"
+[  2348.497] 	compiled for 1.12.3, module version = 1.0.0
+[  2348.498] 	ABI class: X.Org Server Extension, version 6.0
+[  2348.498] (II) Loading extension XFree86-DRI
+[  2348.498] (II) LoadModule: "dri2"
+[  2348.499] (II) Loading /usr/lib/xorg/modules/extensions/libdri2.so
+[  2348.501] (II) Module dri2: vendor="X.Org Foundation"
+[  2348.501] 	compiled for 1.12.3, module version = 1.2.0
+[  2348.501] 	ABI class: X.Org Server Extension, version 6.0
+[  2348.501] (II) Loading extension DRI2
+[  2348.502] (==) Matched fbdev as autoconfigured driver 0
+[  2348.502] (==) Assigned the driver to the xf86ConfigLayout
+[  2348.502] (II) LoadModule: "fbdev"
+[  2348.504] (II) Loading /usr/lib/xorg/modules/drivers/fbdev_drv.so
+[  2348.505] (II) Module fbdev: vendor="X.Org Foundation"
+[  2348.505] 	compiled for 1.12.1, module version = 0.4.2
+[  2348.506] 	ABI class: X.Org Video Driver, version 12.0
+[  2348.506] (II) FBDEV: driver for framebuffer: fbdev
+[  2348.506] (--) using VT number 3
 
-[   102.317] (WW) Falling back to old probe method for fbdev
-[   102.317] (II) Loading sub module "fbdevhw"
-[   102.317] (II) LoadModule: "fbdevhw"
-[   102.319] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
-[   102.323] (II) Module fbdevhw: vendor="X.Org Foundation"
-[   102.323] 	compiled for 1.12.1.902, module version = 0.0.2
-[   102.323] 	ABI class: X.Org Video Driver, version 12.0
-[   102.324] (II) FBDEV(0): using default device
-[   102.324] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
-[   102.325] (II) FBDEV(0): Creating default Display subsection in Screen section
+[  2348.535] (WW) Falling back to old probe method for fbdev
+[  2348.535] (II) Loading sub module "fbdevhw"
+[  2348.535] (II) LoadModule: "fbdevhw"
+[  2348.536] (II) Loading /usr/lib/xorg/modules/libfbdevhw.so
+[  2348.538] (II) Module fbdevhw: vendor="X.Org Foundation"
+[  2348.538] 	compiled for 1.12.3, module version = 0.0.2
+[  2348.538] 	ABI class: X.Org Video Driver, version 12.0
+[  2348.539] (II) FBDEV(0): using default device
+[  2348.539] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[  2348.540] (II) FBDEV(0): Creating default Display subsection in Screen section
 	"Default Screen Section" for depth/fbbpp 16/16
-[   102.325] (==) FBDEV(0): Depth 16, (==) framebuffer bpp 16
-[   102.325] (==) FBDEV(0): RGB weight 565
-[   102.325] (==) FBDEV(0): Default visual is TrueColor
-[   102.326] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
-[   102.326] (II) FBDEV(0): hardware: BCM2708 FB (video memory: 2560kB)
-[   102.326] (II) FBDEV(0): checking modes against framebuffer device...
-[   102.327] (II) FBDEV(0): checking modes against monitor...
-[   102.328] (--) FBDEV(0): Virtual size is 1280x1024 (pitch 1280)
-[   102.329] (**) FBDEV(0):  Built-in mode "current"
-[   102.329] (==) FBDEV(0): DPI set to (96, 96)
-[   102.329] (II) Loading sub module "fb"
-[   102.329] (II) LoadModule: "fb"
-[   102.331] (II) Loading /usr/lib/xorg/modules/libfb.so
-[   102.341] (II) Module fb: vendor="X.Org Foundation"
-[   102.342] 	compiled for 1.12.1.902, module version = 1.0.0
-[   102.342] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[   102.342] (**) FBDEV(0): using shadow framebuffer
-[   102.342] (II) Loading sub module "shadow"
-[   102.342] (II) LoadModule: "shadow"
-[   102.344] (II) Loading /usr/lib/xorg/modules/libshadow.so
-[   102.349] (II) Module shadow: vendor="X.Org Foundation"
-[   102.349] 	compiled for 1.12.1.902, module version = 1.1.0
-[   102.350] 	ABI class: X.Org ANSI C Emulation, version 0.4
-[   102.351] (EE) FBDEV(0): FBIOBLANK: Operation not permitted
-[   102.377] (==) FBDEV(0): Backing store disabled
-[   102.378] (==) FBDEV(0): DPMS enabled
-[   102.379] (==) RandR enabled
-[   102.379] (II) Initializing built-in extension Generic Event Extension
-[   102.379] (II) Initializing built-in extension SHAPE
-[   102.379] (II) Initializing built-in extension MIT-SHM
-[   102.379] (II) Initializing built-in extension XInputExtension
-[   102.380] (II) Initializing built-in extension XTEST
-[   102.380] (II) Initializing built-in extension BIG-REQUESTS
-[   102.380] (II) Initializing built-in extension SYNC
-[   102.380] (II) Initializing built-in extension XKEYBOARD
-[   102.380] (II) Initializing built-in extension XC-MISC
-[   102.381] (II) Initializing built-in extension SECURITY
-[   102.381] (II) Initializing built-in extension XINERAMA
-[   102.381] (II) Initializing built-in extension XFIXES
-[   102.381] (II) Initializing built-in extension RENDER
-[   102.381] (II) Initializing built-in extension RANDR
-[   102.381] (II) Initializing built-in extension COMPOSITE
-[   102.382] (II) Initializing built-in extension DAMAGE
-[   102.382] (II) SELinux: Disabled on system
-[   102.477] (II) AIGLX: Screen 0 is not DRI2 capable
-[   102.477] (II) AIGLX: Screen 0 is not DRI capable
-[   102.598] (II) AIGLX: Loaded and initialized swrast
-[   102.599] (II) GLX: Initialized DRISWRAST GL provider for screen 0
-[   103.429] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event0)
-[   103.429] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
-[   103.430] (II) LoadModule: "evdev"
-[   103.432] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
-[   103.437] (II) Module evdev: vendor="X.Org Foundation"
-[   103.437] 	compiled for 1.12.1, module version = 2.7.0
-[   103.437] 	Module class: X.Org XInput Driver
-[   103.437] 	ABI class: X.Org XInput driver, version 16.0
-[   103.438] (II) Using input driver 'evdev' for 'Logitech USB Optical Mouse'
-[   103.438] (**) Logitech USB Optical Mouse: always reports core events
-[   103.438] (**) evdev: Logitech USB Optical Mouse: Device: "/dev/input/event0"
-[   103.439] (--) evdev: Logitech USB Optical Mouse: Vendor 0x46d Product 0xc018
-[   103.439] (--) evdev: Logitech USB Optical Mouse: Found 3 mouse buttons
-[   103.439] (--) evdev: Logitech USB Optical Mouse: Found scroll wheel(s)
-[   103.439] (--) evdev: Logitech USB Optical Mouse: Found relative axes
-[   103.440] (--) evdev: Logitech USB Optical Mouse: Found x and y relative axes
-[   103.440] (II) evdev: Logitech USB Optical Mouse: Configuring as mouse
-[   103.440] (II) evdev: Logitech USB Optical Mouse: Adding scrollwheel support
-[   103.441] (**) evdev: Logitech USB Optical Mouse: YAxisMapping: buttons 4 and 5
-[   103.441] (**) evdev: Logitech USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
-[   103.441] (**) Option "config_info" "udev:/sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0/event0"
-[   103.442] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 6)
-[   103.442] (II) evdev: Logitech USB Optical Mouse: initialized for relative axes.
-[   103.445] (**) Logitech USB Optical Mouse: (accel) keeping acceleration scheme 1
-[   103.445] (**) Logitech USB Optical Mouse: (accel) acceleration profile 0
-[   103.445] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
-[   103.446] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
-[   103.449] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
-[   103.450] (II) No input driver specified, ignoring this device.
-[   103.450] (II) This device may have been added with another device file.
-[   103.505] (EE) FBDEV(0): FBIOBLANK: Operation not permitted
+[  2348.541] (==) FBDEV(0): Depth 16, (==) framebuffer bpp 16
+[  2348.541] (==) FBDEV(0): RGB weight 565
+[  2348.541] (==) FBDEV(0): Default visual is TrueColor
+[  2348.541] (==) FBDEV(0): Using gamma correction (1.0, 1.0, 1.0)
+[  2348.542] (II) FBDEV(0): hardware: BCM2708 FB (video memory: 3505kB)
+[  2348.542] (II) FBDEV(0): checking modes against framebuffer device...
+[  2348.542] (II) FBDEV(0): checking modes against monitor...
+[  2348.543] (--) FBDEV(0): Virtual size is 1824x984 (pitch 1824)
+[  2348.543] (**) FBDEV(0):  Built-in mode "current"
+[  2348.543] (==) FBDEV(0): DPI set to (96, 96)
+[  2348.543] (II) Loading sub module "fb"
+[  2348.543] (II) LoadModule: "fb"
+[  2348.546] (II) Loading /usr/lib/xorg/modules/libfb.so
+[  2348.547] (II) Module fb: vendor="X.Org Foundation"
+[  2348.548] 	compiled for 1.12.3, module version = 1.0.0
+[  2348.548] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  2348.548] (**) FBDEV(0): using shadow framebuffer
+[  2348.548] (II) Loading sub module "shadow"
+[  2348.548] (II) LoadModule: "shadow"
+[  2348.549] (II) Loading /usr/lib/xorg/modules/libshadow.so
+[  2348.551] (II) Module shadow: vendor="X.Org Foundation"
+[  2348.551] 	compiled for 1.12.3, module version = 1.1.0
+[  2348.551] 	ABI class: X.Org ANSI C Emulation, version 0.4
+[  2348.552] (EE) FBDEV(0): FBIOBLANK: Operation not permitted
+[  2348.554] (==) FBDEV(0): Backing store disabled
+[  2348.555] (==) FBDEV(0): DPMS enabled
+[  2348.556] (==) RandR enabled
+[  2348.556] (II) Initializing built-in extension Generic Event Extension
+[  2348.556] (II) Initializing built-in extension SHAPE
+[  2348.557] (II) Initializing built-in extension MIT-SHM
+[  2348.557] (II) Initializing built-in extension XInputExtension
+[  2348.557] (II) Initializing built-in extension XTEST
+[  2348.557] (II) Initializing built-in extension BIG-REQUESTS
+[  2348.557] (II) Initializing built-in extension SYNC
+[  2348.558] (II) Initializing built-in extension XKEYBOARD
+[  2348.558] (II) Initializing built-in extension XC-MISC
+[  2348.558] (II) Initializing built-in extension SECURITY
+[  2348.558] (II) Initializing built-in extension XINERAMA
+[  2348.558] (II) Initializing built-in extension XFIXES
+[  2348.558] (II) Initializing built-in extension RENDER
+[  2348.559] (II) Initializing built-in extension RANDR
+[  2348.559] (II) Initializing built-in extension COMPOSITE
+[  2348.559] (II) Initializing built-in extension DAMAGE
+[  2348.559] (II) SELinux: Disabled on system
+[  2348.649] (II) AIGLX: Screen 0 is not DRI2 capable
+[  2348.649] (II) AIGLX: Screen 0 is not DRI capable
+[  2348.693] (II) AIGLX: Loaded and initialized swrast
+[  2348.693] (II) GLX: Initialized DRISWRAST GL provider for screen 0
+[  2349.479] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/event1)
+[  2349.479] (**) Logitech USB Optical Mouse: Applying InputClass "evdev pointer catchall"
+[  2349.480] (II) LoadModule: "evdev"
+[  2349.481] (II) Loading /usr/lib/xorg/modules/input/evdev_drv.so
+[  2349.482] (II) Module evdev: vendor="X.Org Foundation"
+[  2349.482] 	compiled for 1.12.1, module version = 2.7.0
+[  2349.482] 	Module class: X.Org XInput Driver
+[  2349.483] 	ABI class: X.Org XInput driver, version 16.0
+[  2349.483] (II) Using input driver 'evdev' for 'Logitech USB Optical Mouse'
+[  2349.483] (**) Logitech USB Optical Mouse: always reports core events
+[  2349.484] (**) evdev: Logitech USB Optical Mouse: Device: "/dev/input/event1"
+[  2349.484] (--) evdev: Logitech USB Optical Mouse: Vendor 0x46d Product 0xc05a
+[  2349.484] (--) evdev: Logitech USB Optical Mouse: Found 12 mouse buttons
+[  2349.485] (--) evdev: Logitech USB Optical Mouse: Found scroll wheel(s)
+[  2349.485] (--) evdev: Logitech USB Optical Mouse: Found relative axes
+[  2349.485] (--) evdev: Logitech USB Optical Mouse: Found x and y relative axes
+[  2349.485] (II) evdev: Logitech USB Optical Mouse: Configuring as mouse
+[  2349.485] (II) evdev: Logitech USB Optical Mouse: Adding scrollwheel support
+[  2349.486] (**) evdev: Logitech USB Optical Mouse: YAxisMapping: buttons 4 and 5
+[  2349.486] (**) evdev: Logitech USB Optical Mouse: EmulateWheelButton: 4, EmulateWheelInertia: 10, EmulateWheelTimeout: 200
+[  2349.486] (**) Option "config_info" "udev:/sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input1/event1"
+[  2349.487] (II) XINPUT: Adding extended input device "Logitech USB Optical Mouse" (type: MOUSE, id 6)
+[  2349.488] (II) evdev: Logitech USB Optical Mouse: initialized for relative axes.
+[  2349.490] (**) Logitech USB Optical Mouse: (accel) keeping acceleration scheme 1
+[  2349.490] (**) Logitech USB Optical Mouse: (accel) acceleration profile 0
+[  2349.491] (**) Logitech USB Optical Mouse: (accel) acceleration factor: 2.000
+[  2349.491] (**) Logitech USB Optical Mouse: (accel) acceleration threshold: 4
+[  2349.495] (II) config/udev: Adding input device Logitech USB Optical Mouse (/dev/input/mouse0)
+[  2349.495] (II) No input driver specified, ignoring this device.
+[  2349.495] (II) This device may have been added with another device file.
+[  2349.500] (II) config/udev: Adding input device LITEON Technology USB Multimedia Keyboard (/dev/input/event0)
+[  2349.500] (**) LITEON Technology USB Multimedia Keyboard: Applying InputClass "evdev keyboard catchall"
+[  2349.501] (II) Using input driver 'evdev' for 'LITEON Technology USB Multimedia Keyboard'
+[  2349.501] (**) LITEON Technology USB Multimedia Keyboard: always reports core events
+[  2349.501] (**) evdev: LITEON Technology USB Multimedia Keyboard: Device: "/dev/input/event0"
+[  2349.502] (--) evdev: LITEON Technology USB Multimedia Keyboard: Vendor 0x46d Product 0xc312
+[  2349.502] (--) evdev: LITEON Technology USB Multimedia Keyboard: Found keys
+[  2349.502] (II) evdev: LITEON Technology USB Multimedia Keyboard: Configuring as keyboard
+[  2349.502] (**) Option "config_info" "udev:/sys/devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0/event0"
+[  2349.503] (II) XINPUT: Adding extended input device "LITEON Technology USB Multimedia Keyboard" (type: KEYBOARD, id 7)
+[  2349.503] (**) Option "xkb_rules" "evdev"
+[  2349.503] (**) Option "xkb_model" "pc105"
+[  2349.504] (**) Option "xkb_layout" "us"
+[  2349.560] (EE) FBDEV(0): FBIOBLANK: Operation not permitted
+[  2407.831] (II) evdev: Logitech USB Optical Mouse: Close
+[  2407.831] (II) UnloadModule: "evdev"
+[  2407.832] (II) evdev: LITEON Technology USB Multimedia Keyboard: Close
+[  2407.832] (II) UnloadModule: "evdev"
+[  2407.932] Server terminated successfully (0). Closing log file.
