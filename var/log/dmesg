@@ -1,77 +1,75 @@
-c0: new high speed SDHC card at address b368
-mmcblk0: mmc0:b368 LEXAR 14.9 GiB 
- mmcblk0: p1 p2
-EXT4-fs (mmcblk0p2): recovery complete
-EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
-usb 1-1: new high-speed USB device number 2 using dwc_otg
-VFS: Mounted root (ext4 filesystem) on device 179:2.
-Indeed it is in host mode hprt0 = 00001101
-devtmpfs: mounted
-Freeing init memory: 116K
-usb 1-1: New USB device found, idVendor=0424, idProduct=9512
-usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+fr=0, Product=0, SerialNumber=0
 hub 1-1:1.0: USB hub found
 hub 1-1:1.0: 3 ports detected
+EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
+VFS: Mounted root (ext4 filesystem) on device 179:2.
+devtmpfs: mounted
+Freeing init memory: 116K
 usb 1-1.1: new high-speed USB device number 3 using dwc_otg
 usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
 usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
 smsc95xx v1.0.4
 smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
-usb 1-1.3: new low-speed USB device number 4 using dwc_otg
-usb 1-1.3: New USB device found, idVendor=046d, idProduct=c312
+usb 1-1.2: new low-speed USB device number 4 using dwc_otg
+usb 1-1.2: New USB device found, idVendor=046d, idProduct=c018
+usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
+usb 1-1.2: Product: USB Optical Mouse
+usb 1-1.2: Manufacturer: Logitech
+input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
+generic-usb 0003:046D:C018.0001: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
+usb 1-1.3: new low-speed USB device number 5 using dwc_otg
+usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
 usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
-usb 1-1.3: Product: USB Multimedia Keyboard
-usb 1-1.3: Manufacturer: LITEON Technology
-input: LITEON Technology USB Multimedia Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input0
-generic-usb 0003:046D:C312.0001: input: USB HID v1.10 Keyboard [LITEON Technology USB Multimedia Keyboard] on usb-bcm2708_usb-1.3/input0
+usb 1-1.3: Product: HP Basic USB Keyboard
+usb 1-1.3: Manufacturer: CHICONY
+input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input1
+generic-usb 0003:03F0:0024.0002: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
 udevd[115]: starting version 175
 EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
 EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
 vmalloc: allocation failure: 0 bytes
 modprobe: page allocation failure: order:0, mode:0xd0
 Backtrace: 
-Function entered at [<c00112dc>] from [<c0312100>]
- r6:c033fee2 r5:000000d0 r4:00000001 r3:00000000
-Function entered at [<c03120e8>] from [<c0060590>]
-Function entered at [<c006049c>] from [<c007f390>]
- r3:00000000 r2:c033fee2
- r7:00000000 r6:c004d3e0 r5:000000d0 r4:cf892768
-Function entered at [<c007f1e4>] from [<c0011edc>]
- r8:cf892e54 r7:000003e8 r6:00000000 r5:bf02b000 r4:cf892768
-Function entered at [<c0011ea0>] from [<c004d3e0>]
-Function entered at [<c004d3cc>] from [<c004db5c>]
- r6:00000004 r5:bf02b000 r4:cf892768 r3:00000000
-Function entered at [<c004d458>] from [<c000db60>]
+Function entered at [<c00112dc>] from [<c03139f8>]
+ r6:c034202b r5:000000d0 r4:00000001 r3:00000000
+Function entered at [<c03139e0>] from [<c0060758>]
+Function entered at [<c0060664>] from [<c007f558>]
+ r3:00000000 r2:c034202b
+ r7:00000000 r6:c004d5a8 r5:000000d0 r4:cf8be768
+Function entered at [<c007f3ac>] from [<c0011edc>]
+ r8:cf8bee54 r7:000003e8 r6:00000000 r5:bf03b000 r4:cf8be768
+Function entered at [<c0011ea0>] from [<c004d5a8>]
+Function entered at [<c004d594>] from [<c004dd24>]
+ r6:00000004 r5:bf03b000 r4:cf8be768 r3:00000000
+Function entered at [<c004d620>] from [<c000db60>]
 Mem-info:
 Normal per-cpu:
-CPU    0: hi:   90, btch:  15 usd:  32
-active_anon:988 inactive_anon:31 isolated_anon:0
- active_file:543 inactive_file:1114 isolated_file:0
+CPU    0: hi:   90, btch:  15 usd:  33
+active_anon:1089 inactive_anon:35 isolated_anon:0
+ active_file:554 inactive_file:1073 isolated_file:0
  unevictable:410 dirty:1 writeback:0 unstable:0
- free:55449 slab_reclaimable:243 slab_unreclaimable:511
- mapped:487 shmem:33 pagetables:181 bounce:0
-Normal free:221796kB min:1972kB low:2464kB high:2956kB active_anon:3952kB inactive_anon:124kB active_file:2172kB inactive_file:4456kB unevictable:1640kB isolated(anon):0kB isolated(file):0kB present:243840kB mlocked:1640kB dirty:4kB writeback:0kB mapped:1948kB shmem:132kB slab_reclaimable:972kB slab_unreclaimable:2044kB kernel_stack:456kB pagetables:724kB unstable:0kB bounce:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? no
+ free:55333 slab_reclaimable:250 slab_unreclaimable:528
+ mapped:487 shmem:37 pagetables:187 bounce:0
+Normal free:221332kB min:1972kB low:2464kB high:2956kB active_anon:4356kB inactive_anon:140kB active_file:2216kB inactive_file:4292kB unevictable:1640kB isolated(anon):0kB isolated(file):0kB present:243840kB mlocked:1640kB dirty:4kB writeback:0kB mapped:1948kB shmem:148kB slab_reclaimable:1000kB slab_unreclaimable:2112kB kernel_stack:464kB pagetables:748kB unstable:0kB bounce:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? no
 lowmem_reserve[]: 0 0
-Normal: 3*4kB 1*8kB 5*16kB 6*32kB 3*64kB 5*128kB 2*256kB 2*512kB 2*1024kB 2*2048kB 52*4096kB = 221796kB
-2030 total pagecache pages
+Normal: 1*4kB 2*8kB 6*16kB 3*32kB 3*64kB 2*128kB 0*256kB 1*512kB 1*1024kB 3*2048kB 52*4096kB = 221332kB
+1995 total pagecache pages
 0 pages in swap cache
 Swap cache stats: add 0, delete 0, find 0/0
 Free swap  = 0kB
 Total swap = 0kB
 61440 pages of RAM
-55637 free pages
-1534 reserved pages
-754 slab pages
-5197 pages shared
+55526 free pages
+1537 reserved pages
+778 slab pages
+5193 pages shared
 0 pages swap cached
-### snd_bcm2835_alsa_probe c03b2158 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+### snd_bcm2835_alsa_probe c03b4158 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
 Creating card...
 Creating device/chip ..
 Adding controls ..
 Registering card ....
 bcm2835 ALSA CARD CREATED!
 ### BCM2835 ALSA driver init OK ### 
-mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
-mmc0: DMA IRQ 6 ignored - results were reset
 mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
 mmc0: DMA IRQ 6 ignored - results were reset

@@ -1110,3 +1110,31 @@ Package: python-gobject
 Architecture: armel
 Auto-Installed: 1
 
+Package: libpci3
+Architecture: armel
+Auto-Installed: 1
+
+Package: module-init-tools
+Architecture: armel
+Auto-Installed: 1
+
+Package: pciutils
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsamplerate0
+Architecture: armel
+Auto-Installed: 1
+
+Package: alsa-base
+Architecture: armel
+Auto-Installed: 1
+
+Package: linux-sound-base
+Architecture: armel
+Auto-Installed: 1
+
+Package: giblib1
+Architecture: armel
+Auto-Installed: 1
+

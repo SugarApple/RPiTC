@@ -30,7 +30,7 @@ src:*::
 gnats:*::
 shadow:*::
 utmp:*::
-video:*::
+video:*::root
 sasl:*::
 plugdev:*::
 staff:*::
@@ -42,3 +42,4 @@ crontab:!::
 ssh:!::
 ntp:!::
 netdev:!::
+messagebus:!::

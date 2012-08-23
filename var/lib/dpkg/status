@@ -639,6 +639,21 @@ Description: simple interprocess messaging system (library)
  The daemon can be found in the dbus package.
 Homepage: http://dbus.freedesktop.org/
 
+Package: module-init-tools
+Status: install ok installed
+Priority: extra
+Section: admin
+Installed-Size: 31
+Maintainer: Marco d'Itri <md@linux.it>
+Architecture: all
+Source: kmod
+Version: 8-2
+Depends: libkmod2, kmod
+Pre-Depends: dpkg (>= 1.15.7.2)
+Description: transitional dummy package (module-init-tools to kmod)
+ This dummy package is provided to support the transition from
+ module-init-tools to kmod and should be removed afterwards.
+
 Package: libffi5
 Status: install ok installed
 Priority: optional
@@ -1328,6 +1343,28 @@ Description: Pluggable Authentication Modules library
  the applications themselves.
 Homepage: http://pam.sourceforge.net/
 
+Package: libpci3
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 101
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: pciutils
+Version: 1:3.1.9-5
+Replaces: libpci2
+Provides: libpci2
+Depends: libc6 (>= 2.7), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Conflicts: libpci2
+Description: Linux PCI Utilities (shared library)
+ This package contains the libpci shared library files.
+ .
+ The libpci library provides portable access to configuration
+ registers of devices connected to the PCI bus.
+Homepage: http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
+
 Package: libusb-0.1-4
 Status: install ok installed
 Priority: important
@@ -1712,6 +1749,37 @@ Description: LXDE application session editor
  It allows configuring which applications to start up automatically for sessions
  compatible with the freedesktop.org Autostart specification (e.g. lxession).
 Homepage: http://www.lxde.org/
+
+Package: libsamplerate0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1507
+Maintainer: Erik de Castro Lopo <erikd@mega-nerd.com>
+Architecture: armel
+Multi-Arch: same
+Source: libsamplerate
+Version: 0.1.8-5
+Replaces: samplerate-programs (<< 0.1.8-3)
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Audio sample rate conversion library
+ libsamplerate (aka Secret Rabbit Code) is a library for audio rate conversion.
+ .
+ libsamplerate currently provides three different sample rate conversion
+ algorithms; zero order hold, linear interpolation and FIR filter interpolation
+ (using filters derived from the mathematical SINC function). The first two
+ algorithms (zero order hold and linear) are included for completeness and are
+ not recommended for any application where high quality sample rate conversion
+ is required. For the FIR/Sinc algorithm, three converters are provided;
+ SRC_SINC_FASTEST, SRC_SINC_MEDIUM_QUALITY and SRC_SINC_BEST_QUALITY to allow a
+ trade off between conversion speed and conversion quality.
+ .
+ libsamplerate is capable of downsampling to 1/256 of the original sample rate
+ and upsampling to 256 times the original sample rate. It is also capable of
+ time varying conversions for vary speed effects and synchronising of two
+ unlocked sample rates.
+Homepage: http://www.mega-nerd.com/SRC/
 
 Package: xserver-xorg-video-s3virge
 Status: install ok installed
@@ -2153,6 +2221,22 @@ Description: switch statement for Perl
  removed from the core. For perl 5.10 and above the "given/when" builtins
  are much preferred.
 Homepage: http://search.cpan.org/dist/Switch/
+
+Package: pciutils
+Status: install ok installed
+Priority: standard
+Section: admin
+Installed-Size: 918
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 1:3.1.9-5
+Depends: libc6 (>= 2.7), libpci3 (= 1:3.1.9-5)
+Suggests: bzip2, wget | curl | lynx
+Description: Linux PCI Utilities
+ This package contains various utilities for inspecting and setting of
+ devices connected to the PCI bus.
+Homepage: http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
 
 Package: libprocps0
 Status: install ok installed
@@ -8624,6 +8708,22 @@ Description: LXDE default session manager
  desktop-independent and can be used with any window manager.
 Homepage: http://www.lxde.org/
 
+Package: scrot
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 76
+Maintainer: William Vera <billy@billy.com.mx>
+Architecture: armel
+Version: 0.8-13
+Depends: giblib1 (>= 1.2.4), libc6 (>= 2.4), libfreetype6 (>= 2.2.1), libimlib2, libx11-6, libxext6, zlib1g (>= 1:1.1.4)
+Description: command line screen capture utility
+ scrot (SCReen shOT) is a simple commandline screen capture
+ utility that uses imlib2 to grab and save images. Multiple
+ image formats are supported through imlib2's dynamic saver
+ modules.
+Homepage: http://freshmeat.net/projects/scrot
+
 Package: xarchiver
 Status: install ok installed
 Priority: optional
@@ -8688,6 +8788,31 @@ Description: Introspection data for GLib, GObject, Gio and GModule
  This package contains the introspection data for the GLib, GObject,
  GModule and Gio libraries.
 Homepage: http://live.gnome.org/GObjectIntrospection
+
+Package: alsa-utils
+Status: install ok installed
+Priority: optional
+Section: sound
+Installed-Size: 1944
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: armel
+Version: 1.0.25-3
+Provides: audio-mixer
+Depends: lsb-base (>= 3.0-9), kmod, whiptail | dialog, libasound2 (>= 1.0.25), libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20080119), libsamplerate0 (>= 0.1.7), libtinfo5
+Recommends: alsa-base (>= 1.0.15), pciutils
+Conffiles:
+ /etc/init.d/alsa-utils 37a137aba057cd0cfd0f8daca924d3c7
+Description: Utilities for configuring and using ALSA
+ Included tools:
+  - amixer: command line mixer
+  - alsamixer: curses mixer
+  - amidi: read from and write to ALSA RawMIDI ports
+  - aplay, arecord: command line playback and recording
+  - aplaymidi, arecordmidi: command line MIDI playback and recording
+  - aconnect, aseqnet, aseqdump: command line MIDI sequencer control
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: http://www.alsa-project.org/
 
 Package: gcc
 Status: install ok installed
@@ -9427,6 +9552,40 @@ Description: MIME files 'mime.types' & 'mailcap', and support programs
  a program determined from the entries in the mime.types and mailcap
  files.
 
+Package: alsa-base
+Status: install ok installed
+Priority: optional
+Section: sound
+Installed-Size: 504
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: all
+Source: alsa-driver
+Version: 1.0.23+dfsg-4
+Provides: alsa
+Depends: module-init-tools (>= 3.2.1), linux-sound-base, udev
+Recommends: alsa-utils
+Suggests: apmd (>= 3.0.2-1), alsa-oss, oss-compat
+Conffiles:
+ /etc/apm/scripts.d/alsa 50d89784c1e201f68ff978b95ff4bdfb
+ /etc/modprobe.d/alsa-base-blacklist.conf 7b763f6869f0a6568a3db9e7415a4768
+ /etc/modprobe.d/alsa-base.conf 2dd17ac3faa2b8e6e89eb84463b74e91
+Description: ALSA driver configuration files
+ This package contains various configuration files for
+ the ALSA drivers.
+ .
+ For ALSA to work on a system with a given sound card,
+ there must be an ALSA driver for that card in the kernel.
+ Linux 2.6 as shipped in linux-image packages contains
+ ALSA drivers for all supported sound cards in the form
+ of loadable modules. A custom alsa-modules package can
+ be built from the sources in the alsa-source package
+ using the m-a utility (included in the module-assistant
+ package). Please read the README.Debian file for more
+ information about loading and building modules.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: http://www.alsa-project.org/
+
 Package: libldap-2.4-2
 Status: install ok installed
 Priority: standard
@@ -9762,6 +9921,23 @@ Description: NetScape Portable Runtime Library - transitional package
  This is a transitional package to ensure smooth transition of all packages
  to libnspr4.
 Homepage: http://www.mozilla.org/projects/nspr/
+
+Package: giblib1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 108
+Maintainer: Eric Dorland <eric@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: giblib
+Version: 1.2.4-8
+Depends: libc6 (>= 2.4), libfreetype6 (>= 2.2.1), libimlib2, libx11-6, libxext6, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Description: wrapper library for imlib2, and other stuff
+ giblib is a library of handy stuff. Contains an imlib2 wrapper to avoid the
+ context stuff, doubly-linked lists and font styles.
+Homepage: http://linuxbrit.co.uk/giblib/
 
 Package: libice6
 Status: install ok installed
@@ -11091,6 +11267,25 @@ Description: GNU readline and history libraries, common files
  .
  The GNU history library provides a consistent user interface for
  recalling lines of previously typed input.
+
+Package: linux-sound-base
+Status: install ok installed
+Priority: optional
+Section: sound
+Installed-Size: 128
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: all
+Source: alsa-driver
+Version: 1.0.23+dfsg-4
+Depends: debconf (>= 0.5) | debconf-2.0, module-init-tools (>= 3.2.1)
+Suggests: alsa-base (>= 1.0.18-1)
+Description: base package for ALSA and OSS sound systems
+ This package allows the administrator to choose between
+ the OSS and ALSA sound systems.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+ OSS is the free version of the Open Sound System.
+Homepage: http://www.alsa-project.org/
 
 Package: libcap2
 Status: install ok installed

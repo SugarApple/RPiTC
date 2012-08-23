@@ -341,6 +341,11 @@ Name: libssl1.0.0/restart-services
 Template: libssl1.0.0/restart-services
 Owners: libssl1.0.0, libssl1.0.0:armel
 
+Name: linux-sound-base/sound_system
+Template: linux-sound-base/sound_system
+Value: ALSA
+Owners: linux-sound-base
+
 Name: locales/default_environment_locale
 Template: locales/default_environment_locale
 Owners: locales

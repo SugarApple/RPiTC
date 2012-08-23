@@ -24,8 +24,8 @@
   <item label="Quest vWorkspaces 7.00b1">
     <action name="Execute"><command>connmanager</command></action>
   </item>
-  <item label="xFreeRDP 1.0.1">
-    <action name="Execute"><command>lxterminal -e "echo asd"</command></action>
+  <item label="RDesktop 1.7.1">
+    <action name="Execute"><command>lxterminal -e "rdesktop -x l -z -u UserName -f -P -r disk=/media/usb -d MyDomain MyRDPServer.MyDomain.Lan"</command></action>
   </item>
 </menu>
 
@@ -64,7 +64,7 @@
   <menu id="client-list-menu" />
   <separator />
   <item label="Exit">
-    <action name="Execute"><command>lxde-logout</command></action>
+    <action name="Execute"><command>lxterminal -e "shutdown -h now"</command></action>
   </item>
 </menu>
 

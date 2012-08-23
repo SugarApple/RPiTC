@@ -59,7 +59,6 @@
 /usr/share/lintian
 /usr/share/lintian/overrides
 /usr/share/lintian/overrides/base-files
-/usr/share/misc
 /usr/share/common-licenses
 /usr/share/common-licenses/Apache-2.0
 /usr/share/common-licenses/LGPL-3
