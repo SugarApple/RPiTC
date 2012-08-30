@@ -34,6 +34,7 @@ kernel/crypto/crc32c.ko
 kernel/crypto/rng.ko
 kernel/crypto/krng.ko
 kernel/block/deadline-iosched.ko
+kernel/block/cfq-iosched.ko
 kernel/drivers/base/firmware_class.ko
 kernel/drivers/block/brd.ko
 kernel/drivers/block/loop.ko
