@@ -1,0 +1,9 @@
+d0162a89f35ca2762787b8c420f8dcc6  usr/lib/arm-linux-gnueabi/libavformat.so.53.21.0
+79f4cb0a090534e3b05005ff6dc87626  usr/lib/arm-linux-gnueabi/neon/vfp/libavformat.so.53.21.0
+44916481c6ed68154596358dc4558427  usr/lib/arm-linux-gnueabi/vfp/libavformat.so.53.21.0
+812ae049e35a77fbe9da612a1284c3c5  usr/share/doc/libavformat53/README.Debian.gz
+cb3dbd08b857ae2a982963e05bb8ef95  usr/share/doc/libavformat53/changelog.Debian.gz
+9fe955bb9388d83fa391dbc47cc7132a  usr/share/doc/libavformat53/changelog.gz
+e51de741ce5932946736d2b8ef235b80  usr/share/doc/libavformat53/copyright
+fad5bc1f202b35a5822af28da99b1e4d  usr/share/doc/libavformat53/formats-armel.txt.gz
+b3b8104f294b3b4d56b1ae26b9c113c2  usr/share/lintian/overrides/libavformat53

@@ -1,0 +1,6 @@
+72befccbca19afb0ac8779f404e74a61  usr/bin/cmake
+4316c13789ec93d086757463f06c4fbc  usr/bin/cpack
+f80eeb622d35a6b0819ef8e1889c1ee6  usr/bin/ctest
+ad7fb4b2a34fc1c16a4d16b9cb6161f8  usr/share/man/man1/cmake.1.gz
+71ab8caa1f86f9384fc5b3ecaa45df75  usr/share/man/man1/cpack.1.gz
+a61319310f53aeabdbe73f7711105dba  usr/share/man/man1/ctest.1.gz

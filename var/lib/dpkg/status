@@ -100,6 +100,25 @@ Recommends: xfonts-base, xauth
 Description: common files used by various X servers
  This package provides files necessary for all X.Org based X servers.
 
+Package: libelf1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1010
+Maintainer: Kurt Roeckx <kurt@roeckx.be>
+Architecture: armel
+Source: elfutils (0.152-1)
+Version: 0.152-1+b1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Description: library to read and write ELF files
+ The libelf1 package provides a shared library which allows reading and
+ writing ELF files on a high level.  Third party programs depend on
+ this package to read internals of ELF files.  The programs of the
+ elfutils package use it also to generate new ELF files.
+ .
+ This library is part of elfutils.
+Homepage: https://fedorahosted.org/elfutils/
+
 Package: dash
 Essential: yes
 Status: install ok installed
@@ -140,6 +159,27 @@ Description: PolicyKit Authorization API
  .
  This package contains a library for accessing PolicyKit.
 Homepage: http://hal.freedesktop.org/docs/PolicyKit/
+
+Package: libraw1394-11
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 109
+Maintainer: Guus Sliepen <guus@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libraw1394
+Version: 2.0.9-1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Suggests: libraw1394-doc
+Description: library for direct access to IEEE 1394 bus (aka FireWire)
+ libraw1394 is the only supported interface to the kernel side raw1394
+ of the Linux IEEE-1394 subsystem, which provides direct access to the
+ connected 1394 buses to user space.  Through libraw1394/raw1394,
+ applications can directly send to and receive from other nodes without
+ requiring a kernel driver for the protocol in question.
+Homepage: https://ieee1394.wiki.kernel.org/
 
 Package: shared-mime-info
 Status: install ok installed
@@ -453,6 +493,27 @@ Description: X11 miscellaneous micro-utility library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXmu
 
+Package: x11proto-input-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 495
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-input
+Version: 2.2-1
+Depends: x11proto-core-dev
+Description: X11 Input extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Input extension, used to control all manner of options related
+ to input device handling.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org inputproto proto module.
+
 Package: libxml2
 Status: install ok installed
 Priority: standard
@@ -639,6 +700,33 @@ Description: simple interprocess messaging system (library)
  The daemon can be found in the dbus package.
 Homepage: http://dbus.freedesktop.org/
 
+Package: libflac8
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 344
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: flac
+Version: 1.2.1-6
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libogg0 (>= 1.0rc3)
+Pre-Depends: multiarch-support
+Description: Free Lossless Audio Codec - runtime C library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the runtime library libFLAC.
+Homepage: http://flac.sourceforge.net/
+
 Package: module-init-tools
 Status: install ok installed
 Priority: extra
@@ -820,6 +908,37 @@ Description: simple interprocess messaging system (Python interface)
  See the dbus description for more information about D-Bus in general.
 Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings#Python
 
+Package: libgnutlsxx27
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 293
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: gnutls26
+Version: 2.12.20-1
+Depends: libgnutls26 (= 2.12.20-1), libc6 (>= 2.4), libgcc1 (>= 1:4.1.1), libp11-kit0 (>= 0.11), libstdc++6 (>= 4.3.0)
+Pre-Depends: multiarch-support
+Description: GNU TLS library - C++ runtime library
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the C++ runtime libraries.
+Homepage: http://www.gnutls.org/
+
 Package: libboost-thread1.49.0
 Status: install ok installed
 Priority: optional
@@ -873,6 +992,28 @@ Description: common files used by all the isc-dhcp* packages
  This package contains the files used by all the packages from ISC
  DHCP.
 
+Package: libsdl1.2debian
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 461
+Maintainer: Debian SDL packages maintainers <pkg-sdl-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libsdl1.2
+Version: 1.2.15-5
+Replaces: libsdl1.2debian-all, libsdl1.2debian-alsa, libsdl1.2debian-esd, libsdl1.2debian-nas, libsdl1.2debian-oss, libsdl1.2debian-pulseaudio
+Depends: libasound2 (>= 1.0.16), libc6 (>= 2.4), libcaca0 (>= 0.99.beta17-1), libdirectfb-1.2-9, libgcc1 (>= 1:4.4.0), libpulse0 (>= 0.99.1), libts-0.0-0 (>= 1.0), libx11-6 (>= 2:1.4.99.1), libxext6
+Pre-Depends: multiarch-support
+Conflicts: libsdl1.2, libsdl1.2-all, libsdl1.2-esd, libsdl1.2-nas, libsdl1.2-oss, libsdl1.2debian-all, libsdl1.2debian-alsa, libsdl1.2debian-esd, libsdl1.2debian-nas, libsdl1.2debian-oss, libsdl1.2debian-pulseaudio
+Description: Simple DirectMedia Layer
+ SDL is a library that allows programs portable low level access to
+ a video framebuffer, audio output, mouse, and keyboard.
+ .
+ This version of SDL is compiled with X11, caca and DirectFB graphics
+ drivers and OSS, ALSA, NAS and PulseAudio sound drivers.
+Homepage: http://www.libsdl.org/
+
 Package: libxinerama1
 Status: install ok installed
 Priority: optional
@@ -923,6 +1064,27 @@ Description: Universally Unique ID library
  .
  See RFC 4122 for more information.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
+
+Package: libavahi-client-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 180
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: avahi
+Version: 0.6.31-1
+Depends: libavahi-client3 (= 0.6.31-1), libavahi-common-dev, libdbus-1-dev (>= 0.60)
+Description: Development files for the Avahi client library
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration. For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This package contains the development headers for Avahi's C API which
+ allows you to integrate mDNS/DNS-SD functionality into your application.
+Homepage: http://avahi.org/
 
 Package: libtasn1-3
 Status: install ok installed
@@ -1046,6 +1208,35 @@ Description: Independent JPEG Group's JPEG runtime library (version 6.2)
  .
  This package contains the shared library for version 6.2.
 
+Package: libxinerama-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 82
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxinerama
+Version: 2:1.1.2-1
+Replaces: x11proto-xinerama-dev (<< 1.2)
+Depends: libxinerama1 (= 2:1.1.2-1), libx11-dev, libxext-dev, x11proto-xinerama-dev (>= 1.2)
+Description: X11 Xinerama extension library (development headers)
+ libXinerama provides an X Window System client interface to the XINERAMA
+ extension to the X protocol.
+ .
+ The Xinerama (also known as panoramiX) extension allows for multiple screens
+ attached to a single display to be treated as belonging together, and to give
+ desktop applications a better idea of the monitor layout.
+ .
+ This package contains the development headers for the library found in
+ libxinerama1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXinerama
+
 Package: cpp-4.4
 Status: install ok installed
 Priority: optional
@@ -1113,6 +1304,22 @@ Description: /proc file system utilities
  snice, sysctl, tload, top, uptime, vmstat, w, and watch.
 Homepage: http://gitorious.org/procps
 
+Package: g++-4.6
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 10985
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armel
+Source: gcc-4.6
+Version: 4.6.3-8
+Provides: c++-compiler, c++abi2-dev
+Depends: gcc-4.6-base (= 4.6.3-8), gcc-4.6 (= 4.6.3-8), libstdc++6-4.6-dev (= 4.6.3-8), libc6 (>= 2.11), libgmp10, libmpc2, libmpfr4 (>= 3.1.0), zlib1g (>= 1:1.1.4)
+Suggests: gcc-4.6-doc (>= 4.6.3-1), libstdc++6-4.6-dbg
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+Homepage: http://gcc.gnu.org/
+
 Package: g++-4.4
 Status: install ok installed
 Priority: optional
@@ -1152,6 +1359,51 @@ Description: client support for WPA and WPA2 (IEEE 802.11i)
  provides key negotiation with the WPA Authenticator, and controls
  association with IEEE 802.11i networks.
 Homepage: http://w1.fi/wpa_supplicant/
+
+Package: libcups2-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 759
+Maintainer: Debian CUPS Maintainers <pkg-cups-devel@lists.alioth.debian.org>
+Architecture: armel
+Source: cups
+Version: 1.5.3-1
+Provides: libcupsys2-dev
+Depends: libcups2 (= 1.5.3-1), libgnutls-dev, libkrb5-dev
+Description: Common UNIX Printing System(tm) - Development files CUPS library
+ The Common UNIX Printing System (or CUPS(tm)) is a printing system and
+ general replacement for lpd and the like.  It supports the Internet
+ Printing Protocol (IPP), and has its own filtering driver model for
+ handling various document types.
+ .
+ This package provides the files necessary for developing CUPS-aware
+ applications and CUPS drivers, as well as examples how to communicate
+ with cups from different programming languages (Perl, Java, and
+ PHP).
+Homepage: http://www.cups.org
+
+Package: libavcodec-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 8753
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: libav
+Version: 6:0.8.3-6
+Depends: libavcodec53 (<= 6:0.8.3-99) | libavcodec-extra-53 (<= 6:0.8.3-99), libavcodec53 (>= 6:0.8.3-6) | libavcodec-extra-53 (>= 6:0.8.3-6), libavutil-dev (= 6:0.8.3-6)
+Suggests: libdc1394-22-dev, libgsm1-dev, libogg-dev, libraw1394-dev, libschroedinger-dev, libspeex-dev, libtheora-dev (>> 0.0.0.alpha4), libvorbis-dev, libx11-dev, libxext-dev, zlib1g-dev
+Description: Development files for libavcodec
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the codec library from Libav. It supports most existing
+ encoding formats (MPEG, DivX, MPEG4, AC3, DV...).
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavcodec.
+Homepage: http://libav.org/
 
 Package: libqtgui4
 Status: install ok installed
@@ -1270,6 +1522,34 @@ Description: minimal subset of the Python language (default version)
  contained in this package.
 Homepage: http://www.python.org/
 
+Package: libav-tools
+Status: install ok installed
+Priority: optional
+Section: video
+Installed-Size: 1540
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: libav
+Version: 6:0.8.3-6
+Replaces: ffmpeg (<< 4:0.8~), libavcodec-extra-53 (<< 4:0.6~), libavcodec53 (<< 6:0.8.3-6)
+Depends: libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.3), libavdevice53 (>= 6:0.8.3-6), libavfilter2 (>= 6:0.8.3-6), libavformat53 (>= 6:0.8.3-6), libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libpostproc52 (>= 6:0.8.3-6), libsdl1.2debian (>= 1.2.11), libswscale2 (>= 6:0.8.3-6)
+Pre-Depends: dpkg (>= 1.15.7.2~)
+Breaks: ffmpeg (<< 4:0.8~)
+Conflicts: ffprobe
+Conffiles:
+ /etc/avserver.conf 53d88aa6343f39eec1f54b05815b6a5b
+Description: Multimedia player, server, encoder and transcoder
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This package contains the avplay multimedia player, the avserver
+ streaming server, the avconv audio and video encoder, and the avprobe
+ stream analyzer.  They support most existing file formats (AVI, MPEG,
+ OGG, Matroska, ASF...) and encoding formats (MPEG, DivX, MPEG4, AC3,
+ DV...). Additionally, it contains the qt-faststart utility which
+ rearranges Quicktime files to facilitate network streaming.
+Homepage: http://libav.org/
+
 Package: ncurses-base
 Essential: yes
 Status: install ok installed
@@ -1364,6 +1644,31 @@ Description: Linux PCI Utilities (shared library)
  The libpci library provides portable access to configuration
  registers of devices connected to the PCI bus.
 Homepage: http://atrey.karlin.mff.cuni.cz/~mj/pciutils.shtml
+
+Package: libxfixes-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 112
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Source: libxfixes
+Version: 1:5.0-4
+Depends: libxfixes3 (= 1:5.0-4), libx11-dev, x11proto-fixes-dev (>= 1:5.0-1)
+Description: X11 miscellaneous 'fixes' extension library (development headers)
+ libXfixes provides an X Window System client interface to the 'XFIXES'
+ extension to the X protocol.
+ .
+ It provides support for Region types, and some cursor functions.
+ .
+ This package contains the development headers for the library found in
+ libxfixes3.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXfixes
 
 Package: libusb-0.1-4
 Status: install ok installed
@@ -1460,6 +1765,32 @@ Description: Update Configuration File: preserve user changes to config files.
  installation time. Indeed, the transitioning facility is better than the
  one offered by dpkg while transitioning a file from a non-conffile to
  conffile status.
+
+Package: libgssrpc4
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 178
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: krb5
+Version: 1.10.1+dfsg-2
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.10+dfsg~), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Conflicts: libkadm55
+Description: MIT Kerberos runtime libraries - GSS enabled ONCRPC
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains an RPC library used by the Kerberos administrative
+ programs and potentially other applications.
+Homepage: http://web.mit.edu/kerberos/
 
 Package: perl-modules
 Status: install ok installed
@@ -1692,6 +2023,53 @@ Description: lightweight image viewer
   * Desktop independent: Doesn't require any specific desktop environment
 Homepage: http://www.lxde.org/
 
+Package: libxext-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 277
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxext
+Version: 2:1.3.1-2
+Depends: libxext6 (= 2:1.3.1-2), x11proto-core-dev, x11proto-xext-dev (>= 7.0.99.2), libx11-dev
+Suggests: libxext-doc
+Description: X11 miscellaneous extensions library (development headers)
+ libXext provides an X Window System client interface to several extensions to
+ the X protocol.
+ .
+ The supported protocol extensions are:
+  - DOUBLE-BUFFER (DBE), the Double Buffer extension;
+  - DPMS, the VESA Display Power Management System extension;
+  - Extended-Visual-Information (EVI), an extension for gathering extra
+    information about the X server's visuals;
+  - LBX, the Low Bandwidth X extension;
+  - MIT-SHM, the MIT X client/server shared memory extension;
+  - MIT-SUNDRY-NONSTANDARD, a miscellaneous extension by MIT;
+  - Multi-Buffering, the multi-buffering and stereo display extension;
+  - SECURITY, the X security extension;
+  - SHAPE, the non-rectangular shaped window extension;
+  - SYNC, the X synchronization extension;
+  - TOG-CUP, the Open Group's Colormap Utilization extension;
+  - XC-APPGROUP, the X Consortium's Application Group extension;
+  - XC-MISC, the X Consortium's resource ID querying extension;
+  - XTEST, the X test extension (this is one of two client-side
+    implementations; the other is in the libXtst library, provided by the
+    libxtst6 package);
+ .
+ libXext also provides a small set of utility functions to aid authors of
+ client APIs for X protocol extensions.
+ .
+ This package contains the development headers for the library found in
+ libxext6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXext
+
 Package: libxkbfile1
 Status: install ok installed
 Priority: optional
@@ -1713,6 +2091,32 @@ Description: X11 keyboard file manipulation library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libxkbfile
+
+Package: krb5-multidev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 686
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: armel
+Source: krb5
+Version: 1.10.1+dfsg-2
+Depends: libkrb5-3 (= 1.10.1+dfsg-2), libk5crypto3 (= 1.10.1+dfsg-2), libgssapi-krb5-2 (= 1.10.1+dfsg-2), libgssrpc4 (= 1.10.1+dfsg-2), libkadm5srv-mit8 (= 1.10.1+dfsg-2), libkadm5clnt-mit8 (= 1.10.1+dfsg-2), comerr-dev
+Suggests: krb5-doc
+Description: Development files for MIT Kerberos without Heimdal conflict
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ Most users wishing to build applications against MIT Kerberos should
+ install libkrb5-dev.  However, that package conflicts with heimdal-dev.
+ This package installs libraries and headers in /usr/include/mit-krb5 and
+ /usr/lib/mit-krb5 and can be installed along side heimdal-multidev, which
+ provides the same facilities for Heimdal.
+Homepage: http://web.mit.edu/kerberos/
 
 Package: libgudev-1.0-0
 Status: deinstall ok config-files
@@ -1749,6 +2153,33 @@ Description: LXDE application session editor
  It allows configuring which applications to start up automatically for sessions
  compatible with the freedesktop.org Autostart specification (e.g. lxession).
 Homepage: http://www.lxde.org/
+
+Package: dpkg-dev
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 1391
+Origin: debian
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Bugs: debbugs://bugs.debian.org
+Architecture: all
+Multi-Arch: foreign
+Source: dpkg
+Version: 1.16.8
+Depends: libdpkg-perl (= 1.16.8), bzip2, xz-utils, patch, make, binutils, base-files (>= 5.0.0)
+Recommends: gcc | c-compiler, build-essential, fakeroot, gnupg, gpgv, libalgorithm-merge-perl
+Suggests: debian-keyring
+Breaks: devscripts (<< 2.10.26), dpkg-cross (<< 2.0.0)
+Conffiles:
+ /etc/dpkg/shlibs.default 1a2b9d0a869e2aa885ae3621c557fb95
+ /etc/dpkg/shlibs.override 84b1e69080569cc5c613a50887af5200
+Description: Debian package development tools
+ This package provides the development tools (including dpkg-source)
+ required to unpack, build and upload Debian source packages.
+ .
+ Most Debian source packages will require additional tools to build;
+ for example, most packages need make and the C compiler gcc.
+Homepage: http://wiki.debian.org/Teams/Dpkg
 
 Package: libsamplerate0
 Status: install ok installed
@@ -1884,6 +2315,34 @@ Description: sends desktop notifications to a notification daemon
  This package contains the shared library. To actually display the
  notifications, you need to install the package notification-daemon.
 
+Package: bzip2
+Status: install ok installed
+Priority: standard
+Section: utils
+Installed-Size: 113
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 1.0.6-4
+Replaces: libbz2 (<< 0.9.5d-3)
+Depends: libbz2-1.0 (= 1.0.6-4), libc6 (>= 2.4)
+Suggests: bzip2-doc
+Description: high-quality block-sorting file compressor - utilities
+ bzip2 is a freely available, patent free, high-quality data compressor.
+ It typically compresses files to within 10% to 15% of the best available
+ techniques, whilst being around twice as fast at compression and six
+ times faster at decompression.
+ .
+ bzip2 compresses files using the Burrows-Wheeler block-sorting text
+ compression algorithm, and Huffman coding.  Compression is generally
+ considerably better than that achieved by more conventional
+ LZ77/LZ78-based compressors, and approaches the performance of the PPM
+ family of statistical compressors.
+ .
+ The archive file format of bzip2 (.bz2) is incompatible with that of its
+ predecessor, bzip (.bz).
+Homepage: http://www.bzip.org/
+
 Package: vim-common
 Status: install ok installed
 Priority: important
@@ -2004,6 +2463,25 @@ Description: Python 2.x bindings for gobject-introspection libraries
  support gobject-introspection, i. e. which ship a gir1.2-<name>-<version>
  package. With these packages, the libraries can be used from Python.
 
+Package: libglib2.0-data
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 7642
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: glib2.0
+Version: 2.32.3-1
+Description: Common files for GLib library
+ GLib is a library containing many useful C routines for things such
+ as trees, hashes, lists, and strings.  It is a useful general-purpose
+ C library used by projects such as GTK+, GIMP, and GNOME.
+ .
+ This package is needed for the runtime libraries to display messages in
+ languages other than English.
+Homepage: http://www.gtk.org/
+
 Package: console-common
 Status: install ok installed
 Priority: optional
@@ -2043,6 +2521,30 @@ Description: GDK Pixbuf library
   - Fast scaling and compositing of pixbufs.
   - Simple animation loading (ie. animated GIFs)
 Homepage: http://www.gtk.org/
+
+Package: libgcrypt11-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 964
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: libgcrypt11
+Version: 1.5.0-3
+Provides: libgcrypt-dev
+Depends: libgcrypt11 (= 1.5.0-3), libc6-dev | libc-dev, libgpg-error-dev
+Suggests: libgcrypt11-doc
+Conflicts: libgcrypt-dev
+Description: LGPL Crypto library - development files
+ libgcrypt contains cryptographic functions.  Many important free
+ ciphers, hash algorithms and public key signing algorithms have been
+ implemented:
+ Arcfour, Blowfish, CAST5, DES, AES, Twofish, Serpent, rfc2268 (rc2), SEED,
+ Camellia, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512, Tiger,
+ Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
+ .
+ This package contains header files and libraries for static linking.
+Homepage: http://directory.fsf.org/project/libgcrypt/
 
 Package: xorg
 Status: install ok installed
@@ -2151,6 +2653,27 @@ Description: Perl module for error/exception handling in an OO-ish way
  Errors in the class "Error" should not be thrown directly, but the
  user should throw errors from a sub-class of "Error".
 
+Package: libtimedate-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 248
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 1.2000-1
+Replaces: timedate
+Provides: timedate
+Depends: perl
+Conflicts: timedate
+Description: collection of modules to manipulate date/time information
+ TimeDate is a collection of Perl modules useful for manipulating date and
+ time information. Date::Parse can parse absolute date specifications in a
+ wide variety of input formats and many languages (via Date::Language).
+ .
+ This package also includes Date::Format, which can format dates into strings,
+ as well as Time::Zone, which contains miscellaneous time zone functions.
+Homepage: http://search.cpan.org/dist/TimeDate/
+
 Package: apt
 Status: install ok installed
 Priority: important
@@ -2181,6 +2704,33 @@ Description: commandline package manager
   * apt-cdrom to use removable media as a source for packages
   * apt-config as an interface to the configuration settings
   * apt-key as an interface to manage authentication keys
+
+Package: libxrender-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 124
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxrender
+Version: 1:0.9.7-1
+Depends: libxrender1 (= 1:0.9.7-1), libx11-dev (>= 2:1.0.0), x11proto-render-dev, x11proto-core-dev
+Description: X Rendering Extension client library (development files)
+ The X Rendering Extension (Render) introduces digital image composition as
+ the foundation of a new rendering model within the X Window System.
+ Rendering geometric figures is accomplished by client-side tessellation into
+ either triangles or trapezoids.  Text is drawn by loading glyphs into the
+ server and rendering sets of them.  The Xrender library exposes this
+ extension to X clients.
+ .
+ This package provides a static library and C header files.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXrender
 
 Package: liblapack3
 Status: install ok installed
@@ -2221,6 +2771,50 @@ Description: switch statement for Perl
  removed from the core. For perl 5.10 and above the "given/when" builtins
  are much preferred.
 Homepage: http://search.cpan.org/dist/Switch/
+
+Package: libxdmcp-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 101
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxdmcp
+Version: 1:1.1.1-1
+Depends: libxdmcp6 (= 1:1.1.1-1), x11proto-core-dev
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 display manager control
+ protocol library, which allows for remote logins to display managers.
+ .
+ This package contains the development headers for the library found in
+ libxdmcp6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdmcp
+
+Package: libasound2-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 408
+Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: alsa-lib
+Version: 1.0.25-4
+Provides: libasound-dev
+Depends: libasound2 (= 1.0.25-4), libc6-dev | libc-dev
+Suggests: libasound2-doc
+Description: shared library for ALSA applications -- development files
+ This package contains files required for developing software
+ that makes use of libasound2, the ALSA library.
+ .
+ ALSA is the Advanced Linux Sound Architecture.
+Homepage: http://www.alsa-project.org/
 
 Package: pciutils
 Status: install ok installed
@@ -2281,6 +2875,26 @@ Description: simple interprocess messaging system (GLib-based shared library)
  .
  See the dbus description for more information about D-Bus in general.
 Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings
+
+Package: libpthread-stubs0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 27
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Architecture: armel
+Multi-Arch: same
+Source: libpthread-stubs
+Version: 0.3-3
+Description: pthread stubs not provided by native libc
+ This library provides weak aliases for pthread functions not provided
+ in libc or otherwise available by default.  Libraries like libxcb rely
+ on pthread stubs to use pthreads optionally, becoming thread-safe when
+ linked to libpthread, while avoiding any performance hit when running
+ single-threaded. libpthread-stubs supports this behavior even on
+ platforms which do not supply all the necessary pthread stubs.  On
+ platforms which already supply all the necessary pthread stubs, this
+ package has no content.
 
 Package: manpages-dev
 Status: install ok installed
@@ -2348,6 +2962,26 @@ Description: file management support (utilities)
  and other packages.
 Homepage: http://pcmanfm.sourceforge.net/
 
+Package: libpulse-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 443
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: pulseaudio
+Version: 2.0-6
+Depends: libpulse0 (= 2.0-6), libpulse-mainloop-glib0 (= 2.0-6), libglib2.0-dev, libavahi-client-dev
+Description: PulseAudio client development headers and libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Headers and libraries for developing applications that access a PulseAudio
+ sound server via PulseAudio's native interface.
+Homepage: http://www.pulseaudio.org
+
 Package: libgif4
 Status: install ok installed
 Priority: optional
@@ -2391,6 +3025,36 @@ Description: Xorg X server - core server
  <URL:http://www.X.org>
  .
  This package is built from the X.org xserver module.
+
+Package: libxcb1-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 669
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxcb
+Version: 1.8.1-1
+Replaces: libxcb0-dev
+Depends: libxcb1 (= 1.8.1-1), libpthread-stubs0-dev, libxau-dev (>= 1:1.0.0-1), libxdmcp-dev (>= 1:1.0.0-1)
+Suggests: libxcb-doc
+Conflicts: libxcb0-dev
+Description: X C Binding, development files
+ This package contains the header and library files needed to build software
+ using libxcb, the X C Binding.
+ .
+ The XCB library provides an interface to the X Window System protocol,
+ designed to replace the Xlib interface.  XCB provides several advantages over
+ Xlib:
+ .
+  * Size: small library and lower memory footprint
+  * Latency hiding: batch several requests and wait for the replies later
+  * Direct protocol access: one-to-one mapping between interface and protocol
+  * Thread support: access XCB from multiple threads, with no explicit locking
+  * Easy creation of new extensions: automatically generates interface from
+    machine-parsable protocol descriptions
+Homepage: http://xcb.freedesktop.org
 
 Package: libk5crypto3
 Status: install ok installed
@@ -2550,6 +3214,29 @@ Description: Shared libraries for GSM speech compressor
  on most SPARCstations.  The implementation has been verified against the
  ETSI standard test patterns.
 
+Package: libpulse-mainloop-glib0
+Status: install ok installed
+Priority: optional
+Section: sound
+Installed-Size: 82
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: pulseaudio
+Version: 2.0-6
+Depends: libc6 (>= 2.4), libcap2 (>= 2.10), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.16.0), libpulse0 (= 2.0-6)
+Pre-Depends: multiarch-support
+Description: PulseAudio client libraries (glib support)
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+ .
+ This package adds support for glib2 client applications.
+Homepage: http://www.pulseaudio.org
+
 Package: libboost1.49-dev
 Status: install ok installed
 Priority: optional
@@ -2630,6 +3317,28 @@ Description: an ELF object file access library
  This shared library may be needed by pre-packaged programs. To compile
  programs with this library, you will need to install the libelfg0-dev
  package as well.
+
+Package: libstdc++6-4.6-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 10244
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armel
+Source: gcc-4.6
+Version: 4.6.3-8
+Provides: libstdc++-dev
+Depends: gcc-4.6-base (= 4.6.3-8), g++-4.6 (= 4.6.3-8), libstdc++6 (>= 4.6.3-8), libc6-dev (>= 2.13-5)
+Suggests: libstdc++6-4.6-doc
+Conflicts: libg++2.8-dev, libg++27-dev, libg++272-dev (<< 2.7.2.8-1), libstdc++2.10-dev (<< 1:2.95.3-2), libstdc++2.8-dev, libstdc++2.9-dev, libstdc++2.9-glibc2.1-dev, libstdc++3.0-dev
+Description: GNU Standard C++ Library v3 (development files)
+ This package contains the headers and static library files necessary for
+ building C++ programs which use libstdc++.
+ .
+ libstdc++-v3 is a complete rewrite from the previous libstdc++-v2, which
+ was included up to g++-2.95. The first version of libstdc++-v3 appeared
+ in g++-3.0.
+Homepage: http://gcc.gnu.org/
 
 Package: libpam-modules
 Status: install ok installed
@@ -2739,6 +3448,36 @@ Description: generic font configuration library - runtime
  .
  This package contains the runtime library needed to launch applications
  using fontconfig.
+
+Package: libxv-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 116
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxv
+Version: 2:1.0.7-1
+Replaces: x11proto-video-dev (<< 2.2+cvs.20050712-1)
+Depends: libxv1 (= 2:1.0.7-1), libx11-dev, libxext-dev, x11proto-video-dev
+Conflicts: x11proto-video-dev (<< 2.2+cvs.20050712-1)
+Description: X11 Video extension library (development headers)
+ libXv provides an X Window System client interface to the XVideo
+ extension to the X protocol.
+ .
+ The XVideo extension allows for accelerated drawing of videos.  Hardware
+ adaptors are exposed to clients, which may draw in a number of colourspaces,
+ including YUV.
+ .
+ This package contains the development headers for the library found in
+ libxv1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXv
 
 Package: ifupdown
 Status: install ok installed
@@ -2879,6 +3618,23 @@ Description: X11 miscellaneous extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXext
 
+Package: libusb-1.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 95
+Maintainer: Aurelien Jarno <aurel32@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libusbx
+Version: 2:1.0.11-1
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Description: userspace USB programming library
+ Library for programming USB applications without the knowledge
+ of Linux kernel internals.
+Homepage: http://www.linux-usb.org/
+
 Package: libogg0
 Status: install ok installed
 Priority: optional
@@ -2895,6 +3651,27 @@ Description: Ogg bitstream library
  Libogg is a library for manipulating ogg bitstreams.  It handles
  both making ogg bitstreams and getting packets from ogg bitstreams.
 Homepage: http://xiph.org/ogg/
+
+Package: libts-0.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 103
+Maintainer: Neil Williams <codehelp@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: tslib
+Version: 1.0-11
+Replaces: libts0, tslib
+Provides: libts0, tslib
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), tsconf
+Pre-Depends: multiarch-support
+Conflicts: libts0, tslib
+Description: touch screen library
+ Tslib is an abstraction layer for touchscreen panel events, as well as a
+ filter stack for the manipulation of those events. Examples of implemented
+ filters include jitter smoothing and the calibration transform.
+Homepage: http://tslib.berlios.de/
 
 Package: xserver-xorg-video-radeon
 Status: install ok installed
@@ -2940,6 +3717,49 @@ Description: file management support (GTK+ GUI library)
  .
  This package contains the GTK+ GUI.
 Homepage: http://pcmanfm.sourceforge.net/
+
+Package: libdpkg-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 1721
+Origin: debian
+Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
+Bugs: debbugs://bugs.debian.org
+Architecture: all
+Multi-Arch: foreign
+Source: dpkg
+Version: 1.16.8
+Replaces: dpkg (<< 1.15.8), dpkg-dev (<< 1.15.6)
+Depends: dpkg (>= 1.15.8), perl, libtimedate-perl
+Recommends: libfile-fcntllock-perl, bzip2, xz-utils
+Suggests: debian-keyring, gnupg, gpgv, gcc | c-compiler, binutils, patch
+Breaks: dpkg-dev (<< 1.15.6)
+Description: Dpkg perl modules
+ This package provides the perl modules used by the scripts
+ in dpkg-dev. They cover a wide range of functionalities. Among them
+ there are the following modules:
+ .
+  - Dpkg::Arch: manipulate Debian architecture information
+  - Dpkg::BuildOptions: parse and manipulate DEB_BUILD_OPTIONS
+  - Dpkg::Changelog: parse Debian changelogs
+  - Dpkg::Checksums: generate and parse checksums
+  - Dpkg::Compression::Process: wrapper around compression tools
+  - Dpkg::Compression::FileHandle: transparently (de)compress files
+  - Dpkg::Control: parse and manipulate Debian control information
+    (.dsc, .changes, Packages/Sources entries, etc.)
+  - Dpkg::Deps: parse and manipulate dependencies
+  - Dpkg::ErrorHandling: common error functions
+  - Dpkg::Index: collections of Dpkg::Control (Packages/Sources files for
+    example)
+  - Dpkg::IPC: spawn sub-processes and feed/retrieve data
+  - Dpkg::Substvars: substitute variables in strings
+  - Dpkg::Vendor: identify current distribution vendor
+  - Dpkg::Version: parse and manipulate Debian package versions
+ .
+ All the packages listed in Suggests or Recommends are used by some of the
+ modules.
+Homepage: http://wiki.debian.org/Teams/Dpkg
 
 Package: x11-session-utils
 Status: install ok installed
@@ -3461,6 +4281,28 @@ Description: Linux support headers for userspace development
  headers are used by the installed headers for GNU glibc and other system
  libraries.
 
+Package: x11proto-xext-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 933
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-xext
+Version: 7.2.1-1
+Depends: x11proto-input-dev, x11proto-core-dev
+Breaks: libxext-dev (<< 2:1.0.99), libxtst-dev (<< 2:1.0.99)
+Description: X11 various extension wire protocol
+ This package provides development headers describing the wire protocol
+ for various extensions, the client-side libraries of which are provided
+ in the Xext library.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xextproto proto module.
+
 Package: libthai-data
 Status: install ok installed
 Priority: optional
@@ -3674,6 +4516,50 @@ Description: preferences manager for Openbox window manager
  .
  If you are an Openbox user, you may want this package.
 Homepage: http://www.openbox.org/wiki/ObConf:About
+
+Package: libtasn1-3-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 525
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: libtasn1-3
+Version: 2.13-2
+Provides: libtasn1-dev
+Depends: libtasn1-3 (= 2.13-2), dpkg (>= 1.15.4) | install-info
+Conflicts: libtasn1-dev
+Description: Manage ASN.1 structures (development)
+ Manage ASN1 (Abstract Syntax Notation One) structures.
+ The main features of this library are:
+   * on-line ASN1 structure management that doesn't require any C code
+     file generation.
+   * off-line ASN1 structure management with C code file generation
+     containing an array.
+   * DER (Distinguish Encoding Rules) encoding
+   * no limits for INTEGER and ENUMERATED values
+ .
+ This package contains header files and libraries for static linking.
+Homepage: http://www.gnu.org/software/libtasn1/
+
+Package: ffmpeg
+Status: install ok installed
+Priority: extra
+Section: oldlibs
+Installed-Size: 235
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: libav
+Version: 6:0.8.3-6
+Depends: libav-tools, libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.3), libavdevice53 (>= 6:0.8.3-6), libavfilter2 (>= 6:0.8.3-6), libavformat53 (>= 6:0.8.3-6), libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libpostproc52 (>= 6:0.8.3-6), libswscale2 (>= 6:0.8.3-6)
+Description: Multimedia player, server, encoder and transcoder (transitional package)
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This package contains the deprecated ffmpeg program. This package also serves
+ as a transitional package to libav-tools. Users are advised to use avconv from
+ the libav-tools package instead of ffmpeg.
+Homepage: http://libav.org/
 
 Package: libvpx1
 Status: install ok installed
@@ -4175,6 +5061,27 @@ Description: X11 Composite extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXcomposite
 
+Package: x11proto-fixes-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 92
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-fixes
+Version: 1:5.0-2
+Depends: x11proto-core-dev, x11proto-xext-dev (>= 7.0.99.1)
+Description: X11 Fixes extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Fixes extension, which contains a few small extensions to the
+ X protocol, including a Region type.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org fixesproto proto module.
+
 Package: libxv1
 Status: install ok installed
 Priority: optional
@@ -4259,6 +5166,23 @@ Description: LXDE panel
     and "lxpanelctl menu" will show the application menu. This is
     useful in combination with window manager key bindings.
 Homepage: http://www.lxde.org/
+
+Package: libcdio-cdda1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 174
+Maintainer: Nicolas Boullis <nboullis@debian.org>
+Architecture: armel
+Source: libcdio
+Version: 0.83-4
+Depends: libc6 (>= 2.4), libcdio13 (>= 0.83)
+Description: library to read and control digital audio CDs
+ This library is made to read and control digital audio CDs. It does
+ not play such CDs, it only reads them digitally. As it uses libcdio as
+ a backend, it supports the same kind of CDROM drives (and images) as
+ libcdio.
+Homepage: http://www.gnu.org/software/libcdio/
 
 Package: libasound2
 Status: install ok installed
@@ -4350,6 +5274,66 @@ Description: Tools for mounting and manipulating filesystems
  This package provides the mount(8), umount(8), swapon(8),
  swapoff(8), and losetup(8) commands.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
+
+Package: x11proto-video-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 81
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-video
+Version: 2.3.1-2
+Description: X11 Video extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the XVideo and XVideoMotionCompensation extensions, used to accelerate
+ playback of videos through X.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org videoproto proto module.
+
+Package: libcairo-gobject2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 494
+Maintainer: Dave Beckett <dajobe@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: cairo
+Version: 1.12.2-2
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.10.0), libglib2.0-0 (>= 2.14.0)
+Pre-Depends: multiarch-support
+Description: The Cairo 2D vector graphics library (GObject library)
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the GObject library, providing wrapper GObject types
+ for all cairo types.
+Homepage: http://cairographics.org/
+
+Package: libcdio13
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 260
+Maintainer: Nicolas Boullis <nboullis@debian.org>
+Architecture: armel
+Source: libcdio
+Version: 0.83-4
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Description: library to read and control CD-ROM
+ This library is to encapsulate CD-ROM reading and
+ control. Applications wishing to be oblivious of the OS- and
+ device-dependant properties of a CD-ROM can use this library.
+ .
+ Some support for disk image types like BIN/CUE and NRG is available,
+ so applications that use this library also have the ability to read
+ disc images as though they were CD's.
+Homepage: http://www.gnu.org/software/libcdio/
 
 Package: libsqlite3-0
 Status: install ok installed
@@ -4474,6 +5458,21 @@ Description: X.Org X server -- VESA display driver
  .
  This package is built from the X.org xf86-video-vesa driver module.
 
+Package: emacsen-common
+Status: install ok installed
+Priority: optional
+Section: editors
+Installed-Size: 134
+Maintainer: Rob Browning <rlb@defaultvalue.org>
+Architecture: all
+Version: 2.0.3
+Conffiles:
+ /etc/emacs/site-start.d/00debian-vars.el 01f95c4c108d6b5f20b31f0e9c2c6956
+ /etc/emacs/site-start.el 4198e6146b40acad33d18f049a84dd24
+Description: Common facilities for all emacsen
+ This package contains code that is needed by all the (x)emacs
+ packages.  It will be automatically installed when needed.
+
 Package: libreadline6
 Status: install ok installed
 Priority: important
@@ -4585,6 +5584,28 @@ Description: highly configurable system monitor (transitional package)
  This is a dummy package to ease transition to the new packaging scheme.
  It may be safely removed after upgrade/installation.
 Homepage: http://conky.sourceforge.net/
+
+Package: libp11-kit-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 347
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: p11-kit
+Version: 0.12-3
+Depends: libp11-kit0 (= 0.12-3)
+Description: Library for loading and coordinating access to PKCS#11 modules - development
+ Provides a way to load and enumerate PKCS#11 modules. Provides a standard
+ configuration setup for installing PKCS#11 modules in such a way that
+ they're discoverable.
+ .
+ Also solves problems with coordinating the use of PKCS#11 by different
+ components or libraries living in the same process.
+ .
+ This package contains the documentation and development headers required
+ to build applications using the p11-kit library.
+Homepage: http://p11-glue.freedesktop.org/p11-kit.html
 
 Package: lockfile-progs
 Status: install ok installed
@@ -4722,6 +5743,26 @@ Description: Python bindings for the Cairo vector graphics library
 Homepage: http://cairographics.org/pycairo/
 Python-Version: 2.6, 2.7
 
+Package: x11proto-render-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 88
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-render
+Version: 2:0.11.1-2
+Depends: x11proto-core-dev
+Description: X11 Render extension wire protocol
+ This package provides development headers describing the wire protocol for
+ the Render extension, used to implement Porter-Duff operations within X.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org renderproto proto module.
+
 Package: ctxusb
 Status: install ok installed
 Priority: optional
@@ -4826,6 +5867,55 @@ Description: XML parsing C library - runtime library
  might find in the XML document (like start tags).
 Homepage: http://expat.sourceforge.net
 
+Package: libarchive12
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 587
+Maintainer: Debian Libarchive Maintainers <ah-libarchive@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libarchive
+Version: 3.0.4-2
+Depends: libacl1 (>= 2.2.51-7), libattr1 (>= 1:2.4.46-7), libbz2-1.0, libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20110809), libnettle4 (>= 2.3), libxml2 (>= 2.7.4), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Description: Multi-format archive and compression library (shared library)
+ The libarchive library provides a flexible interface for reading and writing
+ archives in various formats such as tar and cpio. libarchive also supports
+ reading and writing archives compressed using various compression filters such
+ as gzip and bzip2. The library is inherently stream-oriented; readers serially
+ iterate through the archive, writers serially add things to the archive.
+ .
+ Archive formats supported are:
+ .
+    * tar (read and write, including GNU extensions)
+    * pax (read and write, including GNU and star extensions)
+    * cpio (read and write, including odc and newc variants)
+    * iso9660 (read and write, including Joliet and Rockridge extensions, with
+      some limitations)
+    * zip (read only, with some limitations, uses zlib)
+    * mtree (read and write)
+    * shar (write only)
+    * ar (read and write, including BSD and GNU/SysV variants)
+    * empty (read only; in particular, note that no other format will accept an
+      empty file)
+    * raw (read only)
+    * xar (read only)
+    * rar (read only, with some limitations)
+    * 7zip (read and write, with some limitations)
+ .
+ Filters supported are:
+ .
+    * gzip (read and write, uses zlib)
+    * bzip2 (read and write, uses bzlib)
+    * compress (read and write, uses an internal implementation)
+    * uudecode (read only)
+    * separate command-line compressors with fixed-signature auto-detection
+    * xz and lzma (read and write using liblzma)
+ .
+ This package provides the libarchive shared library.
+Homepage: http://libarchive.github.com/
+
 Package: iproute
 Status: install ok installed
 Priority: important
@@ -4876,6 +5966,25 @@ Description: X.Org X server -- Rendition display driver
  .
  This package is built from the X.org xf86-video-rendition driver module.
 
+Package: libdirectfb-1.2-9
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 2041
+Maintainer: Debian DirectFB Team <pkg-directfb-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: directfb
+Version: 1.2.10.0-5
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libts-0.0-0 (>= 1.0)
+Pre-Depends: multiarch-support
+Conflicts: libdirectfb-1.2-0
+Description: direct frame buffer graphics - shared libraries
+ DirectFB is a graphics library which was designed with embedded systems
+ in mind. It offers maximum hardware accelerated performance at a minimum
+ of resource usage and overhead.
+Homepage: http://www.directfb.org/
+
 Package: libboost-iostreams1.49.0
 Status: install ok installed
 Priority: important
@@ -4893,6 +6002,26 @@ Description: Boost.Iostreams Library
  which turn models of these concepts into C++ standard library streams
  and stream buffers.
 Homepage: http://www.boost.org/libs/iostreams/
+
+Package: libqtgstreamer-0.10-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 322
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: qt-gstreamer
+Version: 0.10.2-2
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libgstreamer-plugins-base0.10-0 (>= 0.10.33), libgstreamer0.10-0 (>= 0.10.33), libqtcore4 (>= 4:4.8.1), libqtglib-2.0-0 (>= 0.10.1), libstdc++6 (>= 4.4.0)
+Pre-Depends: multiarch-support
+Description: C++ bindings library for GStreamer with a Qt-style API
+ This package contains the QtGStreamer library, a library that provides
+ C++ bindings for GStreamer with a Qt-style API. The bindings are designed
+ to be easy to use for C++ programmers that are used to the Qt API and
+ also provide easier integration with Qt by using Qt's data types where
+ applicable.
+Homepage: http://gstreamer.freedesktop.org
 
 Package: libopenjpeg2
 Status: install ok installed
@@ -5031,6 +6160,30 @@ Description: JBIGkit libraries
  .
  This package contains the dynamically linked library.
 Homepage: http://www.cl.cam.ac.uk/~mgk25/jbigkit/
+
+Package: libxkbfile-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 252
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxkbfile
+Version: 1:1.0.8-1
+Depends: libxkbfile1 (= 1:1.0.8-1), libx11-dev, x11proto-core-dev, x11proto-kb-dev
+Description: X11 keyboard file manipulation library (development headers)
+ libxkbfile provides an interface to read and manipulate description files for
+ XKB, the X11 keyboard configuration extension.
+ .
+ This package contains the development headers for the library found in
+ libxkbfile1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxkbfile
 
 Package: libxi6
 Status: install ok installed
@@ -5311,6 +6464,50 @@ Description: X C Binding, render extension
     machine-parsable protocol descriptions
 Homepage: http://xcb.freedesktop.org
 
+Package: x11proto-kb-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 1241
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-kb
+Version: 1.0.6-2
+Description: X11 XKB extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the XKEYBOARD extension, used to control all manner of options
+ related to keyboard handling and layout in particular.
+ It does not control the addition/enabling/disabling of keyboards;
+ this is done with the XINPUT extension.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org kbproto proto module.
+
+Package: libswscale2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 644
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libav
+Version: 6:0.8.3-6
+Replaces: libswscale-extra-2
+Provides: libswscale-extra-2
+Depends: libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Breaks: libswscale-extra-2 (<< 5:0.8.1-2)
+Description: Libav video scaling library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video software scaling library from Libav.
+Homepage: http://libav.org/
+
 Package: liblockfile-bin
 Status: install ok installed
 Priority: standard
@@ -5327,6 +6524,31 @@ Breaks: liblockfile1 (<< 1.09-1)
 Description: support binaries for and cli utilities based on liblockfile
  This package contains support binaries for the liblockfile library,
  and the command-line utility ``dotlockfile''.
+
+Package: libpulse0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 752
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: pulseaudio
+Version: 2.0-6
+Depends: libasyncns0 (>= 0.3), libc6 (>= 2.10), libcap2 (>= 2.10), libdbus-1-3 (>= 1.1.1), libgcc1 (>= 1:4.4.0), libice6 (>= 1:1.0.0), libjson0, libsm6, libsndfile1 (>= 1.0.20), libwrap0 (>= 7.6-4~), libx11-6, libx11-xcb1, libxcb1, libxtst6
+Pre-Depends: multiarch-support
+Suggests: pulseaudio
+Breaks: pavucontrol (<< 0.9.8)
+Conffiles:
+ /etc/pulse/client.conf bdea965cdb68b445c04a1fa62193c096
+Description: PulseAudio client libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+Homepage: http://www.pulseaudio.org
 
 Package: libgtk2.0-common
 Status: install ok installed
@@ -5370,6 +6592,28 @@ Description: X.Org X server -- tdfx display driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-video-tdfx driver module.
+
+Package: libavdevice53
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 284
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libav
+Version: 6:0.8.3-6
+Replaces: libavdevice-extra-53
+Provides: libavdevice-extra-53
+Depends: libasound2 (>= 1.0.16), libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.3), libavformat53 (>= 6:0.8.3-6), libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.7), libcdio-cdda1 (>= 0.83), libcdio-paranoia1 (>= 0.83), libdc1394-22, libgcc1 (>= 1:4.4.0), libjack-jackd2-0 (>= 1.9.5~dfsg-14) | libjack-0.116, libpulse0 (>= 0.99.1), libx11-6 (>= 2:1.4.99.1), libxext6, libxfixes3
+Pre-Depends: multiarch-support
+Breaks: libavdevice-extra-53 (<< 5:0.8.1-2)
+Description: Libav device handling library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the device handling library from Libav.
+Homepage: http://libav.org/
 
 Package: libmotif4
 Status: install ok installed
@@ -5417,6 +6661,25 @@ Description: X C Binding, glx extension
   * Easy creation of new extensions: automatically generates interface from
     machine-parsable protocol descriptions
 Homepage: http://xcb.freedesktop.org
+
+Package: libgpg-error-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 132
+Maintainer: Jose Carlos Garcia Sogo <jsogo@debian.org>
+Architecture: armel
+Source: libgpg-error
+Version: 1.10-3
+Depends: libgpg-error0 (= 1.10-3), libc6 (>= 2.4)
+Description: library for common error values and messages in GnuPG components (development)
+ Library that defines common error values for all GnuPG
+ components.  Among these are GPG, GPGSM, GPGME, GPG-Agent, libgcrypt,
+ pinentry, SmartCard Daemon and possibly more in the future.
+ .
+ This package contains the headers and other files needed to compile
+ against this library.
+Homepage: http://www.gnupg.org/related_software/libgpg-error/
 
 Package: libvte-common
 Status: install ok installed
@@ -5555,6 +6818,28 @@ Description: Transitional package for liblapack3
  use in the scientific community.
 Homepage: http://www.netlib.org/lapack/
 
+Package: libavahi-common-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 195
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: avahi
+Version: 0.6.31-1
+Depends: libavahi-common3 (= 0.6.31-1)
+Description: Development files for the Avahi common library
+ Avahi is a fully LGPL framework for Multicast DNS Service Discovery.
+ It allows programs to publish and discover services and hosts
+ running on a local network with no specific configuration. For
+ example you can plug into a network and instantly find printers to
+ print to, files to look at and people to talk to.
+ .
+ This package contains the development headers for the Avahi common
+ library, which is a set of common functions and definitions used by many
+ of Avahis components and client applications.
+Homepage: http://avahi.org/
+
 Package: libsystemd-login0
 Status: install ok installed
 Priority: extra
@@ -5588,6 +6873,22 @@ Description: GTK+ based simple text editor
  and to be as useful as them.
 Homepage: http://tarot.freeshell.org/leafpad/
 
+Package: g++
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 34
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armel
+Source: gcc-defaults (1.119)
+Version: 4:4.6.3-7
+Provides: c++-compiler
+Depends: cpp (>= 4:4.6.3-7), gcc (>= 4:4.6.3-7), g++-4.6 (>= 4.4.7-1~), gcc-4.6 (>= 4.4.7-1~)
+Description: GNU C++ compiler
+ This is the GNU C++ compiler, a fairly portable optimizing compiler for C++.
+ .
+ This is a dependency package providing the default GNU C++ compiler.
+
 Package: e2fslibs
 Status: install ok installed
 Priority: required
@@ -5612,6 +6913,37 @@ Description: ext2/ext3/ext4 file system libraries
  include e2fsck, mke2fs, and tune2fs. Programs that use libe2p include
  dumpe2fs, chattr, and lsattr.
 Homepage: http://e2fsprogs.sourceforge.net
+
+Package: libgnutls-openssl27
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 264
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: gnutls26
+Version: 2.12.20-1
+Depends: libgnutls26 (= 2.12.20-1), libc6 (>= 2.4), libp11-kit0 (>= 0.11), libtasn1-3 (>= 1.6-0)
+Pre-Depends: multiarch-support
+Description: GNU TLS library - OpenSSL wrapper
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the runtime library of the GnuTLS OpenSSL wrapper.
+Homepage: http://www.gnutls.org/
 
 Package: xfonts-scalable
 Status: install ok installed
@@ -5694,6 +7026,24 @@ Description: MIT Kerberos runtime libraries - Support library
  Kerberos libraries.
 Homepage: http://web.mit.edu/kerberos/
 
+Package: libfile-fcntllock-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 87
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Version: 0.14-2
+Depends: perl (>= 5.14.2-11), perlapi-5.14.2, libc6 (>= 2.4)
+Description: Perl module for file locking with fcntl(2)
+ File::FcntlLock is a Perl module to do file locking in an object oriented
+ fashion using the fcntl(2) system call. This allows locks on parts of a file
+ as well as on the whole file and overcomes some known problems with flock(2),
+ on which Perl's flock() function is based.
+ .
+ Furthermore due to its design it supports reliable locking over NFS.
+Homepage: http://search.cpan.org/dist/File-FcntlLock/
+
 Package: lxrandr
 Status: install ok installed
 Priority: optional
@@ -5740,6 +7090,23 @@ Description: Open Motif - development files
  the manual pages for the Motif API and uil (user interface
  language compiler)
 Homepage: http://www.motifzone.net/
+
+Package: libcdio-paranoia1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 170
+Maintainer: Nicolas Boullis <nboullis@debian.org>
+Architecture: armel
+Source: libcdio
+Version: 0.83-4
+Depends: libc6 (>= 2.4), libcdio-cdda1 (>= 0.83), libcdio13 (>= 0.83)
+Description: library to read digital audio CDs with error correction
+ This library is made to read digital audio CDs, with error
+ correction. It does its best to correct errors and jitter that happen
+ when reading such discs. As it uses libcdio as a backend, it supports
+ the same kind of CDROM drives (and images) as libcdio.
+Homepage: http://www.gnu.org/software/libcdio/
 
 Package: wget
 Status: install ok installed
@@ -5889,6 +7256,49 @@ Description: portable C++ multi-threading
  own machine state including program instruction counter and
  registers.
 Homepage: http://www.boost.org/libs/thread/
+
+Package: libalgorithm-diff-xs-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 83
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: libalgorithm-diff-xs-perl (0.04-2)
+Version: 0.04-2+b1
+Depends: perl (>= 5.14.2-3), perlapi-5.14.2, libc6 (>= 2.4), libalgorithm-diff-perl
+Description: module to find differences between files (XS accelerated)
+ Algorithm::Diff::XS is a Perl diff utility module based on Joe Schaefer's
+ excellent but not very well-known Algorithm::LCS module, with a drop-in
+ interface identical to Algorithm::Diff.
+ .
+ Note that only the LCSidx function is optimized in XS at the moment, which
+ means only compact_diff will get significantly faster for large data sets,
+ while diff and sdiff will run in identical speed as Algorithm::Diff.
+Homepage: http://search.cpan.org/dist/Algorithm-Diff-XS/
+
+Package: x11proto-xinerama-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 60
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-xinerama
+Version: 1.2.1-2
+Breaks: libxinerama-dev (<< 2:1.1)
+Description: X11 Xinerama extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the XINERAMA extension, used to use and manage a multiple-screen
+ display.
+ The terms 'Xinerama' and 'PanoramiX' are generally interchangeable;
+ this package used to be named x11proto-panoramix-dev.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xineramaproto proto module.
 
 Package: iceweasel
 Status: install ok installed
@@ -6066,6 +7476,30 @@ Description: GNU troff text-formatting system (base system components)
  install the groff package.
 Homepage: http://groff.ffii.org/
 
+Package: libqtglib-2.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 168
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: qt-gstreamer
+Version: 0.10.2-2
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.12.0), libqtcore4 (>= 4:4.8.1), libstdc++6 (>= 4.5.0~)
+Pre-Depends: multiarch-support
+Description: C++ bindings library for GLib and GObject with a Qt-style API
+ This package contains the QtGLib library, a library that provides
+ C++ bindings for parts of the GLib and GObject APIs with a Qt-syle API.
+ The bindings are designed to be easy to use for C++ programmers that are
+ used to the Qt API and also provide easier integration with Qt by using
+ Qt's data types where applicable.
+ .
+ This library serves as a base for building the QtGStreamer bindings library.
+ .
+ This package is part of QtGStreamer.
+Homepage: http://gstreamer.freedesktop.org
+
 Package: fake-hwclock
 Status: install ok installed
 Priority: extra
@@ -6222,6 +7656,46 @@ Description: Tracks runtime library calls in dynamically linked programs
  You should install ltrace if you need a sysadmin tool for tracking the
  execution of processes.
 
+Package: libalgorithm-diff-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 164
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 1.19.02-2
+Depends: perl
+Recommends: libalgorithm-diff-xs-perl
+Description: module to find differences between files
+ Algorithm::Diff is a Perl module that allows users to analyze text based on a
+ Longest Common Subsequence (LCS) algorithm. It can compare two files and find
+ the differences between them, which can produce the same information as the
+ common Unix tool 'diff'.
+ .
+ There is an XS-optimized implementation of the core loop, which accelerates
+ some types of diff output (see libalgorithm-diff-xs-perl).
+Homepage: http://search.cpan.org/dist/Algorithm-Diff/
+
+Package: libxmlrpc-core-c3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 428
+Maintainer: Sean Finney <seanius@debian.org>
+Architecture: armel
+Source: xmlrpc-c
+Version: 1.16.33-3.1
+Replaces: libxmlrpc-c3
+Depends: libc6 (>= 2.7), libcurl3 (>= 7.16.2-1)
+Conflicts: libxmlrpc-c3 (<= 1.16.07-1)
+Description: lightweight RPC library based on XML and HTTP [C runtime libraries]
+ XML-RPC is a quick-and-easy way to make procedure calls over the Internet.
+ It converts the procedure call into an XML document, sends it to a remote
+ server using HTTP, and gets back the response as XML.
+ .
+ This library provides a modular implementation of XML-RPC for C.
+Homepage: http://xmlrpc-c.sourceforge.net
+
 Package: x11-apps
 Status: install ok installed
 Priority: optional
@@ -6325,6 +7799,32 @@ Description: X Window System (X.Org) infrastructure
  is thus often also referred to as "X.Org".  All of the preceding quoted
  terms are functionally interchangeable in an Debian system.
 
+Package: libxdamage-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 80
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Source: libxdamage
+Version: 1:1.1.3-2
+Depends: libxdamage1 (= 1:1.1.3-2), libx11-dev, libxfixes-dev, x11proto-damage-dev (>= 1.1)
+Description: X11 damaged region extension library (development headers)
+ libXdamage provides an X Window System client interface to the DAMAGE
+ extension to the X protocol.
+ .
+ The Damage extension provides for notification of when on-screen regions have
+ been 'damaged' (altered).
+ .
+ This package contains the development headers for the library found in
+ libxdamage1.  Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXdamage
+
 Package: net-tools
 Status: install ok installed
 Priority: important
@@ -6388,6 +7888,29 @@ Description: GTK+ bindings: Glade support
  application you just need to load the interface description from
  the .glade file instead of constructing the GUI at runtime.
 Homepage: http://www.pygtk.org/
+
+Package: libsndfile1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 516
+Maintainer: Erik de Castro Lopo <erikd@mega-nerd.com>
+Architecture: armel
+Multi-Arch: same
+Source: libsndfile
+Version: 1.0.25-5
+Depends: libc6 (>= 2.7), libflac8 (>= 1.2.1), libgcc1 (>= 1:4.4.0), libogg0 (>= 1.0rc3), libvorbis0a (>= 1.2.3), libvorbisenc2 (>= 1.1.2)
+Pre-Depends: multiarch-support
+Description: Library for reading/writing audio files
+ libsndfile is a library of C routines for reading and writing files containing
+ sampled audio data.
+ .
+ Various versions of WAV (integer, floating point, GSM, and compressed formats);
+ Microsoft PCM, A-law and u-law formats; AIFF, AIFC and RIFX; various AU/SND
+ formats (Sun/NeXT, Dec AU, G721 and G723 ADPCM); RAW header-less PCM files;
+ Amiga IFF/8SVX/16SV PCM files; Ensoniq PARIS  (.PAF); Apple's Core Audio Format
+ (CAF) and others.
+Homepage: http://www.mega-nerd.com/libsndfile/
 
 Package: xserver-xorg-video-r128
 Status: install ok installed
@@ -6484,6 +8007,31 @@ Description: full internationalization support for debconf
  translations into all available languages, support for using translated
  debconf templates, and support for proper display of multibyte character
  sets.
+
+Package: libkadm5srv-mit8
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 167
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: krb5
+Version: 1.10.1+dfsg-2
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.6.dfsg.2), libgssrpc4 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkdb5-6, libkrb5-3 (>= 1.9+dfsg~beta1), libkrb5support0 (>= 1.7dfsg~beta2)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Description: MIT Kerberos runtime libraries - KDC and Admin Server
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library used by Kerberos administrative
+ servers.
+Homepage: http://web.mit.edu/kerberos/
 
 Package: libxmu6
 Status: install ok installed
@@ -6685,6 +8233,38 @@ Description: Network Security Service libraries - transitional package
  This is a transitional package to ensure smooth transition of all packages
  to libnss3.
 Homepage: http://www.mozilla.org/projects/security/pki/nss/
+
+Package: libcurl3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 542
+Maintainer: Alessandro Ghedini <ghedo@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: curl
+Version: 7.26.0-1
+Replaces: libcurl2 (<< 1:7.11.2-2), libcurl4
+Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libidn11 (>= 1.13), libldap-2.4-2 (>= 2.4.7), librtmp0 (>= 2.3), libssh2-1 (>= 1.2.6), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Recommends: ca-certificates
+Conflicts: libcurl4
+Description: easy-to-use client-side URL transfer library (OpenSSL flavour)
+ libcurl is an easy-to-use client-side URL transfer library, supporting DICT,
+ FILE, FTP, FTPS, GOPHER, HTTP, HTTPS, IMAP, IMAPS, LDAP, POP3, POP3S, RTMP,
+ RTSP, SCP, SFTP, SMTP, SMTPS, TELNET and TFTP.
+ .
+ libcurl supports SSL certificates, HTTP POST, HTTP PUT, FTP uploading, HTTP
+ form based upload, proxies, cookies, user+password authentication (Basic,
+ Digest, NTLM, Negotiate, Kerberos), file transfer resume, http proxy tunneling
+ and more!
+ .
+ libcurl is free, thread-safe, IPv6 compatible, feature rich, well supported,
+ fast, thoroughly documented and is already used by many known, big and
+ successful companies and numerous applications.
+ .
+ SSL support is provided by OpenSSL.
+Homepage: http://curl.haxx.se
 
 Package: libobrender27
 Status: install ok installed
@@ -7157,6 +8737,22 @@ Description: X Keyboard Extension (XKB) configuration data
  to provide a central repository that could be used by all vendors.
 Homepage: http://www.freedesktop.org/Software/XKeyboardConfig
 
+Package: fakeroot
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 303
+Maintainer: Clint Adams <clint@debian.org>
+Architecture: armel
+Version: 1.18.4-2
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0)
+Description: tool for simulating superuser privileges
+ fakeroot provides a fake "root environment" by means of LD_PRELOAD and
+ SysV IPC (or TCP) trickery. It puts wrappers around getuid(), chown(),
+ stat(), and other file-manipulation functions, so that unprivileged
+ users can (for instance) populate .deb archives with root-owned files;
+ various build tools use fakeroot for this by default.
+
 Package: libacl1
 Status: install ok installed
 Priority: required
@@ -7175,6 +8771,30 @@ Description: Access control list shared library
  the POSIX 1003.1e draft standard 17 functions for manipulating
  access control lists.
 Homepage: http://savannah.nongnu.org/projects/acl/
+
+Package: libpthread-stubs0-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 40
+Maintainer: XCB Developers <xcb@lists.freedesktop.org>
+Architecture: armel
+Multi-Arch: same
+Source: libpthread-stubs
+Version: 0.3-3
+Depends: libpthread-stubs0 (= 0.3-3)
+Description: pthread stubs not provided by native libc, development files
+ This library provides weak aliases for pthread functions not provided
+ in libc or otherwise available by default.  Libraries like libxcb rely
+ on pthread stubs to use pthreads optionally, becoming thread-safe when
+ linked to libpthread, while avoiding any performance hit when running
+ single-threaded. libpthread-stubs supports this behavior even on
+ platforms which do not supply all the necessary pthread stubs.
+ .
+ On platforms which already supply all the necessary pthread stubs, this
+ package ships only the pkg-config file pthread-stubs.pc, to allow
+ libraries to unconditionally express a dependency on pthread-stubs and
+ still obtain correct behavior.
 
 Package: libstartup-notification0
 Status: install ok installed
@@ -7236,6 +8856,33 @@ Description: library for dealing with netlink sockets - route interface
  .
  API to the configuration interfaces of the NETLINK_ROUTE family.
 Homepage: http://people.suug.ch/~tgr/libnl/
+
+Package: cmake
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 9402
+Maintainer: Modestas Vainius <modax@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 2.8.9~rc1-1
+Depends: libarchive12, libc6 (>= 2.7), libcurl3-gnutls (>= 7.16.2), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), libxmlrpc-core-c3, zlib1g (>= 1:1.2.3.3), cmake-data (= 2.8.9~rc1-1), procps
+Suggests: gcc, make
+Description: cross-platform, open-source make system
+ CMake is used to control the software compilation process using
+ simple platform and compiler independent configuration files. CMake
+ generates native makefiles and workspaces that can be used in the
+ compiler environment of your choice. CMake is quite sophisticated: it
+ is possible to support complex environments requiring system
+ configuration, pre-processor generation, code generation, and template
+ instantiation.
+ .
+ CMake was developed by Kitware as part of the NLM Insight
+ Segmentation and Registration Toolkit project. The ASCI VIEWS project
+ also provided support in the context of their parallel computation
+ environment. Other sponsors include the Insight, VTK, and VXL open
+ source software communities.
+Homepage: http://cmake.org/
 
 Package: libaudio2
 Status: install ok installed
@@ -7402,6 +9049,29 @@ Description: RDP client for Windows Terminal Services
  .
  This package contains the X11 based client.
 Homepage: http://www.freerdp.com/
+
+Package: libdc1394-22
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 261
+Maintainer: Guus Sliepen <guus@debian.org>
+Architecture: armel
+Multi-Arch: same
+Version: 2.2.0-2
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libraw1394-11, libusb-1.0-0 (>= 2:1.0.8)
+Pre-Depends: multiarch-support
+Description: high level programming interface for IEEE1394 digital camera
+ libdc1394 is a library that is intended to provide a high level
+ programming interface for application developers who wish to control
+ IEEE 1394 based cameras that conform to the 1394-based Digital Camera
+ Specification (found at http://www.1394ta.org/).
+ .
+ This version of libdc1394 supports both the old and new (juju) FireWire stack.
+ It automatically detects which one to use at runtime.
+ .
+ This package contains shared libraries.
+Homepage: http://damien.douxchamps.net/ieee1394/libdc1394/
 
 Package: initscripts
 Status: install ok installed
@@ -7734,6 +9404,31 @@ Description: GNU Standard C++ Library v3 (development files)
  in g++-3.0.
 Homepage: http://gcc.gnu.org/
 
+Package: libxau-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 83
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxau
+Version: 1:1.0.7-1
+Depends: libxau6 (= 1:1.0.7-1), x11proto-core-dev
+Description: X11 authorisation library (development headers)
+ This package provides the main interface to the X11 authorisation handling,
+ which controls authorisation for X connections, both client-side and
+ server-side.
+ .
+ This package contains the development headers for the library found in libxau6.
+ Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libXau
+
 Package: xulrunner-10.0
 Status: install ok installed
 Priority: optional
@@ -8021,6 +9716,29 @@ Description: Python 2.x bindings for GObject - transitional package
  is here for upgrade purposes only. You can remove it safely when
  nothing else depends on it.
 
+Package: libjack-jackd2-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 609
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: jackd2
+Version: 1.9.8~dfsg.4+20120529git007cdc37-1
+Replaces: libjack-0.116
+Provides: libjack-0.116
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libsamplerate0 (>= 0.1.7), libstdc++6 (>= 4.6)
+Pre-Depends: multiarch-support
+Suggests: jackd2 (= 1.9.8~dfsg.4+20120529git007cdc37-1)
+Conflicts: jackd2 (>> 1.9.8~dfsg.4+20120529git007cdc37-1), jackd2 (<< 1.9.8~dfsg.4+20120529git007cdc37-1), libjack-0.116, libjack0
+Description: JACK Audio Connection Kit (libraries)
+ JACK is a low-latency sound server, allowing multiple applications to
+ connect to one audio device, and to share audio between themselves.
+ .
+ This package contains the shared libraries.
+Homepage: http://jackaudio.org/
+
 Package: libsigc++-2.0-0c2a
 Status: install ok installed
 Priority: optional
@@ -8140,6 +9858,32 @@ Description: ATK accessibility toolkit
  This is the runtime part of ATK, needed to run applications built with it.
 Homepage: http://www.gtk.org/
 
+Package: libglib2.0-bin
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 926
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: glib2.0
+Version: 2.32.3-1
+Replaces: libglib2.0-0 (<< 2.25.11-2), libglib2.0-dev (<< 2.25.11-2)
+Depends: libc6 (>= 2.4), libelf1 (>= 0.142), libgcc1 (>= 1:4.4.0), libglib2.0-0 (= 2.32.3-1), libglib2.0-data
+Conflicts: libglib2.0-0 (<< 2.25.11-2)
+Conffiles:
+ /etc/bash_completion.d/gresource-bash-completion.sh 305f04df5006e28bbee350d1f9f7f973
+ /etc/bash_completion.d/gdbus-bash-completion.sh 3c6022ac0bf85f2f374358a52456e803
+ /etc/bash_completion.d/gsettings-bash-completion.sh 912020ee60c5011d69c46fdefbbc1ef5
+Description: Programs for the GLib library
+ GLib is a library containing many useful C routines for things such
+ as trees, hashes, lists, and strings.  It is a useful general-purpose
+ C library used by projects such as GTK+, GIMP, and GNOME.
+ .
+ This package contains the program files which is used for the libraries
+ and others.
+Homepage: http://www.gtk.org/
+
 Package: liblzma5
 Status: install ok installed
 Priority: required
@@ -8161,6 +9905,53 @@ Description: XZ-format compression library
  streams and the older LZMA format used by lzma. (For 7-Zip's related
  format, use the p7zip package instead.)
 Homepage: http://tukaani.org/xz/
+
+Package: libkadm5clnt-mit8
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 143
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: krb5
+Version: 1.10.1+dfsg-2
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.01), libgssapi-krb5-2 (>= 1.10+dfsg~), libgssrpc4 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.8+dfsg), libkrb5support0 (>= 1.7dfsg~beta2)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Description: MIT Kerberos runtime libraries - Administration Clients
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the runtime library used by clients of the Kerberos
+ administration protocol.
+Homepage: http://web.mit.edu/kerberos/
+
+Package: libavfilter2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 572
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libav
+Version: 6:0.8.3-6
+Replaces: libavfilter-extra-2
+Provides: libavfilter-extra-2
+Depends: libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.3), libavformat53 (>= 6:0.8.3-6), libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.7), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libopencv-core2.3, libopencv-imgproc2.3, libswscale2 (>= 6:0.8.3-6)
+Pre-Depends: multiarch-support
+Breaks: libavfilter-extra-2 (<< 5:0.8.1-2)
+Description: Libav video filtering library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video filtering library from Libav.
+Homepage: http://libav.org/
 
 Package: netcat-traditional
 Status: install ok installed
@@ -8326,6 +10117,24 @@ Description: X.Org X server -- MGA display driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-video-mga driver module.
+
+Package: libdbus-1-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 667
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: dbus
+Version: 1.6.0-1
+Depends: libdbus-1-3 (= 1.6.0-1), pkg-config
+Description: simple interprocess messaging system (development headers)
+ D-Bus is a message bus, used for sending messages between applications.
+ Conceptually, it fits somewhere in between raw sockets and CORBA in
+ terms of complexity.
+ .
+ See the dbus description for more information about D-Bus in general.
+Homepage: http://dbus.freedesktop.org/
 
 Package: libgpm2
 Status: install ok installed
@@ -8543,6 +10352,24 @@ Description: terminal-based package manager
  and housebroken.
 Homepage: http://aptitude.alioth.debian.org/
 
+Package: pkg-config
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 164
+Maintainer: Tollef Fog Heen <tfheen@debian.org>
+Architecture: armel
+Version: 0.26-1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.16.0), libpopt0 (>= 1.16)
+Description: manage compile and link flags for libraries
+ pkg-config is a system for managing library compile and link flags that
+ works with automake and autoconf.
+ .
+ Increasingly libraries ship with ".pc" files that allow querying of the
+ compiler and linker flags needed to use them through the pkg-config(1)
+ program.
+Homepage: http://pkg-config.freedesktop.org
+
 Package: iso-codes
 Status: install ok installed
 Priority: optional
@@ -8607,6 +10434,29 @@ Description: shared libraries for terminal handling (wide character support)
  compiled with ncursesw, which includes support for wide characters.
 Homepage: http://invisible-island.net/ncurses/
 
+Package: libxml2-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 2216
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxml2
+Version: 2.8.0+dfsg1-5
+Depends: libxml2 (= 2.8.0+dfsg1-5)
+Description: Development files for the GNOME XML library
+ XML is a metalanguage to let you design your own markup language.
+ A regular markup language defines a way to describe information in
+ a certain class of documents (eg HTML). XML lets you define your
+ own customized markup languages for many classes of document. It
+ can do this because it's written in SGML, the international standard
+ metalanguage for markup languages.
+ .
+ Install this package if you wish to develop your own programs using
+ the GNOME XML library.
+Homepage: http://xmlsoft.org/
+
 Package: liblocale-gettext-perl
 Status: install ok installed
 Priority: required
@@ -8628,6 +10478,53 @@ Description: module using libc functions for internationalization in Perl
  and dngettext().
 Homepage: http://search.cpan.org/dist/gettext/gettext.pm
 
+Package: libssl-doc
+Status: install ok installed
+Priority: optional
+Section: doc
+Installed-Size: 1421
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Architecture: all
+Source: openssl
+Version: 1.0.1c-4
+Replaces: libssl-dev (<< 1.0.0)
+Breaks: libssl-dev (<< 1.0.0)
+Description: SSL development documentation documentation
+ libssl and libcrypto manpages and demo files.
+ .
+ It is part of the OpenSSL implementation of SSL.
+
+Package: build-essential
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 48
+Maintainer: Matthias Klose <doko@debian.org>
+Architecture: armel
+Version: 11.5
+Depends: libc6-dev | libc-dev, gcc (>= 4:4.4.3), g++ (>= 4:4.4.3), make, dpkg-dev (>= 1.13.5)
+Description: Informational list of build-essential packages
+ If you do not plan to build Debian packages, you don't need this
+ package.  Starting with dpkg (>= 1.14.18) this package is required
+ for building Debian packages.
+ .
+ This package contains an informational list of packages which are
+ considered essential for building Debian packages.  This package also
+ depends on the packages on that list, to make it easy to have the
+ build-essential packages installed.
+ .
+ If you have this package installed, you only need to install whatever
+ a package specifies as its build-time dependencies to build the
+ package.  Conversely, if you are determining what your package needs
+ to build-depend on, you can always leave out the packages this
+ package depends on.
+ .
+ This package is NOT the definition of what packages are
+ build-essential; the real definition is in the Debian Policy Manual.
+ This package contains merely an informational list, which is all
+ most people need.   However, if this package and the manual disagree,
+ the manual is correct.
+
 Package: openssh-blacklist
 Status: install ok installed
 Priority: optional
@@ -8641,6 +10538,35 @@ Recommends: openssh-client
 Description: list of default blacklisted OpenSSH RSA and DSA keys
  Contains the list of known-bad default OpenSSH keys, for ssh-vulnkeys to
  use when examining suspect keys: DSA-1024, RSA-2048
+
+Package: gir1.2-freedesktop
+Status: install ok installed
+Priority: optional
+Section: introspection
+Installed-Size: 58
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: gobject-introspection
+Version: 1.32.1-1
+Depends: gir1.2-glib-2.0 (= 1.32.1-1), libcairo-gobject2 (>= 1.10.0)
+Conflicts: gir1.0-freedesktop, gobject-introspection-freedesktop
+Description: Introspection data for some FreeDesktop components
+ GObject Introspection is a project for providing machine readable
+ introspection data of the API of C libraries. This introspection
+ data can be used in several different use cases, for example
+ automatic code generation for bindings, API verification and documentation
+ generation.
+ .
+ GObject Introspection contains tools to generate and handle the
+ introspection data.
+ .
+ This package contains small pieces of introspection data for the Cairo,
+ FontConfig, FreeType, GL, and some XOrg libraries. They are
+ distributed in this package temporarily, while the original sources
+ do not include support for GObject Introspection. They are far from
+ complete and only include what is necessary for other introspection
+ packages to work properly.
+Homepage: http://live.gnome.org/GObjectIntrospection
 
 Package: python-numpy
 Status: install ok installed
@@ -8708,6 +10634,27 @@ Description: LXDE default session manager
  desktop-independent and can be used with any window manager.
 Homepage: http://www.lxde.org/
 
+Package: x11proto-core-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 1801
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-core
+Version: 7.0.23-1
+Depends: xorg-sgml-doctools (>= 1:1.5)
+Description: X11 core wire protocol and auxiliary headers
+ This package provides development headers describing the wire protocol
+ for the core X11 protocol, and also provides a number of utility headers,
+ used to abstract OS-specific functions.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org xproto proto module.
+
 Package: scrot
 Status: install ok installed
 Priority: optional
@@ -8723,6 +10670,43 @@ Description: command line screen capture utility
  image formats are supported through imlib2's dynamic saver
  modules.
 Homepage: http://freshmeat.net/projects/scrot
+
+Package: tsconf
+Status: install ok installed
+Priority: optional
+Section: embedded
+Installed-Size: 50
+Maintainer: Neil Williams <codehelp@debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: tslib
+Version: 1.0-11
+Replaces: libts-0.0-0 (<= 1.0-6)
+Conffiles:
+ /etc/ts.conf 4783b67c395ff75d49d5a462c0b9fafe
+Description: touch screen library common files
+ Tslib is an abstraction layer for touchscreen panel events, as well
+ as a filter stack for the manipulation of those events.
+ .
+ This package contains the common files for the shared
+ library.
+Homepage: http://tslib.berlios.de/
+
+Package: libssl-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 4757
+Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
+Architecture: armel
+Source: openssl
+Version: 1.0.1c-4
+Depends: libssl1.0.0 (= 1.0.1c-4), zlib1g-dev
+Recommends: libssl-doc
+Description: SSL development libraries, header files and documentation
+ libssl and libcrypto development libraries, header files and manpages.
+ .
+ It is part of the OpenSSL implementation of SSL.
 
 Package: xarchiver
 Status: install ok installed
@@ -8854,6 +10838,32 @@ Description: X.Org X server -- legacy S3 display driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-video-s3 driver module.
+
+Package: libx11-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 2121
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libx11
+Version: 2:1.5.0-1
+Depends: libx11-6 (= 2:1.5.0-1), libxau-dev (>= 1:1.0.0-1), libxdmcp-dev (>= 1:1.0.0-1), x11proto-core-dev (>= 6.8.99.8-1), x11proto-input-dev, x11proto-kb-dev, xtrans-dev, libxcb1-dev
+Recommends: libx11-doc
+Description: X11 client-side library (development headers)
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ This package contains the development headers for the library found in
+ libx11-6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
 
 Package: iputils-ping
 Status: install ok installed
@@ -8993,6 +11003,30 @@ Description: file management support (core library)
  .
  This package contains the core library.
 Homepage: http://pcmanfm.sourceforge.net/
+
+Package: xtrans-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 369
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: xtrans
+Version: 1.2.7-1
+Description: X transport library (development files)
+ xtrans includes a number of routines to make X implementations
+ transport-independent; at time of writing, it includes support for UNIX
+ sockets, IPv4, IPv6, and DECnet.
+ .
+ xtrans is not actually a library in itself; it includes .c files which are
+ then used in the compilation of X servers, libraries, et al.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libxtrans
 
 Package: qdbus
 Status: install ok installed
@@ -9168,6 +11202,33 @@ Description: XMMS2 - client library
  This package contains a client library written in c.
 Homepage: http://xmms2.org/
 
+Package: gir1.2-gstreamer-0.10
+Status: install ok installed
+Priority: optional
+Section: introspection
+Installed-Size: 854
+Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: gstreamer0.10
+Version: 0.10.36-1
+Replaces: gir1.0-gstreamer-0.10, gobject-introspection-repository (<< 0.6.5-2), libgstreamer0.10-0 (<< 0.10.25-3)
+Depends: gir1.2-freedesktop, gir1.2-glib-2.0
+Conflicts: gir1.0-gstreamer-0.10
+Description: Description: GObject introspection data for the GStreamer library
+ This package contains introspection data for the GStreamer streaming media
+ framework.
+ .
+ GStreamer is a streaming media framework, based on graphs of filters
+ which operate on media data.  Applications using this library can do
+ anything from real-time sound processing to playing videos, and just
+ about anything else media-related.  Its plugin-based architecture means
+ that new data types or processing capabilities can be added simply by
+ installing new plug-ins.
+ .
+ It can be used by packages using the GIRepository format to generate
+ dynamic bindings.
+Homepage: http://gstreamer.freedesktop.org
+
 Package: libmp3lame0
 Status: install ok installed
 Priority: optional
@@ -9210,6 +11271,47 @@ Description: X.Org X server -- ATI Mach64 display driver
  .
  This package is built from the X.org xf86-video-mach64 driver module.
 
+Package: x11proto-damage-dev
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 68
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: x11proto-damage
+Version: 1:1.2.1-2
+Depends: x11proto-fixes-dev, x11proto-core-dev
+Description: X11 Damage extension wire protocol
+ This package provides development headers describing the wire protocol
+ for the Damage extension, used to notify clients of changes made to
+ particular areas.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This package is built from the X.org damageproto proto module.
+
+Package: libcaca0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1009
+Maintainer: Sam Hocevar <sho@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libcaca
+Version: 0.99.beta18-1
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20070908), libslang2 (>= 2.0.7-1), libstdc++6 (>= 4.4.0), libtinfo5, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Description: colour ASCII art library
+ libcaca is the Colour AsCii Art library. It provides high level functions
+ for colour text drawing, simple primitives for line, polygon and ellipse
+ drawing, as well as powerful image to text conversion routines.
+ .
+ This package contains the shared library for libcaca.
+Homepage: http://caca.zoy.org/wiki/libcaca
+
 Package: libnm-glib4
 Status: deinstall ok config-files
 Priority: optional
@@ -9231,6 +11333,26 @@ Description: network management framework (GLib shared library)
  This package provides the shared library that applications can use to query
  connection status via NetworkManager.
 Homepage: http://www.gnome.org/projects/NetworkManager/
+
+Package: comerr-dev
+Status: install ok installed
+Priority: extra
+Section: libdevel
+Installed-Size: 192
+Maintainer: Theodore Y. Ts'o <tytso@mit.edu>
+Architecture: armel
+Source: e2fsprogs (1.42.5-1)
+Version: 2.1-1.42.5-1
+Replaces: e2fslibs-dev (<< 1.33-2), libkrb5-dev (<< 1.3)
+Depends: libc6-dev | libc-dev, libcomerr2 (= 1.42.5-1), dpkg (>= 1.15.4) | install-info
+Suggests: doc-base
+Description: common error description library - headers and static libraries
+ libcom_err is an attempt to present a common error-handling mechanism to
+ manipulate the most common form of error code in a fashion that does not
+ have the problems identified with mechanisms commonly in use.
+ .
+ This package contains the development environment for the com_err library.
+Homepage: http://e2fsprogs.sourceforge.net
 
 Package: wireless-tools
 Status: install ok installed
@@ -9375,6 +11497,31 @@ Description: Window Navigator Construction Kit - common files
  .
  This package contains internationalization files.
 
+Package: libavformat53
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 2735
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libav
+Version: 6:0.8.3-6
+Replaces: libavformat-extra-53
+Provides: libavformat-extra-53
+Depends: libavcodec53 (>= 6:0.8.3-1~) | libavcodec-extra-53 (>= 6:0.8.3), libavutil51 (>= 6:0.8.3-6), libbz2-1.0, libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libgnutls26 (>= 2.12.17-0), librtmp0 (>= 2.3), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Breaks: libavformat-extra-53 (<< 5:0.8.1-2)
+Description: Libav file format library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the library for handling file formats from Libav.
+ .
+ It supports most existing file formats (AVI, MPEG, OGG, Matroska,
+ ASF...).
+Homepage: http://libav.org/
+
 Package: unzip
 Status: install ok installed
 Priority: optional
@@ -9396,6 +11543,25 @@ Description: De-archiver for .zip files
  .
  This version supports encryption.
 Homepage: http://www.info-zip.org/UnZip.html
+
+Package: zlib1g-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 402
+Maintainer: Mark Brown <broonie@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: zlib
+Version: 1:1.2.7.dfsg-13
+Provides: libz-dev
+Depends: zlib1g (= 1:1.2.7.dfsg-13), libc6-dev | libc-dev
+Conflicts: zlib1-dev
+Description: compression library - development
+ zlib is a library implementing the deflate compression method found
+ in gzip and PKZIP.  This package includes the development support
+ files.
+Homepage: http://zlib.net/
 
 Package: libpciaccess0
 Status: install ok installed
@@ -9759,6 +11925,31 @@ Description: X.Org X server -- input driver metapackage
  (Xorg).  It does not provide any drivers itself, and may be removed if you wish
  to only have certain drivers installed.
 
+Package: libkdb5-6
+Status: install ok installed
+Priority: standard
+Section: libs
+Installed-Size: 131
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: krb5
+Version: 1.10.1+dfsg-2
+Depends: libc6 (>= 2.4), libcomerr2 (>= 1.01), libgssrpc4 (>= 1.7dfsg~alpha1), libk5crypto3 (>= 1.7+dfsg), libkeyutils1, libkrb5-3 (>= 1.7dfsg), libkrb5support0 (>= 1.7dfsg~beta2)
+Pre-Depends: multiarch-support
+Suggests: krb5-doc, krb5-user
+Breaks: libkadm5srv-mit8 (<< 1.10+dfsg~)
+Description: MIT Kerberos runtime libraries - Kerberos database
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the internal Kerberos database libraries.
+Homepage: http://web.mit.edu/kerberos/
+
 Package: multiarch-support
 Status: install ok installed
 Priority: standard
@@ -9875,6 +12066,28 @@ Description: X11 Testing -- Record extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXtst
 
+Package: libpostproc52
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 283
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libav
+Version: 6:0.8.3-6
+Replaces: libpostproc-extra-52
+Provides: libpostproc-extra-52
+Depends: libavutil51 (>= 6:0.8.3-6), libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Breaks: libpostproc-extra-52 (<< 5:0.8.1-2)
+Description: Libav video postprocessing library
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the video postprocessing library from Libav.
+Homepage: http://libav.org/
+
 Package: nano
 Status: install ok installed
 Priority: important
@@ -9939,6 +12152,24 @@ Description: wrapper library for imlib2, and other stuff
  context stuff, doubly-linked lists and font styles.
 Homepage: http://linuxbrit.co.uk/giblib/
 
+Package: libalgorithm-merge-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 44
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.08-2
+Depends: perl, libalgorithm-diff-perl
+Description: Perl module for three-way merge of textual data
+ Algorithm::Merge provides three-way merge and diff functions, complementing
+ the functionality offered by Algorithm::Diff (libalgorithm-diff-perl). Given
+ three sets of items, known as the original, left and right, this module can
+ take a three-way difference or merge them. Taking a difference provides an
+ array reference that is very similar to the behaviour of Algorithm::Diff. One
+ can also implement custom conflict resolution using the CONFLICT callback.
+Homepage: http://search.cpan.org/dist/Algorithm-Merge/
+
 Package: libice6
 Status: install ok installed
 Priority: optional
@@ -9960,6 +12191,24 @@ Description: X11 Inter-Client Exchange library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libICE
+
+Package: libjson0
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 64
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: armel
+Multi-Arch: same
+Source: json-c
+Version: 0.9-1.1
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Description: JSON manipulation library - shared library
+ This library allows you to easily construct JSON objects in C,
+ output them as JSON formatted strings and parse JSON formatted
+ strings back into the C representation of JSON objects.
+Homepage: http://oss.metaparadigm.com/json-c/
 
 Package: libp11-kit0
 Status: install ok installed
@@ -9984,6 +12233,26 @@ Description: Library for loading and coordinating access to PKCS#11 modules - ru
  This package contains the shared library required for applications loading
  and accessing PKCS#11 modules.
 Homepage: http://p11-glue.freedesktop.org/p11-kit.html
+
+Package: libpcrecpp0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 170
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Architecture: armel
+Multi-Arch: same
+Source: pcre3
+Version: 1:8.30-5
+Replaces: libpcre3 (<< 6.4-1.1)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libpcre3 (>= 8.10), libstdc++6 (>= 4.4.0)
+Pre-Depends: multiarch-support
+Conflicts: libpcre3 (<< 6.4-1.1)
+Description: Perl 5 Compatible Regular Expression Library - C++ runtime files
+ This is a C++ library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the C++ runtime library.
 
 Package: libfreerdp-plugins-standard
 Status: install ok installed
@@ -10053,6 +12322,31 @@ Description: Cross Platform Audio Output Library (Common files)
  This package contains config files and man pages for libao.
 Homepage: http://www.xiph.org/ao/
 
+Package: libkrb5-dev
+Status: install ok installed
+Priority: extra
+Section: libdevel
+Installed-Size: 122
+Maintainer: Sam Hartman <hartmans@debian.org>
+Architecture: armel
+Source: krb5
+Version: 1.10.1+dfsg-2
+Replaces: krb5-multidev (<< 1.8+dfsg~alpha1-3)
+Depends: krb5-multidev (= 1.10.1+dfsg-2)
+Suggests: krb5-doc
+Conflicts: heimdal-dev
+Description: Headers and development libraries for MIT Kerberos
+ Kerberos is a system for authenticating users and services on a network.
+ Kerberos is a trusted third-party service.  That means that there is a
+ third party (the Kerberos server) that is trusted by all the entities on
+ the network (users and services, usually called "principals").
+ .
+ This is the MIT reference implementation of Kerberos V5.
+ .
+ This package contains the symlinks, headers, and development libraries
+ needed to compile and link programs that use the Kerberos libraries.
+Homepage: http://web.mit.edu/kerberos/
+
 Package: libxcb-shape0
 Status: install ok installed
 Priority: optional
@@ -10099,6 +12393,61 @@ Description: Common files for the ATK accessibility toolkit
  .
  This contains the common files which the runtime libraries need.
 Homepage: http://www.gtk.org/
+
+Package: libnettle4
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 288
+Maintainer: Magnus Holmgren <holmgren@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: nettle
+Version: 2.4-2
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: low level cryptographic library (symmetric and one-way cryptos)
+ Nettle is a cryptographic library that is designed to fit easily in more or
+ less any context: In crypto toolkits for object-oriented languages (C++,
+ Python, Pike, ...), in applications like LSH or GNUPG, or even in kernel
+ space.
+ .
+ It tries to solve a problem of providing a common set of cryptographic
+ algorithms for higher-level applications by implementing a
+ context-independent set of cryptographic algorithms. In that light, Nettle
+ doesn't do any memory allocation or I/O, it simply provides the
+ cryptographic algorithms for the application to use in any environment and
+ in any way it needs.
+ .
+ This package contains the symmetric and one-way cryptographic
+ algorithms. To avoid having this package depend on libgmp, the
+ asymmetric cryptos reside in a separate library, libhogweed.
+Homepage: http://www.lysator.liu.se/~nisse/nettle/
+
+Package: libopencv-imgproc2.3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1584
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: opencv
+Version: 2.3.1-11
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libopencv-core2.3 (= 2.3.1-11), libstdc++6 (>= 4.4.0)
+Description: computer vision Image Processing library
+ This package contains the OpenCV (Open Computer Vision) Image Processing
+ runtime libraries.
+ .
+ The Open Computer Vision Library is a collection of algorithms and sample
+ code for various computer vision problems. The library is compatible with
+ IPL (Intel's Image Processing Library) and, if available, can use IPP
+ (Intel's Integrated Performance Primitives) for better performance.
+ .
+ OpenCV provides low level portable data types and operators, and a set
+ of high level functionalities for video acquisition, image processing and
+ analysis, structural analysis, motion analysis and object tracking, object
+ recognition, camera calibration and 3D reconstruction.
+Homepage: http://opencv.willowgarage.com
 
 Package: libx11-data
 Status: install ok installed
@@ -10285,6 +12634,20 @@ Description: GCC, the GNU Compiler Collection (base package)
  contained in the GNU Compiler Collection (GCC).
 Homepage: http://gcc.gnu.org/
 
+Package: xorg-sgml-doctools
+Status: install ok installed
+Priority: optional
+Section: x11
+Installed-Size: 109
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Version: 1:1.10-1
+Description: Common tools for building X.Org SGML documentation
+ This package contains tools for building the X.Org SGML documentation.
+ Currently it only includes various entity definitions for the current
+ release.
+
 Package: libc6
 Status: install ok installed
 Priority: required
@@ -10352,6 +12715,26 @@ Description: Qt 4 test module
  The QtTest module provides classes for unit testing Qt applications and
  libraries.
 Homepage: http://qt-project.org/
+
+Package: cmake-data
+Status: install ok installed
+Priority: optional
+Section: devel
+Installed-Size: 3153
+Maintainer: Modestas Vainius <modax@debian.org>
+Architecture: all
+Source: cmake
+Version: 2.8.9~rc1-1
+Replaces: cmake (<= 2.6.2-1)
+Depends: emacsen-common
+Breaks: cmake (<= 2.6.2-1)
+Conffiles:
+ /etc/emacs/site-start.d/50cmake-data.el a44d9a547d5fccc69b95905679b54c04
+Description: CMake data files (modules, templates and documentation)
+ This package provides CMake architecture independent data files (modules,
+ templates, documentation etc.). Unless you have cmake installed, you probably
+ do not need this package.
+Homepage: http://cmake.org/
 
 Package: pcmanfm
 Status: install ok installed
@@ -10491,6 +12874,39 @@ Description: /dev/ and hotplug management daemon
  udev is a daemon which dynamically creates and removes device nodes from
  /dev/, handles hotplug events and loads drivers at boot time.
 
+Package: libgnutls-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 1821
+Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
+Architecture: armel
+Source: gnutls26
+Version: 2.12.20-1
+Replaces: gnutls-dev
+Provides: gnutls-dev
+Depends: libgnutls26 (= 2.12.20-1), libgnutlsxx27 (= 2.12.20-1), libgnutls-openssl27 (= 2.12.20-1), libgcrypt11-dev (>= 1.4.0), libc6-dev | libc-dev, zlib1g-dev, libtasn1-3-dev (>= 0.3.4), libp11-kit-dev (>= 0.4)
+Suggests: gnutls-doc
+Conflicts: gnutls-dev
+Description: GNU TLS library - development files
+ GnuTLS is a portable library which implements the Transport Layer
+ Security (TLS 1.0, 1.1, 1.2) and Secure Sockets Layer (SSL) 3.0 protocols.
+ .
+ GnuTLS features support for:
+  - TLS extensions: server name indication, max record size, opaque PRF
+    input, etc.
+  - authentication using the SRP protocol.
+  - authentication using both X.509 certificates and OpenPGP keys.
+  - TLS Pre-Shared-Keys (PSK) extension.
+  - Inner Application (TLS/IA) extension.
+  - X.509 and OpenPGP certificate handling.
+  - X.509 Proxy Certificates (RFC 3820).
+  - all the strong encryption algorithms (including SHA-256/384/512 and
+    Camellia (RFC 4132)).
+ .
+ This package contains the GnuTLS development files.
+Homepage: http://www.gnutls.org/
+
 Package: libpixman-1-0
 Status: install ok installed
 Priority: optional
@@ -10578,6 +12994,46 @@ Description: GNU Bourne Again SHell
  The Programmable Completion Code, by Ian Macdonald, is now found in
  the bash-completion package.
 Homepage: http://tiswww.case.edu/php/chet/bash/bashtop.html
+
+Package: libpcre3-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 647
+Maintainer: Mark Baker <mark@mnb.org.uk>
+Architecture: armel
+Source: pcre3
+Version: 1:8.30-5
+Depends: libc6-dev, libpcre3 (= 1:8.30-5), libpcrecpp0 (= 1:8.30-5)
+Conflicts: libpcre1-dev, libpcre2-dev
+Description: Perl 5 Compatible Regular Expression Library - development files
+ This is a library of functions to support regular expressions whose syntax
+ and semantics are as close as possible to those of the Perl 5 language.
+ .
+ This package contains the development files, including headers, static
+ libraries, and documentation.
+
+Package: make
+Status: install ok installed
+Priority: standard
+Section: devel
+Installed-Size: 1122
+Maintainer: Manoj Srivastava <srivasta@debian.org>
+Architecture: armel
+Source: make-dfsg
+Version: 3.81-8.2
+Depends: libc6 (>= 2.4)
+Suggests: make-doc
+Description: An utility for Directing compilation.
+ GNU Make is an utility which controls the generation of executables and
+ other target files of a program from the program's source files. It
+ determines automatically which pieces of a large program need to be
+ (re)created, and issues the commands to (re)create them. Make is not
+ limited to programs and executable, it can be applied to any task
+ where a set of target files must be created based on a set of input
+ files, based on dependency and processing rules. Indeed, Make is a
+ general purpose dependency solver.
+Homepage: http://www.gnu.org/software/make/
 
 Package: libgmp10
 Status: install ok installed
@@ -10730,6 +13186,50 @@ Description: GStreamer plugins for X11 and Pango
 Homepage: http://gstreamer.freedesktop.org
 Gstreamer-Elements: clockoverlay, textoverlay, textrender, timeoverlay, ximagesink, xvimagesink
 Gstreamer-Version: 0.10
+
+Package: libavutil-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 415
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: libav
+Version: 6:0.8.3-6
+Depends: libavutil51 (= 6:0.8.3-6)
+Description: Development files for libavutil
+ Libav is a complete, cross-platform solution to decode, encode, record,
+ convert and stream audio and video.
+ .
+ This is the common utility library from Libav.
+ .
+ This package contains the header files and static libraries needed to
+ compile applications or shared objects that use libavutil.
+Homepage: http://libav.org/
+
+Package: libopencv-core2.3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1701
+Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: opencv
+Version: 2.3.1-11
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0), zlib1g (>= 1:1.1.4)
+Description: computer vision core library
+ This package contains the OpenCV (Open Computer Vision) core runtime libraries.
+ .
+ The Open Computer Vision Library is a collection of algorithms and sample
+ code for various computer vision problems. The library is compatible with
+ IPL (Intel's Image Processing Library) and, if available, can use IPP
+ (Intel's Integrated Performance Primitives) for better performance.
+ .
+ OpenCV provides low level portable data types and operators, and a set
+ of high level functionalities for video acquisition, image processing and
+ analysis, structural analysis, motion analysis and object tracking, object
+ recognition, camera calibration and 3D reconstruction.
+Homepage: http://opencv.willowgarage.com
 
 Package: libfontenc1
 Status: install ok installed
@@ -11126,6 +13626,54 @@ Description: Basic Linear Algebra Reference implementations, shared library
  This package contains a shared version of the library.
 Homepage: http://www.netlib.org/blas/
 
+Package: libglib2.0-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 6775
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: glib2.0
+Version: 2.32.3-1
+Depends: libc6 (>= 2.4), libglib2.0-0 (= 2.32.3-1), libglib2.0-bin (= 2.32.3-1), libpcre3-dev (>= 8.11), pkg-config (>= 0.16.0), zlib1g-dev
+Recommends: python
+Suggests: libglib2.0-doc
+Description: Development files for the GLib library
+ GLib is a library containing many useful C routines for things such
+ as trees, hashes, lists, and strings.  It is a useful general-purpose
+ C library used by projects such as GTK+, GIMP, and GNOME.
+ .
+ This package is needed to compile programs against libglib2.0-0,
+ as only it includes the header files and static libraries (optionally)
+ needed for compiling.
+Homepage: http://www.gtk.org/
+
+Package: libx11-doc
+Status: install ok installed
+Priority: optional
+Section: doc
+Installed-Size: 10085
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: libx11
+Version: 2:1.5.0-1
+Replaces: libx11-dev (<< 2:1.4.4-3)
+Breaks: libx11-dev (<< 2:1.4.4-3)
+Description: X11 client-side library (development documentation)
+ This package provides a client interface to the X Window System, otherwise
+ known as 'Xlib'.  It provides a complete API for the basic functions of the
+ window system.
+ .
+ This package contains supplemental documentation for the library found in
+ libx11-6. Non-developers likely have little use for this package.
+ .
+ More information about X.Org can be found at:
+ <URL:http://www.X.org>
+ .
+ This module can be found at
+ git://anongit.freedesktop.org/git/xorg/lib/libX11
+
 Package: less
 Status: install ok installed
 Priority: standard
@@ -11169,6 +13717,24 @@ Description: GLib library of C routines
  .
  This package contains the shared libraries.
 Homepage: http://www.gtk.org/
+
+Package: libasyncns0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 80
+Maintainer: Tanguy Ortolo <tanguy+debian@ortolo.eu>
+Architecture: armel
+Multi-Arch: same
+Source: libasyncns
+Version: 0.8-4
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Asynchronous name service query library
+ libasyncns is a C library for Linux/Unix for executing name service queries
+ asynchronously. It is an asynchronous wrapper around getaddrinfo(3),
+ getnameinfo(3), res_query(3) and res_search(3) from libc and libresolv.
+Homepage: http://0pointer.de/lennart/projects/libasyncns/
 
 Package: libgomp1
 Status: install ok installed
@@ -11348,6 +13914,23 @@ Description: standards compliant, fast, light-weight, extensible window manager
   * Multi-head Xinerama support!
   * Pipe menus
 Homepage: http://www.openbox.org
+
+Package: libxcursor-dev
+Status: install ok installed
+Priority: optional
+Section: libdevel
+Installed-Size: 119
+Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxcursor
+Version: 1:1.1.13-1
+Depends: libxcursor1 (= 1:1.1.13-1), x11proto-core-dev, libx11-dev, libxrender-dev, libxfixes-dev
+Description: X cursor management library (development files)
+ Header files and a static version of the X cursor management library are
+ provided by this package.
+ .
+ See the libxcursor1 package for further information.
 
 Package: libnfnetlink0
 Status: install ok installed

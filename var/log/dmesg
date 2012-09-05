@@ -1,75 +1,90 @@
-fr=0, Product=0, SerialNumber=0
-hub 1-1:1.0: USB hub found
-hub 1-1:1.0: 3 ports detected
+fo(cd8eec00) 1824x984 (1824x984), 0, 16
+BCM2708FB: start = cec00000,4f385000 width=1824, height=984, bpp=16, pitch=3648 size=3618816 success=0
+Console: switching to colour frame buffer device 228x61
+BCM2708FB: register framebuffer (0)
+brd: module loaded
+loop: module loaded
+vcos: [1]: vchiq_init_state: slot_zero = 0xffd80000, is_master = 0
+vcos: [1]: vchiq_init_state: called
+vcos: [1]: vchiq: initialised - version 2 (min 2), device 253.0
+usbcore: registered new interface driver smsc95xx
+cdc_ncm: 04-Aug-2011
+usbcore: registered new interface driver cdc_ncm
+dwc_otg: version 3.00a 10-AUG-2012 (platform bus)
+Core Release: 2.80a
+Setting default values for core params
+Finished setting default values for core params
+Using Buffer DMA mode
+Periodic Transfer Interrupt Enhancement - disabled
+Multiprocessor Interrupt Enhancement - disabled
+OTG VER PARAM: 0, OTG VER FLAG: 0
+Dedicated Tx FIFOs mode
+dwc_otg: Microframe scheduler enabled
+dwc_otg bcm2708_usb: DWC OTG Controller
+dwc_otg bcm2708_usb: new USB bus registered, assigned bus number 1
+dwc_otg bcm2708_usb: irq 75, io mem 0x00000000
+Init: Port Power? op_state=1
+Init: Power Port (0)
+usb usb1: New USB device found, idVendor=1d6b, idProduct=0002
+usb usb1: New USB device strings: Mfr=3, Product=2, SerialNumber=1
+usb usb1: Product: DWC OTG Controller
+usb usb1: Manufacturer: Linux 3.2.27-rpitc+ dwc_otg_hcd
+usb usb1: SerialNumber: bcm2708_usb
+hub 1-0:1.0: USB hub found
+hub 1-0:1.0: 1 port detected
+dwc_otg: FIQ disabled
+Module dwc_common_port init
+usbcore: registered new interface driver uas
+Initializing USB Mass Storage driver...
+usbcore: registered new interface driver usb-storage
+USB Mass Storage support registered.
+usbcore: registered new interface driver libusual
+mousedev: PS/2 mouse device common for all mice
+cpuidle: using governor ladder
+cpuidle: using governor menu
+sdhci: Secure Digital Host Controller Interface driver
+sdhci: Copyright(c) Pierre Ossman
+sdhci: Enable low-latency mode
+bcm_power_open() -> 1
+Registered led device: mmc0::
+mmc0: SDHCI controller on BCM2708_Arasan [platform] using platform's DMA
+mmc0: BCM2708 SDHC host at 0x20300000 DMA 2 IRQ 77
+sdhci-pltfm: SDHCI platform and OF driver helper
+Registered led device: led0
+usbcore: registered new interface driver usbhid
+usbhid: USB HID core driver
+TCP cubic registered
+Initializing XFRM netlink socket
+NET: Registered protocol family 17
+Indeed it is in host mode hprt0 = 00021501
+Registering the dns_resolver key type
+VFP support v0.3: implementor 41 architecture 1 part 20 variant b rev 5
+Waiting for root device /dev/mmcblk0p2...
+mmc0: new high speed SDHC card at address b368
+mmcblk0: mmc0:b368 NCard 3.73 GiB 
+ mmcblk0: p1 p2
 EXT4-fs (mmcblk0p2): mounted filesystem with ordered data mode. Opts: (null)
 VFS: Mounted root (ext4 filesystem) on device 179:2.
 devtmpfs: mounted
-Freeing init memory: 116K
+Freeing init memory: 172K
+usb 1-1: new high-speed USB device number 2 using dwc_otg
+Indeed it is in host mode hprt0 = 00001101
+usb 1-1: New USB device found, idVendor=0424, idProduct=9512
+usb 1-1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
+hub 1-1:1.0: USB hub found
+hub 1-1:1.0: 3 ports detected
 usb 1-1.1: new high-speed USB device number 3 using dwc_otg
 usb 1-1.1: New USB device found, idVendor=0424, idProduct=ec00
 usb 1-1.1: New USB device strings: Mfr=0, Product=0, SerialNumber=0
 smsc95xx v1.0.4
 smsc95xx 1-1.1:1.0: eth0: register 'smsc95xx' at usb-bcm2708_usb-1.1, smsc95xx USB 2.0 Ethernet, b8:27:eb:c2:49:ab
-usb 1-1.2: new low-speed USB device number 4 using dwc_otg
-usb 1-1.2: New USB device found, idVendor=046d, idProduct=c018
-usb 1-1.2: New USB device strings: Mfr=1, Product=2, SerialNumber=0
-usb 1-1.2: Product: USB Optical Mouse
-usb 1-1.2: Manufacturer: Logitech
-input: Logitech USB Optical Mouse as /devices/platform/bcm2708_usb/usb1/1-1/1-1.2/1-1.2:1.0/input/input0
-generic-usb 0003:046D:C018.0001: input: USB HID v1.11 Mouse [Logitech USB Optical Mouse] on usb-bcm2708_usb-1.2/input0
-usb 1-1.3: new low-speed USB device number 5 using dwc_otg
-usb 1-1.3: New USB device found, idVendor=03f0, idProduct=0024
-usb 1-1.3: New USB device strings: Mfr=1, Product=2, SerialNumber=0
-usb 1-1.3: Product: HP Basic USB Keyboard
-usb 1-1.3: Manufacturer: CHICONY
-input: CHICONY HP Basic USB Keyboard as /devices/platform/bcm2708_usb/usb1/1-1/1-1.3/1-1.3:1.0/input/input1
-generic-usb 0003:03F0:0024.0002: input: USB HID v1.10 Keyboard [CHICONY HP Basic USB Keyboard] on usb-bcm2708_usb-1.3/input0
 udevd[115]: starting version 175
 EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
 EXT4-fs (mmcblk0p2): re-mounted. Opts: (null)
-vmalloc: allocation failure: 0 bytes
-modprobe: page allocation failure: order:0, mode:0xd0
-Backtrace: 
-Function entered at [<c00112dc>] from [<c03139f8>]
- r6:c034202b r5:000000d0 r4:00000001 r3:00000000
-Function entered at [<c03139e0>] from [<c0060758>]
-Function entered at [<c0060664>] from [<c007f558>]
- r3:00000000 r2:c034202b
- r7:00000000 r6:c004d5a8 r5:000000d0 r4:cf8be768
-Function entered at [<c007f3ac>] from [<c0011edc>]
- r8:cf8bee54 r7:000003e8 r6:00000000 r5:bf03b000 r4:cf8be768
-Function entered at [<c0011ea0>] from [<c004d5a8>]
-Function entered at [<c004d594>] from [<c004dd24>]
- r6:00000004 r5:bf03b000 r4:cf8be768 r3:00000000
-Function entered at [<c004d620>] from [<c000db60>]
-Mem-info:
-Normal per-cpu:
-CPU    0: hi:   90, btch:  15 usd:  33
-active_anon:1089 inactive_anon:35 isolated_anon:0
- active_file:554 inactive_file:1073 isolated_file:0
- unevictable:410 dirty:1 writeback:0 unstable:0
- free:55333 slab_reclaimable:250 slab_unreclaimable:528
- mapped:487 shmem:37 pagetables:187 bounce:0
-Normal free:221332kB min:1972kB low:2464kB high:2956kB active_anon:4356kB inactive_anon:140kB active_file:2216kB inactive_file:4292kB unevictable:1640kB isolated(anon):0kB isolated(file):0kB present:243840kB mlocked:1640kB dirty:4kB writeback:0kB mapped:1948kB shmem:148kB slab_reclaimable:1000kB slab_unreclaimable:2112kB kernel_stack:464kB pagetables:748kB unstable:0kB bounce:0kB writeback_tmp:0kB pages_scanned:0 all_unreclaimable? no
-lowmem_reserve[]: 0 0
-Normal: 1*4kB 2*8kB 6*16kB 3*32kB 3*64kB 2*128kB 0*256kB 1*512kB 1*1024kB 3*2048kB 52*4096kB = 221332kB
-1995 total pagecache pages
-0 pages in swap cache
-Swap cache stats: add 0, delete 0, find 0/0
-Free swap  = 0kB
-Total swap = 0kB
-61440 pages of RAM
-55526 free pages
-1537 reserved pages
-778 slab pages
-5193 pages shared
-0 pages swap cached
-### snd_bcm2835_alsa_probe c03b4158 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
+### snd_bcm2835_alsa_probe c03c61b0 ############### PROBING FOR bcm2835 ALSA device (0):(1) ###############
 Creating card...
 Creating device/chip ..
 Adding controls ..
 Registering card ....
 bcm2835 ALSA CARD CREATED!
 ### BCM2835 ALSA driver init OK ### 
-mmc0: missed completion of cmd 18 DMA (512/512 [1]/[1]) - ignoring it
-mmc0: DMA IRQ 6 ignored - results were reset

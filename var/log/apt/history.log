@@ -1,0 +1,35 @@
+
+Start-Date: 2012-09-03  19:59:57
+Commandline: apt-get install cmake
+Install: libnettle4:armel (2.4-2, automatic), cmake-data:armel (2.8.9~rc1-1, automatic), libxmlrpc-core-c3:armel (1.16.33-3.1, automatic), emacsen-common:armel (2.0.3, automatic), cmake:armel (2.8.9~rc1-1), libcurl3:armel (7.26.0-1, automatic), libarchive12:armel (3.0.4-2, automatic)
+End-Date: 2012-09-03  20:02:51
+
+Start-Date: 2012-09-03  20:11:16
+Commandline: apt-get install build-essential git-core cmake libssl-dev libx11-dev libxext-dev libxinerama-dev libxcursor-dev libxdamage-dev libxv-dev libxkbfile-dev libasound2-dev libcups2-dev libxml2 libxml2-dev
+Install: libcups2-dev:armel (1.5.3-1), bzip2:armel (1.0.6-4, automatic), libalgorithm-diff-perl:armel (1.19.02-2, automatic), fakeroot:armel (1.18.4-2, automatic), libgnutlsxx27:armel (2.12.20-1, automatic), x11proto-xext-dev:armel (7.2.1-1, automatic), libtasn1-3-dev:armel (2.13-2, automatic), x11proto-kb-dev:armel (1.0.6-2, automatic), libkadm5clnt-mit8:armel (1.10.1+dfsg-2, automatic), libgpg-error-dev:armel (1.10-3, automatic), libxv-dev:armel (1.0.7-1), x11proto-xinerama-dev:armel (1.2.1-2, automatic), comerr-dev:armel (2.1-1.42.5-1, automatic), libfile-fcntllock-perl:armel (0.14-2, automatic), g++-4.6:armel (4.6.3-8, automatic), libalgorithm-diff-xs-perl:armel (0.04-2+b1, automatic), x11proto-render-dev:armel (0.11.1-2, automatic), libgcrypt11-dev:armel (1.5.0-3, automatic), x11proto-video-dev:armel (2.3.1-2, automatic), libxrender-dev:armel (0.9.7-1, automatic), libxdmcp-dev:armel (1.1.1-1, automatic), libkrb5-dev:armel (1.10.1+dfsg-2, automatic), g++:armel (4.6.3-7, automatic), libdpkg-perl:armel (1.16.8, automatic), libgssrpc4:armel (1.10.1+dfsg-2, automatic), xtrans-dev:armel (1.2.7-1, automatic), x11proto-core-dev:armel (7.0.23-1, automatic), libxcursor-dev:armel (1.1.13-1), libgnutls-dev:armel (2.12.20-1, automatic), libalgorithm-merge-perl:armel (0.08-2, automatic), krb5-multidev:armel (1.10.1+dfsg-2, automatic), x11proto-damage-dev:armel (1.2.1-2, automatic), xorg-sgml-doctools:armel (1.10-1, automatic), libssl-dev:armel (1.0.1c-4), libp11-kit-dev:armel (0.12-3, automatic), libssl-doc:armel (1.0.1c-4, automatic), libxext-dev:armel (1.3.1-2), libxdamage-dev:armel (1.1.3-2), zlib1g-dev:armel (1.2.7.dfsg-13, automatic), libxml2-dev:armel (2.8.0+dfsg1-5), x11proto-input-dev:armel (2.2-1, automatic), x11proto-fixes-dev:armel (5.0-2, automatic), libpthread-stubs0-dev:armel (0.3-3, automatic), libtimedate-perl:armel (1.2000-1, automatic), libxau-dev:armel (1.0.7-1, automatic), dpkg-dev:armel (1.16.8, automatic), libpthread-stubs0:armel (0.3-3, automatic), libasound2-dev:armel (1.0.25-4), libgnutls-openssl27:armel (2.12.20-1, automatic), libkadm5srv-mit8:armel (1.10.1+dfsg-2, automatic), libx11-dev:armel (1.5.0-1), libkdb5-6:armel (1.10.1+dfsg-2, automatic), libx11-doc:armel (1.5.0-1, automatic), libxfixes-dev:armel (5.0-4, automatic), libxcb1-dev:armel (1.8.1-1, automatic), libstdc++6-4.6-dev:armel (4.6.3-8, automatic), libxinerama-dev:armel (1.1.2-1), make:armel (3.81-8.2, automatic), build-essential:armel (11.5), libxkbfile-dev:armel (1.0.8-1)
+End-Date: 2012-09-03  20:13:39
+
+Start-Date: 2012-09-03  20:15:55
+Commandline: apt-get install ffmpeg
+Install: libsdl1.2debian:armel (1.2.15-5, automatic), libts-0.0-0:armel (1.0-11, automatic), libswscale2:armel (0.8.3-6, automatic), libcdio13:armel (0.83-4, automatic), libdc1394-22:armel (2.2.0-2, automatic), libcaca0:armel (0.99.beta18-1, automatic), libopencv-imgproc2.3:armel (2.3.1-11, automatic), libjack-jackd2-0:armel (1.9.8~dfsg.4+20120529git007cdc37-1, automatic), libav-tools:armel (0.8.3-6), libpostproc52:armel (0.8.3-6, automatic), libusb-1.0-0:armel (1.0.11-1, automatic), libraw1394-11:armel (2.0.9-1, automatic), libavformat53:armel (0.8.3-6, automatic), libjson0:armel (0.9-1.1, automatic), libdirectfb-1.2-9:armel (1.2.10.0-5, automatic), libcdio-cdda1:armel (0.83-4, automatic), libopencv-core2.3:armel (2.3.1-11, automatic), ffmpeg:armel (0.8.3-6), libavfilter2:armel (0.8.3-6, automatic), libflac8:armel (1.2.1-6, automatic), libasyncns0:armel (0.8-4, automatic), libcdio-paranoia1:armel (0.83-4, automatic), tsconf:armel (1.0-11, automatic), libpulse0:armel (2.0-6, automatic), libsndfile1:armel (1.0.25-5, automatic), libavdevice53:armel (0.8.3-6, automatic)
+End-Date: 2012-09-03  20:16:42
+
+Start-Date: 2012-09-03  20:17:39
+Commandline: apt-get install pkg-config
+Install: pkg-config:armel (0.26-1)
+End-Date: 2012-09-03  20:17:51
+
+Start-Date: 2012-09-03  20:19:23
+Commandline: apt-get install libpulse-dev
+Install: libglib2.0-bin:armel (2.32.3-1, automatic), libglib2.0-dev:armel (2.32.3-1, automatic), libpulse-dev:armel (2.0-6), libpcre3-dev:armel (8.30-5, automatic), libpulse-mainloop-glib0:armel (2.0-6, automatic), libavahi-client-dev:armel (0.6.31-1, automatic), libpcrecpp0:armel (8.30-5, automatic), libelf1:armel (0.152-1+b1, automatic), libdbus-1-dev:armel (1.6.0-1, automatic), libglib2.0-data:armel (2.32.3-1, automatic), libavahi-common-dev:armel (0.6.31-1, automatic)
+End-Date: 2012-09-03  20:20:10
+
+Start-Date: 2012-09-03  20:21:16
+Commandline: apt-get install libavcodec-dev
+Install: libavcodec-dev:armel (0.8.3-6), libavutil-dev:armel (0.8.3-6, automatic)
+End-Date: 2012-09-03  20:21:25
+
+Start-Date: 2012-09-03  20:23:16
+Commandline: apt-get install gstreamer-0.10
+Install: gir1.2-gstreamer-0.10:armel (0.10.36-1), libqtgstreamer-0.10-0:armel (0.10.2-2), libqtglib-2.0-0:armel (0.10.2-2, automatic), gir1.2-freedesktop:armel (1.32.1-1, automatic), libcairo-gobject2:armel (1.12.2-2, automatic)
+End-Date: 2012-09-03  20:23:24

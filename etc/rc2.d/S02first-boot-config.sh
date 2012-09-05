@@ -1,1 +1,0 @@
-../init.d/first-boot-config.sh

@@ -504,7 +504,7 @@ Auto-Installed: 1
 
 Package: libxml2
 Architecture: armel
-Auto-Installed: 1
+Auto-Installed: 0
 
 Package: libglade2-0
 Architecture: armel
@@ -1135,6 +1135,374 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: giblib1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnettle4
+Architecture: armel
+Auto-Installed: 1
+
+Package: cmake-data
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxmlrpc-core-c3
+Architecture: armel
+Auto-Installed: 1
+
+Package: emacsen-common
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcurl3
+Architecture: armel
+Auto-Installed: 1
+
+Package: libarchive12
+Architecture: armel
+Auto-Installed: 1
+
+Package: bzip2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libalgorithm-diff-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: fakeroot
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgnutlsxx27
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-xext-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libtasn1-3-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-kb-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libkadm5clnt-mit8
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgpg-error-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-xinerama-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: comerr-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libfile-fcntllock-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: g++-4.6
+Architecture: armel
+Auto-Installed: 1
+
+Package: libalgorithm-diff-xs-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-render-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgcrypt11-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-video-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxrender-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxdmcp-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libkrb5-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: g++
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdpkg-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgssrpc4
+Architecture: armel
+Auto-Installed: 1
+
+Package: xtrans-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-core-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgnutls-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libalgorithm-merge-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: krb5-multidev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-damage-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: xorg-sgml-doctools
+Architecture: armel
+Auto-Installed: 1
+
+Package: libp11-kit-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libssl-doc
+Architecture: armel
+Auto-Installed: 1
+
+Package: zlib1g-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-input-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11proto-fixes-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpthread-stubs0-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libtimedate-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxau-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: dpkg-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpthread-stubs0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgnutls-openssl27
+Architecture: armel
+Auto-Installed: 1
+
+Package: libkadm5srv-mit8
+Architecture: armel
+Auto-Installed: 1
+
+Package: libkdb5-6
+Architecture: armel
+Auto-Installed: 1
+
+Package: libx11-doc
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxfixes-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxcb1-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libstdc++6-4.6-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: make
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsdl1.2debian
+Architecture: armel
+Auto-Installed: 1
+
+Package: libts-0.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libswscale2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcdio13
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdc1394-22
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcaca0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libopencv-imgproc2.3
+Architecture: armel
+Auto-Installed: 1
+
+Package: libjack-jackd2-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpostproc52
+Architecture: armel
+Auto-Installed: 1
+
+Package: libusb-1.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libraw1394-11
+Architecture: armel
+Auto-Installed: 1
+
+Package: libavformat53
+Architecture: armel
+Auto-Installed: 1
+
+Package: libjson0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdirectfb-1.2-9
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcdio-cdda1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libopencv-core2.3
+Architecture: armel
+Auto-Installed: 1
+
+Package: libavfilter2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libflac8
+Architecture: armel
+Auto-Installed: 1
+
+Package: libasyncns0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcdio-paranoia1
+Architecture: armel
+Auto-Installed: 1
+
+Package: tsconf
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpulse0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsndfile1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libavdevice53
+Architecture: armel
+Auto-Installed: 1
+
+Package: libglib2.0-bin
+Architecture: armel
+Auto-Installed: 1
+
+Package: libglib2.0-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpcre3-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpulse-mainloop-glib0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libavahi-client-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpcrecpp0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libelf1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdbus-1-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libglib2.0-data
+Architecture: armel
+Auto-Installed: 1
+
+Package: libavahi-common-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libavutil-dev
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqtglib-2.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: gir1.2-freedesktop
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcairo-gobject2
 Architecture: armel
 Auto-Installed: 1
 
