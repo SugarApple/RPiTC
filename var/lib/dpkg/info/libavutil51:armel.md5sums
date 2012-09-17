@@ -1,8 +1,8 @@
-667f9331bd1f4d1a7c9206aebbc05823  usr/lib/arm-linux-gnueabi/libavutil.so.51.22.1
-0ebce581e6c9cf6dfea15c227b65220a  usr/lib/arm-linux-gnueabi/neon/vfp/libavutil.so.51.22.1
-3d4eaaeef315ddf145ceda5ff58cbad1  usr/lib/arm-linux-gnueabi/vfp/libavutil.so.51.22.1
+ed800e5212ec9ca78ede19fef4f4f122  usr/lib/arm-linux-gnueabi/libavutil.so.51.22.1
+18ce79bc5ff0ff721721934bbcaba90e  usr/lib/arm-linux-gnueabi/neon/vfp/libavutil.so.51.22.1
+152a6ae731eecfaf822da1d5ce8da196  usr/lib/arm-linux-gnueabi/vfp/libavutil.so.51.22.1
 812ae049e35a77fbe9da612a1284c3c5  usr/share/doc/libavutil51/README.Debian.gz
-cb3dbd08b857ae2a982963e05bb8ef95  usr/share/doc/libavutil51/changelog.Debian.gz
+fec8f0eb3523d2f8acbb87b9306cc75e  usr/share/doc/libavutil51/changelog.Debian.gz
 9fe955bb9388d83fa391dbc47cc7132a  usr/share/doc/libavutil51/changelog.gz
 e51de741ce5932946736d2b8ef235b80  usr/share/doc/libavutil51/copyright
 9a19ed65ae8159a28e8a2423b04121ee  usr/share/lintian/overrides/libavutil51

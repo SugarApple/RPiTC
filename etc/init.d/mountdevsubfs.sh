@@ -33,22 +33,7 @@ mount_filesystems () {
 	MNTMODE="$1"
 
 	# Mount a tmpfs on /run/shm
-	if [ ! -d /run/shm ]
-	then
-		mkdir --mode=755 /run/shm
-		[ -x /sbin/restorecon ] && /sbin/restorecon /run/shm
-	fi
-
-	if [ yes = "$RAMSHM" ] || read_fstab_entry /run/shm tmpfs; then
-		domount "$MNTMODE" tmpfs shmfs /run/shm tmpfs "-onosuid,nodev$SHM_OPT"
-	else
-		chmod "$SHM_MODE" /run/shm
-	fi
-
-	# Migrate early, so /dev/shm is available from the start
-	if [ "$MNTMODE" = mount_noupdate ] || [ "$MNTMODE" = mount ]; then
-		run_migrate /dev/shm /run/shm ../run/shm
-	fi
+	mount_shm "$MNTMODE"
 
 	# Mount /dev/pts
 	if [ "$KERNEL" = Linux ]

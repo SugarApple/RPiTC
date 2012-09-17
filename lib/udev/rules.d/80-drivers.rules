@@ -16,6 +16,9 @@ SUBSYSTEM=="tifm", ENV{TIFM_CARD_TYPE}=="SD", \
 SUBSYSTEM=="tifm", ENV{TIFM_CARD_TYPE}=="MS", \
 					RUN+="/sbin/modprobe -b tifm_ms"
 
+SUBSYSTEM=="scsi", ENV{DEVTYPE}=="scsi_device", TEST!="[module/sg]", \
+					RUN+="/sbin/modprobe -b sg"
+
 # Load VIO modules based on the device type
 SUBSYSTEM!="vio", GOTO="hotplug_vio_end"
 ENV{MODALIAS}=="?*", GOTO="hotplug_vio_end"

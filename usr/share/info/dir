@@ -29,9 +29,6 @@ Basics
 Compression
 * Gzip: (gzip).                 General (de)compression of files (lzw).
 
-Development
-* Com_err: (com_err).           A Common Error Description Library for UNIX.
-
 Editors
 * nano: (nano).                 Small and friendly text editor.
 
@@ -163,10 +160,6 @@ Network Applications
 
 Programming & development tools
 * GDBM: (gdbm).                 The GNU database manager.
-
-Software libraries
-* libtasn1: (libtasn1).         Library for Abstract Syntax Notation One 
-                                  (ASN.1).
 
 Text creation and manipulation
 * Diffutils: (diffutils).       Comparing and merging files.

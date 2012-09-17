@@ -296,6 +296,17 @@ unless(defined(&_SYS_CDEFS_H)) {
 	    }
 	}
     }
+    if((defined(&__GNUC__) ? &__GNUC__ : undef) >= 3) {
+	eval 'sub __glibc_unlikely {
+	    my($cond) = @_;
+    	    eval q( &__builtin_expect(($cond), 0));
+	}' unless defined(&__glibc_unlikely);
+    } else {
+	eval 'sub __glibc_unlikely {
+	    my($cond) = @_;
+    	    eval q(($cond));
+	}' unless defined(&__glibc_unlikely);
+    }
     require 'bits/wordsize.ph';
     if(defined (&__LONG_DOUBLE_MATH_OPTIONAL)  && defined (&__NO_LONG_DOUBLE_MATH)) {
 	eval 'sub __LDBL_COMPAT () {1;}' unless defined(&__LDBL_COMPAT);

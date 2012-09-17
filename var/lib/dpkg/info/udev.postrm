@@ -1,5 +1,12 @@
-#!/bin/sh
-set -e
+#!/bin/sh -e
+
+case "$1" in
+  purge)
+  rm -f /etc/udev/rules.d/70-persistent-*.rules
+  rmdir --ignore-fail-on-non-empty /etc/udev/rules.d/ 2> /dev/null || true
+  ;;
+esac
+
 # Automatically added by dh_installinit
 if [ "$1" = "purge" ] ; then
 	update-rc.d udev-mtab remove >/dev/null
@@ -16,3 +23,7 @@ if [ "$1" = purge ] && [ -e /usr/share/debconf/confmodule ]; then
 	db_purge
 fi
 # End automatically added section
+
+
+exit 0
+

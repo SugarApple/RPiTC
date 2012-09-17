@@ -1,12 +1,12 @@
-//@line 37 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 37 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // XXX Toolkit-specific preferences should be moved into toolkit.js
 
-//@line 41 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 41 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
-//@line 44 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 44 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
-//@line 50 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 50 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 pref("browser.chromeURL","chrome://browser/content/");
 pref("browser.hiddenWindowChromeURL", "chrome://browser/content/hiddenWindow.xul");
@@ -192,9 +192,9 @@ pref("keyword.URL", "");
 pref("general.skins.selectedSkin", "classic/1.0");
 
 pref("general.smoothScroll", false);
-//@line 236 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 236 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("general.autoScroll", false);
-//@line 240 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 240 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // Whether or not the application should check at startup each time if it 
 // is the default browser.
@@ -223,11 +223,11 @@ pref("browser.fullscreen.autohide", true);
 pref("browser.fullscreen.animateUp", 1);
 pref("browser.overlink-delay", 80);
 
-//@line 269 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 269 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.urlbar.clickSelectsAll", false);
-//@line 274 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 274 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.urlbar.doubleClickSelectsAll", true);
-//@line 278 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 278 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.urlbar.autoFill", false);
 // 0: Match anywhere (e.g., middle of words)
 // 1: Match on word boundaries and then try matching anywhere
@@ -379,7 +379,7 @@ pref("browser.bookmarks.max_backups",             10);
 // Scripts & Windows prefs
 pref("dom.disable_open_during_load",              true);
 pref("javascript.options.showInConsole",          true);
-//@line 432 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 432 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // This is the pref to control the location bar, change this to true to 
 // force this - this makes the origin of popup windows more obvious to avoid
@@ -439,10 +439,10 @@ pref("browser.gesture.swipe.left", "Browser:BackOrBackDuplicate");
 pref("browser.gesture.swipe.right", "Browser:ForwardOrForwardDuplicate");
 pref("browser.gesture.swipe.up", "cmd_scrollTop");
 pref("browser.gesture.swipe.down", "cmd_scrollBottom");
-//@line 495 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 495 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.gesture.pinch.latched", false);
 pref("browser.gesture.pinch.threshold", 25);
-//@line 498 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 498 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.gesture.pinch.out", "");
 pref("browser.gesture.pinch.in", "");
 pref("browser.gesture.pinch.out.shift", "");
@@ -454,7 +454,7 @@ pref("browser.gesture.twist.left", "");
 pref("browser.gesture.tap", "cmd_fullZoomReset");
 
 // 0=lines, 1=pages, 2=history , 3=text size
-//@line 523 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 523 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("mousewheel.withshiftkey.action",2);
 pref("mousewheel.withshiftkey.sysnumlines",false);
 pref("mousewheel.withshiftkey.numlines",1);
@@ -464,7 +464,7 @@ pref("mousewheel.withaltkey.numlines",1);
 pref("mousewheel.withmetakey.action",0);
 pref("mousewheel.withmetakey.sysnumlines",true);
 pref("mousewheel.withmetakey.numlines",1);
-//@line 533 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 533 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("mousewheel.withcontrolkey.action",3);
 pref("mousewheel.withcontrolkey.sysnumlines",false);
 pref("mousewheel.withcontrolkey.numlines",1);
@@ -520,16 +520,16 @@ pref("pfs.datasource.url", "https://pfs.mozilla.org/plugins/PluginFinderService.
 pref("plugins.hide_infobar_for_missing_plugin", false);
 pref("plugins.hide_infobar_for_outdated_plugin", false);
 
-//@line 592 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 592 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 pref("plugins.update.url", "https://www.mozilla.com/%LOCALE%/plugincheck/");
 pref("plugins.update.notifyUser", false);
 
-//@line 599 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 599 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.preferences.instantApply", true);
-//@line 604 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 604 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.preferences.animateFadeIn", false);
-//@line 606 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 606 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 pref("browser.download.show_plugins_in_list", true);
 pref("browser.download.hide_plugins_without_extensions", true);
@@ -538,9 +538,9 @@ pref("browser.download.hide_plugins_without_extensions", true);
 // 0 goes Back/Forward
 // 1 act like PgUp/PgDown
 // 2 and other values, nothing
-//@line 615 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 615 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("browser.backspace_action", 2);
-//@line 619 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 619 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // this will automatically enable inline spellchecking (if it is available) for
 // editable elements in HTML
@@ -629,7 +629,7 @@ pref("gecko.handlerService.schemes.ircs.3.uriTemplate", "chrome://browser-region
 // By default, we don't want protocol/content handlers to be registered from a different host, see bug 402287
 pref("gecko.handlerService.allowRegisterFromDifferentHost", false);
 
-//@line 708 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 708 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 // Safe browsing does nothing unless this pref is set
 pref("browser.safebrowsing.enabled", true);
 
@@ -666,9 +666,9 @@ pref("urlclassifier.alternate_error_page", "blocked");
 pref("urlclassifier.gethashnoise", 4);
 
 // The list of tables that use the gethash request to confirm partial results.
-//@line 747 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 747 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("urlclassifier.gethashtables", "googpub-phish-shavar,goog-malware-shavar");
-//@line 749 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 749 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // If an urlclassifier table has not been updated in this number of seconds,
 // a gethash request will be forced to check that the result is still in
@@ -684,13 +684,13 @@ pref("urlclassifier.lookupcachemax", 1048576);
 // URL for checking the reason for a malware warning.
 pref("browser.safebrowsing.malware.reportURL", "http://safebrowsing.clients.google.com/safebrowsing/diagnostic?client=%NAME%&hl=%LOCALE%&site=");
 
-//@line 765 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 765 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 pref("browser.EULA.version", 3);
 pref("browser.rights.version", 3);
 pref("browser.rights.3.shown", false);
 
-//@line 774 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 774 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 pref("browser.sessionstore.resume_from_crash", true);
 pref("browser.sessionstore.resume_session_once", false);
@@ -805,17 +805,17 @@ pref("browser.privatebrowsing.dont_prompt_on_enter", false);
 pref("browser.bookmarks.editDialog.firstEditField", "namePicker");
 
 // Whether to use a panel that looks like an OS X sheet for customization
-//@line 891 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 891 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("toolbar.customization.usesheet", false);
-//@line 893 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 893 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // The default for this pref reflects whether the build is capable of IPC.
 // (Turning it on in a no-IPC build will have no effect.)
-//@line 905 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 905 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 pref("dom.ipc.plugins.enabled", true);
-//@line 907 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 907 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
-//@line 911 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 911 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // This pref governs whether we attempt to work around problems caused by
 // plugins using OS calls to manipulate the cursor while running out-of-
@@ -824,11 +824,11 @@ pref("dom.ipc.plugins.enabled", true);
 // in the browser process.  Eventually plugins will be required to use the
 // NPAPI to manipulate the cursor, and these workarounds will be removed.
 // See bug 621117.
-//@line 922 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 922 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
-//@line 934 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 934 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
-//@line 936 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 936 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 // The sync engines to use.
 pref("services.sync.registerEngines", "Bookmarks,Form,History,Password,Prefs,Tab");
 // Preferences to be synced by default
@@ -903,7 +903,7 @@ pref("services.sync.prefs.sync.security.warn_viewing_mixed", true);
 pref("services.sync.prefs.sync.signon.rememberSignons", true);
 pref("services.sync.prefs.sync.spellchecker.dictionary", true);
 pref("services.sync.prefs.sync.xpinstall.whitelist.required", true);
-//@line 1011 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/app/profile/firefox.js"
+//@line 1011 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/app/profile/firefox.js"
 
 // Disable the error console
 pref("devtools.errorconsole.enabled", false);

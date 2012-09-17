@@ -270,7 +270,46 @@ pre_mountall ()
 	# /run.  Note that while RAMRUN is no longer used (/run is always
 	# a tmpfs), RAMLOCK is still functional, but will cause a second
 	# tmpfs to be mounted on /run/lock.
-	:
+
+	# /lib/init/rw is obsolete and replaced by /run.  It's no
+	# longer used as a mountpoint, so attempt to remove it if
+	# possible (this will fail if root is read only).
+	rmdir /lib/init/rw >/dev/null 2>&1 || true
+}
+
+# If the device/inode are the same, a bind mount already exists or the
+# transition is complete, so set up is not required.  Otherwise bind
+# mount $SRC on $DEST.
+bind_mount ()
+{
+	SRC=$1
+	DEST=$2
+
+	FSTYPE=""
+	OPTS=""
+
+	ssrc="$(/usr/bin/stat -L --format="%d %i" "$SRC" 2>/dev/null || :)"
+	sdest="$(/usr/bin/stat -L --format="%d %i" "$DEST" 2>/dev/null || :)"
+
+	case "$(uname -s)" in
+		Linux)     FSTYPE=$SRC; OPTS="-orw -obind" ;;
+		*FreeBSD)  FSTYPE=nullfs; OPTS="-orw" ;;
+		GNU)       FSTYPE=firmlink ;;
+		*)         FSTYPE=none ;;
+	esac
+
+	# Bind mount $SRC on $DEST
+	if [ -n "$ssrc" ] && [ "$ssrc" != "$sdest" ]; then
+		[ -d "$DEST" ] || mkdir "$DEST"
+		[ -x /sbin/restorecon ] && /sbin/restorecon "$DEST"
+		if mount -t $FSTYPE "$SRC" "$DEST" $OPTS ; then
+			echo "Please reboot to complete migration to tmpfs-based /run" > "${DEST}/.run-transition"
+			return 0
+		fi
+		return 1
+	fi
+
+	return 0
 }
 
 #
@@ -380,7 +419,207 @@ post_mountall ()
 	# filesystems are mounted, we replace the directory with a
 	# symlink where possible.
 
-	run_migrate /var/run /run
-	run_migrate /var/lock /run/lock
-	run_migrate /dev/shm /run/shm
+	# Cater for systems which have a symlink from /run to /var/run
+	# for whatever reason.  Remove the symlink and replace with a
+	# directory.  The migration logic will then take care of the
+	# rest.  Note that it will take a second boot to fully
+	# migrate; it should only ever be needed on broken systems.
+	if [ -L /run ]; then
+		if [ "$(readlink /run)" = "/var/run" ]; then
+			rm -f /run
+			mkdir /run
+		fi
+		if bind_mount /var/run /run; then
+		    bind_mount /var/lock /run/lock
+		    bind_mount /dev/shm /run/shm
+		fi
+	else
+	    run_migrate /var/run /run
+	    run_migrate /var/lock /run/lock
+	    run_migrate /dev/shm /run/shm
+	fi
+}
+
+# Mount /run
+mount_run ()
+{
+	MNTMODE="$1"
+
+	# Needed to determine if root is being mounted read-only.
+	read_fstab
+
+	#
+	# Get some writable area available before the root is checked
+	# and remounted.  Note that /run may be handed over from the
+	# initramfs.
+	#
+
+	# If /run/shm is separately mounted, /run can be safely mounted noexec.
+	RUNEXEC=
+	if [ yes = "$RAMSHM" ] || read_fstab_entry /run/shm tmpfs; then
+	    RUNEXEC=',noexec'
+	fi
+	# TODO: Add -onodev once checkroot no longer creates a device node.
+	domount "$MNTMODE" tmpfs shmfs /run tmpfs "-onosuid$RUNEXEC$RUN_OPT"
+	[ -x /sbin/restorecon ] && /sbin/restorecon -r /run
+
+	# Make pidfile omit directory for sendsigs
+	[ -d /run/sendsigs.omit.d ] || mkdir --mode=755 /run/sendsigs.omit.d/
+
+	# Make sure we don't get cleaned
+	touch /run/.tmpfs
+}
+
+# Mount /run/lock
+mount_lock ()
+{
+	MNTMODE="$1"
+
+	# Make lock directory as the replacement for /var/lock
+	[ -d /run/lock ] || mkdir --mode=755 /run/lock
+	[ -x /sbin/restorecon ] && /sbin/restorecon /run/lock
+
+	# Now check if there's an entry in /etc/fstab.  If there is,
+	# it overrides the existing RAMLOCK setting.
+	if read_fstab_entry /run/lock; then
+	    if [ "$MNT_TYPE" = "tmpfs" ] ; then
+		RAMLOCK="yes"
+	    else
+		RAMLOCK="no"
+	    fi
+	fi
+
+	KERNEL="$(uname -s)"
+	NODEV="nodev,"
+	case "$KERNEL" in
+		*FreeBSD)  NODEV="" ;;
+	esac
+
+	# Mount /run/lock as tmpfs if enabled.  This prevents user DoS
+	# of /run by filling /run/lock at the expense of using an
+	# additional tmpfs.
+	if [ yes = "$RAMLOCK" ]; then
+		domount "$MNTMODE" tmpfs shmfs /run/lock tmpfs "-o${NODEV}noexec,nosuid$LOCK_OPT"
+		# Make sure we don't get cleaned
+		touch /run/lock/.tmpfs
+	else
+		chmod "$LOCK_MODE" /run/lock
+	fi
+}
+
+# Mount /run/shm
+mount_shm ()
+{
+	MNTMODE="$1"
+
+	if [ ! -d /run/shm ]
+	then
+		mkdir --mode=755 /run/shm
+		[ -x /sbin/restorecon ] && /sbin/restorecon /run/shm
+	fi
+
+	# Now check if there's an entry in /etc/fstab.  If there is,
+	# it overrides the existing RAMSHM setting.
+	if read_fstab_entry /run/shm; then
+	    if [ "$MNT_TYPE" = "tmpfs" ] ; then
+		RAMSHM="yes"
+	    else
+		RAMSHM="no"
+	    fi
+	fi
+
+	KERNEL="$(uname -s)"
+	NODEV="nodev,"
+	case "$KERNEL" in
+		*FreeBSD)  NODEV="" ;;
+	esac
+
+	if [ yes = "$RAMSHM" ]; then
+		domount "$MNTMODE" tmpfs shmfs /run/shm tmpfs "-onosuid,${NODEV}noexec$SHM_OPT"
+		# Make sure we don't get cleaned
+		touch /run/shm/.tmpfs
+	else
+		chmod "$SHM_MODE" /run/shm
+	fi
+
+	# Migrate early, so /dev/shm is available from the start
+	if [ "$MNTMODE" = mount_noupdate ] || [ "$MNTMODE" = mount ]; then
+		run_migrate /dev/shm /run/shm ../run/shm
+	fi
+}
+
+#
+# Mount /tmp
+#
+mount_tmp ()
+{
+	MNTMODE="$1"
+
+	# If /tmp is a symlink, make sure the linked-to directory exists.
+	if [ -L /tmp ] && [ ! -d /tmp ]; then
+		TMPPATH="$(readlink /tmp)"
+		mkdir -p --mode=755 "$TMPPATH"
+		[ -x /sbin/restorecon ] && /sbin/restorecon "$TMPPATH"
+	fi
+
+	# Disable RAMTMP if there's 64MiB RAM or less.  May be
+	# re-enabled by overflow or read only root, below.
+	RAM_SIZE="$(ram_size)"
+	if [ -n "$RAM_SIZE" ] && [ "$((RAM_SIZE <= 65536))" = "1" ]; then
+		RAMTMP=no
+	fi
+
+	# If root is read only, default to mounting a tmpfs on /tmp,
+	# unless one is due to be mounted from fstab.
+	if [ "$RAMTMP" != "yes" ] && [ rw != "$rootmode" ]; then
+		# If there's an entry in fstab for /tmp (any
+		# filesystem type, not just tmpfs), then we don't need
+		# a tmpfs on /tmp by default.
+		if read_fstab_entry /tmp ; then
+			:
+		else
+			log_warning_msg "Root filesystem is read-only; mounting tmpfs on /tmp"
+			RAMTMP="yes"
+		fi
+	fi
+
+	if [ "$RAMTMP" != "yes" ] && need_overflow_tmp; then
+		# If there's an entry in fstab for /tmp (any
+		# filesystem type, not just tmpfs), then we don't need
+		# a tmpfs on /tmp by default.
+		if read_fstab_entry /tmp ; then
+			:
+		else
+			log_warning_msg "Root filesystem has insufficient free space; mounting tmpfs on /tmp"
+			RAMTMP="yes"
+		fi
+	fi
+
+	# Now check if there's an entry in /etc/fstab.  If there is,
+	# it overrides all the above settings.
+	if read_fstab_entry /tmp; then
+	    if [ "$MNT_TYPE" = "tmpfs" ] ; then
+		RAMTMP="yes"
+	    else
+		RAMTMP="no"
+	    fi
+	fi
+
+	KERNEL="$(uname -s)"
+	NODEV="nodev,"
+	case "$KERNEL" in
+		*FreeBSD)  NODEV="" ;;
+	esac
+
+	# Mount /tmp as tmpfs if enabled.
+	if [ yes = "$RAMTMP" ]; then
+		domount "$MNTMODE" tmpfs shmfs /tmp tmpfs "-o${NODEV}nosuid$TMP_OPT"
+		# Make sure we don't get cleaned
+		touch /tmp/.tmpfs
+	else
+		# When root is still read only, this will fail.
+		if [ mount_noupdate != "$MNTMODE" ] && [ rw = "$rootmode" ]; then
+			chmod "$TMP_MODE" /tmp
+		fi
+	fi
 }

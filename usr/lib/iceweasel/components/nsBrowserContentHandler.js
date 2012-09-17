@@ -1,4 +1,4 @@
-//@line 38 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserContentHandler.js"
+//@line 38 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserContentHandler.js"
 
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/Services.jsm");
@@ -515,15 +515,15 @@ nsBrowserContentHandler.prototype = {
       cmdLine.preventDefault = true;
     }
 
-//@line 567 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserContentHandler.js"
+//@line 567 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserContentHandler.js"
   },
 
   helpInfo : "  -browser           Open a browser window.\n" +
              "  -new-window  <url> Open <url> in a new window.\n" +
              "  -new-tab     <url> Open <url> in a new tab.\n" +
-//@line 575 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserContentHandler.js"
+//@line 575 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserContentHandler.js"
              "  -preferences       Open Preferences dialog.\n" +
-//@line 577 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserContentHandler.js"
+//@line 577 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserContentHandler.js"
              "  -search     <term> Search <term> with your default search engine.\n",
 
   /* nsIBrowserHandler */
@@ -705,13 +705,13 @@ nsDefaultCommandLineHandler.prototype = {
   // running and have already been handled. This is compared against uri's
   // opened using DDE on Win32 so we only open one of the requests.
   _handledURIs: [ ],
-//@line 761 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserContentHandler.js"
+//@line 761 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserContentHandler.js"
 
   /* nsICommandLineHandler */
   handle : function dch_handle(cmdLine) {
     var urilist = [];
 
-//@line 787 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserContentHandler.js"
+//@line 787 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserContentHandler.js"
 
     try {
       var ar;

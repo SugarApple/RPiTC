@@ -126,7 +126,7 @@ const INTERNAL_KEYS = ["_tabStillLoading", "_hosts", "_formDataSaved",
 const TAB_EVENTS = ["TabOpen", "TabClose", "TabSelect", "TabShow", "TabHide",
                     "TabPinned", "TabUnpinned"];
 
-//@line 132 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 132 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
@@ -146,7 +146,7 @@ XPCOMUtils.defineLazyGetter(this, "ScratchpadManager", function() {
 XPCOMUtils.defineLazyServiceGetter(this, "CookieSvc",
   "@mozilla.org/cookiemanager;1", "nsICookieManager2");
 
-//@line 155 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 155 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
 
 XPCOMUtils.defineLazyServiceGetter(this, "SecuritySvc",
   "@mozilla.org/scriptsecuritymanager;1", "nsIScriptSecurityManager");
@@ -846,9 +846,9 @@ SessionStoreService.prototype = {
 
       if (closedWindowState) {
         let newWindowState;
-//@line 855 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 855 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
         if (!this._doResumeSession()) {
-//@line 857 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 857 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
           // We want to split the window up into pinned tabs and unpinned tabs.
           // Pinned tabs should be restored. If there are any remaining tabs,
           // they should be added back to _closedWindows.
@@ -872,7 +872,7 @@ SessionStoreService.prototype = {
             delete normalTabsState.windows[0].__lastSessionWindowID;
             this._closedWindows[closedWindowIndex] = normalTabsState.windows[0];
           }
-//@line 881 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 881 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
         }
         else {
           // If we're just restoring the window, make sure it gets removed from
@@ -881,7 +881,7 @@ SessionStoreService.prototype = {
           newWindowState = closedWindowState;
           delete newWindowState.hidden;
         }
-//@line 890 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 890 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
         if (newWindowState) {
           // Ensure that the window state isn't hidden
           this._restoreCount = 1;
@@ -966,11 +966,11 @@ SessionStoreService.prototype = {
         this._updateCookies([winData]);
       }
 
-//@line 975 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 975 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
       // Until we decide otherwise elsewhere, this window is part of a series
       // of closing windows to quit.
       winData._shouldRestore = true;
-//@line 979 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 979 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
 
       // save the window if it has multiple tabs or a single saveable tab
       if (winData.tabs.length > 1 ||
@@ -2458,7 +2458,7 @@ SessionStoreService.prototype = {
     // shallow copy this._closedWindows to preserve current state
     let lastClosedWindowsCopy = this._closedWindows.slice();
 
-//@line 2467 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 2467 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
     // If no non-popup browser window remains open, return the state of the last
     // closed window(s). We only want to do this when we're actually "ending"
     // the session.
@@ -2472,7 +2472,7 @@ SessionStoreService.prototype = {
         total.unshift(lastClosedWindowsCopy.shift())
       } while (total[0].isPopup)
     }
-//@line 2481 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 2481 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
 
     if (aPinnedOnly) {
       // perform a deep copy so that existing session variables are not changed.
@@ -3549,7 +3549,7 @@ SessionStoreService.prototype = {
     if (!oState)
       return;
 
-//@line 3558 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 3558 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
     // We want to restore closed windows that are marked with _shouldRestore.
     // We're doing this here because we want to control this only when saving
     // the file.
@@ -3563,7 +3563,7 @@ SessionStoreService.prototype = {
         break;
       }
     }
-//@line 3572 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 3572 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
 
     if (pinnedOnly) {
       // Save original resume_session_once preference for when quiting browser,
@@ -3650,7 +3650,7 @@ SessionStoreService.prototype = {
     if (!win.closed)
       return win;
 
-//@line 3659 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 3659 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
     win = null;
     var windowsEnum = Services.wm.getEnumerator("navigator:browser");
     // this is oldest to newest, so this gets a bit ugly
@@ -3660,7 +3660,7 @@ SessionStoreService.prototype = {
         win = nextWin;
     }
     return win;
-//@line 3678 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 3678 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
   },
 
   /**
@@ -3836,7 +3836,7 @@ SessionStoreService.prototype = {
    * Annotate a breakpad crash report with the currently selected tab's URL.
    */
   _updateCrashReportURL: function sss_updateCrashReportURL(aWindow) {
-//@line 3870 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 3870 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
   },
 
   /**
@@ -4157,7 +4157,7 @@ SessionStoreService.prototype = {
     if (this._closedWindows.length <= maxWindowsUndo)
       return;
     let spliceTo = maxWindowsUndo;
-//@line 4191 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 4191 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
     let normalWindowIndex = 0;
     // try to find a non-popup window in this._closedWindows
     while (normalWindowIndex < this._closedWindows.length &&
@@ -4165,7 +4165,7 @@ SessionStoreService.prototype = {
       normalWindowIndex++;
     if (normalWindowIndex >= maxWindowsUndo)
       spliceTo = normalWindowIndex + 1;
-//@line 4199 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStore.js"
+//@line 4199 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStore.js"
     this._closedWindows.splice(spliceTo, this._closedWindows.length);
   },
 

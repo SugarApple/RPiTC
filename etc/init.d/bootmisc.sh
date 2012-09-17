@@ -35,7 +35,8 @@ do_start () {
 
 	# Remove bootclean's flag files.
 	# Don't run bootclean again after this!
-	rm -f /tmp/.clean /var/run/.clean /var/lock/.clean
+	rm -f /tmp/.clean /lib/init/rw/.clean /run/.clean /run/lock/.clean
+	rm -f /tmp/.tmpfs /lib/init/rw/.tmpfs /run/.tmpfs /run/lock/.tmpfs
 }
 
 case "$1" in

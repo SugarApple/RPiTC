@@ -36,7 +36,7 @@ do_stop () {
 	halt -w
 
 	# Remove bootclean flag files (precaution against symlink attacks)
-	rm -f /tmp/.clean
+	rm -f /tmp/.clean /run/.clean /run/lock/.clean
 
 	#
 	# Make list of points to unmount in reverse order of their creation

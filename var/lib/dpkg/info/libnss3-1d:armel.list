@@ -6,11 +6,11 @@
 /usr/share/lintian/overrides/libnss3-1d
 /usr/share/doc
 /usr/share/doc/libnss3-1d
-/usr/share/doc/libnss3-1d/copyright
 /usr/share/doc/libnss3-1d/changelog.Debian.gz
+/usr/share/doc/libnss3-1d/copyright
 /usr/lib
 /usr/lib/arm-linux-gnueabi
 /usr/lib/arm-linux-gnueabi/libnss3.so.1d
-/usr/lib/arm-linux-gnueabi/libnssutil3.so.1d
 /usr/lib/arm-linux-gnueabi/libssl3.so.1d
+/usr/lib/arm-linux-gnueabi/libnssutil3.so.1d
 /usr/lib/arm-linux-gnueabi/libsmime3.so.1d

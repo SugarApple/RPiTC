@@ -1397,7 +1397,7 @@ extApplication.prototype = {
 
   QueryInterface : XPCOMUtils.generateQI([Ci.extIApplication, Ci.nsISupportsWeakReference])
 };
-//@line 724 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/fuel/src/fuelApplication.js"
+//@line 724 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/fuel/src/fuelApplication.js"
 
 // set the proto, defined in extApplication.js
 Application.prototype.__proto__ = extApplication.prototype;

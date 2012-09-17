@@ -1,4 +1,4 @@
-9b8599ad27d80178a3027327688339c9  lib/arm-linux-gnueabi/libkmod.so.2.1.2
-3a988a0364dd6e1dc4f76fa5cb38aaec  usr/share/doc/libkmod2/changelog.Debian.gz
-815c78a17b985342de2d6d649ba4abf6  usr/share/doc/libkmod2/changelog.gz
-1e23d0388a9b923fa6fe98d893eead1f  usr/share/doc/libkmod2/copyright
+d049f2fa5f80a07ab22e26af87eb232e  lib/arm-linux-gnueabi/libkmod.so.2.1.3
+e06f0678cae32461354c16b3be4fa848  usr/share/doc/libkmod2/changelog.Debian.gz
+9e99dc1d147edce375ed0f2dd17aeaa2  usr/share/doc/libkmod2/changelog.gz
+d892d3eed17188efab9d3977faef865d  usr/share/doc/libkmod2/copyright

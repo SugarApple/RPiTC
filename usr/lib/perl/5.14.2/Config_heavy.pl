@@ -80,9 +80,9 @@ sub header_files {
 #
 ## Package name      : perl5
 ## Source directory  : .
-## Configuration time: Tue Jun 19 02:15:08 UTC 2012
+## Configuration time: Fri Sep  7 03:04:14 UTC 2012
 ## Configured by     : Debian Project
-## Target system     : linux alain 2.6.32 #1 fri jan 20 18:19:54 utc 2012 armv5tel gnulinux 
+## Target system     : linux arnold 2.6.32 #1 fri jan 20 18:19:54 utc 2012 armv5tel gnulinux 
 #
 #: Configure command line arguments.
 #
@@ -206,7 +206,7 @@ ccsymbols=''
 ccversion=''
 cf_by='Debian Project'
 cf_email='perl@packages.debian.org'
-cf_time='Tue Jun 19 02:15:08 UTC 2012'
+cf_time='Fri Sep  7 03:04:14 UTC 2012'
 charbits='8'
 charsize='1'
 chgrp=''
@@ -1006,7 +1006,7 @@ mv=''
 myarchname='armv5tel-linux'
 mydomain=''
 myhostname='localhost'
-myuname='linux alain 2.6.32 #1 fri jan 20 18:19:54 utc 2012 armv5tel gnulinux '
+myuname='linux arnold 2.6.32 #1 fri jan 20 18:19:54 utc 2012 armv5tel gnulinux '
 n='-n'
 need_va_copy='undef'
 netdb_hlen_type='size_t'

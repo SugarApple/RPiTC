@@ -11,16 +11,17 @@ DELAYLOGIN=no
 UTC=yes
 VERBOSE=no
 FSCKFIX=no
-RAMLOCK=yes
-RAMSHM=yes
-# Defaults to yes in /etc/defaults/rcS, so will be enabled for new
-# installs.
-RAMTMP=no
 
 # Source conffile
 if [ -f /etc/default/rcS ]; then
     . /etc/default/rcS
 fi
+
+# Unset old unused options
+unset EDITMOTD
+unset RAMRUN
+unset RAMLOCK
+# Don't unset RAMSHM and RAMTMP for now.
 
 # Parse kernel command line
 if [ -r /proc/cmdline ]; then

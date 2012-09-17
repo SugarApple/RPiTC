@@ -138,6 +138,8 @@ Description-tl.UTF-8: Pumili ng software na iluluklok:
  Sa ngayon, ang pinaka-payak na sistema ng Debian ay nakaluklok. Upang maangkop ang pagkaluklok sa inyong mga pangangailangan, maaari kayong pumili na magluklok ng isa o ilan sa mga sumusunod na mga koleksyon ng software.
 Description-tr.UTF-8: Kurulacak yazılımları seçin:
  Hâlihazırda sadece temel kısmı kurulu durumda.  Sistemi ihtiyaçlarınıza uygun hale getirmek için, önceden tanımlanmış aşağıdaki yazılım demetlerinden bir veya daha fazlasını kurmayı seçebilirsiniz.
+Description-ug.UTF-8: ئورنىتىدىغان يۇمشاق دېتالنى تاللاڭ:
+ نۆۋەتتە سىستېمىنىڭ يادرولۇق بۆلەكلىرىلا ئورنىتىلدى. سىستېمىنى تەڭشەپ تەلىپىڭىزگە لايىقلاشتۇرۇشتا، تۆۋەندىكى بىر ياكى كۆپ ئالدىن بەلگىلەنگەن يۇمشاق دېتاللار توپلىمىنى تاللاپ ئورناتسىڭىز بولىدۇ.
 Description-uk.UTF-8: Виберіть програмне забезпечення для встановлення:
  На даний момент, встановлена тільки основна частина системи. Для того, щоб підлаштувати інсталяцію під ваші потреби, ви можете вибрати встановлення одного або кількох наступних наборів програмного забезпечення.
 Description-vi.UTF-8: Chọn phần mềm cần cài đặt:
@@ -288,6 +290,8 @@ Description-tl.UTF-8: Pumili ng software na iluluklok:
  Maaaring pumili na iluklok ang isa o ilan sa mga sumusunod na mga koleksyon ng software.
 Description-tr.UTF-8: Kurulacak yazılımları seçin:
  Önceden tanımlanmış aşağıdaki yazılım demetlerinden bir veya daha fazlasını kurmayı seçebilirsiniz.
+Description-ug.UTF-8: ئورنىتىدىغان يۇمشاق دېتالنى تاللاڭ:
+ تۆۋەندىكى بىر ياكى كۆپ ئالدىن بەلگىلەنگەن يۇمشاق دېتاللار توپلىمىنى تاللاپ ئورناتسىڭىز بولىدۇ.
 Description-uk.UTF-8: Виберіть програмне забезпечення для встановлення:
  Ви можете встановити один або декілька наступних наборів програмного забезпечення.
 Description-vi.UTF-8: Chọn phần mềm cần cài đặt:
@@ -375,6 +379,7 @@ Description-te.UTF-8: సాఫ్ట్ వేర్ (software) ఎంపిక
 Description-th.UTF-8: ชุดซอฟต์แวร์
 Description-tl.UTF-8: Pagpili ng software
 Description-tr.UTF-8: Yazılım seçimi
+Description-ug.UTF-8: يۇمشاق دېتال تاللاش
 Description-uk.UTF-8: Вибір програмного забезпечення
 Description-vi.UTF-8: Lựa chọn phần mềm
 Description-wo.UTF-8: Tann ay prograam

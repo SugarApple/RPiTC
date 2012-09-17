@@ -41,5 +41,6 @@ libuuid:x:101:
 crontab:x:102:
 ssh:x:103:
 ntp:x:104:
-netdev:x:105:
-messagebus:x:106:
+messagebus:x:105:
+netdev:x:106:
+utempter:x:107:

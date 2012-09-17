@@ -1,4 +1,4 @@
-//@line 2 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/services/sync/modules/constants.js"
+//@line 2 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/services/sync/modules/constants.js"
 /* ***** BEGIN LICENSE BLOCK *****
  * Version: MPL 1.1/GPL 2.0/LGPL 2.1
  *

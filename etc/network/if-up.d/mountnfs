@@ -119,8 +119,7 @@ do_start() {
 }
 
 exit_unless_last_interface() {
-    ifaces="$(grep "^[[:space:]]*auto" /etc/network/interfaces  | \
-        sed -e 's/[ \t]*auto[ \t]*//;s/[ \t]*$//;s/[ \t]/\n/g')"
+    ifaces="$(ifquery --list)"
     for i in $ifaces ; do
 	if ! grep -q $i /etc/network/run/ifstate ; then
 	    msg="if-up.d/mountnfs[$IFACE]: waiting for interface $i before doing NFS mounts"
@@ -142,6 +141,8 @@ fi
 if [ no != "$ASYNCMOUNTNFS" ]; then
     # Not for loopback!
     [ "$IFACE" != "lo" ] || exit 0
+
+    [ "$ADDRFAM" = "inet" ] || [ "$ADDRFAM" = "inet6" ] || exit 0
 
     # Lock around this otherwise insanity may occur
     mkdir /var/run/network          2>/dev/null || true

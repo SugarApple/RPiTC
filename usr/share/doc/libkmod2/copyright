@@ -3,7 +3,7 @@ This is the Debian GNU/Linux prepackaged version of kmod.
 It has been packaged by Marco d'Itri <md@linux.it>.
 
 Original sources were obtained from:
-http://packages.profusion.mobi/kmod/
+http://www.kernel.org/pub/linux/utils/kernel/kmod/
 
 
 Copyright (C) 2011 ProFUSION embedded systems.

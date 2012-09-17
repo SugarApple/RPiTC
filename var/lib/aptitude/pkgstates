@@ -2852,7 +2852,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libfreerdp-dev
 Architecture: armel
@@ -5421,7 +5421,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: xorg-docs-core
 Architecture: armel
@@ -7292,13 +7292,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-filefield
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: drizzle-plugin-auth-file
 Architecture: armel
 Unseen: yes
@@ -8333,7 +8326,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: socket
 Architecture: armel
@@ -10447,7 +10440,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: wmaker-data
 Architecture: armel
@@ -11086,13 +11079,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libfparser-4.3-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: flann-doc
 Architecture: armel
 Unseen: yes
@@ -11682,13 +11668,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: exactimage
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-masquerade
 Architecture: armel
 Unseen: yes
 State: 3
@@ -12405,7 +12384,7 @@ Remove-Reason: 0
 Package: autofs
 Architecture: armel
 Unseen: yes
-State: 1
+State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
@@ -13949,13 +13928,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-views
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libdime-dev
 Architecture: armel
 Unseen: yes
@@ -14803,13 +14775,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: fex-utils
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: liburiparser1
 Architecture: armel
 Unseen: yes
@@ -15198,8 +15163,8 @@ Remove-Reason: 0
 Package: libpolkit-gobject-1-0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: mgltools-pybabel
@@ -16823,7 +16788,7 @@ Package: vim-common
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: tth-common
@@ -17188,7 +17153,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: clusterssh
 Architecture: armel
@@ -18012,8 +17977,8 @@ Remove-Reason: 0
 Package: gstreamer0.10-x
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: liboro-java
@@ -19652,7 +19617,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libexif-ruby1.9.1
 Architecture: armel
@@ -20425,13 +20390,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libnjb-tools
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: k9copy
 Architecture: armel
 Unseen: yes
 State: 3
@@ -22031,7 +21989,7 @@ Package: openssh-blacklist-extra
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libxml-quote-perl
@@ -24127,13 +24085,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: pyjamas-ui
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libserp-java
 Architecture: armel
 Unseen: yes
@@ -25117,8 +25068,8 @@ Remove-Reason: 0
 Package: libboost-thread-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: aspell-pt-br
@@ -26169,7 +26120,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libacsccid1
 Architecture: armel
@@ -27098,8 +27049,8 @@ Remove-Reason: 0
 Package: libgstreamer0.10-0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: mumble-django
@@ -27803,6 +27754,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: sawfish-merlin-ugliness
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: ruby-zoom
 Architecture: armel
 Unseen: yes
 State: 3
@@ -34725,6 +34683,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: libcitadel3-dbg
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: libaunit-dbg
 Architecture: armel
 Unseen: yes
@@ -35120,8 +35085,8 @@ Remove-Reason: 0
 Package: libutempter0
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: ipkungfu
@@ -35946,8 +35911,8 @@ Remove-Reason: 0
 Package: libicu48
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: wmii-doc
@@ -36615,13 +36580,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: llvm-gcc-4.6
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: cyrus-nntpd-2.2
 Architecture: armel
 Unseen: yes
@@ -36977,7 +36935,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: python-turbomail
 Architecture: armel
@@ -37840,6 +37798,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: gcc-4.5-base
+Architecture: armel
+Unseen: no
+State: 1
+Dselect-State: 1
+Remove-Reason: 0
+
 Package: yorick-mpy-openmpi
 Architecture: armel
 Unseen: yes
@@ -37929,13 +37894,6 @@ Architecture: armel
 Unseen: yes
 State: 3
 Dselect-State: 0
-Remove-Reason: 0
-
-Package: gcc-4.5-base
-Architecture: armel
-Unseen: no
-State: 1
-Dselect-State: 1
 Remove-Reason: 0
 
 Package: libdrizzle-dbg
@@ -38841,6 +38799,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: libpg-java
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: libnet-tftpd-perl
 Architecture: armel
 Unseen: yes
@@ -39404,8 +39369,8 @@ Remove-Reason: 0
 Package: iso-codes
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: doc-base
@@ -40790,8 +40755,8 @@ Remove-Reason: 0
 Package: network-manager
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: cyrus-replication-2.4
@@ -41201,6 +41166,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: task-kazakh-kde-desktop
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: task-english
 Architecture: armel
 Unseen: yes
 State: 3
@@ -41911,7 +41883,7 @@ Package: qdbus
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: qdbm-doc
@@ -43172,7 +43144,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: bibcursed
 Architecture: armel
@@ -45226,13 +45198,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libglrr-gtk-dev
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: gcc-4.5-locales
 Architecture: armel
 Unseen: yes
 State: 3
@@ -47447,8 +47412,8 @@ Remove-Reason: 0
 Package: libxmmsclient6
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: task-asturian-desktop
@@ -47573,8 +47538,8 @@ Remove-Reason: 0
 Package: libaudclient2
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: zabbix-proxy-pgsql
@@ -47654,13 +47619,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: installation-guide-hppa
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: icedove-l10n-be
 Architecture: armel
 Unseen: yes
@@ -47683,13 +47641,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: fortunes-min
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-imagefield-assist
 Architecture: armel
 Unseen: yes
 State: 3
@@ -50837,7 +50788,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libapm-dev
 Architecture: armel
@@ -51089,7 +51040,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: vbackup
 Architecture: armel
@@ -51584,8 +51535,8 @@ Remove-Reason: 0
 Package: g++-4.4
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: icedove-l10n-fr
@@ -51659,13 +51610,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: icedove-l10n-id
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: g++-4.5
 Architecture: armel
 Unseen: yes
 State: 3
@@ -51798,6 +51742,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: g++-4.6
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: fonts-yozvox-yozfont-cute
 Architecture: armel
 Unseen: yes
@@ -51820,13 +51771,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: ecaccess
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: g++-4.6
 Architecture: armel
 Unseen: yes
 State: 3
@@ -52288,13 +52232,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: gcc-4.5-plugin-dev
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: exim4-daemon-light
 Architecture: armel
 Unseen: yes
@@ -52740,7 +52677,7 @@ Package: libqt4-test
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: xfe-themes
@@ -52807,13 +52744,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: python3-flufl.lock
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: dotclear
 Architecture: armel
 Unseen: yes
 State: 3
@@ -53836,13 +53766,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: dynare
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-imagecache
 Architecture: armel
 Unseen: yes
 State: 3
@@ -55256,13 +55179,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: pyjamas-gmap
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: liblo-ocaml-dev
 Architecture: armel
 Unseen: yes
@@ -55639,7 +55555,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: x11-xfs-utils
 Architecture: armel
@@ -56001,8 +55917,8 @@ Remove-Reason: 0
 Package: usbmount
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: steghide
@@ -56317,7 +56233,7 @@ Package: libqt4-dbus
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: switchconf
@@ -57762,13 +57678,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libcvc3-5-dev
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: caml2html
 Architecture: armel
 Unseen: yes
@@ -57791,13 +57700,6 @@ Dselect-State: 1
 Remove-Reason: 0
 
 Package: amoeba
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: ubuntu-sso-client
 Architecture: armel
 Unseen: yes
 State: 3
@@ -58220,8 +58122,8 @@ Remove-Reason: 0
 Package: xterm
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: mscgen
@@ -59680,13 +59582,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libfparser-4.3
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libghc-cpphs-dev
 Architecture: armel
 Unseen: yes
@@ -59697,8 +59592,8 @@ Remove-Reason: 0
 Package: manpages-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: boolstuff-dev
@@ -60047,8 +59942,8 @@ Remove-Reason: 0
 Package: libnm-util2
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libgeoip-dev
@@ -60230,7 +60125,7 @@ Package: git-man
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: diffutils-doc
@@ -60976,13 +60871,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: python-pyspatialite
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: pyjamas-desktop
 Architecture: armel
 Unseen: yes
 State: 3
@@ -62628,13 +62516,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libglobus-rsl-dev
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-imagecache-actions
 Architecture: armel
 Unseen: yes
 State: 3
@@ -64650,13 +64531,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: rbbr
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: python-pyhsm
 Architecture: armel
 Unseen: yes
@@ -64728,13 +64602,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libgd-graph3d-perl
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-xrds-simple
 Architecture: armel
 Unseen: yes
 State: 3
@@ -67194,8 +67061,8 @@ Remove-Reason: 0
 Package: libc-dev-bin
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: ecryptfs-utils-dbg
@@ -69336,8 +69203,8 @@ Remove-Reason: 0
 Package: lockfile-progs
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libalsaplayer0
@@ -72836,8 +72703,8 @@ Remove-Reason: 0
 Package: strace
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: cyrus-clients-2.4
@@ -73804,7 +73671,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libupower-glib1
 Architecture: armel
@@ -76487,13 +76354,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libcitadel2
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libgstreamer-plugins-base0.10-dev
 Architecture: armel
 Unseen: yes
@@ -76511,8 +76371,8 @@ Remove-Reason: 0
 Package: libgomp1
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libopentk1.0-cil
@@ -76565,6 +76425,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: smstools
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: libcitadel3
 Architecture: armel
 Unseen: yes
 State: 3
@@ -76771,7 +76638,7 @@ Package: libqt4-core
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: flexloader
@@ -77155,8 +77022,8 @@ Remove-Reason: 0
 Package: libstdc++6-4.4-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: python-radare2
@@ -77734,13 +77601,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libdataobjects-ruby1.9.1
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: pyjamas
 Architecture: armel
 Unseen: yes
 State: 3
@@ -78966,13 +78826,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: eiskaltdcpp-daemon-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-lightbox2
 Architecture: armel
 Unseen: yes
 State: 3
@@ -81170,13 +81023,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: vworkspace-pncm
-Architecture: armel
-Unseen: yes
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
-
 Package: xserver-xorg-video-sis
 Architecture: armel
 Unseen: yes
@@ -82512,7 +82358,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libicee12
 Architecture: armel
@@ -82585,13 +82431,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libghc-regex-tdfa-doc
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: freefoam-user-doc
 Architecture: armel
 Unseen: yes
 State: 3
@@ -82743,7 +82582,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: wininfo
 Architecture: armel
@@ -83089,13 +82928,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: quassel-core
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: pyjamas-doc
 Architecture: armel
 Unseen: yes
 State: 3
@@ -84157,7 +83989,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libxml-sax-expat-perl
 Architecture: armel
@@ -84778,9 +84610,9 @@ Remove-Reason: 0
 Package: liberror-perl
 Architecture: armel
 Unseen: no
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
+State: 3
+Dselect-State: 0
+Remove-Reason: 4
 
 Package: vtk-examples
 Architecture: armel
@@ -87848,6 +87680,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: libwebp2
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: kunststoff
 Architecture: armel
 Unseen: yes
@@ -87898,13 +87737,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: cl-flexichain
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libwebp2
 Architecture: armel
 Unseen: yes
 State: 3
@@ -87989,13 +87821,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gvfs-common
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libmudflap0-4.5-dev
 Architecture: armel
 Unseen: yes
 State: 3
@@ -89778,7 +89603,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: fusioninventory-agent
 Architecture: armel
@@ -89895,8 +89720,8 @@ Remove-Reason: 0
 Package: linux-libc-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libxmlrpc3-client-java
@@ -91358,8 +91183,8 @@ Remove-Reason: 0
 Package: libnl-route-3-200
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: gretl-common
@@ -91913,7 +91738,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libabiword-2.9
 Architecture: armel
@@ -92023,9 +91848,9 @@ Remove-Reason: 0
 Package: libcurl3-gnutls
 Architecture: armel
 Unseen: no
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
+State: 3
+Dselect-State: 3
+Remove-Reason: 4
 
 Package: task-gujarati-kde-desktop
 Architecture: armel
@@ -93903,13 +93728,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libfplll0
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libib-util
 Architecture: armel
 Unseen: yes
@@ -93964,7 +93782,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: php5-gd
 Architecture: armel
@@ -94204,13 +94022,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-trans-ru
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: bibledit
 Architecture: armel
 Unseen: yes
@@ -94317,13 +94128,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: fcitx-table-dianbaoma
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-addtoany
 Architecture: armel
 Unseen: yes
 State: 3
@@ -95399,7 +95203,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: pssh
 Architecture: armel
@@ -99074,7 +98878,7 @@ Architecture: armel
 Unseen: no
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: xblast-tnt-mini
 Architecture: armel
@@ -99133,6 +98937,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libghc-sendfile-doc
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: zoneminder
 Architecture: armel
 Unseen: yes
 State: 3
@@ -99786,8 +99597,8 @@ Remove-Reason: 0
 Package: gcc-4.4
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: tdb-tools
@@ -99938,13 +99749,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: flickrbackup
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: gcc-4.5
 Architecture: armel
 Unseen: yes
 State: 3
@@ -100126,18 +99930,18 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: ebview
+Package: gcc-4.6
 Architecture: armel
 Unseen: yes
 State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: gcc-4.6
+Package: ebview
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: science-neuroscience-modeling
@@ -100157,8 +99961,8 @@ Remove-Reason: 0
 Package: libboost1.49-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: texlive-doc-ko
@@ -101568,13 +101372,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-views-groupby
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: fityk
 Architecture: armel
 Unseen: yes
@@ -102285,8 +102082,8 @@ Remove-Reason: 0
 Package: libboost-serialization1.49-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: user-he
@@ -103165,6 +102962,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: clam-chordata
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: fonts-circos-symbols
 Architecture: armel
 Unseen: yes
 State: 3
@@ -105236,6 +105040,13 @@ State: 1
 Dselect-State: 1
 Remove-Reason: 0
 
+Package: libavutil-extra-51
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: alsaplayer-alsa
 Architecture: armel
 Unseen: yes
@@ -105244,13 +105055,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: python-actdiag
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libavutil-extra-51
 Architecture: armel
 Unseen: yes
 State: 3
@@ -106062,13 +105866,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-site-verify
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: pstotext
 Architecture: armel
 Unseen: yes
@@ -106724,7 +106521,7 @@ Package: vim-tiny
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libvia2
@@ -106828,8 +106625,8 @@ Remove-Reason: 0
 Package: libelfg0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: pyew
@@ -108001,13 +107798,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libav-regular-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: proxytrack
 Architecture: armel
 Unseen: yes
@@ -108337,13 +108127,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: xorriso
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: liblinear-dev
 Architecture: armel
 Unseen: yes
@@ -108352,6 +108135,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: science-numericalcomputation
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: xorriso
 Architecture: armel
 Unseen: yes
 State: 3
@@ -108685,7 +108475,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: ibus-el
 Architecture: armel
@@ -108834,14 +108624,14 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: ants
+Package: apmd
 Architecture: armel
 Unseen: yes
 State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: apmd
+Package: ants
 Architecture: armel
 Unseen: yes
 State: 3
@@ -110958,8 +110748,8 @@ Remove-Reason: 0
 Package: libboost-thread1.49.0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libalut0
@@ -111950,13 +111740,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: php5-exactimage
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6
 Architecture: armel
 Unseen: yes
 State: 3
@@ -114161,6 +113944,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: debian-faq-ru
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: kuipc
 Architecture: armel
 Unseen: yes
@@ -114304,8 +114094,8 @@ Remove-Reason: 0
 Package: libboost-date-time1.49-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: blop
@@ -114334,7 +114124,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: uwsgi-plugin-lua5.1
 Architecture: armel
@@ -115125,7 +114915,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: python3-pyfits
 Architecture: armel
@@ -116670,8 +116460,8 @@ Remove-Reason: 0
 Package: libao-common
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: gnat-mingw-w64-x86-64
@@ -117064,7 +116854,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: xserver-xorg-core-dbg
 Architecture: armel
@@ -117207,13 +116997,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: sensible-mda
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-contemplate
 Architecture: armel
 Unseen: yes
 State: 3
@@ -118611,7 +118394,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: emacsen-common
 Architecture: armel
@@ -120023,8 +119806,8 @@ Remove-Reason: 0
 Package: libboost-serialization1.49.0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: python-xdelta3
@@ -120238,13 +120021,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libstring-toidentifier-en-perl
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: jscoverage
 Architecture: armel
 Unseen: yes
 State: 3
@@ -120520,8 +120296,8 @@ Remove-Reason: 0
 Package: libboost-date-time1.49.0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: ant
@@ -121586,7 +121362,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libfribidi-dev
 Architecture: armel
@@ -121969,8 +121745,8 @@ Remove-Reason: 0
 Package: xbitmaps
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: sogo
@@ -125242,13 +125018,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-i18n
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: dietlibc-dev
 Architecture: armel
 Unseen: yes
@@ -126271,13 +126040,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libblas3
-Architecture: armel
-Unseen: yes
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
-
 Package: cmt
 Architecture: armel
 Unseen: yes
@@ -126290,6 +126052,13 @@ Architecture: armel
 Unseen: yes
 State: 3
 Dselect-State: 0
+Remove-Reason: 0
+
+Package: libblas3
+Architecture: armel
+Unseen: yes
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: r-base-core
@@ -128294,13 +128063,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: gfortran-4.5
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: fdupes
 Architecture: armel
 Unseen: yes
@@ -129958,7 +129720,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libspreadsheet-writeexcel-perl
 Architecture: armel
@@ -130649,8 +130411,8 @@ Remove-Reason: 0
 Package: gcc
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libvdk2-dev
@@ -131389,13 +131151,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: fusionforge-plugin-globalsearch
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: fex
 Architecture: armel
 Unseen: yes
 State: 3
@@ -133073,13 +132828,6 @@ Architecture: armel
 Unseen: yes
 State: 3
 Dselect-State: 0
-Remove-Reason: 0
-
-Package: vworkspace-ximagesink
-Architecture: armel
-Unseen: yes
-State: 1
-Dselect-State: 1
 Remove-Reason: 0
 
 Package: zonecheck-cgi
@@ -135455,13 +135203,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-cck
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: dovecot-solr
 Architecture: armel
 Unseen: yes
@@ -135505,13 +135246,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: python-pisock-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: pcd2html
 Architecture: armel
 Unseen: yes
 State: 3
@@ -136334,7 +136068,7 @@ Package: git
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: python-pyside.qtopengl
@@ -137192,13 +136926,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: e17-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-inactive-user
 Architecture: armel
 Unseen: yes
 State: 3
@@ -138204,7 +137931,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: task-tamil
 Architecture: armel
@@ -140670,18 +140397,11 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-openid-provider
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: deborphan
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libjaxp1.3-java
@@ -140696,7 +140416,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: python-blockdiag
 Architecture: armel
@@ -141718,7 +141438,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libzbargtk-dev
 Architecture: armel
@@ -144054,8 +143774,8 @@ Remove-Reason: 0
 Package: libnm-glib4
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: taxbird
@@ -145006,9 +144726,9 @@ Remove-Reason: 0
 Package: libssh2-1
 Architecture: armel
 Unseen: no
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
+State: 3
+Dselect-State: 3
+Remove-Reason: 4
 
 Package: culmus
 Architecture: armel
@@ -146280,8 +146000,8 @@ Remove-Reason: 0
 Package: alsa-utils
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: xawtv-tools
@@ -146355,13 +146075,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: fonts-sawarabi-gothic
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-xmlsitemap
 Architecture: armel
 Unseen: yes
 State: 3
@@ -146823,13 +146536,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-commentrss
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: cyrus-sasl2-heimdal-dbg
 Architecture: armel
 Unseen: yes
@@ -146877,7 +146583,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libgtk2-perl
 Architecture: armel
@@ -149235,7 +148941,7 @@ Package: cron
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libqt4-sql-psql
@@ -150933,13 +150639,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libglobus-gsi-openssl-error-dev
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libstdc++6-4.5-dbg
 Architecture: armel
 Unseen: yes
 State: 3
@@ -153624,7 +153323,7 @@ Package: openssh-blacklist
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libtest-checkdeps-perl
@@ -154017,7 +153716,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libcgi-fast-perl
 Architecture: armel
@@ -154482,13 +154181,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gnome-mplayer
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libstdc++6-4.5-dev
 Architecture: armel
 Unseen: yes
 State: 3
@@ -155198,9 +154890,9 @@ Remove-Reason: 0
 Package: rsync
 Architecture: armel
 Unseen: no
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
+State: 3
+Dselect-State: 3
+Remove-Reason: 4
 
 Package: tiemu-skinedit
 Architecture: armel
@@ -155501,7 +155193,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: gir1.2-pango-1.0
 Architecture: armel
@@ -156938,13 +156630,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: mathopd
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libomxil-bellagio0-components-vorbis
 Architecture: armel
 Unseen: yes
@@ -157200,8 +156885,8 @@ Remove-Reason: 0
 Package: anacron
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libucl-dev
@@ -158065,6 +157750,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: libavformat-extra-53
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: ctorrent
 Architecture: armel
 Unseen: yes
@@ -158087,13 +157779,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gamt
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libavformat-extra-53
 Architecture: armel
 Unseen: yes
 State: 3
@@ -158338,13 +158023,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-imagefield
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: r-cran-misc3d
 Architecture: armel
 Unseen: yes
@@ -158451,13 +158129,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: reglookup
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libstdc++6-4.5-doc
 Architecture: armel
 Unseen: yes
 State: 3
@@ -159659,7 +159330,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: chiark-backup
 Architecture: armel
@@ -159979,8 +159650,8 @@ Remove-Reason: 0
 Package: libao4
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libaiksaurusgtk-1.2-dev
@@ -160581,8 +160252,8 @@ Remove-Reason: 0
 Package: libgudev-1.0-0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libxml-dom-xpath-perl
@@ -160819,8 +160490,8 @@ Remove-Reason: 0
 Package: libsamplerate0
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libbonobo2-0
@@ -161454,13 +161125,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: human-icon-theme
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: ztex-bmp
 Architecture: armel
 Unseen: yes
 State: 3
@@ -162301,13 +161965,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gnome-panel-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libobjc2-dbg
 Architecture: armel
 Unseen: yes
 State: 3
@@ -167492,7 +167149,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: net-tools
 Architecture: armel
@@ -167600,13 +167257,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: exfalso
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-trackback
 Architecture: armel
 Unseen: yes
 State: 3
@@ -168923,13 +168573,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gcc-4.4-base
-Architecture: armel
-Unseen: yes
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
-
-Package: freefoam-dev-doc
 Architecture: armel
 Unseen: yes
 State: 3
@@ -170411,7 +170054,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: adduser
 Architecture: armel
@@ -172992,8 +172635,8 @@ Remove-Reason: 0
 Package: liblockfile-bin
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libfilesystem-ruby1.8
@@ -173293,8 +172936,8 @@ Remove-Reason: 0
 Package: conky-std
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: wise
@@ -175712,13 +175355,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: gobjc++-4.4
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libeliom-ocaml-dev
 Architecture: armel
 Unseen: yes
@@ -175832,13 +175468,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gridsite-gsexec
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: gobjc++-4.5
 Architecture: armel
 Unseen: yes
 State: 3
@@ -176224,13 +175853,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: festvox-kallpc8k
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: dragonegg
 Architecture: armel
 Unseen: yes
 State: 3
@@ -178183,13 +177805,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: gobjc-4.4
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libfelix-gogo-shell-java
 Architecture: armel
 Unseen: yes
@@ -178289,13 +177904,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libgo0
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: gobjc-4.5
 Architecture: armel
 Unseen: yes
 State: 3
@@ -180374,6 +179982,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: opendict-plugins-lingvosoft
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: xzoom
 Architecture: armel
 Unseen: yes
@@ -180389,13 +180004,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: xcursor-themes
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: opendict-plugins-lingvosoft
 Architecture: armel
 Unseen: yes
 State: 3
@@ -180526,7 +180134,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: yasm
 Architecture: armel
@@ -181067,13 +180675,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-imageapi
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libcryptokit-ocaml
 Architecture: armel
 Unseen: yes
@@ -181184,7 +180785,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libavifile-0.7c2
 Architecture: armel
@@ -183234,7 +182835,7 @@ Package: vim
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libboost-system1.49-dev
@@ -183658,13 +183259,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libsfml1.6-dbg
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libaudio-tagger-perl
 Architecture: armel
 Unseen: yes
 State: 3
@@ -184222,7 +183816,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: xcb
 Architecture: armel
@@ -185433,7 +185027,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libxcomposite-dev
 Architecture: armel
@@ -186189,7 +185783,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: fonts-larabie-straight
 Architecture: armel
@@ -186566,7 +186160,7 @@ Package: libqt4-network
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: sawfish-themes
@@ -187615,8 +187209,8 @@ Remove-Reason: 0
 Package: libjpeg62
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libdshconfig1-dev
@@ -189817,13 +189411,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: pyjamas-gchart
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: ocaml-interp
 Architecture: armel
 Unseen: yes
@@ -190543,7 +190130,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: python-usbtc08
 Architecture: armel
@@ -191474,7 +191061,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: ruby-uuidtools
 Architecture: armel
@@ -191736,13 +191323,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: xpilot-ng-server
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: pyjamas-canvas
 Architecture: armel
 Unseen: yes
 State: 3
@@ -192373,13 +191953,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gridlock.app
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libstdc++6-4.5-pic
 Architecture: armel
 Unseen: yes
 State: 3
@@ -193679,7 +193252,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: xpn
 Architecture: armel
@@ -193903,7 +193476,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libofdt-dev
 Architecture: armel
@@ -196283,7 +195856,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: t1-cyrillic
 Architecture: armel
@@ -197144,7 +196717,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: task-hebrew-desktop
 Architecture: armel
@@ -197688,8 +197261,8 @@ Remove-Reason: 0
 Package: conky
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: jade
@@ -197709,8 +197282,8 @@ Remove-Reason: 0
 Package: libc6-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libicee-dev
@@ -198845,7 +198418,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: roundcube
 Architecture: armel
@@ -199160,7 +198733,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: tryton-modules-company
 Architecture: armel
@@ -200719,8 +200292,8 @@ Remove-Reason: 0
 Package: liblua5.1-0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: emacs23
@@ -201251,8 +200824,8 @@ Remove-Reason: 0
 Package: libao-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: ifhp
@@ -201776,8 +201349,8 @@ Remove-Reason: 0
 Package: localepurge
 Architecture: armel
 Unseen: yes
-State: 3
-Dselect-State: 0
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: libtext-pdf-perl
@@ -202400,7 +201973,7 @@ Package: vim-runtime
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: ttf-aenigma
@@ -204370,13 +203943,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libfplll-dev
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: python-egenix-mxdatetime-doc
 Architecture: armel
 Unseen: yes
@@ -204548,8 +204114,8 @@ Remove-Reason: 0
 Package: libmpg123-0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libuima-cpe-java
@@ -206729,13 +206295,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: liblapack3
-Architecture: armel
-Unseen: yes
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
-
 Package: aptitude-dbg
 Architecture: armel
 Unseen: yes
@@ -206755,6 +206314,13 @@ Architecture: armel
 Unseen: yes
 State: 3
 Dselect-State: 0
+Remove-Reason: 0
+
+Package: liblapack3
+Architecture: armel
+Unseen: yes
+State: 1
+Dselect-State: 1
 Remove-Reason: 0
 
 Package: python-zope.browser
@@ -206841,6 +206407,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: libdigest-md5-file-perl
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: kompare
 Architecture: armel
 Unseen: yes
@@ -206877,13 +206450,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: fonts-aoyagi-kouzan-t
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libdigest-md5-file-perl
 Architecture: armel
 Unseen: yes
 State: 3
@@ -209088,13 +208654,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-inline
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libnglib-dev
 Architecture: armel
 Unseen: yes
@@ -209498,7 +209057,7 @@ Package: git-core
 Architecture: armel
 Unseen: no
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: bootcd-backup
@@ -213666,13 +213225,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: task-british
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: liguidsoap
 Architecture: armel
 Unseen: yes
@@ -213851,8 +213403,8 @@ Remove-Reason: 0
 Package: cpp-4.4
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libjs-excanvas
@@ -213982,13 +213534,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: gnustep-back0.20-cairo
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: cpp-4.5
 Architecture: armel
 Unseen: yes
 State: 3
@@ -214192,13 +213737,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libconfig-apacheformat-perl
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libcitadel2-dbg
 Architecture: armel
 Unseen: yes
 State: 3
@@ -216893,13 +216431,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: libobjc2
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libss2
 Architecture: armel
 Unseen: no
@@ -217409,7 +216940,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: barry-util
 Architecture: armel
@@ -218184,8 +217715,8 @@ Remove-Reason: 0
 Package: ltrace
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: getmail4
@@ -218303,9 +217834,9 @@ Remove-Reason: 0
 Package: patch
 Architecture: armel
 Unseen: no
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
+State: 3
+Dselect-State: 0
+Remove-Reason: 4
 
 Package: mbrola-sw1
 Architecture: armel
@@ -220127,6 +219658,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: installation-guide-s390x
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: libghc-llvm-base-prof
 Architecture: armel
 Unseen: yes
@@ -220797,7 +220335,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: winbind
 Architecture: armel
@@ -220916,7 +220454,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: system-config-audit
 Architecture: armel
@@ -222241,13 +221779,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-thm-arthemia
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libpam0g-dev
 Architecture: armel
 Unseen: yes
@@ -223249,13 +222780,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: doc-linux-de
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: coinor-libosi-dev
 Architecture: armel
 Unseen: yes
@@ -223397,6 +222921,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libchado-perl
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: libcvc3-dev
 Architecture: armel
 Unseen: yes
 State: 3
@@ -224701,9 +224232,9 @@ Remove-Reason: 0
 Package: librtmp0
 Architecture: armel
 Unseen: no
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
+State: 3
+Dselect-State: 3
+Remove-Reason: 4
 
 Package: byacc
 Architecture: armel
@@ -225136,7 +224667,7 @@ Package: libqt4-script
 Architecture: armel
 Unseen: yes
 State: 1
-Dselect-State: 1
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: solfege-oss
@@ -225662,7 +225193,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libsprng2-dev
 Architecture: armel
@@ -228499,13 +228030,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: python-hulahop
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: libmosquittopp0-dev
 Architecture: armel
 Unseen: yes
@@ -230191,7 +229715,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libplack-middleware-session-perl
 Architecture: armel
@@ -230555,7 +230079,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: libtext-csv-perl
 Architecture: armel
@@ -230576,7 +230100,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: vftool
 Architecture: armel
@@ -232179,7 +231703,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: qpdfview
 Architecture: armel
@@ -233427,13 +232951,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: gcc-4.5-source
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: fcitx-table
 Architecture: armel
 Unseen: yes
@@ -234018,8 +233535,8 @@ Remove-Reason: 0
 Package: libgstreamer-plugins-base0.10-0
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: agda-stdlib
@@ -234436,13 +233953,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: rivet-root-converter
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: pyjamas-pyjs
 Architecture: armel
 Unseen: yes
 State: 3
@@ -238423,7 +237933,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: uuidcdef
 Architecture: armel
@@ -242100,6 +241610,13 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
+Package: libnet-sslglue-perl
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
 Package: libghc-parsec2-prof
 Architecture: armel
 Unseen: yes
@@ -242108,20 +241625,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libxmltv-perl
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libnet-sslglue-perl
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-ldap-integration
 Architecture: armel
 Unseen: yes
 State: 3
@@ -243755,8 +243258,8 @@ Remove-Reason: 0
 Package: libboost-thread1.49-dev
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: pinentry-qt4
@@ -243970,13 +243473,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: krecipes-data
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: k9copy-dbg
 Architecture: armel
 Unseen: yes
 State: 3
@@ -244256,13 +243752,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: vworkspace-mmr-bin
-Architecture: armel
-Unseen: yes
-State: 1
-Dselect-State: 1
-Remove-Reason: 0
-
 Package: picon-users
 Architecture: armel
 Unseen: yes
@@ -244499,7 +243988,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: wesnoth-1.10-nr
 Architecture: armel
@@ -247224,13 +246713,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: drupal6-mod-pingback
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: catdvi
 Architecture: armel
 Unseen: yes
@@ -247547,13 +247029,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: ink-generator
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: libfparser-dev
 Architecture: armel
 Unseen: yes
 State: 3
@@ -250024,13 +249499,6 @@ State: 3
 Dselect-State: 0
 Remove-Reason: 0
 
-Package: maildir-bulletin
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
 Package: lprng-doc
 Architecture: armel
 Unseen: yes
@@ -250515,13 +249983,6 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: empathy-common
-Architecture: armel
-Unseen: yes
-State: 3
-Dselect-State: 0
-Remove-Reason: 0
-
-Package: drupal6-mod-tagadelic
 Architecture: armel
 Unseen: yes
 State: 3
@@ -251947,7 +251408,7 @@ Architecture: armel
 Unseen: yes
 State: 1
 Dselect-State: 1
-Remove-Reason: 0
+Remove-Reason: 4
 
 Package: redeclipse-server-dbg
 Architecture: armel
@@ -252498,8 +251959,8 @@ Remove-Reason: 0
 Package: liblockfile1
 Architecture: armel
 Unseen: yes
-State: 1
-Dselect-State: 1
+State: 3
+Dselect-State: 0
 Remove-Reason: 0
 
 Package: libwraster3-dev
@@ -253728,6 +253189,13 @@ Dselect-State: 0
 Remove-Reason: 0
 
 Package: libkontactinterface4
+Architecture: armel
+Unseen: yes
+State: 3
+Dselect-State: 0
+Remove-Reason: 0
+
+Package: installation-guide-armhf
 Architecture: armel
 Unseen: yes
 State: 3

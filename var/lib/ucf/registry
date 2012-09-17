@@ -1,1 +1,2 @@
 initscripts 	 /etc/default/rcS
+localepurge 	 /etc/locale.nopurge

@@ -1,6 +1,6 @@
                          Manual de usuario de aptitude
 
-Versión 0.6.8
+Versión 0.6.8.1
 
   Daniel Burrows
 
@@ -388,13 +388,13 @@ Introducción
        la base de la página y descargue el archivo “.orig.tar.gz”).
 
    Una vez que disponga de todos los componentes necesarios, abra una
-   terminal y ejecute la orden tar zxf aptitude-0.6.8.tar.gz para
+   terminal y ejecute la orden tar zxf aptitude-0.6.8.1.tar.gz para
    desempaquetar el código fuente. Una vez que haya desempaquetado el código
-   fuente, introduzca cd aptitude-0.6.8 && ./configure && make para compilar
-   aptitude. Si tiene éxito, asegúrese de que es el usuario root (usando su,
-   por ejemplo), y después teclee make install para instalar aptitude en su
-   equipo. Una vez que haya instalado aptitude con éxito, ejecutar aptitude
-   en una terminal debería iniciar el programa.
+   fuente, introduzca cd aptitude-0.6.8.1 && ./configure && make para
+   compilar aptitude. Si tiene éxito, asegúrese de que es el usuario root
+   (usando su, por ejemplo), y después teclee make install para instalar
+   aptitude en su equipo. Una vez que haya instalado aptitude con éxito,
+   ejecutar aptitude en una terminal debería iniciar el programa.
 
   Cómo seguir y participar en el desarrollo de aptitude.
 
@@ -4003,8 +4003,8 @@ Personalizar aptitude
                                                        devuelve nada.
                                                        Mostrar la versión de
    %n       Versión del      La longitud de  No        aptitude que está
-            programa         “0.6.8”.                  ejecutando,
-                                                       actualmente “0.6.8”.
+            programa         “0.6.8.1”.                ejecutando,
+                                                       actualmente “0.6.8.1”.
                                                        Mostrar el nombre del
    %N       Nombre del       La longitud del No        programa;
             programa         nombre.                   generalmente,

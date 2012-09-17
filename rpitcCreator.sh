@@ -2,7 +2,7 @@
 #FAT16 lba boot partition with kernel.img .elf and .bin
 bootsize="64M"
 #EXT4 root file system
-rootsize="2000M"
+rootsize="3000M"
 #size of your sdcard erase block size, needed to correctly align partitions
 delblocksize="128"
 device=$1

@@ -11,6 +11,7 @@
 
 PATH=/sbin:/bin
 . /lib/init/vars.sh
+. /lib/init/tmpfs.sh
 
 . /lib/lsb/init-functions
 . /lib/init/mount-functions.sh
@@ -54,12 +55,24 @@ do_start() {
 		mknod -m 600 "$INITCTL" p
 
 		# Reopen control channel.
-		kill -s USR1 1
+		PID="$(pidof /sbin/init || true)"
+		[ -n "$PID" ] && kill -s USR1 "$PID"
 	fi
 
 	# Execute swapon command again, in case we want to swap to
 	# a file on a now mounted filesystem.
 	swaponagain 'swapfile'
+
+	# Remount tmpfs filesystems; with increased VM after swapon,
+	# the size limits may be adjusted.
+	mount_run mount_noupdate
+	mount_lock mount_noupdate
+	mount_shm mount_noupdate
+
+	# Now we have mounted everything, check whether we need to
+	# mount a tmpfs on /tmp.  We can now also determine swap size
+	# to factor this into our size limit.
+	mount_tmp mount_noupdate
 }
 
 case "$1" in

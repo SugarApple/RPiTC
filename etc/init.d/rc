@@ -20,16 +20,6 @@ export PATH
 # this for debugging a real boot process as no scripts will be executed.
 # debug=echo
 
-# Specify method used to enable concurrent init.d scripts.
-# Valid options are 'none' and 'makefile'.  Obsolete options
-# used earlier are 'shell' and 'startpar'.  The obsolete options
-# are aliases for 'makefile' since 2010-05-14.  The default since
-# the same date is 'makefile', as the init.d scripts in Debian now
-# include dependency information and are ordered using this
-# information.  See insserv for information on dependency based
-# boot sequencing.
-CONCURRENCY=makefile
-
 # Make sure the name survive changing the argument list
 scriptname="$0"
 
@@ -79,15 +69,20 @@ fi
 # insserv package to be enabled. Boot concurrency also requires
 # startpar to be installed.
 #
-if [ "none" != "$CONCURRENCY" ] ; then
-	test -s /etc/init.d/.depend.boot  || CONCURRENCY="none"
-	test -s /etc/init.d/.depend.start || CONCURRENCY="none"
-	test -s /etc/init.d/.depend.stop  || CONCURRENCY="none"
-	if test -e /etc/init.d/.legacy-bootordering ; then
-		CONCURRENCY="none"
-	fi
-	startpar -v      > /dev/null 2>&1 || CONCURRENCY="none"
+CONCURRENCY=makefile
+test -s /etc/init.d/.depend.boot  || CONCURRENCY="none"
+test -s /etc/init.d/.depend.start || CONCURRENCY="none"
+test -s /etc/init.d/.depend.stop  || CONCURRENCY="none"
+if test -e /etc/init.d/.legacy-bootordering ; then
+	CONCURRENCY="none"
 fi
+if ! test -e /proc/stat; then
+	if [ "$(uname)" = "GNU/kFreeBSD" ] ; then
+		# startpar requires /proc/stat
+		mount -t linprocfs linprocfs /proc
+	fi
+fi
+startpar -v > /dev/null 2>&1 || CONCURRENCY="none"
 
 #
 # Start script or program.
@@ -104,12 +99,17 @@ case "$CONCURRENCY" in
 				log_failure_msg "startpar: service(s) returned failure: $failed_service"
 			fi
 
-			if [ -n "$skipped_service" ]
+			if [ -n "$skipped_service_not_installed" ]
 			then
-				log_warning_msg "startpar: service(s) skipped: $skipped_service"
+				log_warning_msg "startpar: service(s) skipped, program is not installed: $skipped_service_not_installed"
 			fi
 
-			unset failed_service skipped_service
+			if [ -n "$skipped_service_not_configured" ]
+			then
+				log_warning_msg "startpar: service(s) skipped, program is not configured: $skipped_service_not_configured"
+			fi
+
+			unset failed_service skipped_service_not_installed skipped_service_not_configured
 		}
 		;;
 	none|*)

@@ -1,6 +1,0 @@
-auto lo
-iface lo inet loopback
-
-auto eth0
-#NetworkManager#iface eth0 inet dhcp
-

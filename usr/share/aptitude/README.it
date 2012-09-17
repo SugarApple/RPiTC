@@ -1,6 +1,6 @@
                            Manuale utente di aptitude
 
-Versione 0.6.8
+Versione 0.6.8.1
 
   Daniel Burrows
 
@@ -390,8 +390,8 @@ Come si può ottenere aptitude?
        pagina fino in fondo e scaricare il file «.orig.tar.gz».)
 
    Una volta disponibili tutti i componenti richiesti, aprire un terminale ed
-   eseguire il comando tar xzf aptitude-0.6.8.tar.gz per estrarre il codice
-   sorgente. Una volta fatto, digitare cd aptitude-0.6.8&& ./configure &&
+   eseguire il comando tar xzf aptitude-0.6.8.1.tar.gz per estrarre il codice
+   sorgente. Una volta fatto, digitare cd aptitude-0.6.8.1&& ./configure &&
    make per compilare aptitude. Se ciò avviene con successo, assicurarsi di
    essere l'utente root (usando su, ad esempio), poi digitare make install
    per installare aptitude sul computer. Una volta che aptitude è installato
@@ -4162,10 +4162,10 @@ Personalizzare aptitude
             automatico                               in output «A»,
                                                      altrimenti l'output è
                                                      vuoto.
-                                                     Produce in output la
-   %n       Versione del    La lunghezza No          versione di aptitude che
-            programma       di «0.6.8».              è in esecuzione,
-                                                     attualmente «0.6.8».
+                            La lunghezza             Produce in output la
+   %n       Versione del    di           No          versione di aptitude che
+            programma       «0.6.8.1».               è in esecuzione,
+                                                     attualmente «0.6.8.1».
             Nome del        La lunghezza             Produce in output il
    %N       programma       del nome.    No          nome del programma;
                                                      solitamente «aptitude».

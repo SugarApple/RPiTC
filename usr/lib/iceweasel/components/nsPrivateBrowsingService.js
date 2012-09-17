@@ -1,8 +1,8 @@
-//@line 38 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
+//@line 38 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
 
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 
-//@line 44 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
+//@line 44 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
 
 ////////////////////////////////////////////////////////////////////////////////
 //// Utilities
@@ -301,7 +301,7 @@ PrivateBrowsingService.prototype = {
     if (!win.closed)
       return win;
 
-//@line 343 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
+//@line 343 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
     win = null;
     var windowsEnum = wm.getEnumerator("navigator:browser");
     // this is oldest to newest, so this gets a bit ugly
@@ -311,7 +311,7 @@ PrivateBrowsingService.prototype = {
         win = nextWin;
     }
     return win;
-//@line 361 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
+//@line 361 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/privatebrowsing/src/nsPrivateBrowsingService.js"
   },
 
   _ensureCanCloseWindows: function PBS__ensureCanCloseWindows() {

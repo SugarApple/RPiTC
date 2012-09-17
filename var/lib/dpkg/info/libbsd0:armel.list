@@ -1,7 +1,7 @@
 /.
 /lib
 /lib/arm-linux-gnueabi
-/lib/arm-linux-gnueabi/libbsd.so.0.4.0
+/lib/arm-linux-gnueabi/libbsd.so.0.4.2
 /usr
 /usr/share
 /usr/share/doc

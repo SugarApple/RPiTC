@@ -105,6 +105,43 @@ Iceweasel Web Browser
 iceweasel %u
 2
 0
+-wicd.desktop
+Wicd Network Manager
+Start the Wicd client without system tray icon
+wicd-gtk
+
+7
+Wicd Network Manager
+wicd-gtk --no-tray
+0
+0
+
++System
+System Tools
+System configuration and monitoring
+applications-system
+lxde-system-tools.directory
+2
+-debian-uxterm.desktop
+UXTerm
+standard terminal emulator for the X window system
+xterm-color_48x48
+
+7
+UXTerm
+uxterm
+0
+0
+-debian-xterm.desktop
+XTerm
+standard terminal emulator for the X window system
+xterm-color_48x48
+
+7
+XTerm
+xterm
+0
+0
 
 -
 +DesktopSettings

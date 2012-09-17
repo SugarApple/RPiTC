@@ -47,13 +47,9 @@ application/x-ustar; /usr/bin/xarchiver -- '%s'; edit=/usr/bin/xarchiver -- '%s'
 application/x-gzip; /usr/bin/xarchiver -- '%s'; edit=/usr/bin/xarchiver -- '%s'; description="GZ compressed file"; test=test -n "$DISPLAY"
 application/x-bzip2; /usr/bin/xarchiver -- '%s'; edit=/usr/bin/xarchiver -- '%s'; description="BZIP2 compressed file"; test=test -n "$DISPLAY"
 application/x-lzma; /usr/bin/xarchiver -- '%s'; edit=/usr/bin/xarchiver -- '%s'; description="LZMA compressed file"; test=test -n "$DISPLAY"
-text/plain; view '%s'; edit=vim '%s'; compose=vim '%s'; test=test -x /usr/bin/vim; needsterminal
-text/plain; view '%s'; edit=vi '%s'; compose=vi '%s'; needsterminal
 image/png;  /usr/bin/iceweasel '%s'; description=PNG Image; test=test -n "$DISPLAY";  nametemplate=%s.png
 image/jpeg;  /usr/bin/iceweasel '%s'; description=JPEG Image; test=test -n "$DISPLAY";  nametemplate=%s.jpeg
 image/gif;  /usr/bin/iceweasel '%s'; description=GIF Image; test=test -n "$DISPLAY";  nametemplate=%s.gif
 text/*; less '%s'; needsterminal
-text/*; view '%s'; edit=vim '%s'; compose=vim '%s'; test=test -x /usr/bin/vim; needsterminal
 text/*; more '%s'; needsterminal
-text/*; view '%s'; edit=vi '%s'; compose=vi '%s'; needsterminal
 application/x-debian-package; /usr/lib/mime/debian-view '%s'; needsterminal; description=Debian GNU/Linux Package; nametemplate=%s.deb

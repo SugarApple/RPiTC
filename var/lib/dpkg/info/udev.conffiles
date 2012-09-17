@@ -1,5 +1,5 @@
-/etc/modprobe.d/fbdev-blacklist.conf
-/etc/init.d/udev
-/etc/init.d/udev-mtab
 /etc/udev/links.conf
 /etc/udev/udev.conf
+/etc/init.d/udev
+/etc/init.d/udev-mtab
+/etc/modprobe.d/fbdev-blacklist.conf

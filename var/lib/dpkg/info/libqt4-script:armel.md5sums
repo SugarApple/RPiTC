@@ -1,7 +1,0 @@
-6501d622dc18086fbead230033a1a977  usr/lib/arm-linux-gnueabi/libQtScript.so.4.8.2
-9c4da02ee1b2a80d4f4ed6c4d01a5f65  usr/lib/arm-linux-gnueabi/qt4/plugins/script/libqtscriptdbus.so
-411080a56ff917a5a1aa08c98acae354  usr/share/doc/libqt4-script/LGPL_EXCEPTION.txt
-29e305311916aa31c7d6f72c9f8c7ba0  usr/share/doc/libqt4-script/changelog.Debian.gz
-99d380476d9154b80ffdd772a32eac0a  usr/share/doc/libqt4-script/changelog.gz
-6554abaa9d7013bd3a7b13294c73b55c  usr/share/doc/libqt4-script/copyright
-4bf764d5d26efe445976cce167717834  usr/share/lintian/overrides/libqt4-script

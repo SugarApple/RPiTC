@@ -1,13 +1,17 @@
 kernel/kernel/configs.ko
 kernel/fs/mbcache.ko
+kernel/fs/aufs/aufs.ko
 kernel/fs/autofs4/autofs4.ko
 kernel/fs/cachefiles/cachefiles.ko
 kernel/fs/configfs/configfs.ko
+kernel/fs/ext2/ext2.ko
+kernel/fs/ext3/ext3.ko
 kernel/fs/ext4/ext4.ko
 kernel/fs/fat/fat.ko
 kernel/fs/fat/vfat.ko
 kernel/fs/fat/msdos.ko
 kernel/fs/fscache/fscache.ko
+kernel/fs/jbd/jbd.ko
 kernel/fs/jbd2/jbd2.ko
 kernel/fs/lockd/lockd.ko
 kernel/fs/nfs/nfs.ko
@@ -15,6 +19,7 @@ kernel/fs/nfs_common/nfs_acl.ko
 kernel/fs/nls/nls_base.ko
 kernel/fs/nls/nls_cp437.ko
 kernel/fs/nls/nls_ascii.ko
+kernel/fs/squashfs/squashfs.ko
 kernel/crypto/crypto.ko
 kernel/crypto/crypto_wq.ko
 kernel/crypto/crypto_algapi.ko
@@ -86,3 +91,6 @@ kernel/lib/crc16.ko
 kernel/lib/crc-itu-t.ko
 kernel/lib/crc32.ko
 kernel/lib/libcrc32c.ko
+kernel/lib/lzo/lzo_decompress.ko
+kernel/lib/xz/xz_dec.ko
+kernel/lib/zlib_inflate/zlib_inflate.ko

@@ -18,7 +18,7 @@ f319b839947cea6ada25f4febb5588c7  usr/share/locale/es/LC_MESSAGES/debian-tasks.m
 904cbcc4763c55af266dcfea004c7f5f  usr/share/locale/et/LC_MESSAGES/debian-tasks.mo
 795247e204276397aa719fc1a5e055ac  usr/share/locale/eu/LC_MESSAGES/debian-tasks.mo
 e36034acc0276f80492d89e547aa0ca7  usr/share/locale/fi/LC_MESSAGES/debian-tasks.mo
-f4bad5a1967a048582467b16050bcae2  usr/share/locale/fr/LC_MESSAGES/debian-tasks.mo
+8bf94659e5432f2b5134e502074519d8  usr/share/locale/fr/LC_MESSAGES/debian-tasks.mo
 102e2b9f2a7079633a0078582d134a02  usr/share/locale/gl/LC_MESSAGES/debian-tasks.mo
 448a0c3e81f70df7a1617166225df8a2  usr/share/locale/gu/LC_MESSAGES/debian-tasks.mo
 9d5fdb4468fefdf1e7361dc86eca3840  usr/share/locale/he/LC_MESSAGES/debian-tasks.mo
@@ -57,4 +57,4 @@ dece80754169d2d368ff5b934f3236c9  usr/share/locale/uk/LC_MESSAGES/debian-tasks.m
 05b2050a9516a88c4c3efbbf37466f24  usr/share/locale/wo/LC_MESSAGES/debian-tasks.mo
 a953a9f775fe6a6bae2f6012f96f6d78  usr/share/locale/zh_CN/LC_MESSAGES/debian-tasks.mo
 4a8825b1bb68803a00620028ff54b450  usr/share/locale/zh_TW/LC_MESSAGES/debian-tasks.mo
-532e34d73a0eff464380b9776a685a33  usr/share/tasksel/descs/debian-tasks.desc
+98654a7ef3a253c5c4352e7305ad62d9  usr/share/tasksel/descs/debian-tasks.desc

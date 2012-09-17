@@ -9,9 +9,9 @@
 
 /* Package name      : perl5
  * Source directory  : .
- * Configuration time: Tue Jun 19 02:15:08 UTC 2012
+ * Configuration time: Fri Sep  7 03:04:14 UTC 2012
  * Configured by     : Debian Project
- * Target system     : linux alain 2.6.32 #1 fri jan 20 18:19:54 utc 2012 armv5tel gnulinux 
+ * Target system     : linux arnold 2.6.32 #1 fri jan 20 18:19:54 utc 2012 armv5tel gnulinux 
  */
 
 #ifndef _config_h_

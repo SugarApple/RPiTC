@@ -324,7 +324,7 @@ ec8d323c9c4adbeddd3057e202519972  usr/share/X11/xkb/types/numpad
 a228740ca9f8e9a706ff543ecc54dbdf  usr/share/X11/xkb/types/pc
 2791f0721fa39d731fdcb71f89b6492d  usr/share/doc/xkb-data/NEWS.Debian.gz
 ad4a9d326d095726b0d05a3598909d59  usr/share/doc/xkb-data/README.Debian
-ecc781dc65da28efafae6ec9f86cc462  usr/share/doc/xkb-data/changelog.Debian.gz
+4957cdd31faeb52a1c169c806c56d28d  usr/share/doc/xkb-data/changelog.Debian.gz
 5cb1c3f5dd41dc4a21739d6ce8ef2bf8  usr/share/doc/xkb-data/changelog.gz
 c755d980a354c1ba22f57934c55852b0  usr/share/doc/xkb-data/copyright
 d43560f1f37b81a576fcbdc840c7423c  usr/share/locale/af/LC_MESSAGES/xkeyboard-config.mo

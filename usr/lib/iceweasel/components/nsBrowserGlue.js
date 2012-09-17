@@ -1,4 +1,4 @@
-//@line 44 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 44 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
 
 const Ci = Components.interfaces;
 const Cc = Components.classes;
@@ -65,7 +65,7 @@ function BrowserGlue() {
   this._init();
 }
 
-//@line 115 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 115 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
 
 BrowserGlue.prototype = {
   _saveSession: false,
@@ -87,7 +87,7 @@ BrowserGlue.prototype = {
     Services.prefs.savePrefFile(null);
   },
 
-//@line 137 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 137 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
   _setSyncAutoconnectDelay: function BG__setSyncAutoconnectDelay() {
     // Assume that a non-zero value for services.sync.autoconnectDelay should override
     if (Services.prefs.prefHasUserValue("services.sync.autoconnectDelay")) {
@@ -109,7 +109,7 @@ BrowserGlue.prototype = {
     Cu.import("resource://services-sync/main.js");
     Weave.SyncScheduler.delayedAutoConnect(delay);
   },
-//@line 159 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 159 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
 
   // nsIObserver implementation 
   observe: function BG_observe(subject, topic, data) {
@@ -143,7 +143,7 @@ BrowserGlue.prototype = {
         // on quit-application.
         this._setPrefToSaveSession();
         break;
-//@line 193 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 193 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
       case "browser-lastwindow-close-requested":
         // The application is not actually quitting, but the last full browser
         // window is about to be closed.
@@ -152,11 +152,11 @@ BrowserGlue.prototype = {
       case "browser-lastwindow-close-granted":
         this._setPrefToSaveSession();
         break;
-//@line 203 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 203 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
       case "weave:service:ready":
         this._setSyncAutoconnectDelay();
         break;
-//@line 207 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 207 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
       case "session-save":
         this._setPrefToSaveSession(true);
         subject.QueryInterface(Ci.nsISupportsPRBool);
@@ -236,12 +236,12 @@ BrowserGlue.prototype = {
     os.addObserver(this, "browser:purge-session-history", false);
     os.addObserver(this, "quit-application-requested", false);
     os.addObserver(this, "quit-application-granted", false);
-//@line 287 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 287 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     os.addObserver(this, "browser-lastwindow-close-requested", false);
     os.addObserver(this, "browser-lastwindow-close-granted", false);
-//@line 291 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 291 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     os.addObserver(this, "weave:service:ready", false);
-//@line 293 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 293 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     os.addObserver(this, "session-save", false);
     os.addObserver(this, "places-init-complete", false);
     this._isPlacesInitObserver = true;
@@ -262,12 +262,12 @@ BrowserGlue.prototype = {
     os.removeObserver(this, "browser:purge-session-history");
     os.removeObserver(this, "quit-application-requested");
     os.removeObserver(this, "quit-application-granted");
-//@line 314 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 314 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     os.removeObserver(this, "browser-lastwindow-close-requested");
     os.removeObserver(this, "browser-lastwindow-close-granted");
-//@line 318 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 318 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     os.removeObserver(this, "weave:service:ready", false);
-//@line 320 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 320 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     os.removeObserver(this, "session-save");
     if (this._isIdleObserver)
       this._idleService.removeIdleObserver(this, BOOKMARKS_BACKUP_IDLE_TIME);
@@ -306,7 +306,7 @@ BrowserGlue.prototype = {
 
   // the first browser window has finished initializing
   _onFirstWindowLoaded: function BG__onFirstWindowLoaded() {
-//@line 368 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 368 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
   },
 
   // profile shutdown handler (contains profile cleanup routines)
@@ -320,7 +320,7 @@ BrowserGlue.prototype = {
     // Show about:rights notification, if needed.
     if (this._shouldShowRights()) {
       this._showRightsNotification();
-//@line 386 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 386 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     }
 
 
@@ -527,10 +527,10 @@ BrowserGlue.prototype = {
       return !Services.prefs.getBoolPref("browser.EULA.override");
     } catch (e) { }
 
-//@line 593 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 593 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     // Non-official builds shouldn't shouldn't show the notification.
     return false;
-//@line 596 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 596 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
 
     // Look to see if the user has seen the current version or not.
     var currentVersion = Services.prefs.getIntPref("browser.rights.version");
@@ -695,7 +695,7 @@ BrowserGlue.prototype = {
     }
   },
 
-//@line 838 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 838 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
 
   _showPluginUpdatePage: function BG__showPluginUpdatePage() {
     Services.prefs.setBoolPref(PREF_PLUGINS_NOTIFYUSER, false);
@@ -1286,7 +1286,7 @@ BrowserGlue.prototype = {
     }
   },
 
-//@line 1431 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 1431 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
 
   // this returns the most recent non-popup browser window
   getMostRecentBrowserWindow: function BG_getMostRecentBrowserWindow() {
@@ -1295,7 +1295,7 @@ BrowserGlue.prototype = {
              !win.document.documentElement.getAttribute("chromehidden");
     }
 
-//@line 1440 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 1440 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
     var win = Services.wm.getMostRecentWindow("navigator:browser");
 
     // if we're lucky, this isn't a popup, and we can just return this
@@ -1310,7 +1310,7 @@ BrowserGlue.prototype = {
       }
     }
     return win;
-//@line 1463 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/nsBrowserGlue.js"
+//@line 1463 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/nsBrowserGlue.js"
   },
 
 

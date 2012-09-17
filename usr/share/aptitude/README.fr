@@ -1,6 +1,6 @@
                        Manuel de l'utilisateur d'aptitude
 
-Version 0.6.8
+Version 0.6.8.1
 
   Daniel Burrows
 
@@ -383,13 +383,13 @@ Comment se procure-t-on aptitude ?
        « .orig.tar.gz »).
 
    Une fois tous ces composants réunis, ouvrez un terminal et exécutez la
-   commande : tar zxf aptitude-0.6.8.tar.gz pour désarchiver le code source.
-   Une fois les sources désarchivées, tapez cd aptitude-0.6.8 && ./configure
-   && make pour compiler aptitude. Si cela réussit, assurez-vous que vous
-   êtes sous l'utilisateur root (en utilisant, par exemple, su), tapez alors
-   make install pour installer aptitude sur votre ordinateur. Une fois
-   aptitude correctement installé, taper aptitude à l'invite de la ligne de
-   commande devrait lancer le programme.
+   commande : tar zxf aptitude-0.6.8.1.tar.gz pour désarchiver le code
+   source. Une fois les sources désarchivées, tapez cd aptitude-0.6.8.1 &&
+   ./configure && make pour compiler aptitude. Si cela réussit, assurez-vous
+   que vous êtes sous l'utilisateur root (en utilisant, par exemple, su),
+   tapez alors make install pour installer aptitude sur votre ordinateur. Une
+   fois aptitude correctement installé, taper aptitude à l'invite de la ligne
+   de commande devrait lancer le programme.
 
   Assurer le suivi, et participer au developpement d'aptitude
 
@@ -3948,147 +3948,156 @@ Personnalisation d'aptitude
           soit le paquet actuellement sélectionné. Dans la recherche avec
           l'interface en ligne de commande, c'est le paquet qui est affiché.
 
-   Commande        Nom         Taille par  Étirable        Description
+   Commande        Nom         Taille par   Étirable       Description
                                  défaut
-                                                    Ce n'est pas vraiment une
-                                                    commande de format, cela
-   %%       % littéral        1            Non      insère simplement un
-                                                    signe pourcentage dans
-                                                    l'affichage à l'endroit
-                                                    où elle est placée.
-                                                    Dans certaines
-                                                    circonstances, une chaîne
-                                                    de format d'affichage
-                                                    comportera des
-                                                    « paramètres » : par
-                                                    exemple, dans la ligne de
-            Remplacement de                         commande search, les
-   %#nombre paramètre         Variable     Non      groupes correspondants à
-                                                    la recherche sont
-                                                    utilisés comme paramètres
-                                                    lors de l'affichage du
-                                                    résultat. Le code de
-                                                    format sera remplacé par
-                                                    le paramètre indiqué par
-                                                    nombre.
-                                                    Caractère unique résumant
-                                                    l'action à exécuter sur
-   %a       Marque d'action   1            Non      le paquet, comme décrit
-                                                    dans Figure 2.10,
-                                                    « Valeurs de l'indicateur
-                                                    « d'action » ».
-                                                    Description plus lisible
-   %A       Action            10           Non      de l'action à exécuter
-                                                    sur le paquet.
-                                                    S'il n'y a pas de paquet
-                                                    cassé, cela ne produit
-            Comptage des                            rien. Sinon, cela produit
-   %B       cassés            12           Non      une chaîne telle que
-                                                    « Cassé : 10 » indiquant
-                                                    le nombre de paquets
-                                                    cassés.
-                                                    Caractère unique résumant
-                                                    l'état actuel du paquet,
-   %c       Marqueur d'état   1            Non      comme décrit dans
-            actuel                                  Figure 2.9, « Valeurs de
-                                                    l'indicateur de « l'état
-                                                    courant » ».
-                                                    Description plus lisible
-   %C       État actuel       11           Non      de l'état actuel du
-                                                    paquet.
-   %d       Description       40           Oui      Description courte du
-                                                    paquet.
-   %D       Taille du paquet  8            Non      Taille de l'archive
-                                                    contenant le paquet.
-                                                    Nom d'hôte de
-   %H       Nom d'hôte        15           Non      l'ordinateur sur lequel
-                                                    aptitude fonctionne.
-                                                    Affiche la priorité
-                                                    maximale assignée à la
-                                                    version du paquet. Pour
-   %i       Priorité (Pin     4            Non      les paquets, cela affiche
-            priority)                               la priorité de la version
-                                                    dans laquelle le paquet
-                                                    est forcé d'être installé
-                                                    (s'il y en a une).
-   %I       Taille installée  8            Non      Espace (estimé) que prend
-                                                    le paquet sur le disque.
-   %m       Responsable       30           Oui      Responsable du paquet.
-                                                    Si le paquet a été
-   %M       Marquage          1            Non      installé automatiquement,
-            automatique                             affiche « A », sinon
-                                                    n'affiche rien.
-            Version du        Longueur de           Outputs the version of
-   %n       programme         « 0.6.8 »    Non      aptitude that is running,
-                                                    currently « 0.6.8 ».
-                              The length            Outputs the name of the
-   %N       Nom du programme  of the name. Non      program; usually
-                                                    « aptitude ».
-                                                    Si aucun paquet ne doit
-                                                    être installé, n'affiche
-                                                    rien. Sinon, affiche une
-                                                    chaîne indiquant la
-            Taille à                                taille totale prise par
-   %o       télécharger       17           Non      les paquets à installer
-                                                    (c'est-à-dire une
-                                                    estimation de ce qu'il
-                                                    faut télécharger) ; par
-                                                    exemple, « 28,5ko à
-                                                    télécharger ».
-                                                    Affiche le nom du paquet.
-                                                    Quand un paquet est
-                                                    affiché dans une
-   %p       Nom du paquet     30           Oui      arborescence, le nom sera
-                                                    indenté, si possible, en
-                                                    fonction de la profondeur
-                                                    de l'arbre.
-   %P       Priorité          9            Non      Affiche la priorité du
-                                                    paquet.
-            Compteur des                            Affiche le nombre
-   %r       dépendances       2            Non      approximatif de paquets
-            inverses                                installés qui dépendent
-                                                    du paquet.
-                                                    Affiche la description
-            Abréviation de la                       abrégée de la priorité du
-   %R       priorité          3            Non      paquet : par exemple,
-                                                    « Important » devient
-                                                    « Imp ».
-   %s       Section           10           Non      Affiche la section du
-                                                    paquet.
-                                                    Si le paquet n'est pas
-   %S       Niveau de         1            Non      certifié par une source
-            confiance                               de confiance, affiche la
-                                                    lettre "U".
-   %t       Archive           10           Oui      Archive dans laquelle se
-                                                    trouve le paquet.
-                                                    Outputs « * » if the
-   %T       Étiqueté          1            Non      package is tagged,
-                                                    nothing otherwise.^[19]
-                                                    Si l'action prévue doit
-            Modification de                         modifier l'espace disque
-   %u       l'utilisation du  30           Non      utilisé, cela indique le
-            disque                                  changement, par exemple,
-                                                    « Utilisera 100,0Mo
-                                                    d'espace disque. »
-                                                    Affiche la version
-                                                    actuellement installée du
-   %v       Version actuelle  14           Non      paquet, ou <aucun> si le
-                                                    paquet n'est pas
-                                                    actuellement installé.
-                                                    Affiche la version du
-                                                    paquet qui serait
-                                                    installée si Paquet →
-   %V       Version           14           Non      Installer (+) était
-            installable                             exécuté sur le paquet, ou
-                                                    <aucun> si le paquet
-                                                    n'est pas actuellement
-                                                    installé.
-                                                    Affiche l'espace
-                                                    supplémentaire utilisé ou
-   %Z       Changement de     9            Non      l'espace libéré par
-            taille                                  l'installation, la mise à
-                                                    jour ou la suppression du
-                                                    paquet.
+                                                     Ce n'est pas vraiment
+                                                     une commande de format,
+                                                     cela insère simplement
+   %%       % littéral        1             Non      un signe pourcentage
+                                                     dans l'affichage à
+                                                     l'endroit où elle est
+                                                     placée.
+                                                     Dans certaines
+                                                     circonstances, une
+                                                     chaîne de format
+                                                     d'affichage comportera
+                                                     des « paramètres » : par
+                                                     exemple, dans la ligne
+                                                     de commande search, les
+   %#nombre Remplacement de   Variable      Non      groupes correspondants à
+            paramètre                                la recherche sont
+                                                     utilisés comme
+                                                     paramètres lors de
+                                                     l'affichage du résultat.
+                                                     Le code de format sera
+                                                     remplacé par le
+                                                     paramètre indiqué par
+                                                     nombre.
+                                                     Caractère unique
+                                                     résumant l'action à
+                                                     exécuter sur le paquet,
+   %a       Marque d'action   1             Non      comme décrit dans
+                                                     Figure 2.10, « Valeurs
+                                                     de l'indicateur
+                                                     « d'action » ».
+                                                     Description plus lisible
+   %A       Action            10            Non      de l'action à exécuter
+                                                     sur le paquet.
+                                                     S'il n'y a pas de paquet
+                                                     cassé, cela ne produit
+            Comptage des                             rien. Sinon, cela
+   %B       cassés            12            Non      produit une chaîne telle
+                                                     que « Cassé : 10 »
+                                                     indiquant le nombre de
+                                                     paquets cassés.
+                                                     Caractère unique
+                                                     résumant l'état actuel
+            Marqueur d'état                          du paquet, comme décrit
+   %c       actuel            1             Non      dans Figure 2.9,
+                                                     « Valeurs de
+                                                     l'indicateur de « l'état
+                                                     courant » ».
+                                                     Description plus lisible
+   %C       État actuel       11            Non      de l'état actuel du
+                                                     paquet.
+   %d       Description       40            Oui      Description courte du
+                                                     paquet.
+   %D       Taille du paquet  8             Non      Taille de l'archive
+                                                     contenant le paquet.
+                                                     Nom d'hôte de
+   %H       Nom d'hôte        15            Non      l'ordinateur sur lequel
+                                                     aptitude fonctionne.
+                                                     Affiche la priorité
+                                                     maximale assignée à la
+                                                     version du paquet. Pour
+            Priorité (Pin                            les paquets, cela
+   %i       priority)         4             Non      affiche la priorité de
+                                                     la version dans laquelle
+                                                     le paquet est forcé
+                                                     d'être installé (s'il y
+                                                     en a une).
+                                                     Espace (estimé) que
+   %I       Taille installée  8             Non      prend le paquet sur le
+                                                     disque.
+   %m       Responsable       30            Oui      Responsable du paquet.
+                                                     Si le paquet a été
+            Marquage                                 installé
+   %M       automatique       1             Non      automatiquement, affiche
+                                                     « A », sinon n'affiche
+                                                     rien.
+                                                     Outputs the version of
+   %n       Version du        Longueur de   Non      aptitude that is
+            programme         « 0.6.8.1 »            running, currently
+                                                     « 0.6.8.1 ».
+                              The length of          Outputs the name of the
+   %N       Nom du programme  the name.     Non      program; usually
+                                                     « aptitude ».
+                                                     Si aucun paquet ne doit
+                                                     être installé, n'affiche
+                                                     rien. Sinon, affiche une
+                                                     chaîne indiquant la
+            Taille à                                 taille totale prise par
+   %o       télécharger       17            Non      les paquets à installer
+                                                     (c'est-à-dire une
+                                                     estimation de ce qu'il
+                                                     faut télécharger) ; par
+                                                     exemple, « 28,5ko à
+                                                     télécharger ».
+                                                     Affiche le nom du
+                                                     paquet. Quand un paquet
+                                                     est affiché dans une
+   %p       Nom du paquet     30            Oui      arborescence, le nom
+                                                     sera indenté, si
+                                                     possible, en fonction de
+                                                     la profondeur de
+                                                     l'arbre.
+   %P       Priorité          9             Non      Affiche la priorité du
+                                                     paquet.
+            Compteur des                             Affiche le nombre
+   %r       dépendances       2             Non      approximatif de paquets
+            inverses                                 installés qui dépendent
+                                                     du paquet.
+                                                     Affiche la description
+            Abréviation de la                        abrégée de la priorité
+   %R       priorité          3             Non      du paquet : par exemple,
+                                                     « Important » devient
+                                                     « Imp ».
+   %s       Section           10            Non      Affiche la section du
+                                                     paquet.
+                                                     Si le paquet n'est pas
+   %S       Niveau de         1             Non      certifié par une source
+            confiance                                de confiance, affiche la
+                                                     lettre "U".
+   %t       Archive           10            Oui      Archive dans laquelle se
+                                                     trouve le paquet.
+                                                     Outputs « * » if the
+   %T       Étiqueté          1             Non      package is tagged,
+                                                     nothing otherwise.^[19]
+                                                     Si l'action prévue doit
+            Modification de                          modifier l'espace disque
+   %u       l'utilisation du  30            Non      utilisé, cela indique le
+            disque                                   changement, par exemple,
+                                                     « Utilisera 100,0Mo
+                                                     d'espace disque. »
+                                                     Affiche la version
+                                                     actuellement installée
+   %v       Version actuelle  14            Non      du paquet, ou <aucun> si
+                                                     le paquet n'est pas
+                                                     actuellement installé.
+                                                     Affiche la version du
+                                                     paquet qui serait
+                                                     installée si Paquet →
+   %V       Version           14            Non      Installer (+) était
+            installable                              exécuté sur le paquet,
+                                                     ou <aucun> si le paquet
+                                                     n'est pas actuellement
+                                                     installé.
+                                                     Affiche l'espace
+                                                     supplémentaire utilisé
+   %Z       Changement de     9             Non      ou l'espace libéré par
+            taille                                   l'installation, la mise
+                                                     à jour ou la suppression
+                                                     du paquet.
 
     Personnaliser la hiérarchie des paquets
 

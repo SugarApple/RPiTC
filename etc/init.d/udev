@@ -190,7 +190,7 @@ case "$1" in
     ;;
     stop)
     log_daemon_msg "Stopping the hotplug events dispatcher" "udevd"
-    if start-stop-daemon --stop --name udevd --quiet --oknodo --retry 5; then
+    if start-stop-daemon --stop --name udevd --user root --quiet --oknodo --retry 5; then
 	log_end_msg $?
     else
 	log_end_msg $?
@@ -207,7 +207,7 @@ case "$1" in
 
     restart)
     log_daemon_msg "Stopping the hotplug events dispatcher" "udevd"
-    if start-stop-daemon --stop --name udevd --quiet --oknodo --retry 5; then
+    if start-stop-daemon --stop --name udevd --user root --quiet --oknodo --retry 5; then
 	log_end_msg $?
     else
 	log_end_msg $? || true
@@ -306,7 +306,7 @@ case "$1" in
 
     stop)
     log_daemon_msg "Stopping the hotplug events dispatcher" "udevd"
-    if start-stop-daemon --stop --name udevd --quiet --oknodo --retry 5; then
+    if start-stop-daemon --stop --name udevd --user root --quiet --oknodo --retry 5; then
 	log_end_msg $?
     else
 	log_end_msg $?
@@ -315,7 +315,7 @@ case "$1" in
 
     restart)
     log_daemon_msg "Stopping the hotplug events dispatcher" "udevd"
-    if start-stop-daemon --stop --name udevd --quiet --oknodo --retry 5; then
+    if start-stop-daemon --stop --name udevd --user root --quiet --oknodo --retry 5; then
 	log_end_msg $?
     else
 	log_end_msg $? || true

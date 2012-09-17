@@ -1,9 +1,9 @@
 /* 
-//@line 38 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStartup.js"
+//@line 38 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStartup.js"
 */
 
 /**
-//@line 65 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/sessionstore/src/nsSessionStartup.js"
+//@line 65 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/sessionstore/src/nsSessionStartup.js"
 */
 
 /* :::::::: Constants and Helpers ::::::::::::::: */

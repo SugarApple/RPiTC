@@ -1,4 +1,4 @@
-//@line 42 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/feeds/src/FeedWriter.js"
+//@line 42 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/feeds/src/FeedWriter.js"
 
 const Cc = Components.classes;
 const Ci = Components.interfaces;
@@ -645,7 +645,7 @@ FeedWriter.prototype = {
    * @returns The display name of the application represented by the file.
    */
   _getFileDisplayName: function FW__getFileDisplayName(file) {
-//@line 702 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/feeds/src/FeedWriter.js"
+//@line 702 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/feeds/src/FeedWriter.js"
     return file.leafName;
   },
 
@@ -708,9 +708,9 @@ FeedWriter.prototype = {
           // XXXben - we need to compare this with the running instance executable
           //          just don't know how to do that via script...
           // XXXmano TBD: can probably add this to nsIShellService
-//@line 770 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/feeds/src/FeedWriter.js"
+//@line 770 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/feeds/src/FeedWriter.js"
           if (fp.file.leafName != "iceweasel-bin") {
-//@line 773 "/build/buildd-iceweasel_10.0.6esr-1-armel-kF5fsa/iceweasel-10.0.6esr/browser/components/feeds/src/FeedWriter.js"
+//@line 773 "/build/buildd-iceweasel_10.0.7esr-2-armel-QajZVO/iceweasel-10.0.7esr/browser/components/feeds/src/FeedWriter.js"
             this._initMenuItemWithFile(this._contentSandbox.selectedAppMenuItem,
                                        this._selectedApp);
 
