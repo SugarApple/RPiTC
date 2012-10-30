@@ -108,7 +108,7 @@ Description-pl.UTF-8: Wybierz oprogramowanie do instalacji:
  W tym momencie tylko podstawowy system jest zainstalowany. By dostosować instalację do Twoich potrzeb możesz wybrać instalację jednego lub więcej z poniższych predefiniowanych zestawów oprogramowania.
 Description-pt.UTF-8: Escolha o software a instalar:
  Neste momento, apenas está instalado o coração do sistema. Para afinar o sistema de acordo com as suas necessidades, pode escolher instalar uma ou mais das seguintes colecções de software pré-definidas.
-Description-pt_BR.UTF-8: Escolha a software a ser instalado : 
+Description-pt_BR.UTF-8: Escolha o software a ser instalado:
  No momento, somente o básico do sistema está instalado. Para refinar seu sistema e deixá-lo de acordo com suas necessidades, você pode optar por instalar uma ou mais das coleções de software pré-definidas a seguir.
 Description-ro.UTF-8: Alegeți programele de instalat:
  Momentan, numai partea esențială a sistemului este instalat. Pentru a configura sistemul pentru propriile necesități, puteți alege să instalați una sau mai multe din următoarele colecții predefinite de programe.
@@ -260,7 +260,7 @@ Description-pl.UTF-8: Wybierz oprogramowanie do instalacji:
  Możesz wybrać jeden lub więcej z poniższych predefiniowanych zestawów oprogramowania.
 Description-pt.UTF-8: Escolha o software a instalar:
  Pode escolher instalar uma ou mais das seguintes colecções de software pré-definidas.
-Description-pt_BR.UTF-8: Escolha a software a ser instalado : 
+Description-pt_BR.UTF-8: Escolha o software a ser instalado:
  Você pode optar por instalar uma ou mais das coleções de software pré-definidas a seguir.
 Description-ro.UTF-8: Alegeți programele de instalat:
  Puteți alege să instalați una sau mai multe din următoarele colecții predefinite de programe.
@@ -305,7 +305,7 @@ Description-zh_TW.UTF-8: 選擇所要安裝的軟體：
 
 Template: tasksel/desktop
 Type: multiselect
-Choices: gnome, kde, xfce
+Choices: gnome, kde, xfce, lxde
 Default: gnome
 Description: The desktop environment to install when the desktop task is selected
  This can be preseeded to change the default.

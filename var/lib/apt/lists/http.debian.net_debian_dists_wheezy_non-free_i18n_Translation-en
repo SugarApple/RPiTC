@@ -1134,15 +1134,6 @@ Description-en: AMD XvBA (X-Video Bitstream Acceleration) development files
  video.
  This package contains the development files.
 
-Package: firmware-crystalhd
-Description-md5: f2b34a9b8da985f08d05c0512b0c8488
-Description-en: Crystal HD Video Decoder (firmware)
- Crystal HD Solution is a product offered by Broadcom. It is used to enable
- flawless playback of 1080p high definition video across a wide range of
- systems.
- .
- This package contains the CrystalHD firmware.
-
 Package: firmware-atheros
 Description-md5: 7922e9514ab00deb67a4dfa2f5952fd9
 Description-en: Binary firmware for Atheros wireless cards
@@ -2080,19 +2071,18 @@ Description-en: documentation for the Inform interactive fiction language (v6)
   * the Inform Beginner's Guide
 
 Package: intel-microcode
-Description-md5: cbcc9fe584a3392576463d76507fb857
-Description-en: Processor microcode data file for Intel CPUs
- The microcode data file for Linux contains the latest microcode
- definitions for all Intel processors. Intel releases microcode
+Description-md5: 642afeac73eb40c21b5551ce1694ab40
+Description-en: Processor microcode firmware for Intel CPUs
+ This package contains updated system processor microcode for
+ Intel i686 and Intel X86-64 processors.  Intel releases microcode
  updates to correct processor behavior as documented in the
- respective processor specification updates. While the regular
- approach to getting this microcode update is via a BIOS upgrade,
- Intel realizes that this is an administrative hassle; the Linux
- Operating System has a mechanism to update the microcode after
- booting the OS.
+ respective processor specification updates.
  .
- This package contains only the microcode, so it needs the loader
- provided in the package microcode.ctl
+ Installing iucode-tool is recommended, as it can automatically
+ limit the selection of Intel processor microcode files installed
+ into the initramfs, reducing initramfs bloat by a large factor.
+ .
+ For AMD processors, please refer to the amd64-microcode package.
 
 Package: iozone3
 Description-md5: b437f538cf6e057f5e72b5f466c55cd6
@@ -3608,11 +3598,12 @@ Description-en: NVIDIA Visual Profiler
  applications.
 
 Package: libcuda1
-Description-md5: 15472cac2315e5e4d70d669dcad92f1d
+Description-md5: b1469a871465ac161cc9599804bed398
 Description-en: NVIDIA CUDA runtime library
  The Compute Unified Device Architecture (CUDA) enables NVIDIA
  graphics processing units (GPUs) to be used for massively parallel
  general purpose computation.
+ .
  This package contains the driver specific runtime library.
  .
  Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
@@ -3621,23 +3612,16 @@ Description-en: NVIDIA CUDA runtime library
  Please see the nvidia-kernel-dkms or
  nvidia-kernel-source packages
  for building the kernel module required by this package.
- This will provide nvidia-kernel-302.17.
+ This will provide nvidia-kernel-304.48.
 
 Package: libcuda1-ia32
-Description-md5: 84f487917373a450efe754930c783a12
-Description-en: NVIDIA CUDA runtime library (32-bit)
- The Compute Unified Device Architecture (CUDA) enables NVIDIA
- graphics processing units (GPUs) to be used for massively parallel
- general purpose computation.
- This package contains the driver specific runtime library (32-bit).
+Description-md5: b767adc6ae9dc4ebb3c5bf9869391c24
+Description-en: please switch to multiarch libcuda1:i386
+ This is an empty transitional package to aid switching to multiarch.
  .
- Supported NVIDIA devices include GPUs starting from GeForce 8 and Quadro FX
- series, as well as the Tesla computing processors.
- .
- Please see the nvidia-kernel-dkms or
- nvidia-kernel-source packages
- for building the kernel module required by this package.
- This will provide nvidia-kernel-302.17.
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install libcuda1:i386
 
 Package: libgl1-nvidia-alternatives
 Description-md5: 4e3d725e4bb9a5416ad07ab56385ff84
@@ -3656,22 +3640,23 @@ Description-en: simplifies replacing MESA libGL with GPU vendor libraries (32-bi
  vendors.  Handles both libGL.so.1 and libGL.so.
 
 Package: libgl1-nvidia-glx
-Description-md5: 533eb9a48643d14523477ebbdb4427e5
+Description-md5: c4bca7682272c36b0ba08b837b2b73c7
 Description-en: NVIDIA binary OpenGL libraries
  These binary libraries provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server.
+ .
  See the description of the nvidia-glx package
  or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
  for a complete list of supported GPUs and PCI IDs.
 
 Package: libgl1-nvidia-glx-ia32
-Description-md5: 33c426689415e04ef87db9dba6035c90
-Description-en: NVIDIA binary OpenGL 32-bit libraries
- These binary 32-bit libraries provide optimized hardware acceleration of
- OpenGL applications via a direct-rendering X Server.
- See the description of the nvidia-glx package
- or /usr/share/doc/libgl1-nvidia-glx/README.txt.gz
- for a complete list of supported GPUs and PCI IDs.
+Description-md5: c28142e1110497df06cbc6bd334ea5dd
+Description-en: please switch to multiarch libgl1-nvidia-glx:i386
+ This is an empty transitional package to aid switching to multiarch.
+ .
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install libgl1-nvidia-glx:i386
 
 Package: libglx-nvidia-alternatives
 Description-md5: 8ade8bc2541386037a79a896dcec078a
@@ -3706,29 +3691,30 @@ Description-en: NVIDIA runtime compiler library
  This package contains the runtime compiler library.
 
 Package: libnvidia-compiler-ia32
-Description-md5: c2dca072fd94e276293cdd975d2bb003
-Description-en: NVIDIA runtime compiler library (32-bit)
- The Compute Unified Device Architecture (CUDA) enables NVIDIA
- graphics processing units (GPUs) to be used for massively parallel
- general purpose computation.
+Description-md5: 7e582cb77cb7e3d87c2e009fe8ba18d0
+Description-en: please switch to multiarch libnvidia-compiler:i386
+ This is an empty transitional package to aid switching to multiarch.
  .
- This package contains the runtime compiler library (32-bit).
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install libnvidia-compiler:i386
 
 Package: libnvidia-ml1
-Description-md5: 563a2e2779851dd841ad7185ddf535e8
+Description-md5: a39d3605112e28420caf2d8f7ac304f7
 Description-en: NVIDIA management library (NVML) runtime library
  NVML provides programmatic access to static information and monitoring
- data for NVIDIA GPUs, as well as limited managment capabilities.
+ data for NVIDIA GPUs, as well as limited management capabilities.
  It is intended for use with Tesla compute products.
  .
  This package contains the nvidia-ml runtime library.
 
 Package: nvidia-alternative
-Description-md5: b938610f71e3527194c170327c7420d8
+Description-md5: 1ea3155e7c2fa4dd1c6118334fe4b0f7
 Description-en: allows the selection of NVIDIA as GLX provider
  In setups with several NVIDIA driver versions installed (e.g. current and
  legacy) this metapackage registers an alternative to allow easy switching
  between the different versions.
+ .
  Use 'update-alternatives --config nvidia' to select a version.
  .
  This package does not depend on the corresponding NVIDIA libraries.
@@ -3744,16 +3730,17 @@ Description-en: NVIDIA GPU detection utility
  installation.
 
 Package: nvidia-glx
-Description-md5: 64e8094a6c33d8bd7a67e3d8857f4600
+Description-md5: 9ccae2985a5bd53ee9a004177ee4017d
 Description-en: NVIDIA metapackage
  This metapackage depends on the NVIDIA binary driver and libraries
  that provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server.
  AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ .
  Please see the nvidia-kernel-dkms or
  nvidia-kernel-source packages
  for building the kernel module required by this package.
- This will provide nvidia-kernel-302.17.
+ This will provide nvidia-kernel-304.48.
  .
  This version only supports GeForce 6xxx and higher of the Geforce GPUs
  plus complimentary Quadros and nforce.  Look at the legacy packages
@@ -3769,13 +3756,14 @@ Description-en: NVIDIA 32-bit libraries (transitional package)
  libgl1-nvidia-glx-ia32.
 
 Package: nvidia-kernel-dkms
-Description-md5: 62c68e8145c7708908e5db88df3c0dad
+Description-md5: b0ece1fcd01bf141f5cc8399d698b049
 Description-en: NVIDIA binary kernel module DKMS source
  This package builds the NVIDIA Xorg binary kernel module needed by
  nvidia-glx, using DKMS.
  Provided that you have the kernel header packages installed, the kernel
  module will be built for your running kernel and automatically rebuilt for
  any new kernel headers that are installed.
+ .
  The NVIDIA binary drivers provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server for graphics cards
  using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
@@ -3789,11 +3777,12 @@ Description-en: NVIDIA binary kernel module DKMS source
  for a complete list of supported GPUs and PCI IDs.
 
 Package: nvidia-kernel-source
-Description-md5: 2828f141a8102fc5966f54b0fc38ecd6
+Description-md5: 3dfd7a8238da82c4e485fe69b6cd454c
 Description-en: NVIDIA binary kernel module source
  This package provides the source for the NVIDIA Xorg binary kernel module
  needed by nvidia-glx in a form suitable
  for use by module-assistant or kernel-package.
+ .
  The NVIDIA binary drivers provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server for graphics cards
  using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
@@ -3821,14 +3810,13 @@ Description-en: NVIDIA OpenCL library
  library provided by NVIDIA.
 
 Package: nvidia-libopencl1-ia32
-Description-md5: 35d4ae363565956faa116ccc9054116f
-Description-en: NVIDIA OpenCL 32-bit library
- OpenCL (Open Computing Language) is a multivendor open standard for
- general-purpose parallel programming of heterogeneous systems that include
- CPUs, GPUs and other processors.
+Description-md5: 3cf60328965ccfc02599967f0a9b887d
+Description-en: please switch to multiarch nvidia-libopencl1:i386
+ This is an empty transitional package to aid switching to multiarch.
  .
- This package contains the installable client driver loader (ICD Loader)
- 32-bit library provided by NVIDIA.
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install nvidia-libopencl1:i386
 
 Package: nvidia-opencl-common
 Description-md5: e92f1e2520950649b21c01f4c6b66265
@@ -3851,14 +3839,13 @@ Description-en: NVIDIA OpenCL ICD
  OpenCL.
 
 Package: nvidia-opencl-icd-ia32
-Description-md5: 323538c54f1e37902b9fb53d2f87b7ad
-Description-en: NVIDIA OpenCL ICD (32-bit)
- OpenCL (Open Computing Language) is a multivendor open standard for
- general-purpose parallel programming of heterogeneous systems that include
- CPUs, GPUs and other processors.
+Description-md5: d13db88e7705d3a0a27b0614530d5de9
+Description-en: please switch to multiarch nvidia-opencl-icd:i386
+ This is an empty transitional package to aid switching to multiarch.
  .
- This metapackage provides the 32-bit NVIDIA installable client driver (ICD) for
- OpenCL.
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install nvidia-opencl-icd:i386
 
 Package: nvidia-smi
 Description-md5: fe25a9265cfe03fd8f7746c2e8516ce7
@@ -3868,11 +3855,12 @@ Description-en: NVIDIA System Management Interface
  Computing Systems.
 
 Package: nvidia-vdpau-driver
-Description-md5: df7cf44c499e403b266c912ae554d087
+Description-md5: fef8ab34cff9b6e38d7bd8a91b1512e1
 Description-en: NVIDIA vdpau driver
  These libraries provide the Video Decode and Presentation API for Unix.
  They provide accelerated video playback (incl. H.264) for the supported
  graphics cards.
+ .
  This package contains the NVIDIA VDPAU driver.
  .
  See /usr/share/doc/nvidia-vdpau-driver/README.txt.gz
@@ -3881,34 +3869,28 @@ Description-en: NVIDIA vdpau driver
  Please see the nvidia-kernel-dkms or
  nvidia-kernel-source packages
  for building the kernel module required by this package.
- This will provide nvidia-kernel-302.17.
+ This will provide nvidia-kernel-304.48.
 
 Package: nvidia-vdpau-driver-ia32
-Description-md5: 7a3152675e083cd6abe74c16f6e69dbf
-Description-en: NVIDIA vdpau 32-bit driver
- These libraries provide the Video Decode and Presentation API for Unix.
- They provide accelerated video playback (incl. H.264) for the supported
- graphics cards.
- This package contains the NVIDIA VDPAU driver (32-bit).
+Description-md5: 1ab8c4c59ddf351560ae5c7b186e05d4
+Description-en: please switch to multiarch nvidia-vdpau-driver:i386
+ This is an empty transitional package to aid switching to multiarch.
  .
- See /usr/share/doc/nvidia-vdpau-driver-ia32/README.txt.gz
- for more information.
- .
- Please see the nvidia-kernel-dkms or
- nvidia-kernel-source packages
- for building the kernel module required by this package.
- This will provide nvidia-kernel-302.17.
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install nvidia-vdpau-driver:i386
 
 Package: xserver-xorg-video-nvidia
-Description-md5: 2aeda085cef41631b89aacb2ed5fcaaf
+Description-md5: d3a49da3646d7ce0533784ec03852559
 Description-en: NVIDIA binary Xorg driver
  These binary drivers provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server.
  AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ .
  Please see the nvidia-kernel-dkms or
  nvidia-kernel-source packages
  for building the kernel module required by this package.
- This will provide nvidia-kernel-302.17.
+ This will provide nvidia-kernel-304.48.
  .
  This version only supports GeForce 6xxx and higher of the Geforce GPUs
  plus complimentary Quadros and nforce.  Look at the legacy packages
@@ -3918,29 +3900,31 @@ Description-en: NVIDIA binary Xorg driver
  for a complete list of supported GPUs and PCI IDs.
 
 Package: libgl1-nvidia-legacy-173xx-glx
-Description-md5: 83519616d11dc2d4056dbaf06cfa0f37
+Description-md5: cf977fb1c04fddbb9ad2256cca53a983
 Description-en: NVIDIA binary OpenGL libraries (173xx legacy version)
  These binary libraries provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server.
+ .
  See the description of the nvidia-glx-legacy-173xx package
  or /usr/share/doc/libgl1-nvidia-legacy-173xx-glx/README.txt.gz
  for a complete list of supported GPUs and PCI IDs.
 
 Package: libgl1-nvidia-legacy-173xx-glx-ia32
-Description-md5: f5f2907a6f90aafe3d5c4cca54115c3d
-Description-en: NVIDIA binary OpenGL 32-bit libraries (173xx legacy version)
- These binary 32-bit libraries provide optimized hardware acceleration of
- OpenGL applications via a direct-rendering X Server.
- See the description of the nvidia-glx-legacy-173xx package
- or /usr/share/doc/libgl1-nvidia-legacy-173xx-glx/README.txt.gz
- for a complete list of supported GPUs and PCI IDs.
+Description-md5: 040a216681d387311077ed4d461257fa
+Description-en: please switch to multiarch libgl1-nvidia-legacy-173xx-glx:i386
+ This is an empty transitional package to aid switching to multiarch.
+ .
+ Run the following commands to install the multiarch library:
+ * dpkg --add-architecture i386 ; apt-get update
+ * apt-get install libgl1-nvidia-legacy-173xx-glx:i386
 
 Package: nvidia-alternative-legacy-173xx
-Description-md5: 8580da60051bdecf490e8ad435103755
+Description-md5: 38108615d97eb0cbeb9524679916fd8b
 Description-en: allows the selection of NVIDIA as GLX provider
  In setups with several NVIDIA driver versions installed (e.g. current and
  legacy) this metapackage registers an alternative to allow easy switching
  between the different versions.
+ .
  Use 'update-alternatives --config nvidia' to select a version.
  .
  This package does not depend on the corresponding NVIDIA libraries.
@@ -3948,12 +3932,13 @@ Description-en: allows the selection of NVIDIA as GLX provider
  nvidia-glx-legacy-173xx package instead.
 
 Package: nvidia-glx-legacy-173xx
-Description-md5: fbc765486d58e38136f355cac2439217
+Description-md5: 8285bb5d17eb6d852a921c3a526da964
 Description-en: NVIDIA metapackage (173xx legacy version)
  This metapackage depends on the NVIDIA binary driver and libraries
  that provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server.
  AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ .
  Please see the nvidia-kernel-legacy-173xx-dkms or
  nvidia-kernel-legacy-173xx-source packages
  for building the kernel module required by this package.
@@ -3997,13 +3982,14 @@ Description-en: NVIDIA 32-bit libraries (173xx legacy version) (transitional pac
  libgl1-nvidia-legacy-173xx-glx-ia32.
 
 Package: nvidia-kernel-legacy-173xx-dkms
-Description-md5: bae38c488c4527eac17d29a845fbed10
+Description-md5: 0d45270013c13b9fcff528c551d1d941
 Description-en: NVIDIA binary kernel module DKMS source (173xx legacy version)
  This package builds the NVIDIA Xorg binary kernel module needed by
  nvidia-glx-legacy-173xx, using DKMS.
  Provided that you have the kernel header packages installed, the kernel
  module will be built for your running kernel and automatically rebuilt for
  any new kernel headers that are installed.
+ .
  The NVIDIA binary drivers provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server for graphics cards
  using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
@@ -4041,11 +4027,12 @@ Description-en: NVIDIA binary kernel module DKMS source (173xx legacy version)
  for a complete list of supported GPUs and PCI IDs.
 
 Package: nvidia-kernel-legacy-173xx-source
-Description-md5: d7287cc5c472c55b45bbbdc41a2637c0
+Description-md5: 1a9c8760b7dda628c5622037ce4e1288
 Description-en: NVIDIA binary kernel module source (173xx legacy version)
  This package provides the source for the NVIDIA Xorg binary kernel module
  needed by nvidia-glx-legacy-173xx in a form suitable
  for use by module-assistant or kernel-package.
+ .
  The NVIDIA binary drivers provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server for graphics cards
  using NVIDIA chip sets.  AGP, PCIe, SLI, TV-out and flat panel displays
@@ -4087,11 +4074,12 @@ Description-en: NVIDIA binary kernel module source (173xx legacy version)
  for a complete list of supported GPUs and PCI IDs.
 
 Package: xserver-xorg-video-nvidia-legacy-173xx
-Description-md5: ef763e21541c77a133050cc42a7ab6db
+Description-md5: ea64e1b7da21d65fcefceca7397c0e35
 Description-en: NVIDIA binary Xorg driver (173xx legacy version)
  These binary drivers provide optimized hardware acceleration of
  OpenGL applications via a direct-rendering X Server.
  AGP, PCIe, SLI, TV-out and flat panel displays are also supported.
+ .
  Please see the nvidia-kernel-legacy-173xx-dkms or
  nvidia-kernel-legacy-173xx-source packages
  for building the kernel module required by this package.
@@ -4544,20 +4532,6 @@ Description-en: NVIDIA kernel module for Linux (amd64 transitional package)
  the NVIDIA kernel module for Linux (amd64 flavor).
  It can be savely removed.
 
-Package: nvidia-kernel-2.6-rt-686-pae
-Description-md5: ca9d01eaf9d33c6c8245e6bf7f91604a
-Description-en: NVIDIA kernel module for Linux (rt-686-pae transitional package)
- This is a transitional package to aid upgrading to the new metapackage for
- the NVIDIA kernel module for Linux (rt-686-pae flavor).
- It can be savely removed.
-
-Package: nvidia-kernel-2.6-rt-amd64
-Description-md5: 6c7263b5379a4ae333c94dbf64e09809
-Description-en: NVIDIA kernel module for Linux (rt-amd64 transitional package)
- This is a transitional package to aid upgrading to the new metapackage for
- the NVIDIA kernel module for Linux (rt-amd64 flavor).
- It can be savely removed.
-
 Package: nvidia-kernel-3.2.0-3-486
 Description-md5: 2f7524882a9ac6845d947430fd6a30c6
 Description-en: NVIDIA binary kernel module for Linux 3.2.0-3-486
@@ -4594,30 +4568,6 @@ Description-en: NVIDIA binary kernel module for Linux 3.2.0-3-amd64
  .
  This package is built for linux-image-3.2.0-3-amd64.
 
-Package: nvidia-kernel-3.2.0-3-rt-686-pae
-Description-md5: 171a7df7a58f2cf1e83b7c514e1758fc
-Description-en: NVIDIA binary kernel module for Linux 3.2.0-3-rt-686-pae
- This package provides the non-free NVIDIA binary kernel module built for
- the Debian Linux kernel package.  This kernel module is required by the
- nvidia-glx X video driver, the non-free binary video driver for NVIDIA
- graphics chipsets.  This is the main NVIDIA driver release, which
- supports the latest chipsets; for older chipsets, see the NVIDIA legacy
- packages.
- .
- This package is built for linux-image-3.2.0-3-rt-686-pae.
-
-Package: nvidia-kernel-3.2.0-3-rt-amd64
-Description-md5: cc809bc8f5bf019382cd5d0cd098fd55
-Description-en: NVIDIA binary kernel module for Linux 3.2.0-3-rt-amd64
- This package provides the non-free NVIDIA binary kernel module built for
- the Debian Linux kernel package.  This kernel module is required by the
- nvidia-glx X video driver, the non-free binary video driver for NVIDIA
- graphics chipsets.  This is the main NVIDIA driver release, which
- supports the latest chipsets; for older chipsets, see the NVIDIA legacy
- packages.
- .
- This package is built for linux-image-3.2.0-3-rt-amd64.
-
 Package: nvidia-kernel-486
 Description-md5: fec42d6050cd6f925d77dc032db2ec7e
 Description-en: NVIDIA kernel module for Linux (486 flavor)
@@ -4639,22 +4589,6 @@ Description-md5: ff6da8de09299444ef3c8a839b8b0e05
 Description-en: NVIDIA kernel module for Linux (amd64 flavor)
  This is a metapackage that will depend on the latest version of the
  NVIDIA kernel module for the Linux kernel series (amd64 flavor).
- Install this package to automatically install the latest NVIDIA module
- when new versions of the kernel are released.
-
-Package: nvidia-kernel-rt-686-pae
-Description-md5: 493afc425a47f02d23a0393d6c202302
-Description-en: NVIDIA kernel module for Linux (rt-686-pae flavor)
- This is a metapackage that will depend on the latest version of the
- NVIDIA kernel module for the Linux kernel series (rt-686-pae flavor).
- Install this package to automatically install the latest NVIDIA module
- when new versions of the kernel are released.
-
-Package: nvidia-kernel-rt-amd64
-Description-md5: 54239d9ac488531484195d03275280f1
-Description-en: NVIDIA kernel module for Linux (rt-amd64 flavor)
- This is a metapackage that will depend on the latest version of the
- NVIDIA kernel module for the Linux kernel series (rt-amd64 flavor).
  Install this package to automatically install the latest NVIDIA module
  when new versions of the kernel are released.
 

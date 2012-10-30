@@ -1,1 +1,0 @@
-../../../../share/pyshared/wicd/networking.py

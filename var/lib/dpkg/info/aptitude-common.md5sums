@@ -81,7 +81,7 @@ c4f06d7c0ac97bf63a5d3187580ec175  usr/share/aptitude/mine-help-it.txt
 959685dda7584129c3f810f3b57c9bba  usr/share/aptitude/mine-help.txt
 06487de3bba697efca691a26cf322556  usr/share/aptitude/section-descriptions
 c1d7bbe690b50ac7756ffb4b5c6397a0  usr/share/doc/aptitude-common/NEWS.Debian.gz
-f9cd5afc16aad7746ea019f9bd7366a3  usr/share/doc/aptitude-common/changelog.Debian.gz
+39bbe8ec6b0e46f2352b7775dd06db2b  usr/share/doc/aptitude-common/changelog.Debian.gz
 410471542f8934dedd9b51b132d99dee  usr/share/doc/aptitude-common/changelog.gz
 0078222a4f08302692fc1d64cc5a2f17  usr/share/doc/aptitude-common/copyright
 95da153c41e1797b3979ad0e25ffcb05  usr/share/doc/aptitude/README.Debian
@@ -130,9 +130,9 @@ b891d34af410ea7e079d05e563c43e4b  usr/share/locale/th/LC_MESSAGES/aptitude.mo
 39078a29189c06fbe972bbf5de88555c  usr/share/locale/vi/LC_MESSAGES/aptitude.mo
 ebb38b4654b4c9849cd01ba9414b7ea0  usr/share/locale/zh_CN/LC_MESSAGES/aptitude.mo
 ca13c066a37c8af6285214c2230ebe25  usr/share/locale/zh_TW/LC_MESSAGES/aptitude.mo
-41b4a8ef152df8e62edb3cd0f2ec81a5  usr/share/man/es/man1/aptitude-create-state-bundle.1.gz
-fcd12c4904a2e624630b04ae3331e1e9  usr/share/man/es/man1/aptitude-run-state-bundle.1.gz
-2750e69f6b274e36d8f7d920c6da1789  usr/share/man/it/man1/aptitude-create-state-bundle.1.gz
-6b8e2a504a222b2cac15b6223174a6b4  usr/share/man/it/man1/aptitude-run-state-bundle.1.gz
-4b7b3ac41174007e83cb76990a036828  usr/share/man/man1/aptitude-create-state-bundle.1.gz
-b79921e00ebc5dced61f0c3b6cafa17c  usr/share/man/man1/aptitude-run-state-bundle.1.gz
+cdf0407db4e7d5a9826aec0a1dd500bb  usr/share/man/es/man1/aptitude-create-state-bundle.1.gz
+0ee9405a47e02e93d1cb7ec9e69d488d  usr/share/man/es/man1/aptitude-run-state-bundle.1.gz
+434ca3cfc479206d97e4af0eb6f27146  usr/share/man/it/man1/aptitude-create-state-bundle.1.gz
+2bb3628bfcb353f15d222b28c3023b25  usr/share/man/it/man1/aptitude-run-state-bundle.1.gz
+841bd306cb02c960cd589bed64c92225  usr/share/man/man1/aptitude-create-state-bundle.1.gz
+a91aafc09ecc5d574be15708542d0e16  usr/share/man/man1/aptitude-run-state-bundle.1.gz

@@ -1,1 +1,0 @@
-../../../../share/pyshared/wicd/dbusmanager.py

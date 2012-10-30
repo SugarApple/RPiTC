@@ -11,9 +11,9 @@ lease {
   option dhcp-rebinding-time 75600;
   option netbios-name-servers 10.1.244.1;
   option domain-name "italy.fracarro.lan, fracarro.lan, fracarro.com";
-  renew 1 2012/09/17 09:36:27;
-  rebind 1 2012/09/17 09:36:27;
-  expire 1 2012/09/17 09:36:27;
+  renew 2 2012/10/30 13:54:41;
+  rebind 2 2012/10/30 13:54:41;
+  expire 2 2012/10/30 13:54:41;
 }
 lease {
   interface "eth0";
@@ -28,7 +28,7 @@ lease {
   option dhcp-rebinding-time 75600;
   option netbios-name-servers 10.1.244.1;
   option domain-name "italy.fracarro.lan, fracarro.lan, fracarro.com";
-  renew 1 2012/09/17 20:12:42;
-  rebind 2 2012/09/18 06:36:29;
-  expire 2 2012/09/18 09:36:29;
+  renew 3 2012/10/31 01:09:26;
+  rebind 3 2012/10/31 10:54:44;
+  expire 3 2012/10/31 13:54:44;
 }

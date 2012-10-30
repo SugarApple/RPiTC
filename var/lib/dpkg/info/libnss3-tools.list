@@ -1,0 +1,14 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnss3-tools
+/usr/share/doc/libnss3-tools/changelog.Debian.gz
+/usr/share/doc/libnss3-tools/copyright
+/usr/bin
+/usr/bin/pk12util
+/usr/bin/certutil
+/usr/bin/modutil
+/usr/bin/signtool
+/usr/bin/ssltap
+/usr/bin/shlibsign

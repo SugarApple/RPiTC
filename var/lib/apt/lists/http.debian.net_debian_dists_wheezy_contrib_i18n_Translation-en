@@ -720,16 +720,6 @@ Description-en: prepare for using accelerated GLX implementations from GPU vendo
  implementations from GPU vendors via alternatives, see the
  glx-alternative-* packages.
 
-Package: gmbox
-Description-md5: c83494ed047261b2ada71b84cd5c7cdb
-Description-en: google.cn music box
- This program can download and play music from music.google.cn using
- internal or external applications (such as wget for download and mplayer
- for playing, and of course you can set parameters).
- .
- music.google.cn is a service provided by Google China and the service
- is available and legal only in China mainland.
-
 Package: gnome-speech-dectalk
 Description-md5: e02c69125bad3451a0f781e2cf082c5f
 Description-en: GNOME text-to-speech library (Fonix DECtalk engine support)
@@ -1331,14 +1321,14 @@ Description-en: Electronic portfolio, weblog, and resume builder - internal medi
  This package includes a flash-based internal media player block.
 
 Package: mathematica-fonts
-Description-md5: fa6b87d0f9edb667c351bda395bf84d4
-Description-en: Installer of Mathematica fonts
- This package downloads Mathematica fonts through an internet
- and installs them, because the license prohibits distribution of
- the fonts.  NOTE the fonts might be removed from a web site so it
- might happen that you failed to download the fonts.
+Description-md5: 3473fc09bdf3312b7a64808648f85588
+Description-en: installer for Mathematica fonts
+ This package downloads Mathematica fonts from http://support.wolfram.com/
+ and installs them, because the license prohibits their distribution.
+ Please note that it may fail if the web site no longer offers them for
+ download.
  .
- This package will install only AFM, TTF and Type1 at present.
+ This package will currently only install AFM, TTF, and Type1 fonts.
 
 Package: ttf-mathematica4.1
 Description-md5: c2481d28a5f6a5e8343eaae7160e37d1
@@ -1373,18 +1363,13 @@ Description-en: Desktop entries for MESS ROMs
  game by simply double-clicking the ROM file from a file manager.
 
 Package: microcode.ctl
-Description-md5: 4e5ae8a93f7a3f5006f41e82e3483702
-Description-en: Intel IA32/IA64 CPU Microcode Utility
- The microcode_ctl utility is a companion to the IA32 microcode
- driver:
+Description-md5: 41a033496b4807c1446772590af07241
+Description-en: Intel IA32/IA64 CPU Microcode Utility (transitional package)
+ This is a transitional package to help migrate systems to the new
+ version of intel-microcode and to iucode-tool, which superseded
+ microcode.ctl.
  .
-  - it decodes and sends new microcode to the kernel driver for Intel IA32
-    family (Pentium Pro, PII, Celeron, PIII, Xeon, Pentium 4, etc.) and
-    Intel x86_64 family processors;
-  - it signals the kernel driver to release any buffers it may hold.
- .
- The microcode update does not permanently alter the CPU and must be
- performed each time the system is booted.
+ This is a dummy package.  You can safely purge or remove it.
 
 Package: ttf-mscorefonts-installer
 Description-md5: 3cf2bbaf676bcd51633633514c88751a
@@ -2821,6 +2806,20 @@ Description-en: emulator for TRS-80 Model I/III/4/4P computers
  copyrighted by Radio Shack and are not freely licensed.  (Exception: in Model
  4P mode, a freely licensed boot ROM included with this package can be used to
  boot a Model 4 operating system from a diskette image.)
+
+Package: xvba-va-driver
+Description-md5: a7ee3f38c8579ac24e96cea475deca02
+Description-en: XvBA-based backend for VA API (AMD fglrx implementation)
+ X-Video Bitstream Acceleration (XvBA), designed by AMD for its ATI/AMD Radeon
+ GPU, is a future extension of the X video extension (Xv) for the X Window
+ System on Linux operating-systems. XvBA API allows video programs to offload
+ portions of the video decoding process to the GPU video-hardware. Currently,
+ the portions designed to be offloaded by XvBA onto the GPU are motion
+ compensation (mo comp) and inverse discrete cosine transform (iDCT), and VLD
+ (Variable-Length Decoding) for MPEG-2, MPEG-4 AVC (H.264) and VC-1 encoded
+ video.
+ .
+ This driver only works with the proprietary fglrx driver from AMD.
 
 Package: ydpdict
 Description-md5: 1d8b03ebcd291c2d6c1dc8caf4e40e25

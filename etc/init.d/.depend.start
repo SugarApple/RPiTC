@@ -1,6 +1,11 @@
-TARGETS = ctxusbd bootlogs killprocs motd dbus single anacron rsync ssh ntp wicd rc.local rmnologin
+TARGETS = rsyslog ctxusbd bootlogs killprocs motd dbus single anacron rsync ssh ntp network-manager rc.local rmnologin
 INTERACTIVE =
+dbus: rsyslog
 single: killprocs bootlogs motd
-wicd: dbus
-rc.local: ctxusbd wicd dbus bootlogs motd anacron rsync ssh ntp
-rmnologin: ctxusbd wicd dbus bootlogs motd anacron rsync ssh ntp
+anacron: rsyslog
+rsync: rsyslog
+ssh: rsyslog
+ntp: rsyslog
+network-manager: dbus rsyslog
+rc.local: network-manager dbus rsyslog ctxusbd bootlogs motd anacron rsync ssh ntp
+rmnologin: network-manager dbus rsyslog ctxusbd bootlogs motd anacron rsync ssh ntp

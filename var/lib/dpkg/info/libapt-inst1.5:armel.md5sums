@@ -1,6 +1,6 @@
-d8452a15e42e7041ff24a54cf43dfbd7  usr/lib/arm-linux-gnueabi/libapt-inst.so.1.5.0
+a613471d84a7e32ea877fc88c2c23b57  usr/lib/arm-linux-gnueabi/libapt-inst.so.1.5.0
 0a9faf4bc39390053967e50c703b7c0e  usr/share/doc/libapt-inst1.5/NEWS.Debian.gz
-8b9f5a8cf10d41c06a44a03214139697  usr/share/doc/libapt-inst1.5/changelog.gz
+1b4b8603672bc15db10038f55096c719  usr/share/doc/libapt-inst1.5/changelog.gz
 fa9fc3fde34b734ee15aecd2066df5b1  usr/share/doc/libapt-inst1.5/copyright
 d20069badbfa4bbcdd776a8c4a25fc92  usr/share/locale/ar/LC_MESSAGES/libapt-inst1.5.mo
 617cbd354732027af458797d3e847f3d  usr/share/locale/ast/LC_MESSAGES/libapt-inst1.5.mo

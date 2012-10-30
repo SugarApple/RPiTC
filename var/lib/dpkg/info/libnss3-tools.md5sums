@@ -1,0 +1,8 @@
+525e995b43ff4c88354b35154faf194b  usr/share/doc/libnss3-tools/changelog.Debian.gz
+fd32f43f8ab3b92c73bc3d27818424b8  usr/share/doc/libnss3-tools/copyright
+73d65dbd2012fbdf4aef363017cc52dc  usr/bin/pk12util
+22557843710b1834d43a1ac9b461e39b  usr/bin/certutil
+781c36e85f00c36eab03a647150c56f4  usr/bin/modutil
+7fb12d6b978d3da5e4aafcb8db4e56b2  usr/bin/signtool
+a1dfadcdc79d1aff0b1c79c6a78e00bc  usr/bin/ssltap
+efb36288d07e8784de73883b89096f3a  usr/bin/shlibsign

@@ -1,4 +1,5 @@
 libnspr4.so libnspr4 (>= 2:4.9-2~) | libnspr4-0d #MINVER#
+| libnspr4 #MINVER#
  GetExecutionEnvironment@Base 1.8.0.10
  LL_MaxInt@Base 1.8.0.10
  LL_MaxUint@Base 1.8.0.10
@@ -191,6 +192,7 @@ libnspr4.so libnspr4 (>= 2:4.9-2~) | libnspr4-0d #MINVER#
  PR_GetTCPMethods@Base 1.8.0.10
  PR_GetThreadAffinityMask@Base 1.8.0.10
  PR_GetThreadID@Base 1.8.0.10
+ PR_GetThreadName@Base 2:4.9.2 1
  PR_GetThreadPriority@Base 1.8.0.10
  PR_GetThreadPrivate@Base 1.8.0.10
  PR_GetThreadScope@Base 1.8.0.10
@@ -312,6 +314,7 @@ libnspr4.so libnspr4 (>= 2:4.9-2~) | libnspr4-0d #MINVER#
  PR_SetAlarm@Base 1.8.0.10
  PR_SetConcurrency@Base 1.8.0.10
  PR_SetCounter@Base 1.8.0.10
+ PR_SetCurrentThreadName@Base 2:4.9.2 1
  PR_SetEnv@Base 1.8.0.10
  PR_SetError@Base 1.8.0.10
  PR_SetErrorText@Base 1.8.0.10

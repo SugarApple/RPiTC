@@ -5,8 +5,8 @@ Origin: Debian
 Label: Debian-Security
 Suite: testing
 Codename: wheezy
-Date: Sun, 16 Sep 2012 12:12:06 UTC
-Valid-Until: Wed, 26 Sep 2012 12:12:06 UTC
+Date: Mon, 29 Oct 2012 20:41:51 UTC
+Valid-Until: Thu, 08 Nov 2012 20:41:51 UTC
 Architectures: amd64 armel i386 ia64 kfreebsd-amd64 kfreebsd-i386 mips mipsel powerpc s390 sparc
 Components: updates/main updates/contrib updates/non-free
 Description: Debian testing Security Updates
@@ -916,17 +916,17 @@ SHA256:
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.10 (GNU/Linux)
 
-iQIcBAEBAgAGBQJQVcIYAAoJEK7UsG9HMEH6rWsQAMVPfezf/r0rGtod5VXdvMDD
-HqKyxLUfYqdfmk7dCArgnxSeXIEk+lTw+vmhCT7J+Tp731D6GTiE/uVN2B9nQmi7
-CVwb8/4U79p6HKlAtoQICMO3f32hOF2DsO0VGk4ppt5b+BDE4qoD3LKXRY5KC96Z
-RxOFGoSgFjuyAO/Bx6NDIWI5ijrOxsDCvS4tmiI7lPCUf+15FGGRZ3XzzlScVpdS
-S+FfsYhVq8/QdlArx3iDlCtfQCJ0Wkwtk4phgzxuNV8cWYG50h3UmCe5S4L66uBW
-0c6hj8eUY77hAcceorPM/YSuLsHleyYKTqFgdgiISCQWqHxCXvgw/cwVjVW5EtbI
-Z64Qka53SCUgxKH9QPT3Ju0H2JSiZxO8TYr9DBPz26WnRBzSIiNQnc7TcpbJk4Uf
-vJ6Vy+g/LbSM/JgChyaYxBfcdKqtewY2kO3yn5/xgqoWI/VhZHgcctgkOm4OIRLB
-017UzXHT5FY0s8P/GKPa5N0RWCoH97Gu0/7qsfIAu4g/4TK+tPW/Jh7ljF7JkvV3
-+f7mkh4VotXo03l2sJrY9gcog21+J8jsg6fPzPOMO1Y1/9ipDsj5+cU7f+Hbp+tV
-y6bMZZnbtA885B22vOEGKqLfSkbqsvZlZounyZkBlbSSFhAkRlsL0wRnIMKBS4Mn
-CVSK46pOjV15IH3FYKfX
-=ijZt
+iQIcBAEBAgAGBQJQjuoPAAoJEK7UsG9HMEH65FUQAKVnATrNNlfx+o3E0biHAKvY
+uPRo2HN7LDYS6YVSgc5W9c5AlabgMOwjG5gVq1sqYIoNTrdr4x3YJgCIlj/OzKB3
+1N+Oq6DYsRUrv1TOogcHxTj66v5hGnYP4Y+diwARZKXEBB4l2EUVaHOyzkOi3g2y
+mi1DBtMq0LXCtfbRX8eiYRum3bhAZKTCT4zCz/T5PeFeDrSDHRGhjNs7f1zPjoTa
+Cty3VY0ktj2y41FZ50hPqES0Fcdc4tj8X/4C1IU4Di57qDFav1mCtne3Ok0bforT
+R9LSC4Ep68xfVNQpYAmI5whxkSwNlyDkc4G7qXhB6dzW4uhVQSpWggXetBCAgo+y
+JSShuyto3ZgTqip9blZL/Ae369SoEVgC6NCvov5703WBxlGkF8DTAb+WTf60Hnnp
+R1ZwUrkZsrdVquZwNqPNlkQji1XKcqHBnriZ6W6GPiKEkx8TO25s/dPfG5dzvmss
+P5TnhOy0D1KMFl4rOOJPpEag039Yjl6tnN79H0wuxajXBk4lbeialwQ2AqY43CtM
+0sB6u6BuTra9iU85qI5GKc6PIrM0uEjq1zI55CfGHBzBToFzA/PFn3SL5gbbapL/
+s8Y+GZ8KQWAt3m663tQa+nOEOtsyWnFlY4kU+PURJR5k3PEKXl9837JiKt8v1fcv
+qJoeEmq6LHe+f8l9GTyG
+=HrF1
 -----END PGP SIGNATURE-----

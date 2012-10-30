@@ -1142,23 +1142,6 @@ MD5sum: e430732ba30a45d2248744a573a9bf5d
 SHA1: 5733ae0603a9304e5c5e1ba60dd20d98ee2ee203
 SHA256: a9af776363ab573430e2afbe9adf4e9aa6966628114dfa880844778a865c99bf
 
-Package: firmware-crystalhd
-Version: 0.0~git20120110.fdd2f19-1
-Installed-Size: 6322
-Maintainer: Andres Mejia <amejia@debian.org>
-Architecture: all
-Suggests: initramfs-tools, linux-image
-Description: Crystal HD Video Decoder (firmware)
-Homepage: http://www.broadcom.com/support/crystal_hd/
-Description-md5: f2b34a9b8da985f08d05c0512b0c8488
-Section: non-free/kernel
-Priority: optional
-Filename: pool/non-free/f/firmware-crystalhd/firmware-crystalhd_0.0~git20120110.fdd2f19-1_all.deb
-Size: 2271324
-MD5sum: 95eea84414c0d75e1c297a82cf3a405c
-SHA1: a5e8c7e0e5186fe90b2ecc862e538a10ae65b3d6
-SHA256: b0f7ca0a78ffc3c74ba1ff4872e63be6b8f67c2c3fcefbd2acf2c42ae3900bc0
-
 Package: firmware-atheros
 Source: firmware-nonfree
 Version: 0.36
@@ -2772,7 +2755,7 @@ SHA1: 1402f4329a73ff4bb39d6c106446141d127eb1f0
 SHA256: b959b87a11e420af7f50fb32a41eb05aaea686e5b352daaf1063ae345cb0166a
 
 Package: mame
-Version: 0.146-2
+Version: 0.146-4
 Installed-Size: 56997
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: armel
@@ -2787,15 +2770,15 @@ Description-md5: c1a979c3e6a14cb9a8592744c96896b9
 Tag: uitoolkit::gtk, uitoolkit::sdl
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/m/mame/mame_0.146-2_armel.deb
-Size: 20016842
-MD5sum: d02cff6c289f123f7dc76091a9c03f38
-SHA1: 67340ef7d87f5a6f44616ff5dac8eb99a2b39bf0
-SHA256: 68b61c6d3d24bb560deaf70753c199d9ca0855fccf6e8927b6b61d5f254b2807
+Filename: pool/non-free/m/mame/mame_0.146-4_armel.deb
+Size: 20014578
+MD5sum: a1a92a2ec2e48803d34b69da603e2704
+SHA1: cd4ae73a706881fa6fa316408824f60e6bf17d7f
+SHA256: fa309dc452a5bd6fe6b49f1ec46dc4e46f16778f6e0d32ec37b8b8ec901bb032
 
 Package: xmame-sdl
 Source: mame
-Version: 0.146-2
+Version: 0.146-4
 Installed-Size: 88
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: all
@@ -2807,15 +2790,15 @@ Tag: hardware::emulation, implemented-in::c, interface::x11, role::program,
  scope::utility, uitoolkit::sdl, use::gameplaying, x11::application
 Section: non-free/metapackages
 Priority: extra
-Filename: pool/non-free/m/mame/xmame-sdl_0.146-2_all.deb
-Size: 42778
-MD5sum: d67be287a3860223646155031bd19d12
-SHA1: 7ab8be48ab357f0c2182721bdfcfbc42337b57fe
-SHA256: 8e2ec01bca7dd22926f84ee996fca1f9812005a78a9c524a2df2e5b55463bb5f
+Filename: pool/non-free/m/mame/xmame-sdl_0.146-4_all.deb
+Size: 43004
+MD5sum: 824c029026d4f099bbd99f2133a4058c
+SHA1: b41ff98549ab45d6aeceef12991061f07bbc6914
+SHA256: 9fd9516aec502d4e9157785c1eed03af707cdd5e14800f48c16eac00beec61f2
 
 Package: xmame-x
 Source: mame
-Version: 0.146-2
+Version: 0.146-4
 Installed-Size: 88
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: all
@@ -2827,11 +2810,11 @@ Tag: hardware::emulation, implemented-in::c, interface::x11, role::program,
  scope::utility, uitoolkit::xlib, use::gameplaying, x11::application
 Section: non-free/metapackages
 Priority: extra
-Filename: pool/non-free/m/mame/xmame-x_0.146-2_all.deb
-Size: 42774
-MD5sum: 08b888e142d0402da94caeb2ca447e58
-SHA1: 0d29268ce36977572fd5afb2f33fb80188634166
-SHA256: d2e22e43d91bfc135099d8c3bf061ef727e8a109c0ffce182015ec6466e27f36
+Filename: pool/non-free/m/mame/xmame-x_0.146-4_all.deb
+Size: 43008
+MD5sum: d77192638d36d48ad4fea402c2a0706a
+SHA1: 833e1d58bac68b223e7c5a6ddad721da0608fadd
+SHA256: 902a2d5e73430ce071c02c224ad04c705f35f721e274410c53aa296867845d08
 
 Package: manpages-posix
 Version: 2.16-1
@@ -3520,12 +3503,12 @@ SHA256: 62fe0e7b8e9d147086fff0d4666511960bb93bdc25c465081904b2b68571a83d
 
 Package: mame-tools
 Source: mess
-Version: 0.146-2
-Installed-Size: 1279
+Version: 0.146-3
+Installed-Size: 1280
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: armel
 Depends: libc6 (>= 2.4), libflac8 (>= 1.2.1), libgcc1 (>= 1:4.4.0), libsdl1.2debian (>= 1.2.11), libstdc++6 (>= 4.4.0), libx11-6, zlib1g (>= 1:1.1.4)
-Recommends: mame (= 0.146-2)
+Recommends: mame (= 0.146-3)
 Breaks: sdlmame-tools (<< 0.143), xmame-tools (<< 0.140)
 Description: Tools for MAME and MESS
 Homepage: http://mess.org/
@@ -3533,14 +3516,14 @@ Description-md5: 52eeca214a01129319c08031f0c073db
 Tag: uitoolkit::gtk, uitoolkit::sdl
 Section: non-free/utils
 Priority: optional
-Filename: pool/non-free/m/mess/mame-tools_0.146-2_armel.deb
-Size: 693368
-MD5sum: 50803dfd10052d809f7834b72cdecb1c
-SHA1: 8a8d01900860d8dd53366ef4da3ba0cffe36cae6
-SHA256: b15bc2fcb0be5160723b8a2141e81b6b553155d4a371672748bc3b9c3900d354
+Filename: pool/non-free/m/mess/mame-tools_0.146-3_armel.deb
+Size: 692968
+MD5sum: 0e88857b44aa84b88586e99960fe3907
+SHA1: 343d217199b1530432ad9dcb7afdc97a9811d0e0
+SHA256: aa2d8905586c39705ef9727edaab3fbb25b31be46d67211dedcdcecd409be34b
 
 Package: mess
-Version: 0.146-2
+Version: 0.146-3
 Installed-Size: 24616
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: armel
@@ -3556,16 +3539,16 @@ Description-md5: 3a6cbe615ad8b8f2f30716fa7e5f97dd
 Tag: role::program, uitoolkit::gtk, uitoolkit::sdl, use::gameplaying
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/m/mess/mess_0.146-2_armel.deb
-Size: 8894304
-MD5sum: cf598b5d67ce7920f795963eb1f8a10b
-SHA1: f6ae5eead9ae6736b888fdbce9c527172053ad3b
-SHA256: 18fa5ac7cfc96adab1bb42040d0ace067a538abe42ca1de91af04beb8e65af78
+Filename: pool/non-free/m/mess/mess_0.146-3_armel.deb
+Size: 8895010
+MD5sum: 7ea5a2885249a1e66525bb036ac411cf
+SHA1: 9f563e0de9260ced8e7eae36b6dbfd1f0c198def
+SHA256: cd51f0bc473930b9431a9b4d5fd55d32ea4c107d3de843247105ba045fabd915
 
 Package: mess-data
 Source: mess
-Version: 0.146-2
-Installed-Size: 66279
+Version: 0.146-3
+Installed-Size: 66284
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: all
 Description: Data files for the Multi Emulator Super System (MESS)
@@ -3574,15 +3557,15 @@ Description-md5: 43ff9f188ece9deceaeb8948774256e2
 Tag: role::app-data
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/m/mess/mess-data_0.146-2_all.deb
-Size: 31883580
-MD5sum: 6d9d6b98367d4a72438b59ca9f79c7e5
-SHA1: cf4e2e361ab71a97d6226c6383d0e2141b8655ce
-SHA256: 001f631a6a6cd689d6076b8451a5f07571e8dc949d42b4672c413f1ee9f34d9e
+Filename: pool/non-free/m/mess/mess-data_0.146-3_all.deb
+Size: 31884278
+MD5sum: 6d614f5c0c43453612d3a26ea18e6638
+SHA1: 67720643373a3e5f5fe376db83654e4dcd35537b
+SHA256: 48c3d52546a1895fa226937686e50250219a72b534e94779f1bf733943ae070f
 
 Package: xmame-tools
 Source: mess
-Version: 0.146-2
+Version: 0.146-3
 Installed-Size: 74
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: all
@@ -3593,15 +3576,15 @@ Description-md5: 2fe952a29337edd4d832173f8d1c5d14
 Tag: role::program, uitoolkit::sdl
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/m/mess/xmame-tools_0.146-2_all.deb
-Size: 37834
-MD5sum: e1198fa9d989d0023d5822ed108b3f15
-SHA1: f2198a92b04c050725b92b23d34a19993a372494
-SHA256: 0bfe36167a5fe5d4c8de870861fcf3d15ad9a4968d3906329e0bb31baf4779e5
+Filename: pool/non-free/m/mess/xmame-tools_0.146-3_all.deb
+Size: 37978
+MD5sum: e629ecf0782e5f327a0a6bdefc3b5415
+SHA1: df7373a4742203548de6dc2ca09fc6d62b9b62cc
+SHA256: 97710889dcfae40a913ec94eaa21901d45dd951e12e50f2eca6218602a0761a7
 
 Package: xmess-sdl
 Source: mess
-Version: 0.146-2
+Version: 0.146-3
 Installed-Size: 74
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: all
@@ -3613,15 +3596,15 @@ Tag: hardware::emulation, implemented-in::c, interface::x11, role::program,
  scope::utility, uitoolkit::sdl, use::gameplaying, x11::application
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/m/mess/xmess-sdl_0.146-2_all.deb
-Size: 37838
-MD5sum: 1ff137a68821330cad5625b3d955729f
-SHA1: 133bcc623aa1c85176aa7fa7c4f9cf6bc62d1472
-SHA256: e1017342b2182484c78bf0e70bc23f9e426a419eb2ba06d023e84af0c8d03167
+Filename: pool/non-free/m/mess/xmess-sdl_0.146-3_all.deb
+Size: 38110
+MD5sum: f39ad068bbdb05e4bc8207d1049c9bd1
+SHA1: bf229032d1a6c436a774c94e1a6252ef1e16ec16
+SHA256: 23cb70553508c1adfac181f6b941b0439e4e814570e363fea1e65f5e28ad7c75
 
 Package: xmess-x
 Source: mess
-Version: 0.146-2
+Version: 0.146-3
 Installed-Size: 74
 Maintainer: Debian Games Team <pkg-games-devel@lists.alioth.debian.org>
 Architecture: all
@@ -3633,11 +3616,11 @@ Tag: hardware::emulation, implemented-in::c, interface::x11, role::program,
  scope::utility, uitoolkit::sdl, use::gameplaying
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/m/mess/xmess-x_0.146-2_all.deb
-Size: 37830
-MD5sum: a06cfd5ad426b3233c920eb2efea9d44
-SHA1: f2ee7ccba0d63c38a5751dd702a128a12a777cb4
-SHA256: 986c90674f81bf83d97872182de349f9efe3c0e79cd05c6171f1de95172b8362
+Filename: pool/non-free/m/mess/xmess-x_0.146-3_all.deb
+Size: 38108
+MD5sum: bba3fd9f1e759a2e6681b5b08acb9550
+SHA1: ede16c5a79ac6a3463fd5a8dfc55113aa0f1fd18
+SHA256: c9739e9c6a8d41071034f23e6288175c5861119b0247aec31c9db386f9f31472
 
 Package: mgltools-bhtree
 Version: 1.5.6~rc3~cvs.20120206-1
@@ -6114,7 +6097,7 @@ SHA1: 43ea835e026215af593d7dc6dd91b2fe73939771
 SHA256: 0601479f41db6764ce0cff642c97abb49cf2632b7ac06cfbe30f09e446a215ba
 
 Package: xml2rfc
-Version: 1.36-4
+Version: 1.36-5
 Installed-Size: 779
 Maintainer: Daniel Kahn Gillmor <dkg@fifthhorseman.net>
 Architecture: all
@@ -6129,11 +6112,11 @@ Tag: implemented-in::tcl, interface::shell, interface::x11, role::program,
  x11::application
 Section: non-free/text
 Priority: optional
-Filename: pool/non-free/x/xml2rfc/xml2rfc_1.36-4_all.deb
-Size: 254582
-MD5sum: 2bdb99d817ee3bded762c26b76e11e9e
-SHA1: f4b316cf80e3f7185122a490437f7a83192ad40b
-SHA256: 1064d3583baff2d18d89b0d17d19dcc429f4b36d961a90e83bec035703722857
+Filename: pool/non-free/x/xml2rfc/xml2rfc_1.36-5_all.deb
+Size: 254860
+MD5sum: 4ee5c354458471edef941a348cab5c58
+SHA1: 09d9a2520b4c10dcaa8648615a661a250a1bb018
+SHA256: c7b745e6d6204dbf860029c8cf2d338f14d5e2f9b3fde6ddd1ceb0b4c080eeaa
 
 Package: xtide-data-nonfree
 Version: 20100529-1

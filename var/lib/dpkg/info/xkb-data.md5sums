@@ -308,7 +308,7 @@ cfc55bfda56d93756ed1686f5d02c705  usr/share/X11/xkb/symbols/vn
 ccec4ba1a50ffce1af6a20340d0c1001  usr/share/X11/xkb/symbols/xfree68_vndr/amiga
 1e9d3bcc15da3dca8db8a9e336b58299  usr/share/X11/xkb/symbols/xfree68_vndr/ataritt
 b2948a00e6a0717e7ee0e87c853fd438  usr/share/X11/xkb/symbols/za
-197ec990ec4e5b088b76d2918a00b04c  usr/share/X11/xkb/types.dir
+d41d8cd98f00b204e9800998ecf8427e  usr/share/X11/xkb/types.dir
 12fad9640f00f0d22dd12b27ae2e27e4  usr/share/X11/xkb/types/README
 94ed6c68f80a6312f9168567977330f9  usr/share/X11/xkb/types/basic
 d72d3b17d2beb13c4a36095a40fed77c  usr/share/X11/xkb/types/cancel
@@ -321,10 +321,10 @@ bd9d7f30c251530671fa29976bc82f34  usr/share/X11/xkb/types/extra
 8574ab7b63d8281e60fec6694eff8316  usr/share/X11/xkb/types/mousekeys
 cb0bbb135ff31d2b1d42ec6d73789a8b  usr/share/X11/xkb/types/nokia
 ec8d323c9c4adbeddd3057e202519972  usr/share/X11/xkb/types/numpad
-a228740ca9f8e9a706ff543ecc54dbdf  usr/share/X11/xkb/types/pc
+5e8a7cc604a55fb73ece46e926e42797  usr/share/X11/xkb/types/pc
 2791f0721fa39d731fdcb71f89b6492d  usr/share/doc/xkb-data/NEWS.Debian.gz
 ad4a9d326d095726b0d05a3598909d59  usr/share/doc/xkb-data/README.Debian
-4957cdd31faeb52a1c169c806c56d28d  usr/share/doc/xkb-data/changelog.Debian.gz
+cd5c7854d49bf34e9d7b0833cc6f286a  usr/share/doc/xkb-data/changelog.Debian.gz
 5cb1c3f5dd41dc4a21739d6ce8ef2bf8  usr/share/doc/xkb-data/changelog.gz
 c755d980a354c1ba22f57934c55852b0  usr/share/doc/xkb-data/copyright
 d43560f1f37b81a576fcbdc840c7423c  usr/share/locale/af/LC_MESSAGES/xkeyboard-config.mo

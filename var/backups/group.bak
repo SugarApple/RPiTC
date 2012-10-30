@@ -19,7 +19,7 @@ cdrom:x:24:
 floppy:x:25:
 tape:x:26:
 sudo:x:27:
-audio:x:29:
+audio:x:29:root
 dip:x:30:
 www-data:x:33:
 backup:x:34:
@@ -30,7 +30,7 @@ src:x:40:
 gnats:x:41:
 shadow:x:42:
 utmp:x:43:
-video:x:44:
+video:x:44:root
 sasl:x:45:
 plugdev:x:46:
 staff:x:50:
@@ -43,3 +43,4 @@ ssh:x:103:
 ntp:x:104:
 messagebus:x:105:
 netdev:x:106:
+utempter:x:107:

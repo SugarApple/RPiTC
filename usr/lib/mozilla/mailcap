@@ -1,2 +1,0 @@
-# /usr/lib/mozilla/mailcap
-application/x-ica; /opt/Citrix/ICAClient/wfica.sh %s; x-mozilla-flags=plugin:Citrix ICA Client

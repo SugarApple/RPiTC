@@ -1,8 +1,10 @@
-TARGETS = ctxusbd fake-hwclock wicd urandom alsa-utils sendsigs umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
-sendsigs: alsa-utils wicd
-umountnfs.sh: sendsigs alsa-utils wicd
+TARGETS = ctxusbd fake-hwclock network-manager urandom alsa-utils sendsigs rsyslog umountnfs.sh hwclock.sh networking umountfs umountroot halt reboot
+sendsigs: network-manager alsa-utils
+rsyslog: network-manager sendsigs
+umountnfs.sh: network-manager rsyslog sendsigs alsa-utils
+hwclock.sh: rsyslog
 networking: umountnfs.sh
-umountfs: urandom networking alsa-utils umountnfs.sh hwclock.sh wicd
+umountfs: urandom network-manager networking alsa-utils umountnfs.sh hwclock.sh
 umountroot: umountfs fake-hwclock
 halt: umountroot
 reboot: umountroot

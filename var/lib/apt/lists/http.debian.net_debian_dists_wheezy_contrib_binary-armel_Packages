@@ -214,22 +214,22 @@ SHA1: 108dc17dc08e3673b066ac513d17383ea32b2723
 SHA256: 84dcab05ba002aa62e4f56b7f7434a69d1b6c35180296ba8762c861bc9a204fe
 
 Package: biomaj-watcher
-Version: 1.2.0-8
-Installed-Size: 214216
+Version: 1.2.1-1
+Installed-Size: 214620
 Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
 Architecture: all
-Depends: debconf (>= 0.5) | debconf-2.0, openjdk-6-jdk | default-jdk | java6-sdk, tomcat6 (>= 6.0.32-3), biomaj (>= 1.2), debconf, liblog4j1.2-java, libjsch-java (>= 0.1.42), libjdom1-java (>= 1.1), libcommons-lang-java (>= 2.4), libcommons-logging-java (>= 1.1), libquartz-java (>= 1.6), libxerces2-java, unzip, zip, libgnumail-java
+Depends: debconf (>= 0.5) | debconf-2.0, default-jdk, tomcat6 (>= 6.0.32-3), biomaj (>= 1.2.1), debconf, liblog4j1.2-java, libjsch-java (>= 0.1.42), libjdom1-java (>= 1.1), libcommons-lang-java (>= 2.4), libcommons-logging-java (>= 1.1), libquartz-java (>= 1.6), libxerces2-java, unzip, zip, libgnumail-java
 Description: biological data-bank updater - web interface
 Homepage: http://biomaj.genouest.org
 Description-md5: 46975822bee8ad1988f6ff1295acba53
 Tag: implemented-in::java, interface::web, role::program, web::application
 Section: contrib/science
 Priority: optional
-Filename: pool/contrib/b/biomaj-watcher/biomaj-watcher_1.2.0-8_all.deb
-Size: 34334980
-MD5sum: f78d593876f8dff8a688ce32aaa8e55e
-SHA1: 6d096db330cae7d9b823633af9bb20ebbc29fcde
-SHA256: e1fe2a6c5fd76e75a07bd29759ad4dce86d1c55438f82341f8b724aa1b28decd
+Filename: pool/contrib/b/biomaj-watcher/biomaj-watcher_1.2.1-1_all.deb
+Size: 33978026
+MD5sum: b33d56b92ce1d8aa9fc2b3cdb3afd9bd
+SHA1: e20ee6448b166c6643b9e526656642fe56ee18a7
+SHA256: 3c9abf871772e13c13ba7c7e4973f9fac7dd6479995926607339255b408125e3
 
 Package: cbedic
 Version: 4.0-3
@@ -999,23 +999,6 @@ MD5sum: 7dc6b56548671b6e7e41087a675786fc
 SHA1: d4cb433cabe10b65cc46f2d8d3990c30302d5886
 SHA256: 793436cb2d070dc342d27d2ed7ad5204e776d35ca7f7d8a8ea14fa6b7b442682
 
-Package: gmbox
-Version: 0.4+svn258-1
-Installed-Size: 392
-Maintainer: Debian Chinese Team <chinese-developers@lists.alioth.debian.org>
-Architecture: all
-Depends: python2.6 | python2.7, python (>= 2.6.6-7~), python (<< 2.8), python-gtk2
-Description: google.cn music box
-Homepage: http://code.google.com/p/gmbox/
-Description-md5: c83494ed047261b2ada71b84cd5c7cdb
-Section: contrib/sound
-Priority: optional
-Filename: pool/contrib/g/gmbox/gmbox_0.4+svn258-1_all.deb
-Size: 45052
-MD5sum: 7214a649c74ec502e79e41e650546c0c
-SHA1: b061834c4a16d071050c0eb73fbd515ac2339544
-SHA256: 47291025777d6d41727e9a32cb38cdc0ca3d2d330d42c24b48fab67e7d5be8ac
-
 Package: gnome-video-arcade
 Version: 0.8.3-1
 Installed-Size: 3343
@@ -1412,11 +1395,11 @@ SHA1: e5f4974369b6fac05fc0f9054a5518a14a522fdb
 SHA256: 6540d6e3583dbac304274c3e6f58888b9dfcb1c125143fdf5e15d8df8683485d
 
 Package: java-package
-Version: 0.50
-Installed-Size: 81
+Version: 0.50+nmu1
+Installed-Size: 80
 Maintainer: Debian Java Maintainers <pkg-java-maintainers@lists.alioth.debian.org>
 Architecture: all
-Depends: debconf (>= 0.5) | debconf-2.0, debhelper, fakeroot, unzip, libx11-6, libasound2
+Depends: debhelper, fakeroot, unzip, libx11-6, libasound2
 Recommends: dpkg-dev, gcc
 Suggests: openjdk-6-jre, openjdk-7-jre
 Description: Utility for creating Java Debian packages
@@ -1426,11 +1409,11 @@ Tag: devel::buildtools, devel::debian, devel::lang:java,
  works-with::software:source
 Section: contrib/misc
 Priority: optional
-Filename: pool/contrib/j/java-package/java-package_0.50_all.deb
-Size: 19538
-MD5sum: 412d84eb12e8e329f8ddd263ca5fc8a2
-SHA1: e03c2dd049c05aa76b75395c2e2c440008d52887
-SHA256: e25c6e42c5b50ad7ba10525a008364fc267884ed7266b5016fb38a1204c65758
+Filename: pool/contrib/j/java-package/java-package_0.50+nmu1_all.deb
+Size: 19346
+MD5sum: 7b2b760bd39975b4776b131aed9ae055
+SHA1: 240c5a6010096ec9464d13428067ff00357086ad
+SHA256: 6c9eca41890ddc7dfb7a366b9222718a2da95058cf36e61c91be47a1dedb7658
 
 Package: libjlapack-java
 Source: jlapack
@@ -1838,8 +1821,8 @@ SHA1: 8ea6ae429be3ace6717432db7151da32c39bba3d
 SHA256: de9bd0b7cbce68b0554758fc568373b5f5a2aaaca8bc971f3aafe48ecdeff24d
 
 Package: mathematica-fonts
-Version: 14
-Installed-Size: 102
+Version: 16
+Installed-Size: 118
 Maintainer: Atsuhito KOHDA <kohda@debian.org>
 Architecture: all
 Replaces: ttf-mathematica4.1 (<< 9)
@@ -1847,20 +1830,20 @@ Provides: ttf-mathematica4.1
 Depends: unzip
 Pre-Depends: debconf (>= 0.5) | debconf-2.0
 Conflicts: ttf-mathematica4.1 (<< 9)
-Description: Installer of Mathematica fonts
-Description-md5: fa6b87d0f9edb667c351bda395bf84d4
+Description: installer for Mathematica fonts
+Description-md5: 3473fc09bdf3312b7a64808648f85588
 Section: contrib/fonts
 Priority: extra
-Filename: pool/contrib/m/mathematica-fonts/mathematica-fonts_14_all.deb
-Size: 26562
-MD5sum: 81d79203b4273e975798856a57875c9b
-SHA1: 6c2c82c895e9b891ecf1d78a3778b792b14a6269
-SHA256: b1e4feadac5d6f00aff2d5cc0c75da3c14c56d39e1e3e748a9968558ce4a633d
+Filename: pool/contrib/m/mathematica-fonts/mathematica-fonts_16_all.deb
+Size: 28916
+MD5sum: 24d67bfe93f6e6dd5ac1a3f066b31826
+SHA1: 7d4c226133719471941b4872fd2627ba64fa21ba
+SHA256: ffec792440efdbee367a6e4de049c4a5ff41bca45fc90a52e7d0a44314bc0572
 
 Package: ttf-mathematica4.1
 Source: mathematica-fonts
-Version: 14
-Installed-Size: 28
+Version: 16
+Installed-Size: 29
 Maintainer: Atsuhito KOHDA <kohda@debian.org>
 Architecture: all
 Depends: mathematica-fonts
@@ -1869,11 +1852,11 @@ Description-md5: c2481d28a5f6a5e8343eaae7160e37d1
 Tag: role::dummy
 Section: contrib/fonts
 Priority: extra
-Filename: pool/contrib/m/mathematica-fonts/ttf-mathematica4.1_14_all.deb
-Size: 3650
-MD5sum: b3f666866dd14526aac270bb814668a1
-SHA1: c9bfa3f35038dd8a35ac6d2d2eb226a19327d18b
-SHA256: 97519b7b0d98e9cad1d5832d45409de0a0aa6812920dae7a74e0466b08a7d27f
+Filename: pool/contrib/m/mathematica-fonts/ttf-mathematica4.1_16_all.deb
+Size: 4078
+MD5sum: ba5d0f033abc42c53c4f3c2860362330
+SHA1: 560b7a3ad3b972b16ff7cbb0e0db10d77ed3fc2d
+SHA256: 56b801cc77fc7be764c1c80d95167a132e0d8e11ab59981b761032b9bddb619f
 
 Package: matlab-support
 Version: 0.0.18
@@ -2820,9 +2803,9 @@ SHA1: 47a26ef1da6fbe4a83d5bfd2d3ed72e2ed28a62f
 SHA256: 17f79ed5dd8c1f0f7624cea647c35e6d83c0ca86d3933ad679937e7b8288c90a
 
 Package: sauerbraten-wake6
-Version: 1.0-1
-Installed-Size: 404
-Maintainer: Gürkan Sengün <gurkan@linuks.mine.nu>
+Version: 1.0-1.1
+Installed-Size: 347
+Maintainer: Gürkan Sengün <gurkan@phys.ethz.ch>
 Architecture: all
 Depends: sauerbraten
 Description: Small but dodgy deathmatch/instagib map for the Sauerbraten game
@@ -2831,11 +2814,11 @@ Description-md5: da07c16a773ba22b48f3af0c47053edf
 Tag: game::arcade, game::fps, interface::3d, role::app-data, use::gameplaying
 Section: contrib/games
 Priority: optional
-Filename: pool/contrib/s/sauerbraten-wake6/sauerbraten-wake6_1.0-1_all.deb
-Size: 268560
-MD5sum: 381ad9c55ffa81d0a23a9df2cda4521d
-SHA1: 20e94755a5b5088599d30b3a66dece5e1d56fbca
-SHA256: b7785a835fd704a0cd1e66b63af79e650b5588ba6a3ed579c8f8f8d6798b421e
+Filename: pool/contrib/s/sauerbraten-wake6/sauerbraten-wake6_1.0-1.1_all.deb
+Size: 268894
+MD5sum: b6ca0e70c95e2c754cd80adb484efa59
+SHA1: b04e6729a33d1435fd5aaff1e0fe010fe899ce4a
+SHA256: 063e516bc149efad085842f8eba454e723da15f7297041d5d8938df8528c0415
 
 Package: sdic
 Version: 2.1.3-22

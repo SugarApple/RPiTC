@@ -158,15 +158,7 @@ Package: libnl-3-200
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-support
-Architecture: armel
-Auto-Installed: 1
-
 Package: mime-support
-Architecture: armel
-Auto-Installed: 1
-
-Package: wireless-tools
 Architecture: armel
 Auto-Installed: 1
 
@@ -187,10 +179,6 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libdbus-glib-1-2
-Architecture: armel
-Auto-Installed: 1
-
-Package: python-dbus-dev
 Architecture: armel
 Auto-Installed: 1
 
@@ -246,15 +234,7 @@ Package: python2.7-minimal
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-gi
-Architecture: armel
-Auto-Installed: 1
-
 Package: dbus
-Architecture: armel
-Auto-Installed: 1
-
-Package: python-numpy
 Architecture: armel
 Auto-Installed: 1
 
@@ -266,19 +246,11 @@ Package: libcups2
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-glade2
-Architecture: armel
-Auto-Installed: 1
-
 Package: python
 Architecture: armel
 Auto-Installed: 1
 
 Package: libxft2
-Architecture: armel
-Auto-Installed: 1
-
-Package: gir1.2-glib-2.0
 Architecture: armel
 Auto-Installed: 1
 
@@ -290,15 +262,7 @@ Package: libthai0
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-dbus
-Architecture: armel
-Auto-Installed: 1
-
 Package: libxml2
-Architecture: armel
-Auto-Installed: 1
-
-Package: libgirepository-1.0-1
 Architecture: armel
 Auto-Installed: 1
 
@@ -311,10 +275,6 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libxrender1
-Architecture: armel
-Auto-Installed: 1
-
-Package: libblas3gf
 Architecture: armel
 Auto-Installed: 1
 
@@ -331,10 +291,6 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libjasper1
-Architecture: armel
-Auto-Installed: 1
-
-Package: liblapack3gf
 Architecture: armel
 Auto-Installed: 1
 
@@ -362,10 +318,6 @@ Package: libglib2.0-0
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-wicd
-Architecture: armel
-Auto-Installed: 1
-
 Package: libxdamage1
 Architecture: armel
 Auto-Installed: 1
@@ -374,15 +326,7 @@ Package: libnl-genl-3-200
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-gobject-2
-Architecture: armel
-Auto-Installed: 1
-
 Package: libxi6
-Architecture: armel
-Auto-Installed: 1
-
-Package: wicd-daemon
 Architecture: armel
 Auto-Installed: 1
 
@@ -402,27 +346,11 @@ Package: libxinerama1
 Architecture: armel
 Auto-Installed: 1
 
-Package: wicd-gtk
-Architecture: armel
-Auto-Installed: 1
-
 Package: libxrandr2
 Architecture: armel
 Auto-Installed: 1
 
-Package: python-gtk2
-Architecture: armel
-Auto-Installed: 1
-
-Package: python-cairo
-Architecture: armel
-Auto-Installed: 1
-
 Package: libgtk2.0-0
-Architecture: armel
-Auto-Installed: 1
-
-Package: python-gobject
 Architecture: armel
 Auto-Installed: 1
 
@@ -1023,6 +951,26 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libusb-1.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpolkit-gobject-1-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnm-util2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnl-route-3-200
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnm-glib4
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgudev-1.0-0
 Architecture: armel
 Auto-Installed: 1
 
