@@ -20,3 +20,5 @@
 /usr/lib/gio/modules libglib2.0-0:armel
 /usr/share/glib-2.0/schemas libglib2.0-0:armel
 /usr/lib/xulrunner-10.0/components xulrunner-10.0
+/usr/lib/arm-linux-gnueabi/gtk-3.0/3.0.0/immodules libgtk-3-0:armel
+/usr/lib/gtk-3.0/3.0.0/immodules libgtk-3-0:armel

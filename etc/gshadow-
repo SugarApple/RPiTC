@@ -19,7 +19,7 @@ cdrom:*::
 floppy:*::
 tape:*::
 sudo:*::
-audio:*::
+audio:*::root
 dip:*::
 www-data:*::
 backup:*::
@@ -44,3 +44,6 @@ ntp:!::
 messagebus:!::
 netdev:!::
 utempter:!::
+scanner:!::
+colord:!::
+saned:!::

@@ -5,6 +5,7 @@
 # Required-Stop:
 # Default-Start:     S
 # Default-Stop:
+# X-Start-Before:    bootmisc
 # Short-Description: bootclean after mountall.
 # Description:       Clean temporary filesystems after
 #                    all local filesystems have been mounted.

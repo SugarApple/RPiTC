@@ -862,121 +862,108 @@ SHA256: ad2bb4f650596dffddb9753aba358c1e20765f0cca209906716e493df2846a1b
 
 Package: cpp-doc
 Source: gcc-doc-defaults
-Version: 5:3
-Installed-Size: 52
+Version: 5:4
+Installed-Size: 47
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
-Depends: cpp-4.4-doc (>= 4.4.4.nf1-1)
-Conflicts: cpp (<< 4:4.1.1-7)
+Replaces: cpp (<< 4:4.1.1-7)
+Depends: cpp-4.6-doc (>= 4.6.3-1)
+Breaks: cpp (<< 4:4.1.1-7)
 Description: documentation for the GNU C preprocessor (cpp)
+Homepage: http://gcc.gnu.org/
 Description-md5: 9214885ed7215843bb04315d3a252cb5
 Tag: devel::doc, devel::lang:c, role::documentation
 Section: contrib/doc
 Priority: optional
-Filename: pool/contrib/g/gcc-doc-defaults/cpp-doc_3_armel.deb
-Size: 2830
-MD5sum: adc46a26e76d1f680b6e0ad572b47fdd
-SHA1: 5cf24eff1ed2aa3ff9d9a89c226788c60316f4d9
-SHA256: 109f85509dd40bbc0111b923658507c3ca51bb32bf52ec8ddfba9d1a7211710a
+Filename: pool/contrib/g/gcc-doc-defaults/cpp-doc_4_armel.deb
+Size: 3588
+MD5sum: 2e9fbec90bdb927636f2cbf10bca899d
+SHA1: 9afd871184ad8844194c2bbe39b99d8c9c983ecf
+SHA256: f90460885bf4ee240e8bc6acaf4a39d7d8135f93bd125c6ba0aa58a7657d3f9a
 
 Package: gcc-doc
 Source: gcc-doc-defaults
-Version: 5:3
-Installed-Size: 52
+Version: 5:4
+Installed-Size: 47
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
-Depends: gcc-4.4-doc (>= 4.4.4.nf1-1)
-Conflicts: g++ (<< 4:4.1.1-7), gcc (<< 4:4.1.1-7)
+Replaces: g++ (<< 4:4.1.1-7), gcc (<< 4:4.1.1-7)
+Depends: gcc-4.6-doc (>= 4.6.3-1)
+Breaks: g++ (<< 4:4.1.1-7), gcc (<< 4:4.1.1-7)
 Description: documentation for the GNU compilers (gcc, gobjc, g++)
+Homepage: http://gcc.gnu.org/
 Description-md5: 5c7b4ceecbb8f4546afea54849cba957
 Tag: devel::doc, devel::lang:c, devel::lang:c++, devel::lang:objc,
  role::documentation, role::metapackage
 Section: contrib/doc
 Priority: optional
-Filename: pool/contrib/g/gcc-doc-defaults/gcc-doc_3_armel.deb
-Size: 2946
-MD5sum: 3dd9048207d0df1859bc24dce4beff64
-SHA1: 1cf0c1b8e83b4502ef4c944c347cbd8853ed8782
-SHA256: 947864fe2c637cc8034921a4366ab8914914e3fcb5e3ac9193553efeee99febf
+Filename: pool/contrib/g/gcc-doc-defaults/gcc-doc_4_armel.deb
+Size: 3648
+MD5sum: fa0e509e5cd2a5e4f0c96f77ed9698e5
+SHA1: e88ec558cfed74cb968c27077a0d37f6494ba5a3
+SHA256: 2dec04ce36a977ecc016d523977190e1bd147677b09660be1388d03ad8381215
 
 Package: gcj-doc
 Source: gcc-doc-defaults
-Version: 5:3
-Installed-Size: 52
+Version: 5:4
+Installed-Size: 47
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Replaces: gcj (<< 4:4.3.1-2)
-Depends: gcj-4.4-doc (>= 4.4.4.nf1-1)
+Depends: gcj-4.7-doc (>= 4.7.2-1)
+Breaks: gcj (<< 4:4.3.1-2)
 Description: documentation for the GNU Java tools (gcj, gij)
+Homepage: http://gcc.gnu.org/
 Description-md5: 93115164878a0098d22e2568d01edc7a
 Tag: devel::doc, devel::lang:java, made-of::info, made-of::man,
  role::documentation, suite::gnu
 Section: contrib/doc
 Priority: optional
-Filename: pool/contrib/g/gcc-doc-defaults/gcj-doc_3_armel.deb
-Size: 2978
-MD5sum: 784d1f1c5d0d67c8b93ec351796165f9
-SHA1: f65c61934dd051742760afbfd20707a4f1d158c7
-SHA256: 8001db6380419a55a48d0ec2d7b68135c5a0076e97517d6c3588c5b9ba1bcb65
+Filename: pool/contrib/g/gcc-doc-defaults/gcj-doc_4_armel.deb
+Size: 3688
+MD5sum: 2018746940f0fb7da21c94ed2d3ae0d8
+SHA1: 83bb50aed0733246f99b0af6792a42f071a4baef
+SHA256: ad569086ecfbe859d8012d563659f64d5418d728667e2a309f3a1b02fa065cf9
 
 Package: gfortran-doc
 Source: gcc-doc-defaults
-Version: 5:3
-Installed-Size: 52
+Version: 5:4
+Installed-Size: 47
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
-Depends: gfortran-4.4-doc (>= 4.4.4.nf1-1)
-Conflicts: gfortran (<< 4:4.1.1-7)
+Replaces: gfortran (<< 4:4.1.1-7)
+Depends: gfortran-4.6-doc (>= 4.6.3-1)
+Breaks: gfortran (<< 4:4.1.1-7)
 Description: documentation for the GNU Fortran Compiler (gfortran)
+Homepage: http://gcc.gnu.org/
 Description-md5: 19f6059939e948fad2f88eca70ddb7fc
 Tag: devel::compiler, implemented-in::fortran, role::dummy
 Section: contrib/doc
 Priority: optional
-Filename: pool/contrib/g/gcc-doc-defaults/gfortran-doc_3_armel.deb
-Size: 2814
-MD5sum: 9de3413419640740d71ad0103fd1990c
-SHA1: 4c42a874882afb43e2891f5d8af7253446a56834
-SHA256: d0578615a698e72a961861b3781fd06a323173f49810bfa7f68f3cef8c78c11d
+Filename: pool/contrib/g/gcc-doc-defaults/gfortran-doc_4_armel.deb
+Size: 3572
+MD5sum: d847f8006493c6fcc4a68fb660305f9e
+SHA1: 66733dfaa6b826bd44f0d1e55fa313a7e47d44f8
+SHA256: 3c8201b65aba751d4d393d7356e70bd0fed2c5ce9b080082682ef931749aa272
 
 Package: gnat-doc
 Source: gcc-doc-defaults
-Version: 5:3
-Installed-Size: 44
+Version: 5:4
+Installed-Size: 39
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
-Depends: gnat-4.4-doc (>= 4.4.4.nf1-1)
+Depends: gnat-4.6-doc (>= 4.6.3-1)
 Description: documentation for the GNU Ada Compiler (gnat)
+Homepage: http://gcc.gnu.org/
 Description-md5: 5b644ec82e0c0c89da6803e4917b819a
 Tag: devel::doc, devel::lang:ada, role::documentation, suite::gnu
 Section: contrib/doc
 Priority: optional
-Filename: pool/contrib/g/gcc-doc-defaults/gnat-doc_3_armel.deb
-Size: 2782
-MD5sum: 98119a96154d459a372c158a8d775e88
-SHA1: 38892e8ebb2f73e303716167597626394b036646
-SHA256: 0718c0eb753ad2afb30c7e49c8d7e7c441de49b378f65b77b261ed29ad63e99b
-
-Package: gentle
-Source: gentle (1.9+cvs20100605+dfsg-3)
-Version: 1.9+cvs20100605+dfsg-3+b1
-Installed-Size: 6176
-Maintainer: Debian Med Packaging Team <debian-med-packaging@lists.alioth.debian.org>
-Architecture: armel
-Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libmysqlclient18 (>= 5.5.24+dfsg-1), libsqlite0 (>= 2.8.17), libsqlite3-0 (>= 3.5.9), libstdc++6 (>= 4.4.0), libtinyxml2.6.2, libwxbase2.8-0 (>= 2.8.12.1), libwxgtk2.8-0 (>= 2.8.12.1)
-Recommends: clustalw
-Description: suite to plan genetic cloning
-Homepage: http://gentle.magnusmanske.de
-Description-md5: 60adf1620c650c216b9ae673b5d248ca
-Tag: biology::nuceleic-acids, biology::peptidic, field::biology,
- field::biology:bioinformatics, implemented-in::c, interface::x11,
- role::program, uitoolkit::wxwidgets
-Section: contrib/science
-Priority: optional
-Filename: pool/contrib/g/gentle/gentle_1.9+cvs20100605+dfsg-3+b1_armel.deb
-Size: 2634230
-MD5sum: c241fd99ccb4856fe7719ef97c1105e8
-SHA1: b6bb0bc9ba826cc278bc602dffce434311ee6b88
-SHA256: d88fbdb9a52b9e37ba7fcce27625ca83caf675b36349d660c3aa94c74c10f44b
+Filename: pool/contrib/g/gcc-doc-defaults/gnat-doc_4_armel.deb
+Size: 3530
+MD5sum: 925ec81a127f1a24a750dec11e9e7af1
+SHA1: 0eef8a84afda5c78fba462c74d1e2c941f1a9a4d
+SHA256: 0cd180bd2df249ae398e13ca1df3ec4500342af637c5f80b7c1ac92cce08206a
 
 Package: geoip-database-contrib
 Version: 1.8
@@ -1471,26 +1458,6 @@ MD5sum: 3e86c0e2eaa85b01b5eb792dc7b8a3c1
 SHA1: 65c92d9eb990cbea31d952a83d618ec6a409b94b
 SHA256: b6269c083c9110442cfdf6a243e13d808e527fa6778253ee39d272ac11a35847
 
-Package: lgeneral
-Version: 1.1.1-5
-Installed-Size: 1828
-Maintainer: Debian QA Group <packages@qa.debian.org>
-Architecture: armel
-Depends: libc6 (>= 2.7-1), libsdl-mixer1.2 (>= 1.2.6), libsdl1.2debian (>= 1.2.10-1)
-Suggests: lgc-pg
-Description: A "Panzer General" - like game
-Homepage: http://lgames.sourceforge.net
-Description-md5: a102ba9c8f2226a9443a7a7aa6dbc837
-Tag: game::strategy, implemented-in::c, role::program, uitoolkit::sdl,
- use::gameplaying
-Section: contrib/games
-Priority: optional
-Filename: pool/contrib/l/lgeneral/lgeneral_1.1.1-5_armel.deb
-Size: 496768
-MD5sum: a2582cb721df3d33b2c42ae89a91405d
-SHA1: 8b6ffd34324d92282fc82c67461a390dadbb33d1
-SHA256: 52fa15a5bb638eb92b079c7fd2e41279ebfbf47ce737e8ad13c470671b88e392
-
 Package: matlab-gdf
 Source: libgdf
 Version: 0.1.2-2
@@ -1803,22 +1770,22 @@ SHA256: f6962270e11d304cdd62dfca4682cb01f34a3a8e547febbd10301c18ad1cac6f
 
 Package: mahara-mediaplayer
 Source: mahara
-Version: 1.5.1-2
+Version: 1.5.1-3
 Installed-Size: 2326
 Maintainer: Mahara Packaging Team <mahara-packaging@lists.launchpad.net>
 Architecture: all
-Depends: mahara (>= 1.5.1-2)
+Depends: mahara (>= 1.5.1-3)
 Conflicts: mahara-apache
 Description: Electronic portfolio, weblog, and resume builder - internal media player
 Homepage: https://mahara.org
 Description-md5: 6552b734998e8a37f8644b4a7084ae3a
 Section: contrib/web
 Priority: optional
-Filename: pool/contrib/m/mahara/mahara-mediaplayer_1.5.1-2_all.deb
-Size: 458482
-MD5sum: 0af0f238c7de1169e6d8811c726a6de6
-SHA1: 8ea6ae429be3ace6717432db7151da32c39bba3d
-SHA256: de9bd0b7cbce68b0554758fc568373b5f5a2aaaca8bc971f3aafe48ecdeff24d
+Filename: pool/contrib/m/mahara/mahara-mediaplayer_1.5.1-3_all.deb
+Size: 449416
+MD5sum: cb1999605b5bde2e7f2ca08641565628
+SHA1: 555aa2778d4fb748660ed98b790494c832c0177e
+SHA256: 4dacf0d9f78ac9ddd96dab35b566166b1b447619e5993adec9177d745b2c5776
 
 Package: mathematica-fonts
 Version: 16
@@ -2078,24 +2045,6 @@ Size: 108676
 MD5sum: 074fb7849a47f94200fc4c65a226c8e2
 SHA1: e86850eab409c9c187191f7fe5d90ecde2de2eb4
 SHA256: 1c1adcbc8ab2da5a9d3e6bcc01bbeb1fafde4e8cca0efd793c85d3e313ee3279
-
-Package: pvcam-dkms
-Version: 4.1.0-2
-Installed-Size: 92
-Maintainer: Bas Wijnen <wijnen@debian.org>
-Architecture: all
-Depends: dkms (>= 2.1.0.0)
-Recommends: libpvcam (= 4.1.0-2)
-Description: kernel module for Coolsnap pci card
-Multi-Arch: foreign
-Description-md5: 1861b98bd347e9716ccc9bf53bbd2e69
-Section: contrib/kernel
-Priority: extra
-Filename: pool/contrib/p/pvcam-dkms/pvcam-dkms_4.1.0-2_all.deb
-Size: 22072
-MD5sum: 9258f9ed504100d80126e812deaf2cb8
-SHA1: 07d0397a10b225bfb9f36db57c7c1192b69ddf26
-SHA256: fa6ce0dbb5767073f23dba4b729f88a9a5fa55d4380637fe2732cd6aa0ca8f03
 
 Package: pvpgn
 Source: pvpgn (1.8.1-2.1)
@@ -2549,42 +2498,6 @@ MD5sum: 9a0f4fc0feb69cfe5794fc7eada5f39c
 SHA1: e8200414909613d8a110b94cf8b9760b10b29e3f
 SHA256: 8683ef471ec5be0c851011daa65925919a86097875ba4b9b8d09d44831d07356
 
-Package: ruby-pgplot
-Version: 0.1.3-2
-Installed-Size: 180
-Maintainer: Youhei SASAKI <uwabami@gfd-dennou.org>
-Architecture: armel
-Depends: libc6 (>= 2.4), libgfortran3 (>= 4.3), libpng12-0 (>= 1.2.13-4), pgplot5, zlib1g (>= 1:1.1.4), libruby1.8 (>= 1.8.7.352) | libruby1.9.1 (>= 1.9.2.0), ruby-narray
-Description: Ruby interface to the PGPLOT graphics library
-Homepage: http://pgplot.rubyforge.org/
-Description-md5: cf08efc3d00267462ecffbd245d9bf82
-Ruby-Versions: ruby1.8 ruby1.9.1
-Section: contrib/ruby
-Priority: optional
-Filename: pool/contrib/r/ruby-pgplot/ruby-pgplot_0.1.3-2_armel.deb
-Size: 48670
-MD5sum: 45b44943a36a110cc866008335197a3a
-SHA1: 95b667229f5506a0c4b541d14384c64729dfc3d7
-SHA256: 51a88291c4a0db1483be4bb87f1818fad7004e8770326e1640c1894613feca7b
-
-Package: ruby-pgplot-dbg
-Source: ruby-pgplot
-Version: 0.1.3-2
-Installed-Size: 189
-Maintainer: Youhei SASAKI <uwabami@gfd-dennou.org>
-Architecture: armel
-Depends: ruby-pgplot (= 0.1.3-2)
-Description: Ruby interface to the PGPLOT graphics library
-Homepage: http://pgplot.rubyforge.org/
-Description-md5: 375deda5ca45297dff06caf747b3e7bd
-Section: contrib/debug
-Priority: extra
-Filename: pool/contrib/r/ruby-pgplot/ruby-pgplot-dbg_0.1.3-2_armel.deb
-Size: 49178
-MD5sum: 69fe1198d41ab2ded8bd9ec725c57ca7
-SHA1: dac9b3703f1d7dde2103b32a4d53fe99a5ab2411
-SHA256: ad7a04757c246c48d14122f13f70e205e333bc2fc9e2c3cfb405caf7b6aa5a21
-
 Package: sabnzbdplus
 Version: 0.6.15-1
 Installed-Size: 2616
@@ -2984,20 +2897,20 @@ SHA1: 893b402604874eebdbd38f9f6d59df0922443850
 SHA256: b8d171b98f71359ba3a0d4e5dd0008cfa9c76d64fff2e0318a5e74c955c9a674
 
 Package: sqldeveloper-package
-Version: 0.2.3+nmu1
-Installed-Size: 88
+Version: 0.2.4
+Installed-Size: 78
 Maintainer: Lazarus Long <lazarus.long@bigfoot.com>
 Architecture: all
 Depends: bzip2, devscripts, fakeroot, file, unzip, tofrodos, imagemagick
 Description: Oracle SQL Developer Debian package builder
-Description-md5: fdfd6a5c408ffcfc3dce2b845b2cd43f
+Description-md5: 7fabc3fa20df18b43a17959dd66a466c
 Section: contrib/misc
 Priority: optional
-Filename: pool/contrib/s/sqldeveloper-package/sqldeveloper-package_0.2.3+nmu1_all.deb
-Size: 17516
-MD5sum: aca603d50f518a30b278fe5be326ef8b
-SHA1: 3258958624c661545e2b143eb7f40643975debe0
-SHA256: c5c8dbcb668ebd81859a9d41e65319a0df36e0d1c4629dd7ca0fc2b26097ae24
+Filename: pool/contrib/s/sqldeveloper-package/sqldeveloper-package_0.2.4_all.deb
+Size: 17598
+MD5sum: 3f3776dba5b93f47e789019ce163c9af
+SHA1: 819d248af6caecb74d13acc3a7678a4c1c70dd1d
+SHA256: 289db413af5862bac18b9e5385cc20ea784226fbaab5ed333aba3102dcb595a2
 
 Package: sugar-etoys-activity
 Version: 116-3
@@ -3356,24 +3269,23 @@ SHA1: d163e4808d391b01d270cb77bedd4d0f258166c8
 SHA256: 760e7622c866d2ff1bb8fa0ee7d2b337a6d4e84806705e19831f7f85a325c3f2
 
 Package: winetricks
-Version: 0.0+20120606+svn831-3
-Installed-Size: 719
+Version: 0.0+20121030+svn918-1
+Installed-Size: 721
 Maintainer: Jari Aalto <jari.aalto@cante.net>
 Architecture: all
-Depends: wine-bin | wine-bin-unstable | wine64-bin, wget, cabextract, unzip, p7zip
+Depends: wine | wine-unstable, wget, cabextract, unzip, p7zip
 Recommends: zenity | kdebase-bin, xdg-utils, sudo | gksu
-Suggests: wine-unstable | wine
 Description: package manager for WINE to install software easily
 Homepage: http://code.google.com/p/winetricks
 Description-md5: b921451b12283cfe5587b85f48d836dd
 Tag: admin::package-management, implemented-in::shell, role::program
 Section: contrib/otherosfs
 Priority: optional
-Filename: pool/contrib/w/winetricks/winetricks_0.0+20120606+svn831-3_all.deb
-Size: 169238
-MD5sum: 3c8248309397f68eb31c68ac5273d1ca
-SHA1: 8d3ad2dff613e9147156aaa5873a98129b3f3bd9
-SHA256: c510d38fd336365b2deac13bf00217443c4d60a2883e8571fbe075240357ef32
+Filename: pool/contrib/w/winetricks/winetricks_0.0+20121030+svn918-1_all.deb
+Size: 170368
+MD5sum: 6ba1a74c644b132b24b971d6019d2595
+SHA1: dd90043b0d3cf862343fd31c65aa8edd9ad951c7
+SHA256: 36e4f18d7ac7ea206030b477651d811237d4e6072f3b043a8c82cd89f10b8d30
 
 Package: wnn7egg
 Version: 1.02-8

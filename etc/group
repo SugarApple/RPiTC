@@ -44,3 +44,6 @@ ntp:x:104:
 messagebus:x:105:
 netdev:x:106:
 utempter:x:107:
+scanner:x:108:saned
+colord:x:109:
+saned:x:110:

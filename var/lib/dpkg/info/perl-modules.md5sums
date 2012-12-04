@@ -573,7 +573,7 @@ f0bea43b4726794b4c1f50e18dba6fa3  usr/share/perl/5.14.2/CPAN/Bundle.pm
 48763cae29ac62ee30cd528119fe65a9  usr/share/perl/5.14.2/CPAN/HandleConfig.pm
 a2e311336600bfaa99e5a9cd0d087529  usr/share/perl/5.14.2/CPAN/Kwalify.pm
 7528a98995ff0be50ddee9690c5e8b31  usr/share/perl/5.14.2/CPAN/Queue.pm
-134ff28d707b6258635f5d2c16db986b  usr/share/perl/5.14.2/CPAN/FirstTime.pm
+b0733263f68719437bdbe32d55cef685  usr/share/perl/5.14.2/CPAN/FirstTime.pm
 5cd76b02068b76487cc5417c4dd67e37  usr/share/perl/5.14.2/CPAN/Distribution.pm
 9d09a6a705d1423f32430375ce088b2c  usr/share/perl/5.14.2/CPAN/InfoObj.pm
 245b93934b82f8b8f15d0650d532d6bb  usr/share/perl/5.14.2/CPAN/Debug.pm
@@ -636,6 +636,6 @@ d67a5509c04474dd9f72c528b5628a05  usr/share/perl/5.14.2/Math/BigFloat/Trace.pm
 fec900f2cbb10c660cb64508f62952aa  usr/share/perl/5.14.2/assert.pl
 2c74e655789cda7d10ea49e97c2ba34e  usr/share/perl/5.14.2/CGI.pm
 1e911bfd331bee9c915947f3aeccae39  usr/share/perl/5.14.2/abbrev.pl
-d794073eae98c3bdccd34b5e91b5b4e5  usr/share/doc/perl-modules/changelog.Debian.gz
+1f6f7ef2ba6495c45d53b004165e4fde  usr/share/doc/perl-modules/changelog.Debian.gz
 9280fd4d415c10623cb644cdf04862c3  usr/share/doc/perl-modules/README.Debian
 6f7ebdc92f5be94d39f89548a5b5ca5a  usr/share/doc/perl-modules/copyright

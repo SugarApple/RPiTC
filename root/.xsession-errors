@@ -62,3 +62,59 @@ Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.
 Using log file /tmp/vmware-root/vmware-view-1506.log
 XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
       after 8626 requests (8626 known processed) with 0 events remaining.
+Xsession: X session started for root at Tue Oct 30 15:17:22 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 13156 requests (13156 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 19:21:16 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 7539 requests (7539 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 20:00:35 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2642 requests (2639 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 20:17:36 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 4913 requests (4910 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 21:21:55 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+Importing pynotify failed, notifications disabled.
+Has notifications support False
+Loading...
+Connecting to daemon...
+Can't connect to the daemon, trying to start it automatically...
+Can't connect to the daemon, trying to start it automatically...
+Failed to find a graphical sudo program, cannot continue.
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 11473 requests (11473 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 21:37:35 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 5011 requests (5011 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 21:43:24 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 9053 requests (9050 known processed) with 0 events remaining.
+Xsession: X session started for root at Sun Dec  2 22:15:05 UTC 2012
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 26676 requests (26676 known processed) with 0 events remaining.

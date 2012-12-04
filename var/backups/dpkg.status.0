@@ -93,7 +93,7 @@ Installed-Size: 1515
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: all
 Source: xorg-server
-Version: 2:1.12.4-1
+Version: 2:1.12.4-3
 Replaces: xserver-xorg-core (<< 2:1.5.2)
 Depends: x11-common, xkb-data, x11-xkb-utils
 Recommends: xfonts-base, xauth
@@ -237,14 +237,14 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 13461
+Installed-Size: 13552
 Maintainer: Michael Stone <mstone@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 8.13-3.2
+Version: 8.13-3.4
 Replaces: mktemp, timeout
 Depends: dpkg (>= 1.15.4) | install-info
-Pre-Depends: libacl1 (>= 2.2.51-5), libattr1 (>= 1:2.4.46-5), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32)
+Pre-Depends: libacl1 (>= 2.2.51-8), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32)
 Conflicts: timeout
 Description: GNU core utilities
  This package contains the basic file, shell and text manipulation
@@ -394,7 +394,7 @@ Installed-Size: 2394
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: iceweasel
-Version: 10.0.10esr-1
+Version: 10.0.11esr-1
 Depends: libc6 (>= 2.4), libffi5 (>= 3.0.9), libgcc1 (>= 1:4.4.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.4.0)
 Description: Mozilla SpiderMonkey JavaScript library
  This library provides the embeddable JavaScript/ECMAScript engine from
@@ -739,12 +739,12 @@ Package: libavcodec53
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 19819
+Installed-Size: 19836
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.3-7
+Version: 6:0.8.4-1
 Depends: libavutil51 (>= 6:0.8.3-1~), libc6 (>= 2.7), libdirac-encoder0, libgcc1 (>= 1:4.4.0), libgsm1 (>= 1.0.13), libmp3lame0, libopenjpeg2, libschroedinger-1.0-0 (>= 1.0.0), libspeex1 (>= 1.2~beta3-1), libtheora0 (>= 1.0), libva1 (>> 1.0.15~), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx1 (>= 1.0.0), libx264-123, libxvidcore4 (>= 1.2.2), zlib1g (>= 1:1.2.0)
 Pre-Depends: multiarch-support
 Breaks: libavcodec-extra-53, mplayer (<< 2:1.0~rc4.dfsg1+svn34540-1~)
@@ -778,32 +778,6 @@ Description: LGPL Crypto library - runtime library
  Camellia, CRC, MD4, MD5, RIPE-MD160, SHA-1, SHA-256, SHA-512, Tiger,
  Whirlpool, DSA, DSA2, ElGamal, RSA, ECC.
 Homepage: http://directory.fsf.org/project/libgcrypt/
-
-Package: python-dbus
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 641
-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
-Architecture: armel
-Source: dbus-python
-Version: 1.1.1-1
-Replaces: python2.4-dbus
-Provides: python2.6-dbus, python2.7-dbus
-Depends: python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8), libc6 (>= 2.4), libdbus-1-3 (>= 1.5.12), libdbus-glib-1-2 (>= 0.78), libglib2.0-0 (>= 2.12.0), python-dbus-dev
-Recommends: python-gi | python-gobject-2 | python-qt4-dbus
-Suggests: python-dbus-doc, python-dbus-dbg
-Breaks: gajim (<< 0.11.1), gnome-osd (<< 0.12.0), python-qt4-dbus (<< 4.8.3-3)
-Conflicts: python2.4-dbus
-Description: simple interprocess messaging system (Python interface)
- D-Bus is a message bus, used for sending messages between applications.
- Conceptually, it fits somewhere in between raw sockets and CORBA in
- terms of complexity.
- .
- This package provides a Python interface to D-Bus.
- .
- See the dbus description for more information about D-Bus in general.
-Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings#Python
 
 Package: xserver-xorg-video-sis
 Status: install ok installed
@@ -923,7 +897,7 @@ Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: lsb
-Version: 4.1+Debian7
+Version: 4.1+Debian8
 Description: Linux Standard Base 4.1 init script functionality
  The Linux Standard Base (http://www.linuxbase.org/) is a standard
  core system that third-party applications written for Linux can
@@ -1094,12 +1068,12 @@ Package: libspeex1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 138
+Installed-Size: 139
 Maintainer: Ron Lee <ron@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: speex
-Version: 1.2~rc1-6
+Version: 1.2~rc1-7
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Suggests: speex
@@ -1122,8 +1096,8 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
-Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.10.1+dfsg-2), libkrb5support0 (>= 1.7dfsg~beta2)
+Version: 1.10.1+dfsg-3
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.10.1+dfsg-3), libkrb5support0 (>= 1.7dfsg~beta2)
 Pre-Depends: multiarch-support
 Suggests: krb5-doc, krb5-user
 Breaks: libgssglue1 (<< 0.2-2)
@@ -1266,7 +1240,7 @@ Maintainer: Aurelien Jarno <aurel32@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libusb
-Version: 2:0.1.12-20
+Version: 2:0.1.12-20+nmu1
 Replaces: libusb0
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
@@ -1357,11 +1331,11 @@ Package: perl-modules
 Status: install ok installed
 Priority: standard
 Section: perl
-Installed-Size: 14081
+Installed-Size: 14082
 Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: all
 Source: perl
-Version: 5.14.2-14
+Version: 5.14.2-15
 Replaces: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-yaml-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libshell-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
 Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-yaml-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libshell-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
 Depends: perl (>= 5.14.2-1), libswitch-perl, libclass-isa-perl
@@ -1766,7 +1740,7 @@ Description: Secure Socket Layer (SSL) binary and related cryptographic tools
   -  Handling of S/MIME signed or encrypted mail.
 
 Package: python-gi
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: optional
 Section: python
 Installed-Size: 1134
@@ -1774,6 +1748,7 @@ Maintainer: Josselin Mouette <joss@debian.org>
 Architecture: armel
 Source: pygobject
 Version: 3.2.2-1
+Config-Version: 3.2.2-1
 Replaces: python-gobject (<< 3.0.2-4)
 Provides: python2.6-gi, python2.7-gi
 Depends: python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8), libc6 (>= 2.4), libffi5 (>= 3.0.9), libgirepository-1.0-1 (>= 1.29.0), libglib2.0-0 (>= 2.31.8), gir1.2-glib-2.0 (>= 1.31.0)
@@ -1876,11 +1851,11 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: perl
-Installed-Size: 4566
+Installed-Size: 4570
 Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: armel
 Source: perl
-Version: 5.14.2-14
+Version: 5.14.2-15
 Replaces: libperl5.8 (<< 5.8.0-20), libscalar-list-utils-perl, libsocket-perl, libxsloader-perl, perl (<< 5.10.1-12), perl-modules (<< 5.10.1-1)
 Provides: libscalar-list-utils-perl, libsocket-perl, libxsloader-perl, perl5-base, perlapi-5.14.2
 Pre-Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), dpkg (>= 1.14.20)
@@ -1900,11 +1875,11 @@ Package: sysv-rc
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 216
+Installed-Size: 218
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: all
 Source: sysvinit
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Replaces: file-rc
 Depends: debconf (>= 0.5) | debconf-2.0, sysvinit-utils (>= 2.86.ds1-62), insserv (>> 1.12.0-10)
 Recommends: lsb-base (>= 3.2-14)
@@ -1939,12 +1914,12 @@ Package: apt
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 3146
+Installed-Size: 3173
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
-Version: 0.9.7.5
+Version: 0.9.7.6
 Replaces: manpages-pl (<< 20060617-3~)
-Depends: libapt-pkg4.12 (>= 0.9.7.5), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), debian-archive-keyring, gnupg
+Depends: libapt-pkg4.12 (>= 0.9.7.6), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), debian-archive-keyring, gnupg
 Suggests: aptitude | synaptic | wajig, dpkg-dev, apt-doc, xz-utils, python-apt
 Conflicts: python-apt (<< 0.7.93.2~)
 Conffiles:
@@ -2100,11 +2075,11 @@ Package: libgif4
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 82
-Maintainer: Thibaut GRIDEL <tgridel@free.fr>
+Installed-Size: 85
+Maintainer: Thibaut Gridel <tgridel@free.fr>
 Architecture: armel
 Source: giflib
-Version: 4.1.6-9.1
+Version: 4.1.6-10
 Provides: libungif4g
 Depends: libc6 (>= 2.4)
 Description: library for GIF images (library)
@@ -2122,9 +2097,9 @@ Installed-Size: 3760
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Source: xorg-server
-Version: 2:1.12.4-1
+Version: 2:1.12.4-3
 Provides: xorg-input-abi-16, xorg-video-abi-12
-Depends: xserver-common (>= 2:1.12.4-1), keyboard-configuration, udev (>= 149), libaudit0 (>= 1.7.13), libc6 (>= 2.8), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.21.6), libselinux1 (>= 2.0.82), libudev0 (>= 154), libxau6, libxdmcp6, libxfont1 (>= 1:1.4.2)
+Depends: xserver-common (>= 2:1.12.4-3), keyboard-configuration, udev (>= 149), libaudit0 (>= 1.7.13), libc6 (>= 2.8), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.21.6), libselinux1 (>= 2.0.82), libudev0 (>= 154), libxau6, libxdmcp6, libxfont1 (>= 1:1.4.2)
 Recommends: libgl1-mesa-dri (>= 7.10.2-4)
 Suggests: xfonts-100dpi | xfonts-75dpi, xfonts-scalable
 Breaks: libgl1-mesa-dri (<< 7.10.2-4), libgl1-mesa-dri-experimental (<< 7.10.2-4), xserver-xorg-input, xserver-xorg-input-2, xserver-xorg-input-2.1, xserver-xorg-input-4, xserver-xorg-input-7, xserver-xorg-input-joystick (<= 1:1.5.0-3), xserver-xorg-input-synaptics (<= 1.2.2-1), xserver-xorg-input-tslib (<= 0.0.6-3), xserver-xorg-input-vmmouse (<= 1:12.6.5-4), xserver-xorg-input-wacom (<= 0.10.5+20100415-1), xserver-xorg-video, xserver-xorg-video-1.0, xserver-xorg-video-1.9, xserver-xorg-video-2, xserver-xorg-video-4, xserver-xorg-video-5, xserver-xorg-video-6, xserver-xorg-video-cyrix (<= 1:1.1.0-8), xserver-xorg-video-i810 (<< 2:2.4), xserver-xorg-video-imstt (<= 1:1.1.0-7), xserver-xorg-video-nsc (<= 1:2.8.3-4), xserver-xorg-video-sunbw2 (<= 1:1.1.0-5), xserver-xorg-video-v4l (<< 1:0.2.0), xserver-xorg-video-vga (<= 1:4.1.0-8)
@@ -2150,7 +2125,7 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
+Version: 1.10.1+dfsg-3
 Depends: libc6 (>= 2.4), libkeyutils1, libkrb5support0 (>= 1.7dfsg~beta2)
 Pre-Depends: multiarch-support
 Suggests: krb5-doc, krb5-user
@@ -2484,19 +2459,25 @@ Package: ifupdown
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 180
+Installed-Size: 191
 Maintainer: Andrew O. Shadura <bugzilla@tut.by>
 Architecture: armel
 Multi-Arch: foreign
-Version: 0.7.2
+Version: 0.7.5
 Replaces: netbase (<< 5.0)
-Depends: iproute (>= 20071016-1), libc6 (>= 2.7), lsb-base, initscripts (>= 2.88dsf-25)
+Depends: iproute (>= 20071016-1), libc6 (>= 2.7), lsb-base (>= 4.1+Debian3), initscripts (>= 2.88dsf-25)
 Pre-Depends: dpkg (>= 1.15.7.2)
 Suggests: isc-dhcp-client | dhcp-client, ppp, rdnssd, net-tools
 Breaks: dhcp-client (<< 3.0), netbase (<< 5.0)
 Conffiles:
  /etc/default/networking 35cd4a2713981c9239ce4532c1bfc1c7
- /etc/init.d/networking e29f156f1a9a2255fe9ab824c8993b85
+ /etc/network/if-down.d/upstart 1a0205ddbc1446782a8d4d818e97d8a5
+ /etc/network/if-up.d/upstart dfbcde4fd4a3a2553930605e03e160ab
+ /etc/init.d/networking b91fa5f0529020176659b341b7a1a740
+ /etc/init/network-interface.conf 296dd23a2833cc2bb5c646a833011eab
+ /etc/init/network-interface-container.conf 7fb0862f8c092b33c16ec0f05387fbfb
+ /etc/init/networking.conf 1a5e78aba88486d1b6070f8fa3bd60ad
+ /etc/init/network-interface-security.conf 8d6447a035b681f5fa22d168adcf8dec
 Description: high level tools to configure network interfaces
  This package provides the tools ifup and ifdown which may be used to
  configure (or, respectively, deconfigure) network interfaces based on
@@ -2933,12 +2914,12 @@ Package: libapt-pkg4.12
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 2561
+Installed-Size: 2577
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.5
+Version: 0.9.7.6
 Depends: libbz2-1.0, libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.2.3.3)
 Pre-Depends: multiarch-support
 Breaks: apt (<< 0.9.4~)
@@ -3560,12 +3541,12 @@ Package: libapt-inst1.5
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 691
+Installed-Size: 693
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.5
+Version: 0.9.7.6
 Depends: libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Pre-Depends: multiarch-support
 Description: deb package format runtime library
@@ -3640,13 +3621,14 @@ Description: X C Binding
 Homepage: http://xcb.freedesktop.org
 
 Package: python-support
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: optional
 Section: python
 Installed-Size: 163
 Maintainer: Josselin Mouette <joss@debian.org>
 Architecture: all
 Version: 1.0.15
+Config-Version: 1.0.15
 Depends: python (>= 2.5), python-minimal, dpkg (>= 1.14.19)
 Conflicts: debhelper (<< 5.0.38)
 Description: automated rebuilding support for Python modules
@@ -3680,11 +3662,11 @@ Package: locales
 Status: install ok installed
 Priority: standard
 Section: localization
-Installed-Size: 15117
+Installed-Size: 15118
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Replaces: base-config, lliurex-belocs-locales-data
 Depends: glibc-2.13-1, debconf (>= 0.5) | debconf-2.0
 Conflicts: base-config, belocs-locales-bin, belocs-locales-data
@@ -3701,28 +3683,6 @@ Description: Embedded GNU C Library: National Language (locale) data [support]
  with all locales generated by default. This created a package that
  unpacked to an excess of 30 megs.
 Homepage: http://www.eglibc.org
-
-Package: python-dbus-dev
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 151
-Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
-Architecture: all
-Source: dbus-python
-Version: 1.1.1-1
-Replaces: python-dbus (<< 1.0), python-dbus-common (<< 1.0)
-Breaks: python-dbus (<< 1.0), python-dbus-common (<< 1.0)
-Description: main loop integration development files for python-dbus
- D-Bus is a message bus, used for sending messages between applications.
- Conceptually, it fits somewhere in between raw sockets and CORBA in
- terms of complexity.
- .
- This package provides development files required to compile main-loop
- integration modules for python-dbus, such as dbus.mainloop.qt provided
- by PyQt. It is Python-version-independent: you must also depend on either
- python-dbus or python3-dbus, if required.
-Homepage: http://www.freedesktop.org/wiki/Software/DBusBindings#Python
 
 Package: traceroute
 Status: install ok installed
@@ -3841,8 +3801,8 @@ Section: admin
 Installed-Size: 714
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
-Version: 3.13
-Depends: debconf (>= 0.5) | debconf-2.0, liblocale-gettext-perl, apt, tasksel-data
+Version: 3.14
+Depends: debconf (>= 0.5) | debconf-2.0, liblocale-gettext-perl, apt, tasksel-data, perl-base (>= 5.14.0-1)
 Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
 Conflicts: base-config (<< 2.32), debconf (<< 1.4.27)
 Description: Tool for selecting tasks for installation on Debian systems
@@ -3857,10 +3817,10 @@ Installed-Size: 206
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: gcc-4.7 (4.7.1-7)
-Version: 1:4.7.1-7
+Source: gcc-4.7 (4.7.2-4)
+Version: 1:4.7.2-4
 Provides: libgcc1-armel
-Depends: gcc-4.7-base (= 4.7.1-7), libc6 (>= 2.4)
+Depends: gcc-4.7-base (= 4.7.2-4), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Description: GCC support library
@@ -3870,7 +3830,7 @@ Description: GCC support library
 Homepage: http://gcc.gnu.org/
 
 Package: wicd-gtk
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: optional
 Section: net
 Installed-Size: 552
@@ -3878,6 +3838,7 @@ Maintainer: David Paleino <dapal@debian.org>
 Architecture: all
 Source: wicd
 Version: 1.7.2.4-2
+Config-Version: 1.7.2.4-2
 Replaces: wicd (<= 1.6.2.2-4)
 Provides: wicd-client
 Depends: python (>= 2.6.6-7~), python-gtk2, python-glade2, wicd-daemon (= 1.7.2.4-2)
@@ -3976,7 +3937,7 @@ Description: X11 Video extension library
  git://anongit.freedesktop.org/git/xorg/lib/libXv
 
 Package: libgirepository-1.0-1
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: optional
 Section: libs
 Installed-Size: 230
@@ -3984,6 +3945,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Architecture: armel
 Source: gobject-introspection
 Version: 1.32.1-1
+Config-Version: 1.32.1-1
 Replaces: libgirepository1.0-1
 Provides: libgirepository1.0-1
 Depends: libc6 (>= 2.4), libffi5 (>= 3.0.9), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.31.8)
@@ -4081,32 +4043,6 @@ Description: Debian base system miscellaneous files
  /etc/host.conf, /etc/issue, /etc/motd, /etc/profile, and others,
  and the text of several common licenses in use on Debian systems.
 
-Package: python-wicd
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 224
-Maintainer: David Paleino <dapal@debian.org>
-Architecture: all
-Source: wicd
-Version: 1.7.2.4-2
-Replaces: wicd (<< 1.7.0~a3)
-Depends: python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8)
-Breaks: wicd (<< 1.7.0~a3)
-Description: wired and wireless network manager - Python module
- Wicd is a general-purpose network configuration server which aims
- to provide a simple but flexible interface for connecting to networks.
- Its features include:
-  * wide variety of settings;
-  * ability to connect to (and maintain profiles for) both wired and
-    wireless networks;
-  * support for many encryption schemes, including WEP, WPA, WPA2 and
-    custom schemes;
-  * wireless-tools compatibility.
- .
- This package provides the Python module used by Wicd.
-Homepage: http://wicd.sourceforge.net/
-
 Package: mount
 Essential: yes
 Status: install ok installed
@@ -4185,12 +4121,12 @@ Package: libcups2
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 430
+Installed-Size: 432
 Maintainer: Debian CUPS Maintainers <pkg-cups-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: cups
-Version: 1.5.3-1
+Version: 1.5.3-2.4
 Replaces: libcupsys2
 Provides: libcupsys2
 Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.4), libgnutls26 (>= 2.12.17-0), libgssapi-krb5-2 (>= 1.10+dfsg~), zlib1g (>= 1:1.1.4)
@@ -4369,7 +4305,7 @@ Installed-Size: 550
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
 Source: tasksel
-Version: 3.13
+Version: 3.14
 Depends: tasksel
 Recommends: laptop-detect
 Conflicts: tasksel (<< 2.67)
@@ -4400,23 +4336,6 @@ Description: NetScape Portable Runtime Library
   * basic memory management (malloc and free),
   * shared library linking.
 Homepage: http://www.mozilla.org/projects/nspr/
-
-Package: python-cairo
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 320
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Architecture: armel
-Source: pycairo (1.8.8-1)
-Version: 1.8.8-1+b2
-Provides: python2.6-cairo, python2.7-cairo
-Depends: libc6 (>= 2.4), libcairo2 (>= 1.8.6), python (<< 2.8), python (>= 2.6), python-support (>= 0.90.0)
-Description: Python bindings for the Cairo vector graphics library
- This package contains modules that allow you to use the Cairo vector
- graphics library in Python programs.
-Homepage: http://cairographics.org/pycairo/
-Python-Version: 2.6, 2.7
 
 Package: ctxusb
 Status: install ok installed
@@ -4594,12 +4513,14 @@ Package: libopenjpeg2
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 164
+Installed-Size: 168
 Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
 Architecture: armel
+Multi-Arch: same
 Source: openjpeg
-Version: 1.3+dfsg-4.1
+Version: 1.3+dfsg-4.6
 Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
 Description: JPEG 2000 image compression/decompression library
  Libopenjpeg2 is a library for handling the JPEG 2000 image compression format.
 Homepage: http://www.openjpeg.org
@@ -4818,7 +4739,7 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: krb5
-Version: 1.10.1+dfsg-2
+Version: 1.10.1+dfsg-3
 Description: Internationalization support for MIT Kerberos
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a
@@ -5150,7 +5071,7 @@ Description: Tag Image File Format (TIFF) library (old version)
 Homepage: http://libtiff.maptools.org
 
 Package: python-gobject-2
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: optional
 Section: oldlibs
 Installed-Size: 1342
@@ -5158,6 +5079,7 @@ Maintainer: Josselin Mouette <joss@debian.org>
 Architecture: armel
 Source: pygobject-2
 Version: 2.28.6-10
+Config-Version: 2.28.6-10
 Replaces: python-gobject (<< 2.90)
 Provides: python2.6-gobject, python2.6-gobject-2, python2.7-gobject, python2.7-gobject-2
 Depends: python2.7 | python2.6, python (>= 2.6.6-7~), python (<< 2.8), libc6 (>= 2.4), libffi5 (>= 3.0.9), libglib2.0-0 (>= 2.24.0)
@@ -5174,35 +5096,16 @@ Description: deprecated static Python bindings for the GObject library
  written code. These static bindings just exist to provide backwards
  compatibility for GNOME 2 based software.
 
-Package: liblapack3gf
-Status: install ok installed
-Priority: optional
-Section: oldlibs
-Installed-Size: 42
-Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
-Architecture: all
-Source: lapack
-Version: 3.4.1-6
-Depends: liblapack3
-Description: Transitional package for liblapack3
- LAPACK version 3.X is a comprehensive FORTRAN library that does
- linear algebra operations including matrix inversions, least
- squared solutions to linear sets of equations, eigenvector
- analysis, singular value decomposition, etc. It is a very
- comprehensive and reputable package that has found extensive
- use in the scientific community.
-Homepage: http://www.netlib.org/lapack/
-
 Package: libsystemd-login0
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 78
+Installed-Size: 79
 Maintainer: Tollef Fog Heen <tfheen@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: systemd
-Version: 44-4
+Version: 44-5
 Depends: libc6 (>= 2.9), libcap2 (>= 2.10), libgcc1 (>= 1:4.4.0), libselinux1 (>= 2.0.65)
 Pre-Depends: multiarch-support
 Description: systemd login utility library
@@ -5316,7 +5219,7 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
+Version: 1.10.1+dfsg-3
 Depends: libc6 (>= 2.4), libkeyutils1
 Pre-Depends: multiarch-support
 Conflicts: libkrb53
@@ -5512,60 +5415,33 @@ Package: iceweasel
 Status: install ok installed
 Priority: optional
 Section: web
-Installed-Size: 6386
+Installed-Size: 6412
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
-Version: 10.0.10esr-1
+Version: 10.0.11esr-1
 Provides: gnome-www-browser, www-browser
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.10), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), fontconfig, procps, debianutils (>= 1.16), xulrunner-10.0 (>= 10.0.10esr-1), libsqlite3-0 (>= 3.7.12-1~)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.10), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), fontconfig, procps, debianutils (>= 1.16), xulrunner-10.0 (>= 10.0.11esr-1), libsqlite3-0 (>= 3.7.12-1~)
 Suggests: fonts-stix | otf-stix, mozplugger, libgssapi-krb5-2 | libkrb53
 Conffiles:
  /etc/iceweasel/pref/iceweasel.js f1bcbce2d713f2f639a9a9db7c3ad228
- /etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml 751e11997e15024ab67d59720c1c43f5
+ /etc/iceweasel/profile/mimeTypes.rdf 6047f42624d9930caa8d651fa94d28f1
+ /etc/iceweasel/profile/localstore.rdf ea03cc19c2a3f622fa557cd8ea9da6eb
+ /etc/iceweasel/profile/chrome/userContent-example.css d3765c7d2de5626529195007f4b7144a
+ /etc/iceweasel/profile/chrome/userChrome-example.css c63733eef9d337c86e6609bcc478a668
+ /etc/iceweasel/profile/prefs.js 99940ecd258d83b3355ab06fca0ffddb
+ /etc/iceweasel/profile/bookmarks.html 683b550745310e79b6d208e03431867f
+ /etc/iceweasel/searchplugins/common/debsearch.xml 626edd789818df62e5980799dcdb2b71
+ /etc/iceweasel/searchplugins/common/duckduckgo.xml 10875ea748c00bec65f896c0e8b4cb27
  /etc/iceweasel/searchplugins/locale/en-US/twitter.xml 2809ff03cc617038bbdd155c57719c40
+ /etc/iceweasel/searchplugins/locale/en-US/yahoo.xml 19c4959309f7809ced9c1b917e960b23
+ /etc/iceweasel/searchplugins/locale/en-US/bing.xml 4da8621504b90c7b8e8214aa4f99d488
+ /etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml 751e11997e15024ab67d59720c1c43f5
  /etc/iceweasel/searchplugins/locale/en-US/google.xml e478692f95fe183cce5b0194fd4f1ca9
  /etc/iceweasel/searchplugins/locale/en-US/amazondotcom.xml a0fdca998378fa5da03d7e8e8bc18f36
- /etc/iceweasel/searchplugins/locale/en-US/bing.xml 4da8621504b90c7b8e8214aa4f99d488
  /etc/iceweasel/searchplugins/locale/en-US/eBay.xml c70b1629caee7b7c416da9fa10dcae7b
- /etc/iceweasel/searchplugins/locale/en-US/yahoo.xml 19c4959309f7809ced9c1b917e960b23
- /etc/iceweasel/searchplugins/common/duckduckgo.xml 10875ea748c00bec65f896c0e8b4cb27
- /etc/iceweasel/searchplugins/common/debsearch.xml 626edd789818df62e5980799dcdb2b71
- /etc/iceweasel/profile/prefs.js 99940ecd258d83b3355ab06fca0ffddb
- /etc/iceweasel/profile/mimeTypes.rdf 6047f42624d9930caa8d651fa94d28f1
- /etc/iceweasel/profile/bookmarks.html 683b550745310e79b6d208e03431867f
- /etc/iceweasel/profile/localstore.rdf ea03cc19c2a3f622fa557cd8ea9da6eb
- /etc/iceweasel/profile/chrome/userChrome-example.css c63733eef9d337c86e6609bcc478a668
- /etc/iceweasel/profile/chrome/userContent-example.css d3765c7d2de5626529195007f4b7144a
 Description: Web browser based on Firefox
  Iceweasel is Firefox, rebranded. It is a powerful, extensible web browser
  with support for modern web application technologies.
-
-Package: wicd
-Status: install ok installed
-Priority: optional
-Section: net
-Installed-Size: 48
-Maintainer: David Paleino <dapal@debian.org>
-Architecture: all
-Version: 1.7.2.4-2
-Depends: wicd-daemon (= 1.7.2.4-2), wicd-gtk (= 1.7.2.4-2) | wicd-curses (= 1.7.2.4-2) | wicd-cli (= 1.7.2.4-2) | wicd-client
-Description: wired and wireless network manager - metapackage
- Wicd is a general-purpose network configuration server which aims
- to provide a simple but flexible interface for connecting to networks.
- Its features include:
-  * wide variety of settings;
-  * ability to connect to (and maintain profiles for) both wired and
-    wireless networks;
-  * support for many encryption schemes, including WEP, WPA, WPA2 and
-    custom schemes;
-  * wireless-tools compatibility;
-  * tray icon showing network activity and signal strength;
-  * lack of GNOME dependencies (although it does require GTK+), making it
-    easy to use in Xfce, Fluxbox, Openbox, Enlightenment, etc.
- .
- This is a metapackage, it allows installation of all the components of
- Wicd, including one of the clients, which must be manually chosen.
-Homepage: http://wicd.sourceforge.net/
 
 Package: libcomerr2
 Status: install ok installed
@@ -5964,24 +5840,6 @@ Description: X11 miscellaneous 'fixes' extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXfixes
 
-Package: python-glade2
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 167
-Maintainer: Sebastien Bacher <seb128@debian.org>
-Architecture: armel
-Source: pygtk
-Version: 2.24.0-3
-Depends: python (<< 2.8), python (>= 2.6), python-numpy (>= 1:1.4.1), python-numpy-abi9, python2.7 | python2.6, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglade2-0 (>= 1:2.6.1), libglib2.0-0 (>= 2.12.0), libgtk2.0-0 (>= 2.18.0), libpango1.0-0 (>= 1.21.4), libxml2 (>= 2.6.27), python-gtk2 (= 2.24.0-3)
-Suggests: python-gtk2-doc
-Description: GTK+ bindings: Glade support
- Contains bindings for the glade library from use within Python. Glade
- makes it very easy to create a user interface. In the target
- application you just need to load the interface description from
- the .glade file instead of constructing the GUI at runtime.
-Homepage: http://www.pygtk.org/
-
 Package: xserver-xorg-video-r128
 Status: install ok installed
 Priority: optional
@@ -6238,8 +6096,8 @@ Description: Linux console font and keytable utilities
 
 Package: libnss3-1d
 Status: install ok installed
-Priority: extra
-Section: oldlibs
+Priority: optional
+Section: libs
 Installed-Size: 86
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
@@ -6375,18 +6233,18 @@ Package: keyboard-configuration
 Status: install ok installed
 Priority: optional
 Section: utils
-Installed-Size: 2277
+Installed-Size: 2281
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
 Source: console-setup
-Version: 1.82
+Version: 1.87
 Replaces: console-setup (<< 1.47), console-setup-mini (<< 1.47)
 Depends: liblocale-gettext-perl, initscripts
 Pre-Depends: debconf (>= 1.5.34)
 Breaks: console-setup (<< 1.71), console-setup-mini (<< 1.47)
 Conffiles:
- /etc/init.d/keyboard-setup ec052949ff1eaa995abce9a1e846c2c3
  /etc/init.d/console-setup 0db5a9bc1f799d7ce34a971a8aa43264
+ /etc/init.d/keyboard-setup 6ecdd8d7eae634bc48cbc82a73c12c25
 Description: system-wide keyboard preferences
  This package maintains the keyboard preferences in
  /etc/default/keyboard.  Other packages can use the information
@@ -6442,9 +6300,9 @@ Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.1-7
+Version: 4.7.2-4
 Provides: libgfortran3-armel
-Depends: gcc-4.7-base (= 4.7.1-7), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Depends: gcc-4.7-base (= 4.7.2-4), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Description: Runtime library for GNU Fortran applications
@@ -6524,8 +6382,8 @@ Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.de
 Architecture: armel
 Multi-Arch: same
 Source: cyrus-sasl2
-Version: 2.1.25.dfsg1-5
-Depends: libsasl2-2 (= 2.1.25.dfsg1-5), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
+Version: 2.1.25.dfsg1-6
+Depends: libsasl2-2 (= 2.1.25.dfsg1-6), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
 Suggests: libsasl2-modules-otp, libsasl2-modules-ldap, libsasl2-modules-sql, libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
 Description: Cyrus SASL - pluggable authentication modules
  This is the Cyrus SASL API implementation, version 2.1. See package
@@ -6544,11 +6402,11 @@ Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.de
 Architecture: armel
 Multi-Arch: same
 Source: cyrus-sasl2
-Version: 2.1.25.dfsg1-5
+Version: 2.1.25.dfsg1-6
 Replaces: libsasl2
 Depends: libc6 (>= 2.4), libdb5.1
 Pre-Depends: multiarch-support
-Recommends: libsasl2-modules (= 2.1.25.dfsg1-5)
+Recommends: libsasl2-modules (= 2.1.25.dfsg1-6)
 Breaks: postfix (<= 2.8.3-1), slapd (<= 2.4.25-3)
 Description: Cyrus SASL - authentication abstraction library
  This is the Cyrus SASL API implementation, version 2.1.
@@ -6875,10 +6733,10 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 225
+Installed-Size: 226
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: armel
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Depends: libc6 (>= 2.11), libselinux1 (>= 1.32), libsepol1 (>= 1.14), debianutils (>= 4)
 Pre-Depends: initscripts (>= 2.88dsf-13.3), sysv-rc | file-rc, sysvinit-utils (>= 2.86.ds1-66)
 Description: System-V-like init utilities
@@ -6961,11 +6819,11 @@ Package: initscripts
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 284
+Installed-Size: 285
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: armel
 Source: sysvinit
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Depends: libc6 (>= 2.4), debianutils (>= 4), lsb-base (>= 3.2-14), sysvinit-utils (>= 2.86.ds1-64), sysv-rc | file-rc, coreutils (>= 5.93)
 Recommends: psmisc, e2fsprogs
@@ -6976,15 +6834,15 @@ Conffiles:
  /etc/init.d/bootmisc.sh fc8ccb388e8aa1ea54d70048e9903d64
  /etc/init.d/checkfs.sh 74457ecf8bd853fe1a2ba758053735dc
  /etc/init.d/checkroot.sh efc13158c7d643b5d4baaf68c984dcd1
- /etc/init.d/checkroot-bootclean.sh 29296d8b0462bba13b921d4bb6fb3716
+ /etc/init.d/checkroot-bootclean.sh 4a269606234cf5b57cc05016ce68deb3
  /etc/init.d/halt 6ae1b3b1b8198567a5e32116077f12a2
  /etc/init.d/hostname.sh 2180072dbb4e2f42f7ad4df4a2f9888d
  /etc/init.d/killprocs 5e404d35091fab6c4889302736ed4602
  /etc/init.d/motd dbc3f882af04254005bb96e4f780e5a0
- /etc/init.d/mountall.sh a462516c52a6265a37ae357ef72706d7
- /etc/init.d/mountall-bootclean.sh 7d34fb389a3a9d765dee62354b9a45c1
+ /etc/init.d/mountall.sh f1bd3e23885848cbb8cbf62dd584a8d2
+ /etc/init.d/mountall-bootclean.sh 789bd42ea8dff699ae9b3651d024f83a
  /etc/init.d/mountnfs.sh 289709c3a76bfd9f59a0f071670f01a0
- /etc/init.d/mountnfs-bootclean.sh 33b842bb3d5f81d9ab7c1d8bff9580d4
+ /etc/init.d/mountnfs-bootclean.sh b0b22bd70a83cffc501df284f1cc7e80
  /etc/init.d/mountdevsubfs.sh ebdcd7d0e2d05978e06da0b9f21ed8d8
  /etc/init.d/mountkernfs.sh 8a995e21ab7f4f58926b8ef05d80892e
  /etc/init.d/mtab.sh df8b4a53c9a18b748543891a2c792de7
@@ -6994,7 +6852,7 @@ Conffiles:
  /etc/init.d/sendsigs 00ed9a4cdc73711fceef76ddef67dd12
  /etc/init.d/single dc13cb373c5c098a8fb95424701373e3
  /etc/init.d/umountfs 07e4c8c8d9136f36745feb4776edc6f4
- /etc/init.d/umountnfs.sh ffe44729b1a032a5b444c7c594b1c772
+ /etc/init.d/umountnfs.sh 7ed49dd49c3ea516df80e7bacc0935f2
  /etc/init.d/umountroot 3e6a08830565a2938fb009b63d8bd0b9
  /etc/init.d/urandom e6454386bfce38efb5987dd06cb3b21d
  /etc/default/devpts fc857c5ac5fb84d80720ed4d1c624f6e
@@ -7189,11 +7047,11 @@ Package: xz-utils
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 464
+Installed-Size: 466
 Maintainer: Jonathan Nieder <jrnieder@gmail.com>
 Architecture: armel
 Multi-Arch: foreign
-Version: 5.1.1alpha+20120614-1
+Version: 5.1.1alpha+20120614-2
 Replaces: lzip (<< 1.8~rc2), xz-lzma
 Provides: lzma
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20120614)
@@ -7224,12 +7082,12 @@ Package: xulrunner-10.0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 20152
+Installed-Size: 20157
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: iceweasel
-Version: 10.0.10esr-1
-Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libbz2-1.0, libc6 (>= 2.11), libcairo2 (>= 1.10.2-2~), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0, libjpeg8 (>= 8c), libmozjs10d (= 10.0.10esr-1), libnotify4 (>= 0.7.0), libnspr4-0d (>> 4.7.1-1), libnss3-1d (>= 3.13.1), libpango1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.18.0), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.7.4), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.6), libvpx1 (>= 1.0.0), libx11-6, libxext6, libxrender1, libxt6, zlib1g (>= 1:1.1.4)
+Version: 10.0.11esr-1
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libbz2-1.0, libc6 (>= 2.11), libcairo2 (>= 1.10.2-2~), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0, libjpeg8 (>= 8c), libmozjs10d (= 10.0.11esr-1), libnotify4 (>= 0.7.0), libnspr4-0d (>> 4.7.1-1), libnss3-1d (>= 3.13.1), libpango1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.18.0), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.7.4), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.6), libvpx1 (>= 1.0.0), libx11-6, libxext6, libxrender1, libxt6, zlib1g (>= 1:1.1.4)
 Suggests: libgnomeui-0, libcanberra0
 Conflicts: j2re1.4, pango-graphite (<< 0.9.3)
 Description: XUL + XPCOM application runner
@@ -7347,7 +7205,7 @@ Description: RDP client for Windows NT/2000 Terminal Server and Windows Servers
  ICA, no server extensions are required.
 
 Package: wicd-daemon
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: optional
 Section: net
 Installed-Size: 1654
@@ -7355,6 +7213,7 @@ Maintainer: David Paleino <dapal@debian.org>
 Architecture: all
 Source: wicd
 Version: 1.7.2.4-2
+Config-Version: 1.7.2.4-2
 Replaces: wicd (<= 1.6.2.2-4)
 Depends: python (>= 2.6.6-7~), python-dbus, python-gobject, dbus, wpasupplicant, wireless-tools, dhcpcd | dhcp3-client | pump | udhcpc, net-tools | ethtool, net-tools | iproute, adduser, lsb-base (>= 3.2-13), psmisc, iputils-ping | inetutils-ping, python-wicd (= 1.7.2.4-2)
 Pre-Depends: debconf (>= 1.5.34)
@@ -7398,23 +7257,6 @@ Description: wired and wireless network manager - daemon
  This package contains the daemon needed to run Wicd.
 Homepage: http://wicd.sourceforge.net/
 
-Package: python-gtk2
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 5188
-Maintainer: Sebastien Bacher <seb128@debian.org>
-Architecture: armel
-Source: pygtk
-Version: 2.24.0-3
-Depends: python (<< 2.8), python (>= 2.6.6-7~), python-numpy (>= 1:1.4.1), python-numpy-abi9, python2.7 | python2.6, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.22.0), python-cairo (>= 1.0.2-1.1), python-gobject-2 (>= 2.21.3)
-Suggests: python-gtk2-doc
-Breaks: python-gtkglext1 (<< 1.1.0-7~)
-Description: Python bindings for the GTK+ widget set
- This archive contains modules that allow you to use GTK+ in Python
- programs.
-Homepage: http://www.pygtk.org/
-
 Package: e2fsprogs
 Essential: yes
 Status: install ok installed
@@ -7439,22 +7281,6 @@ Description: ext2/ext3/ext4 file system utilities
  This package contains programs for creating, checking, and maintaining
  ext2/3/4-based file systems.
 Homepage: http://e2fsprogs.sourceforge.net
-
-Package: python-gobject
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 183
-Maintainer: Josselin Mouette <joss@debian.org>
-Architecture: all
-Source: pygobject
-Version: 3.2.2-1
-Depends: python-gi (>= 3.2.2-1), python-gobject-2
-Description: Python 2.x bindings for GObject - transitional package
- This package will bring the two versions of GObject Python modules: the
- deprecated gobject module, and the new gobject-introspection system. It
- is here for upgrade purposes only. You can remove it safely when
- nothing else depends on it.
 
 Package: libsigc++-2.0-0c2a
 Status: install ok installed
@@ -7573,7 +7399,7 @@ Maintainer: Jonathan Nieder <jrnieder@gmail.com>
 Architecture: armel
 Multi-Arch: same
 Source: xz-utils
-Version: 5.1.1alpha+20120614-1
+Version: 5.1.1alpha+20120614-2
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: XZ-format compression library
@@ -7665,8 +7491,8 @@ Installed-Size: 63
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: allowed
-Source: gcc-defaults (1.119)
-Version: 4:4.6.3-7
+Source: gcc-defaults (1.120)
+Version: 4:4.6.3-8
 Depends: cpp-4.6 (>= 4.4.7-1~)
 Suggests: cpp-doc
 Conflicts: cpp-doc (<< 1:2.95.3)
@@ -7688,7 +7514,7 @@ Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gnutls26
-Version: 2.12.20-1
+Version: 2.12.20-2
 Replaces: gnutls0, gnutls0.4, gnutls3
 Depends: libc6 (>= 2.8), libgcrypt11 (>= 1.4.5), libp11-kit0 (>= 0.11), libtasn1-3 (>= 1.6-0), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
@@ -7876,20 +7702,20 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 5734
+Installed-Size: 6182
 Origin: debian
 Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
 Bugs: debbugs://bugs.debian.org
 Architecture: armel
 Multi-Arch: foreign
-Version: 1.16.8
+Version: 1.16.9
 Pre-Depends: libbz2-1.0, libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 1.32), zlib1g (>= 1:1.1.4), tar (>= 1.23)
 Suggests: apt
 Breaks: apt (<< 0.7.7), aptitude (<< 0.4.7-1), dpkg-dev (<< 1.15.8), libdpkg-perl (<< 1.15.8), pinfo (<< 0.6.9-3.1), tkinfo (<< 2.8-3.1)
 Conffiles:
  /etc/logrotate.d/dpkg 782ea5ae536f67ff51dc8c3e2eeb4cf9
- /etc/dpkg/dpkg.cfg f4413ffb515f8f753624ae3bb365b81b
  /etc/cron.daily/dpkg b6b8dc21210ea50db7cc4636f521758f
+ /etc/dpkg/dpkg.cfg f4413ffb515f8f753624ae3bb365b81b
  /etc/alternatives/README 69c4ba7f08363e998e0f2e244a04f881
 Description: Debian package management system
  This package provides the low-level infrastructure for handling the
@@ -7945,11 +7771,11 @@ Package: aptitude
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 3838
+Installed-Size: 3834
 Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
 Architecture: armel
-Version: 0.6.8.1-2
-Depends: aptitude-common (= 0.6.8.1-2), libapt-pkg4.12 (>= 0.9.3), libboost-iostreams1.49.0 (>= 1.49.0-1), libc6 (>= 2.4), libcwidget3, libept1.4.12 (>= 1.0.9), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20070908), libsigc++-2.0-0c2a (>= 2.0.2), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 4.6), libtinfo5, libxapian22, zlib1g (>= 1:1.1.4)
+Version: 0.6.8.2-1
+Depends: aptitude-common (= 0.6.8.2-1), libapt-pkg4.12 (>= 0.9.7.6), libboost-iostreams1.49.0 (>= 1.49.0-1), libc6 (>= 2.4), libcwidget3, libept1.4.12 (>= 1.0.9), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20070908), libsigc++-2.0-0c2a (>= 2.0.2), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 4.6), libtinfo5, libxapian22, zlib1g (>= 1:1.1.4)
 Recommends: aptitude-doc-en | aptitude-doc, sensible-utils, apt-xapian-index, libparse-debianchangelog-perl
 Suggests: tasksel, debtags
 Conflicts: ia32-apt-get (<< 22)
@@ -7971,11 +7797,11 @@ Package: iso-codes
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 14597
+Installed-Size: 14606
 Maintainer: Tobias Quathamer <toddy@debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 3.39-1
+Version: 3.40-1
 Suggests: isoquery
 Description: ISO language, territory, currency, script codes and their translations
  This package provides the ISO 639 and ISO 639-3 language code lists,
@@ -7991,12 +7817,12 @@ Package: libavutil51
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 415
+Installed-Size: 416
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.3-7
+Version: 6:0.8.4-1
 Replaces: libavutil-extra-51
 Provides: libavutil-extra-51
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
@@ -8102,28 +7928,6 @@ Description: cron-like program that doesn't go by time
  Debian packages are executed each day.
 Homepage: http://sourceforge.net/projects/anacron/
 
-Package: python-numpy
-Status: install ok installed
-Priority: optional
-Section: python
-Installed-Size: 9503
-Maintainer: Debian Python Modules Team <python-modules-team@lists.alioth.debian.org>
-Architecture: armel
-Version: 1:1.6.2-1
-Provides: python-f2py, python-numpy-abi9, python-numpy-api6, python-numpy-dev, python2.6-numpy, python2.7-numpy
-Depends: python (<< 2.8), python (>= 2.6), python-support (>= 0.90.0), libblas3gf | libblas.so.3gf | libatlas3gf-base, libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgfortran3 (>= 4.3), liblapack3gf | liblapack.so.3gf | libatlas3gf-base
-Suggests: python-numpy-doc, python-numpy-dbg, python-nose (>= 0.10.1), python-dev, gfortran, gcc (>= 4:4.6.1-5)
-Description: Numerical Python adds a fast array facility to the Python language
- Numpy contains a powerful N-dimensional array object, sophisticated
- (broadcasting) functions, tools for integrating C/C++ and Fortran
- code, and useful linear algebra, Fourier transform, and random number
- capabilities.
- .
- Numpy replaces the python-numeric and python-numarray modules which are
- now deprecated and shouldn't be used except to support older
- software.
-Homepage: http://numpy.scipy.org/
-
 Package: info
 Status: install ok installed
 Priority: important
@@ -8206,32 +8010,6 @@ Description: Multitouch Protocol Translation Library - shared library
  protocol to the new multitouch slots protocol. This is necessary for kernel
  drivers that have not been updated to use the newer protocol.
 Homepage: http://bitmath.org/code/mtdev/
-
-Package: gir1.2-glib-2.0
-Status: install ok installed
-Priority: optional
-Section: introspection
-Installed-Size: 574
-Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
-Architecture: armel
-Source: gobject-introspection
-Version: 1.32.1-1
-Depends: libgirepository-1.0-1 (>= 1.32.1), libglib2.0-0 (>= 2.31.22)
-Breaks: gnome-shell (<< 3.0.2-6), python-gobject (<< 2.90)
-Conflicts: gir1.0-glib-2.0, gobject-introspection-glib-2.0
-Description: Introspection data for GLib, GObject, Gio and GModule
- GObject Introspection is a project for providing machine readable
- introspection data of the API of C libraries. This introspection
- data can be used in several different use cases, for example
- automatic code generation for bindings, API verification and documentation
- generation.
- .
- GObject Introspection contains tools to generate and handle the
- introspection data.
- .
- This package contains the introspection data for the GLib, GObject,
- GModule and Gio libraries.
-Homepage: http://live.gnome.org/GObjectIntrospection
 
 Package: alsa-utils
 Status: install ok installed
@@ -8423,11 +8201,11 @@ Package: aptitude-common
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 9216
+Installed-Size: 9263
 Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
 Architecture: all
 Source: aptitude
-Version: 0.6.8.1-2
+Version: 0.6.8.2-1
 Replaces: aptitude (<< 0.6.8-1)
 Recommends: aptitude
 Breaks: aptitude (<< 0.6.8-1)
@@ -8495,13 +8273,13 @@ Package: perl
 Status: install ok installed
 Priority: standard
 Section: perl
-Installed-Size: 11036
+Installed-Size: 11037
 Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: armel
-Version: 5.14.2-14
+Version: 5.14.2-15
 Replaces: libarchive-tar-perl (<= 1.38-2), libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libmodule-corelist-perl (<< 2.14-2), libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl-base (<< 5.10.1-12), perl-doc (<< 5.8.0-1), perl-modules (<< 5.8.1-1)
 Provides: data-dumper, libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl5
-Depends: perl-base (= 5.14.2-14), perl-modules (>= 5.14.2-14), libbz2-1.0, libc6 (>= 2.11), libdb5.1, libgcc1 (>= 1:4.4.0), libgdbm3 (>= 1.8.3), zlib1g (>= 1:1.2.3.3)
+Depends: perl-base (= 5.14.2-15), perl-modules (>= 5.14.2-15), libbz2-1.0, libc6 (>= 2.11), libdb5.1, libgcc1 (>= 1:4.4.0), libgdbm3 (>= 1.8.3), zlib1g (>= 1:1.2.3.3)
 Recommends: netbase
 Suggests: perl-doc, libterm-readline-gnu-perl | libterm-readline-perl-perl, make
 Breaks: dh-make-perl (<< 0.73-1), ftpmirror (<< 1.96+dfsg-13), libcompress-raw-bzip2-perl (<< 2.033), libcompress-raw-zlib-perl (<< 2.033), libcompress-zlib-perl (<< 2.033), libdevel-dprof-perl (<< 20110228.00), libdigest-md5-perl (<< 2.51), libdigest-sha-perl (<< 5.61), libencode-perl (<< 2.42.01), libhtml-template-compiled-perl (<< 0.95-1), libio-compress-base-perl (<< 2.033), libio-compress-bzip2-perl (<< 2.033), libio-compress-perl (<< 2.033), libio-compress-zlib-perl (<< 2.033), libload-perl (<< 0.20-1), libmime-base64-perl (<< 3.13), libnet-jifty-perl (<< 0.14-1), libperl-apireference-perl (<< 0.09-1), libregexp-optimizer-perl (<< 0.15-3), libsoap-lite-perl (<< 0.712-4), libstorable-perl (<< 2.27), libsys-syslog-perl (<< 0.27), libthreads-perl (<< 1.83), libthreads-shared-perl (<< 1.37), libtime-hires-perl (<< 1.9721.01), libtime-piece-perl (<< 1.20.01), libxml-parser-lite-tree-perl (<< 0.14-1), libyaml-perl (<< 0.73-1), mrtg (<< 2.16.3-3.1), perl-doc (<< 5.14.2-1)
@@ -8621,7 +8399,7 @@ Description: network management framework (daemon and userspace tools)
 Homepage: http://www.gnome.org/projects/NetworkManager/
 
 Package: wireless-tools
-Status: install ok installed
+Status: deinstall ok config-files
 Priority: extra
 Section: net
 Installed-Size: 305
@@ -8629,6 +8407,7 @@ Maintainer: Guus Sliepen <guus@debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Version: 30~pre9-8
+Config-Version: 30~pre9-8
 Depends: libc6 (>= 2.7), libiw30 (>= 30~pre1)
 Conffiles:
  /etc/network/if-pre-up.d/wireless-tools 7bfee5216b1073629eeac6cd1fb7e390
@@ -8780,13 +8559,13 @@ Package: gcc-4.7-base
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 195
+Installed-Size: 196
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.1-7
-Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.6-base (<< 4.6.1-4~), gnat-4.6 (<< 4.6.1-5~)
+Version: 4.7.2-4
+Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
 Description: GCC, the GNU Compiler Collection (base package)
  This package contains files common to all languages and libraries
  contained in the GNU Compiler Collection (GCC).
@@ -8820,12 +8599,12 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 3021
+Installed-Size: 3027
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
 Conffiles:
@@ -8961,17 +8740,17 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 213
+Installed-Size: 214
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: armel
 Source: sysvinit
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Replaces: last, sysvinit (<= 2.86.ds1-65)
 Depends: libc6 (>= 2.10), libselinux1 (>= 1.32)
 Suggests: bootlogd, sash
 Conflicts: chkconfig (<< 11.0-79.1-2), last, sysvconfig
 Conffiles:
- /etc/init/startpar-bridge.conf 6972c17571e1a22a57e163a6eea17e96
+ /etc/init/startpar-bridge.conf aab4f8aed4d4803ba1f6d97f6b1152da
 Description: System-V-like utilities
  This package contains the important System-V-like utilities.
  .
@@ -9026,7 +8805,7 @@ Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Depends: libc6 (>= 2.3.6-2)
 Description: Transitional package to ensure multiarch compatibility
  This is a transitional package used to ensure multiarch support is present
@@ -9166,8 +8945,8 @@ Homepage: http://www.nano-editor.org/
 
 Package: libnspr4-0d
 Status: install ok installed
-Priority: extra
-Section: oldlibs
+Priority: optional
+Section: libs
 Installed-Size: 61
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
@@ -9476,14 +9255,14 @@ Package: libc6
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 8939
+Installed-Size: 8951
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Provides: glibc-2.13-1
-Depends: libc-bin (= 2.13-35), libgcc1
+Depends: libc-bin (= 2.13-37), libgcc1
 Suggests: glibc-doc, debconf | debconf-2.0, locales
 Breaks: locales (<< 2.13), locales-all (<< 2.13), nscd (<< 2.13)
 Conflicts: prelink (<= 0.0.20090311-1), tzdata (<< 2007k-1), tzdata-etch
@@ -9573,6 +9352,30 @@ Description: X11 XFree86 video mode extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXxf86vm
 
+Package: libnss3-tools
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 903
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: nss
+Version: 2:3.13.6-1
+Depends: libc6 (>= 2.4), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 4.7.0~1.9b1), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.13), zlib1g (>= 1:1.1.4)
+Description: Network Security Service tools
+ This is a set of tools on top of the Network Security Service libraries.
+ This package includes:
+  * certutil: manages certificate and key databases (cert7.db and key3.db)
+  * modutil: manages the database of PKCS11 modules (secmod.db)
+  * pk12util: imports/exports keys and certificates between the cert/key
+    databases and files in PKCS12 format.
+  * shlibsign: creates .chk files for use in FIPS mode.
+  * signtool: creates digitally-signed jar archives containing files and/or
+    code.
+  * ssltap: proxy requests for an SSL server and display the contents of
+    the messages exchanged between the client and server.
+Homepage: http://www.mozilla.org/projects/security/pki/nss/tools/
+
 Package: libpng12-0
 Status: install ok installed
 Priority: optional
@@ -9614,11 +9417,11 @@ Package: apt-utils
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 1265
+Installed-Size: 1267
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Source: apt
-Version: 0.9.7.5
+Version: 0.9.7.6
 Depends: libapt-inst1.5 (>= 0.8.0), libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libdb5.1, libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Suggests: xz-utils
 Description: package managment related utility programs
@@ -9694,22 +9497,6 @@ Description: administration tools for packet filtering and NAT
  connection sharing, firewalls, IP accounting, transparent proxying,
  advanced routing and traffic control.
 Homepage: http://www.netfilter.org/
-
-Package: libblas3gf
-Status: install ok installed
-Priority: optional
-Section: oldlibs
-Installed-Size: 40
-Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
-Architecture: all
-Source: blas
-Version: 1.2.20110419-5
-Depends: libblas3
-Description: Transitional package for libblas
- Several minor changes to the C interface have been incorporated.
- One can maintain both versions on a system simultaneously to aid
- in the transition.
-Homepage: http://www.netlib.org/blas/
 
 Package: bash
 Essential: yes
@@ -9981,9 +9768,9 @@ Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.1-7
+Version: 4.7.2-4
 Provides: libstdc++6-armel
-Depends: gcc-4.7-base (= 4.7.1-7), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
+Depends: gcc-4.7-base (= 4.7.2-4), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Conflicts: scim (<< 1.4.2-1)
@@ -10272,7 +10059,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Architecture: armel
 Multi-Arch: same
 Source: glib2.0
-Version: 2.33.12+really2.32.4-2
+Version: 2.33.12+really2.32.4-3
 Replaces: libglib2.0-dev (<< 2.23.2-2)
 Depends: libc6 (>= 2.9), libffi5 (>= 3.0.9), libgcc1 (>= 1:4.4.0), libpcre3 (>= 8.10), libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
 Pre-Depends: multiarch-support
@@ -10529,8 +10316,8 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
-Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libgcc1 (>= 1:4.4.0), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.10.1+dfsg-2)
+Version: 1.10.1+dfsg-3
+Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libgcc1 (>= 1:4.4.0), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.10.1+dfsg-3)
 Pre-Depends: multiarch-support
 Recommends: krb5-locales
 Suggests: krb5-doc, krb5-user

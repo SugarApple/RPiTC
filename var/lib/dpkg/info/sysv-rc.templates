@@ -56,6 +56,16 @@ Description-de.UTF-8: Es konnte nicht auf abhÃ¤ngigkeitsbasierte Systemstartre
  ${SUGGESTION}
  .
  Die Paketinstallation kann nicht fortgesetzt werden, bis obige Probleme behoben wurde. Um den Umstellungsprozess nach dem LÃ¶sen dieser Probleme erneut zu versuchen, fÃ¼hren Sie Â»dpkg --configure sysv-rcÂ« aus.
+Description-es.UTF-8: No se ha podido migrar al sistema de arranque basado en dependencias
+ Existen los siguientes problemas en el sistema de arranque que impiden la migración a la secuencia de arranque basada en dependencias:
+ .
+ ${PROBLEMATIC}
+ .
+ Debe solucionar manualmente el problema reportado si se trata de una modificación local. Habitualmente estos problemas se deben a ficheros de configuración obsoletos que se mantienen tras haber borrado, pero no purgado, un paquete. Se sugiere eliminar éstos ejecutando:
+ .
+ ${SUGGESTION}
+ .
+ El paquete de instalación no puede continuar hasta que los problemas se hayan arreglado. Para reintentar el proceso de migración una vez estos problemas se hayan solucionado, ejecute «dpkg --configure sysv-rc».
 Description-fr.UTF-8: Impossible de migrer vers le nouveau systÃ¨me de dÃ©marrage basÃ© sur les dÃ©pendances
  En raison de problÃ¨mes dans le systÃ¨me de dÃ©marrage, la migration vers la nouvelle sÃ©quence de dÃ©marrage basÃ©e sur les dÃ©pendances n'est pas possible.
  .
@@ -106,6 +116,16 @@ Description-pt.UTF-8: Incapaz de migrar para sistema de arranque baseado em depe
  ${SUGGESTION}
  .
  A instalação do pacote não pode continuar até os problemas acima terem sido corrigidos. Para tentar novamente o processo de migração após a resolução destes problemas, execute "dpkg-reconfigure sysv-rc".
+Description-pt_BR.UTF-8: Incapaz de migrar para o sistema de inicialização baseado em dependência
+ Existem problemas no sistema de inicialização que estão impedindo a migração para a sequência de inicialização baseada em dependência:
+ .
+ ${PROBLEMATIC}
+ .
+ Se o problema relatado é uma modificação local, ele deve ser corrigido manualmente. Tipicamente, esses problemas são devidos a arquivos de configuração obsoletos deixados depois de um pacote ter sido removido, mas não expurgado. É sugerido que esses arquivos sejam removidos executando:
+ .
+ ${SUGGESTION}
+ .
+ A instalação do pacote não pode continuar até que os problemas acima tenham sido corrigidos. Para tentar novamente o processo de migração depois desses problemas terem sido corrigidos, execute "dpkg --configure sysv-rc".
 Description-ru.UTF-8: Невозможно перейти на систему загрузки на основе зависимостей
  В системе загрузки имеются проблемы, которые не дают осуществить переход на последовательность загрузки на основе зависимостей:
  .

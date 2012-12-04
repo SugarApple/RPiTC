@@ -648,13 +648,6 @@ Description-en: documentation for the GNU Ada Compiler (gnat)
  .
  This documentation is available from non-free part of Debian archive.
 
-Package: gentle
-Description-md5: 60adf1620c650c216b9ae673b5d248ca
-Description-en: suite to plan genetic cloning
- GENtle is a software for DNA and amino acid editing, database management,
- plasmid maps, restriction and ligation, alignments, sequencer data
- import, calculators, gel image display, PCR, and much more.
-
 Package: geoip-database-contrib
 Description-md5: f76ffcd9fc290ee0035cdb21ec3a2287
 Description-en: GeoLite binary database (downloader)
@@ -1086,16 +1079,6 @@ Description-en: kernel of FreeBSD (upstream version)
  .
  Be warned that the upstream version of the kernel is NOT expected to work
  correctly on a Debian system. It is only provided for testing purposes.
-
-Package: lgeneral
-Description-md5: a102ba9c8f2226a9443a7a7aa6dbc837
-Description-en: A "Panzer General" - like game
- A game similar to well known to most of PC users strategic
- game - Panzer General. It is a turned-based strategy written
- by Michael Speck. Uses libSDL and requires X Window System.
- .
- This is the game engine only - lgeneral requires scenarios that
- are available on http://lgames.sf.net/
 
 Package: libdbd-oracle-perl
 Description-md5: 8dfb441361d4ef747ca3ba3fe627e996
@@ -1646,15 +1629,6 @@ Description-en: An e-mail privacy package.
  cryptographically protected, fully anonymous accounts for both sending and
  receiving e-mail.
 
-Package: pvcam-dkms
-Description-md5: 1861b98bd347e9716ccc9bf53bbd2e69
-Description-en: kernel module for Coolsnap pci card
- Libpvcam is a library for using the Coolsnap ES camera. It requires
- this module to communicate with the hardware.
- .
- This package contains the dkms sources. When installed, it will build
- the module for your kernel.
-
 Package: pvpgn
 Description-md5: 779ee7fd5919b2ea82232b9c00ea0f3a
 Description-en: Gaming server that emulates Battle.net(R)
@@ -2030,8 +2004,8 @@ Description-en: Ruby interface to the PGPLOT graphics library
  including Postscript, PNG, X-Window, etc.
 
 Package: ruby-pgplot-dbg
-Description-md5: 375deda5ca45297dff06caf747b3e7bd
-Description-en: Ruby interface to the PGPLOT graphics library
+Description-md5: 1a1ac132cc1a4a1ddf94fe2a2ff6e0ec
+Description-en: Ruby-PGPLOT debugging symbols
  Ruby/PGPLOT is the Ruby interface to the PGPLOT graphics library.
  PGPLOT is a FORTRAN library to draw line/scatter/histogram plot, error
  bar, contour/image/vector map, etc. Supports various output devices
@@ -2295,7 +2269,7 @@ Description-en: Fast 48k ZX Spectrum Emulator for X11
     - Configurable with config files and from command line
 
 Package: sqldeveloper-package
-Description-md5: fdfd6a5c408ffcfc3dce2b845b2cd43f
+Description-md5: 7fabc3fa20df18b43a17959dd66a466c
 Description-en: Oracle SQL Developer Debian package builder
  This utility makes it possible to build a Debian package of Oracle SQL
  Developer. The Oracle SQL Developer program is governed by the copyright
@@ -2306,10 +2280,11 @@ Description-en: Oracle SQL Developer Debian package builder
  in the created package, that you must agree on when downloading the source.
  .
  This utility will require you to download the architecture independent archive
- from <http://otn.oracle.com/software/products/sql/>, identified as "Oracle SQL
- Developer for other platforms", "Oracle SQL Developer for Multiple Platforms"
- or "Oracle SQL Developer for Linux and Unix" (depending on which version you
- are building), to create the Debian package from.
+ from <http://www.oracle.com/technetwork/developer-tools/sql-developer>,
+ identified as "Oracle SQL Developer for other platforms", "Oracle SQL
+ Developer for Multiple Platforms" or "Oracle SQL Developer for Linux and Unix"
+ (depending on which version you  are building), to create the Debian package
+ from.
 
 Package: libsocl-contrib-1.0
 Description-md5: 607f8f9648f71dbaceaaeeaa04f4c6e8

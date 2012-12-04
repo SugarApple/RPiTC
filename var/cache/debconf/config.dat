@@ -299,11 +299,11 @@ Owners: libpam-runtime
 
 Name: libpam-runtime/profiles
 Template: libpam-runtime/profiles
-Value: unix
+Value: unix, consolekit
 Owners: libpam-runtime
 Variables:
- profile_names = unix
- profiles = Unix authentication
+ profile_names = unix, consolekit
+ profiles = Unix authentication, ConsoleKit Session Management
 
 Name: libpam-runtime/title
 Template: libpam-runtime/title
@@ -401,6 +401,16 @@ Name: man-db/install-setuid
 Template: man-db/install-setuid
 Value: false
 Owners: man-db
+
+Name: sane-utils/saned_run
+Template: sane-utils/saned_run
+Value: false
+Owners: sane-utils
+
+Name: sane-utils/saned_scanner_group
+Template: sane-utils/saned_scanner_group
+Value: true
+Owners: sane-utils
 
 Name: ssh/disable_cr_auth
 Template: ssh/disable_cr_auth
@@ -539,6 +549,26 @@ Owners: udev
 Name: udev/title/upgrade
 Template: udev/title/upgrade
 Owners: udev
+
+Name: update-inetd/ask-disable-entries
+Template: update-inetd/ask-disable-entries
+Owners: update-inetd
+
+Name: update-inetd/ask-entry-present
+Template: update-inetd/ask-entry-present
+Owners: update-inetd
+
+Name: update-inetd/ask-remove-entries
+Template: update-inetd/ask-remove-entries
+Owners: update-inetd
+
+Name: update-inetd/ask-several-entries
+Template: update-inetd/ask-several-entries
+Owners: update-inetd
+
+Name: update-inetd/title
+Template: update-inetd/title
+Owners: update-inetd
 
 Name: util-linux/noauto-with-nonzero-passnum
 Template: util-linux/noauto-with-nonzero-passnum

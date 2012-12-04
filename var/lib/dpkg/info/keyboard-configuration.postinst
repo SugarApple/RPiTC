@@ -73,7 +73,7 @@ keyboard_present () {
 
 CONFIGFILE=/etc/default/keyboard
 
-if [ "$1" = "configure" ]; then
+if [ "$1" = "configure" -a ! -L "$CONFIGFILE" ]; then
     
     db_get keyboard-configuration/modelcode
     model="$RET"

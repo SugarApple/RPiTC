@@ -974,3 +974,223 @@ Package: libgudev-1.0-0
 Architecture: armel
 Auto-Installed: 1
 
+Package: sane-utils
+Architecture: armel
+Auto-Installed: 1
+
+Package: dmsetup
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgphoto2-port0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libv4l-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: lvm2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsane-common
+Architecture: armel
+Auto-Installed: 1
+
+Package: libaugeas0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsane
+Architecture: armel
+Auto-Installed: 1
+
+Package: liblcms2-2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsane-extras
+Architecture: armel
+Auto-Installed: 1
+
+Package: libieee1284-3
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpcap0.8
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxslt1.1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libfile-copy-recursive-perl
+Architecture: armel
+Auto-Installed: 1
+
+Package: policykit-1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnetcf1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgphoto2-2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgtk-vnc-2.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcolord1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdevmapper1.02.1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libck-connector0
+Architecture: armel
+Auto-Installed: 1
+
+Package: acl
+Architecture: armel
+Auto-Installed: 1
+
+Package: libjson0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgtk-3-common
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgvnc-1.0-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libvirt0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgtk-3-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: dconf-service
+Architecture: armel
+Auto-Installed: 1
+
+Package: update-inetd
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgphoto2-l10n
+Architecture: armel
+Auto-Installed: 1
+
+Package: libflac8
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdevmapper-event1.02.1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libasyncns0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgusb2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdconf0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgd2-xpm
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcap-ng0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpam-ck-connector
+Architecture: armel
+Auto-Installed: 1
+
+Package: libnl1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcairo-gobject2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpolkit-backend-1-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: colord
+Architecture: armel
+Auto-Installed: 1
+
+Package: libyajl2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsane-extras-common
+Architecture: armel
+Auto-Installed: 1
+
+Package: dconf-gsettings-backend
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpulse0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libgtk-3-bin
+Architecture: armel
+Auto-Installed: 1
+
+Package: libexif12
+Architecture: armel
+Auto-Installed: 1
+
+Package: libv4lconvert0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libreadline5
+Architecture: armel
+Auto-Installed: 1
+
+Package: libsndfile1
+Architecture: armel
+Auto-Installed: 1
+
+Package: augeas-lenses
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpolkit-agent-1-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libltdl7
+Architecture: armel
+Auto-Installed: 1
+
+Package: consolekit
+Architecture: armel
+Auto-Installed: 1
+

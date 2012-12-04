@@ -1,0 +1,12 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libnl.so.1.1
+/usr/share
+/usr/share/doc
+/usr/share/doc/libnl1
+/usr/share/doc/libnl1/changelog.Debian.gz
+/usr/share/doc/libnl1/changelog.gz
+/usr/share/doc/libnl1/copyright
+/usr/lib/arm-linux-gnueabi/libnl.so.1

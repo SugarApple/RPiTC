@@ -5,6 +5,7 @@
 # Required-Stop:
 # Default-Start:     S
 # Default-Stop:
+# X-Start-Before:    bootmisc
 # Short-Description: bootclean after checkroot.
 # Description:       Clean temporary filesystems after
 #                    the root filesystem has been mounted.

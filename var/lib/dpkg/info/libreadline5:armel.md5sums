@@ -1,0 +1,9 @@
+35df751498c2d45199ea1b2c08785198  lib/arm-linux-gnueabi/libhistory.so.5.2
+1ab82828b22f9436907f4d2551cdd5e5  lib/arm-linux-gnueabi/libreadline.so.5.2
+db22ab5a3d7a94ab8b0a93657b11aa08  usr/share/doc/libreadline5/README.Debian
+0bb4ff5a1ee6f767d0d1b7ded925a8a3  usr/share/doc/libreadline5/USAGE
+1dc88308df07a9c6bbde12f39149fcfd  usr/share/doc/libreadline5/changelog.Debian.gz
+59f094d7df7f66606df0403e414e44bd  usr/share/doc/libreadline5/changelog.gz
+3e7c453ff189a01fa617001e5bb8d7d9  usr/share/doc/libreadline5/copyright
+587fa73058e332ae6e39ef9ad7428e62  usr/share/doc/libreadline5/examples/Inputrc
+244319c9dd88c980910aacd76477b8d9  usr/share/doc/libreadline5/inputrc.arrows

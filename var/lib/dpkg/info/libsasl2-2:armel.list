@@ -4,10 +4,10 @@
 /usr/share/doc
 /usr/share/doc/libsasl2-2
 /usr/share/doc/libsasl2-2/README.configure-options
+/usr/share/doc/libsasl2-2/NEWS.Debian.gz
+/usr/share/doc/libsasl2-2/changelog.gz
 /usr/share/doc/libsasl2-2/changelog.Debian.gz
 /usr/share/doc/libsasl2-2/copyright
-/usr/share/doc/libsasl2-2/changelog.gz
-/usr/share/doc/libsasl2-2/NEWS.Debian.gz
 /usr/share/doc/libsasl2-2/README.Debian
 /usr/lib
 /usr/lib/arm-linux-gnueabi
@@ -17,5 +17,5 @@
 /usr/lib/sasl2
 /usr/lib/sasl2/berkeley_db.txt
 /usr/lib/arm-linux-gnueabi/libsasl2.so.2
-/usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so.2
 /usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so
+/usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so.2

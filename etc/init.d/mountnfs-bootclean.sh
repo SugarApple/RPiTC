@@ -5,6 +5,7 @@
 # Required-Stop:
 # Default-Start:     S
 # Default-Stop:
+# X-Start-Before:    bootmisc
 # Short-Description: bootclean after mountnfs.
 # Description:       Clean temporary filesystems after
 #                    network filesystems have been mounted.

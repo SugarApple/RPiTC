@@ -40,6 +40,38 @@ Description: internationalized substitute of Text::Wrap
  It provides wrap().
 Homepage: http://search.cpan.org/search?module=Text::WrapI18N
 
+Package: sane-utils
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 528
+Maintainer: Julien BLACHE <jblache@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: sane-backends
+Version: 1.0.22-7.4
+Replaces: libsane (<< 1.0.11-4)
+Depends: adduser (>= 3.47), update-inetd (>= 4.31), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.4), libieee1284-3, libsane (>= 1.0.11-3), libusb-0.1-4 (>= 2:0.1.12), debconf (>= 0.5) | debconf-2.0
+Suggests: avahi-daemon, unpaper
+Conffiles:
+ /etc/init.d/saned bd75c255a837ae89cb6575725d8c0206
+ /etc/sane.d/saned.conf f6f398e55f5821d21abfec8973cf23bc
+ /etc/default/saned d8049f8628d82ab09dfb6d0cc5a83ce7
+Description: API library for scanners -- utilities
+ SANE stands for "Scanner Access Now Easy" and is an application
+ programming interface (API) that provides standardized access to any
+ raster image scanner hardware (flatbed scanner, hand-held scanner,
+ video- and still-cameras, frame-grabbers, etc.). The SANE standard is
+ free and its discussion and development are open to everybody. The
+ current source code is written to support several operating systems,
+ including GNU/Linux, OS/2, Win32 and various Unices and is available
+ under the GNU General Public License (commercial applications and
+ backends are welcome, too, however).
+ .
+ This package includes the command line frontend scanimage, the saned
+ server and the sane-find-scanner utility, along with their documentation.
+Homepage: http://www.sane-project.org
+
 Package: libustr-1.0-1
 Status: install ok installed
 Priority: optional
@@ -93,7 +125,7 @@ Installed-Size: 1515
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: all
 Source: xorg-server
-Version: 2:1.12.4-1
+Version: 2:1.12.4-3
 Replaces: xserver-xorg-core (<< 2:1.5.2)
 Depends: x11-common, xkb-data, x11-xkb-utils
 Recommends: xfonts-base, xauth
@@ -119,6 +151,31 @@ Description: POSIX-compliant shell
  dependencies (making it more robust against software or hardware
  failures), it is used as the default system shell on Debian systems.
 Homepage: http://gondor.apana.org.au/~herbert/dash/
+
+Package: libgtk-3-common
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 20036
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: gtk+3.0
+Version: 3.4.2-4
+Replaces: libgtk-3-0 (<< 3.2.2-3)
+Depends: dconf-gsettings-backend | gsettings-backend
+Recommends: libgtk-3-0
+Breaks: libgtk-3-0 (<< 3.2.2-3)
+Conffiles:
+ /etc/gtk-3.0/im-multipress.conf c358838e1789c1d4e6da7f525fc922cf
+Description: common files for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the common files which the libraries need.
+Homepage: http://www.gtk.org/
 
 Package: libpolkit-gobject-1-0
 Status: install ok installed
@@ -159,6 +216,36 @@ Description: FreeDesktop.org shared MIME database and spec
  .
  At this time at least ROX, GNOME, KDE and XFCE use this database.
 Homepage: http://freedesktop.org/wiki/Software/shared-mime-info
+
+Package: libsane-extras
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 208
+Maintainer: Julien BLACHE <jblache@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: sane-backends-extras
+Version: 1.0.22.2
+Depends: libc6 (>= 2.4), libusb-0.1-4 (>= 2:0.1.12), libsane-extras-common (= 1.0.22.2)
+Conffiles:
+ /etc/sane.d/geniusvp2.conf 57a8d4658fab75802a0ad8e11e7262ca
+ /etc/sane.d/dll.d/libsane-extras e711493400dfdfa2be200d1eb5fc10ed
+Description: API library for scanners -- extra backends
+ SANE stands for "Scanner Access Now Easy" and is an application
+ programming interface (API) that provides standardized access to any
+ raster image scanner hardware (flatbed scanner, hand-held scanner,
+ video- and still-cameras, frame-grabbers, etc.). The SANE standard is
+ free and its discussion and development are open to everybody. The
+ current source code is written to support several operating systems,
+ including GNU/Linux, OS/2, Win32 and various Unices and is available
+ under the GNU General Public License (commercial applications and
+ backends are welcome, too, however).
+ .
+ This package includes some backends that are not yet included into the
+ official SANE distribution. Currently, they are :
+   * geniusvp2 (Genius ColorPage-Vivid Pro II)
+   * ls5000 (Nikon LS-5000 ED, Coolscan 5000 ED)
 
 Package: libxdmcp6
 Status: install ok installed
@@ -237,14 +324,14 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 13461
+Installed-Size: 13552
 Maintainer: Michael Stone <mstone@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 8.13-3.2
+Version: 8.13-3.4
 Replaces: mktemp, timeout
 Depends: dpkg (>= 1.15.4) | install-info
-Pre-Depends: libacl1 (>= 2.2.51-5), libattr1 (>= 1:2.4.46-5), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32)
+Pre-Depends: libacl1 (>= 2.2.51-8), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32)
 Conflicts: timeout
 Description: GNU core utilities
  This package contains the basic file, shell and text manipulation
@@ -279,6 +366,116 @@ Description: automated option processing library based on autogen
  and static libraries is libopts25-dev. The package containing the
  development tools is autogen.
 Homepage: http://www.gnu.org/software/autogen/
+
+Package: libsane
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 7718
+Maintainer: Julien BLACHE <jblache@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: sane-backends
+Version: 1.0.22-7.4
+Replaces: libsane-extras (<< 1.0.18.14)
+Depends: adduser (>= 3.47), libsane-common (= 1.0.22-7.4), udev (>= 0.88-1) | makedev (>= 2.3.1-58), acl (>= 2.2.49-4), libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.4), libexif12, libgcc1 (>= 1:4.4.0), libgphoto2-2 (>= 2.4.10.1), libgphoto2-port0 (>= 2.4.10.1), libieee1284-3, libjpeg8 (>= 8c), libtiff4 (>> 3.9.5-3~), libusb-0.1-4 (>= 2:0.1.12), libv4l-0 (>= 0.5.0)
+Pre-Depends: multiarch-support
+Recommends: libsane-extras (>= 1.0.22.1), sane-utils (>= 1.0.22-7.4)
+Suggests: avahi-daemon, hpoj, hplip
+Conffiles:
+ /etc/sane.d/ricoh.conf b1891143384a7308ec17d9e6ac836201
+ /etc/sane.d/pixma.conf da98f7eae73240333304d1dafe58e19a
+ /etc/sane.d/test.conf eaccee9d3fb610a691705ddf94b9ec11
+ /etc/sane.d/canon_pp.conf 2ecfac7c883bc980aba880f424abb8ad
+ /etc/sane.d/microtek2.conf 75cb498c51441db57932a4895f7f0d96
+ /etc/sane.d/matsushita.conf fe9a8941cd52c7e012724122d67a98e6
+ /etc/sane.d/ma1509.conf 73a9fd7af5924e04054f43e2708f5059
+ /etc/sane.d/coolscan3.conf dc124184659f6acfcb2f77d4759adc8c
+ /etc/sane.d/dell1600n_net.conf ce26ec480900a2420d14d5f2c43f07eb
+ /etc/sane.d/plustek_pp.conf 327941a5240e699e3251d74192f4f299
+ /etc/sane.d/canon630u.conf 5fae93df3328f1915e3d26f77a8c3b9d
+ /etc/sane.d/hp.conf 5328dfe188ece714bf9fdb7e26dc9d00
+ /etc/sane.d/epson2.conf fb0befe1041db6a1b6a0813c0c8fcf1c
+ /etc/sane.d/lexmark.conf f5d92658f9dc0eb540ddc9d24fe3ffb1
+ /etc/sane.d/teco1.conf 7976c7a3dd90fe100f30a23a29aaea89
+ /etc/sane.d/umax_pp.conf d7cdbfd65fc59cfc71ab5f00a3697aaf
+ /etc/sane.d/gphoto2.conf ca55d23d02774d6eea321dcbd4099e5e
+ /etc/sane.d/dc25.conf 0659d0dee2b39c585b6ebc682af0dbd9
+ /etc/sane.d/apple.conf 602eda3ecedd81ef751d9241becb9142
+ /etc/sane.d/sp15c.conf 74fd71c4ea2c8c58bbaa2cecfee56f7c
+ /etc/sane.d/epjitsu.conf 54ce52e76e2c5279e4c12830a74ea5a0
+ /etc/sane.d/tamarack.conf 93b1a500916dcfabd8a1c288029a5502
+ /etc/sane.d/umax1220u.conf 2d36f1f6c15bbfeaf2049d59dcfefe05
+ /etc/sane.d/dc240.conf 821754802fb212acc9f48c7dd93ddaa1
+ /etc/sane.d/agfafocus.conf f763f1f31d26507986aad58ca02f79f9
+ /etc/sane.d/rts8891.conf 3446a737f83b38c3b576d5bf2e5161ec
+ /etc/sane.d/qcam.conf 7a30e22cd391b7992646723df280f4fe
+ /etc/sane.d/kodak.conf 63774fc2dd277fbfc54b4a8f7ea4528d
+ /etc/sane.d/pie.conf 7bdb319bd61b19389e93ed85a1ed85d1
+ /etc/sane.d/teco2.conf 1f873f79332e99cb0cd2b9eba938ac3b
+ /etc/sane.d/gt68xx.conf 9a0e100ef0a0c5c6860575905b5cd1b0
+ /etc/sane.d/v4l.conf c68d472ee915c19d73f255623f4e0223
+ /etc/sane.d/fujitsu.conf d267daa8e7ca4b0abb74dfce0fd7a39b
+ /etc/sane.d/artec_eplus48u.conf 3672fe16e6b14a124ad74acd47941be9
+ /etc/sane.d/avision.conf 51e9f41665cca34d58ceb8bcf2ed072f
+ /etc/sane.d/snapscan.conf b349efcbcec257f5fca8372f1e47e7e0
+ /etc/sane.d/microtek.conf 940c8db7e01ccaa6f2c5be2ca020ddf1
+ /etc/sane.d/mustek_pp.conf c9d10da50e4b77dcc73b97f67a81a89a
+ /etc/sane.d/dll.conf 5ddf7634f40a0af1c38e8f85bcfe12eb
+ /etc/sane.d/mustek.conf 33284fd785df74d394b9e30a4ec8283e
+ /etc/sane.d/hp4200.conf 0656916d9805c3af1f81424354082501
+ /etc/sane.d/u12.conf 9ab31cd28e79474973fc02ccf1c06b99
+ /etc/sane.d/s9036.conf 5eed67a9759c991553fa3055af023a33
+ /etc/sane.d/hpsj5s.conf 0e969889a4509e62ef352a0222d2620e
+ /etc/sane.d/hp3900.conf 9d5532c21c759657347de8b26629cf13
+ /etc/sane.d/dmc.conf 0731b2373c97cc98c5c42dd56e7fb05c
+ /etc/sane.d/sm3840.conf 9b61359cbcc14b9be4d687b80b772bea
+ /etc/sane.d/ibm.conf d5eab60adbaf729bb5bf781fc4c5409d
+ /etc/sane.d/sceptre.conf 9d7e8954714b47042b849ddbd2530973
+ /etc/sane.d/leo.conf 008b9b3cad3c7073aa5331a453e68cd6
+ /etc/sane.d/xerox_mfp.conf fcb95b28145a79acaa07ca12eae1ab50
+ /etc/sane.d/hs2p.conf a7b07bd2a66b8a562ccb64da03bd47da
+ /etc/sane.d/nec.conf 5eed67a9759c991553fa3055af023a33
+ /etc/sane.d/genesys.conf 483aafcb59214ab8f83763e5122ad9a4
+ /etc/sane.d/sharp.conf d16cb589cdceb30d4523334063ddf040
+ /etc/sane.d/cardscan.conf c53b0f155e8abb0e35da6e4bd9898e41
+ /etc/sane.d/net.conf 9e5860565491b3157e3c6e0af682b7a2
+ /etc/sane.d/bh.conf ed8e137983ae58a7bf038180b29737bd
+ /etc/sane.d/canon_dr.conf c5b4e2008dba36c4a9df50f7e89fb65a
+ /etc/sane.d/coolscan2.conf e9039d4f201acacca70e8964ec22ee70
+ /etc/sane.d/abaton.conf 51591e7ab98851effab49089323cb160
+ /etc/sane.d/magicolor.conf 1e34b81727b36c9269d413cb6d20b2e6
+ /etc/sane.d/teco3.conf 7b632784a85ec6ead7d26e8fd195dea5
+ /etc/sane.d/umax.conf 5bcadfd7842926832de6d6e29d23558d
+ /etc/sane.d/hp5400.conf 25848f289fb76aeb7f78e29ab323dbf8
+ /etc/sane.d/p5.conf 27277daf6f7ed1f21de8c6a59d5b9488
+ /etc/sane.d/plustek.conf f329323c5ed857873510e38233f1afcf
+ /etc/sane.d/canon.conf 099d16dab225eaa121f1ba2f3af9f60a
+ /etc/sane.d/st400.conf febd1d7966858a4a0352a2fe2c1abfa0
+ /etc/sane.d/mustek_usb.conf f4080c5eacaf30b4ed871a5330960696
+ /etc/sane.d/coolscan.conf b5a49230bc9b80a4358d966255d4697a
+ /etc/sane.d/dc210.conf 821754802fb212acc9f48c7dd93ddaa1
+ /etc/sane.d/stv680.conf 1a5a8d37f0de964bab25b3908fa907d5
+ /etc/sane.d/epson.conf 318ed78f38b29c99e478cbc7efc8ff14
+ /etc/sane.d/artec.conf 1b87eeb6069e6f5ac7b5f0cc4bf48083
+Description: API library for scanners
+ SANE stands for "Scanner Access Now Easy" and is an application
+ programming interface (API) that provides standardized access to any
+ raster image scanner hardware (flatbed scanner, hand-held scanner,
+ video- and still-cameras, frame-grabbers, etc.). The SANE standard is
+ free and its discussion and development are open to everybody. The
+ current source code is written to support several operating systems,
+ including GNU/Linux, OS/2, Win32 and various Unices and is available
+ under the GNU General Public License (commercial applications and
+ backends are welcome, too, however).
+ .
+ This package includes the backends for many scanners. A libsane-extras
+ package containing some not-yet-included backends is available separately.
+ .
+ Graphical frontends for sane are available in the packages sane and
+ xsane. Command line frontend scanimage, saned and sane-find-scanner are
+ available in the sane-utils package.
+Homepage: http://www.sane-project.org
 
 Package: lxde-common
 Status: install ok installed
@@ -394,7 +591,7 @@ Installed-Size: 2394
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: iceweasel
-Version: 10.0.10esr-1
+Version: 10.0.11esr-1
 Depends: libc6 (>= 2.4), libffi5 (>= 3.0.9), libgcc1 (>= 1:4.4.0), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.4.0)
 Description: Mozilla SpiderMonkey JavaScript library
  This library provides the embeddable JavaScript/ECMAScript engine from
@@ -639,6 +836,33 @@ Description: simple interprocess messaging system (library)
  The daemon can be found in the dbus package.
 Homepage: http://dbus.freedesktop.org/
 
+Package: libflac8
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 344
+Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: flac
+Version: 1.2.1-6
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libogg0 (>= 1.0rc3)
+Pre-Depends: multiarch-support
+Description: Free Lossless Audio Codec - runtime C library
+ FLAC stands for Free Lossless Audio Codec. Grossly oversimplified, FLAC is
+ similar to MP3, but lossless.  The FLAC project consists of:
+ .
+  * The stream format
+  * libFLAC, which implements a reference encoder, stream decoder, and file
+    decoder
+  * flac, which is a command-line wrapper around libFLAC to encode and decode
+    .flac files
+  * Input plugins for various music players (Winamp, XMMS, and more in the
+    works)
+ .
+ This package contains the runtime library libFLAC.
+Homepage: http://flac.sourceforge.net/
+
 Package: libffi5
 Status: install ok installed
 Priority: optional
@@ -735,16 +959,34 @@ Description: GNU dbm database routines (runtime version)
  ('hash' to perl programmers).
 Homepage: http://directory.fsf.org/project/gdbm/
 
+Package: libexif12
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 1783
+Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libexif
+Version: 0.6.20-3
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: library to parse EXIF files
+ Most digital cameras produce EXIF files, which are JPEG files with
+ extra tags that contain information about the image. The EXIF library
+ allows you to parse an EXIF file and read the data from those tags.
+Homepage: http://libexif.sourceforge.net/
+
 Package: libavcodec53
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 19819
+Installed-Size: 19836
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.3-7
+Version: 6:0.8.4-1
 Depends: libavutil51 (>= 6:0.8.3-1~), libc6 (>= 2.7), libdirac-encoder0, libgcc1 (>= 1:4.4.0), libgsm1 (>= 1.0.13), libmp3lame0, libopenjpeg2, libschroedinger-1.0-0 (>= 1.0.0), libspeex1 (>= 1.2~beta3-1), libtheora0 (>= 1.0), libva1 (>> 1.0.15~), libvorbis0a (>= 1.1.2), libvorbisenc2 (>= 1.1.2), libvpx1 (>= 1.0.0), libx264-123, libxvidcore4 (>= 1.2.2), zlib1g (>= 1:1.2.0)
 Pre-Depends: multiarch-support
 Breaks: libavcodec-extra-53, mplayer (<< 2:1.0~rc4.dfsg1+svn34540-1~)
@@ -864,6 +1106,32 @@ Description: Universally Unique ID library
  See RFC 4122 for more information.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
 
+Package: libgd2-xpm
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 615
+Maintainer: GD team <pkg-gd-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libgd2
+Version: 2.0.36~rc1~dfsg-6.1
+Provides: libgd2
+Depends: libc6 (>= 2.11), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libx11-6, libxpm4, zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Suggests: libgd-tools
+Conflicts: libgd2, libgd2-noxpm
+Description: GD Graphics Library version 2
+ GD is a graphics library. It allows your code to quickly draw images
+ complete with lines, arcs, text, multiple colours, cut and paste from
+ other images, flood fills, and write out the result as a PNG file.
+ This is particularly useful in World Wide Web applications, where PNG is
+ one of the formats accepted for inline images by most browsers.
+ .
+ This is the runtime package of the library, built with XPM (X pixmap)
+ and fontconfig support.
+Homepage: http://www.libgd.org/
+
 Package: libtasn1-3
 Status: install ok installed
 Priority: standard
@@ -897,7 +1165,7 @@ Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: lsb
-Version: 4.1+Debian7
+Version: 4.1+Debian8
 Description: Linux Standard Base 4.1 init script functionality
  The Linux Standard Base (http://www.linuxbase.org/) is a standard
  core system that third-party applications written for Linux can
@@ -968,6 +1236,24 @@ Description: generic font configuration library - support binaries
  to test the matching rules (fc-match) and a program to dump the binary
  cache files in string form (fc-cat). It no longer makes fonts managed by defoma
  available to fontconfig applications.
+
+Package: libvirt0
+Status: install ok unpacked
+Priority: optional
+Section: libs
+Installed-Size: 2817
+Maintainer: Debian Libvirt Maintainers <pkg-libvirt-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: libvirt
+Version: 0.9.12-5
+Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.9), libcap-ng0, libdbus-1-3 (>= 1.1.1), libdevmapper1.02.1 (>= 2:1.02.20), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgnutls26 (>= 2.12.17-0), libnetcf1, libnl1 (>= 1.1), libpcap0.8 (>= 0.9.8), libsasl2-2 (>= 2.1.24), libxml2 (>= 2.7.4), libyajl2 (>= 2.0.4)
+Recommends: lvm2
+Description: library for interfacing with different virtualization systems
+ Libvirt is a C toolkit to interact with the virtualization capabilities
+ of recent versions of Linux (and other OSes). The library aims at providing
+ a long term stable C API for different virtualization mechanisms. It currently
+ supports QEMU, KVM, XEN, OpenVZ, LXC, and VirtualBox.
+Homepage: http://libvirt.org
 
 Package: cpp-4.6
 Status: install ok installed
@@ -1041,6 +1327,28 @@ Description: client support for WPA and WPA2 (IEEE 802.11i)
  association with IEEE 802.11i networks.
 Homepage: http://w1.fi/wpa_supplicant/
 
+Package: libgvnc-1.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 185
+Maintainer: Debian Libvirt Maintainers <pkg-libvirt-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: gtk-vnc
+Version: 0.5.0-3
+Replaces: libgtk-vnc-1.0-0 (<= 0.4.3-1)
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgnutls26 (>= 2.12.6.1-0), libgpg-error0 (>= 1.10), libpulse0 (>= 0.99.1), libsasl2-2, zlib1g (>= 1:1.1.4)
+Description: VNC gobject wrapper (runtime libraries)
+ It is built using coroutines, allowing it to be completely asynchronous while
+ remaining single threaded. It supports RFB protocols 3.3 through 3.8 and the
+ VeNCrypt authentication extension providing SSL/TLS encryption with x509
+ certificate authentication.
+ .
+ The core library is written in C and a binding for Python using PyGTK is
+ available. The networking layer supports connections over both IPv4 and IPv6.
+ .
+ This package contains the shared library.
+
 Package: libqtgui4
 Status: install ok installed
 Priority: optional
@@ -1068,12 +1376,12 @@ Package: libspeex1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 138
+Installed-Size: 139
 Maintainer: Ron Lee <ron@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: speex
-Version: 1.2~rc1-6
+Version: 1.2~rc1-7
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Suggests: speex
@@ -1096,8 +1404,8 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
-Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.10.1+dfsg-2), libkrb5support0 (>= 1.7dfsg~beta2)
+Version: 1.10.1+dfsg-3
+Depends: libc6 (>= 2.7), libcomerr2 (>= 1.34), libk5crypto3 (>= 1.8+dfsg), libkeyutils1, libkrb5-3 (= 1.10.1+dfsg-3), libkrb5support0 (>= 1.7dfsg~beta2)
 Pre-Depends: multiarch-support
 Suggests: krb5-doc, krb5-user
 Breaks: libgssglue1 (<< 0.2-2)
@@ -1157,6 +1465,35 @@ Description: minimal subset of the Python language (default version)
  See /usr/share/doc/python2.7-minimal/README.Debian for a list of the modules
  contained in this package.
 Homepage: http://www.python.org/
+
+Package: libv4l-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 162
+Maintainer: Gregor Jasny <gjasny@googlemail.com>
+Architecture: armel
+Multi-Arch: same
+Source: v4l-utils
+Version: 0.8.8-3
+Depends: libv4lconvert0 (= 0.8.8-3), libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Collection of video4linux support libraries
+ libv4l is a collection of libraries which adds a thin abstraction layer on
+ top of video4linux2 devices. The purpose of this (thin) layer is to make it
+ easy for application writers to support a wide variety of devices without
+ having to write separate code for different devices in the same class. libv4l
+ consists of 3 different libraries: libv4lconvert, libv4l1 and libv4l2.
+ .
+ libv4l1 offers the (deprecated) v4l1 API on top of v4l2 devices, independent
+ of the drivers for those devices supporting v4l1 compatibility (which many
+ v4l2 drivers do not).
+ .
+ libv4l2 offers the v4l2 API on top of v4l2 devices, while adding for the
+ application transparent libv4lconvert conversion where necessary.
+ .
+ This package contains the shared libraries.
+Homepage: http://linuxtv.org/downloads/v4l-utils/
 
 Package: ncurses-base
 Essential: yes
@@ -1240,7 +1577,7 @@ Maintainer: Aurelien Jarno <aurel32@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libusb
-Version: 2:0.1.12-20
+Version: 2:0.1.12-20+nmu1
 Replaces: libusb0
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
@@ -1331,11 +1668,11 @@ Package: perl-modules
 Status: install ok installed
 Priority: standard
 Section: perl
-Installed-Size: 14081
+Installed-Size: 14082
 Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: all
 Source: perl
-Version: 5.14.2-14
+Version: 5.14.2-15
 Replaces: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-yaml-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libshell-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
 Provides: libansicolor-perl, libarchive-tar-perl, libattribute-handlers-perl, libautodie-perl, libcgi-pm-perl, libcpan-meta-perl, libcpan-meta-yaml-perl, libcpanplus-perl, libdigest-perl, libextutils-cbuilder-perl, libextutils-command-perl, libextutils-install-perl, libextutils-parsexs-perl, libfile-path-perl, libfile-spec-perl, libfile-temp-perl, libhttp-tiny-perl, libi18n-langtags-perl, libio-zlib-perl, libjson-pp-perl, liblocale-codes-perl, liblocale-maketext-perl, liblocale-maketext-simple-perl, libmath-bigint-perl, libmath-complex-perl, libmodule-build-perl, libmodule-corelist-perl, libmodule-load-conditional-perl, libmodule-load-perl, libmodule-metadata-perl, libmodule-pluggable-perl, libnet-perl, libnet-ping-perl, libparams-check-perl, libparent-perl, libparse-cpan-meta-perl, libperl-ostype-perl, libperl4-corelibs-perl, libpod-escapes-perl, libpod-parser-perl, libpod-simple-perl, libshell-perl, libtest-harness-perl, libtest-simple-perl, libthread-queue-perl, libtime-local-perl, libunicode-collate-perl, libversion-perl, libversion-requirements-perl, podlators-perl
 Depends: perl (>= 5.14.2-1), libswitch-perl, libclass-isa-perl
@@ -1410,6 +1747,32 @@ Description: Utilities for sensible alternative selection
  .
  The specific utilities included are: sensible-browser sensible-editor
  sensible-pager
+
+Package: colord
+Status: install ok installed
+Priority: optional
+Section: graphics
+Installed-Size: 1193
+Maintainer: Christopher James Halse Rogers <raof@ubuntu.com>
+Architecture: armel
+Multi-Arch: foreign
+Version: 0.1.21-1
+Depends: libc6 (>= 2.4), libcolord1 (>= 0.1.20), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.31.8), libgudev-1.0-0 (>= 146), libgusb2 (>= 0.1.3), liblcms2-2, libpolkit-gobject-1-0 (>= 0.99), libsane (>= 1.0.11-3), libsqlite3-0 (>= 3.5.9), libusb-1.0-0 (>= 2:1.0.8), adduser, acl, policykit-1 (>= 0.103)
+Pre-Depends: multiarch-support
+Conffiles:
+ /etc/bash_completion.d/colormgr-completion.bash 8f7039d076158570762b3f826b180850
+ /etc/dbus-1/system.d/org.freedesktop.colord-sane.conf 414f1f40df32e1523ada9f791bffa03b
+ /etc/dbus-1/system.d/org.freedesktop.ColorManager.conf e3cffb32185110411f054b965600c379
+ /etc/colord.conf fd5384d799f55f37165b82d8fba9ef28
+Description: system service to manage device colour profiles -- system daemon
+ colord is a system service that makes it easy to manage, install and generate
+ colour profiles to accurately colour manage input and output devices.
+ .
+ It provides a D-Bus API for system frameworks to query, a persistent data
+ store, and a mechanism for session applications to set system policy.
+ .
+ This package contains the dbus-activated colord system daemon.
+Homepage: http://www.freedesktop.org/software/colord/
 
 Package: libxapian22
 Status: install ok installed
@@ -1547,6 +1910,25 @@ Description: X11 keyboard file manipulation library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libxkbfile
+
+Package: update-inetd
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 101
+Maintainer: Serafeim Zanikolas <sez@debian.org>
+Architecture: all
+Multi-Arch: foreign
+Version: 4.43
+Replaces: netbase (<< 4.27)
+Depends: debconf (>= 0.5) | debconf-2.0, libfile-temp-perl, libfile-copy-recursive-perl
+Breaks: netbase (<< 4.27)
+Description: inetd configuration file updater
+ This package provides a program used by other packages to
+ automatically update /etc/inetd.conf, the configuration file shared
+ by all implementations of the Internet super-server.
+ .
+ Note that xinetd is not supported by this package.
 
 Package: libgudev-1.0-0
 Status: install ok installed
@@ -1803,6 +2185,28 @@ Description: GDK Pixbuf library
   - Simple animation loading (ie. animated GIFs)
 Homepage: http://www.gtk.org/
 
+Package: lvm2
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Installed-Size: 1178
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 2.02.95-4
+Depends: libc6 (>= 2.4), libdevmapper-event1.02.1 (>= 2:1.02.74), libdevmapper1.02.1 (>= 2:1.02.74), libgcc1 (>= 1:4.4.0), libreadline5 (>= 5.2), libudev0 (>= 0.140), lsb-base, dmsetup (>> 2:1.02.47), initscripts (>= 2.88dsf-13.3)
+Breaks: initramfs-tools (<< 0.99)
+Conffiles:
+ /etc/init.d/lvm2 newconffile
+ /etc/lvm/lvm.conf newconffile
+Description: Linux Logical Volume Manager
+ This is LVM2, the rewrite of The Linux Logical Volume Manager.  LVM
+ supports enterprise level volume management of disk and disk subsystems
+ by grouping arbitrary disks into volume groups. The total capacity of
+ volume groups can be allocated to logical volumes, which are accessed as
+ regular block devices.
+Homepage: http://sources.redhat.com/lvm2/
+
 Package: xorg
 Status: install ok installed
 Priority: optional
@@ -1851,11 +2255,11 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: perl
-Installed-Size: 4566
+Installed-Size: 4570
 Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: armel
 Source: perl
-Version: 5.14.2-14
+Version: 5.14.2-15
 Replaces: libperl5.8 (<< 5.8.0-20), libscalar-list-utils-perl, libsocket-perl, libxsloader-perl, perl (<< 5.10.1-12), perl-modules (<< 5.10.1-1)
 Provides: libscalar-list-utils-perl, libsocket-perl, libxsloader-perl, perl5-base, perlapi-5.14.2
 Pre-Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), dpkg (>= 1.14.20)
@@ -1875,11 +2279,11 @@ Package: sysv-rc
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 216
+Installed-Size: 218
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: all
 Source: sysvinit
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Replaces: file-rc
 Depends: debconf (>= 0.5) | debconf-2.0, sysvinit-utils (>= 2.86.ds1-62), insserv (>> 1.12.0-10)
 Recommends: lsb-base (>= 3.2-14)
@@ -1914,12 +2318,12 @@ Package: apt
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 3146
+Installed-Size: 3173
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
-Version: 0.9.7.5
+Version: 0.9.7.6
 Replaces: manpages-pl (<< 20060617-3~)
-Depends: libapt-pkg4.12 (>= 0.9.7.5), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), debian-archive-keyring, gnupg
+Depends: libapt-pkg4.12 (>= 0.9.7.6), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), debian-archive-keyring, gnupg
 Suggests: aptitude | synaptic | wajig, dpkg-dev, apt-doc, xz-utils, python-apt
 Conflicts: python-apt (<< 0.7.93.2~)
 Conffiles:
@@ -1940,6 +2344,26 @@ Description: commandline package manager
   * apt-cdrom to use removable media as a source for packages
   * apt-config as an interface to the configuration settings
   * apt-key as an interface to manage authentication keys
+
+Package: libdconf0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 77
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: d-conf
+Version: 0.12.1-2
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.18)
+Pre-Depends: multiarch-support
+Breaks: dconf-gsettings-backend (<< 0.10.0)
+Description: simple configuration storage system - runtime library
+ DConf is a low-level key/value database designed for storing desktop
+ environment settings.
+ .
+ This package contains the runtime library.
+Homepage: http://live.gnome.org/dconf
 
 Package: liblapack3
 Status: install ok installed
@@ -1962,6 +2386,28 @@ Description: Library of linear algebra routines 3 - shared version
  comprehensive and reputable package that has found extensive
  use in the scientific community.
 Homepage: http://www.netlib.org/lapack/
+
+Package: libxslt1.1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 458
+Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libxslt
+Version: 1.1.26-14
+Depends: libc6 (>= 2.4), libgcrypt11 (>= 1.4.5), libxml2 (>= 2.7.4)
+Pre-Depends: multiarch-support
+Description: XSLT 1.0 processing library - runtime library
+ XSLT is an XML language for defining transformations of XML files from
+ XML to some other arbitrary format, such as XML, HTML, plain text, etc.
+ using standard XSLT stylesheets. libxslt is a C library which
+ implements XSLT version 1.0.
+ .
+ This package contains the libxslt library used by applications for XSLT
+ transformations.
+Homepage: http://xmlsoft.org/xslt/
 
 Package: libswitch-perl
 Status: install ok installed
@@ -2075,11 +2521,11 @@ Package: libgif4
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 82
-Maintainer: Thibaut GRIDEL <tgridel@free.fr>
+Installed-Size: 85
+Maintainer: Thibaut Gridel <tgridel@free.fr>
 Architecture: armel
 Source: giflib
-Version: 4.1.6-9.1
+Version: 4.1.6-10
 Provides: libungif4g
 Depends: libc6 (>= 2.4)
 Description: library for GIF images (library)
@@ -2097,9 +2543,9 @@ Installed-Size: 3760
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Source: xorg-server
-Version: 2:1.12.4-1
+Version: 2:1.12.4-3
 Provides: xorg-input-abi-16, xorg-video-abi-12
-Depends: xserver-common (>= 2:1.12.4-1), keyboard-configuration, udev (>= 149), libaudit0 (>= 1.7.13), libc6 (>= 2.8), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.21.6), libselinux1 (>= 2.0.82), libudev0 (>= 154), libxau6, libxdmcp6, libxfont1 (>= 1:1.4.2)
+Depends: xserver-common (>= 2:1.12.4-3), keyboard-configuration, udev (>= 149), libaudit0 (>= 1.7.13), libc6 (>= 2.8), libdrm2 (>= 2.3.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libpciaccess0 (>= 0.12.902), libpixman-1-0 (>= 0.21.6), libselinux1 (>= 2.0.82), libudev0 (>= 154), libxau6, libxdmcp6, libxfont1 (>= 1:1.4.2)
 Recommends: libgl1-mesa-dri (>= 7.10.2-4)
 Suggests: xfonts-100dpi | xfonts-75dpi, xfonts-scalable
 Breaks: libgl1-mesa-dri (<< 7.10.2-4), libgl1-mesa-dri-experimental (<< 7.10.2-4), xserver-xorg-input, xserver-xorg-input-2, xserver-xorg-input-2.1, xserver-xorg-input-4, xserver-xorg-input-7, xserver-xorg-input-joystick (<= 1:1.5.0-3), xserver-xorg-input-synaptics (<= 1.2.2-1), xserver-xorg-input-tslib (<= 0.0.6-3), xserver-xorg-input-vmmouse (<= 1:12.6.5-4), xserver-xorg-input-wacom (<= 0.10.5+20100415-1), xserver-xorg-video, xserver-xorg-video-1.0, xserver-xorg-video-1.9, xserver-xorg-video-2, xserver-xorg-video-4, xserver-xorg-video-5, xserver-xorg-video-6, xserver-xorg-video-cyrix (<= 1:1.1.0-8), xserver-xorg-video-i810 (<< 2:2.4), xserver-xorg-video-imstt (<= 1:1.1.0-7), xserver-xorg-video-nsc (<= 1:2.8.3-4), xserver-xorg-video-sunbw2 (<= 1:1.1.0-5), xserver-xorg-video-v4l (<< 1:0.2.0), xserver-xorg-video-vga (<= 1:4.1.0-8)
@@ -2125,7 +2571,7 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
+Version: 1.10.1+dfsg-3
 Depends: libc6 (>= 2.4), libkeyutils1, libkrb5support0 (>= 1.7dfsg~beta2)
 Pre-Depends: multiarch-support
 Suggests: krb5-doc, krb5-user
@@ -2459,19 +2905,25 @@ Package: ifupdown
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 180
+Installed-Size: 191
 Maintainer: Andrew O. Shadura <bugzilla@tut.by>
 Architecture: armel
 Multi-Arch: foreign
-Version: 0.7.2
+Version: 0.7.5
 Replaces: netbase (<< 5.0)
-Depends: iproute (>= 20071016-1), libc6 (>= 2.7), lsb-base, initscripts (>= 2.88dsf-25)
+Depends: iproute (>= 20071016-1), libc6 (>= 2.7), lsb-base (>= 4.1+Debian3), initscripts (>= 2.88dsf-25)
 Pre-Depends: dpkg (>= 1.15.7.2)
 Suggests: isc-dhcp-client | dhcp-client, ppp, rdnssd, net-tools
 Breaks: dhcp-client (<< 3.0), netbase (<< 5.0)
 Conffiles:
  /etc/default/networking 35cd4a2713981c9239ce4532c1bfc1c7
- /etc/init.d/networking e29f156f1a9a2255fe9ab824c8993b85
+ /etc/network/if-down.d/upstart 1a0205ddbc1446782a8d4d818e97d8a5
+ /etc/network/if-up.d/upstart dfbcde4fd4a3a2553930605e03e160ab
+ /etc/init.d/networking b91fa5f0529020176659b341b7a1a740
+ /etc/init/network-interface.conf 296dd23a2833cc2bb5c646a833011eab
+ /etc/init/network-interface-container.conf 7fb0862f8c092b33c16ec0f05387fbfb
+ /etc/init/networking.conf 1a5e78aba88486d1b6070f8fa3bd60ad
+ /etc/init/network-interface-security.conf 8d6447a035b681f5fa22d168adcf8dec
 Description: high level tools to configure network interfaces
  This package provides the tools ifup and ifdown which may be used to
  configure (or, respectively, deconfigure) network interfaces based on
@@ -2908,12 +3360,12 @@ Package: libapt-pkg4.12
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 2561
+Installed-Size: 2577
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.5
+Version: 0.9.7.6
 Depends: libbz2-1.0, libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.2.3.3)
 Pre-Depends: multiarch-support
 Breaks: apt (<< 0.9.4~)
@@ -3159,6 +3611,25 @@ Description: ELF GNU_STACK program header editing utility
  GNU_STACK program header to ELF binaries, and allows changing the executable
  flag.
 
+Package: libpolkit-agent-1-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 75
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: policykit-1
+Version: 0.105-1
+Depends: libc6 (>= 2.4), libexpat1 (>= 2.0.1), libglib2.0-0 (>= 2.31.8), libpolkit-gobject-1-0 (>= 0.105)
+Pre-Depends: multiarch-support
+Description: PolicyKit Authentication Agent API
+ PolicyKit is a toolkit for defining and handling the policy that
+ allows unprivileged processes to speak to privileged processes.
+ .
+ This package contains a library for accessing the authentication agent.
+Homepage: http://hal.freedesktop.org/docs/PolicyKit/
+
 Package: xserver-xorg-input-evdev
 Status: install ok installed
 Priority: optional
@@ -3348,6 +3819,46 @@ Description: report the search path for a class's ISA tree
  no duplicates.
 Homepage: http://search.cpan.org/dist/Class-ISA/
 
+Package: libnl1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 340
+Maintainer: Michael Biebl <biebl@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libnl
+Version: 1.1-7
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Description: library for dealing with netlink sockets
+ This is a library for applications dealing with netlink sockets.
+ The library provides an interface for raw netlink messaging and various
+ netlink family specific interfaces.
+Homepage: http://www.infradead.org/~tgr/libnl/
+
+Package: liblcms2-2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 299
+Maintainer: Oleksandr Moskalenko <malex@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: lcms2
+Version: 2.2+git20110628-2.2
+Depends: libc6 (>= 2.7)
+Pre-Depends: multiarch-support
+Suggests: liblcms2-utils
+Description: Little CMS 2 color management library
+ LittleCMS 2 intends to be a small-footprint color management engine, with
+ special focus on accuracy and performance. It uses the International Color
+ Consortium standard (ICC) of color management. LittleCMS 2 is a full
+ implementation of ICC specification 4.2 plus all addendums. It fully supports
+ all V2 and V4 profiles, including abstract, devicelink and named color
+ profiles.
+Homepage: http://www.littlecms.com/
+
 Package: libdrm-radeon1
 Status: install ok installed
 Priority: optional
@@ -3535,12 +4046,12 @@ Package: libapt-inst1.5
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 691
+Installed-Size: 693
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.5
+Version: 0.9.7.6
 Depends: libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Pre-Depends: multiarch-support
 Description: deb package format runtime library
@@ -3656,11 +4167,11 @@ Package: locales
 Status: install ok installed
 Priority: standard
 Section: localization
-Installed-Size: 15117
+Installed-Size: 15118
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Replaces: base-config, lliurex-belocs-locales-data
 Depends: glibc-2.13-1, debconf (>= 0.5) | debconf-2.0
 Conflicts: base-config, belocs-locales-bin, belocs-locales-data
@@ -3795,8 +4306,8 @@ Section: admin
 Installed-Size: 714
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
-Version: 3.13
-Depends: debconf (>= 0.5) | debconf-2.0, liblocale-gettext-perl, apt, tasksel-data
+Version: 3.14
+Depends: debconf (>= 0.5) | debconf-2.0, liblocale-gettext-perl, apt, tasksel-data, perl-base (>= 5.14.0-1)
 Pre-Depends: debconf (>= 1.5.34) | cdebconf (>= 0.106)
 Conflicts: base-config (<< 2.32), debconf (<< 1.4.27)
 Description: Tool for selecting tasks for installation on Debian systems
@@ -3811,10 +4322,10 @@ Installed-Size: 206
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: gcc-4.7 (4.7.1-7)
-Version: 1:4.7.1-7
+Source: gcc-4.7 (4.7.2-4)
+Version: 1:4.7.2-4
 Provides: libgcc1-armel
-Depends: gcc-4.7-base (= 4.7.1-7), libc6 (>= 2.4)
+Depends: gcc-4.7-base (= 4.7.2-4), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Description: GCC support library
@@ -3856,6 +4367,27 @@ Description: wired and wireless network manager - GTK+ client
  It also supports a tray icon showing network activity and signal
  strength.
 Homepage: http://wicd.sourceforge.net/
+
+Package: libck-connector0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 94
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: consolekit
+Version: 0.4.5-3.1
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2)
+Pre-Depends: multiarch-support
+Description: ConsoleKit libraries
+ ConsoleKit is a system daemon for tracking what users are logged
+ into the system and how they interact with the computer (e.g.
+ which keyboard and mouse they use).
+ .
+ This package provides a convenience library which simplifies the access to
+ ConsoleKit.
+Homepage: http://www.freedesktop.org/wiki/Software/ConsoleKit
 
 Package: pmount
 Status: install ok installed
@@ -4011,6 +4543,26 @@ Description: shared library for ALSA applications
  ALSA is the Advanced Linux Sound Architecture.
 Homepage: http://www.alsa-project.org/
 
+Package: libieee1284-3
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 104
+Maintainer: Julien BLACHE <jblache@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libieee1284
+Version: 0.2.11-10
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: cross-platform library for parallel port access
+ This library was designed to ease the use of the parallel port. It will
+ automatically figure out which access method is available, depending on the
+ running kernel and the permissions of the process.
+ .
+ It handles particular queries to the devices, like fetching the Device ID of
+ a device.
+
 Package: base-files
 Essential: yes
 Status: install ok installed
@@ -4054,6 +4606,26 @@ Description: Tools for mounting and manipulating filesystems
  This package provides the mount(8), umount(8), swapon(8),
  swapoff(8), and losetup(8) commands.
 Homepage: http://userweb.kernel.org/~kzak/util-linux/
+
+Package: libcairo-gobject2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 494
+Maintainer: Dave Beckett <dajobe@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: cairo
+Version: 1.12.2-2
+Depends: libc6 (>= 2.4), libcairo2 (>= 1.10.0), libglib2.0-0 (>= 2.14.0)
+Pre-Depends: multiarch-support
+Description: The Cairo 2D vector graphics library (GObject library)
+ Cairo is a multi-platform library providing anti-aliased
+ vector-based rendering for multiple target backends.
+ .
+ This package contains the GObject library, providing wrapper GObject types
+ for all cairo types.
+Homepage: http://cairographics.org/
 
 Package: libsqlite3-0
 Status: install ok installed
@@ -4111,16 +4683,41 @@ Description: Tools to manage aufs filesystems
  This package contains utilities needed to configure aufs containers on-the-fly.
 Homepage: http://aufs.sourceforge.net/
 
+Package: libgtk-3-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 5041
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: gtk+3.0
+Version: 3.4.2-4
+Provides: gtk3-binver-3.0.0
+Depends: libgtk-3-common (= 3.4.2-4), libatk1.0-0 (>= 2.2.0), libc6 (>= 2.7), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.10.0), libcolord1 (>= 0.1.10), libcomerr2 (>= 1.01), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgdk-pixbuf2.0-0 (>= 2.25.2), libglib2.0-0 (>= 2.32.0), libgnutls26 (>= 2.12.17-0), libgssapi-krb5-2 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libpango1.0-0 (>= 1.30.0), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6 (>= 2:1.2.99.4), libxinerama1, libxrandr2 (>= 2:1.2.99.3), zlib1g (>= 1:1.1.4), shared-mime-info
+Pre-Depends: multiarch-support
+Recommends: hicolor-icon-theme, libgtk-3-bin
+Suggests: librsvg2-common, gvfs
+Breaks: gnome-themes-standard (<< 3.3), libvte-2.90-9 (<< 1:0.32), libwebkitgtk-3.0-0 (<< 1.8.0), murrine-themes (<= 0.98.2)
+Description: GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the shared libraries.
+Homepage: http://www.gtk.org/
+
 Package: libcups2
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 430
+Installed-Size: 432
 Maintainer: Debian CUPS Maintainers <pkg-cups-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: cups
-Version: 1.5.3-1
+Version: 1.5.3-2.4
 Replaces: libcupsys2
 Provides: libcupsys2
 Depends: libavahi-client3 (>= 0.6.16), libavahi-common3 (>= 0.6.16), libc6 (>= 2.4), libgnutls26 (>= 2.12.17-0), libgssapi-krb5-2 (>= 1.10+dfsg~), zlib1g (>= 1:1.1.4)
@@ -4197,6 +4794,26 @@ Description: X.Org X server -- VESA display driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-video-vesa driver module.
+
+Package: libreadline5
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 287
+Maintainer: Debian QA Group <packages@qa.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: readline5
+Version: 5.2-12
+Depends: readline-common, libc6 (>= 2.4), libtinfo5
+Pre-Depends: multiarch-support
+Description: GNU readline and history libraries, run-time libraries
+ The GNU readline library aids in the consistency of user interface
+ across discrete programs that need to provide a command line
+ interface.
+ .
+ The GNU history library provides a consistent user interface for
+ recalling lines of previously typed input.
 
 Package: libreadline6
 Status: install ok installed
@@ -4299,7 +4916,7 @@ Installed-Size: 550
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
 Source: tasksel
-Version: 3.13
+Version: 3.14
 Depends: tasksel
 Recommends: laptop-detect
 Conflicts: tasksel (<< 2.67)
@@ -4415,6 +5032,34 @@ Description: Log rotation utility
  monthly or when the log file gets to a certain size.  Normally, logrotate
  runs as a daily cron job.
 
+Package: libltdl7
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 386
+Maintainer: Kurt Roeckx <kurt@roeckx.be>
+Architecture: armel
+Multi-Arch: same
+Source: libtool
+Version: 2.4.2-1.1
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: A system independent dlopen wrapper for GNU libtool
+ This package contains the run-time libltdl library.
+ .
+ A small library that aims at hiding the various difficulties of
+ dlopening libraries from programmers.  It is a system independent
+ dlopen wrapper for GNU libtool.
+ .
+ It supports the following dlopen interfaces:
+   * dlopen (Solaris, Linux and various BSD flavors)
+   * shl_load (HP-UX)
+   * LoadLibrary (Win16 and Win32)
+   * load_add_on (BeOS)
+   * GNU DLD (emulates dynamic linking for static libraries)
+   * libtool's dlpreopen
+Homepage: http://www.gnu.org/software/libtool/
+
 Package: libexpat1
 Status: install ok installed
 Priority: optional
@@ -4485,6 +5130,25 @@ Description: X.Org X server -- Rendition display driver
  .
  This package is built from the X.org xf86-video-rendition driver module.
 
+Package: virt-viewer
+Status: install ok unpacked
+Priority: extra
+Section: admin
+Installed-Size: 1028
+Maintainer: Debian Libvirt Maintainers <pkg-libvirt-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Version: 0.5.3-1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk-3-0 (>= 3.0.0), libgtk-vnc-2.0-0 (>= 0.3.10), libvirt0 (>= 0.9.7~rc1), libxml2 (>= 2.7.4)
+Suggests: netcat
+Description: Displaying the graphical console of a virtual machine
+ The console is accessed using the VNC protocol. The guest can be referred to
+ based on its name, ID, or UUID. If the guest is not already running, then the
+ viewer can be told to wait until is starts before attempting to connect to the
+ console The viewer can connect to remote hosts to lookup the console
+ information and then also connect to the remote console using the same network
+ transport.
+Homepage: http://virt-manager.et.redhat.com/
+
 Package: libboost-iostreams1.49.0
 Status: install ok installed
 Priority: important
@@ -4507,12 +5171,14 @@ Package: libopenjpeg2
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 164
+Installed-Size: 168
 Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
 Architecture: armel
+Multi-Arch: same
 Source: openjpeg
-Version: 1.3+dfsg-4.1
+Version: 1.3+dfsg-4.6
 Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
 Description: JPEG 2000 image compression/decompression library
  Libopenjpeg2 is a library for handling the JPEG 2000 image compression format.
 Homepage: http://www.openjpeg.org
@@ -4625,6 +5291,32 @@ Description: Linux USB utilities
  More information can be found at the Linux USB web site
  http://www.linux-usb.org/ .
 
+Package: libdevmapper1.02.1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 306
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: lvm2 (2.02.95-4)
+Version: 2:1.02.74-4
+Depends: libc6 (>= 2.4), libselinux1 (>= 1.32), libudev0 (>= 0.140), dmsetup (>= 2:1.02.74-4)
+Pre-Depends: multiarch-support
+Breaks: lvm2 (<< 2.02.66)
+Conflicts: libdevmapper1.02
+Description: Linux Kernel Device Mapper userspace library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but EVMS, software
+ raid, and other drivers that create "virtual" block devices.
+ .
+ This package contains the (user-space) shared library for accessing the
+ device-mapper; it allows usage of the device-mapper through a clean,
+ consistent interface (as opposed to through kernel ioctls).
+Homepage: http://sources.redhat.com/lvm2/
+
 Package: libxi6
 Status: install ok installed
 Priority: optional
@@ -4731,7 +5423,7 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: krb5
-Version: 1.10.1+dfsg-2
+Version: 1.10.1+dfsg-3
 Description: Internationalization support for MIT Kerberos
  Kerberos is a system for authenticating users and services on a network.
  Kerberos is a trusted third-party service.  That means that there is a
@@ -4767,6 +5459,31 @@ Description: multiple precision complex floating-point library
  .
  It builds upon the GNU MP and the MPFR libraries.
 Homepage: http://www.multiprecision.org/mpc/
+
+Package: libpcap0.8
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 282
+Maintainer: Romain Francoise <rfrancoise@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libpcap
+Version: 1.3.0-1
+Replaces: libpcap0.8-dev (<< 1.0.0-2)
+Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Description: system interface for user-level packet capture
+ libpcap (Packet CAPture) provides a portable framework for low-level
+ network monitoring.  Applications include network statistics collection,
+ security monitoring, network debugging, etc.
+ .
+ Since almost every system vendor provides a different interface for
+ packet capture, and since there are several tools that require this
+ functionality, the libpcap authors created this system-independent API
+ to ease in porting and to alleviate the need for several
+ system-dependent packet capture modules in each application.
+Homepage: http://www.tcpdump.org/
 
 Package: sed
 Essential: yes
@@ -4895,6 +5612,31 @@ Description: support binaries for and cli utilities based on liblockfile
  This package contains support binaries for the liblockfile library,
  and the command-line utility ``dotlockfile''.
 
+Package: libpulse0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 752
+Maintainer: Pulseaudio maintenance team <pkg-pulseaudio-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: pulseaudio
+Version: 2.0-6
+Depends: libasyncns0 (>= 0.3), libc6 (>= 2.10), libcap2 (>= 2.10), libdbus-1-3 (>= 1.1.1), libgcc1 (>= 1:4.4.0), libice6 (>= 1:1.0.0), libjson0, libsm6, libsndfile1 (>= 1.0.20), libwrap0 (>= 7.6-4~), libx11-6, libx11-xcb1, libxcb1, libxtst6
+Pre-Depends: multiarch-support
+Suggests: pulseaudio
+Breaks: pavucontrol (<< 0.9.8)
+Conffiles:
+ /etc/pulse/client.conf bdea965cdb68b445c04a1fa62193c096
+Description: PulseAudio client libraries
+ PulseAudio, previously known as Polypaudio, is a sound server for POSIX and
+ WIN32 systems. It is a drop in replacement for the ESD sound server with
+ much better latency, mixing/re-sampling quality and overall architecture.
+ .
+ Client libraries used by applications that access a PulseAudio sound server
+ via PulseAudio's native interface.
+Homepage: http://www.pulseaudio.org
+
 Package: libgtk2.0-common
 Status: install ok installed
 Priority: optional
@@ -5022,6 +5764,24 @@ Description: free implementation of the GL API -- shared library
  and libgles2-mesa packages.
 Homepage: http://mesa3d.sourceforge.net/
 
+Package: libtiff4
+Status: install ok installed
+Priority: optional
+Section: oldlibs
+Installed-Size: 458
+Maintainer: Jay Berkenbilt <qjb@debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: tiff3
+Version: 3.9.6-9
+Depends: libc6 (>= 2.11), libjbig0, libjpeg8 (>= 8c), zlib1g (>= 1:1.1.4)
+Pre-Depends: multiarch-support
+Description: Tag Image File Format (TIFF) library (old version)
+ libtiff is a library providing support for the Tag Image File Format
+ (TIFF), a widely used format for storing image data.  This package
+ includes the shared library.
+Homepage: http://libtiff.maptools.org
+
 Package: librtmp0
 Status: deinstall ok config-files
 Priority: extra
@@ -5043,24 +5803,6 @@ Description: toolkit for RTMP streams (shared library)
  This package contains the shared libraries, header files needed by
  programs that want to use librtmp.
 Homepage: http://rtmpdump.mplayerhq.hu/
-
-Package: libtiff4
-Status: install ok installed
-Priority: optional
-Section: oldlibs
-Installed-Size: 458
-Maintainer: Jay Berkenbilt <qjb@debian.org>
-Architecture: armel
-Multi-Arch: same
-Source: tiff3
-Version: 3.9.6-9
-Depends: libc6 (>= 2.11), libjbig0, libjpeg8 (>= 8c), zlib1g (>= 1:1.1.4)
-Pre-Depends: multiarch-support
-Description: Tag Image File Format (TIFF) library (old version)
- libtiff is a library providing support for the Tag Image File Format
- (TIFF), a widely used format for storing image data.  This package
- includes the shared library.
-Homepage: http://libtiff.maptools.org
 
 Package: python-gobject-2
 Status: deinstall ok config-files
@@ -5092,12 +5834,12 @@ Package: libsystemd-login0
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 78
+Installed-Size: 79
 Maintainer: Tollef Fog Heen <tfheen@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: systemd
-Version: 44-4
+Version: 44-5
 Depends: libc6 (>= 2.9), libcap2 (>= 2.10), libgcc1 (>= 1:4.4.0), libselinux1 (>= 2.0.65)
 Pre-Depends: multiarch-support
 Description: systemd login utility library
@@ -5173,6 +5915,29 @@ Description: scalable fonts for X
  This package requires the xutils package to prepare the font directories
  for use by an X server or X font server.
 
+Package: libdevmapper-event1.02.1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 76
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: lvm2 (2.02.95-4)
+Version: 2:1.02.74-4
+Depends: libc6 (>= 2.4), libdevmapper1.02.1 (>= 2:1.02.36)
+Pre-Depends: multiarch-support
+Description: Linux Kernel Device Mapper event support library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but EVMS, software
+ raid, and other drivers that create "virtual" block devices.
+ .
+ This package contains the userspace library to help with event monitoring
+ for devmapper devices, in conjunction with the dmevent daemon.
+Homepage: http://sources.redhat.com/lvm2/
+
 Package: xfonts-100dpi
 Status: install ok installed
 Priority: optional
@@ -5211,7 +5976,7 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
+Version: 1.10.1+dfsg-3
 Depends: libc6 (>= 2.4), libkeyutils1
 Pre-Depends: multiarch-support
 Conflicts: libkrb53
@@ -5403,34 +6168,60 @@ Description: Debian base system master password and group files
  group IDs. The update-passwd tool is provided to keep the system databases
  synchronized with these master files.
 
+Package: consolekit
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 467
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Version: 0.4.5-3.1
+Depends: libc6 (>= 2.4), libck-connector0 (= 0.4.5-3.1), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libglib2.0-0 (>= 2.31.8), libpolkit-gobject-1-0 (>= 0.94), libx11-6, zlib1g (>= 1:1.1.4), dbus (>= 1.1.2)
+Recommends: libpam-ck-connector
+Breaks: udev (<< 147)
+Conffiles:
+ /etc/logrotate.d/consolekit 94c8a5d4828b67bcabe2e9ef0d301921
+ /etc/X11/Xsession.d/90consolekit 628cccb5bdaaf3388da6b09c02eb07c8
+ /etc/dbus-1/system.d/ConsoleKit.conf 9a2dbb48a49638bf1cb1b5ff90755a29
+ /etc/ConsoleKit/seats.d/00-primary.seat eb3f3c54b501dbdaf38dbc38a4ee91fe
+Description: framework for defining and tracking users, sessions and seats
+ ConsoleKit is a system daemon for tracking what users are logged
+ into the system and how they interact with the computer (e.g.
+ which keyboard and mouse they use).
+ .
+ It provides asynchronous notification via the system message bus.
+ .
+ This package provides the system daemon and tools to interact with it.
+Homepage: http://www.freedesktop.org/wiki/Software/ConsoleKit
+
 Package: iceweasel
 Status: install ok installed
 Priority: optional
 Section: web
-Installed-Size: 6386
+Installed-Size: 6412
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
-Version: 10.0.10esr-1
+Version: 10.0.11esr-1
 Provides: gnome-www-browser, www-browser
-Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.10), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), fontconfig, procps, debianutils (>= 1.16), xulrunner-10.0 (>= 10.0.10esr-1), libsqlite3-0 (>= 3.7.12-1~)
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.16.0), libgtk2.0-0 (>= 2.10), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 1.8.0.10), libstdc++6 (>= 4.1.1), fontconfig, procps, debianutils (>= 1.16), xulrunner-10.0 (>= 10.0.11esr-1), libsqlite3-0 (>= 3.7.12-1~)
 Suggests: fonts-stix | otf-stix, mozplugger, libgssapi-krb5-2 | libkrb53
 Conffiles:
  /etc/iceweasel/pref/iceweasel.js f1bcbce2d713f2f639a9a9db7c3ad228
- /etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml 751e11997e15024ab67d59720c1c43f5
+ /etc/iceweasel/profile/mimeTypes.rdf 6047f42624d9930caa8d651fa94d28f1
+ /etc/iceweasel/profile/localstore.rdf ea03cc19c2a3f622fa557cd8ea9da6eb
+ /etc/iceweasel/profile/chrome/userContent-example.css d3765c7d2de5626529195007f4b7144a
+ /etc/iceweasel/profile/chrome/userChrome-example.css c63733eef9d337c86e6609bcc478a668
+ /etc/iceweasel/profile/prefs.js 99940ecd258d83b3355ab06fca0ffddb
+ /etc/iceweasel/profile/bookmarks.html 683b550745310e79b6d208e03431867f
+ /etc/iceweasel/searchplugins/common/debsearch.xml 626edd789818df62e5980799dcdb2b71
+ /etc/iceweasel/searchplugins/common/duckduckgo.xml 10875ea748c00bec65f896c0e8b4cb27
  /etc/iceweasel/searchplugins/locale/en-US/twitter.xml 2809ff03cc617038bbdd155c57719c40
+ /etc/iceweasel/searchplugins/locale/en-US/yahoo.xml 19c4959309f7809ced9c1b917e960b23
+ /etc/iceweasel/searchplugins/locale/en-US/bing.xml 4da8621504b90c7b8e8214aa4f99d488
+ /etc/iceweasel/searchplugins/locale/en-US/wikipedia.xml 751e11997e15024ab67d59720c1c43f5
  /etc/iceweasel/searchplugins/locale/en-US/google.xml e478692f95fe183cce5b0194fd4f1ca9
  /etc/iceweasel/searchplugins/locale/en-US/amazondotcom.xml a0fdca998378fa5da03d7e8e8bc18f36
- /etc/iceweasel/searchplugins/locale/en-US/bing.xml 4da8621504b90c7b8e8214aa4f99d488
  /etc/iceweasel/searchplugins/locale/en-US/eBay.xml c70b1629caee7b7c416da9fa10dcae7b
- /etc/iceweasel/searchplugins/locale/en-US/yahoo.xml 19c4959309f7809ced9c1b917e960b23
- /etc/iceweasel/searchplugins/common/duckduckgo.xml 10875ea748c00bec65f896c0e8b4cb27
- /etc/iceweasel/searchplugins/common/debsearch.xml 626edd789818df62e5980799dcdb2b71
- /etc/iceweasel/profile/prefs.js 99940ecd258d83b3355ab06fca0ffddb
- /etc/iceweasel/profile/mimeTypes.rdf 6047f42624d9930caa8d651fa94d28f1
- /etc/iceweasel/profile/bookmarks.html 683b550745310e79b6d208e03431867f
- /etc/iceweasel/profile/localstore.rdf ea03cc19c2a3f622fa557cd8ea9da6eb
- /etc/iceweasel/profile/chrome/userChrome-example.css c63733eef9d337c86e6609bcc478a668
- /etc/iceweasel/profile/chrome/userContent-example.css d3765c7d2de5626529195007f4b7144a
 Description: Web browser based on Firefox
  Iceweasel is Firefox, rebranded. It is a powerful, extensible web browser
  with support for modern web application technologies.
@@ -5786,6 +6577,27 @@ Description: X Window System (X.Org) infrastructure
  is thus often also referred to as "X.Org".  All of the preceding quoted
  terms are functionally interchangeable in an Debian system.
 
+Package: libaugeas0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 527
+Maintainer: Nicolas Valcárcel Scerpella <nvalcarcel@gmail.com>
+Architecture: armel
+Source: augeas
+Version: 0.10.0-1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libxml2 (>= 2.7.4), augeas-lenses
+Suggests: augeas-tools
+Description: Augeas configuration editing library and API
+ Augeas is a configuration editing tool. It parses configuration files in their
+ native formats and transforms them into a tree. Configuration changes are made
+ by manipulating this tree and saving it back into native config files.
+ .
+ The transformation works very hard to preserve comments and formatting
+ details. It is controlled by ``lens'' definitions that describe the file
+ format and the transformation into a tree.
+Homepage: http://augeas.net/
+
 Package: net-tools
 Status: install ok installed
 Priority: important
@@ -5832,6 +6644,29 @@ Description: X11 miscellaneous 'fixes' extension library
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXfixes
 
+Package: libsndfile1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 516
+Maintainer: Erik de Castro Lopo <erikd@mega-nerd.com>
+Architecture: armel
+Multi-Arch: same
+Source: libsndfile
+Version: 1.0.25-5
+Depends: libc6 (>= 2.7), libflac8 (>= 1.2.1), libgcc1 (>= 1:4.4.0), libogg0 (>= 1.0rc3), libvorbis0a (>= 1.2.3), libvorbisenc2 (>= 1.1.2)
+Pre-Depends: multiarch-support
+Description: Library for reading/writing audio files
+ libsndfile is a library of C routines for reading and writing files containing
+ sampled audio data.
+ .
+ Various versions of WAV (integer, floating point, GSM, and compressed formats);
+ Microsoft PCM, A-law and u-law formats; AIFF, AIFC and RIFX; various AU/SND
+ formats (Sun/NeXT, Dec AU, G721 and G723 ADPCM); RAW header-less PCM files;
+ Amiga IFF/8SVX/16SV PCM files; Ensoniq PARIS  (.PAF); Apple's Core Audio Format
+ (CAF) and others.
+Homepage: http://www.mega-nerd.com/libsndfile/
+
 Package: xserver-xorg-video-r128
 Status: install ok installed
 Priority: optional
@@ -5851,6 +6686,24 @@ Description: X.Org X server -- ATI r128 display driver
  <URL:http://www.X.org>
  .
  This package is built from the X.org xf86-video-r128 driver module.
+
+Package: libgusb2
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 63
+Maintainer: Michal Čihař <nijel@debian.org>
+Architecture: armel
+Source: libgusb
+Version: 0.1.3-5
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.8), libgudev-1.0-0 (>= 146), libusb-1.0-0 (>= 2:1.0.8)
+Description: GLib wrapper around libusb1
+ GUsb is a GObject wrapper for libusb1 that makes it easy to do
+ asynchronous control, bulk and interrupt transfers with proper
+ cancellation and integration into a mainloop.
+ .
+ This package contains the GUsb shared library.
+Homepage: http://www.hughski.com/downloads.html
 
 Package: libfs6
 Status: install ok installed
@@ -6088,8 +6941,8 @@ Description: Linux console font and keytable utilities
 
 Package: libnss3-1d
 Status: install ok installed
-Priority: extra
-Section: oldlibs
+Priority: optional
+Section: libs
 Installed-Size: 86
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
@@ -6225,18 +7078,18 @@ Package: keyboard-configuration
 Status: install ok installed
 Priority: optional
 Section: utils
-Installed-Size: 2277
+Installed-Size: 2281
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
 Source: console-setup
-Version: 1.82
+Version: 1.87
 Replaces: console-setup (<< 1.47), console-setup-mini (<< 1.47)
 Depends: liblocale-gettext-perl, initscripts
 Pre-Depends: debconf (>= 1.5.34)
 Breaks: console-setup (<< 1.71), console-setup-mini (<< 1.47)
 Conffiles:
- /etc/init.d/keyboard-setup ec052949ff1eaa995abce9a1e846c2c3
  /etc/init.d/console-setup 0db5a9bc1f799d7ce34a971a8aa43264
+ /etc/init.d/keyboard-setup 6ecdd8d7eae634bc48cbc82a73c12c25
 Description: system-wide keyboard preferences
  This package maintains the keyboard preferences in
  /etc/default/keyboard.  Other packages can use the information
@@ -6292,9 +7145,9 @@ Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.1-7
+Version: 4.7.2-4
 Provides: libgfortran3-armel
-Depends: gcc-4.7-base (= 4.7.1-7), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Depends: gcc-4.7-base (= 4.7.2-4), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Description: Runtime library for GNU Fortran applications
@@ -6374,8 +7227,8 @@ Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.de
 Architecture: armel
 Multi-Arch: same
 Source: cyrus-sasl2
-Version: 2.1.25.dfsg1-5
-Depends: libsasl2-2 (= 2.1.25.dfsg1-5), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
+Version: 2.1.25.dfsg1-6
+Depends: libsasl2-2 (= 2.1.25.dfsg1-6), libc6 (>= 2.4), libssl1.0.0 (>= 1.0.0)
 Suggests: libsasl2-modules-otp, libsasl2-modules-ldap, libsasl2-modules-sql, libsasl2-modules-gssapi-mit | libsasl2-modules-gssapi-heimdal
 Description: Cyrus SASL - pluggable authentication modules
  This is the Cyrus SASL API implementation, version 2.1. See package
@@ -6394,11 +7247,11 @@ Maintainer: Debian Cyrus SASL Team <pkg-cyrus-sasl2-debian-devel@lists.alioth.de
 Architecture: armel
 Multi-Arch: same
 Source: cyrus-sasl2
-Version: 2.1.25.dfsg1-5
+Version: 2.1.25.dfsg1-6
 Replaces: libsasl2
 Depends: libc6 (>= 2.4), libdb5.1
 Pre-Depends: multiarch-support
-Recommends: libsasl2-modules (= 2.1.25.dfsg1-5)
+Recommends: libsasl2-modules (= 2.1.25.dfsg1-6)
 Breaks: postfix (<= 2.8.3-1), slapd (<= 2.4.25-3)
 Description: Cyrus SASL - authentication abstraction library
  This is the Cyrus SASL API implementation, version 2.1.
@@ -6725,10 +7578,10 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 225
+Installed-Size: 226
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: armel
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Depends: libc6 (>= 2.11), libselinux1 (>= 1.32), libsepol1 (>= 1.14), debianutils (>= 4)
 Pre-Depends: initscripts (>= 2.88dsf-13.3), sysv-rc | file-rc, sysvinit-utils (>= 2.86.ds1-66)
 Description: System-V-like init utilities
@@ -6811,11 +7664,11 @@ Package: initscripts
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 284
+Installed-Size: 285
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: armel
 Source: sysvinit
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Depends: libc6 (>= 2.4), debianutils (>= 4), lsb-base (>= 3.2-14), sysvinit-utils (>= 2.86.ds1-64), sysv-rc | file-rc, coreutils (>= 5.93)
 Recommends: psmisc, e2fsprogs
@@ -6826,15 +7679,15 @@ Conffiles:
  /etc/init.d/bootmisc.sh fc8ccb388e8aa1ea54d70048e9903d64
  /etc/init.d/checkfs.sh 74457ecf8bd853fe1a2ba758053735dc
  /etc/init.d/checkroot.sh efc13158c7d643b5d4baaf68c984dcd1
- /etc/init.d/checkroot-bootclean.sh 29296d8b0462bba13b921d4bb6fb3716
+ /etc/init.d/checkroot-bootclean.sh 4a269606234cf5b57cc05016ce68deb3
  /etc/init.d/halt 6ae1b3b1b8198567a5e32116077f12a2
  /etc/init.d/hostname.sh 2180072dbb4e2f42f7ad4df4a2f9888d
  /etc/init.d/killprocs 5e404d35091fab6c4889302736ed4602
  /etc/init.d/motd dbc3f882af04254005bb96e4f780e5a0
- /etc/init.d/mountall.sh a462516c52a6265a37ae357ef72706d7
- /etc/init.d/mountall-bootclean.sh 7d34fb389a3a9d765dee62354b9a45c1
+ /etc/init.d/mountall.sh f1bd3e23885848cbb8cbf62dd584a8d2
+ /etc/init.d/mountall-bootclean.sh 789bd42ea8dff699ae9b3651d024f83a
  /etc/init.d/mountnfs.sh 289709c3a76bfd9f59a0f071670f01a0
- /etc/init.d/mountnfs-bootclean.sh 33b842bb3d5f81d9ab7c1d8bff9580d4
+ /etc/init.d/mountnfs-bootclean.sh b0b22bd70a83cffc501df284f1cc7e80
  /etc/init.d/mountdevsubfs.sh ebdcd7d0e2d05978e06da0b9f21ed8d8
  /etc/init.d/mountkernfs.sh 8a995e21ab7f4f58926b8ef05d80892e
  /etc/init.d/mtab.sh df8b4a53c9a18b748543891a2c792de7
@@ -6844,7 +7697,7 @@ Conffiles:
  /etc/init.d/sendsigs 00ed9a4cdc73711fceef76ddef67dd12
  /etc/init.d/single dc13cb373c5c098a8fb95424701373e3
  /etc/init.d/umountfs 07e4c8c8d9136f36745feb4776edc6f4
- /etc/init.d/umountnfs.sh ffe44729b1a032a5b444c7c594b1c772
+ /etc/init.d/umountnfs.sh 7ed49dd49c3ea516df80e7bacc0935f2
  /etc/init.d/umountroot 3e6a08830565a2938fb009b63d8bd0b9
  /etc/init.d/urandom e6454386bfce38efb5987dd06cb3b21d
  /etc/default/devpts fc857c5ac5fb84d80720ed4d1c624f6e
@@ -7039,11 +7892,11 @@ Package: xz-utils
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 464
+Installed-Size: 466
 Maintainer: Jonathan Nieder <jrnieder@gmail.com>
 Architecture: armel
 Multi-Arch: foreign
-Version: 5.1.1alpha+20120614-1
+Version: 5.1.1alpha+20120614-2
 Replaces: lzip (<< 1.8~rc2), xz-lzma
 Provides: lzma
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20120614)
@@ -7074,12 +7927,12 @@ Package: xulrunner-10.0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 20152
+Installed-Size: 20157
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: iceweasel
-Version: 10.0.10esr-1
-Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libbz2-1.0, libc6 (>= 2.11), libcairo2 (>= 1.10.2-2~), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0, libjpeg8 (>= 8c), libmozjs10d (= 10.0.10esr-1), libnotify4 (>= 0.7.0), libnspr4-0d (>> 4.7.1-1), libnss3-1d (>= 3.13.1), libpango1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.18.0), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.7.4), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.6), libvpx1 (>= 1.0.0), libx11-6, libxext6, libxrender1, libxt6, zlib1g (>= 1:1.1.4)
+Version: 10.0.11esr-1
+Depends: libasound2 (>= 1.0.16), libatk1.0-0 (>= 1.12.4), libbz2-1.0, libc6 (>= 2.11), libcairo2 (>= 1.10.2-2~), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libevent-2.0-5 (>= 2.0.10-stable), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgtk2.0-0 (>= 2.24.0), libhunspell-1.3-0, libjpeg8 (>= 8c), libmozjs10d (= 10.0.11esr-1), libnotify4 (>= 0.7.0), libnspr4-0d (>> 4.7.1-1), libnss3-1d (>= 3.13.1), libpango1.0-0 (>= 1.14.0), libpixman-1-0 (>= 0.18.0), libreadline6 (>= 6.0), libsqlite3-0 (>= 3.7.4), libstartup-notification0 (>= 0.8), libstdc++6 (>= 4.6), libvpx1 (>= 1.0.0), libx11-6, libxext6, libxrender1, libxt6, zlib1g (>= 1:1.1.4)
 Suggests: libgnomeui-0, libcanberra0
 Conflicts: j2re1.4, pango-graphite (<< 0.9.3)
 Description: XUL + XPCOM application runner
@@ -7136,6 +7989,27 @@ Description: X11 client-side library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libX11
+
+Package: libgtk-3-bin
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 125
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: gtk+3.0
+Version: 3.4.2-4
+Depends: libgtk-3-0 (>= 3.4.2-4), libgtk-3-common (= 3.4.2-4)
+Description: programs for the GTK+ graphical user interface library
+ GTK+ is a multi-platform toolkit for creating graphical user
+ interfaces. Offering a complete set of widgets, GTK+ is suitable
+ for projects ranging from small one-off tools to complete application
+ suites.
+ .
+ This package contains the utilities which are used by the libraries
+ and other packages.
+Homepage: http://www.gtk.org/
 
 Package: libjasper1
 Status: install ok installed
@@ -7298,6 +8172,31 @@ Description: type-safe Signal Framework for C++ - runtime
  These are the runtime files for libsigc++, needed only if you wish to
  run software which depends on it.
 
+Package: libsane-extras-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 76
+Maintainer: Julien BLACHE <jblache@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: sane-backends-extras
+Version: 1.0.22.2
+Replaces: libsane-extras (<< 1.0.22.2~)
+Description: API library for scanners -- documentation and support files
+ SANE stands for "Scanner Access Now Easy" and is an application
+ programming interface (API) that provides standardized access to any
+ raster image scanner hardware (flatbed scanner, hand-held scanner,
+ video- and still-cameras, frame-grabbers, etc.). The SANE standard is
+ free and its discussion and development are open to everybody. The
+ current source code is written to support several operating systems,
+ including GNU/Linux, OS/2, Win32 and various Unices and is available
+ under the GNU General Public License (commercial applications and
+ backends are welcome, too, however).
+ .
+ This package includes documentation for libsane-extras, such as the man
+ pages and other support files.
+
 Package: libx264-123
 Status: install ok installed
 Priority: optional
@@ -7316,6 +8215,21 @@ Description: x264 video coding library
  .
  This package contains the libx264 shared library.
 Homepage: http://www.videolan.org/developers/x264.html
+
+Package: acl
+Status: install ok installed
+Priority: optional
+Section: utils
+Installed-Size: 239
+Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 2.2.51-8
+Depends: libacl1 (= 2.2.51-8), libattr1 (>= 1:2.4.46-8), libc6 (>= 2.4)
+Description: Access control list utilities
+ This package contains the getfacl and setfacl utilities needed for
+ manipulating access control lists.
+Homepage: http://savannah.nongnu.org/projects/acl/
 
 Package: openssh-server
 Status: install ok installed
@@ -7361,6 +8275,26 @@ Description: secure shell (SSH) server, for secure access from remote machines
  purposes.
 Homepage: http://www.openssh.org/
 
+Package: libpolkit-backend-1-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 129
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: policykit-1
+Version: 0.105-1
+Depends: libc6 (>= 2.4), libexpat1 (>= 2.0.1), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.30.0), libpolkit-gobject-1-0 (>= 0.104)
+Pre-Depends: multiarch-support
+Breaks: policykit-1 (<< 0.99)
+Description: PolicyKit backend API
+ PolicyKit is a toolkit for defining and handling the policy that
+ allows unprivileged processes to speak to privileged processes.
+ .
+ This package contains a library for implementing authentication backends.
+Homepage: http://hal.freedesktop.org/docs/PolicyKit/
+
 Package: libatk1.0-0
 Status: install ok installed
 Priority: optional
@@ -7391,7 +8325,7 @@ Maintainer: Jonathan Nieder <jrnieder@gmail.com>
 Architecture: armel
 Multi-Arch: same
 Source: xz-utils
-Version: 5.1.1alpha+20120614-1
+Version: 5.1.1alpha+20120614-2
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: XZ-format compression library
@@ -7483,8 +8417,8 @@ Installed-Size: 63
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: allowed
-Source: gcc-defaults (1.119)
-Version: 4:4.6.3-7
+Source: gcc-defaults (1.120)
+Version: 4:4.6.3-8
 Depends: cpp-4.6 (>= 4.4.7-1~)
 Suggests: cpp-doc
 Conflicts: cpp-doc (<< 1:2.95.3)
@@ -7506,7 +8440,7 @@ Maintainer: Debian GnuTLS Maintainers <pkg-gnutls-maint@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gnutls26
-Version: 2.12.20-1
+Version: 2.12.20-2
 Replaces: gnutls0, gnutls0.4, gnutls3
 Depends: libc6 (>= 2.8), libgcrypt11 (>= 1.4.5), libp11-kit0 (>= 0.11), libtasn1-3 (>= 1.6-0), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
@@ -7694,20 +8628,20 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 5734
+Installed-Size: 6182
 Origin: debian
 Maintainer: Dpkg Developers <debian-dpkg@lists.debian.org>
 Bugs: debbugs://bugs.debian.org
 Architecture: armel
 Multi-Arch: foreign
-Version: 1.16.8
+Version: 1.16.9
 Pre-Depends: libbz2-1.0, libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), liblzma5 (>= 5.1.1alpha+20120614), libselinux1 (>= 1.32), zlib1g (>= 1:1.1.4), tar (>= 1.23)
 Suggests: apt
 Breaks: apt (<< 0.7.7), aptitude (<< 0.4.7-1), dpkg-dev (<< 1.15.8), libdpkg-perl (<< 1.15.8), pinfo (<< 0.6.9-3.1), tkinfo (<< 2.8-3.1)
 Conffiles:
  /etc/logrotate.d/dpkg 782ea5ae536f67ff51dc8c3e2eeb4cf9
- /etc/dpkg/dpkg.cfg f4413ffb515f8f753624ae3bb365b81b
  /etc/cron.daily/dpkg b6b8dc21210ea50db7cc4636f521758f
+ /etc/dpkg/dpkg.cfg f4413ffb515f8f753624ae3bb365b81b
  /etc/alternatives/README 69c4ba7f08363e998e0f2e244a04f881
 Description: Debian package management system
  This package provides the low-level infrastructure for handling the
@@ -7739,6 +8673,27 @@ Description: Open source MPEG-4 video codec (library)
  This package contains the shared library.
 Homepage: http://www.xvid.org/
 
+Package: libv4lconvert0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 239
+Maintainer: Gregor Jasny <gjasny@googlemail.com>
+Architecture: armel
+Multi-Arch: same
+Source: v4l-utils
+Version: 0.8.8-3
+Replaces: libv4l-0 (<< 0.8.5-4)
+Depends: libc6 (>= 2.11), libjpeg8 (>= 8c)
+Pre-Depends: multiarch-support
+Breaks: libv4l-0 (<< 0.8.5-4)
+Description: Video4linux frame format conversion library
+ libv4lconvert offers functions to convert from any (known) pixelformat
+ to BGR24, RGB24, YUV420 and YVU420.
+ .
+ This package contains the shared library.
+Homepage: http://linuxtv.org/downloads/v4l-utils/
+
 Package: libpcre3
 Status: install ok installed
 Priority: important
@@ -7763,11 +8718,11 @@ Package: aptitude
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 3838
+Installed-Size: 3834
 Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
 Architecture: armel
-Version: 0.6.8.1-2
-Depends: aptitude-common (= 0.6.8.1-2), libapt-pkg4.12 (>= 0.9.3), libboost-iostreams1.49.0 (>= 1.49.0-1), libc6 (>= 2.4), libcwidget3, libept1.4.12 (>= 1.0.9), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20070908), libsigc++-2.0-0c2a (>= 2.0.2), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 4.6), libtinfo5, libxapian22, zlib1g (>= 1:1.1.4)
+Version: 0.6.8.2-1
+Depends: aptitude-common (= 0.6.8.2-1), libapt-pkg4.12 (>= 0.9.7.6), libboost-iostreams1.49.0 (>= 1.49.0-1), libc6 (>= 2.4), libcwidget3, libept1.4.12 (>= 1.0.9), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20070908), libsigc++-2.0-0c2a (>= 2.0.2), libsqlite3-0 (>= 3.6.5), libstdc++6 (>= 4.6), libtinfo5, libxapian22, zlib1g (>= 1:1.1.4)
 Recommends: aptitude-doc-en | aptitude-doc, sensible-utils, apt-xapian-index, libparse-debianchangelog-perl
 Suggests: tasksel, debtags
 Conflicts: ia32-apt-get (<< 22)
@@ -7789,11 +8744,11 @@ Package: iso-codes
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 14597
+Installed-Size: 14606
 Maintainer: Tobias Quathamer <toddy@debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 3.39-1
+Version: 3.40-1
 Suggests: isoquery
 Description: ISO language, territory, currency, script codes and their translations
  This package provides the ISO 639 and ISO 639-3 language code lists,
@@ -7809,12 +8764,12 @@ Package: libavutil51
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 415
+Installed-Size: 416
 Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libav
-Version: 6:0.8.3-7
+Version: 6:0.8.4-1
 Replaces: libavutil-extra-51
 Provides: libavutil-extra-51
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
@@ -7964,6 +8919,50 @@ Description: LXDE default session manager
  desktop-independent and can be used with any window manager.
 Homepage: http://www.lxde.org/
 
+Package: dmsetup
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Installed-Size: 165
+Maintainer: Debian LVM Team <pkg-lvm-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: lvm2 (2.02.95-4)
+Version: 2:1.02.74-4
+Depends: libc6 (>= 2.4), libdevmapper1.02.1 (>= 2:1.02.74), libudev0 (>= 0.140), util-linux (>> 2.16)
+Conflicts: devicekit-disks (<< 009)
+Description: Linux Kernel Device Mapper userspace library
+ The Linux Kernel Device Mapper is the LVM (Linux Logical Volume Management)
+ Team's implementation of a minimalistic kernel-space driver that handles
+ volume management, while keeping knowledge of the underlying device layout
+ in user-space.  This makes it useful for not only LVM, but EVMS, software
+ raid, and other drivers that create "virtual" block devices.
+ .
+ This package contains a utility for modifying device mappings.
+Homepage: http://sources.redhat.com/lvm2/
+
+Package: libcap-ng0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 54
+Maintainer: Pierre Chifflier <pollux@debian.org>
+Architecture: armel
+Source: libcap-ng
+Version: 0.6.6-2
+Depends: libc6 (>= 2.4)
+Description: An alternate POSIX capabilities library
+ This library implements the user-space interfaces to the POSIX
+ 1003.1e capabilities available in Linux kernels.  These capabilities are
+ a partitioning of the all powerful root privilege into a set of distinct
+ privileges.
+ .
+ The libcap-ng library is intended to make programming with POSIX
+ capabilities much easier than the traditional libcap library.
+ .
+ This package contains header files and libraries for libcap-ng.
+Homepage: http://people.redhat.com/sgrubb/libcap-ng
+
 Package: xarchiver
 Status: install ok installed
 Priority: optional
@@ -7984,6 +8983,21 @@ Description: GTK+ frontend for most used compression formats
  Xarchiver uses library package routines, if available. If you need even more
  package formats, try xarchive which uses shell scripts.
 Homepage: http://xarchiver.xfce.org/
+
+Package: libfile-copy-recursive-perl
+Status: install ok installed
+Priority: optional
+Section: perl
+Installed-Size: 88
+Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
+Architecture: all
+Version: 0.38-1
+Depends: perl (>= 5.6.0-16)
+Description: Perl extension for recursively copying files and directories
+ File::Copy::Recursive module copies and moves directories recursively
+ (or single files, well... singley) to an optional depth and attempts
+ to preserve each file or directory's mode.
+Homepage: http://search.cpan.org/dist/File-Copy-Recursive/
 
 Package: libmtdev1
 Status: install ok installed
@@ -8193,11 +9207,11 @@ Package: aptitude-common
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 9216
+Installed-Size: 9263
 Maintainer: Aptitude Development Team <aptitude-devel@lists.alioth.debian.org>
 Architecture: all
 Source: aptitude
-Version: 0.6.8.1-2
+Version: 0.6.8.2-1
 Replaces: aptitude (<< 0.6.8-1)
 Recommends: aptitude
 Breaks: aptitude (<< 0.6.8-1)
@@ -8265,13 +9279,13 @@ Package: perl
 Status: install ok installed
 Priority: standard
 Section: perl
-Installed-Size: 11036
+Installed-Size: 11037
 Maintainer: Niko Tyni <ntyni@debian.org>
 Architecture: armel
-Version: 5.14.2-14
+Version: 5.14.2-15
 Replaces: libarchive-tar-perl (<= 1.38-2), libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libmodule-corelist-perl (<< 2.14-2), libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl-base (<< 5.10.1-12), perl-doc (<< 5.8.0-1), perl-modules (<< 5.8.1-1)
 Provides: data-dumper, libcompress-raw-bzip2-perl, libcompress-raw-zlib-perl, libcompress-zlib-perl, libdevel-dprof-perl, libdigest-md5-perl, libdigest-sha-perl, libencode-perl, libio-compress-base-perl, libio-compress-bzip2-perl, libio-compress-perl, libio-compress-zlib-perl, libmime-base64-perl, libstorable-perl, libsys-syslog-perl, libthreads-perl, libthreads-shared-perl, libtime-hires-perl, libtime-piece-perl, perl5
-Depends: perl-base (= 5.14.2-14), perl-modules (>= 5.14.2-14), libbz2-1.0, libc6 (>= 2.11), libdb5.1, libgcc1 (>= 1:4.4.0), libgdbm3 (>= 1.8.3), zlib1g (>= 1:1.2.3.3)
+Depends: perl-base (= 5.14.2-15), perl-modules (>= 5.14.2-15), libbz2-1.0, libc6 (>= 2.11), libdb5.1, libgcc1 (>= 1:4.4.0), libgdbm3 (>= 1.8.3), zlib1g (>= 1:1.2.3.3)
 Recommends: netbase
 Suggests: perl-doc, libterm-readline-gnu-perl | libterm-readline-perl-perl, make
 Breaks: dh-make-perl (<< 0.73-1), ftpmirror (<< 1.96+dfsg-13), libcompress-raw-bzip2-perl (<< 2.033), libcompress-raw-zlib-perl (<< 2.033), libcompress-zlib-perl (<< 2.033), libdevel-dprof-perl (<< 20110228.00), libdigest-md5-perl (<< 2.51), libdigest-sha-perl (<< 5.61), libencode-perl (<< 2.42.01), libhtml-template-compiled-perl (<< 0.95-1), libio-compress-base-perl (<< 2.033), libio-compress-bzip2-perl (<< 2.033), libio-compress-perl (<< 2.033), libio-compress-zlib-perl (<< 2.033), libload-perl (<< 0.20-1), libmime-base64-perl (<< 3.13), libnet-jifty-perl (<< 0.14-1), libperl-apireference-perl (<< 0.09-1), libregexp-optimizer-perl (<< 0.15-3), libsoap-lite-perl (<< 0.712-4), libstorable-perl (<< 2.27), libsys-syslog-perl (<< 0.27), libthreads-perl (<< 1.83), libthreads-shared-perl (<< 1.37), libtime-hires-perl (<< 1.9721.01), libtime-piece-perl (<< 1.20.01), libxml-parser-lite-tree-perl (<< 0.14-1), libyaml-perl (<< 0.73-1), mrtg (<< 2.16.3-3.1), perl-doc (<< 5.14.2-1)
@@ -8493,6 +9507,32 @@ Description: Window Navigator Construction Kit - common files
  .
  This package contains internationalization files.
 
+Package: libgphoto2-2
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 3033
+Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libgphoto2
+Version: 2.4.14-2
+Depends: libc6 (>= 2.11), libexif12, libgcc1 (>= 1:4.4.0), libgd2-xpm (>= 2.0.36~rc1~dfsg), libgphoto2-port0 (>= 2.4.10.1), libjpeg8 (>= 8c), libltdl7 (>= 2.4.2)
+Pre-Depends: dpkg (>= 1.15.7.2), multiarch-support
+Recommends: udev (>= 0.175), libgphoto2-l10n (>= 2.4.14-2)
+Suggests: gphoto2 (>= 2.1.1)
+Breaks: gphoto2 (<= 2.1.1)
+Description: gphoto2 digital camera library
+ The gphoto2 library can be used by applications to access various
+ digital camera models, via standard protocols such as USB Mass Storage
+ and PTP, or vendor-specific protocols.
+ .
+ This package contains the library.
+ .
+ The gphoto2 command-line frontend is shipped separately, in the gphoto2
+ package.
+Homepage: http://www.gphoto.org/proj/libgphoto2/
+
 Package: unzip
 Status: install ok installed
 Priority: optional
@@ -8551,13 +9591,13 @@ Package: gcc-4.7-base
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 195
+Installed-Size: 196
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.1-7
-Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.6-base (<< 4.6.1-4~), gnat-4.6 (<< 4.6.1-5~)
+Version: 4.7.2-4
+Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
 Description: GCC, the GNU Compiler Collection (base package)
  This package contains files common to all languages and libraries
  contained in the GNU Compiler Collection (GCC).
@@ -8591,12 +9631,12 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 3021
+Installed-Size: 3027
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Replaces: libc0.1, libc0.3, libc6, libc6.1
 Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
 Conffiles:
@@ -8616,6 +9656,23 @@ Description: Embedded GNU C Library: Binaries
   * rpcinfo: report RPC information
   * tzselect, zdump, zic: select/dump/compile time zones
 Homepage: http://www.eglibc.org
+
+Package: libnetcf1
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 188
+Maintainer: Serge Hallyn <serge.hallyn@ubuntu.com>
+Architecture: armel
+Source: netcf
+Version: 0.1.9-2
+Depends: libaugeas0 (>= 0.6.0), libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libnl1 (>= 1.1), libxml2 (>= 2.7.4), libxslt1.1 (>= 1.1.25), augeas-lenses
+Description: cross-platform network configuration library
+ Netcf is a library used to modify the network configuration of a
+ system. Network configurations are expressed in a platform-independent
+ XML format, which netcf translates into changes to the system's
+ 'native' network configuration files.
+Homepage: https://fedorahosted.org/netcf/
 
 Package: lxappearance
 Status: install ok installed
@@ -8707,6 +9764,26 @@ Description: The GNU Compiler Collection (base package)
  contained in the GNU Compiler Collection (GCC).
 Homepage: http://gcc.gnu.org/
 
+Package: libgphoto2-l10n
+Status: install ok installed
+Priority: optional
+Section: localization
+Installed-Size: 2033
+Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: libgphoto2
+Version: 2.4.14-2
+Replaces: libgphoto2-2 (<= 2.4.10.1-4)
+Breaks: libgphoto2-2 (<= 2.4.10.1-4)
+Description: gphoto2 digital camera library - localized messages
+ The gphoto2 library can be used by applications to access various
+ digital camera models, via standard protocols such as USB Mass Storage
+ and PTP, or vendor-specific protocols.
+ .
+ This package contains the localized messages for the library.
+Homepage: http://www.gphoto.org/proj/libgphoto2/
+
 Package: libnss3
 Status: install ok installed
 Priority: optional
@@ -8732,17 +9809,17 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 213
+Installed-Size: 214
 Maintainer: Debian sysvinit maintainers <pkg-sysvinit-devel@lists.alioth.debian.org>
 Architecture: armel
 Source: sysvinit
-Version: 2.88dsf-32
+Version: 2.88dsf-34
 Replaces: last, sysvinit (<= 2.86.ds1-65)
 Depends: libc6 (>= 2.10), libselinux1 (>= 1.32)
 Suggests: bootlogd, sash
 Conflicts: chkconfig (<< 11.0-79.1-2), last, sysvconfig
 Conffiles:
- /etc/init/startpar-bridge.conf 6972c17571e1a22a57e163a6eea17e96
+ /etc/init/startpar-bridge.conf aab4f8aed4d4803ba1f6d97f6b1152da
 Description: System-V-like utilities
  This package contains the important System-V-like utilities.
  .
@@ -8797,7 +9874,7 @@ Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Depends: libc6 (>= 2.3.6-2)
 Description: Transitional package to ensure multiarch compatibility
  This is a transitional package used to ensure multiarch support is present
@@ -8935,10 +10012,33 @@ Description: small, friendly text editor inspired by Pico
   - full internationalization support.
 Homepage: http://www.nano-editor.org/
 
+Package: dconf-gsettings-backend
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 76
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: d-conf
+Version: 0.12.1-2
+Replaces: libdconf0 (<< 0.7.3-2)
+Provides: gsettings-backend
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.18), dconf-service (>= 0.12.1-2), dconf-service (<< 0.12.1-2.1~), libdconf0 (= 0.12.1-2)
+Breaks: libdconf0 (<< 0.7.3-2), libglib2.0-0 (<< 2.30)
+Description: simple configuration storage system - GSettings back-end
+ DConf is a low-level key/value database designed for storing desktop
+ environment settings.
+ .
+ This package contains a back-end for GSettings. It is needed by
+ applications accessing settings through GSettings to set custom values
+ and listen for changes.
+Homepage: http://live.gnome.org/dconf
+
 Package: libnspr4-0d
 Status: install ok installed
-Priority: extra
-Section: oldlibs
+Priority: optional
+Section: libs
 Installed-Size: 61
 Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
 Architecture: armel
@@ -8950,6 +10050,27 @@ Description: NetScape Portable Runtime Library - transitional package
  This is a transitional package to ensure smooth transition of all packages
  to libnspr4.
 Homepage: http://www.mozilla.org/projects/nspr/
+
+Package: libgtk-vnc-2.0-0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 112
+Maintainer: Debian Libvirt Maintainers <pkg-libvirt-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: gtk-vnc
+Version: 0.5.0-3
+Depends: libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo-gobject2 (>= 1.10.0), libcairo2 (>= 1.2.4), libfontconfig1 (>= 2.8.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.24.0), libgnutls26 (>= 2.12.6.1-0), libgpg-error0 (>= 1.10), libgtk-3-0 (>= 3.0.0), libgvnc-1.0-0 (>= 0.4.1), libpango1.0-0 (>= 1.14.0), libsasl2-2, libx11-6, zlib1g (>= 1:1.1.4)
+Description: VNC viewer widget for GTK+3 (runtime libraries)
+ It is built using coroutines, allowing it to be completely asynchronous while
+ remaining single threaded. It supports RFB protocols 3.3 through 3.8 and the
+ VeNCrypt authentication extension providing SSL/TLS encryption with x509
+ certificate authentication.
+ .
+ The core library is written in C and a binding for Python using PyGTK is
+ available. The networking layer supports connections over both IPv4 and IPv6.
+ .
+ This package contains the shared library built for GTK+3.
 
 Package: libice6
 Status: install ok installed
@@ -8972,6 +10093,24 @@ Description: X11 Inter-Client Exchange library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libICE
+
+Package: libjson0
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 64
+Maintainer: fabien boucher <fabien.dot.boucher@gmail.com>
+Architecture: armel
+Multi-Arch: same
+Source: json-c
+Version: 0.9-1.1
+Depends: libc6 (>= 2.8)
+Pre-Depends: multiarch-support
+Description: JSON manipulation library - shared library
+ This library allows you to easily construct JSON objects in C,
+ output them as JSON formatted strings and parse JSON formatted
+ strings back into the C representation of JSON objects.
+Homepage: http://oss.metaparadigm.com/json-c/
 
 Package: libp11-kit0
 Status: install ok installed
@@ -9247,14 +10386,14 @@ Package: libc6
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 8939
+Installed-Size: 8951
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: eglibc
-Version: 2.13-35
+Version: 2.13-37
 Provides: glibc-2.13-1
-Depends: libc-bin (= 2.13-35), libgcc1
+Depends: libc-bin (= 2.13-37), libgcc1
 Suggests: glibc-doc, debconf | debconf-2.0, locales
 Breaks: locales (<< 2.13), locales-all (<< 2.13), nscd (<< 2.13)
 Conflicts: prelink (<= 0.0.20090311-1), tzdata (<< 2007k-1), tzdata-etch
@@ -9320,6 +10459,26 @@ Description: extremely fast and lightweight file manager
   * Support GVFS for auto-mount handling on removable devices
 Homepage: http://pcmanfm.sourceforge.net/
 
+Package: libpam-ck-connector
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 111
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: consolekit
+Version: 0.4.5-3.1
+Depends: libc6 (>= 2.4), libck-connector0 (= 0.4.5-3.1), libdbus-1-3 (>= 1.0.2), libpam0g (>= 0.99.7.1), libpam-runtime (>= 1.0.1-6)
+Description: ConsoleKit PAM module
+ ConsoleKit is a system daemon for tracking what users are logged
+ into the system and how they interact with the computer (e.g.
+ which keyboard and mouse they use).
+ .
+ This package provides a PAM module which can be used for console logins.
+ Graphical login managers should talk to ConsoleKit directly.
+Homepage: http://www.freedesktop.org/wiki/Software/ConsoleKit
+
 Package: libxxf86vm1
 Status: install ok installed
 Priority: optional
@@ -9343,6 +10502,30 @@ Description: X11 XFree86 video mode extension library
  .
  This module can be found at
  git://anongit.freedesktop.org/git/xorg/lib/libXxf86vm
+
+Package: libnss3-tools
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 903
+Maintainer: Maintainers of Mozilla-related packages <pkg-mozilla-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Source: nss
+Version: 2:3.13.6-1
+Depends: libc6 (>= 2.4), libnspr4 (>= 2:4.9-2~) | libnspr4-0d (>= 4.7.0~1.9b1), libnss3 (>= 2:3.13.4-2~) | libnss3-1d (>= 3.13), zlib1g (>= 1:1.1.4)
+Description: Network Security Service tools
+ This is a set of tools on top of the Network Security Service libraries.
+ This package includes:
+  * certutil: manages certificate and key databases (cert7.db and key3.db)
+  * modutil: manages the database of PKCS11 modules (secmod.db)
+  * pk12util: imports/exports keys and certificates between the cert/key
+    databases and files in PKCS12 format.
+  * shlibsign: creates .chk files for use in FIPS mode.
+  * signtool: creates digitally-signed jar archives containing files and/or
+    code.
+  * ssltap: proxy requests for an SSL server and display the contents of
+    the messages exchanged between the client and server.
+Homepage: http://www.mozilla.org/projects/security/pki/nss/tools/
 
 Package: libpng12-0
 Status: install ok installed
@@ -9385,11 +10568,11 @@ Package: apt-utils
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 1265
+Installed-Size: 1267
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Source: apt
-Version: 0.9.7.5
+Version: 0.9.7.6
 Depends: libapt-inst1.5 (>= 0.8.0), libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libdb5.1, libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Suggests: xz-utils
 Description: package managment related utility programs
@@ -9445,6 +10628,23 @@ Description: pixel-manipulation library for X and cairo
  and implicit mask generation for geometric primitives including
  trapezoids, triangles, and rectangles.
 
+Package: libyajl2
+Status: install ok installed
+Priority: extra
+Section: libs
+Installed-Size: 75
+Maintainer: John Stamp <jstamp@users.sourceforge.net>
+Architecture: armel
+Source: yajl
+Version: 2.0.4-2
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Yet Another JSON Library
+ A small, fast library for parsing JavaScript Object Notation (JSON).  It
+ supports incremental parsing from a stream and leaves data representation to
+ higher level code.
+Homepage: http://lloyd.github.com/yajl/
+
 Package: iptables
 Status: install ok installed
 Priority: important
@@ -9465,6 +10665,30 @@ Description: administration tools for packet filtering and NAT
  connection sharing, firewalls, IP accounting, transparent proxying,
  advanced routing and traffic control.
 Homepage: http://www.netfilter.org/
+
+Package: libcolord1
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 245
+Maintainer: Christopher James Halse Rogers <raof@ubuntu.com>
+Architecture: armel
+Multi-Arch: same
+Source: colord
+Version: 0.1.21-1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.28.0), liblcms2-2
+Pre-Depends: multiarch-support
+Recommends: colord
+Description: system service to manage device colour profiles -- runtime
+ colord is a system service that makes it easy to manage, install and generate
+ colour profiles to accurately colour manage input and output devices.
+ .
+ It provides a D-Bus API for system frameworks to query, a persistent data
+ store, and a mechanism for session applications to set system policy.
+ .
+ This package contains a gobject-based convenience library for programs to
+ interact with the colord system daemon.
+Homepage: http://www.freedesktop.org/software/colord/
 
 Package: bash
 Essential: yes
@@ -9736,9 +10960,9 @@ Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.1-7
+Version: 4.7.2-4
 Provides: libstdc++6-armel
-Depends: gcc-4.7-base (= 4.7.1-7), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
+Depends: gcc-4.7-base (= 4.7.2-4), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Conflicts: scim (<< 1.4.2-1)
@@ -9997,6 +11221,29 @@ Description: Basic Linear Algebra Reference implementations, shared library
  This package contains a shared version of the library.
 Homepage: http://www.netlib.org/blas/
 
+Package: dconf-service
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 80
+Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: d-conf
+Version: 0.12.1-2
+Replaces: dconf-gsettings-backend (<< 0.10.0-2), libdconf0 (<< 0.7.3-2)
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.18), libdconf0 (= 0.12.1-2)
+Recommends: dconf-gsettings-backend
+Breaks: dconf-gsettings-backend (<< 0.10.0-2), libdconf0 (<< 0.7.3-2)
+Description: simple configuration storage system - D-Bus service
+ DConf is a low-level key/value database designed for storing desktop
+ environment settings.
+ .
+ This package contains the DConf service, which applications talk to
+ using D-Bus in order to obtain their settings. It is mostly used by the
+ GSettings backend.
+Homepage: http://live.gnome.org/dconf
+
 Package: less
 Status: install ok installed
 Priority: standard
@@ -10018,6 +11265,31 @@ Description: pager program similar to more
  types of input, such as .doc or .txt.gz files.
 Homepage: http://www.greenwoodsoftware.com/less/
 
+Package: libgphoto2-port0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 552
+Maintainer: Debian PhotoTools Maintainers <pkg-phototools-devel@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libgphoto2
+Version: 2.4.14-2
+Replaces: libgphoto2port
+Provides: libgphoto2port
+Depends: libc6 (>= 2.4), libltdl7 (>= 2.4.2), libusb-0.1-4 (>= 2:0.1.12)
+Pre-Depends: multiarch-support
+Suggests: gphoto2 (>> 2.1.0), gtkam
+Breaks: gphoto2 (<= 2.1.1)
+Conflicts: libgphoto2port
+Description: gphoto2 digital camera port library
+ The gphoto2 library can be used by applications to access various
+ digital camera models, via standard protocols such as USB Mass Storage
+ and PTP, or vendor-specific protocols.
+ .
+ This package contains the runtime code for port access.
+Homepage: http://www.gphoto.org/proj/libgphoto2/
+
 Package: libglib2.0-0
 Status: install ok installed
 Priority: optional
@@ -10027,7 +11299,7 @@ Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.
 Architecture: armel
 Multi-Arch: same
 Source: glib2.0
-Version: 2.33.12+really2.32.4-2
+Version: 2.33.12+really2.32.4-3
 Replaces: libglib2.0-dev (<< 2.23.2-2)
 Depends: libc6 (>= 2.9), libffi5 (>= 3.0.9), libgcc1 (>= 1:4.4.0), libpcre3 (>= 8.10), libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
 Pre-Depends: multiarch-support
@@ -10040,6 +11312,50 @@ Description: GLib library of C routines
  .
  This package contains the shared libraries.
 Homepage: http://www.gtk.org/
+
+Package: libsane-common
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 4064
+Maintainer: Julien BLACHE <jblache@debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Source: sane-backends
+Version: 1.0.22-7.4
+Replaces: libsane (<< 1.0.22-4~)
+Description: API library for scanners -- documentation and support files
+ SANE stands for "Scanner Access Now Easy" and is an application
+ programming interface (API) that provides standardized access to any
+ raster image scanner hardware (flatbed scanner, hand-held scanner,
+ video- and still-cameras, frame-grabbers, etc.). The SANE standard is
+ free and its discussion and development are open to everybody. The
+ current source code is written to support several operating systems,
+ including GNU/Linux, OS/2, Win32 and various Unices and is available
+ under the GNU General Public License (commercial applications and
+ backends are welcome, too, however).
+ .
+ This package includes documentation for libsane, such as the man pages
+ and list of supported scanners, and support files (i18n data).
+Homepage: http://www.sane-project.org
+
+Package: libasyncns0
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 80
+Maintainer: Tanguy Ortolo <tanguy+debian@ortolo.eu>
+Architecture: armel
+Multi-Arch: same
+Source: libasyncns
+Version: 0.8-4
+Depends: libc6 (>= 2.4)
+Pre-Depends: multiarch-support
+Description: Asynchronous name service query library
+ libasyncns is a C library for Linux/Unix for executing name service queries
+ asynchronously. It is an asynchronous wrapper around getaddrinfo(3),
+ getnameinfo(3), res_query(3) and res_search(3) from libc and libresolv.
+Homepage: http://0pointer.de/lennart/projects/libasyncns/
 
 Package: xserver-xorg-video-tseng
 Status: install ok installed
@@ -10137,6 +11453,31 @@ Description: support for getting/setting POSIX.1e capabilities
  a partitioning of the all powerful root privilege into a set of distinct
  privileges.
 Homepage: http://sites.google.com/site/fullycapable/
+
+Package: policykit-1
+Status: install ok installed
+Priority: optional
+Section: admin
+Installed-Size: 307
+Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
+Architecture: armel
+Multi-Arch: foreign
+Version: 0.105-1
+Depends: libc6 (>= 2.7), libexpat1 (>= 2.0.1), libglib2.0-0 (>= 2.28.0), libpam0g (>= 0.99.7.1), libpolkit-agent-1-0 (>= 0.105), libpolkit-backend-1-0 (>= 0.99), libpolkit-gobject-1-0 (>= 0.101), consolekit, dbus
+Conffiles:
+ /etc/polkit-1/localauthority.conf.d/51-debian-sudo.conf 9597936a18327125ef4f56791f307149
+ /etc/polkit-1/localauthority.conf.d/50-localauthority.conf 2adb9d174807b0a3521fabf03792fbc8
+ /etc/polkit-1/nullbackend.conf.d/50-nullbackend.conf 1619df1aeee5c92bf19446a820274e5a
+ /etc/pam.d/polkit-1 01dc501e2d43ffc9f76b338e24a55e80
+ /etc/dbus-1/system.d/org.freedesktop.PolicyKit1.conf 09f96e58327bd8fe5cfdd28e56cef236
+Description: framework for managing administrative policies and privileges
+ PolicyKit is an application-level toolkit for defining and handling the policy
+ that allows unprivileged processes to speak to privileged processes.
+ .
+ It is a framework for centralizing the decision making process with respect to
+ granting access to privileged operations for unprivileged (desktop)
+ applications.
+Homepage: http://hal.freedesktop.org/docs/PolicyKit/
 
 Package: openbox
 Status: install ok installed
@@ -10284,8 +11625,8 @@ Maintainer: Sam Hartman <hartmans@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: krb5
-Version: 1.10.1+dfsg-2
-Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libgcc1 (>= 1:4.4.0), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.10.1+dfsg-2)
+Version: 1.10.1+dfsg-3
+Depends: libc6 (>= 2.9), libcomerr2 (>= 1.34), libgcc1 (>= 1:4.4.0), libk5crypto3 (>= 1.9+dfsg~beta1), libkeyutils1, libkrb5support0 (= 1.10.1+dfsg-3)
 Pre-Depends: multiarch-support
 Recommends: krb5-locales
 Suggests: krb5-doc, krb5-user
@@ -10302,6 +11643,31 @@ Description: MIT Kerberos runtime libraries
  This package contains the runtime library for the main Kerberos v5 API
  used by applications and Kerberos clients.
 Homepage: http://web.mit.edu/kerberos/
+
+Package: augeas-lenses
+Status: install ok installed
+Priority: optional
+Section: misc
+Installed-Size: 760
+Maintainer: Nicolas Valcárcel Scerpella <nvalcarcel@gmail.com>
+Architecture: all
+Source: augeas
+Version: 0.10.0-1
+Suggests: augeas-doc
+Description: Set of lenses needed by libaugeas0 to parse config files
+ Augeas parses configuration files described in lenses into a tree structure,
+ which it exposes through its public API. Changes made through the API are
+ written back to the initially read files.
+ .
+ Lenses are the building blocks of the file <-> tree transformation; they
+ combine parsing a file and building the tree (the get transformation), with
+ turning the tree back into an (updated) file (the put transformation).
+ .
+ The transformation works very hard to preserve comments and formatting
+ details. It is controlled by ``lens'' definitions that describe the file
+ format and the transformation into a tree. This package includes the official
+ set of lenses.
+Homepage: http://augeas.net/
 
 Package: liblockfile1
 Status: install ok installed

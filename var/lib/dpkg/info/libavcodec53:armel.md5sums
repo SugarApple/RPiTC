@@ -1,9 +1,9 @@
-17b0530c3edf72782245f3e8bae014dd  usr/lib/arm-linux-gnueabi/libavcodec.so.53.35.0
-d7e33074890c08031e686ba6e3aed368  usr/lib/arm-linux-gnueabi/neon/vfp/libavcodec.so.53.35.0
-7130c4e1167fd896b06e853a72bd7c96  usr/lib/arm-linux-gnueabi/vfp/libavcodec.so.53.35.0
+76b3952ce85d1d0dd879e1d11058765a  usr/lib/arm-linux-gnueabi/libavcodec.so.53.35.0
+17a77bf8c90bfe581144a967d8d8d9b4  usr/lib/arm-linux-gnueabi/neon/vfp/libavcodec.so.53.35.0
+6a81fed273a7429214f186d899d1e9d7  usr/lib/arm-linux-gnueabi/vfp/libavcodec.so.53.35.0
 812ae049e35a77fbe9da612a1284c3c5  usr/share/doc/libavcodec53/README.Debian.gz
-fec8f0eb3523d2f8acbb87b9306cc75e  usr/share/doc/libavcodec53/changelog.Debian.gz
-9fe955bb9388d83fa391dbc47cc7132a  usr/share/doc/libavcodec53/changelog.gz
+7bb6bcf10d91feb5aa4da29b3ce712fd  usr/share/doc/libavcodec53/changelog.Debian.gz
+4421b8716bc5a89a9a980a18b3fe3e9b  usr/share/doc/libavcodec53/changelog.gz
 1ebe9657ce62bb9d94dc4c0b5c436aba  usr/share/doc/libavcodec53/codecs.txt.gz
 e51de741ce5932946736d2b8ef235b80  usr/share/doc/libavcodec53/copyright
 040c925fba7e6715d5351bb65ac5eb7a  usr/share/lintian/overrides/libavcodec53

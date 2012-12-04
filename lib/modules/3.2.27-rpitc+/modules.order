@@ -39,6 +39,7 @@ kernel/fs/nls/nls_koi8-ru.ko
 kernel/fs/nls/nls_utf8.ko
 kernel/fs/binfmt_misc.ko
 kernel/fs/reiserfs/reiserfs.ko
+kernel/fs/squashfs/squashfs.ko
 kernel/fs/isofs/isofs.ko
 kernel/fs/exportfs/exportfs.ko
 kernel/fs/cifs/cifs.ko
@@ -544,7 +545,10 @@ kernel/net/mac80211/mac80211.ko
 kernel/net/9p/9pnet.ko
 kernel/net/wimax/wimax.ko
 kernel/net/nfc/nfc.ko
-kernel/lib/lzo/lzo_compress.ko
 kernel/lib/crc-ccitt.ko
 kernel/lib/crc7.ko
+kernel/lib/zlib_inflate/zlib_inflate.ko
 kernel/lib/zlib_deflate/zlib_deflate.ko
+kernel/lib/lzo/lzo_compress.ko
+kernel/lib/lzo/lzo_decompress.ko
+kernel/lib/xz/xz_dec.ko

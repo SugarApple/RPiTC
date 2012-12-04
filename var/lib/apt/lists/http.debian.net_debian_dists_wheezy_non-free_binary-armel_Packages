@@ -1758,7 +1758,7 @@ SHA1: f2b3c1f9842d6d46871aef9a5ced4442ec078308
 SHA256: f5312a240ec1274da1f072d47b474a100ebd25289b3101de7230f2a5e1cc3d2d
 
 Package: fsl
-Version: 4.1.9-6
+Version: 4.1.9-7
 Installed-Size: 28
 Maintainer: NeuroDebian Team <team@neuro.debian.net>
 Architecture: all
@@ -1771,20 +1771,20 @@ Tag: field::medicine:imaging, implemented-in::c, implemented-in::c++,
  use::analysing, works-with-format::TODO, x11::application
 Section: non-free/science
 Priority: optional
-Filename: pool/non-free/f/fsl/fsl_4.1.9-6_all.deb
-Size: 18628
-MD5sum: 0e43128505ee1e3df8def2dca2a00d6d
-SHA1: d1176e8c3d4e32b4ecb1dbb5e4cdc9aef42ef7f5
-SHA256: 374cbee2d2fcffb5eb54d0143e84e2a9c6021e7636d21110bb4fa462a84d6056
+Filename: pool/non-free/f/fsl/fsl_4.1.9-7_all.deb
+Size: 18718
+MD5sum: c6498f576e094c9cd6b8d51db6473480
+SHA1: e2b483889b120eca97b1c765f39e5f6a1edad8c8
+SHA256: f55c579034ff3283a32f40a1b54dfd184bb5aceb416534b60f269591069be6da
 
 Package: fsl-4.1
 Source: fsl
-Version: 4.1.9-6
-Installed-Size: 25125
+Version: 4.1.9-7
+Installed-Size: 25124
 Maintainer: NeuroDebian Team <team@neuro.debian.net>
 Architecture: armel
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libgd2-noxpm (>= 2.0.36~rc1~dfsg) | libgd2-xpm (>= 2.0.36~rc1~dfsg), libgdchart-gd2-noxpm | libgdchart-gd2-xpm, libnewmat10ldbl, libnifti2, libpng12-0 (>= 1.2.13-4), libstdc++6 (>= 4.6), zlib1g (>= 1:1.1.4), mozilla-firefox | www-browser, tcsh | c-shell, tk8.4 (>= 8.4.7), tcl8.4 (>= 8.4.7), bc, dc
-Recommends: fsl-doc-4.1 (= 4.1.9-6), fsl-atlases, fslview
+Recommends: fsl-doc-4.1 (= 4.1.9-7), fsl-atlases, fslview
 Suggests: fsl-feeds, octave, dicomnifti, fsl-possum-data, fsl-first-data, gridengine-client
 Conflicts: fsl-doc-4.1 (<< 4.1.9-5~), fsl-fslview
 Description: analysis tools for FMRI, MRI and DTI brain imaging
@@ -1792,15 +1792,15 @@ Homepage: http://www.fmrib.ox.ac.uk/fsl/
 Description-md5: f947a153d532a6b51a3b0886b8ce12fb
 Section: non-free/science
 Priority: optional
-Filename: pool/non-free/f/fsl/fsl-4.1_4.1.9-6_armel.deb
-Size: 9993958
-MD5sum: dfac2fa843b7eb306a885a0a1c3957c3
-SHA1: 8baf7479be04a8adf3165384c9b0c345a0e10667
-SHA256: f61bbc6f114ae96fbcee8c41de58d4c4678a2ac12391ad4c88d42078145814f2
+Filename: pool/non-free/f/fsl/fsl-4.1_4.1.9-7_armel.deb
+Size: 9993620
+MD5sum: ca7062e59382161277ae7fc96963aa26
+SHA1: 53556b45ba48ee2ba052ed5568a317a43a109bb5
+SHA256: 461be37a27677e6b94be828d78979d16c37a4b455adcd74c44840195a8b91802
 
 Package: fsl-doc-4.1
 Source: fsl
-Version: 4.1.9-6
+Version: 4.1.9-7
 Installed-Size: 17495
 Maintainer: NeuroDebian Team <team@neuro.debian.net>
 Architecture: all
@@ -1812,11 +1812,11 @@ Description-md5: f77fe42e5ac60f59932f00390109229d
 Tag: devel::doc, field::medicine:imaging, made-of::html, role::documentation
 Section: non-free/doc
 Priority: optional
-Filename: pool/non-free/f/fsl/fsl-doc-4.1_4.1.9-6_all.deb
-Size: 11202146
-MD5sum: be105669079ac4e260db05d85cb53a46
-SHA1: 57027df9e9982163a654a4d7c375dfdb2728529f
-SHA256: 3d5001eb085c172c9a66b9ea42746c6638ee3a043c6fe5bd36121331dc50b542
+Filename: pool/non-free/f/fsl/fsl-doc-4.1_4.1.9-7_all.deb
+Size: 11202224
+MD5sum: 3621da4e80b3bd67c19ad8f3a4915dc8
+SHA1: 219d88dd64d4ade099413cb69caa52fd8279141e
+SHA256: f4048cbcfae8148b8f664178c1f54b10f0bf9ce8c439fd7c7ed910b3d23a2d3d
 
 Package: gawk-doc
 Version: 4.0.1+ds-1
@@ -1838,125 +1838,316 @@ SHA256: 8c8e7efe15cd1e649ec6f4a1a567140f843bd90fe7a30758f91ee3d2a5032757
 
 Package: cpp-4.4-doc
 Source: gcc-4.4-doc-non-dfsg
-Version: 4.4.4.nf1-1
-Installed-Size: 496
+Version: 4.4.7-3
+Installed-Size: 512
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: all
-Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.4-doc
 Suggests: doc-base
 Description: documentation for the GNU C preprocessor (cpp)
+Homepage: http://gcc.gnu.org/
 Description-md5: fafeb6f7a4af0b2d9f555c6e4f34535a
 Tag: devel::doc, devel::lang:c, made-of::info, role::documentation,
  suite::gnu
 Section: non-free/doc
 Priority: optional
-Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/cpp-4.4-doc_4.4.4.nf1-1_all.deb
-Size: 203390
-MD5sum: ec8c080443b8d2b5d0f1b85462939cac
-SHA1: e4511c98059921fd2c4489836c7acdc42d319d3a
-SHA256: 4ccfe0170ab8483c8a609d358846699c92d1f04d4059e2bfaa4578fde6653c8d
+Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/cpp-4.4-doc_4.4.7-3_all.deb
+Size: 200340
+MD5sum: 09ca4d12a466ae88932dcad41fb534fd
+SHA1: 6051c3abc68f85d0e7361dab280ce19cd5c3cca2
+SHA256: 6ff0adac67cfba968d5ad93e06cea48db6b070bd45abb3d6fcc6660cea918bd2
 
 Package: gcc-4.4-doc
 Source: gcc-4.4-doc-non-dfsg
-Version: 4.4.4.nf1-1
-Installed-Size: 7030
+Version: 4.4.7-3
+Installed-Size: 7037
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: all
 Replaces: gcc (<= 2.7.2.3-4.3), gcc-docs (<< 2.95.2)
 Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
 Suggests: doc-base
-Conflicts: gcc-docs (<< 2.95.2)
+Breaks: gcc (<= 2.7.2.3-4.3), gcc-docs (<< 2.95.2)
 Description: documentation for the GNU compilers (gcc, gobjc, g++)
+Homepage: http://gcc.gnu.org/
 Description-md5: 1a90ec54479ec0f8264bf0d81835f573
 Tag: devel::doc, devel::lang:c, devel::lang:c++, devel::lang:objc,
  made-of::html, made-of::info, role::documentation, suite::gnu
 Section: non-free/doc
 Priority: optional
-Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gcc-4.4-doc_4.4.4.nf1-1_all.deb
-Size: 2323372
-MD5sum: 17fd741e5646ea2c44e47760ae93229d
-SHA1: 22b26eecea840a27c7b035d735e7f133103f872e
-SHA256: f248d4c66657982368a5b834806f222e01cd0e466bac7522cdaf1b8860d9612b
-
-Package: gcc-doc-base
-Source: gcc-4.4-doc-non-dfsg
-Version: 4.4.4.nf1-1
-Installed-Size: 40
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Architecture: all
-Replaces: gcc-4.1 (<< 4.1.1-11), gcc-docs (<< 2.95.2)
-Conflicts: gcc-4.1 (<< 4.1.1-11), gcc-docs (<< 2.95.2)
-Description: several GNU manual pages
-Description-md5: a3908a0b6cd1c3869235d28e3ac2ca01
-Tag: made-of::man, role::documentation, suite::gnu
-Section: non-free/doc
-Priority: optional
-Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gcc-doc-base_4.4.4.nf1-1_all.deb
-Size: 30060
-MD5sum: 680357a6dc8ee5d4ac52e5219080c59c
-SHA1: fcb3e3d3dee518eab284ccb1c55393a6aaf1d019
-SHA256: 902ced709be98b48ab056dacfc21e9928069ef8624a6f87be7f46d7010467a2a
-
-Package: gcj-4.4-doc
-Source: gcc-4.4-doc-non-dfsg
-Version: 4.4.4.nf1-1
-Installed-Size: 284
-Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
-Architecture: all
-Provides: gij-4.4-doc
-Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
-Suggests: doc-base
-Description: documentation for the GNU Java tools (gcj, gij)
-Description-md5: 3f3d066c03cf7e8fb603c5d3f749b94c
-Tag: devel::doc, devel::lang:java, made-of::html, made-of::info,
- made-of::man, role::documentation, suite::gnu
-Section: non-free/doc
-Priority: optional
-Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gcj-4.4-doc_4.4.4.nf1-1_all.deb
-Size: 130806
-MD5sum: ff13b92c811a7f448bf5a14c57b8f355
-SHA1: eb0c3796dcee14f56dd73068d6b40ed1b6bf3c23
-SHA256: f050b6206e26a3f7a5e8145f19374bc7459601586397556d9e328af4697d020f
+Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gcc-4.4-doc_4.4.7-3_all.deb
+Size: 2321684
+MD5sum: 62568c0821c39e0c8d42ac699f3983b6
+SHA1: c4f65cb6504dbc273b24382213279781a8a00cd7
+SHA256: 5b4294714fa3cef6883d298c17276c578c4b3d4aa93d0f723b51c4e3d8d89a92
 
 Package: gfortran-4.4-doc
 Source: gcc-4.4-doc-non-dfsg
-Version: 4.4.4.nf1-1
-Installed-Size: 1013
+Version: 4.4.7-3
+Installed-Size: 1033
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: all
-Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.4-doc
 Suggests: doc-base
 Description: documentation for the GNU Fortran Compiler (gfortran)
+Homepage: http://gcc.gnu.org/
 Description-md5: 07658cb2f9c94505902bab84022fc497
 Tag: devel::doc, devel::lang:fortran, made-of::info, made-of::man,
  role::documentation, suite::gnu
 Section: non-free/doc
 Priority: optional
-Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gfortran-4.4-doc_4.4.4.nf1-1_all.deb
-Size: 297398
-MD5sum: 12c29a2638bcbb151c4c7aad365af0b4
-SHA1: d4f93703b913f7176c0056287c9f968f690fae51
-SHA256: 5d98aa042896c88c533cdb4f34f4b25954f68a1b93a47dfbe3991a17df5a99f8
+Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gfortran-4.4-doc_4.4.7-3_all.deb
+Size: 295122
+MD5sum: ecdb8dd50b80facc053022fc7c808c87
+SHA1: b9f92b9652b5e12a0c20a6e82d478be25e33e167
+SHA256: 5e660c30ee74075f6239d0266da0dc63168803e961d6154f4b8684e4a1d1fe95
 
 Package: gnat-4.4-doc
 Source: gcc-4.4-doc-non-dfsg
-Version: 4.4.4.nf1-1
-Installed-Size: 3387
+Version: 4.4.7-3
+Installed-Size: 3337
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: all
-Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.4-doc
 Suggests: doc-base
 Description: documentation for the GNU Ada 95 Compiler (gnat)
+Homepage: http://gcc.gnu.org/
 Description-md5: 7e7cb40f22c8598e347d9ff57e4e549b
 Tag: devel::compiler, devel::doc, devel::lang:ada, made-of::html,
  made-of::info, role::documentation, suite::gnu
 Section: non-free/doc
 Priority: optional
-Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gnat-4.4-doc_4.4.4.nf1-1_all.deb
-Size: 1099694
-MD5sum: 27c17bba6e1fed55c7baa289ab1ffabb
-SHA1: 376d05cc681740573b710bb8779adf4ee9a9fadc
-SHA256: 7d0bcee49f76cdcbcae1cd7bf9c6e6ba9945b4dbcdcc96aa8a9ee802d6b19083
+Filename: pool/non-free/g/gcc-4.4-doc-non-dfsg/gnat-4.4-doc_4.4.7-3_all.deb
+Size: 1075432
+MD5sum: 71b7dee9ad68311452f30a9b90fb354a
+SHA1: ce3b6f7a41b0bd0b0742574e9a446a3177525cfa
+SHA256: 1613275adcca9caf7e0bf4a959672a2eebbf8052e937b740105e3b381f3e2fdf
+
+Package: cpp-4.6-doc
+Source: gcc-4.6-doc
+Version: 4.6.3-2
+Installed-Size: 1200
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.6-doc
+Suggests: doc-base
+Description: documentation for the GNU C preprocessor (cpp)
+Homepage: http://gcc.gnu.org/
+Description-md5: fafeb6f7a4af0b2d9f555c6e4f34535a
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.6-doc/cpp-4.6-doc_4.6.3-2_all.deb
+Size: 887704
+MD5sum: bce38da69cf6cd0bd4ea4d05d3e9fc49
+SHA1: d61069232565b1785885bed5c4822375c8a42853
+SHA256: 61974552fe0f5054b11f46ed826022ad94952047365c6a6105adaf9d6b56c942
+
+Package: gcc-4.6-doc
+Version: 4.6.3-2
+Installed-Size: 12088
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
+Suggests: doc-base
+Description: documentation for the GNU compilers (gcc, gobjc, g++)
+Homepage: http://gcc.gnu.org/
+Description-md5: 1a90ec54479ec0f8264bf0d81835f573
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.6-doc/gcc-4.6-doc_4.6.3-2_all.deb
+Size: 6943270
+MD5sum: 4b09eedab7d29ec2a811dfb83ee438f4
+SHA1: 7c19f1282effa4f4d730d371e83e42188b8fccce
+SHA256: 08d044c30f03351cc6e4c50da6036ee7779d1fed6de2e96ea64d67fc60d60576
+
+Package: gccgo-4.6-doc
+Source: gcc-4.6-doc
+Version: 4.6.3-2
+Installed-Size: 354
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.6-doc
+Suggests: doc-base
+Description: documentation for the GNU Go compiler (gccgo)
+Homepage: http://gcc.gnu.org/
+Description-md5: 0e6fd354797668525377559f3b34dfce
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.6-doc/gccgo-4.6-doc_4.6.3-2_all.deb
+Size: 264820
+MD5sum: 0861518b43f4e3c6c4652de870200148
+SHA1: 5d0c3ee707170f680dae2b72f5b153abdd1b8fd7
+SHA256: a27488b6a1d82e1f99d769c659775623d5ef991cb193c1502e1276da8a7a2ec5
+
+Package: gcj-4.6-doc
+Source: gcc-4.6-doc
+Version: 4.6.3-2
+Installed-Size: 649
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Provides: gij-4.6-doc
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.6-doc
+Suggests: doc-base
+Description: documentation for the GNU Java tools (gcj, gij)
+Homepage: http://gcc.gnu.org/
+Description-md5: 3f3d066c03cf7e8fb603c5d3f749b94c
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.6-doc/gcj-4.6-doc_4.6.3-2_all.deb
+Size: 480326
+MD5sum: 10dbe78b9022c2911afb61b76f1da8a9
+SHA1: 630bb583f507d1ef34666c72334dbfaf05337ad2
+SHA256: 03dba01d98cb937eefced0d3b0d09a491c16b98e3c49587747045ba5e6ed758d
+
+Package: gfortran-4.6-doc
+Source: gcc-4.6-doc
+Version: 4.6.3-2
+Installed-Size: 2182
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.6-doc
+Suggests: doc-base
+Description: documentation for the GNU Fortran Compiler (gfortran)
+Homepage: http://gcc.gnu.org/
+Description-md5: 07658cb2f9c94505902bab84022fc497
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.6-doc/gfortran-4.6-doc_4.6.3-2_all.deb
+Size: 1304418
+MD5sum: 51fb30a46b6602a8b29ee692eba259f3
+SHA1: 454dd05b8cd590eb7dc535bb55c73f176ff2f242
+SHA256: 41ceb4d4ddb80516296a2d9466e3bb23965edaa70279878e9c4255f7621e0eca
+
+Package: gnat-4.6-doc
+Source: gcc-4.6-doc
+Version: 4.6.3-2
+Installed-Size: 5970
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.6-doc
+Suggests: doc-base
+Description: documentation for the GNU Ada 95 Compiler (gnat)
+Homepage: http://gcc.gnu.org/
+Description-md5: 7e7cb40f22c8598e347d9ff57e4e549b
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.6-doc/gnat-4.6-doc_4.6.3-2_all.deb
+Size: 3627104
+MD5sum: b851b89034146867bdfd2f534c489f0c
+SHA1: 9c5692c57180ac94c95611f226d7fcb93ef83ed6
+SHA256: 8fc206a2bdc788fa501bc15b796c61218b5f1d9ac7900d25aa498e06920671de
+
+Package: cpp-4.7-doc
+Source: gcc-4.7-doc
+Version: 4.7.2-2
+Installed-Size: 1205
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.7-doc
+Suggests: doc-base
+Description: documentation for the GNU C preprocessor (cpp)
+Homepage: http://gcc.gnu.org/
+Description-md5: fafeb6f7a4af0b2d9f555c6e4f34535a
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.7-doc/cpp-4.7-doc_4.7.2-2_all.deb
+Size: 891416
+MD5sum: 5b2aef87c66025ffa7fa05b924b9bf37
+SHA1: 87b8e5baffb449910f1b4f9946f2a92fffe79fc9
+SHA256: 42904d19b2404de9a41264a224c146ad3cb719dde13faa3ea60e3542597c4102
+
+Package: gcc-4.7-doc
+Version: 4.7.2-2
+Installed-Size: 12476
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info
+Suggests: doc-base
+Description: documentation for the GNU compilers (gcc, gobjc, g++)
+Homepage: http://gcc.gnu.org/
+Description-md5: 1a90ec54479ec0f8264bf0d81835f573
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.7-doc/gcc-4.7-doc_4.7.2-2_all.deb
+Size: 7163466
+MD5sum: 94653a37c7c43f1853ecbb06555ab5ef
+SHA1: aa50c0ff83df6ec005d6f779e6a69e272e7bad83
+SHA256: 4163577cdb896763ebb0afdba00d046d5b7f90c080ecdc685d470eb6419b82c3
+
+Package: gcc-doc-base
+Source: gcc-4.7-doc
+Version: 4.7.2-2
+Installed-Size: 74
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Description: several GNU manual pages
+Homepage: http://gcc.gnu.org/
+Description-md5: a3908a0b6cd1c3869235d28e3ac2ca01
+Tag: made-of::man, role::documentation, suite::gnu
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.7-doc/gcc-doc-base_4.7.2-2_all.deb
+Size: 36116
+MD5sum: 607538c44d376a5f2cc033fb36408638
+SHA1: 623200ef00aea3393e3a19bbfcbdb0bcbff36c8a
+SHA256: 004e4abde89d8e9dfb54c49b0aedfca7609719b780c50581c3fa7f9664a17c04
+
+Package: gccgo-4.7-doc
+Source: gcc-4.7-doc
+Version: 4.7.2-2
+Installed-Size: 363
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.7-doc
+Suggests: doc-base
+Description: documentation for the GNU Go compiler (gccgo)
+Homepage: http://gcc.gnu.org/
+Description-md5: 0e6fd354797668525377559f3b34dfce
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.7-doc/gccgo-4.7-doc_4.7.2-2_all.deb
+Size: 270598
+MD5sum: 1fefa97a2f0ae71648c2ba1bfe494f3e
+SHA1: 625f20e0a380edffb94669b6ab4d3843384a8a8f
+SHA256: 1921fc4bbe448fde9b655df6e664073306f813283100e9ea72aeb9ad5f023167
+
+Package: gcj-4.7-doc
+Source: gcc-4.7-doc
+Version: 4.7.2-2
+Installed-Size: 649
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Provides: gij-4.7-doc
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.7-doc
+Suggests: doc-base
+Description: documentation for the GNU Java tools (gcj, gij)
+Homepage: http://gcc.gnu.org/
+Description-md5: 3f3d066c03cf7e8fb603c5d3f749b94c
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.7-doc/gcj-4.7-doc_4.7.2-2_all.deb
+Size: 480332
+MD5sum: dbe6ed4dd71eb4b89e5043a8557865e8
+SHA1: 1f7bf9dc6a14f44acd9351580e1eb6ac5d15d967
+SHA256: b7da822cb03cb6eb4fb815704e1a166704304509b96bc994a5893e7bbdb9a752
+
+Package: gfortran-4.7-doc
+Source: gcc-4.7-doc
+Version: 4.7.2-2
+Installed-Size: 2217
+Maintainer: Guo Yixuan <culu.gyx@gmail.com>
+Architecture: all
+Depends: gcc-doc-base (>= 4.1.1.nf3-1), dpkg (>= 1.15.4) | install-info, gcc-4.7-doc
+Suggests: doc-base
+Description: documentation for the GNU Fortran Compiler (gfortran)
+Homepage: http://gcc.gnu.org/
+Description-md5: 07658cb2f9c94505902bab84022fc497
+Section: non-free/doc
+Priority: optional
+Filename: pool/non-free/g/gcc-4.7-doc/gfortran-4.7-doc_4.7.2-2_all.deb
+Size: 1325806
+MD5sum: 64f221a50dfd6ca6de4cfe94e59f72ef
+SHA1: c304af64cc191ee1da45e9556b1c895e157d91df
+SHA256: 26a0cacdf9122636890e8f7601f28f507423fa33b11f0c8c608385364502d6b7
 
 Package: gdb-doc
 Version: 7.4.1-2
@@ -2677,42 +2868,6 @@ Size: 659866
 MD5sum: 4637f141c851f7be041f4939e8ca4fdb
 SHA1: 616f1b6d0fd9cda4592ece716b1b79abcf742d04
 SHA256: fa5e8dc352a30a2918a7ca18b6ad9dc85fedc0836d603115649242df6231be16
-
-Package: lmbench
-Version: 3.0-a9-1
-Installed-Size: 4040
-Maintainer: Al Stone <ahs3@debian.org>
-Architecture: armel
-Depends: gcc, perl, libc6-dev | libc-dev, libc6 (>= 2.7), libgcc1 (>= 1:4.4.0)
-Recommends: lmbench-doc
-Description: Utilities to benchmark UNIX systems
-Description-md5: 0c67754c38d7ed2200c97fbf958d63b4
-Tag: admin::benchmarking, hardware::storage, implemented-in::c,
- interface::commandline, role::program, scope::utility, use::analysing
-Section: non-free/admin
-Priority: optional
-Filename: pool/non-free/l/lmbench/lmbench_3.0-a9-1_armel.deb
-Size: 1296284
-MD5sum: 0081c41f875f03b71ff0a87bca4a1b36
-SHA1: 541100cb6b2e0a40f7aede6435f12ee8c1c2e696
-SHA256: d07405c6469a7cac3430b5d0f4c5710bced8460fc17f3a9662caf2ca96ba2165
-
-Package: lmbench-doc
-Source: lmbench
-Version: 3.0-a9-1
-Installed-Size: 700
-Maintainer: Al Stone <ahs3@debian.org>
-Architecture: all
-Description: Documentation for the lmbench benchmark suite
-Description-md5: 426e96fcf9086b665a494194a145246d
-Tag: made-of::man, role::documentation
-Section: non-free/doc
-Priority: optional
-Filename: pool/non-free/l/lmbench/lmbench-doc_3.0-a9-1_all.deb
-Size: 274412
-MD5sum: c403ddcac1ae456563f616bbdf52bd87
-SHA1: fc6630426a4b2768907f5c6dc6616c6553c41c85
-SHA256: ef9c9752c8e1f8b4e587a3d0f065c8419cb24f29c327d0bc9b4242c7b4600f5a
 
 Package: lugaru-data
 Version: 0~20110520.1+hge4354-1
@@ -4991,26 +5146,6 @@ MD5sum: 7be7ec0cc4aed9558fbe170033b892ae
 SHA1: 29be783207a7e1f82113d2d7ab5861aa7e8e0bce
 SHA256: 1741215a5a24bba3c5a173d09368ef3baa46e9b123fa1b77d8080c84d5552ea6
 
-Package: qmail-src
-Source: qmail
-Version: 1.03-49.3
-Installed-Size: 640
-Maintainer: Jon Marler <jmarler@debian.org>
-Architecture: all
-Depends: dpkg-dev (>= 1.4.0.20), patch (>= 2.5-0bo1), build-essential, fakeroot | sudo, groff-base, adduser, libc6-dev
-Recommends: ucspi-tcp-src, procmail
-Conflicts: qmail-run, qmail-uids-gids
-Description: Source only package for building qmail binary package
-Description-md5: e06f7200bf231b9ec8de356a1958e018
-Tag: network::client, protocol::smtp, role::program, works-with::mail
-Section: non-free/mail
-Priority: extra
-Filename: pool/non-free/q/qmail/qmail-src_1.03-49.3_all.deb
-Size: 606348
-MD5sum: 89087a45a514b57759a68197e475f536
-SHA1: 43b51a98d3546fcd96a417f57de154f47eb7ed99
-SHA256: 0fb83851a48d9ec8875675e43ddcae3fdbec992c0f7287c761cdf9f02e420fbf
-
 Package: redeclipse-data
 Version: 1.2-1
 Installed-Size: 506742
@@ -5670,23 +5805,6 @@ MD5sum: 84e0af0e311e2bf2a6ea660629d3407c
 SHA1: f81831823acabf245f58ba47607236bd833f7d3a
 SHA256: 4fa6f78af1092f13aeeed18a03a5fb3c16034bf72ffa8cdcf5662c0ec11bf30f
 
-Package: ucspi-tcp-src
-Version: 0.88-15
-Installed-Size: 188
-Maintainer: Jon Marler <jmarler@debian.org>
-Architecture: all
-Depends: dpkg-dev (>= 1.4.0.20), patch (>= 2.5-0bo1), fakeroot | sudo, gcc, make, libc6-dev
-Description: Source only package for building ucspi-tcp binary package
-Description-md5: b3e277a67cddf5defc2b641776001a55
-Tag: network::client, network::server, protocol::tcp, role::source
-Section: non-free/net
-Priority: optional
-Filename: pool/non-free/u/ucspi-tcp-src/ucspi-tcp-src_0.88-15_all.deb
-Size: 121430
-MD5sum: dfc5d4a22a8880aec934f380656be717
-SHA1: 85f69e738963597cc5b0353bd99cf0493ef01bf8
-SHA256: 54a5c71affe4dd332b0e5b98fe42d71bdd596621892ad6ebffe15f34d503c93c
-
 Package: unace-nonfree
 Version: 2.5-7
 Installed-Size: 164
@@ -6156,27 +6274,27 @@ SHA1: 9e24f0f1cf7a12d7bfb966668a38e0d24dd52d72
 SHA256: 8e0286467359c09c5bd3fd399e004633bb7752c06267e9fb579d21a05a64cac1
 
 Package: zangband
-Version: 1:2.7.5pre1-4
-Installed-Size: 1796
+Version: 1:2.7.5pre1-6
+Installed-Size: 1705
 Maintainer: Drew Parsons <dparsons@debian.org>
 Architecture: armel
-Depends: zangband-data, libc6 (>= 2.7-1), libgcc1 (>= 1:4.3), libice6 (>= 1:1.0.0), libncurses5 (>= 5.6+20071006-3), libsm6, libx11-6, libxaw7, libxext6, libxmu6, libxpm4, libxt6, tcl8.4 (>= 8.4.16), tk8.4 (>= 8.4.16)
+Depends: zangband-data, libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libice6 (>= 1:1.0.0), libncurses5 (>= 5.5-5~), libsm6, libtinfo5, libx11-6, libxaw7, libxext6, libxmu6, libxpm4, libxt6, tcl8.4 (>= 8.4.16), tk8.4 (>= 8.4.16)
 Description: A single-player, text-based, roguelike game
 Description-md5: f78402f3185f38d4b6019bda59d02d6a
 Tag: game::rpg:rogue, interface::text-mode, role::program, uitoolkit::athena,
  uitoolkit::gtk, uitoolkit::ncurses, use::gameplaying
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/z/zangband/zangband_2.7.5pre1-4_armel.deb
-Size: 878270
-MD5sum: 1beccf882e1689342dc2fcda76d3d3b1
-SHA1: 9bba5286ae054a732adc30fb198017a9ea42ee40
-SHA256: c70b79766670092f9e8500ecc74c20cc04f9ffea50b2c8f94e92ce036d57c520
+Filename: pool/non-free/z/zangband/zangband_2.7.5pre1-6_armel.deb
+Size: 858642
+MD5sum: 6e72610c61e77fe53745d59bc4ce6293
+SHA1: 6c9a29326f4d4195a8375dc5f5e35aa55476f08c
+SHA256: f9917724045f39ad07749d1284a6ef4b161da162442b8ea78a757589cee350f0
 
 Package: zangband-data
 Source: zangband
-Version: 1:2.7.5pre1-4
-Installed-Size: 4872
+Version: 1:2.7.5pre1-6
+Installed-Size: 4142
 Maintainer: Drew Parsons <dparsons@debian.org>
 Architecture: all
 Description: A single-player, text-based, roguelike game (datafiles)
@@ -6184,11 +6302,11 @@ Description-md5: c4eda47e60a37530b7356526be2a4294
 Tag: role::app-data
 Section: non-free/games
 Priority: optional
-Filename: pool/non-free/z/zangband/zangband-data_2.7.5pre1-4_all.deb
-Size: 1090468
-MD5sum: 7421da71eb972f32d05efdde865b9b63
-SHA1: 9108c30daeeb24716ff21e03167d239bceed1cd5
-SHA256: 7c880fa334ef929229be8fcd7ceda2b173b0e4f09c0a60129ba44cb88490d98d
+Filename: pool/non-free/z/zangband/zangband-data_2.7.5pre1-6_all.deb
+Size: 1085022
+MD5sum: 058e6dcc37eedb5dd4c510a8327f7883
+SHA1: ae4d0cf4523579349ffc99c836923d15bf28c782
+SHA256: 735d223fb35bb1b3d1a78affad4309b0ebcd1e89efe3433d367fdc35b7027af4
 
 Package: zd1211-firmware
 Version: 2.21.0.0-1

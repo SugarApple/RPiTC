@@ -18,7 +18,7 @@
   <item label="Citrix Receiver 12.2.3">
     <action name="Execute"><command>/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient</command></action>
   </item>
-  <item label="VMWareView Client 1.5.1">
+  <item label="VMWareView Client 1.6.0">
     <action name="Execute"><command>vmware-view</command></action>
   </item>
   <item label="Quest vWorkspaces 7.00b1">
@@ -27,12 +27,12 @@
   <item label="RDesktop 1.7.1">
     <action name="Execute"><command>lxterminal -e "rdesktop -x l -z -u UserName -f -P -r disk=/media/usb -d MyDomain MyRDPServer.MyDomain.Lan"</command></action>
   </item>
+  <item label="SPICE Client (virt-viewer 0.5.3)">
+    <action name="Execute"><command>lxterminal -e "virt-viewer --help"</command></action>
+  </item>
 </menu>
 
 <menu id="conf-menu" label="Configurations">
-  <item label="Network Management">
-    <action name="Execute"><command>wicd-gtk</command></action>
-  </item>
   <item label="Desktop Settings">
     <action name="Execute">
       <startupnotify><enabled>yes</enabled></startupnotify>

@@ -1,10 +1,10 @@
-4633a801bc5f737de845c4dd2d877c00  sbin/ifdown
-4633a801bc5f737de845c4dd2d877c00  sbin/ifquery
-4633a801bc5f737de845c4dd2d877c00  sbin/ifup
+6701633a261b56625435da9abe0dcc73  sbin/ifdown
+6701633a261b56625435da9abe0dcc73  sbin/ifquery
+6701633a261b56625435da9abe0dcc73  sbin/ifup
 0f7d64825a5d0f0b04b871596377bef9  usr/share/doc/ifupdown/NEWS.Debian.gz
 241c6d749b8ba3f07b81a1266bccc2d1  usr/share/doc/ifupdown/README
 94e604eb3920b1eb5efa4b6ce5e52db0  usr/share/doc/ifupdown/TODO
-0d5379a6ebb71e031158cc1795df5b8b  usr/share/doc/ifupdown/changelog.gz
+d237c7f6207f1a9486bea56e01ae6cf3  usr/share/doc/ifupdown/changelog.gz
 1c9d2e2e5a56455eaebb479c1dbb20f1  usr/share/doc/ifupdown/contrib/ensureifup
 cde381570a371a774ff092d246ea786a  usr/share/doc/ifupdown/contrib/ifstate
 62f92e0d54d70005677860b6600579a8  usr/share/doc/ifupdown/contrib/ifstate-check
