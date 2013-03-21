@@ -1,9 +1,0 @@
-/etc/init.d/anacron
-/etc/apm/event.d/anacron
-/etc/init/anacron.conf
-/etc/cron.daily/0anacron
-/etc/cron.d/anacron
-/etc/anacrontab
-/etc/cron.weekly/0anacron
-/etc/cron.monthly/0anacron
-/etc/default/anacron
