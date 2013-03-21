@@ -1,0 +1,343 @@
+Package: libwireshark-data
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 5993
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: all
+Replaces: wireshark-common (<< 1.4.0~rc2-1)
+Suggests: snmp-mibs-downloader
+Conflicts: wireshark-common (<< 1.4.0~rc2-1)
+Description: network packet dissection library -- data files
+ The libwireshark library provides the network packet dissection services
+ developed by the Wireshark project.
+ .
+ This package contains the platform independent files.
+Homepage: http://www.wireshark.org/
+Section: libs
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwireshark-data_1.8.2-5wheezy1_all.deb
+Size: 1222810
+MD5sum: ee05d7f69bfb2cfd8988daeeb9bf8c13
+SHA1: 00dce1f12a0f60d67f4f19a9291535418ea911bd
+SHA256: a516d7bf6109d7c7cdaf8b06ed7563071154897b2dc435da78353968815d2b00
+
+Package: libwireshark-dev
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 6200
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: wireshark-dev (<< 1.4.0~rc2-1)
+Depends: libwsutil-dev, libwireshark2 (= 1.8.2-5wheezy1)
+Conflicts: wireshark-dev (<< 1.4.0~rc2-1)
+Description: network packet dissection library -- development files
+ The "libwireshark" library provides the network packet dissection services
+ developed by the Wireshark project.
+ .
+ This package contains the static library and the C header files that are
+ needed for applications to use libwireshark services.
+Homepage: http://www.wireshark.org/
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwireshark-dev_1.8.2-5wheezy1_armel.deb
+Size: 906776
+MD5sum: d5b01918471f898b6383061193601ffc
+SHA1: f206e264e8ea9d1cbd373b142b7a5d621b80fa12
+SHA256: 7ce1556e878baecbba3f0384b79a13cab0d4a25031a15cf5951e412869b2a32c
+
+Package: libwireshark2
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 37586
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: wireshark-common (<< 1.4.0~rc2-1)
+Depends: libc-ares2 (>= 1.7.0), libc6 (>= 2.11), libcomerr2 (>= 1.01), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgeoip1 (>= 1.4.8+dfsg), libglib2.0-0 (>= 2.24.0), libgnutls26 (>= 2.12.17-0), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), liblua5.1-0, libsmi2ldbl (>= 0.4.5+dfsg0), libwiretap2 (>= 1.8.0~rc1-1), libwsutil2 (>= 1.8.2-5wheezy1), zlib1g (>= 1:1.1.4), libwireshark-data (>= 1.8.2-5wheezy1)
+Suggests: wireshark-doc (>= 1.8.2-5wheezy1)
+Conflicts: wireshark-common (<< 1.4.0~rc2-1)
+Description: network packet dissection library -- shared library
+ The libwireshark library provides the network packet dissection services
+ developed by the Wireshark project.
+Homepage: http://www.wireshark.org/
+Section: libs
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwireshark2_1.8.2-5wheezy1_armel.deb
+Size: 10875896
+MD5sum: 6a4c02fc3fa9964e3abd624fcde2b3b1
+SHA1: 7b876648a651ec313ccb9dcf0b2487d86be721c0
+SHA256: 489e309b7b138c4e9056252cd2e3f623e1426d8b8dded841bdbfd4acfcc299c1
+
+Package: libwiretap-dev
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 232
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: wireshark-dev (<< 1.4.0~rc2-1)
+Depends: libwiretap2 (= 1.8.2-5wheezy1)
+Conflicts: wireshark-dev (<< 1.4.0~rc2-1)
+Description: network packet capture library -- development files
+ Wiretap, part of the Wireshark project, is a library that allows one to
+ read and write several packet capture file formats.
+ .
+ Supported formats are:
+  * Libpcap
+  * Sniffer
+  * LANalyzer
+  * Network Monitor
+  * "snoop"
+  * "iptrace"
+  * Sniffer Basic (NetXRay)/Windows Sniffer Pro
+  * RADCOM WAN/LAN Analyzers
+  * Lucent/Ascend access products
+  * HP-UX nettl
+  * Toshiba ISDN Router
+  * ISDN4BSD "i4btrace" utility
+  * Cisco Secure Intrustion Detection System iplogging facility
+  * pppd logs (pppdump-format files)
+  * VMS TCPTRACE
+  * DBS Etherwatch (text format)
+  * Catapult DCT2000 (.out files)
+ .
+ Wiretap's shortcomings are: no filter capability and no support for packet
+ capture.
+ .
+ This package contains the static library and the C header files.
+Homepage: http://www.wireshark.org/
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwiretap-dev_1.8.2-5wheezy1_armel.deb
+Size: 70566
+MD5sum: 97ec915f772de6b8efe407c40cee8d0f
+SHA1: 3e273b39492f616ee41f43371d7941e9d3e3b21a
+SHA256: 63b2b0abf59020d5f64c96436b934b9afbbcd1f8f139bdc4d96c6655da3acb08
+
+Package: libwiretap2
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 374
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.16.0), libwsutil2 (>= 1.8.0~rc1-1), zlib1g (>= 1:1.2.2.4)
+Conflicts: wireshark-common (<< 1.4.0~rc2-1)
+Description: network packet capture library -- shared library
+ Wiretap, part of the Wireshark project, is a library that allows one to
+ read and write several packet capture file formats.
+ .
+ Supported formats are:
+  * Libpcap
+  * Sniffer
+  * LANalyzer
+  * Network Monitor
+  * "snoop"
+  * "iptrace"
+  * Sniffer Basic (NetXRay)/Windows Sniffer Pro
+  * RADCOM WAN/LAN Analyzers
+  * Lucent/Ascend access products
+  * HP-UX nettl
+  * Toshiba ISDN Router
+  * ISDN4BSD "i4btrace" utility
+  * Cisco Secure Intrustion Detection System iplogging facility
+  * pppd logs (pppdump-format files)
+  * VMS TCPTRACE
+  * DBS Etherwatch (text format)
+  * Catapult DCT2000 (.out files)
+ .
+ Wiretap's shortcomings are: no filter capability and no support for packet
+ capture.
+Homepage: http://www.wireshark.org/
+Section: libs
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwiretap2_1.8.2-5wheezy1_armel.deb
+Size: 186342
+MD5sum: 3026b7c44fe3192457b2e78e753e5a28
+SHA1: 23937f5e6fa26a0daf258f03b972db61cc7d97e0
+SHA256: 685ba7233f5e36a31851b22695106058dbe296c2257b263f5604ebfe698a9c8a
+
+Package: libwsutil-dev
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 136
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: libwireshark-dev (<< 1.4.2-2), wireshark-common (<< 1.4.0~rc2-1)
+Depends: libwsutil2 (= 1.8.2-5wheezy1)
+Conflicts: libwireshark-dev (<< 1.4.2-2), wireshark-common (<< 1.4.0~rc2-1)
+Description: network packet dissection utilities library -- shared library
+ The libwsutil library provides utility functions for libwireshark2.
+ .
+ This package contains the static library and the C header files that are
+ needed for applications to use the libwsutil library.
+Homepage: http://www.wireshark.org/
+Section: libdevel
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwsutil-dev_1.8.2-5wheezy1_armel.deb
+Size: 50740
+MD5sum: 712aafa63b598d5340a28cf58fda13fb
+SHA1: 1952aab801a43539c89a59b84d620ab0f1301094
+SHA256: 82ad6a783ad183129bbd5430cbeb34800275e3f408abe49ef23e1271f808d9ff
+
+Package: libwsutil2
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 106
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: libwireshark1 (<< 1.4.2-2), wireshark-common (<< 1.4.0~rc2-1)
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.16.0), zlib1g (>= 1:1.1.4)
+Conflicts: libwireshark1 (<< 1.4.2-2), wireshark-common (<< 1.4.0~rc2-1)
+Description: network packet dissection utilities library -- shared library
+ The libwsutil library provides utility functions for libwireshark2.
+Homepage: http://www.wireshark.org/
+Section: libs
+Priority: optional
+Filename: pool/updates/main/w/wireshark/libwsutil2_1.8.2-5wheezy1_armel.deb
+Size: 50966
+MD5sum: d76ea6362b496da984ad449f40e67cbc
+SHA1: 8b9b9a780b02c8fe1c117a782765dc871a8938b8
+SHA256: 3bb26a201c813db76df36814e2e4fac371c80d57f03c8a7c58ec920cbe5bf819
+
+Package: tshark
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 350
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: tethereal (<< 1.0.0-3)
+Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libglib2.0-0 (>= 2.16.0), libpcap0.8 (>= 0.9.8), libwireshark2 (>= 1.8.0~rc1-1), libwiretap2 (>= 1.8.0~rc1-1), libwsutil2 (>= 1.8.0~rc1-1), zlib1g (>= 1:1.1.4), wireshark-common (= 1.8.2-5wheezy1)
+Conflicts: tethereal (<< 1.0.0-3)
+Description: network traffic analyzer - console version
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides the console version of wireshark, named
+ "tshark".
+Homepage: http://www.wireshark.org/
+Section: net
+Priority: optional
+Filename: pool/updates/main/w/wireshark/tshark_1.8.2-5wheezy1_armel.deb
+Size: 174842
+MD5sum: 35994c293f6a68c644ccfd6daf8895d8
+SHA1: 8ea0278a764dc73109078a41ba59d7176c82953e
+SHA256: 0f687d8c25c8561d256f335dc3c4eb951749ed31b96a2a860d0a211318924d58
+
+Package: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 2060
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: ethereal (<< 1.0.0-3)
+Depends: libc6 (>= 2.7), libcairo2 (>= 1.2.4), libgcc1 (>= 1:4.4.0), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgtk2.0-0 (>= 2.24.0), libpango1.0-0 (>= 1.14.0), libpcap0.8 (>= 0.9.8), libportaudio2 (>= 19+svn20101113), libwireshark2 (>= 1.8.0~rc1-1), libwiretap2 (>= 1.8.0~rc1-1), libwsutil2 (>= 1.8.0~rc1-1), zlib1g (>= 1:1.1.4), wireshark-common (= 1.8.2-5wheezy1)
+Conflicts: ethereal (<< 1.0.0-3)
+Description: network traffic analyzer - GTK+ version
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides the GTK+ version of wireshark.
+Homepage: http://www.wireshark.org/
+Section: net
+Priority: optional
+Filename: pool/updates/main/w/wireshark/wireshark_1.8.2-5wheezy1_armel.deb
+Size: 893808
+MD5sum: 06fbc10c2d78249a4a327f7ae8953f1c
+SHA1: 07cae22d5132790b5a8acd991bcb46b1315039a1
+SHA256: 2b67e72071d95fb3b6c9ea89954566059c05023dace1294488ff92a186cbc65b
+
+Package: wireshark-common
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 448
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: ethereal-common (<< 1.0.0-3)
+Depends: libc6 (>= 2.7), libcap2 (>= 2.10), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.18), libpcap0.8 (>= 1.0.0), libwireshark2 (>= 1.8.2-5wheezy1), libwiretap2 (>= 1.8.2-5wheezy1), libwsutil2 (>= 1.8.0~rc1-1), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0, debconf, libcap2-bin
+Conflicts: ethereal-common (<< 1.0.0-3)
+Description: network traffic analyzer - common files
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides files common to both wireshark (the GTK+ version)
+ and tshark (the console version).
+Homepage: http://www.wireshark.org/
+Recommends: wireshark (>= 1.8.2-5wheezy1) | tshark (>= 1.8.2-5wheezy1)
+Section: net
+Priority: optional
+Filename: pool/updates/main/w/wireshark/wireshark-common_1.8.2-5wheezy1_armel.deb
+Size: 225510
+MD5sum: 815ceff1ad0101be34551687b915dd3d
+SHA1: d059a18d0f25dfc516400e0ae3c1c5c7a1ee5c4b
+SHA256: dcb0e99c26e9ef6ad138ee8e09c28f6a7c239e2feac1c0471538c3941f465dec
+
+Package: wireshark-dbg
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 29651
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Depends: wireshark-common (= 1.8.2-5wheezy1) | wireshark (= 1.8.2-5wheezy1) | tshark (= 1.8.2-5wheezy1)
+Description: network traffic analyzer - debug symbols
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package contains stripped debugging symbols for all Wireshark
+ programs and libraries.
+Homepage: http://www.wireshark.org/
+Section: debug
+Priority: extra
+Filename: pool/updates/main/w/wireshark/wireshark-dbg_1.8.2-5wheezy1_armel.deb
+Size: 20267602
+MD5sum: 31f77cc9030320b2e0396797811d64ea
+SHA1: 678df8cb0ef70d3ae94e1823a2cff033b8df475e
+SHA256: 2063b11feac104725a14a63c1d65150548ca45a0aa61d427d9b2cd95786a508a
+
+Package: wireshark-dev
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 546
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: armel
+Replaces: ethereal-dev (<< 1.0.0-3)
+Depends: omniidl (>= 4.0.1-2), libpcap0.8-dev, libtool, libglib2.0-dev, python (>= 2.6.6-7~), python (<< 2.8), python-ply, snacc, autotools-dev, debhelper, cdbs, automake, autoconf, libwireshark-dev, libwiretap-dev
+Conflicts: ethereal-dev (<< 1.0.0-3)
+Description: network traffic analyzer - development tools
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package provides idl2wrs and other files necessary for developing
+ new packet dissectors.
+Homepage: http://www.wireshark.org/
+Section: devel
+Priority: optional
+Filename: pool/updates/main/w/wireshark/wireshark-dev_1.8.2-5wheezy1_armel.deb
+Size: 177972
+MD5sum: fec09743a3504cbb6cdd9434bbf036da
+SHA1: 734ccb6ee2e464dd97ec80adff394330b908ca4f
+SHA256: 8c80e32bd8ef0f6b242b2ff7c4373658c4180a79ab83a1dcdfbefe01a494c562
+
+Package: wireshark-doc
+Source: wireshark
+Version: 1.8.2-5wheezy1
+Installed-Size: 5334
+Maintainer: Balint Reczey <balint@balintreczey.hu>
+Architecture: all
+Description: network traffic analyzer - documentation
+ Wireshark is a network "sniffer" - a tool that captures and analyzes
+ packets off the wire. Wireshark can decode too many protocols to list
+ here.
+ .
+ This package contains Wireshark User's guide, Wireshark Developer's Guide
+ and the Lua Reference.
+Homepage: http://www.wireshark.org/
+Section: doc
+Priority: extra
+Filename: pool/updates/main/w/wireshark/wireshark-doc_1.8.2-5wheezy1_all.deb
+Size: 3849512
+MD5sum: 54d0ef85ed27138f20ad97d9256afe6e
+SHA1: b8ddbc117603f522b3d0e93e42c081f6b87cc2df
+SHA256: 81c920dfa6dca9b06300fc5b711ea71e4a0b2240816d20835aa69561e2f81d91
+

@@ -1,0 +1,60 @@
+Xsession: X session started for root at Thu Jan  1 00:00:34 UTC 1970
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.ConsoleKit was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.ConsoleKit was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.UPower was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.UPower was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+
+** (lxsession-logout:1908): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 3005 requests (3005 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 0 (Success) on X server :0.
+Xsession: X session started for root at Thu Mar 21 11:51:10 UTC 2013
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.ConsoleKit was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.ConsoleKit was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.UPower was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.UPower was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+
+** (lxsession-logout:1800): WARNING **: dbus-interface.c:94: DBUS: The name org.freedesktop.Hal was not provided by any .service files
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 3002 requests (3002 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for root at Thu Mar 21 11:51:50 UTC 2013
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 1696 requests (1693 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
+Xsession: X session started for root at Thu Mar 21 11:52:21 UTC 2013
+localuser:root being added to access control list
+Obt-Message: Xinerama extension is not present on the server
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 2777 requests (2774 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.
