@@ -1,0 +1,2494 @@
+! ICA Client Apps Defaults File.
+! This file is necessary for the correct running of the ICA Client.
+!
+! Copyright 1998-2011 Citrix Systems, Inc. All rights reserved.
+
+!
+! Font specification
+!
+
+Wfcmgr*fontList:\
+-*-fixed-medium-r-*-*-*-140-75-75-*-*-jisx0212.1990-0;\
+-*-fixed-medium-r-*-*-*-140-75-75-*-*-jisx0208.1997-0;\
+-*-fixed-medium-r-*-*-*-140-75-75-*-*-jisx0208.1990-0;\
+-*-fixed-medium-r-*-*-*-140-75-75-*-*-jisx0208.1983-0;\
+-*-helvetica-medium-r-*-*-*-140-75-75-*-*-iso8859-1;\
+-*-*-medium-r-*-*-*-140-75-75-*-*-jisx0201.1976-0:
+
+Wfcmgr*international: True
+! Disable internationalized Athena widgets in the Proxy dialog.
+! This is to avoid a problem in the internationalized version of
+! XawTextSourceScan compiled with the FORTIFY_SOURCE option.
+Wfcmgr*ProxyAuthDialog.ProxyUsername*international: False
+Wfcmgr*ProxyAuthDialog.ProxyPassword*international: False
+Wfcmgr*preeditType: OverTheSpot
+Wfcmgr*inputMethod: kinput2
+
+!
+! Error Dialog resource settings (Japanese)
+!
+
+Wfcmgr*EDialog_popup.title:	クライアント エラー
+Wfcmgr*EDialog.okLabelString:	OK
+Wfcmgr*EDialog.cancelLabelString:	キャンセル
+Wfcmgr*EDialog.helpLabelString:	終了
+! Athena
+Wfcmgr*EDialog.okLabelString.label:	OK
+Wfcmgr*EDialog.cancelLabelString.label:	キャンセル
+Wfcmgr*EDialog.helpLabelString.label:	終了
+
+!
+! Info Dialog resource settings (Japanese)
+!
+
+Wfcmgr*IDialog_popup.title:	クライアント情報
+Wfcmgr*IDialog.okLabelString:	OK
+Wfcmgr*IDialog.cancelLabelString:	キャンセル
+Wfcmgr*IDialog.helpLabelString:	終了
+! Athena
+Wfcmgr*IDialog.okLabelString.label:	OK
+Wfcmgr*IDialog.cancelLabelString.label:	キャンセル
+Wfcmgr*IDialog.helpLabelString.label:	終了
+
+!
+! Info Text Dialog resource settings (Japanese)
+!
+
+Wfcmgr*ITDialog_popup.title:		クライアント情報
+Wfcmgr*ITDialog.okLabelString:		OK
+
+!
+! ICA Client Error String Definitions (Japanese)
+!
+
+Wfcmgr*INVALID_ERROR_TYPE_0:	未確認のエラーが発生しました。
+Wfcmgr*E_INTERNAL_ERROR:	Citrix Receiver で\n内部エラーが発生しました。
+Wfcmgr*E_MUTUALLY_EXCLUSIVE:	オプション \"%s\" と \"%s\" はどちらか一方のみを指定できます。
+Wfcmgr*E_BAD_OPTION:	オプション \"%s\" は無効です。
+Wfcmgr*E_MISSING_ARG:	オプション \"%s\" の引数がありません。
+Wfcmgr*E_BAD_ARG:	オプション \"%s\" に無効な\n引数が指定されています: \"%s\"
+Wfcmgr*E_MEMORY:	メモリが不足しています。
+Wfcmgr*E_CLIPPING:	内部エラー: E_CLIPPING
+Wfcmgr*E_NO_ENCRYPTION:	暗号化モジュール \"%s\" が見つかりませんでした。セッションは暗号化されません。
+Wfcmgr*E_COULDNT_SHARE_SESSION:	既存のセッションを使ってアプリケーション \"%s\" \nを起動できません。新しいセッションが使用されます。
+Wfcmgr*E_CANNOT_READ_INI_FILE:	ファイルを読み込めません:\n  \"%s\"
+Wfcmgr*E_MISSING_INI_SECTION:	設定ファイルでエラーが発生しました:\n  \"%s\"\nセクション \"%s\" が見つかりません。
+Wfcmgr*E_MISSING_INI_ENTRY:	設定ファイルでエラーが発生しました。\nセクション \"%s\" にはエントリ \"%s\" が含まれていなくてはなりません。
+Wfcmgr*E_DUPLICATE_ASSOCIATION:	アプリケーション \"%s\" は、ファイル タイプ \"%s\" に関連付けられています。
+Wfcmgr*E_NO_ASSOCIATION:	ファイル タイプ \"%s\" に関連付けられているアプリケーションはありません。
+Wfcmgr*E_VISUAL_NOT_FOUND:	このターミナルは必要なカラーモードをサポートしていません。
+Wfcmgr*E_COLOURMAP_BEYOND_VISUAL:	ビジュアル (ID = %d) は必要な色数\nをサポートできません。
+Wfcmgr*E_CANT_FIND_PCSC_LIBRARY:	PCSC ライブラリ \"%s\" を読み込めません。
+Wfcmgr*E_SSL_GENERIC:	%s
+Wfcmgr*E_BAD_COLOR_ALLOC:	この画面では個人用のカラーマップ\nを割り当てられません。
+Wfcmgr*E_INFO_PROPERTY_CORRUPTED:	NCS_16COLORS_INFO プロパティが壊れています。\n16 色を使用している他のすべてのクライアントの色情報が一致しなくなります。
+Wfcmgr*E_BAD_ERROR_CODE:	未確認のエラー コード (%s) です。
+Wfcmgr*E_CSM_NO_APP_FOR_CONTENT:	この公開コンテンツに適切な公開アプリケーションが見つかりませんでした。
+Wfcmgr*E_CANT_GET_SUNRAY_ID:   SunRay ホスト IDを取得できません。
+Wfcmgr*E_NO_KBD_MAPPING:	キーボード マッピング ファイル\n\"%s\" が見つかりません。
+Wfcmgr*E_CSM_MUST_SPECIFY_SERVER:	サーバーを入力してください。
+Wfcmgr*E_CSM_INVALID_WINDOW_SIZE:	ウィンドウのサイズは\n 300 から 32767 の間で設定してください。
+Wfcmgr*E_CSM_SCREENPERCENT_ERROR:	画面のパーセンテージは 0 から 100 の間で設定してください。
+Wfcmgr*E_KEYLOGGING_IN_USE:	キー ロギングを使用中です。
+Wfcmgr*E_SUSPECT_KEY:		ファイル \"%s\" \n は、行 \n\"%s\" によりセキュリティに問題が生じる可能性があります
+Wfcmgr*E_CSM_INVALID_SERIAL_NUMBER:	無効なシリアル番号です。
+Wfcmgr*E_CANNOT_WRITE_FILE:	ファイルを書き込めません:\n\"%s\"\n%s
+Wfcmgr*E_CANNOT_CREATE_FILE:	ファイルを作成できません:\n\"%s\"\n%s
+Wfcmgr*E_XERROR:	X 要求 %s でエラー\nが発生しました: \"%s\"
+Wfcmgr*E_INSTALLATION_LOCATION_NOT_ALLOWED: インストールの場所として '%s' を使用することはできません。.\nインストールの場所は、'%s' の下にする必要があります。
+Wfcmgr*E_DEVICE_NOT_PRESENT:	%s デバイス %s が存在しません。
+Wfcmgr*E_DEVICE_NO_PERMISSION:	%s デバイス %s を開く権限がありません。
+Wfcmgr*E_FORK_FAIL:	子プログラムを始動できません。\nフォークがエラー %s で失敗しました。
+Wfcmgr*E_CANNOT_LOAD_ATHENA:     Athena ライブラリを読み込めません。
+Wfcmgr*E_CSM_OPEN_ORIGINAL_INI_FAILED:	ファイルを読み取れません:\n  \"%s\"
+
+Wfcmgr*E_CSM_CONNECTLIST_INVALID:	選択した接続が見つかりません。
+Wfcmgr*E_CSM_CONNECTION_NOTFOUND:	指定された接続が見つかりません。
+Wfcmgr*E_CSM_INVALID_CONNECTION:		コネクション \"%s\" は無効な文字が含んでいます。 
+Wfcmgr*E_CSM_APPSERVERLIST_MISSING:	設定ファイルにエラーがあります:\n  \"%s\"\n欠落セクション:\n  \"%s\"
+Wfcmgr*E_CSM_APPSRV_SECTION_MISSING:	設定ファイル内に不整合があります: \n  \"%s\"\n欠落セクション:\n  \"%s\"
+Wfcmgr*E_CSM_DESCRIPTION_NONUNIQUE:	この名前はすでに使用されています。\n固有の名前を指定してください。
+Wfcmgr*E_PNAGENT_NLS_CATALOGUE_UNREADABLE: Citrix XenApp NLS カタログ \"%s\" が見つからないか、壊れています。
+Wfcmgr*E_SERVER_CONNECTION_LOST:	not used in CSM
+Wfcmgr*E_FIND_FAIL:	実行ファイル \"%s\"\nが見つかりません\n  (%s)
+Wfcmgr*E_EXEC_FAIL:	ファイル \" %s\"\nを実行できません\n  (%s)
+Wfcmgr*E_APPLICATION_NAMELOOKUP_FAILURE:	アプリケーション \"%s\" のアドレスを取得できません\n\n%s
+Wfcmgr*E_SERVER_NAMELOOKUP_FAILURE:	サーバー \"%s\" のアドレス\nを取得できません
+Wfcmgr*E_SERVER_CONNECTION_FAILURE:	\"%s\" へのコネクションがありません。\n\n%s
+Wfcmgr*E_HOST_DCNX_NO_THINWIRE:  サーバーとの接続が切断しました。\nWindows サーバーの Microsoft Client Access License を取得できないか、\nこのサーバーで必要なウィンドウのサイズがサポートされていない可能性があります。
+Wfcmgr*E_CSM_NO_MASTER_BROWSER:	マスタ ブラウザーが見つかりませんでした。
+Wfcmgr*E_CSM_NO_SERVERS:	サーバーが見つかりませんでした。
+Wfcmgr*E_CSM_NO_APPLICATIONS:	アプリケーションが見つかりません
+
+! errors produced by the name resolver
+
+Wfcmgr*E_BR_ERROR_INVALID_HEADER:	無効なサーバー ブラウザー コマンド ヘッダーを受け取りました。
+Wfcmgr*E_BR_ERROR_INVALID_COMMAND:	無効なサーバー ブラウザー コマンドを受け取りました。
+Wfcmgr*E_BR_ERROR_INVALID_REPLY:       not used
+Wfcmgr*E_BR_ERROR_INVALID_SEQUENCE:	無効なサーバー ブラウザー コマンド シーケンスを受け取りました。
+Wfcmgr*E_BR_ERROR_INVALID_PARAMETER:	サーバー ブラウザー コマンドに無効なパラメーターが含まれています。
+Wfcmgr*E_BR_ERROR_NOT_ENOUGH_MEMORY:	メモリが不足しています。
+Wfcmgr*E_BR_ERROR_IO_ERROR:	I/O エラー
+Wfcmgr*E_BR_ERROR_READ_TIMEOUT:	読み取りタイムアウト
+Wfcmgr*E_NOT_ALLOWED:	サーバーにより、この操作の実行が許可されていません。
+Wfcmgr*E_BR_ERROR_TCP_NOT_AVAILABLE:	TCP/IP プロトコルは使用できません。
+Wfcmgr*E_NOT_SUPPORTED:	サーバーは、この操作をサポートしていません。
+Wfcmgr*E_BR_ERROR_DATABASE_LOCATE:	選択したサーバーが見つかりません。
+Wfcmgr*E_BR_ERROR_CLUSTER_LOCATE:	選択したサーバー クラスタが見つかりません。
+Wfcmgr*E_BR_ERROR_NO_MASTER:	サーバーにアクセスできません。ネットワークが機能していないか、または [サーバーの場所] でアドレスを設定する必要があります。
+Wfcmgr*E_BR_ERROR_ALTADDRESS_NOT_DEFINED: 接続しようとしているサーバーは代替アドレスで設定されていません。\n\n接続の設定を確認するか、Citrix 管理者に問い合わせてください。 
+Wfcmgr*E_BR_ERROR_APPLICATION_DISABLED: 要求したアプリケーションを使用できません。詳しくは、Citrix 管理者に問い合わせてください。
+Wfcmgr*E_BR_ERROR_APPLICATION_LOCATE: 要求したアプリケーションを使用できません。詳しくは、Citrix 管理者に問い合わせてください。
+Wfcmgr*E_BR_ERROR_HOST_UNREACHABLE: サーバー側のネットワーク エラーが発生しました。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
+Wfcmgr*E_BR_ERROR_IMA_UNKNOWN_ERROR: サーバーで未知のエラーが発生しました。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。 
+Wfcmgr*E_BR_ERROR_NO_WINSTATIONS_AVAILABLE: 現在、WinStations を使用できません。\n\n数分後に、もう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
+Wfcmgr*E_BR_ERROR_OUT_OF_LICENSES: 現在、追加接続ライセンスが無効になっています。\n\n数分後に、もう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
+Wfcmgr*E_BR_ERROR_SERVERS_OVERLOADED: サーバーが完全に読み込まれたことが報告されていますが、現在接続が許可されていません。\n\n数分後に、もう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。 
+Wfcmgr*E_BR_ERROR_XML_BAD_REQUEST: XML プロトコルは次のエラー メッセージを返しました: 無効な要求です。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
+Wfcmgr*E_BR_ERROR_XML_INVALID_RESPONSE: サーバーは、無効な応答を返しました。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。 
+Wfcmgr*E_BR_ERROR_XML_PARSER_ERROR: サーバーは、XML 要求を解析できません。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。 
+Wfcmgr*E_BR_ERROR_XML_UNSPECIFIED: 原因不明の XML エラーが発生しました。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
+Wfcmgr*E_BR_ERROR_XML_VERSION_MISMATCH: 要求を処理するためには、Citrix Receiver の新しいバージョンが必要です。\n\nCitrix Receiver の最新バージョンをインストールするか、Citrix 管理者に連絡してください。
+
+Wfcmgr*E_INI_KEY_SYNTAX:	設定ファイルにエラーがあります:\n  \"%s\"\n不正なキー \"%s\"。
+Wfcmgr*E_INI_VALUE_SYNTAX:	設定ファイルにエラーがあります:\n  \"%s\"\n不正な値 \"%s\"。
+Wfcmgr*E_INI_VENDOR_RANGE:	設定ファイルにエラーがあります:\n  \"%s\"\n不正なベンダ範囲 \"%s\"。
+
+Wfcmgr*E_NOT_USED2:	not used
+Wfcmgr*E_NOT_USED3:	not used
+Wfcmgr*E_NEW_PASSWORD_INVALID:	not used from this file - do not translate
+
+Wfcmgr*E_DYNLOAD_FAILED:	動的モジュールのロード中にエラーが発生しました:\n \"%s\"\n%s
+Wfcmgr*E_DLL_NOT_FOUND:	共有ライブラリ "%s" が見つかりません。
+Wfcmgr*E_ENTRY_POINT_NOT_FOUND:		共有ライブラリ "%s" にエントリ ポイント "%s" が見つかりません。
+Wfcmgr*E_THINWIRE_1_COMMAND:	\
+サーバーにより、Thinwire 1 コマンドが送信されました。\n\
+このコマンドは、Citrix Receiver ではサポートされていません。
+Wfcmgr*E_CSM_MUST_SPECIFY_PROXY:	プロキシ サーバー アドレスを指定してください。
+Wfcmgr*E_CLIENT_ERROR_ENCRYPT_UNSUPPORT_BYHOST:	このサーバーは必要な暗号化をサポートしていません。
+
+Wfcmgr*E_CC_CTX_LOCK_READ_ERROR:	_CTX_LOCK X プロパティ読み込み中のエラー
+Wfcmgr*E_CC_CTX_LOCK_CORRUPTED:	_CTX_LOCK X プロパティが壊れました。
+Wfcmgr*E_CC_CTX_SESSION_LIST_CORRUPTED:	_CTX_SESSION_LIST X プロパティが壊れました。
+Wfcmgr*E_CC_TERMINATION_FAILED:	シームレス アプリケーションだけが終了します。
+Wfcmgr*E_CC_ALIVE:	セッションは有効です。
+Wfcmgr*E_CC_WAIT_PREVIOUS:	前のコマンドが終了するまでお待ちください。
+Wfcmgr*E_DIAG_INFO:              Citrix に送信する前に、\"%s\" を確認してください。\n暗号化されたパスワードは Citrix の従業員によりデコードできることに注意してください。\n\n%s
+
+Wfcmgr*E_SSLSDK_SUCCESS:	関数の呼び出しに成功しました (SSL エラー 0)
+Wfcmgr*E_SSLSDK_RENEGOTIATE:	SSL システムで暗号の組み合わせを再ネゴシエーションできません。(SSL エラー 1)
+Wfcmgr*E_SSLSDK_HANDSHAKE_COMPLETE:	ハンドシェイク ループに失敗しました。(SSL エラー 2)
+Wfcmgr*E_SSLSDK_UNKNOWN_ERROR:	サードパーティの SSL プロバイダーが処理を続行できません。(SSL エラー 3)
+Wfcmgr*E_SSLSDK_NETWORK_ERROR:	ネットワーク エラーです。(SSL エラー 4)
+Wfcmgr*E_SSLSDK_INTERNAL_ERROR:	サードパーティの SSL プロバイダーが処理を続行できません。(SSL エラー 5)
+Wfcmgr*E_SSLSDK_LIBRARY_NOT_AVAILABLE:	必要なライブラリがありません。(SSL エラー 6)
+Wfcmgr*E_SSLSDK_NO_ENTRY_POINT_DEFINED:	必要なライブラリにエントリ ポイントがありません。(SSL エラー 7)
+Wfcmgr*E_SSLSDK_INITIALISATION_FAILED:	初期化に失敗しました。(SSL エラー 8)
+Wfcmgr*E_SSLSDK_OUT_OF_MEMORY:	このアプリケーション用のメモリがありません。(SSL エラー 9)
+Wfcmgr*E_SSLSDK_CREDENTIALS_NOT_FOUND:	身元証明書がありません。(SSL エラー 10)
+Wfcmgr*E_SSLSDK_CREDENTIALS_NOT_RECOGNISED:	指定した証明書を読み取れません。(SSL エラー 11)
+Wfcmgr*E_SSLSDK_CREDENTIALS_ACCESS_DENIED:	指定した証明書へのアクセスが拒否されました。(SSL エラー 12)
+Wfcmgr*E_SSLSDK_SSL_NOT_AVAILABLE:	SSL ライブラリがありません。(SSL エラー 13)
+Wfcmgr*E_SSLSDK_INSUFFICIENT_SECURITY_AVAILABLE:	指定した暗号化レベルはサポートされていません。(SSL エラー 14)
+Wfcmgr*E_SSLSDK_SECURITY_CONTEXT_INVALID:	SSL セキュリティ コンテキストが不正または期限切れです。(SSL エラー 15)
+Wfcmgr*E_SSLSDK_BAD_SSL_PACKET:	受信したデータは有効または予想された SSL パケットではありません。(SSL エラー 16)
+Wfcmgr*E_SSLSDK_BAD_SOCKS5_PACKET:	受信したデータは有効または予想された SOCKS 5 パケットではありません。(SSL エラー 17)   
+Wfcmgr*E_SSLSDK_MESSAGE_ALTERED:	受信した SSL パケットは問題があります。(SSL エラー 18)
+Wfcmgr*E_SSLSDK_MESSAGE_OUT_OF_SEQUENCE:	受信した SSL パケットが不正です。順番が間違っています。(SSL エラー 19)
+Wfcmgr*E_SSLSDK_MESSAGE_INCOMPLETE:	不完全なプロトコル パケットを受信しました。(SSL エラー 20)
+Wfcmgr*E_SSLSDK_BAD_SOCKS5_METHOD_RESPONSE:	SOCKS 5 ハローに対するサーバーの応答は無効です。(SSL エラー 21)
+Wfcmgr*E_SSLSDK_BAD_SOCKS5_CONNECT_RESPONSE:	SOCKS 5 接続要求に対するサーバーの応答は無効です。(SSL エラー 22)
+Wfcmgr*E_SSLSDK_UNSUPPORTED_SOCKS_ADDRESS_TYPE:	アドレス タイプはサポートされていません。(SSL エラー 23)
+Wfcmgr*E_SSLSDK_SEND_AND_TERMINATE:	サードパーティの SSL プロバイダーが処理を続行できません。(SSL エラー 24)
+Wfcmgr*E_SSLSDK_PERFORM_REDIRECTION:	サードパーティの SSL プロバイダーが処理を続行できません。(SSL エラー 25)
+Wfcmgr*E_SSLSDK_UNABLE_TO_OPEN_KEYSTORE:	キーの保存先を開くことができません。(SSL エラー 26)
+Wfcmgr*E_SSLSDK_UNABLE_TO_FIND_CERTIFICATE:	証明書がありません。(SSL エラー 27)
+Wfcmgr*E_SSLSDK_INVALID_SOCKET_TYPE:	提示されたソケットの種類が不正です。(SSL エラー 28)
+Wfcmgr*E_SSLSDK_SOCKS5_HANDSHAKE_FAILED:	SOCKS 5 のハンドシェイクに失敗しました。(SSL エラー 29)
+Wfcmgr*E_SSLSDK_BUFFER_TOO_SMALL:	提供されたバッファーが小さすぎます。(SSL エラー 30)
+Wfcmgr*E_SSLSDK_INVALID_CONTEXT:	呼び出された関数に対し、SDK コンテキストが正しくありません。(SSL エラー 31)
+Wfcmgr*E_SSLSDK_BAD_SOCKS5_METHOD_REQUEST:	SOCKS 5 クライアント ハロー パケットが無効です。(SSL エラー 32)
+Wfcmgr*E_SSLSDK_BAD_SOCKS5_CONNECT_REQUEST:	SOCKS 5 クライアント接続要求が無効です。(SSL エラー 33)
+Wfcmgr*E_SSLSDK_SOCKS5_COMMAND_UNSUPPORTED:	クライアントによる SOCKS 5 コマンド要求はサポートされていません。(SSL エラー 34)
+Wfcmgr*E_SSLSDK_REDIRECTION_ACCESS_FAILURE:	アクセス ポリシーにより SOCKS 5 の変更が定義されています。(SSL エラー 35)
+Wfcmgr*E_SSLSDK_SOCKS5_NETWORK_UNREACHABLE:	選択したサーバーは、接続を受け入れていません。(SSL エラー 36)
+Wfcmgr*E_SSLSDK_SOCKS5_HOST_UNREACHABLE:	Citrix SSL Relay から、指定サブネット アドレスへの通信路がありません。(SSL エラー 37)
+Wfcmgr*E_SSLSDK_SOCKS5_CONNECTION_REFUSED:	接続が拒否されました。(SSL エラー 38)
+Wfcmgr*E_SSLSDK_SOCKS5_TTL_EXPIRED:	有効期限切れです。(SSL エラー 39)
+Wfcmgr*E_SSLSDK_HOSTNAME_NOT_FOUND:	Citrix SSL Relay 名を解決できません。(SSL エラー 40)
+Wfcmgr*E_SSLSDK_UNABLE_TO_CREATE_SOCKET:	ソケットを作成できません。(SSL エラー 41)
+Wfcmgr*E_SSLSDK_CONNECTION_REFUSED:	接続が拒否されました。(SSL エラー 42)
+Wfcmgr*E_SSLSDK_ALERT_CLOSE_NOTIFY:	リモート SSL ピアにより警告が発せられました。(SSL エラー 43)
+Wfcmgr*E_SSLSDK_ALERT_UNEXPECTED_MESSAGE:	リモート SSL ピアの警告。予期しないメッセージ。(SSL エラー 44)
+Wfcmgr*E_SSLSDK_ALERT_BAD_MAC:	リモート SSL ピアの警告。MAC が不正です。(SSL エラー 45)
+Wfcmgr*E_SSLSDK_ALERT_DECOMPRESSION_FAILED:	リモート SSL ピアの警告。圧縮解除に失敗しました。(SSL エラー 46)
+Wfcmgr*E_SSLSDK_ALERT_HANDSHAKE_FAILED:	リモート SSL の警告。ハンドシェイクに失敗しました。(SSL エラー 47)
+Wfcmgr*E_SSLSDK_ALERT_NO_CERTIFICATE:	リモート SSL ピアの警告。証明書が無効です。(SSL エラー 48)
+Wfcmgr*E_SSLSDK_ALERT_BAD_CERTIFICATE:	リモート SSL ピアの警告。証明書が不正です。(SSL エラー 49)
+Wfcmgr*E_SSLSDK_ALERT_UNSUPPORTED_CERT:	リモート SSL ピアの警告。サポートされてない証明書です。(SSL エラー 50)
+Wfcmgr*E_SSLSDK_ALERT_CERTIFICATE_REVOKED:	リモート SSL ピアの警告。証明書が無効です。(SSL エラー 51)
+Wfcmgr*E_SSLSDK_ALERT_CERTIFICATE_EXPIRED:	リモート SSL ピアの警告。証明書の期限が切れています。(SSL エラー 52)
+Wfcmgr*E_SSLSDK_ALERT_CERTIFICATE_UNKNOWN:	リモート SSL ピアの警告。不明な証明書です。(SSL エラー 53)
+Wfcmgr*E_SSLSDK_ALERT_ILLEGAL_PARAMETER:	リモート SSL ピアの警告。パラメーターが不正です。(SSL エラー 54)
+Wfcmgr*E_SSLSDK_ALERT_UNKNOWN:	リモート SSL ピアの警告。証明書が不明です。(SSL エラー 55)
+Wfcmgr*E_SSLSDK_UNABLE_TO_SET_VERIFY_PATHS:	デフォルトのルート証明書の保存先を設定できません。(SSL エラー 56)
+Wfcmgr*E_SSLSDK_UNABLE_TO_SET_CERTIFICATE:	身元証明書を設定できません。(SSL エラー 57)
+Wfcmgr*E_SSLSDK_UNABLE_TO_SET_KEY:	ユーザー証明書の秘密キーを設定できません (SSL エラー 58)
+Wfcmgr*E_SSLSDK_INVALID_COMMON_NAME:	受け取ったユーザー証明書は予期しない共通名です (SSL エラー 59)
+Wfcmgr*E_SSLSDK_X509ERR_DEPTH_ZERO_SELF_SIGNED_CERT:	受け取ったユーザー証明書はルート証明書です。(SSL エラー 60)
+Wfcmgr*E_SSLSDK_X509ERR_UNABLE_TO_GET_ISSUER_CERT_LOCALLY:	受信したサーバー証明書は信頼されていません。(SSL エラー 61)
+Wfcmgr*E_SSLSDK_X509ERR_UNABLE_TO_GET_ISSUER_CERT:	受信したユーザー証明書の有効なルート証明書が見つかりません。(SSL エラー 62)
+Wfcmgr*E_SSLSDK_X509ERR_SELF_SIGNED_CERT_IN_CHAIN:	証明書のチェーンに自己署名の証明書があります。(SSL エラー 63)
+Wfcmgr*E_SSLSDK_X509ERR_UNABLE_TO_VERIFY_LEAF_SIGNATURE:	サーバー証明書の署名を認証できません。(SSL エラー 64)
+Wfcmgr*E_SSLSDK_X509ERR_UNABLE_TO_DECODE_ISSUER_PUBLIC_KEY:	ユーザー証明書の公開キーはデコードできません。(SSL エラー 65)
+Wfcmgr*E_SSLSDK_X509ERR_CERT_SIGNATURE_FAILURE:	サーバー証明書の署名が不正です。(SSL エラー 66)
+Wfcmgr*E_SSLSDK_X509ERR_ERROR_IN_CERT_NOT_BEFORE_FIELD:	フィールドより後のユーザー証明書が無効です。(SSL エラー 67)
+Wfcmgr*E_SSLSDK_X509ERR_CERT_NOT_YET_VALID:	ユーザー証明書はまだ無効です。(SSL エラー 68)
+Wfcmgr*E_SSLSDK_X509ERR_ERROR_IN_CERT_NOT_AFTER_FIELD:	フィールドより前のユーザー証明書が無効です。(SSL エラー 69)
+Wfcmgr*E_SSLSDK_X509ERR_CERT_HAS_EXPIRED:	ユーザー証明書の有効期限が切れています。(SSL エラー 70)
+Wfcmgr*E_SSLSDK_UNIMPLEMENTED:	サポートされていないメソッドが呼び出されました。(SSL エラー 71)
+Wfcmgr*E_SSLSDK_FAILED_TO_LOAD_ALL_CERTIFICATES:	キーの保存先のルート証明書が無効です。(SSL エラー 72)
+Wfcmgr*E_SSLSDK_FAILED_TO_LOAD_ANY_CERTIFICATES:	キーの保存先のいくつかのルート証明書が不正です。(SSL エラー 73)
+Wfcmgr*E_SSLSDK_AUTHENTICATION_FAILURE:	クライアントの認証に失敗しました。(SSL エラー 74)
+
+Wfcmgr*E_SSLSDK_X509ERR_NO_REVOCATION_PROVIDER: SSL ポリシー設定による要求のため、サーバーのセキュリティ証明書の失効をチェックできませんでした。証明書の失効プロバイダーを読み込めません。(SSL エラー 78)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_KEY_LENGTH: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\n証明書のキー長が、発行元の証明書のキー長よりも長くなっています。(SSL エラー 79)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_PATH_LENGTH: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\nパス長フィールドによりチェーン長が証明書数 %s に制限されています。(SSL エラー 80)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_ENHANCED_KEY: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\nEnhanced Key Usage フィールドが不正です。(SSL エラー 81)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_NETSCAPE: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\nNetscape Usage Extension フィールドが不正です。(SSL エラー 82)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_CONSTRAINTS: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\nBasic Constraints フィールドが不正です。(SSL エラー 83)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_KEY_USAGE: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\nKey Usage フィールドが不正です。(SSL エラー 84)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_CRITICAL_EXTENSION: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\n重要な拡張機能 \"%s\" を認識できません。(SSL エラー 85)  
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_CERT_NAME: セキュリティ証明書 \"%s\" を認証できませんでした。SSL プロバイダー コード: %s (SSL エラー 86)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_DATE_NESTING: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\n証明書の日付範囲が、発行元の証明書の日付範囲と異なります。(SSL エラー 87)
+Wfcmgr*E_SSLSDK_X509ERR_BAD_CERTIFICATE_CHAIN_LENGTH: セキュリティ証明書 \"%s\" は SSL 接続に適していません。\n証明書チェーンが証明書数 %s を越えています。(SSL エラー 88)
+
+Wfcmgr*E_SSL_CONNREFUSED:	選択した Citrix SSL サーバーは、接続を受け入れていません。
+Wfcmgr*E_SSL_NETUNREACH:	選択した Citrix SSL サーバーは、接続できません。
+Wfcmgr*E_SSL_TIMEDOUT:	指定されたアドレスには Citrix SSL サーバーがありません。
+Wfcmgr*E_SSL_ILLEGAL_COMMONNAME:	SSL 接続を確立するには、[サーバーの場所] で完全修飾ドメイン名を指定する必要があります。
+Wfcmgr*E_SSL_NOT_AVAILABLE:SSL プロトコルを使用するには、128 ビットの SSL サポートをインストールする必要があります。\r\n128 ビットの SSL サポートをインストールするには、高度暗号化パックまたは 128 ビット暗号化をサポートした Internet Explorer をインストールしてください。
+
+Wfcmgr*E_PROXY_CONNERR_HOST_MISSING:             プロキシ サーバーに接続できません。プロキシ サーバーのユーザー設定には ProxyHost パラメーターが必要です。
+Wfcmgr*E_PROXY_CONNERR_SOCKTYPE_UNSUPPORTED:     プロキシ サーバーに接続できません。設定されたプロキシ サーバーは UDP をサポートしていません。
+Wfcmgr*E_PROXY_CONNERR_ALLOC_FAILURE:            プロキシ サーバーに接続できません。メモリが不足しています。
+Wfcmgr*E_PROXY_CONNERR_NOT_ACCEPTED:             プロキシ サーバーに接続できません。設定されたプロキシ サーバーが接続を受け入れません。
+Wfcmgr*E_PROXY_CONNERR_NO_ANSWER:                プロキシ サーバーに接続できません。設定されたプロキシ サーバーが応答しません。
+Wfcmgr*E_PROXY_CONNERR_NET_UNREACHABLE:          プロキシ サーバーに接続できません。設定されたプロキシ サーバーのネットワークにアクセスできません。
+Wfcmgr*E_PROXY_CONNERR_HOST_UNREACHABLE:         プロキシ サーバーに接続できません。設定されたプロキシ サーバーにアクセスできません。
+Wfcmgr*E_PROXY_CONNERR_HOST_NOT_FOUND:           プロキシ サーバーに接続できません。設定されたプロキシ サーバーが見つかりません。
+Wfcmgr*E_PROXY_CONNERR_PROTOCOL_ERROR:           プロキシ サーバーに接続できません。プロキシ サーバーからの不正な応答が返されました。
+Wfcmgr*E_PROXY_CONNERR_AUTH_FAILED:              プロキシ サーバーに接続できません。認証に失敗しました。
+Wfcmgr*E_PROXY_CONNERR_UNSUPPORTED_AUTH_SCHEME:  プロキシ サーバーに接続できません。サポートされていないプロキシ認証です。
+Wfcmgr*E_PROXY_CONNERR_PROXY_REFUSED:            プロキシ サーバーに接続できません。設定されたプロキシ サーバーが接続を拒否しました。
+Wfcmgr*E_PROXY_CONNERR_PROXY_FAILED:             プロキシ サーバーに接続できません。設定されたプロキシ サーバーが接続を確立できません。
+Wfcmgr*E_PROXY_CONNERR_INTERNAL_ERROR:           プロキシ サーバーに接続できません。プロキシを認証中に内部エラーが発生しました。
+Wfcmgr*E_PROXY_DTCTERR_ALLOC_FAILURE:            プロキシを検出できません。メモリが不足しています。
+Wfcmgr*E_PROXY_DTCTERR_NO_BROWSER_SETTINGS:      プロキシを検出できません。Web ブラウザー プロキシ設定が見つかりません。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_URL:           プロキシを検出できません。不正な自動設定 URL です。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_UNKNOWN_HOST:      プロキシを検出できません。自動設定 URL のホストが不明です。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NO_HTTPLIB:        プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。インターネット ライブラリが見つかりません。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_CONNECT_FAILURE:   プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。接続できません。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NOTFOUND:          プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。パスが見つかりません。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_GENERAL_FAILURE:   プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_EMPTY:             プロキシを検出できません。自動設定スクリプトが無効です。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NO_SUPPORT:        プロキシを検出できません。JavaScript サポートしていません。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_ERROR:             プロキシを検出できません。JavaScript エラーです。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_RESULT:        プロキシを検出できません。プロキシ自動設定スクリプトから不正な結果が返されました。
+Wfcmgr*E_PROXY_DTCTERR_TOO_MANY_REDIRECTIONS:    プロキシ検出障害: リダイレクトが多すぎます。
+
+Wfcmgr*E_PNAGENT_FILE_UNREADABLE:                XenApp Plugin ファイル \"%s\"を読み込めません:\n%s 
+Wfcmgr*E_PNAGENT_FILE_UNLAUNCHABLE:              XenApp Plugin ファイル \"%s\" を起動できません。 
+
+Wfcmgr*E_DROPPED_FILE_UNREADABLE:                ファイル \"%s\":\n%s を読み取れません。
+Wfcmgr*E_DROPPED_FILE_NOT_MAPPED:                ファイル \"%s\"\n は、マップ済みドライブのファイル システムではありません。
+Wfcmgr*E_NO_ASSOCIATION_FOR_FILE:                ファイル タイプ \"%s\" に関連付けられているアプリケーションはありません。
+Wfcmgr*E_NO_ASSOCIATIONS_DEFINED:                選択したサーバーにより定義されている関連付けられたファイル タイプはありません。
+Wfcmgr*E_NO_FILE_EXTENSION:                      ファイル \"%s\" は拡張子がない為、ファイル関連付けを確認できません。
+
+Wfcmgr*E_DRIVE_DISABLED:                         ファイル \"%s\"\n は、現在無効になっているマップ済みドライブのファイル システムにあります。
+Wfcmgr*E_DRIVE_MAPPING_DISABLED:                 クライアント ドライブ マッピングは、現在無効になっています。
+Wfcmgr*E_NDSBROWSE_FAILED:				    NDS ツリー %s を参照できません。\n%s
+Wfcmgr*E_ASYNC_WRITE_ERROR:				    1 つ以上のファイルに書き込み中に、エラーが発生しました: \n%s
+Wfcmgr*E_ASYNC_CONN_ERROR:				    接続が切断されました。一部のファイルから、データが消失する可能性があります: \n%s
+Wfcmgr*E_PDA_CONTENTION: 				    PDA デバイスが現在使用中のため、サーバーで公開されているアプリケーションは PDA デバイスにアクセスできませんでした。
+Wfcmgr*E_CANNOT_REMOVE_LOCK_FILE: 			    ロックファイルのクリエータ（プロセス %s） は終了しましたが、ロックファイル '%s' の削除に失敗しました。
+Wfcmgr*E_INSUFFICIENT_PERMISSIONS_TO_FILE: 		    ファイル '%s' にアクセスする権限がありません。
+Wfcmgr*E_ICAROOT_DIRECTORY_INVALID:			    ICAROOT ディレクトリが見つからなかったか、無効です。
+Wfcmgr*E_LOCKDOWN_ERROR_GENERIC:  クライアント設定マネージャー: 内部エラー %s
+Wfcmgr*E_PASSWORD_EXPIRED:                                   パスワードの有効期限が切れているので変更する必要があります。新しいパスワードを入力してください。
+Wfcmgr*E_PASSWORD_NOT_CONFIRMED:                             入力したパスワードが一致しません。両方のボックスに同じ新しいパスワードを入力してください。
+Wfcmgr*E_WEBCAM_PROBLEM:                                     unused
+Wfcmgr*E_LAST_ERROR:	not used
+Wfcmgr*E_LOCKDOWN_ERROR_SUCCESS: クライアント設定マネージャー: 操作が完了しました。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_TOO_LARGE: Citrix Receiver が %dk よりも大きい ICA ファイルを受信しました。\nコネクションが拒否されました。
+Wfcmgr*E_LOCKDOWN_ERROR_OUT_OF_MEMORY: クライアント設定マネージャー: メモリが不足しています。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_CHARACTER_ENCODING: Citrix Receiver が無効な文字園コードを含む ICA ファイルを受け取りました。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_BOOLEAN_ENCODING: クライアント設定マネージャー: ブール値として値を解釈できませんでした。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_INTEGER_ENCODING: クライアント設定マネージャー: 整数として値を解釈できませんでした。
+Wfcmgr*E_LOCKDOWN_ERROR_FILE_NOT_FOUND: クライアント設定マネージャー: ファイル名（%s）のファイルが見つかりませんでした。\nインストールを確認するか、管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_FILE_IO: クライアント設定マネージャー: ファイルの読み込み中にファイル システム エラーが発生しました。
+Wfcmgr*E_LOCKDOWN_ERROR_INI_NO_EQUALS: Citrix Receiver が破損した ICA ファイルを受け取りました。\nキー（%s）に割り当てられた値がありません。
+Wfcmgr*E_LOCKDOWN_ERROR_INI_UNTERMINATED_SECTION: Citrix Receiver が破損した ICA ファイルを受け取りました。\nセクション名（%s）のセクションが正常に中断されません。
+Wfcmgr*E_LOCKDOWN_ERROR_INI_GARBAGE_AFTER_SECTION: Citrix Receiver が破損した ICA ファイルを受け取りました。\nセクション名（%s）のセクションに無効なデータがあります。
+Wfcmgr*E_LOCKDOWN_ERROR_INI_BAD_SECTION: Citrix Receiver が破損した ICA ファイルを受け取りました。\n名称（%s）をセクションに使用できません。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_NO_SERVERNAME: Citrix Receiver が破損した ICA ファイルを受け取りました。\nICA ファイルに [ApplicationServer] セクションがありません。
+Wfcmgr*E_LOCKDOWN_ERROR_INI_DUPLICATE_SECTION: Citrix Receiver が破損した ICA ファイルを受け取りました。\nICA ファイルに重複した名称（%s）があります。
+Wfcmgr*E_LOCKDOWN_ERROR_INI_DUPLICATE_KEYS: Citrix Receiver が破損した ICA ファイルを受け取りました。\nICA ファイル セクション %s に（%s）という名前の重複キーがあります。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNRECOGNISED_PARAMETER: 受け取った ICA ファイルに（%s）のロックダウン プロファイルで許可されていないパラメーター（%s）があります。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_INVALID_VALUE: 受け取った ICA ファイルに、ロックダウン プロファイル（%s）のロックダウン要件を満たしてない値を持つパラメーター（%s）があります。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_ZONE_NOT_ALLOWED: サーバー（%s）は、ICA コネクションに対して信頼されていません。\n（%s）へのコネクション領域はロックダウン設定により許可されていません。\n管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNKNOWN_ZONE: クライアント設定マネージャー:  Citrix Receiver は、領域名（%s）のロックダウン設定を読み込めませんでした。\nインストールをチェックするか、または管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_BAD_FORMAT: クライアント設定マネージャー: ロックダウン プロファイル ファイルが破損しています。\nインストールをチェックするか、または管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_PROFILES_INCONSISTENT: クライアント設定マネージャー: （%s）のすべてのロックダウン要件を満たす値がありません。\n必須のロックダウン要件が矛盾している可能性があります。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_VERSION_MISMATCH: クライアント設定マネージャー: Citrix Receiver のバージョンが、インストールした設定データを使って実行するには低すぎます。
+Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_INSTALL_CONFIG: クライアント設定マネージャー: 設定データをインストール中にエラーが発生しました。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_UNRECOGNISED_SERVERNAME: クライアント設定マネージャー: （%s）に対応する ICA ファイルまたは appsrv.ini エントリが見つかりません。\nインストールをチェックするか、または管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_UPDATE_CONFIG: クライアント設定マネージャー: 設定データを更新できません。適切な権限がない可能性があります。"
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_CLIENT_DISABLED: クライアント設定マネージャー: クライアントは現在、このコンピューターまたはユーザーに対して無効です。
+!
+! Non-error, language-dependent strings
+!
+
+Wfcmgr*L_INVALID_LANGUAGE_STRING:	無効な言語文字列です
+Wfcmgr*L_LANGUAGE_NAME:	日本語
+Wfcmgr*L_LANG_UNUSED1:	unused - do not translate
+Wfcmgr*L_LANG_CODEPAGE:	932
+
+Wfcmgr*L_COPYRIGHT_VER_PRODUCTNAME:	 Citrix Receiver for Linux
+Wfcmgr*L_COPYRIGHT_VERSION:	Version
+Wfcmgr*L_COPYRIGHT_RIGHTS:	All rights reserved.
+
+Wfcmgr*L_COPYRIGHT_FFMPEG:	\
+このソフトウェアは LGPLv2.1 の下にある FFmpeg プロジェクト\n\
+のライブラリを使用します。
+
+! TRANSLATION WARNING! L_COPY is now a format string to account for word-order.
+Wfcmgr*L_COPY_OF:	%.*s のコピー
+Wfcmgr*L_N_PERCENT_OF_DRIVE:	ドライブの %d%% (%dM バイト)
+Wfcmgr*L_N_MEGABYTES:	%dM バイト
+Wfcmgr*L_CONNECTING_TO_SERVER:	%s に接続しています 
+Wfcmgr*L_CONNECTED_TO_SERVER:	サーバー %s に接続しました
+Wfcmgr*L_CONNECTION_FAILED_TO_SERVER:	サーバー %s への接続に失敗しました
+Wfcmgr*L_CONNECTING_TO_ICA_SERVER:	サーバーに接続しています
+Wfcmgr*L_CONNECTING_TO_PROXY_SERVER:	プロキシ サーバー %s に接続しています
+Wfcmgr*L_CONNECTION_ESTABLISHED_NEGOTIATING_CAPABILITIES:	接続が確立しました - サーバー %s と機能をネゴシエートしています
+Wfcmgr*L_RESOLVING_SERVER_NAME:		サーバー名を解決しています
+Wfcmgr*L_SENDING_MODULE_OPTIONS:		モジュール オプションをサーバー %s に送信しています
+Wfcmgr*L_PROCESSING_REPLIES:		サーバー %s からの応答を処理しています
+Wfcmgr*L_SYSTEM_TRAY:			通知エリア
+
+Wfcmgr*L_AUTO_LOCATE:	(自動検出)
+
+Wfcmgr*L_ENCRYPTION_NONE:	なし
+Wfcmgr*L_ENCRYPTION_BASIC:	基本
+Wfcmgr*L_ENCRYPTION_RC5_40:	RC5 (40 ビット)
+Wfcmgr*L_ENCRYPTION_RC5_56:	RC5 (56 ビット)
+Wfcmgr*L_ENCRYPTION_RC5_128:	RC5 (128 ビット)
+Wfcmgr*L_ENCRYPTION_RC5_0:	RC5 (128 ビット - ログオンのみ)
+Wfcmgr*L_ENCRYPTION_SSL:	SSL/TLS
+
+Wfcmgr*L_ZLC_ON:	(SpeedScreen オン)
+Wfcmgr*L_ZLC_OFF:	
+
+Wfcmgr*L_G2_WINDOW:	SpeedScreen ローカル テキスト エコー
+Wfcmgr*L_G2_MENU:	オプション
+Wfcmgr*L_G2_MOVE_AS_TYPE:	このウィンドウをカーソルと共に移動する
+Wfcmgr*L_G2_UNUSED:	not used
+Wfcmgr*L_G2_CLEAR_AUTO:	このウィンドウの内容を自動的にクリアする
+Wfcmgr*L_G2_CLEAR_NOW:	このウィンドウの内容をクリアする
+
+Wfcmgr*L_SSL_ON:	(SSL/TLS 保護, %d ビット)
+Wfcmgr*L_SSL_INCLUDED:	256 ビット SSL/TLS 使用
+Wfcmgr*L_SSL_APP_SUFFIX:	%d ビット SSL/TLS
+Wfcmgr*L_CC_COUNTERS: 使用サーバー数 %d 、リモート アプリケーション数 %d 
+
+Wfcmgr*L_CITRIX_URL:                     http://www.citrix.co.jp
+Wfcmgr*L_POTENTIAL_SPEECHMIKE:           潜在的 SpeechMike
+
+!
+!
+! Strings used by the YesNo confirmation system!
+!
+
+Wfcmgr*YesNo_Confirm_Exit:	このウィンドウを閉じると、サーバー\n\との接続が切断されます。\n\n\
+ウィンドウを閉じて接続を切断してもよろしいですか？
+
+Wfcmgr*DoYouWantToResetHost: \
+Ctrl + Alt + Del キーを押しました。\n\
+セッション ホストをリセットしてもよろしいですか?
+
+Wfcmgr*DoYouWantToDeleteSection:	コネクション %s を削除してもよろしいですか？
+
+Wfcmgr*ContinueAfterColorApproxFallback:	色近似のための十分な数の色を割り当てられません。\n\
+別のアプリケーションですでにそれらの色を割り当て\n\
+済みの可能性があります。\n\n\
+個人用のカラーマップの使用を続行しますか？\n
+
+Wfcmgr*DoYouWantToEnableReadAccess:	アプリケーションが 'Query' のマークが付いた\n\
+クライアント ドライブのマッピング (%s:) への\n\
+読み取りアクセスを要求しました。\n\
+このアクセスを許可しますか？\n
+
+Wfcmgr*DoYouWantToEnableWriteAccess:	アプリケーションが 'Query' のマークが付いた\n\
+クライアント ドライブのマッピング (%s:) への\n\
+書き込みアクセスを要求しました。\n\
+このアクセスを許可しますか？\n
+
+Wfcmgr*DoYouWantNoCharacterConversion:   \
+このオペレーティング システムでは %s から %s に文字セットを変換できません。\n\
+処理を続行しますか?\n
+
+Wfcmgr*DoYouWantToExecuteApplication:	\
+ファイル タイプ \"%s\" は、アプリケーション %s でサポートされていません。\n\
+このファイルをこのアプリケーションで実行しますか?\n
+
+Wfcmgr*DoYouWantToOpenContent:	\
+\"%s\" は公開コンテンツですが、アプリケーションではありません。\n\
+\"%s\" を適切なアプリケーションで開きますか?\n
+
+Wfcmgr*AllowAccessToPDA: \
+サーバー上のアプリケーションは、ローカルの PDA デバイスにアクセスする必要があります。\n\
+これにより安全性に問題が生じる可能性があります。\n\
+アプリケーションのアクセスを許可しますか?\n
+
+Wfcmgr*ContinueWithoutLock: \
+ディレクトリ %s にロックファイルを作成する権限がありません。\n\
+ローカル PDA デバイスにアクセスするほかのプログラムとの競合が発生する可能性があります。\n\
+処理を続行しますか?\n
+
+Wfcmgr*DoYouWantToUseNonFQDN: 警告 : \"%s\" は完全修飾ドメイン名ではありません。\n\nこれを Citrix Secure Gateway のアドレスとして保持しますか?
+
+!
+! YesNo Dialog resource settings (Japanese)
+!
+
+Wfcmgr*YesNoDialog_popup.title:	確認
+Wfcmgr*YesNoDialog.okLabelString:	OK
+Wfcmgr*YesNoDialog.cancelLabelString:	キャンセル
+Wfcmgr*YesNoDialog.helpLabelString:         ログオフ
+! Athena
+Wfcmgr*YesNoDialog.okLabelString.label:	OK
+Wfcmgr*YesNoDialog.cancelLabelString.label:	キャンセル
+Wfcmgr*YesNoDialog.logoffLabelString.label:         ログオフ
+
+!
+! Resources for initialisation dialog
+!
+
+Wfcmgr*InitPanel_popup.title:	Citrix Receiver
+
+!
+! Resources for the about dialog box
+!
+
+Wfcmgr*AboutFormDialog_popup.title:	バージョン情報 
+Wfcmgr*AboutOkay.labelString:	OK
+Wfcmgr*AboutOkay.leftAttachment:	ATTACH_POSITION
+Wfcmgr*AboutOkay.leftPosition:	40
+Wfcmgr*AboutOkay.rightAttachment:	ATTACH_POSITION
+Wfcmgr*AboutOkay.rightPosition:	60
+
+!
+! Resources for the about copyright string
+!
+
+Wfcmgr*AboutCredits.topOffset: 40
+
+!
+! Resources for the Diag dialog box
+!
+
+Wfcmgr*DiagFormDialog_popup.title:	診断情報
+Wfcmgr*DiagYes.labelString:			はい
+Wfcmgr*DiagYes.leftAttachment: ATTACH_POSITION
+Wfcmgr*DiagYes.leftPosition: 10
+Wfcmgr*DiagYes.rightAttachment: ATTACH_POSITION
+Wfcmgr*DiagYes.rightPosition: 30
+Wfcmgr*DiagNo.labelString:			いいえ
+Wfcmgr*DiagNo.leftAttachment: ATTACH_POSITION
+Wfcmgr*DiagNo.leftPosition: 70
+Wfcmgr*DiagNo.rightAttachment: ATTACH_POSITION
+Wfcmgr*DiagNo.rightPosition: 90
+Wfcmgr*DiagInfo.labelString:     ファイルに詳細な診断情報を書き込みますか?
+Wfcmgr*DiagInfo.leftOffset: 10
+
+!
+! Resources for the splash screen
+!
+
+Wfcmgr*SplashDialog_popup.title:	Citrix Receiver
+
+!
+! Resources for the scrolling locale and server/app selection boxes
+!
+
+Wfcmgr*localeSelBox_popup.title:	ロケールの選択
+Wfcmgr*localeSelBox.okLabelString:	OK
+Wfcmgr*localeSelBox.cancelLabelString:	キャンセル
+Wfcmgr*localeSelBox.listLabelString:	キーボード レイアウト
+
+Wfcmgr*PCKbdTypeSelBox_popup.title:	キーボードの種類の選択
+Wfcmgr*PCKbdTypeSelBox.okLabelString:	OK
+Wfcmgr*PCKbdTypeSelBox.cancelLabelString:	キャンセル
+Wfcmgr*PCKbdTypeSelBox.listLabelString:	キーボードの種類 (サーバー)
+
+Wfcmgr*networkServSelBox_popup.title:	コネクションの選択
+Wfcmgr*networkServSelBox.okLabelString:	OK
+Wfcmgr*networkServSelBox.cancelLabelString:	キャンセル
+Wfcmgr*PREF_SERVER_LIST_LABEL_SERVER:	サーバー
+Wfcmgr*PREF_SERVER_LIST_LABEL_APP:	公開アプリケーション
+
+!
+! Proxy authentication dialog resource settings (Japanese)
+!
+
+Wfcmgr*ProxyAuthDialog_popup.title:		必要なプロキシ認証
+
+Wfcmgr*ProxyAuthenticationText: \
+プロキシにアクセスするには、ユーザー認証が必要です。
+
+Wfcmgr*ProxyAuthDialog*proxyLabel.labelString: プロキシ
+Wfcmgr*ProxyAuthDialog*realmLabel.labelString: 認証領域
+Wfcmgr*ProxyAuthDialog*usernameLabel.labelString: ユーザー名
+Wfcmgr*ProxyAuthDialog*passwordLabel.labelString: パスワード
+Wfcmgr*ProxyAuthDialog*OKButton.labelString:      OK
+Wfcmgr*ProxyAuthDialog*cancelButton.labelString:  キャンセル
+
+! Athena
+Wfcmgr*ProxyIdentityLabel.label: プロキシ
+Wfcmgr*ProxyRealmLabel.label: 認証領域
+Wfcmgr*ProxyAuthenticationUsernameLabel.label: ユーザー名
+Wfcmgr*ProxyAuthenticationPasswordLabel.label: パスワード
+Wfcmgr*ProxyAuthDialog.okLabelString.label:            OK
+Wfcmgr*ProxyAuthDialog.cancelLabelString.label:        キャンセル
+
+!
+! Reconnect Dialog resource settings (Japanese)
+!
+
+Wfcmgr*AutorecnxWarningLabel.labelString: ネットワークまたはダイヤルアップの問題により、サーバーに接続できません。\n\nネットワークの回復後、自動再接続処理が開始します。\n\n問題が解決しない場合は、ネットワーク管理者に連絡してください。
+
+Wfcmgr*AutorecnxCountdownLabel.labelString: 再接続するまでの時間 (秒)
+Wfcmgr*AutorecnxRetriesLabel.labelString: 残りの再試行回数
+Wfcmgr*AutorecnxServerLabel.labelString: コネクション名
+Wfcmgr*RecnxDialog_popup.title:			接続エラー
+Wfcmgr*RecnxDialog.OKButton.labelString: 今すぐ再接続
+Wfcmgr*RecnxDialog.cancelButton.labelString: キャンセル
+
+! Athena
+
+Wfcmgr*AutorecnxWarningText: \
+ネットワークまたはダイヤルアップの問題により、サーバーに接続できません。\n\n\
+ネットワークの回復後、自動再接続処理が開始します。\n\n\
+問題が解決しない場合は、ネットワーク管理者に連絡してください。\n\n
+
+Wfcmgr*AutorecnxConnectionNameLabel.label:       コネクション名
+Wfcmgr*AutorecnxCountdownLabel.label:            再接続するまでの秒数
+Wfcmgr*AutorecnxRetriesLabel.label:              残りの再試行回数
+
+Wfcmgr*RecnxDialog.okLabelString.label:          再接続
+Wfcmgr*RecnxDialog.cancelLabelString.label:      キャンセル
+
+!
+! 24-ビット グラフィック カードで CDE に問題がある場合は、以下の 6 つのデフォル
+!ト値をコメント解除します。色の名前は、画面上で有効な任意の色を指定できますが、
+! 6 行すべてをコメント解除する必要があります。
+!
+!Wfica*background:              濃いスカイブルー
+!Wfica*bottomShadowColor:       暗いブルーグレー
+!Wfica*foreground:              黒
+!Wfica*topShadowColor:          薄いスカイブルー1
+!Wfica*highlightColor:          黒
+!Wfica*borderColor:             黒
+
+Wfcmgr*DoYouWantToClearCache: ICA セッションを実行している場合は、ビットマップ キャッシュをクリアしないでください。\n\
+ビットマップ キャッシュをクリアする場合は、ICA セッションを停止する必要があります。\n\
+すぐにビットマップ キャッシュをクリアしますか?
+
+! Begin user code block <abstract> 
+! End user code block <abstract> 
+
+!
+!  README: Portions of this file are merged at file generation
+!  time. Edits can be made *only* in between specified code blocks, look
+!  for keywords <Begin user code> and <End user code>.
+!
+!
+! Generated by the ICS Builder Xcessory (BX).
+!
+! BuilderXcessory Version 6.1.2
+! Code Generator Xcessory 6.1.2 (07/02/03) CGX Scripts 6.1 Motif 2.1 
+!
+
+! Begin user code block <top> 
+! End user code block <top> 
+
+*pnaServerURLShell.x: 0
+*pnaServerURLShell.y: 25
+*pnaServerURLShell.width: 310
+*pnaServerURLShell.height: 151
+*pnaServerURLShell*pnaServerURLForm.width: 310
+*settingstopLevelShell.width: 610
+*settingstopLevelShell.height: 575
+*settingstopLevelShell.allowShellResize: False
+*settingstopLevelShell.x: 96
+*settingstopLevelShell.y: 0
+*settingstopLevelShell*hotKeysRowCol1.packing: XmPACK_COLUMN
+*settingstopLevelShell*hotKeysLabel1.width: 180
+*settingstopLevelShell*hotKeysLabel1.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel1.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel1.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel1.topPosition: 0
+*settingstopLevelShell*hotKeysLabel1.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel1.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel2.width: 180
+*settingstopLevelShell*hotKeysLabel2.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel2.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel2.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel2.topPosition: 0
+*settingstopLevelShell*hotKeysLabel2.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel2.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel3.width: 180
+*settingstopLevelShell*hotKeysLabel3.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel3.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel3.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel3.topPosition: 0
+*settingstopLevelShell*hotKeysLabel3.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel3.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel4.width: 180
+*settingstopLevelShell*hotKeysLabel4.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel4.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel4.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel4.topPosition: 0
+*settingstopLevelShell*hotKeysLabel4.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel4.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel5.width: 180
+*settingstopLevelShell*hotKeysLabel5.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel5.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel5.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel5.topPosition: 0
+*settingstopLevelShell*hotKeysLabel5.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel5.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel6.width: 180
+*settingstopLevelShell*hotKeysLabel6.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel6.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel6.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel6.topPosition: 0
+*settingstopLevelShell*hotKeysLabel6.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel6.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel7.width: 180
+*settingstopLevelShell*hotKeysLabel7.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel7.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel7.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel7.topPosition: 0
+*settingstopLevelShell*hotKeysLabel7.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel7.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel8.width: 180
+*settingstopLevelShell*hotKeysLabel8.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel8.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel8.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel8.topPosition: 0
+*settingstopLevelShell*hotKeysLabel8.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel8.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel9.width: 180
+*settingstopLevelShell*hotKeysLabel9.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel9.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel9.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel9.topPosition: 0
+*settingstopLevelShell*hotKeysLabel9.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel9.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel10.width: 180
+*settingstopLevelShell*hotKeysLabel10.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel10.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel10.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel10.topPosition: 0
+*settingstopLevelShell*hotKeysLabel10.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel10.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel11.width: 180
+*settingstopLevelShell*hotKeysLabel11.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel11.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel11.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel11.topPosition: 0
+*settingstopLevelShell*hotKeysLabel11.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel11.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel12.width: 180
+*settingstopLevelShell*hotKeysLabel12.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel12.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel12.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel12.topPosition: 0
+*settingstopLevelShell*hotKeysLabel12.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel12.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel13.width: 180
+*settingstopLevelShell*hotKeysLabel13.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel13.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel13.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel13.topPosition: 0
+*settingstopLevelShell*hotKeysLabel13.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel13.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel14.width: 180
+*settingstopLevelShell*hotKeysLabel14.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel14.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel14.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel14.topPosition: 0
+*settingstopLevelShell*hotKeysLabel14.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel14.leftOffset: 0
+*settingstopLevelShell*hotKeysLabel15.width: 180
+*settingstopLevelShell*hotKeysLabel15.topAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel15.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*hotKeysLabel15.bottomAttachment: XmATTACH_POSITION
+*settingstopLevelShell*hotKeysLabel15.topPosition: 0
+*settingstopLevelShell*hotKeysLabel15.bottomPosition: 100
+*settingstopLevelShell*hotKeysLabel15.leftOffset: 0
+*settingstopLevelShell*settingsDriveMappingForm.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*settingsDriveMappingForm.rightAttachment: XmATTACH_FORM
+*settingstopLevelShell*settingsDriveMappingForm.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*settingsDriveMappingForm.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*settingsDriveMappingForm.leftOffset: 0
+*settingstopLevelShell*settingsDriveMappingForm.rightOffset: 0
+*settingstopLevelShell*settingsDriveMappingForm.topOffset: 0
+*settingstopLevelShell*driveMappingSWLabel.x: 380
+*settingstopLevelShell*driveMappingSWLabel.y: 11
+*settingstopLevelShell*driveMappingSWLabel.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMappingSWLabel.rightAttachment: XmATTACH_OPPOSITE_WIDGET
+*settingstopLevelShell*driveMappingSWLabel.leftAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMappingSWLabel.bottomAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMappingSWLabel.bottomOffset: 2
+*settingstopLevelShell*driveMappingSWLabel.rightOffset: 30
+*settingstopLevelShell*driveMappingRowCol.packing: XmPACK_COLUMN
+*settingstopLevelShell*enableTB0.y: 4
+*settingstopLevelShell*enableTB0.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB0.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB0.leftOffset: 10
+*settingstopLevelShell*enableTB0.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld0.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld0.x: 30
+*settingstopLevelShell*driveMapPathTxtFld0.y: 5
+*settingstopLevelShell*driveMapPathTxtFld0.width: 345
+*settingstopLevelShell*driveMapPathTxtFld0.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld0.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld0.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld0.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld0.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld0.rightOffset: 0
+*settingstopLevelShell*driveMapLabel0.width: 20
+*settingstopLevelShell*driveMapLabel0.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel0.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel0.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel0.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel0.leftOffset: 0
+*settingstopLevelShell*driveMapLabel0.topOffset: 0
+*settingstopLevelShell*enableTB1.y: 4
+*settingstopLevelShell*enableTB1.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB1.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB1.leftOffset: 10
+*settingstopLevelShell*enableTB1.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld1.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld1.x: 30
+*settingstopLevelShell*driveMapPathTxtFld1.y: 5
+*settingstopLevelShell*driveMapPathTxtFld1.width: 345
+*settingstopLevelShell*driveMapPathTxtFld1.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld1.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld1.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld1.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld1.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld1.rightOffset: 0
+*settingstopLevelShell*driveMapLabel1.width: 20
+*settingstopLevelShell*driveMapLabel1.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel1.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel1.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel1.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel1.leftOffset: 0
+*settingstopLevelShell*driveMapLabel1.topOffset: 0
+*settingstopLevelShell*enableTB2.y: 4
+*settingstopLevelShell*enableTB2.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB2.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB2.leftOffset: 10
+*settingstopLevelShell*enableTB2.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld2.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld2.x: 30
+*settingstopLevelShell*driveMapPathTxtFld2.y: 5
+*settingstopLevelShell*driveMapPathTxtFld2.width: 345
+*settingstopLevelShell*driveMapPathTxtFld2.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld2.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld2.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld2.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld2.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld2.rightOffset: 0
+*settingstopLevelShell*driveMapLabel2.width: 20
+*settingstopLevelShell*driveMapLabel2.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel2.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel2.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel2.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel2.leftOffset: 0
+*settingstopLevelShell*driveMapLabel2.topOffset: 0
+*settingstopLevelShell*enableTB3.y: 4
+*settingstopLevelShell*enableTB3.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB3.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB3.leftOffset: 10
+*settingstopLevelShell*enableTB3.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld3.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld3.x: 30
+*settingstopLevelShell*driveMapPathTxtFld3.y: 5
+*settingstopLevelShell*driveMapPathTxtFld3.width: 345
+*settingstopLevelShell*driveMapPathTxtFld3.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld3.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld3.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld3.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld3.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld3.rightOffset: 0
+*settingstopLevelShell*driveMapLabel3.width: 20
+*settingstopLevelShell*driveMapLabel3.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel3.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel3.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel3.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel3.leftOffset: 0
+*settingstopLevelShell*driveMapLabel3.topOffset: 0
+*settingstopLevelShell*enableTB4.y: 4
+*settingstopLevelShell*enableTB4.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB4.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB4.leftOffset: 10
+*settingstopLevelShell*enableTB4.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld4.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld4.x: 30
+*settingstopLevelShell*driveMapPathTxtFld4.y: 5
+*settingstopLevelShell*driveMapPathTxtFld4.width: 345
+*settingstopLevelShell*driveMapPathTxtFld4.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld4.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld4.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld4.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld4.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld4.rightOffset: 0
+*settingstopLevelShell*driveMapLabel4.width: 20
+*settingstopLevelShell*driveMapLabel4.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel4.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel4.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel4.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel4.leftOffset: 0
+*settingstopLevelShell*driveMapLabel4.topOffset: 0
+*settingstopLevelShell*enableTB5.y: 4
+*settingstopLevelShell*enableTB5.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB5.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB5.leftOffset: 10
+*settingstopLevelShell*enableTB5.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld5.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld5.x: 30
+*settingstopLevelShell*driveMapPathTxtFld5.y: 5
+*settingstopLevelShell*driveMapPathTxtFld5.width: 345
+*settingstopLevelShell*driveMapPathTxtFld5.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld5.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld5.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld5.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld5.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld5.rightOffset: 0
+*settingstopLevelShell*driveMapLabel5.width: 20
+*settingstopLevelShell*driveMapLabel5.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel5.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel5.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel5.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel5.leftOffset: 0
+*settingstopLevelShell*driveMapLabel5.topOffset: 0
+*settingstopLevelShell*enableTB6.y: 4
+*settingstopLevelShell*enableTB6.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB6.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB6.leftOffset: 10
+*settingstopLevelShell*enableTB6.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld6.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld6.x: 30
+*settingstopLevelShell*driveMapPathTxtFld6.y: 5
+*settingstopLevelShell*driveMapPathTxtFld6.width: 345
+*settingstopLevelShell*driveMapPathTxtFld6.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld6.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld6.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld6.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld6.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld6.rightOffset: 0
+*settingstopLevelShell*driveMapLabel6.width: 20
+*settingstopLevelShell*driveMapLabel6.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel6.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel6.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel6.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel6.leftOffset: 0
+*settingstopLevelShell*driveMapLabel6.topOffset: 0
+*settingstopLevelShell*enableTB7.y: 4
+*settingstopLevelShell*enableTB7.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB7.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB7.leftOffset: 10
+*settingstopLevelShell*enableTB7.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld7.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld7.x: 30
+*settingstopLevelShell*driveMapPathTxtFld7.y: 5
+*settingstopLevelShell*driveMapPathTxtFld7.width: 345
+*settingstopLevelShell*driveMapPathTxtFld7.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld7.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld7.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld7.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld7.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld7.rightOffset: 0
+*settingstopLevelShell*driveMapLabel7.width: 20
+*settingstopLevelShell*driveMapLabel7.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel7.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel7.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel7.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel7.leftOffset: 0
+*settingstopLevelShell*driveMapLabel7.topOffset: 0
+*settingstopLevelShell*enableTB8.y: 4
+*settingstopLevelShell*enableTB8.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB8.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB8.leftOffset: 10
+*settingstopLevelShell*enableTB8.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld8.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld8.x: 30
+*settingstopLevelShell*driveMapPathTxtFld8.y: 5
+*settingstopLevelShell*driveMapPathTxtFld8.width: 345
+*settingstopLevelShell*driveMapPathTxtFld8.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld8.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld8.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld8.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld8.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld8.rightOffset: 0
+*settingstopLevelShell*driveMapLabel8.width: 20
+*settingstopLevelShell*driveMapLabel8.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel8.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel8.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel8.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel8.leftOffset: 0
+*settingstopLevelShell*driveMapLabel8.topOffset: 0
+*settingstopLevelShell*enableTB9.y: 4
+*settingstopLevelShell*enableTB9.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB9.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB9.leftOffset: 10
+*settingstopLevelShell*enableTB9.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld9.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld9.x: 30
+*settingstopLevelShell*driveMapPathTxtFld9.y: 5
+*settingstopLevelShell*driveMapPathTxtFld9.width: 345
+*settingstopLevelShell*driveMapPathTxtFld9.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld9.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld9.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld9.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld9.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld9.rightOffset: 0
+*settingstopLevelShell*driveMapLabel9.width: 20
+*settingstopLevelShell*driveMapLabel9.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel9.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel9.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel9.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel9.leftOffset: 0
+*settingstopLevelShell*driveMapLabel9.topOffset: 0
+*settingstopLevelShell*enableTB10.y: 4
+*settingstopLevelShell*enableTB10.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB10.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB10.leftOffset: 10
+*settingstopLevelShell*enableTB10.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld10.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld10.x: 30
+*settingstopLevelShell*driveMapPathTxtFld10.y: 5
+*settingstopLevelShell*driveMapPathTxtFld10.width: 345
+*settingstopLevelShell*driveMapPathTxtFld10.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld10.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld10.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld10.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld10.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld10.rightOffset: 0
+*settingstopLevelShell*driveMapLabel10.width: 20
+*settingstopLevelShell*driveMapLabel10.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel10.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel10.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel10.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel10.leftOffset: 0
+*settingstopLevelShell*driveMapLabel10.topOffset: 0
+*settingstopLevelShell*enableTB11.y: 4
+*settingstopLevelShell*enableTB11.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB11.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB11.leftOffset: 10
+*settingstopLevelShell*enableTB11.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld11.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld11.x: 30
+*settingstopLevelShell*driveMapPathTxtFld11.y: 5
+*settingstopLevelShell*driveMapPathTxtFld11.width: 345
+*settingstopLevelShell*driveMapPathTxtFld11.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld11.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld11.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld11.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld11.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld11.rightOffset: 0
+*settingstopLevelShell*driveMapLabel11.width: 20
+*settingstopLevelShell*driveMapLabel11.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel11.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel11.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel11.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel11.leftOffset: 0
+*settingstopLevelShell*driveMapLabel11.topOffset: 0
+*settingstopLevelShell*enableTB12.y: 4
+*settingstopLevelShell*enableTB12.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB12.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB12.leftOffset: 10
+*settingstopLevelShell*enableTB12.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld12.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld12.x: 30
+*settingstopLevelShell*driveMapPathTxtFld12.y: 5
+*settingstopLevelShell*driveMapPathTxtFld12.width: 345
+*settingstopLevelShell*driveMapPathTxtFld12.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld12.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld12.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld12.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld12.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld12.rightOffset: 0
+*settingstopLevelShell*driveMapLabel12.width: 20
+*settingstopLevelShell*driveMapLabel12.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel12.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel12.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel12.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel12.leftOffset: 0
+*settingstopLevelShell*driveMapLabel12.topOffset: 0
+*settingstopLevelShell*enableTB13.y: 4
+*settingstopLevelShell*enableTB13.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB13.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB13.leftOffset: 10
+*settingstopLevelShell*enableTB13.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld13.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld13.x: 30
+*settingstopLevelShell*driveMapPathTxtFld13.y: 5
+*settingstopLevelShell*driveMapPathTxtFld13.width: 345
+*settingstopLevelShell*driveMapPathTxtFld13.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld13.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld13.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld13.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld13.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld13.rightOffset: 0
+*settingstopLevelShell*driveMapLabel13.width: 20
+*settingstopLevelShell*driveMapLabel13.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel13.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel13.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel13.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel13.leftOffset: 0
+*settingstopLevelShell*driveMapLabel13.topOffset: 0
+*settingstopLevelShell*enableTB14.y: 4
+*settingstopLevelShell*enableTB14.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB14.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB14.leftOffset: 10
+*settingstopLevelShell*enableTB14.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld14.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld14.x: 30
+*settingstopLevelShell*driveMapPathTxtFld14.y: 5
+*settingstopLevelShell*driveMapPathTxtFld14.width: 345
+*settingstopLevelShell*driveMapPathTxtFld14.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld14.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld14.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld14.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld14.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld14.rightOffset: 0
+*settingstopLevelShell*driveMapLabel14.width: 20
+*settingstopLevelShell*driveMapLabel14.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel14.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel14.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel14.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel14.leftOffset: 0
+*settingstopLevelShell*driveMapLabel14.topOffset: 0
+*settingstopLevelShell*enableTB15.y: 4
+*settingstopLevelShell*enableTB15.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB15.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB15.leftOffset: 10
+*settingstopLevelShell*enableTB15.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld15.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld15.x: 30
+*settingstopLevelShell*driveMapPathTxtFld15.y: 5
+*settingstopLevelShell*driveMapPathTxtFld15.width: 345
+*settingstopLevelShell*driveMapPathTxtFld15.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld15.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld15.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld15.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld15.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld15.rightOffset: 0
+*settingstopLevelShell*driveMapLabel15.width: 20
+*settingstopLevelShell*driveMapLabel15.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel15.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel15.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel15.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel15.leftOffset: 0
+*settingstopLevelShell*driveMapLabel15.topOffset: 0
+*settingstopLevelShell*enableTB16.y: 4
+*settingstopLevelShell*enableTB16.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB16.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB16.leftOffset: 10
+*settingstopLevelShell*enableTB16.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld16.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld16.x: 30
+*settingstopLevelShell*driveMapPathTxtFld16.y: 5
+*settingstopLevelShell*driveMapPathTxtFld16.width: 345
+*settingstopLevelShell*driveMapPathTxtFld16.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld16.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld16.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld16.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld16.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld16.rightOffset: 0
+*settingstopLevelShell*driveMapLabel16.width: 20
+*settingstopLevelShell*driveMapLabel16.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel16.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel16.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel16.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel16.leftOffset: 0
+*settingstopLevelShell*driveMapLabel16.topOffset: 0
+*settingstopLevelShell*enableTB17.y: 4
+*settingstopLevelShell*enableTB17.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB17.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB17.leftOffset: 10
+*settingstopLevelShell*enableTB17.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld17.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld17.x: 30
+*settingstopLevelShell*driveMapPathTxtFld17.y: 5
+*settingstopLevelShell*driveMapPathTxtFld17.width: 345
+*settingstopLevelShell*driveMapPathTxtFld17.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld17.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld17.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld17.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld17.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld17.rightOffset: 0
+*settingstopLevelShell*driveMapLabel17.width: 20
+*settingstopLevelShell*driveMapLabel17.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel17.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel17.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel17.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel17.leftOffset: 0
+*settingstopLevelShell*driveMapLabel17.topOffset: 0
+*settingstopLevelShell*enableTB18.y: 4
+*settingstopLevelShell*enableTB18.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB18.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB18.leftOffset: 10
+*settingstopLevelShell*enableTB18.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld18.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld18.x: 30
+*settingstopLevelShell*driveMapPathTxtFld18.y: 5
+*settingstopLevelShell*driveMapPathTxtFld18.width: 345
+*settingstopLevelShell*driveMapPathTxtFld18.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld18.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld18.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld18.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld18.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld18.rightOffset: 0
+*settingstopLevelShell*driveMapLabel18.width: 20
+*settingstopLevelShell*driveMapLabel18.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel18.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel18.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel18.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel18.leftOffset: 0
+*settingstopLevelShell*driveMapLabel18.topOffset: 0
+*settingstopLevelShell*enableTB19.y: 4
+*settingstopLevelShell*enableTB19.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB19.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB19.leftOffset: 10
+*settingstopLevelShell*enableTB19.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld19.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld19.x: 30
+*settingstopLevelShell*driveMapPathTxtFld19.y: 5
+*settingstopLevelShell*driveMapPathTxtFld19.width: 345
+*settingstopLevelShell*driveMapPathTxtFld19.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld19.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld19.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld19.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld19.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld19.rightOffset: 0
+*settingstopLevelShell*driveMapLabel19.width: 20
+*settingstopLevelShell*driveMapLabel19.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel19.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel19.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel19.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel19.leftOffset: 0
+*settingstopLevelShell*driveMapLabel19.topOffset: 0
+*settingstopLevelShell*enableTB20.y: 4
+*settingstopLevelShell*enableTB20.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB20.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB20.leftOffset: 10
+*settingstopLevelShell*enableTB20.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld20.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld20.x: 30
+*settingstopLevelShell*driveMapPathTxtFld20.y: 5
+*settingstopLevelShell*driveMapPathTxtFld20.width: 345
+*settingstopLevelShell*driveMapPathTxtFld20.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld20.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld20.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld20.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld20.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld20.rightOffset: 0
+*settingstopLevelShell*driveMapLabel20.width: 20
+*settingstopLevelShell*driveMapLabel20.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel20.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel20.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel20.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel20.leftOffset: 0
+*settingstopLevelShell*driveMapLabel20.topOffset: 0
+*settingstopLevelShell*enableTB21.y: 4
+*settingstopLevelShell*enableTB21.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB21.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB21.leftOffset: 10
+*settingstopLevelShell*enableTB21.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld21.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld21.x: 30
+*settingstopLevelShell*driveMapPathTxtFld21.y: 5
+*settingstopLevelShell*driveMapPathTxtFld21.width: 345
+*settingstopLevelShell*driveMapPathTxtFld21.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld21.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld21.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld21.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld21.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld21.rightOffset: 0
+*settingstopLevelShell*driveMapLabel21.width: 20
+*settingstopLevelShell*driveMapLabel21.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel21.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel21.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel21.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel21.leftOffset: 0
+*settingstopLevelShell*driveMapLabel21.topOffset: 0
+*settingstopLevelShell*enableTB22.y: 4
+*settingstopLevelShell*enableTB22.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB22.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB22.leftOffset: 10
+*settingstopLevelShell*enableTB22.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld22.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld22.x: 30
+*settingstopLevelShell*driveMapPathTxtFld22.y: 5
+*settingstopLevelShell*driveMapPathTxtFld22.width: 345
+*settingstopLevelShell*driveMapPathTxtFld22.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld22.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld22.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld22.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld22.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld22.rightOffset: 0
+*settingstopLevelShell*driveMapLabel22.width: 20
+*settingstopLevelShell*driveMapLabel22.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel22.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel22.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel22.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel22.leftOffset: 0
+*settingstopLevelShell*driveMapLabel22.topOffset: 0
+*settingstopLevelShell*enableTB23.y: 4
+*settingstopLevelShell*enableTB23.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB23.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB23.leftOffset: 10
+*settingstopLevelShell*enableTB23.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld23.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld23.x: 30
+*settingstopLevelShell*driveMapPathTxtFld23.width: 345
+*settingstopLevelShell*driveMapPathTxtFld23.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld23.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld23.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld23.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld23.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld23.rightOffset: 0
+*settingstopLevelShell*driveMapLabel23.width: 20
+*settingstopLevelShell*driveMapLabel23.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel23.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel23.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel23.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel23.leftOffset: 0
+*settingstopLevelShell*driveMapLabel23.topOffset: 0
+*settingstopLevelShell*enableTB24.y: 4
+*settingstopLevelShell*enableTB24.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB24.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB24.leftOffset: 10
+*settingstopLevelShell*enableTB24.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld24.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld24.x: 30
+*settingstopLevelShell*driveMapPathTxtFld24.y: 5
+*settingstopLevelShell*driveMapPathTxtFld24.width: 345
+*settingstopLevelShell*driveMapPathTxtFld24.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld24.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld24.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld24.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld24.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld24.rightOffset: 0
+*settingstopLevelShell*driveMapLabel24.width: 20
+*settingstopLevelShell*driveMapLabel24.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel24.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel24.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel24.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel24.leftOffset: 0
+*settingstopLevelShell*driveMapLabel24.topOffset: 0
+*settingstopLevelShell*enableTB25.y: 4
+*settingstopLevelShell*enableTB25.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*enableTB25.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*enableTB25.leftOffset: 10
+*settingstopLevelShell*enableTB25.topOffset: 4
+*settingstopLevelShell*driveMapPathTxtFld25.resizeWidth: False
+*settingstopLevelShell*driveMapPathTxtFld25.x: 30
+*settingstopLevelShell*driveMapPathTxtFld25.y: 5
+*settingstopLevelShell*driveMapPathTxtFld25.width: 345
+*settingstopLevelShell*driveMapPathTxtFld25.topAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld25.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMapPathTxtFld25.leftAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMapPathTxtFld25.bottomOffset: 0
+*settingstopLevelShell*driveMapPathTxtFld25.leftOffset: 10
+*settingstopLevelShell*driveMapPathTxtFld25.rightOffset: 0
+*settingstopLevelShell*driveMapLabel25.width: 20
+*settingstopLevelShell*driveMapLabel25.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel25.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel25.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMapLabel25.bottomOffset: 0
+*settingstopLevelShell*driveMapLabel25.leftOffset: 0
+*settingstopLevelShell*driveMapLabel25.topOffset: 0
+*settingstopLevelShell*driveMappingModifyPB.x: 416
+*settingstopLevelShell*driveMappingModifyPB.y: 364
+*settingstopLevelShell*driveMappingModifyPB.rightAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMappingModifyPB.leftAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMappingModifyPB.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMappingModifyPB.bottomOffset: 18
+*settingstopLevelShell*driveMappingModifyPB.rightOffset: 22
+*settingstopLevelShell*driveMappingClearPB.x: 311
+*settingstopLevelShell*driveMappingClearPB.y: 364
+*settingstopLevelShell*driveMappingClearPB.rightAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*driveMappingClearPB.leftAttachment: XmATTACH_NONE
+*settingstopLevelShell*driveMappingClearPB.bottomAttachment: XmATTACH_FORM
+*settingstopLevelShell*driveMappingClearPB.bottomOffset: 18
+*settingstopLevelShell*driveMappingClearPB.rightOffset: 35
+*settingstopLevelShell*driveMappingEnableTB.alignment: XmALIGNMENT_BEGINNING
+*settingstopLevelShell*driveMappingDynamicEnableTB.alignment: XmALIGNMENT_BEGINNING
+*settingstopLevelShell*driveMappingFSBShell.x: 587
+*settingstopLevelShell*driveMappingFSBShell.y: 167
+*settingstopLevelShell*driveMappingFSBShell.width: 292
+*settingstopLevelShell*driveMappingFSBShell.height: 444
+*settingstopLevelShell*driveMappingFSB.dialogStyle: XmDIALOG_FULL_APPLICATION_MODAL
+*settingstopLevelShell*driveMappingFSB.minimizeButtons: False
+*settingstopLevelShell*driveMappingFSB.textColumns: 37
+*settingstopLevelShell*driveMappingFSB.fileTypeMask: XmFILE_DIRECTORY
+*settingstopLevelShell*driveMappingFSB.marginHeight: 15
+*settingstopLevelShell*driveMappingFSB.marginWidth: 25
+*settingstopLevelShell*settingsCacheForm.x: 0
+*settingstopLevelShell*settingsCacheForm.y: 0
+*settingstopLevelShell*settingsCacheForm.topAttachment: XmATTACH_FORM
+*settingstopLevelShell*settingsCacheForm.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*settingsCacheForm.bottomOffset: 0
+*settingstopLevelShell*settingsCacheForm.leftOffset: 0
+*settingstopLevelShell*settingsCacheForm.rightOffset: 0
+*settingstopLevelShell*settingsCacheForm.topOffset: 0
+*settingstopLevelShell*cacheBitmapSizeScale.maximum: 65536
+*settingstopLevelShell*cacheBitmapSizeLabel.x: 20
+*settingstopLevelShell*cacheBitmapSizeLabel.y: 316
+*settingstopLevelShell*cacheBitmapSizeLabel.topAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*cacheBitmapSizeLabel.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*cacheBitmapSizeLabel.bottomAttachment: XmATTACH_NONE
+*settingstopLevelShell*cacheBitmapSizeLabel.bottomOffset: 0
+*settingstopLevelShell*cacheBitmapSizeLabel.leftOffset: 20
+*settingstopLevelShell*cacheBitmapSizeLabel.topOffset: 52
+*settingstopLevelShell*cacheDiskSpaceLabel.alignment: XmALIGNMENT_BEGINNING
+*settingstopLevelShell*cacheDiskSpaceLabel.x: 20
+*settingstopLevelShell*cacheDiskSpaceLabel.y: 20
+*settingstopLevelShell*cacheDiskSpaceLabel.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*cacheDiskSpaceLabel.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*cacheDiskSpaceLabel.bottomAttachment: XmATTACH_NONE
+*settingstopLevelShell*cacheDiskSpaceLabel.bottomOffset: 0
+*settingstopLevelShell*cacheDiskSpaceLabel.leftOffset: 20
+*settingstopLevelShell*cacheDiskSpaceLabel.rightOffset: 0
+*settingstopLevelShell*cacheDiskSpaceLabel.topOffset: 20
+*settingstopLevelShell*cacheDirectoryTxtFld.columns: 38
+*settingstopLevelShell*cacheDirectoryTxtFld.maxLength: 4
+*settingstopLevelShell*cacheDirectoryLabel.alignment: XmALIGNMENT_END
+*settingstopLevelShell*cacheDirectoryLabel.x: 20
+*settingstopLevelShell*cacheDirectoryLabel.y: 203
+*settingstopLevelShell*cacheDirectoryLabel.topAttachment: XmATTACH_WIDGET
+*settingstopLevelShell*cacheDirectoryLabel.rightAttachment: XmATTACH_NONE
+*settingstopLevelShell*cacheDirectoryLabel.leftAttachment: XmATTACH_FORM
+*settingstopLevelShell*cacheDirectoryLabel.bottomAttachment: XmATTACH_NONE
+*settingstopLevelShell*cacheDirectoryLabel.bottomOffset: 0
+*settingstopLevelShell*cacheDirectoryLabel.leftOffset: 20
+*settingstopLevelShell*cacheDirectoryLabel.rightOffset: 0
+*settingstopLevelShell*cacheDirectoryLabel.topOffset: 48
+*settingstopLevelShell*cacheDirFSBShell.deleteResponse: XmUNMAP
+*settingstopLevelShell*cacheDirFSBShell.x: 311
+*settingstopLevelShell*cacheDirFSBShell.y: -180
+*settingstopLevelShell*cacheDirFSBShell.width: 292
+*settingstopLevelShell*cacheDirFSBShell.height: 444
+*settingstopLevelShell*cacheDirFSB.dialogStyle: XmDIALOG_FULL_APPLICATION_MODAL
+*settingstopLevelShell*cacheDirFSB.minimizeButtons: False
+*settingstopLevelShell*cacheDirFSB.textColumns: 37
+*settingstopLevelShell*cacheDirFSB.fileTypeMask: XmFILE_DIRECTORY
+*settingstopLevelShell*cacheDirFSB.marginHeight: 15
+*settingstopLevelShell*cacheDirFSB.marginWidth: 25
+*settingstopLevelShell*settWindowHeightTextbox.maxLength: 5
+*settingstopLevelShell*settWindowWidthTextbox.maxLength: 5
+*settingstopLevelShell*settingsCancelButt.rightPosition: 96
+*settingstopLevelShell*settingsCancelButt.leftPosition: 76
+*settingstopLevelShell*settingsLeftishPosition.rightPosition: 48
+*settingstopLevelShell*settingsLeftishPosition.leftPosition: 28
+*settingstopLevelShell*settingsRefreshButt.rightPosition: 73
+*settingstopLevelShell*settingsRefreshButt.leftPosition: 51
+*settingstopLevelShell*settingsMidPosition.rightPosition: 60
+*settingstopLevelShell*settingsMidPosition.leftPosition: 40
+*settingstopLevelShell*settingsOkButt.rightPosition: 24
+*settingstopLevelShell*settingsOkButt.leftPosition: 4
+*browseAddServerFormShell.x: 4
+*browseAddServerFormShell.y: 204
+*browseAddServerFormShell.width: 350
+*browseAddServerFormShell.height: 151
+*browseRenameGroupShell.x: 686
+*browseRenameGroupShell.y: 505
+*browseRenameGroupShell.width: 269
+*browseRenameGroupShell.height: 151
+*browseRenameGroupShell*browseRenameGroupForm.width: 269
+*comPortFileSelectionShell.x: 768
+*comPortFileSelectionShell.y: 329
+*comPortFileSelectionShell.width: 214
+*comPortFileSelectionShell.height: 353
+*comPortFileSelectionShell*comPortFileSelectionBox.dirSpec: 
+*comPortFileSelectionShell*comPortFileSelectionBox.directory: /dev
+*comPortFileSelectionShell*comPortFileSelectionBox.pattern: ttySerialDev
+*comPortFileSelectionShell*comPortFileSelectionBox.dirMask: /dev/ttySerialDev
+*browseAddServerPortFormShell.width: 378
+*browseAddServerPortFormShell.x: 360
+*browseAddServerPortFormShell.y: 92
+*browseAddServerPortFormShell.height: 166
+*browseAddServerPortFormShell*browseAddServerPortBox.width: 378
+
+! Begin user code block <bottom> 
+! End user code block <bottom> 
+
+! Begin user code block <abstract> 
+! End user code block <abstract> 
+
+!
+!  README: Portions of this file are merged at file generation
+!  time. Edits can be made *only* in between specified code blocks, look
+!  for keywords <Begin user code> and <End user code>.
+!
+!
+! Generated by the ICS Builder Xcessory (BX).
+!
+! BuilderXcessory Version 6.1.2
+! Code Generator Xcessory 6.1.2 (07/02/03) CGX Scripts 6.1 Motif 2.1 
+!
+
+! Begin user code block <top> 
+! End user code block <top> 
+
+*propertiestopLevelShell.width: 610
+*propertiestopLevelShell.height: 634
+*propertiestopLevelShell.x: 31
+*propertiestopLevelShell.y: 27
+*propertiestopLevelShell*propWindowHeightTextbox.maxLength: 5
+*propertiestopLevelShell*propWindowWidthTextbox.maxLength: 5
+*propertiestopLevelShell*netServAppRadioBox.packing: XmPACK_TIGHT
+*propertiestopLevelShell*netServAppRadioBox.orientation: XmHORIZONTAL
+
+! Begin user code block <bottom> 
+! End user code block <bottom> 
+
+! Begin user code block <abstract> 
+! End user code block <abstract> 
+
+!
+!  README: Portions of this file are merged at file generation
+!  time. Edits can be made *only* in between specified code blocks, look
+!  for keywords <Begin user code> and <End user code>.
+!
+!
+! Generated by the ICS Builder Xcessory (BX).
+!
+! BuilderXcessory Version 6.1.2
+! Code Generator Xcessory 6.1.2 (07/02/03) CGX Scripts 6.1 Motif 2.1 
+!
+
+! Begin user code block <top> 
+! End user code block <top> 
+
+*ccTopLevelShell.allowShellResize: True
+*ccTopLevelShell.x: 5
+*ccTopLevelShell.y: 24
+*ccTopLevelShell.width: 628
+*ccTopLevelShell.height: 312
+*ccWarningTopLevelShell.x: 5
+*ccWarningTopLevelShell.y: 24
+*ccWarningTopLevelShell.width: 267
+*ccWarningTopLevelShell.height: 145
+
+! Begin user code block <bottom> 
+! End user code block <bottom> 
+
+! Begin user code block <abstract> 
+! End user code block <abstract> 
+
+!
+!  README: Portions of this file are merged at file generation
+!  time. Edits can be made *only* in between specified code blocks, look
+!  for keywords <Begin user code> and <End user code>.
+!
+!
+! Generated by the ICS Builder Xcessory (BX).
+!
+! BuilderXcessory Version 6.1.2
+! Code Generator Xcessory 6.1.2 (07/02/03) CGX Scripts 6.1 Motif 2.1 
+!
+
+! Begin user code block <top> 
+! End user code block <top> 
+
+*ccPropTopLevelShell.x: 710
+*ccPropTopLevelShell.y: 56
+*ccPropTopLevelShell.width: 377
+*ccPropTopLevelShell.height: 352
+*ccPropTopLevelShell*serverLabel.x: 0
+
+! Begin user code block <bottom> 
+! End user code block <bottom> 
+
+! Begin user code block <abstract> 
+! End user code block <abstract> 
+
+!
+!  README: Portions of this file are merged at file generation
+!  time. Edits can be made *only* in between specified code blocks, look
+!  for keywords <Begin user code> and <End user code>.
+!
+!
+! Generated by the ICS Builder Xcessory (BX).
+!
+! BuilderXcessory Version 6.1.2
+! Code Generator Xcessory 6.1.2 (07/02/03) CGX Scripts 6.1 Motif 2.1 
+!
+
+! Begin user code block <top> 
+! End user code block <top> 
+
+*icatopLevelShell.x: 32
+*icatopLevelShell.y: 89
+*icatopLevelShell.width: 580
+*icatopLevelShell.height: 289
+*icatopLevelShell*rowcolumnIconList.packing: XmPACK_COLUMN
+
+! Begin user code block <bottom> 
+! End user code block <bottom> 
+! Copyright 1998-2009 Citrix Systems, Inc. All rights reserved.
+!
+
+*XmText.translations: #override\n\
+        Ctrl<Key>c:     copy-clipboard()\n\
+        Ctrl<Key>x:     cut-clipboard()\n\
+        Ctrl<Key>v:     paste-clipboard()
+
+Wfcmgr*XmList.translations: #augment \n\
+                           <Btn4Down>:       ListPrevItem()\n\
+                           <Btn5Down>:       ListNextItem()\n
+
+! Strings that vary with the view
+Wfcmgr*entryMenu.PNAViewString: Citrix XenApp(P)
+Wfcmgr*entryMenu.PNAViewMnemonic: P
+Wfcmgr*entryMenu.connectionsString: コネクション(C)
+Wfcmgr*entryMenu.connectionsMnemonic: C
+Wfcmgr*listHeader.PNAViewDescription: 表示名
+Wfcmgr*listHeader.connectionsDescription: コネクション名
+Wfcmgr*listHeader.PNAViewServer: 種類
+Wfcmgr*listHeader.connectionsServer: 接続先
+
+!
+! PNA authentication dialog resource settings 
+!
+
+! The title is set by the server. 
+! This just gives enough width for it to be displayed.
+Wfcmgr*PnaAuthDialog.pnaAuthTitle.width:		450
+
+Wfcmgr*PnaAuthDialog*serverLabel.serverLabel:    	サーバー %s へのログオン
+Wfcmgr*PnaAuthDialog*pnaWinAuthButton.labelString:      Windows
+Wfcmgr*PnaAuthDialog*pnaNDSAuthButton.labelString:      NDS
+Wfcmgr*PnaAuthDialog*proxyLabel.labelString:    	プロキシ
+Wfcmgr*PnaAuthDialog*domainLabel.labelString:   	ドメイン
+Wfcmgr*PnaAuthDialog*usernameLabel.labelString: 	ユーザー名
+Wfcmgr*PnaAuthDialog*passwordLabel.labelString: 	パスワード
+Wfcmgr*PnaAuthDialog*newPasswordLabel.labelString: 	新しいパスワード
+Wfcmgr*PnaAuthDialog*confirmPasswordLabel.labelString: 	新しいパスワードの確認
+Wfcmgr*PnaAuthDialog*treeLabel.labelString: 	        ツリー
+Wfcmgr*PnaAuthDialog*contextLabel.labelString: 	        コンテキスト
+Wfcmgr*PnaAuthDialog*persistPasswordButton.labelString:	パスワードを保存する
+Wfcmgr*PnaAuthDialog*OKButton.labelString:  	        OK
+Wfcmgr*PnaAuthDialog*OKButton.width:  			80        
+Wfcmgr*PnaAuthDialog*cancelButton.labelString:  	キャンセル
+
+! Context browser
+Wfcmgr*PnaAuthDialog*PnaContextBrowse.width:	        400
+Wfcmgr*PnaAuthDialog*PnaContextBrowse.height:	        400
+Wfcmgr*PnaAuthDialog*ndsContextButton.labelString:  	参照
+Wfcmgr*PnaAuthDialog*PnaContextBrowse_popup.title:  	NDS コンテキスト参照
+Wfcmgr*PnaAuthDialog*OKBrowseButton.labelString:  	OK
+Wfcmgr*PnaAuthDialog*cancelBrowseButton.labelString:  	キャンセル
+
+!
+! PNA color depths to match descriptions elsewhere
+!
+
+*settingstopLevelShell*pNAColorDepthMenu.4bitcolor: 16 色
+*settingstopLevelShell*pNAColorDepthMenu.8bitcolor: 256 色
+*settingstopLevelShell*pNAColorDepthMenu.15bitcolor: 32000 色
+*settingstopLevelShell*pNAColorDepthMenu.24bitcolor: 1600 万色
+
+!
+! Resources for selection boxes
+!
+
+*FileAssocSelBox_popup.title: ファイルの関連付けの選択
+*FileAssocSelBox.okLabelString:		OK
+*FileAssocSelBox.cancelLabelString: キャンセル
+
+*propertiestopLevelShell*propAssocAddButton.labelString: 追加...
+*propertiestopLevelShell*propAssocDelButton.labelString: 削除
+*propertiestopLevelShell*propAssocLabel.labelString: ファイル タイプ
+*propertiestopLevelShell*propertiesAssociatePushButton.labelString: ファイルの関連付け
+
+!
+! Connection center (cc.app)
+!
+
+*ccTopLevelShell*ccSessionLabel.clientLabelString:	クライアント
+*ccTopLevelShell*ccSessionLabel.serverLabelString:	サーバー
+*ccTopLevelShell*ccSessionLabel.timeLabelString:	開始時刻
+*ccTopLevelShell*ccDisconnectButton.labelString :切断
+*ccTopLevelShell*ccIconifyButton.labelString :アイコン化
+*ccTopLevelShell*ccLogoffButton.labelString :ログオフ
+*ccTopLevelShell*ccOkPushButton.labelString:	OK
+*ccTopLevelShell*ccPropertiesButton.labelString :プロパティ
+*ccTopLevelShell*ccRefreshButton.labelString :更新
+*ccTopLevelShell*ccRestoreButton.labelString :リストア
+*ccTopLevelShell*ccTerminateButton.labelString :終了
+*ccTopLevelShell.title:	コネクション センター
+*ccWarningTopLevelShell*ccWarningBox.cancelLabelString:	削除
+*ccWarningTopLevelShell*ccWarningBox.helpLabelString:	キャンセル
+*ccWarningTopLevelShell*ccWarningBox.messageString:	セッションが応答しません
+*ccWarningTopLevelShell*ccWarningBox.okLabelString:	再試行
+*ccWarningTopLevelShell.title:	エラー
+
+!
+! Connection status (ccprop.app)
+!
+
+*ccPropTopLevelShell*bpf.labelString: バイト/フレーム
+*ccPropTopLevelShell*bytes.labelString: バイト
+*ccPropTopLevelShell*ccPropOK.labelString: OK
+*ccPropTopLevelShell*ccPropReset.labelString: リセット
+*ccPropTopLevelShell*encryptionLabel.labelString: 暗号化レベル:
+*ccPropTopLevelShell*errors.labelString: フレーム エラー
+*ccPropTopLevelShell*frames.labelString: フレーム
+*ccPropTopLevelShell*infoLabelIincoming.labelString :受信
+*ccPropTopLevelShell*infoLabelOutgoing.labelString :送信
+*ccPropTopLevelShell*serverLabel.labelString: 接続先サーバー:
+*ccPropTopLevelShell.title: 接続の状態
+*ccPropTopLevelShell*userLabel.labelString: ユーザー:
+*ccPropTopLevelShell*versionLabel.labelString: バージョン:
+
+!
+! Top level (ica_client.app)
+!
+
+Wfcmgr*connectionViewButton.labelString : コネクション ビュー(C)
+Wfcmgr*connectionViewButton.mnemonic : C
+Wfcmgr*entryConn2.labelString:	選択アイテムに接続
+Wfcmgr*entryConn2.mnemonic:	C
+Wfcmgr*entryCopy.labelString:	コピー(O)...
+Wfcmgr*entryCopy.mnemonic:	O
+Wfcmgr*entryDelete.labelString:	削除(D)...
+Wfcmgr*entryDelete.mnemonic:	D
+Wfcmgr*entryDisconnectPNA.labelString:	Citrix XenApp を切断(D)
+Wfcmgr*entryDisconnectPNA.mnemonic : D
+Wfcmgr*entryExit.labelString:	終了(X)
+Wfcmgr*entryExit.mnemonic:	X
+Wfcmgr*entryLogoffPNA.labelString : Citrix XenApp をログオフ(L)
+Wfcmgr*entryLogoffPNA.mnemonic : L
+Wfcmgr*entryNew.labelString:	新規作成(N)...
+Wfcmgr*entryNew.mnemonic:	N
+Wfcmgr*entryProp.labelString:	プロパティ(P)...
+Wfcmgr*entryProp.mnemonic:	P
+Wfcmgr*entryReconnectPNA.labelString:	Citrix XenApp に再接続(R)
+Wfcmgr*entryReconnectPNA.mnemonic : R
+Wfcmgr*gotoButton.labelString : ビューの選択(G)...
+Wfcmgr*gotoButton.mnemonic : G
+Wfcmgr*helpAbout.labelString:	バージョン情報(A)...
+Wfcmgr*helpAbout.mnemonic:	A
+Wfcmgr*helpCitrix.labelString: Citrix 社の Web ページ(C)...
+Wfcmgr*helpCitrix.mnemonic: C
+Wfcmgr*helpDiag.labelString:	診断情報(D)...
+Wfcmgr*helpDiag.mnemonic:	D
+Wfcmgr*helpMenu1.labelString:	ヘルプ(H)
+Wfcmgr*helpMenu1.mnemonic:	H
+Wfcmgr*icaPNAFolderLabel.labelString : フォルダー:
+Wfcmgr*icaUpFolderIcon.labelString : 上のフォルダーに移動
+Wfcmgr*listHeader.desclabelString:	コネクション名
+Wfcmgr*listHeader.servlabelString:	接続先
+Wfcmgr*pNAViewButton.labelString : Citrix XenApp ビュー(P)
+Wfcmgr*pNAViewButton.mnemonic : p
+Wfcmgr*refreshButton.labelString : アプリケーションの更新(A)
+Wfcmgr*refreshButton.mnemonic : A
+Wfcmgr*settingsButton.labelString : 設定(S)
+Wfcmgr*settingsButton.mnemonic : S
+Wfcmgr.title:	Citrix Receiver
+Wfcmgr*toolsCCbutton.labelString:	コネクション センター(C)
+Wfcmgr*toolsCCbutton.mnemonic:	C
+Wfcmgr*toolsMenu.labelString:	ツール(T)
+Wfcmgr*toolsMenu.mnemonic:	T
+Wfcmgr*toolsXcapture.labelString:	Xcapture(X)
+Wfcmgr*toolsXcapture.mnemonic:	x
+Wfcmgr*viewMenu.labelString : ビュー(V)
+Wfcmgr*viewMenu.mnemonic : V
+
+!
+! Default settings (options_dialog.app)
+!
+
+*browseAddServerFormShell*browseAddServerForm.cancelLabelString:	キャンセル
+*browseAddServerFormShell*browseAddServerForm.helpLabelString:	ヘルプ
+*browseAddServerFormShell*browseAddServerForm.messageString:	新しいサーバー アドレスを入力してください
+*browseAddServerFormShell*browseAddServerForm.okLabelString:	OK
+*browseAddServerFormShell.title:	サーバー アドレスの追加
+*browseAddServerPortFormShell*browseAddServerPortBox.cancelLabelString:	キャンセル
+*browseAddServerPortFormShell*browseAddServerPortBox.helpLabelString:	ヘルプ
+*browseAddServerPortFormShell*browseAddServerPortBox.messageString:	追加するサーバーのアドレスとポートを入力してください
+*browseAddServerPortFormShell*browseAddServerPortBox.okLabelString:	OK
+*browseAddServerPortFormShell*browseAddServerPortBox.width:	448
+*browseAddServerPortFormShell.title:	サーバーのアドレスの追加
+*browseRenameGroupShell*browseRenameGroupForm.cancelLabelString:	キャンセル
+*browseRenameGroupShell*browseRenameGroupForm.helpLabelString:	ヘルプ
+*browseRenameGroupShell*browseRenameGroupForm.messageString:	新しいグループ名を入力してください
+*browseRenameGroupShell*browseRenameGroupForm.okLabelString:	OK
+*browseRenameGroupShell*browseRenameGroupForm.width:  306
+*browseRenameGroupShell.title:	グループ名の変更
+*comPortFileSelectionShell*comPortFileSelectionBox.applyLabelString:	フィルター
+*comPortFileSelectionShell*comPortFileSelectionBox.cancelLabelString:	キャンセル
+*comPortFileSelectionShell*comPortFileSelectionBox.dirListLabelString:	ディレクトリ
+*comPortFileSelectionShell*comPortFileSelectionBox.fileListLabelString:	ファイル
+*comPortFileSelectionShell*comPortFileSelectionBox.filterLabelString:	フィルター
+*comPortFileSelectionShell*comPortFileSelectionBox.helpLabelString:	ヘルプ
+*comPortFileSelectionShell*comPortFileSelectionBox.okLabelString:	OK
+*comPortFileSelectionShell*comPortFileSelectionBox.selectionLabelString:	選択した場所
+*comPortFileSelectionShell.title:	COM ポート デバイスの選択
+*pnaServerURLShell*pnaServerURLForm.cancelLabelString : キャンセル
+*pnaServerURLShell*pnaServerURLForm.helpLabelString : ヘルプ
+*pnaServerURLShell*pnaServerURLForm.messageString : サーバーの URL
+*pnaServerURLShell*pnaServerURLForm.okLabelString : 更新
+*pnaServerURLShell*pnaServerURLForm.width : 382
+*pnaServerURLShell.title: Citrix XenApp 設定
+*settingstopLevelShell*addressListLabel2.labelString:	サーバー グループ
+*settingstopLevelShell*addressListLabel.labelString:	アドレスの一覧
+*settingstopLevelShell*browserAddButton.labelString:	追加...
+*settingstopLevelShell*browserDeleteButton.labelString:	削除
+*settingstopLevelShell*browserGroupBackup1.labelString:	バックアップ 1: 
+*settingstopLevelShell*browserGroupBackup2.labelString:	バックアップ 2: 
+*settingstopLevelShell*browserGroupOptionMenu.labelString:	
+*settingstopLevelShell*browserGroupPrimary.labelString:	プライマリ: 
+*settingstopLevelShell*browserProtocolOptionMenu.labelString:	
+*settingstopLevelShell*browserProtocolSSLHTTPSButton.labelString:	SSL/TLS + HTTPS
+*settingstopLevelShell*browserProtocolTCPButton.labelString:	TCP/IP
+*settingstopLevelShell*browserProtocolTCPHTTPButton.labelString:	TCP/IP + HTTP
+*settingstopLevelShell*browserRenameGroupButton.labelString:	グループ名の変更...
+*settingstopLevelShell*cacheBitmapSizeLabel.labelString:	キャッシュするビットマップの最小サイズ:
+*settingstopLevelShell*cacheBitmapSizeScaleTxtFld.labelString:	%d KB
+*settingstopLevelShell*cacheClearNowButton.labelString:	キャッシュのクリア
+*settingstopLevelShell*cacheDirectoryChangeButton.labelString:	変更...
+*settingstopLevelShell*cacheDirectoryLabel.labelString:	ディスク キャッシュ ディレクトリ:
+*settingstopLevelShell*cacheDirFSB.applyLabelString:	フィルター
+*settingstopLevelShell*cacheDirFSB.cancelLabelString:	キャンセル
+*settingstopLevelShell*cacheDirFSB.dirListLabelString:	ディレクトリ
+*settingstopLevelShell*cacheDirFSB.fileListLabelString:	ファイル
+*settingstopLevelShell*cacheDirFSB.filterLabelString:	フィルター
+*settingstopLevelShell*cacheDirFSB.okLabelString:	OK
+*settingstopLevelShell*cacheDirFSB.selectionLabelString:	選択した場所
+*settingstopLevelShell*cacheDirFSBShell.title:	キャッシュ ディレクトリ
+*settingstopLevelShell*cacheDiskSpaceLabel.labelString: 推奨最大キャッシュ サイズ 10M
+*settingstopLevelShell*diskFreeSpaceLabel.labelString: ディスク空き領域
+*settingstopLevelShell*bitmapCacheSizeLabel.labelString: ビットマップ キャッシュ サイズ（KB）
+*settingstopLevelShell*diskFreeSpaceValue.labelString: %u MB
+*settingstopLevelShell*colormapToggleButton1.labelString:	共有 - 近似色
+*settingstopLevelShell*colormapToggleButton2.labelString:	個人用 - 正確な色
+*settingstopLevelShell*comPortListAddButton.labelString:	追加...
+*settingstopLevelShell*comPortListDeleteButton.labelString:	削除
+*settingstopLevelShell*comPortListDownButton.labelString:	下に移動
+*settingstopLevelShell*comPortListLabel.labelString:	COM ポート デバイス
+*settingstopLevelShell*comPortListUpButton.labelString:	上に移動
+*settingstopLevelShell*defaultColorsToggle1.labelString:	16 色
+*settingstopLevelShell*defaultColorsToggle2.labelString:	256 色
+*settingstopLevelShell*defaultColorsToggle3.labelString:	32000 色
+*settingstopLevelShell*defaultColorsToggle4.labelString:	1600 万色
+*settingstopLevelShell*defaultColorsToggle5.labelString:        自動
+*settingstopLevelShell*defWinColormapLabel.labelString:	デフォルトの 256 カラー マッピング
+*settingstopLevelShell*defWinColorsLabel.labelString:	デフォルトのウィンドウの色
+*settingstopLevelShell*defWinSizeLabel.labelString:	デフォルトのウィンドウのサイズ
+*settingstopLevelShell*driveMapLabel0.labelString:	A:
+*settingstopLevelShell*driveMapLabel10.labelString:	K:
+*settingstopLevelShell*driveMapLabel11.labelString:	L:
+*settingstopLevelShell*driveMapLabel12.labelString:	M:
+*settingstopLevelShell*driveMapLabel13.labelString:	N:
+*settingstopLevelShell*driveMapLabel14.labelString:	O:
+*settingstopLevelShell*driveMapLabel15.labelString:	P:
+*settingstopLevelShell*driveMapLabel16.labelString:	Q:
+*settingstopLevelShell*driveMapLabel17.labelString:	R:
+*settingstopLevelShell*driveMapLabel18.labelString:	S:
+*settingstopLevelShell*driveMapLabel19.labelString:	T:
+*settingstopLevelShell*driveMapLabel1.labelString:	B:
+*settingstopLevelShell*driveMapLabel20.labelString:	U:
+*settingstopLevelShell*driveMapLabel21.labelString:	V:
+*settingstopLevelShell*driveMapLabel22.labelString:	W:
+*settingstopLevelShell*driveMapLabel23.labelString:	X:
+*settingstopLevelShell*driveMapLabel24.labelString:	Y:
+*settingstopLevelShell*driveMapLabel25.labelString:	Z:
+*settingstopLevelShell*driveMapLabel2.labelString:	C:
+*settingstopLevelShell*driveMapLabel3.labelString:	D:
+*settingstopLevelShell*driveMapLabel4.labelString:	E:
+*settingstopLevelShell*driveMapLabel5.labelString:	F:
+*settingstopLevelShell*driveMapLabel6.labelString:	G:
+*settingstopLevelShell*driveMapLabel7.labelString:	H:
+*settingstopLevelShell*driveMapLabel8.labelString:	I:
+*settingstopLevelShell*driveMapLabel9.labelString:	J:
+*settingstopLevelShell*driveMappingClearPB.labelString:	クリア
+*settingstopLevelShell*driveMappingEnableTB.labelString:	ドライブ マッピングを有効にする
+*settingstopLevelShell*driveMappingDynamicEnableTB.labelString: 動的なマッピングを有効にする
+*settingstopLevelShell*driveMappingFSB.applyLabelString:	フィルター
+*settingstopLevelShell*driveMappingFSB.cancelLabelString:	キャンセル
+*settingstopLevelShell*driveMappingFSB.dirListLabelString:	ディレクトリ
+*settingstopLevelShell*driveMappingFSB.fileListLabelString:	ファイル
+*settingstopLevelShell*driveMappingFSB.filterLabelString:	フィルター
+*settingstopLevelShell*driveMappingFSB.okLabelString:	OK
+*settingstopLevelShell*driveMappingFSB.selectionLabelString:	選択した場所
+*settingstopLevelShell*driveMappingFSBShell.title:	ドライブ マッピング
+*settingstopLevelShell*driveMappingModifyPB.labelString:	変更...
+*settingstopLevelShell*driveMappingSWLabel.labelString:	有効/読み取り/書き込み
+*settingstopLevelShell*enableTB0.labelString:	
+*settingstopLevelShell*enableTB10.labelString:	
+*settingstopLevelShell*enableTB11.labelString:	
+*settingstopLevelShell*enableTB12.labelString:	
+*settingstopLevelShell*enableTB13.labelString:	
+*settingstopLevelShell*enableTB14.labelString:	
+*settingstopLevelShell*enableTB15.labelString:	
+*settingstopLevelShell*enableTB16.labelString:	
+*settingstopLevelShell*enableTB17.labelString:	
+*settingstopLevelShell*enableTB18.labelString:	
+*settingstopLevelShell*enableTB19.labelString:	
+*settingstopLevelShell*enableTB1.labelString:	
+*settingstopLevelShell*enableTB20.labelString:	
+*settingstopLevelShell*enableTB21.labelString:	
+*settingstopLevelShell*enableTB22.labelString:	
+*settingstopLevelShell*enableTB23.labelString:	
+*settingstopLevelShell*enableTB24.labelString:	
+*settingstopLevelShell*enableTB25.labelString:	
+*settingstopLevelShell*enableTB2.labelString:	
+*settingstopLevelShell*enableTB3.labelString:	
+*settingstopLevelShell*enableTB4.labelString:	
+*settingstopLevelShell*enableTB5.labelString:	
+*settingstopLevelShell*enableTB6.labelString:	
+*settingstopLevelShell*enableTB7.labelString:	
+*settingstopLevelShell*enableTB8.labelString:	
+*settingstopLevelShell*enableTB9.labelString:	
+*settingstopLevelShell*firewallToggle.labelString:	ファイアウォールを介した接続で代替アドレスを使用する
+*settingstopLevelShell*fulldesktop.labelString: 全画面デスクトップにのみ直接使用
+*settingstopLevelShell*hotKeysLabel10.labelString: Alt+F10
+*settingstopLevelShell*hotKeysLabel11.labelString: Alt+F11
+*settingstopLevelShell*hotKeysLabel12.labelString: Alt+F12
+*settingstopLevelShell*hotKeysLabel13.labelString: Alt+Tab
+*settingstopLevelShell*hotKeysLabel14.labelString:	Alt+Shift+Tab
+*settingstopLevelShell*hotKeysLabel15.labelString:	SpeedScreen オン/オフ
+*settingstopLevelShell*hotKeysLabel1.labelString: Alt+F1
+*settingstopLevelShell*hotKeysLabel2.labelString: Alt+F2
+*settingstopLevelShell*hotKeysLabel3.labelString: Alt+F3
+*settingstopLevelShell*hotKeysLabel4.labelString: Alt+F4
+*settingstopLevelShell*hotKeysLabel5.labelString: Alt+F5
+*settingstopLevelShell*hotKeysLabel6.labelString: Alt+F6
+*settingstopLevelShell*hotKeysLabel7.labelString: Alt+F7
+*settingstopLevelShell*hotKeysLabel8.labelString: Alt+F8
+*settingstopLevelShell*hotKeysLabel9.labelString: Alt+F9
+*settingstopLevelShell*keyPassthruEscapeLabel.labelString: 直接のキー使用を停止
+*settingstopLevelShell*keyPassthruLabel.labelString: キーボード ショートカットの使用\n（例: Alt + Tab）
+*settingstopLevelShell*labelCacheDirWarning.labelString:	警告: ディレクトリが存在しません
+*settingstopLevelShell*labelCacheSpaceWarning.labelString:	警告: 使用可能なディスク容量を超えます
+*settingstopLevelShell*local.labelString: 変換して使用
+*settingstopLevelShell*pNAAudioQualityDefault.labelString: デフォルト
+*settingstopLevelShell*pNAConfigDisabledLabel.labelString: クライアント側で設定を変更できません。
+*settingstopLevelShell*pNACustomizeLogoffLabel.labelString: ［ログオフ］の詳細
+*settingstopLevelShell*pNALogoffWIAppsButton.labelString: サーバーおよびアプリケーションからログオフする
+*settingstopLevelShell*pNALogoffWIButton.labelString: サーバーからのみログオフする
+*settingstopLevelShell*pNALogonModePrompt.labelString : ユーザーに通知
+*settingstopLevelShell*pNAOptionDisplayButton.labelString:	アプリケーションの表示
+*settingstopLevelShell*pNAOptionReconnectButton.labelString:	アプリケーションへの再接続
+*settingstopLevelShell*pNAOptionRefreshButton.labelString:      アプリケーションの更新
+*settingstopLevelShell*pNAOptionServerButton.labelString:       サーバー
+*settingstopLevelShell*pNAOptionSessionButton.labelString:	セッション オプション
+*settingstopLevelShell*pNAReconnectButtonButton.labelString: [再接続] メニューで自動再接続を有効にする
+*settingstopLevelShell*pNAReconnectLogonButton.labelString: ログオンするときに自動再接続を有効にする
+*settingstopLevelShell*pNAWinSizeDefault.labelString:	デフォルト
+*settingstopLevelShell*prefAudioInputToggle.labelString:	オーディオ入力を許可する
+*settingstopLevelShell*prefKeyboardLabel.labelString:	キーボードの種類 (クライアント)
+*settingstopLevelShell*prefKeyboardSelButt.labelString:	参照
+*settingstopLevelShell*prefLocaleLabel.labelString:	キーボード レイアウト
+*settingstopLevelShell*prefLocaleSelButt.labelString:	参照
+*settingstopLevelShell*prefMinimizeToggle.labelString:	使用時に最小化する
+*settingstopLevelShell*prefPCKbdSelButt.labelString:	参照
+*settingstopLevelShell*prefPCKeyboardLabel.labelString:	キーボードの種類 (サーバー)
+*settingstopLevelShell*prefSoundToggle.labelString:	Windows の警告音を有効にする
+*settingstopLevelShell*protocolLabel.labelString:	ネットワーク プロトコル
+*settingstopLevelShell*proxyAddressDesc.labelString: プロキシ サーバーのアドレス
+*settingstopLevelShell*proxyLabel.labelString: プロキシの種類
+*settingstopLevelShell*proxyPortDesc.labelString: ポート
+*settingstopLevelShell*proxyTypeBrowserToggle.labelString: Web ブラウザーの設定を使用
+*settingstopLevelShell*proxyTypeNoneToggle.labelString: なし (直接接続)
+*settingstopLevelShell*proxyTypeSecureToggle.labelString: Secure (HTTPS)
+*settingstopLevelShell*proxyTypeSocksToggle.labelString: SOCKS
+*settingstopLevelShell*proxyTypeWpadToggle.labelString: 自動検出プロキシ
+*settingstopLevelShell*proxySSLAddressDesc.labelString: Secure Gateway アドレス
+*settingstopLevelShell*proxySSLPortDesc.labelString: ポート
+*settingstopLevelShell*proxySSLLabel.labelString: Citrix Secure Gateway（リレー モード）
+*settingstopLevelShell*proxySSLFQDNLabel.labelString: アドレスは完全修飾ドメイン名で指定する必要があります
+*settingstopLevelShell*pushButton10.labelString: F9
+*settingstopLevelShell*pushButton11.labelString: F10
+*settingstopLevelShell*pushButton12.labelString: F11
+*settingstopLevelShell*pushButton13.labelString: F12
+*settingstopLevelShell*pushButton14.labelString: Tab
+*settingstopLevelShell*pushButton15.labelString: -
+*settingstopLevelShell*pushButton16.labelString: +
+*settingstopLevelShell*pushButton189.labelString:	(なし)
+*settingstopLevelShell*pushButton190.labelString: F1
+*settingstopLevelShell*pushButton191.labelString: F2
+*settingstopLevelShell*pushButton192.labelString: F3
+*settingstopLevelShell*pushButton193.labelString: F4
+*settingstopLevelShell*pushButton194.labelString: F5
+*settingstopLevelShell*pushButton195.labelString: F6
+*settingstopLevelShell*pushButton196.labelString: F7
+*settingstopLevelShell*pushButton197.labelString: F8
+*settingstopLevelShell*pushButton198.labelString: F9
+*settingstopLevelShell*pushButton199.labelString: F10
+*settingstopLevelShell*pushButton1.labelString:	(なし)
+*settingstopLevelShell*pushButton200.labelString: F11
+*settingstopLevelShell*pushButton201.labelString: F12
+*settingstopLevelShell*pushButton202.labelString: Tab
+*settingstopLevelShell*pushButton203.labelString: -
+*settingstopLevelShell*pushButton204.labelString: +
+*settingstopLevelShell*pushButton241.labelString:	(なし)
+*settingstopLevelShell*pushButton242.labelString: F1
+*settingstopLevelShell*pushButton243.labelString: F2
+*settingstopLevelShell*pushButton244.labelString: F3
+*settingstopLevelShell*pushButton245.labelString: F4
+*settingstopLevelShell*pushButton246.labelString: F5
+*settingstopLevelShell*pushButton247.labelString: F6
+*settingstopLevelShell*pushButton248.labelString: F7
+*settingstopLevelShell*pushButton249.labelString: F8
+*settingstopLevelShell*pushButton250.labelString: F9
+*settingstopLevelShell*pushButton251.labelString: F10
+*settingstopLevelShell*pushButton252.labelString: F11
+*settingstopLevelShell*pushButton253.labelString: F12
+*settingstopLevelShell*pushButton254.labelString: Tab
+*settingstopLevelShell*pushButton255.labelString: -
+*settingstopLevelShell*pushButton256.labelString: +
+*settingstopLevelShell*pushButton257.labelString:	(なし)
+*settingstopLevelShell*pushButton258.labelString: F1
+*settingstopLevelShell*pushButton259.labelString: F2
+*settingstopLevelShell*pushButton260.labelString: F3
+*settingstopLevelShell*pushButton261.labelString: F4
+*settingstopLevelShell*pushButton262.labelString: F5
+*settingstopLevelShell*pushButton263.labelString: F6
+*settingstopLevelShell*pushButton264.labelString: F7
+*settingstopLevelShell*pushButton265.labelString: F8
+*settingstopLevelShell*pushButton266.labelString: F9
+*settingstopLevelShell*pushButton267.labelString: F10
+*settingstopLevelShell*pushButton268.labelString: F11
+*settingstopLevelShell*pushButton269.labelString: F12
+*settingstopLevelShell*pushButton270.labelString: Tab
+*settingstopLevelShell*pushButton271.labelString: -
+*settingstopLevelShell*pushButton272.labelString: +
+*settingstopLevelShell*pushButton273.labelString:	(なし)
+*settingstopLevelShell*pushButton274.labelString: F1
+*settingstopLevelShell*pushButton275.labelString: F2
+*settingstopLevelShell*pushButton276.labelString: F3
+*settingstopLevelShell*pushButton277.labelString: F4
+*settingstopLevelShell*pushButton278.labelString: F5
+*settingstopLevelShell*pushButton279.labelString: F6
+*settingstopLevelShell*pushButton280.labelString: F7
+*settingstopLevelShell*pushButton281.labelString: F8
+*settingstopLevelShell*pushButton282.labelString: F9
+*settingstopLevelShell*pushButton283.labelString: F10
+*settingstopLevelShell*pushButton284.labelString: F11
+*settingstopLevelShell*pushButton285.labelString: F12
+*settingstopLevelShell*pushButton286.labelString: Tab
+*settingstopLevelShell*pushButton287.labelString: -
+*settingstopLevelShell*pushButton288.labelString: +
+*settingstopLevelShell*pushButton289.labelString:	(なし)
+*settingstopLevelShell*pushButton290.labelString: F1
+*settingstopLevelShell*pushButton291.labelString: F2
+*settingstopLevelShell*pushButton292.labelString: F3
+*settingstopLevelShell*pushButton293.labelString: F4
+*settingstopLevelShell*pushButton294.labelString: F5
+*settingstopLevelShell*pushButton295.labelString: F6
+*settingstopLevelShell*pushButton296.labelString: F7
+*settingstopLevelShell*pushButton297.labelString: F8
+*settingstopLevelShell*pushButton298.labelString: F9
+*settingstopLevelShell*pushButton299.labelString: F10
+*settingstopLevelShell*pushButton2.labelString: F1
+*settingstopLevelShell*pushButton300.labelString: F11
+*settingstopLevelShell*pushButton301.labelString: F12
+*settingstopLevelShell*pushButton302.labelString: Tab
+*settingstopLevelShell*pushButton303.labelString: -
+*settingstopLevelShell*pushButton304.labelString: +
+*settingstopLevelShell*pushButton305.labelString:	(なし)
+*settingstopLevelShell*pushButton306.labelString: F1
+*settingstopLevelShell*pushButton307.labelString: F2
+*settingstopLevelShell*pushButton308.labelString: F3
+*settingstopLevelShell*pushButton309.labelString: F4
+*settingstopLevelShell*pushButton310.labelString: F5
+*settingstopLevelShell*pushButton311.labelString: F6
+*settingstopLevelShell*pushButton312.labelString: F7
+*settingstopLevelShell*pushButton313.labelString: F8
+*settingstopLevelShell*pushButton314.labelString: F9
+*settingstopLevelShell*pushButton315.labelString: F10
+*settingstopLevelShell*pushButton316.labelString: F11
+*settingstopLevelShell*pushButton317.labelString: F12
+*settingstopLevelShell*pushButton318.labelString: Tab
+*settingstopLevelShell*pushButton319.labelString: -
+*settingstopLevelShell*pushButton320.labelString: +
+*settingstopLevelShell*pushButton321.labelString:	(なし)
+*settingstopLevelShell*pushButton322.labelString: F1
+*settingstopLevelShell*pushButton323.labelString: F2
+*settingstopLevelShell*pushButton324.labelString: F3
+*settingstopLevelShell*pushButton325.labelString: F4
+*settingstopLevelShell*pushButton326.labelString: F5
+*settingstopLevelShell*pushButton327.labelString: F6
+*settingstopLevelShell*pushButton328.labelString: F7
+*settingstopLevelShell*pushButton329.labelString: F8
+*settingstopLevelShell*pushButton330.labelString: F9
+*settingstopLevelShell*pushButton331.labelString: F10
+*settingstopLevelShell*pushButton332.labelString: F11
+*settingstopLevelShell*pushButton333.labelString: F12
+*settingstopLevelShell*pushButton334.labelString: Tab
+*settingstopLevelShell*pushButton335.labelString: -
+*settingstopLevelShell*pushButton336.labelString: +
+*settingstopLevelShell*pushButton337.labelString:	(なし)
+*settingstopLevelShell*pushButton338.labelString: F1
+*settingstopLevelShell*pushButton339.labelString: F2
+*settingstopLevelShell*pushButton340.labelString: F3
+*settingstopLevelShell*pushButton341.labelString: F4
+*settingstopLevelShell*pushButton342.labelString: F5
+*settingstopLevelShell*pushButton343.labelString: F6
+*settingstopLevelShell*pushButton344.labelString: F7
+*settingstopLevelShell*pushButton345.labelString: F8
+*settingstopLevelShell*pushButton346.labelString: F9
+*settingstopLevelShell*pushButton347.labelString: F10
+*settingstopLevelShell*pushButton348.labelString: F11
+*settingstopLevelShell*pushButton349.labelString: F12
+*settingstopLevelShell*pushButton350.labelString: Tab
+*settingstopLevelShell*pushButton351.labelString: -
+*settingstopLevelShell*pushButton352.labelString: +
+*settingstopLevelShell*pushButton353.labelString:	(なし)
+*settingstopLevelShell*pushButton354.labelString: F1
+*settingstopLevelShell*pushButton355.labelString: F2
+*settingstopLevelShell*pushButton356.labelString: F3
+*settingstopLevelShell*pushButton357.labelString: F4
+*settingstopLevelShell*pushButton358.labelString: F5
+*settingstopLevelShell*pushButton359.labelString: F6
+*settingstopLevelShell*pushButton360.labelString: F7
+*settingstopLevelShell*pushButton361.labelString: F8
+*settingstopLevelShell*pushButton362.labelString: F9
+*settingstopLevelShell*pushButton363.labelString: F10
+*settingstopLevelShell*pushButton364.labelString: F11
+*settingstopLevelShell*pushButton365.labelString: F12
+*settingstopLevelShell*pushButton366.labelString: Tab
+*settingstopLevelShell*pushButton367.labelString: -
+*settingstopLevelShell*pushButton368.labelString: +
+*settingstopLevelShell*pushButton369.labelString:	(なし)
+*settingstopLevelShell*pushButton370.labelString: F1
+*settingstopLevelShell*pushButton371.labelString: F2
+*settingstopLevelShell*pushButton372.labelString: F3
+*settingstopLevelShell*pushButton373.labelString: F4
+*settingstopLevelShell*pushButton374.labelString: F5
+*settingstopLevelShell*pushButton375.labelString: F6
+*settingstopLevelShell*pushButton376.labelString: F7
+*settingstopLevelShell*pushButton377.labelString: F8
+*settingstopLevelShell*pushButton378.labelString: F9
+*settingstopLevelShell*pushButton379.labelString: F10
+*settingstopLevelShell*pushButton380.labelString: F11
+*settingstopLevelShell*pushButton381.labelString: F12
+*settingstopLevelShell*pushButton382.labelString: Tab
+*settingstopLevelShell*pushButton383.labelString: -
+*settingstopLevelShell*pushButton384.labelString: +
+*settingstopLevelShell*pushButton385.labelString:	(なし)
+*settingstopLevelShell*pushButton386.labelString: F1
+*settingstopLevelShell*pushButton387.labelString: F2
+*settingstopLevelShell*pushButton388.labelString: F3
+*settingstopLevelShell*pushButton389.labelString: F4
+*settingstopLevelShell*pushButton390.labelString: F5
+*settingstopLevelShell*pushButton391.labelString: F6
+*settingstopLevelShell*pushButton392.labelString: F7
+*settingstopLevelShell*pushButton393.labelString: F8
+*settingstopLevelShell*pushButton394.labelString: F9
+*settingstopLevelShell*pushButton395.labelString: F10
+*settingstopLevelShell*pushButton396.labelString: F11
+*settingstopLevelShell*pushButton397.labelString: F12
+*settingstopLevelShell*pushButton398.labelString: Tab
+*settingstopLevelShell*pushButton399.labelString: -
+*settingstopLevelShell*pushButton3.labelString: F2
+*settingstopLevelShell*pushButton400.labelString: +
+*settingstopLevelShell*pushButton401.labelString:	(なし)
+*settingstopLevelShell*pushButton402.labelString: F1
+*settingstopLevelShell*pushButton403.labelString: F2
+*settingstopLevelShell*pushButton404.labelString: F3
+*settingstopLevelShell*pushButton405.labelString: F4
+*settingstopLevelShell*pushButton406.labelString: F5
+*settingstopLevelShell*pushButton407.labelString: F6
+*settingstopLevelShell*pushButton408.labelString: F7
+*settingstopLevelShell*pushButton409.labelString: F8
+*settingstopLevelShell*pushButton410.labelString: F9
+*settingstopLevelShell*pushButton411.labelString: F10
+*settingstopLevelShell*pushButton412.labelString: F11
+*settingstopLevelShell*pushButton413.labelString: F12
+*settingstopLevelShell*pushButton414.labelString: Tab
+*settingstopLevelShell*pushButton415.labelString: -
+*settingstopLevelShell*pushButton416.labelString: +
+*settingstopLevelShell*pushButton417.labelString:	(なし)
+*settingstopLevelShell*pushButton418.labelString: F1
+*settingstopLevelShell*pushButton419.labelString: F2
+*settingstopLevelShell*pushButton420.labelString: F3
+*settingstopLevelShell*pushButton421.labelString: F4
+*settingstopLevelShell*pushButton422.labelString: F5
+*settingstopLevelShell*pushButton423.labelString: F6
+*settingstopLevelShell*pushButton424.labelString: F7
+*settingstopLevelShell*pushButton425.labelString: F8
+*settingstopLevelShell*pushButton426.labelString: F9
+*settingstopLevelShell*pushButton427.labelString: F10
+*settingstopLevelShell*pushButton428.labelString: F11
+*settingstopLevelShell*pushButton429.labelString: F12
+*settingstopLevelShell*pushButton430.labelString: Tab
+*settingstopLevelShell*pushButton431.labelString: -
+*settingstopLevelShell*pushButton432.labelString: +
+*settingstopLevelShell*pushButton433.labelString:	(なし)
+*settingstopLevelShell*pushButton434.labelString: F1
+*settingstopLevelShell*pushButton435.labelString: F2
+*settingstopLevelShell*pushButton436.labelString: F3
+*settingstopLevelShell*pushButton437.labelString: F4
+*settingstopLevelShell*pushButton438.labelString: F5
+*settingstopLevelShell*pushButton439.labelString: F6
+*settingstopLevelShell*pushButton440.labelString: F7
+*settingstopLevelShell*pushButton441.labelString: F8
+*settingstopLevelShell*pushButton442.labelString: F9
+*settingstopLevelShell*pushButton443.labelString: F10
+*settingstopLevelShell*pushButton444.labelString: F11
+*settingstopLevelShell*pushButton445.labelString: F12
+*settingstopLevelShell*pushButton446.labelString: Tab
+*settingstopLevelShell*pushButton447.labelString: -
+*settingstopLevelShell*pushButton448.labelString: +
+*settingstopLevelShell*pushButton449.labelString:	(なし)
+*settingstopLevelShell*pushButton450.labelString: F1
+*settingstopLevelShell*pushButton451.labelString: F2
+*settingstopLevelShell*pushButton452.labelString: F3
+*settingstopLevelShell*pushButton453.labelString: F4
+*settingstopLevelShell*pushButton454.labelString: F5
+*settingstopLevelShell*pushButton455.labelString: F6
+*settingstopLevelShell*pushButton456.labelString: F7
+*settingstopLevelShell*pushButton457.labelString: F8
+*settingstopLevelShell*pushButton458.labelString: F9
+*settingstopLevelShell*pushButton459.labelString: F10
+*settingstopLevelShell*pushButton460.labelString: F11
+*settingstopLevelShell*pushButton461.labelString: F12
+*settingstopLevelShell*pushButton462.labelString: Tab
+*settingstopLevelShell*pushButton463.labelString: -
+*settingstopLevelShell*pushButton464.labelString: +
+*settingstopLevelShell*pushButton4.labelString: F3
+*settingstopLevelShell*pushButton5.labelString: F4
+*settingstopLevelShell*pushButton6.labelString: F5
+*settingstopLevelShell*pushButton7.labelString: F6
+*settingstopLevelShell*pushButton8.labelString: F7
+*settingstopLevelShell*pushButton9.labelString: F8
+*settingstopLevelShell*remote.labelString: 直接使用
+*settingstopLevelShell*secureProxyWarningLabel.labelString: :::t\"警告: Secure（HTTPS）設定を使用している場合、SSL/TLS\":t\"または 128 ビット暗号化も使用してこのプロキシを介した接続\":t\"を保護する必要があります。\"
+*settingstopLevelShell*proxyUsernameLabel.labelString: ユーザー名
+*settingstopLevelShell*proxyPasswordLabel.labelString: パスワード
+*settingstopLevelShell*settingsApplyButt.labelString:	適用
+*settingstopLevelShell*settingsAutoRecnxDelayDesc.labelString: 再接続するまでの時間 (秒)
+*settingstopLevelShell*settingsAutoRecnxEnableButton.labelString: 自動再接続を有効にする
+*settingstopLevelShell*settingsAutoRecnxLabel.labelString: 自動再接続セッション
+*settingstopLevelShell*settingsAutoRecnxPushButton.labelString: 自動再接続
+*settingstopLevelShell*settingsAutoRecnxRetriesDesc.labelString: 最大再接続回数 
+*settingstopLevelShell*settingsBrowsePushButton5.labelString : サーバーの場所
+*settingstopLevelShell*settingsCachePushButton.labelString:	ディスク キャッシュ
+*settingstopLevelShell*settingsCancelButt.labelString:	キャンセル
+*settingstopLevelShell*settingsComPortPushButton.labelString:	COM ポート
+*settingstopLevelShell*settingsDriveMappingPushButton.labelString:	ドライブ マッピング
+*settingstopLevelShell*settingsFirewallPushButton.labelString: ファイアウォール
+*settingstopLevelShell*settingsCSGPushButton.labelString: Secure Gateway
+*settingstopLevelShell*settingsHotkeyPushButton.labelString:	キーボード ショートカット
+*settingstopLevelShell*settingsOkButt.labelString:	OK
+*settingstopLevelShell*settingsPNADisplayLabel.labelString : アイコンの表示
+*settingstopLevelShell*settingsPNAInDesktopButton.labelString : デスクトップ フォルダーで表示する
+*settingstopLevelShell*settingsPNAInMenuButton.labelString : メニューに追加する
+*settingstopLevelShell*settingsPNAPushButton.labelString : Citrix XenApp
+*settingstopLevelShell*settingsPNAReconnectButtonActiveButton.labelString: アクティブなセッションおよび切断されたセッションに接続する
+*settingstopLevelShell*settingsPNAReconnectButtonDisconButton.labelString: 切断されたセッションにのみ接続する
+*settingstopLevelShell*settingsPNAReconnectLabel.labelString: アプリケーションの再接続
+*settingstopLevelShell*settingsPNAReconnectLogonActiveButton.labelString: アクティブなセッションおよび切断されたセッションに接続する
+*settingstopLevelShell*settingsPNAReconnectLogonDisconButton.labelString: 	切断されたセッションにのみ接続する
+*settingstopLevelShell*settingsPNARefreshAtIntervalButton.labelString : 定期的に更新する (時間)
+*settingstopLevelShell*settingsPNARefreshAtLaunchButton.labelString : 公開アプリケーションの起動時に更新する
+*settingstopLevelShell*settingsPNARefreshAtStartButton.labelString : 起動時に一覧を更新する
+*settingstopLevelShell*settingsPNARefreshLabel.labelString : アプリケーションの更新
+*settingstopLevelShell*settingsPNASavePasswordEnableButton.labelString : パスワードを保存する
+*settingstopLevelShell*settingsPNAServerLabel.labelString : サーバー
+*settingstopLevelShell*settingsPNAServerLogonMenu.labelString : ログオン モード
+*settingstopLevelShell*settingsPNAServerURLChangeButton.labelString : 変更...
+*settingstopLevelShell*settingsPNAServerURLDesc.labelString : サーバーの URL
+*settingstopLevelShell*settingsPNASessionAudioQuality.labelString:	サウンドのサポート
+*settingstopLevelShell*settingsPNASessionColorDepth.labelString:	ウィンドウの色
+*settingstopLevelShell*settingsPNASessionKeyPassthruMode.labelString: :::t\"キーボード ショートカットの\":t\"使用(例: Alt + Tab)\"
+*settingstopLevelShell*settingsPNASessionLabel.labelString : セッション
+*settingstopLevelShell*settingsPNASessionWindowSize.labelString : ウィンドウのサイズ
+*settingstopLevelShell*settingsPrefPushButton.labelString:	基本設定
+*settingstopLevelShell*settingsRefreshButt.labelString : 設定を更新
+*settingstopLevelShell*settingsWindowPushButton.labelString:	ウィンドウ
+*settingstopLevelShell*settWindow100percentButton.labelString:	100 %
+*settingstopLevelShell*settWindow1024x768button.labelString:	1024x768
+*settingstopLevelShell*settWindow1280x1024button.labelString:	1280x1024
+*settingstopLevelShell*settWindow1600x1200button.labelString:	1600x1200
+*settingstopLevelShell*settWindow1920x1080button.labelString:	1920x1080
+*settingstopLevelShell*settWindow1920x1200button.labelString:	1920x1200
+*settingstopLevelShell*settWindow1920x1440button.labelString:	1920x1440
+*settingstopLevelShell*settWindow2048x1536button.labelString:	2048x1536
+*settingstopLevelShell*settWindow25percentButton.labelString:	25 %
+*settingstopLevelShell*settWindow50percentButton.labelString:	50 %
+*settingstopLevelShell*settWindow640x480button.labelString:	640x480
+*settingstopLevelShell*settWindow75percentButton.labelString:	75 %
+*settingstopLevelShell*settWindow800x600button.labelString:	800x600
+*settingstopLevelShell*settWindowFixedDescLabel.labelString:	:::t\"ICA コネクションに使用するユー\":t\"ザー設定のウィンドウのサイズを\":t\"選択します。\"
+*settingstopLevelShell*settWindowFixedSizeToggle.labelString:	指定のサイズ
+*settingstopLevelShell*settWindowFullscreenToggle.labelString:	全画面
+*settingstopLevelShell*settWindowHeightLabel.labelString:	高さ:
+*settingstopLevelShell*settWindowPercentPercentmark.labelString:	%
+*settingstopLevelShell*settWindowPercentPushbutton.labelString:	参照
+*settingstopLevelShell*settWindowPercentToggle.labelString:	画面に対する割合
+*settingstopLevelShell*settWindowSizePushbutton.labelString:	参照
+*settingstopLevelShell*settWindowWidthLabel.labelString:	幅:
+*settingstopLevelShell*settWinFixedTitleLabel.labelString:	指定のウィンドウのサイズ
+*settingstopLevelShell*settWinFullScreenDescriptionLabel.labelString:	:::t\"デフォルトで全画面を使用します。\":t\"ICA コネクションのウィンドウは\"\"画面サイズと一致します。\"
+*settingstopLevelShell*settWinFullscreenTitleLabel.labelString:	全画面
+*settingstopLevelShell*settWinPercentLabel.labelString:	画面に対する割合
+*settingstopLevelShell*settWinScreenPercentageDescLabel.labelString:	:::t\"デフォルトで使用する ICA コネ\":t\"クション ウィンドウの画面に対す\":t\"る割合を選択します。\"
+*settingstopLevelShell*shiftAltButt14.labelString: Alt
+*settingstopLevelShell*shiftAltButt15.labelString: Alt
+*settingstopLevelShell*shiftAltButt16.labelString: Alt
+*settingstopLevelShell*shiftAltButt17.labelString: Alt
+*settingstopLevelShell*shiftAltButt18.labelString: Alt
+*settingstopLevelShell*shiftAltButt19.labelString: Alt
+*settingstopLevelShell*shiftAltButt1.labelString: Alt
+*settingstopLevelShell*shiftAltButt20.labelString: Alt
+*settingstopLevelShell*shiftAltButt21.labelString: Alt
+*settingstopLevelShell*shiftAltButt22.labelString: Alt
+*settingstopLevelShell*shiftAltButt23.labelString: Alt
+*settingstopLevelShell*shiftAltButt24.labelString: Alt
+*settingstopLevelShell*shiftAltButt25.labelString: Alt
+*settingstopLevelShell*shiftAltButt26.labelString: Alt
+*settingstopLevelShell*shiftAltButt27.labelString: Alt
+*settingstopLevelShell*shiftAltButt28.labelString: Alt
+*settingstopLevelShell*shiftAltCtrlButt1.labelString: Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt28.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt29.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt2.labelString: Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt30.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt31.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt32.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt33.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt34.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt35.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt36.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt37.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt38.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt39.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt40.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt41.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt42.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt43.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt44.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt45.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt46.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt47.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt48.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt49.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt50.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt51.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt52.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt53.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt54.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt55.labelString:	Alt+Shift
+*settingstopLevelShell*shiftAltCtrlButt56.labelString:	Alt+Ctrl
+*settingstopLevelShell*shiftAltCtrlButt57.labelString:	Alt+Shift
+*settingstopLevelShell*shiftCtrlButt14.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt15.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt16.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt17.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt18.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt19.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt1.labelString: Ctrl
+*settingstopLevelShell*shiftCtrlButt20.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt21.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt22.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt23.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt24.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt25.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt26.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt27.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlButt28.labelString:	Ctrl
+*settingstopLevelShell*shiftCtrlShiftButt14.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt15.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt16.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt17.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt18.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt19.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt1.labelString: Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt20.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt21.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt22.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt23.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt24.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt25.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt26.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt27.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftCtrlShiftButt28.labelString:	Ctrl+Shift
+*settingstopLevelShell*shiftNoneButt14.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt15.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt16.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt17.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt18.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt19.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt1.labelString: (なし)
+*settingstopLevelShell*shiftNoneButt20.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt21.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt22.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt23.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt24.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt25.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt26.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt27.labelString:	(なし)
+*settingstopLevelShell*shiftNoneButt28.labelString:	(なし)
+*settingstopLevelShell*shiftShiftButt14.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt15.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt16.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt17.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt18.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt19.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt1.labelString: Shift
+*settingstopLevelShell*shiftShiftButt20.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt21.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt22.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt23.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt24.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt25.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt26.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt27.labelString:	Shift
+*settingstopLevelShell*shiftShiftButt28.labelString:	Shift
+*settingstopLevelShell.title:	設定
+
+!
+! Connection properties (prop_dialog.app)
+!
+
+*propertiestopLevelShell*allowSClogon.labelString: スマート カードによるログオンを許可する
+*propertiestopLevelShell*appApplicationLabel.labelString:	アプリケーション:
+*propertiestopLevelShell*appWorkDirLabel.labelString:	作業ディレクトリ:
+*propertiestopLevelShell*audioQualityMenu.labelString:	音質
+*propertiestopLevelShell*colormapToggleButton2.labelString:	共有 - 近似色
+*propertiestopLevelShell*colormapToggleButton3.labelString:	個人用 - 正確な色
+*propertiestopLevelShell*defaultColorsToggle5.labelString:	16 色
+*propertiestopLevelShell*defaultColorsToggle6.labelString:	256 色
+*propertiestopLevelShell*defaultColorsToggle7.labelString:	32000 色
+*propertiestopLevelShell*defaultColorsToggle8.labelString:	1600 万色 
+*propertiestopLevelShell*defaultColorsToggle9.labelString:        自動
+*propertiestopLevelShell*defaultWinColormapToggle1.labelString:	デフォルトを使用する
+*propertiestopLevelShell*defaultWinColsToggle1.labelString:	デフォルトを使用する
+*propertiestopLevelShell*defColorsLabel1.labelString:	ウィンドウの色
+*propertiestopLevelShell*propConnFirewallToggle.labelString: ファイアウォールを介した接続で代替アドレスを使用する
+*propertiestopLevelShell*enableAudioInputToggle.labelString:	オーディオ入力を有効にする
+*propertiestopLevelShell*enableAudioToggle.labelString:	サウンドのサポートを有効にする
+*propertiestopLevelShell*enableDriveMappingToggle.labelString: ドライブ マッピングを有効にする
+*propertiestopLevelShell*enableCacheToggle.labelString:	ビットマップ用ディスク キャッシュを使用する
+*propertiestopLevelShell*enableCompressionToggle.labelString:	データ圧縮を使用する
+*propertiestopLevelShell*enableMidButtPasteToggle.labelString:	マウスの中央ボタンによる貼り付けを有効にする
+*propertiestopLevelShell*encryptLevelMenu.labelString:	暗号化レベル
+*propertiestopLevelShell*highQuality.labelString: 高 - 高品位オーディオ
+*propertiestopLevelShell*lowQuality.labelString: 低 - 低速接続用
+*propertiestopLevelShell*mediumQuality.labelString: 中 - スピーチに最適化
+*propertiestopLevelShell*netDescrLabel.labelString:	コネクション名:
+*propertiestopLevelShell*netDomainLabel.labelString:	ドメイン:
+*propertiestopLevelShell*netOptionalLabel.labelString:	オプション:
+*propertiestopLevelShell*netPasswdLabel.labelString:	パスワード:
+*propertiestopLevelShell*netPubAppTB.labelString:	公開アプリケーション
+*propertiestopLevelShell*netServerSelButt.labelString:	参照
+*propertiestopLevelShell*netServerTB.labelString:	サーバー
+*propertiestopLevelShell*netServLabel.labelString:	接続先
+*propertiestopLevelShell*netUsernameLabel.labelString:	ユーザー名:
+*propertiestopLevelShell*propAutoRecnxDefaultsButton.labelString: デフォルトを使用する
+*propertiestopLevelShell*propAutoRecnxDelayDesc.labelString: 再接続するまでの時間 (秒)
+*propertiestopLevelShell*propAutoRecnxEnableButton.labelString: 自動再接続を有効にする
+*propertiestopLevelShell*propAutoRecnxLabel.labelString: ICA セッションの自動再接続
+*propertiestopLevelShell*propAutoRecnxRetriesDesc.labelString: 最大再接続試行数
+*propertiestopLevelShell*propConnProxyAddressDesc.labelString: プロキシ サーバーのアドレス
+*propertiestopLevelShell*propConnProxyBrowserToggle.labelString: Web ブラウザーの設定を使用
+*propertiestopLevelShell*propConnProxyDefaultToggleButton.labelString: デフォルトを使用する
+*propertiestopLevelShell*propConnProxyNoneToggle.labelString: なし (直接接続)
+*propertiestopLevelShell*propConnProxyPortDesc.labelString:	ポート
+*propertiestopLevelShell*propConnProxySecureToggle.labelString: Secure (HTTPS)
+*propertiestopLevelShell*propConnProxySecureWarningLabel.labelString: :::t\"警告: Secure（HTTPS）設定を使用している場合、SSL/TLS\":t\"または 128 ビット暗号化も使用してこのプロキシを介した接続\":t\"を保護する必要があります。\"
+*propertiestopLevelShell*propConnProxySocksToggle.labelString: SOCKS
+*propertiestopLevelShell*propConnProxyWpadToggle.labelString: 自動検出プロキシ
+*propertiestopLevelShell*propConnSocksLabel.labelString: プロキシの種類 
+*propertiestopLevelShell*propConnProxySSLLabel.labelString: Citrix Secure Gateway（リレー モード）
+*propertiestopLevelShell*propConnProxySSLFQDNLabel.labelString: アドレスは完全修飾ドメイン名である必要があります
+*propertiestopLevelShell*propConnProxySSLAddressDesc.labelString: Secure Gateway アドレス
+*propertiestopLevelShell*propConnProxySSLPortDesc.labelString: ポート
+*propertiestopLevelShell*propConnProxyUsernameLabel.labelString: ユーザー名
+*propertiestopLevelShell*propConnProxyPasswordLabel.labelString: パスワード
+*propertiestopLevelShell*propertiesApplyButt.labelString:	適用
+*propertiestopLevelShell*propertiesAppPushButton.labelString:	アプリケーション
+*propertiestopLevelShell*propertiesAutoRecnxPushButton.labelString: 自動再接続
+*propertiestopLevelShell*propertiesCancelButt.labelString:	キャンセル
+*propertiestopLevelShell*propertiesCnxPushButton.labelString:	コネクション
+*propertiestopLevelShell*propertiesCredentialsPushButton.labelString:	ログオン
+*propertiestopLevelShell*propertiesNetPushButton.labelString:	ネットワーク
+*propertiestopLevelShell*propertiesOkButt.labelString:	OK
+*propertiestopLevelShell*propertiesProxyPushButton.labelString: ファイアウォール 
+*propertiestopLevelShell*propertiesWindowPushButton.labelString:	ウィンドウ
+*propertiestopLevelShell*propertiesCSGPushButton.labelString: Secure Gateway
+*propertiestopLevelShell*propProtocolDefaultToggle.labelString:	デフォルトを使用する
+*propertiestopLevelShell*propProtocolHTTPButton.labelString:	TCP/IP + HTTP
+*propertiestopLevelShell*propProtocolSelectLabel.labelString:	ネットワーク プロトコル
+*propertiestopLevelShell*propProtocolSSLButton.labelString:	SSL/TLS + HTTPS
+*propertiestopLevelShell*propProtocolUDPButton.labelString:	TCP/IP
+*propertiestopLevelShell*propServLocDefaultToggle.labelString:	デフォルトを使用する
+*propertiestopLevelShell*propServLocLabel.labelString:	サーバーの場所
+*propertiestopLevelShell*propWinDefaultSizeToggle.labelString:	デフォルトを使用する
+*propertiestopLevelShell*propWindow100percentButton.labelString:	100 %
+*propertiestopLevelShell*propWindow1024x768button.labelString:	1024x768
+*propertiestopLevelShell*propWindow1280x1024button.labelString:	1280x1024
+*propertiestopLevelShell*propWindow1600x1200button.labelString:	1600x1200
+*propertiestopLevelShell*propWindow1920x1080button.labelString:	1920x1080
+*propertiestopLevelShell*propWindow1920x1200button.labelString:	1920x1200
+*propertiestopLevelShell*propWindow1920x1440button.labelString:	1920x1440
+*propertiestopLevelShell*propWindow2048x1536button.labelString:	2048x1536
+*propertiestopLevelShell*propWindow25percentButton.labelString:	25 %
+*propertiestopLevelShell*propWindow50percentButton.labelString:	50 %
+*propertiestopLevelShell*propWindow640x480button.labelString:	640x480
+*propertiestopLevelShell*propWindow75percentButton.labelString:	75 %
+*propertiestopLevelShell*propWindow800x600button.labelString:	800x600
+*propertiestopLevelShell*propWindowFixedDescLabel.labelString:	:::t\"この ICA コネクションのウィン\"\"ドウのサイズを選択してください。\"
+*propertiestopLevelShell*propWindowHeightLabel.labelString:	高さ:
+*propertiestopLevelShell*propWindowPercentPercentmark.labelString:	%
+*propertiestopLevelShell*propWindowPercentPushbutton.labelString:	参照
+*propertiestopLevelShell*propWindowSizePushbutton.labelString:	参照
+*propertiestopLevelShell*propWindowWidthLabel.labelString:	幅:
+*propertiestopLevelShell*propWinFixedSizeToggle.labelString:	指定のサイズ
+*propertiestopLevelShell*propWinFixedTitleLabel.labelString:	指定のウィンドウのサイズ
+*propertiestopLevelShell*propWinFullScreenDescriptionLabel.labelString:	:::t\"このセッション\"\"は画面全体に表示されます。\"
+*propertiestopLevelShell*propWinFullscreenTitleLabel.labelString:	全画面
+*propertiestopLevelShell*propWinFullscreenToggle.labelString:	全画面
+*propertiestopLevelShell*propWinPercentLabel.labelString:	画面に対する割合
+*propertiestopLevelShell*propWinPercentToggle.labelString:	画面に対する割合
+*propertiestopLevelShell*propWinScreenPercentageDescLabel.labelString:	:::t\"ICA コネクションのウィンドウ\":t\"の画面に対する割合を選択してくださ\":t\"い。\"
+*propertiestopLevelShell*propWinSeamlessDescriptionLabel.labelString:	:::t\"公開アプリケーションは、\":t\"デスクトップ上でシーム\"\"レスに表示されます。\"
+*propertiestopLevelShell*propWinSeamlessTitleLabel.labelString:	シームレス ウィンドウ
+*propertiestopLevelShell*propWinSeamlessToggle.labelString:	シームレス ウィンドウ
+*propertiestopLevelShell*propWinSizeLabel1.labelString:	ウィンドウのサイズ
+*propertiestopLevelShell*propZLCKeyAutoButton.labelString:	自動
+*propertiestopLevelShell*propZLCKeyMenu.labelString:	ローカル テキスト エコー
+*propertiestopLevelShell*propZLCKeyOffButton.labelString:	オフ
+*propertiestopLevelShell*propZLCKeyOnButton.labelString:	オン
+*propertiestopLevelShell*propZLCMouseAutoButton.labelString:	自動
+*propertiestopLevelShell*propZLCMouseMenu.labelString:	マウス フィードバック
+*propertiestopLevelShell*propZLCMouseOffButton.labelString:	オフ
+*propertiestopLevelShell*propZLCMouseOnButton.labelString:	オン
+*propertiestopLevelShell*speedLabel.labelString:	SpeedScreen
+*propertiestopLevelShell.title:	プロパティ
+*propertiestopLevelShell*winColormapLabel1.labelString:	256 カラー マッピング

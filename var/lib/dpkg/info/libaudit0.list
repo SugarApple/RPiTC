@@ -1,0 +1,14 @@
+/.
+/etc
+/etc/libaudit.conf
+/lib
+/lib/libauparse.so.0.0.0
+/lib/libaudit.so.0.0.0
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libaudit0
+/usr/share/doc/libaudit0/copyright
+/usr/share/doc/libaudit0/changelog.Debian.gz
+/lib/libauparse.so.0
+/lib/libaudit.so.0

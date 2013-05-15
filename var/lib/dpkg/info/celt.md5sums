@@ -1,0 +1,16 @@
+00bec38c9cf51552d735a751e34ac3b3  usr/include/celt051/celt_header.h
+11630aba1bbf147875f073061c435426  usr/include/celt051/celt_types.h
+7fc278f5f1dcb3e0288f8e751c02f0ef  usr/include/celt051/celt.h
+527b6ee35b1a04408ccb1eed6d9ca169  usr/lib/libcelt051.so.0.0.0
+0c02f338fe0b0be8a3e7c14fecdca258  usr/lib/libcelt051.la
+4fd5c8f0a42d3ab84223d10d8d03de21  usr/lib/pkgconfig/celt051.pc
+41a0e4b04778a484acbb007f7452cdb7  usr/lib/libcelt051.a
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/celt/ChangeLog
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/celt/NEWS
+59206590c82c742d6a172a4bd33b8552  usr/share/doc/celt/README
+9072ec162aa15fa6febc851b3c7604f8  usr/share/doc/celt/INSTALL
+375f60ab360d17f0172737036ff155b2  usr/share/doc/celt/COPYING
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/celt/AUTHORS
+85754836532c2b761ce2c7850a887f1f  usr/share/doc/celt/TODO
+f2db53b2147b27a317e22ea31b250cb8  usr/bin/celtdec051
+d7ef16af79e5c94b208b9f6b1b455035  usr/bin/celtenc051

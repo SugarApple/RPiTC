@@ -1,0 +1,141 @@
+#!/bin/bash
+####################
+#view_connections_active function
+#print out "yes" if a view connection is active
+#and "no" otherwise
+##########################
+getViewFreeRDPArgs() {
+  #Regkeys are in SESSION_ROOT/xfreerdpOptions
+  REG_KEYS=$ARG1/xfreerdpOptions
+ 
+  #SMARTCARD use is passed in
+  SMARTCARD=$ARG2
+
+  RDP_CMDLINE_FILE=/usr/lib/freerdp/cmdline_functions
+
+  if [ -f $RDP_CMDLINE_FILE ] ; then
+    source $RDP_CMDLINE_FILE
+    generate_cmdline -r $REG_KEYS $SMARTCARD
+
+    echo $OPTIONS
+  else
+    echo "--rfx --plugin drdynvc --data audin:pulseaudio tsmf:decoder:gstreamer -- --plugin rdpsnd  --data pulseaudio --"
+  fi
+}
+
+####################
+#view_connections_active function
+#print out "yes" if a view connection is active
+#and "no" otherwise
+##########################
+view_connections_active() {
+  if connection-mgr listActive | cut -d " " -f 2 | grep view >/dev/null ; then
+    echo "yes"
+  else
+    echo "no"
+  fi
+}
+
+
+####################
+#view_connections_active function
+#print out "yes" if a view connection is active
+#and "no" otherwise
+##########################
+view_connections_active() {
+  if connection-mgr listActive | cut -d " " -f 2 | grep view >/dev/null ; then
+    echo "yes"
+  else
+    echo "no"
+  fi
+}
+
+#################
+#USB FUNCTIONS
+################
+
+#Vars for view USB
+VMWARE_LIB_PATH=/usr/lib/vmware
+ARBITRATOR=vmware-usbarbitrator
+DAEMON=vmware-view-usbd
+
+declare -A family_names
+
+family_names=(["00"]="unknown" ["fe"]="other" ["01"]="audio-in;audio-out"\
+              ["02"]="comm" ["0d"]="security" ["03"]="hid;hid-bootable"\
+              ["05"]="physical" ["06"]="imaging" ["07"]="printer"\
+              ["08"]="storage" ["0b"]="smart-card" ["0e"]="video"\
+              ["e0"]="wireless;wusb" ["ff"]="vendor")
+
+activate_view_usb() {
+  #launch daemons. 
+  #(For view 1.6, they will detect if one is already running and
+  #not launch another instance)
+	$VMWARE_LIB_PATH/$ARBITRATOR
+  $VMWARE_LIB_PATH/$DAEMON
+} #end of activate_view_usb
+
+kill_view_usb() {
+  #To kill all abitrator instances, launch with
+  #kill command
+	$VMWARE_LIB_PATH/$ARBITRATOR --kill
+  #To kill daemon send sigterm
+  DAEMON_PID=$(pidof $DAEMON)
+  if [ -n "$DAEMON_PID" ] ; then
+    kill $DAEMON_PID
+  fi
+} #end of kill_view_usb
+
+getViewUsbConfigLines()
+{
+
+#Deal with general families
+list=$(usbrinfo --registry --class | grep "state 1" | cut -f 1 | cut -d " " -f 2)
+echo -n "viewusb.IncludeFamily = \""
+for k in $list
+do
+  echo -n "${family_names[$k]};"
+done
+echo "\""
+
+list=$(usbrinfo --registry --class | grep "state 0" | cut -f 1 | cut -d " " -f 2)
+echo -n "viewusb.ExcludeFamily = \""
+for k in $list
+do
+  echo -n "${family_names[$k]};"
+done
+echo "\""
+
+#Deal with particular VIDs and PIDs
+
+list=$(usbrinfo --registry --device | grep "state 1" | cut -f 1 | cut -d " " -f 2)
+echo -n "viewusb.IncludeVidPid = \""
+for k in $list
+do
+  vid=`echo $k | cut -d ":" -f 1`
+  pid=`echo $k | cut -d ":" -f 2`
+  echo -n "vid-${vid}_pid-$pid;"
+done
+echo "\""
+
+list=$(usbrinfo --registry --device | grep "state 0" | cut -f 1 | cut -d " " -f 2)
+echo -n "viewusb.ExcludeVidPid = \""
+for k in $list
+do
+  vid=`echo $k | cut -d ":" -f 1`
+  pid=`echo $k | cut -d ":" -f 2`
+  echo -n "vid-${vid}_pid-$pid;"
+done
+echo "\""
+}
+
+#####################################################
+#####################################################
+#Main script
+#####################################################
+ARG1=$2
+ARG2=$3
+
+eval $1
+
+exit 0

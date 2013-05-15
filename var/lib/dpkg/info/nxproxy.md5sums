@@ -1,0 +1,10 @@
+95c5fc4bebcc0610cca189439617c22d  usr/bin/nxproxy
+97f1af50fb36f0e34e00d1618e6ee0c6  usr/lib/nx/bin/nxproxy
+27c4274a473718344d38fbee2b4e6c6e  usr/share/doc/nxproxy/README
+1efa70ffe6aa4313a920d22f608dacaa  usr/share/doc/nxproxy/README-IPAQ
+8881d0ee5a86bbc858329744b2175d17  usr/share/doc/nxproxy/README-VALGRIND
+65026542448a3ef450392467f2a39676  usr/share/doc/nxproxy/changelog.Debian.gz
+62094003c3a404e7ab996c72f4654f9b  usr/share/doc/nxproxy/changelog.gz
+29004bd2f64cbf26d207f700563134cc  usr/share/doc/nxproxy/copyright
+6a600347debed660be463223dd4f67f2  usr/share/lintian/overrides/nxproxy
+289b3222a4d6604d1db32324b5169479  usr/share/man/man1/nxproxy.1.gz

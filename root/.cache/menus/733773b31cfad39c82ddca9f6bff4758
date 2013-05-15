@@ -1,0 +1,137 @@
+1.1
+applications.menu
+14
+D/root/.local/share/desktop-directories
+D/usr/local/share/desktop-directories
+D/usr/share/desktop-directories
+D/usr/share/gdm/desktop-directories
+D/var/lib/menu-xdg/desktop-directories
+D/root/.local/share/applications
+D/usr/local/share/applications
+D/usr/share/applications
+D/usr/share/gdm/applications
+D/var/lib/menu-xdg/applications
+D/etc/xdg/menus/applications-merged
+D/root/.config/menus/applications-merged
+F/root/.config/menus/lxde-applications.menu
+F/etc/xdg/menus/lxde-applications.menu
+
++Applications
+Applications
+Applications
+applications-other
+lxde-menu-applications.directory
+2
++Accessories
+Accessories
+Desktop accessories
+applications-accessories
+lxde-utility.directory
+2
+-pcmanfm.desktop
+File Manager
+Browse the file system and manage the files
+system-file-manager
+
+7
+File Manager
+pcmanfm %U
+2
+0
+-lxterminal.desktop
+LXTerminal
+Use the command line
+lxterminal
+
+7
+LXTerminal
+lxterminal
+0
+0
+-leafpad.desktop
+Leafpad
+Simple text editor
+leafpad
+
+7
+Leafpad
+leafpad %f
+0
+0
+
++Internet
+Internet
+Programs for Internet access such as web and email
+applications-internet
+lxde-network.directory
+2
+-wfcmgr.desktop
+Citrix Receiver
+
+/opt/Citrix/ICAClient/icons/manager.png
+
+7
+Citrix Receiver
+/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient
+0
+0
+-iceweasel.desktop
+Iceweasel
+Browse the World Wide Web
+iceweasel
+
+7
+Iceweasel Web Browser
+iceweasel %u
+2
+0
+-remote-viewer.desktop
+Remote Viewer
+Access remote desktops
+
+
+7
+Remote Viewer
+remote-viewer %u
+2
+0
+-x2goclient.desktop
+X2Go Client
+
+x2goclient
+
+7
+X2Go Client
+x2goclient
+0
+0
+-wpa_gui.desktop
+wpa_gui
+Graphical user interface for wpa_supplicant
+wpa_gui
+
+7
+wpa_gui
+/usr/sbin/wpa_gui
+0
+0
+
+-
++DesktopSettings
+Preferences
+Personal preferences
+preferences-desktop
+lxde-settings.directory
+2
+-libfm-pref-apps.desktop
+Preferred Applications
+
+preferences-desktop
+
+7
+Preferred Applications
+libfm-pref-apps
+2
+-15
+
+

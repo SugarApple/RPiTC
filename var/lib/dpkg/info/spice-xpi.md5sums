@@ -1,0 +1,11 @@
+64c9677c94e1b742af356681a295b129  usr/libexec/spice-xpi-client-remote-viewer
+034e07d32a649efaf07ba4deadc7c483  usr/lib/mozilla/plugins/npSpiceConsole.la
+072df3a8cac3985e1a71b118070db36f  usr/lib/mozilla/plugins/npSpiceConsole.a
+0429d40a5fc34aa97fd74ddb503b86ec  usr/lib/mozilla/plugins/npSpiceConsole.so
+e0a59782fb8b340fcda9b0f4b0e35e2d  usr/lib/mozilla/install.rdf
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/spice/ChangeLog
+87e252c8bdc39be4b09f07048d8f602f  usr/share/doc/spice/NEWS
+7bf58177d961ac23c06c6aeb068a8aa0  usr/share/doc/spice/README
+8413fff12357e1a32f5c055dd801dd55  usr/share/doc/spice/INSTALL
+6a168402790208145f7dc05e95de08ce  usr/share/doc/spice/COPYING
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/spice/AUTHORS

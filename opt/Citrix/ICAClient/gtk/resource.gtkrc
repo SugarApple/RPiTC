@@ -1,0 +1,44 @@
+###############################################################################
+#
+#    Name: resource.gtkrc
+#
+#    $Id:$
+#
+#    GTK+ resource file
+#
+#    Copyright 2011 Citrix Systems, Inc. All rights reserved.
+#
+###############################################################################
+
+
+# Used to work around issue with dialog border in glade
+style "dialog"
+{
+    GtkDialog::action-area-border = 8
+    GtkDialog::button-spacing = 8
+    GtkDialog::content-area-border = 0
+}
+
+widget "GtkDialog" style "dialog"
+
+
+# Style used by titles
+style "titleText"
+{
+    # Pango font_name "[FAMILY-LIST] [STYLE-OPTIONS] [SIZE]", we only specify the size.
+    font_name = "Bold 10"
+    fg[NORMAL] = "#393937"
+}
+
+widget "*_title" style "titleText"
+
+
+# Style used by gerneral text in the body of the UI
+style "bodyText"
+{
+    # Pango font_name "[FAMILY-LIST] [STYLE-OPTIONS] [SIZE]", we only specify the size.
+    font_name = "9"
+    fg[NORMAL] = "#393937"
+}
+
+widget "*_body" style "bodyText"

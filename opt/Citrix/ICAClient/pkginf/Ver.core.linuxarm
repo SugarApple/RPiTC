@@ -1,0 +1,12 @@
+ID_VERSION=12.1.0.203066
+DISP_VERSION=12.1.0
+CHANGE_NO=203066
+ID_PRODUCT_NAME=CitrixICAClient
+DISP_PRODUCT_NAME=Citrix Receiver for Linux
+uname=Linux rpitc 3.6.11-rpitc+ #10 PREEMPT Wed Apr 24 18:52:05 CEST 2013 armv6l GNU/Linux
+PORT=linuxarm
+LANGUAGE=*
+date=20130426214035 UTC
+INFO_FILE=Debian_installation
+DATA_FILE=Debian_package
+BROWSER_DIR=/usr/lib/mozilla

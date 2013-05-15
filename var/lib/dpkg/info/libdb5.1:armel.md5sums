@@ -1,0 +1,5 @@
+b004d504da61fc1edc16918050ae578c  usr/lib/arm-linux-gnueabi/libdb-5.1.so
+50134306e5856be06b9b70f3681195de  usr/share/doc/libdb5.1/build_signature_armel.txt
+4fe58fde2e2b10d1809c5652993f55e0  usr/share/doc/libdb5.1/changelog.Debian.gz
+73e00aa8871093e6d4f0e03a47d384ea  usr/share/doc/libdb5.1/copyright
+5b54ebe4669d006d3901237db8b9ce3e  usr/share/lintian/overrides/libdb5.1

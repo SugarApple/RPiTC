@@ -1,0 +1,5 @@
+e2965e17698545101403045fca97c15f  usr/lib/arm-linux-gnueabi/libdrm_nouveau.so.1.0.0
+9973a057251d74e53b46080c2b11b4f3  usr/share/doc/libdrm-nouveau1a/changelog.Debian.gz
+af2ac43128494a933fe37b705ce0a1b9  usr/share/doc/libdrm-nouveau1a/changelog.gz
+acc80450c1bd42944061a30272f0c132  usr/share/doc/libdrm-nouveau1a/copyright
+32ccdc2567d6d1976342a126e457afff  usr/share/lintian/overrides/libdrm-nouveau1a

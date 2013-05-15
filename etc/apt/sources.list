@@ -1,0 +1,2 @@
+deb http://ks3313837.kimsufi.com/armv6j sid main
+deb http://ftp.de.debian.org/debian sid main contrib non-free

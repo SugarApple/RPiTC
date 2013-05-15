@@ -1,0 +1,6 @@
+1c82689ca820563b1fb51e7d082abcbc  usr/lib/libboost_thread.so.1.49.0
+ef7f213b58eac20fa98346d1871322de  usr/share/doc/libboost-thread1.49.0/NEWS.Debian.gz
+e7f9f35286ba55ac18cb4e0187710fbd  usr/share/doc/libboost-thread1.49.0/README.Debian.gz
+2f61b80248467b99663ae811253bf3d6  usr/share/doc/libboost-thread1.49.0/changelog.Debian.gz
+e66425771863c34de39265516529d049  usr/share/doc/libboost-thread1.49.0/copyright
+bb05e13a64aae7f399be205ab112adf5  usr/share/lintian/overrides/libboost-thread1.49.0

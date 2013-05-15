@@ -1,0 +1,3 @@
+/etc/default/alsa-base
+/etc/modprobe.d/alsa-base.conf
+/etc/modprobe.d/alsa-base-blacklist.conf

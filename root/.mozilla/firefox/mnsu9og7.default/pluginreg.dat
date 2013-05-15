@@ -1,0 +1,25 @@
+Generated File. Do not edit.
+
+[HEADER]
+Version:0.15:$
+Arch:arm-eabi-gcc3:$
+
+[PLUGINS]
+npSpiceConsole.so:$
+/usr/lib/mozilla/plugins/npSpiceConsole.so:$
+:$
+1366804793000:1:5:$
+Spice Firefox Plugin 2.9pre Spice Client wrapper for firefox:$
+Spice Firefox Plugin 2.9pre:$
+1
+0:application/x-spice:Spice Firefox Plugin 2.9pre:qsc:$
+npica.so:$
+/opt/Citrix/ICAClient/npica.so:$
+:$
+1334328561000:1:1:$
+ICA Plugin (LinuxArm) Version 12.1.0.203066 (/opt/Citrix/ICAClient/wfica):$
+Citrix Receiver for LinuxArm:$
+1
+0:application/x-ica:Handles ICA connections:ica:$
+
+[INVALID]

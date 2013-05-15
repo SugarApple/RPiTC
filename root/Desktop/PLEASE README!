@@ -1,0 +1,7 @@
+Right click on Desktop to access the menu!
+
+PLEASE remember:
+- to change autostart application modify this file: /etc/xdg/lxsession/LXDE/autostart
+- to add Desktop icon just add a .desktop file in /root/Desktop/ like the others
+- to enable monitor sleep mode remove the file /root/.xsessionrc
+

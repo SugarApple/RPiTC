@@ -1,0 +1,8 @@
+73747e98249612c69828f1aca193c59b  usr/lib/arm-linux-gnueabi/libwx_baseu-2.8.so.0.8.0
+1b196bf065278905ea4782f36d4f6e0c  usr/lib/arm-linux-gnueabi/libwx_baseu_net-2.8.so.0.8.0
+e6c8fbecda64d3d5e4050a25ab27c462  usr/lib/arm-linux-gnueabi/libwx_baseu_xml-2.8.so.0.8.0
+ba2783b74736c2bca44d6d2b597fc9a5  usr/share/doc/libwxbase2.8-0/README.Debian
+3b95c40abee79be66c5ef1ea0d9286fa  usr/share/doc/libwxbase2.8-0/changelog.Debian.gz
+e998bded9ced8a4369d4b0f582fba132  usr/share/doc/libwxbase2.8-0/changelog.gz
+f22c67fb99c12d27d1a1efd35f0d380b  usr/share/doc/libwxbase2.8-0/copyright
+1c2c9c3b406adf5f85797b7720f26ee9  usr/share/lintian/overrides/libwxbase2.8-0

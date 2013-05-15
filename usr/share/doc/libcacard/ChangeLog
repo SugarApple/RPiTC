@@ -1,0 +1,15 @@
+0.1.2:
+- removed ReaderAddResponse, each message now has a response intrisinc
+to it, and it is reusing the VSC_Error with a new error code VSC_SUCCESS.
+(should be fixed by renaming to VSC_Status)
+- protocol is Big Endiann now.
+- dropped the Reconnect message.
+- The protocol has a wiki page, hopefully it will stay up to date:
+http://wiki.qemu.org/Features/Smartcard
+0.1.1:
+- libcacard: fix wrong variable usage
+- libcacard: remove unused variable
+- vcard_emul,vcard_emul_nss: add VCARD_EMUL_INIT_ALREADY_INITED
+- vcard_emul,vcard_emul_nss: add vcard_emul_replay_insertion_events
+- vreader: add vreader_queue_card_event
+
