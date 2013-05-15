@@ -1,6 +1,0 @@
-TARGETS = dbus killprocs bootlogs motd ssh ntp network-manager single rmnologin rc.local
-INTERACTIVE =
-network-manager: dbus
-single: killprocs bootlogs motd
-rmnologin: network-manager dbus bootlogs motd ssh ntp
-rc.local: network-manager dbus bootlogs motd ssh ntp
