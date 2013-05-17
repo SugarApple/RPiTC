@@ -90,7 +90,7 @@ Description-it.UTF-8: «Locale» da generare:
  .
  Scegliere quali «locale» generare. I «locale» UTF-8 dovrebbero essere già prescelti, in particolare sulle nuove installazioni. Gli altri set di caratteri potrebbero essere utili per risolvere problemi di compatibilità all'indietro con sistemi o programmi più vecchi.
 Description-ja.UTF-8: 生成するロケールの選択:
- ロケールとは、複数の言語を切り替え、ユーザが自身の言語・国・文字・並べ替え順序などを使えるように許可するための仕組みです。
+ ロケールとは、複数の言語を切り替え、ユーザが自身の言語・国・文字・並べ替え順序などを使えるようにするための仕組みです。
  .
  生成したいロケールを選択してください。UTF-8 ロケールは、特に新規にインストールしたものであれば、デフォルトで選択されているはずです。その他の文字セットは、より古いシステムおよびソフトウェアとの後方互換性のために役立つでしょう。
 Description-ko.UTF-8: 생성할 로케일 목록:
@@ -254,10 +254,10 @@ Description-it.UTF-8: «Locale» predefinito sul sistema:
  Molti pacchetti Debian usano i «locale» per mostrare messaggi nella lingua dell'utente. È possibile scegliere, fra quelli generati, un «locale» come predefinito per il sistema.
  .
  Questo imposta la lingua predefinita per l'intero sistema. Se questo è un sistema multi-utente e non tutti gli utenti parlano la lingua predefinita alcuni di essi potrebbero avere delle difficoltà.
-Description-ja.UTF-8: システム標準の環境変数として設定するデフォルトロケール:
- ユーザに正しい言語でテキストを表示するため、Debian では多くのパッケージがロケールを使用します。生成したロケールの中からシステムでのデフォルトロケールを選択できます。
+Description-ja.UTF-8: システムの環境変数として設定するデフォルトロケール:
+ ユーザに合った言語でテキストを表示するため、Debian では多くのパッケージがロケールを使用します。生成したロケールの中からシステムでのデフォルトロケールを選択できます。
  .
- これはシステム全体のデフォルトロケールを選ぶことになります。このシステムがマルチユーザシステムで、すべてのユーザがデフォルトの言語を話すことができるというわけではない場合は、そういった人々は困難を感じることになってしまいます。
+ これはシステム全体のデフォルトの言語を選ぶことになります。このシステムがマルチユーザシステムで、すべてのユーザがデフォルトの言語を話すことができるというわけではない場合は、そういった人々は困難を感じることになってしまいます。
 Description-ko.UTF-8: 시스템 환경의 기본 로케일:
  데비안에 있는 많은 꾸러미들은 사용자에게 맞는 언어로 출력하기 위해 로케일을 사용합니다. 생성된 로케일 중에서 시스템의 기본 로케일로 사용할 로케일을 선택하실 수 있습니다.
  .

@@ -47,7 +47,7 @@ Installed-Size: 625
 Maintainer: Debconf Developers <debconf-devel@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 1.5.49+RPiTC1
+Version: 1.5.50+RPiTC1
 Replaces: debconf-tiny
 Provides: debconf-2.0
 Pre-Depends: perl-base (>= 5.6.1-4)
@@ -146,7 +146,7 @@ Package: shared-mime-info
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 4089
+Installed-Size: 4085
 Maintainer: Sebastian Dröge <slomo@debian.org>
 Architecture: armel
 Multi-Arch: foreign
@@ -398,7 +398,7 @@ Maintainer: Debian QA Group <packages@qa.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: sysfsutils
-Version: 2.1.0+repack-2+RPiTC1
+Version: 2.1.0+repack-3+RPiTC1
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: interface library to sysfs
@@ -607,10 +607,11 @@ Package: desktop-file-utils
 Status: install ok installed
 Priority: optional
 Section: devel
-Installed-Size: 234
+Installed-Size: 241
 Maintainer: Ross Burton <ross@debian.org>
 Architecture: armel
-Version: 0.20-0.1+RPiTC1
+Multi-Arch: foreign
+Version: 0.21-1+RPiTC1
 Depends: libc6 (>= 2.7), libglib2.0-0 (>= 2.28.0)
 Conffiles:
  /etc/bash_completion.d/desktop-file-validate 34c0eff90e9bbf4c97c873334f676330
@@ -619,6 +620,7 @@ Description: Utilities for .desktop files
   * update-desktop-database -- update the desktop-MIME mapping
   * desktop-file-validate -- validate a desktop file
   * desktop-file-install -- install a desktop file, munging en route.
+Homepage: http://www.freedesktop.org/wiki/Software/desktop-file-utils
 
 Package: libssl1.0.0
 Status: install ok installed
@@ -665,8 +667,8 @@ Installed-Size: 29
 Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 Architecture: all
 Source: openssh
-Version: 1:6.0p1-4+RPiTC1
-Depends: openssh-client, openssh-server
+Version: 1:6.2p1-3+RPiTC1
+Depends: openssh-client (>= 1:6.2p1-3+RPiTC1), openssh-server (>= 1:6.2p1-3+RPiTC1)
 Description: secure shell client and server (metapackage)
  This metapackage is a convenient way to install both the OpenSSH client
  and the OpenSSH server. It provides nothing in and of itself, so you
@@ -677,12 +679,12 @@ Package: libdbus-1-3
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 355
+Installed-Size: 328
 Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: dbus
-Version: 1.6.8-1+RPiTC1
+Version: 1.6.10-1+RPiTC1
 Depends: libc6 (>= 2.10)
 Pre-Depends: multiarch-support
 Recommends: dbus
@@ -762,19 +764,35 @@ Description: Foreign Function Interface library runtime
  allows code written in one language to call code written in another
  language.
 
+Package: libffi6
+Status: install ok installed
+Priority: optional
+Section: libs
+Installed-Size: 66
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: libffi
+Version: 3.0.13-4+RPiTC1
+Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
+Pre-Depends: multiarch-support
+Description: Foreign Function Interface library runtime
+ A foreign function interface is the popular name for the interface that
+ allows code written in one language to call code written in another
+ language.
+
 Package: libcairo2
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 1429
+Installed-Size: 1381
 Maintainer: Dave Beckett <dajobe@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: cairo
-Version: 1.12.2-3+RPiTC1
-Depends: libc6 (>= 2.11), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.4.0), libpixman-1-0 (>= 0.21.6), libpng12-0 (>= 1.2.13-4), libx11-6, libxcb-render0, libxcb-shm0, libxcb1 (>= 1.6), libxrender1, zlib1g (>= 1:1.1.4)
+Version: 1.12.14-4+RPiTC1
+Depends: libc6 (>= 2.11), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.3.5), libgcc1 (>= 1:4.4.0), libpixman-1-0 (>= 0.21.6), libpng12-0 (>= 1.2.13-4), libx11-6, libxcb-render0, libxcb-shm0, libxcb1 (>= 1.6), libxext6, libxrender1, zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
-Breaks: iceape-browser (<= 2.0.3-3), libgtk-directfb-2.0-0, xulrunner-1.9, xulrunner-1.9.1 (<= 1.9.1.8-3)
 Description: The Cairo 2D vector graphics library
  Cairo is a multi-platform library providing anti-aliased
  vector-based rendering for multiple target backends. Paths consist
@@ -841,11 +859,11 @@ Package: libboost-thread1.49.0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 162
+Installed-Size: 163
 Maintainer: Debian Boost Team <pkg-boost-devel@lists.alioth.debian.org>
 Architecture: armel
 Source: boost1.49
-Version: 1.49.0-3.2+RPiTC1
+Version: 1.49.0-4+RPiTC1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6)
 Description: portable C++ multi-threading
  This package forms part of the Boost C++ Libraries collection.
@@ -929,7 +947,7 @@ Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: util-linux
-Version: 2.20.1-5.3+RPiTC3
+Version: 2.20.1-5.4+RPiTC1
 Replaces: e2fsprogs (<< 1.34-1)
 Depends: passwd, libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
@@ -978,7 +996,7 @@ Maintainer: Debian LSB Team <debian-lsb@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: lsb
-Version: 4.1+Debian9+RPiTC2
+Version: 4.1+Debian10+RPiTC1
 Description: Linux Standard Base 4.1 init script functionality
  The Linux Standard Base (http://www.linuxbase.org/) is a standard
  core system that third-party applications written for Linux can
@@ -1017,36 +1035,18 @@ Description: generic font configuration library - support binaries
  cache files in string form (fc-cat). It no longer makes fonts managed by defoma
  available to fontconfig applications.
 
-Package: libjpeg62
-Status: install ok unpacked
-Priority: optional
-Section: oldlibs
-Installed-Size: 220
-Maintainer: Bill Allombert <ballombe@debian.org>
-Architecture: armel
-Multi-Arch: same
-Source: libjpeg6b
-Version: 6b1-3+RPiTC1
-Depends: libc6 (>= 2.7)
-Pre-Depends: multiarch-support
-Description: Independent JPEG Group's JPEG runtime library (version 6.2)
- The Independent JPEG Group's JPEG library is a library for handling
- JPEG files.
- .
- This package contains the shared library for version 6.2.
-
 Package: cpp-4.6
 Status: install ok installed
 Priority: optional
 Section: interpreters
-Installed-Size: 9635
+Installed-Size: 9451
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Source: gcc-4.6
-Version: 4.6.3-15+RPiTC2
+Version: 4.6.4-2+RPiTC2
 Replaces: gcc-4.6 (<< 4.6.1-9)
-Depends: gcc-4.6-base (= 4.6.3-15+RPiTC2), libc6 (>= 2.11), libgmp10, libmpc2, libmpfr4 (>= 3.1.1), zlib1g (>= 1:1.1.4)
-Suggests: gcc-4.6-locales (>= 4.6.3-1)
+Depends: gcc-4.6-base (= 4.6.4-2+RPiTC2), libc6 (>= 2.11), libgmp10, libmpc3, libmpfr4 (>= 3.1.1), zlib1g (>= 1:1.1.4)
+Suggests: gcc-4.6-locales (>= 4.6.4-1)
 Description: GNU C preprocessor
  A macro processor that is used automatically by the GNU C compiler
  to transform programs before actual compilation.
@@ -1059,13 +1059,13 @@ Package: procps
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 577
+Installed-Size: 581
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 1:3.3.4-2+RPiTC3
+Version: 1:3.3.6-1+RPiTC1
 Provides: watch
-Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libncurses5 (>= 5.5-5~), libncursesw5 (>= 5.6+20070908), libprocps0 (>= 1:3.3.2-1), libtinfo5, lsb-base (>= 3.0-10), initscripts
+Depends: libc6 (>= 2.11), libgcc1 (>= 1:4.4.0), libncurses5 (>= 5.5-5~), libncursesw5 (>= 5.6+20070908), libprocps1 (>= 1:3.3.5-1), libtinfo5, lsb-base (>= 3.0-10), initscripts
 Recommends: psmisc
 Breaks: guymager (<= 0.5.9-1), open-vm-tools (<= 2011.12.20-562307-1), xmem (<= 1.20-27.1)
 Conflicts: pgrep (<< 3.3-5), w-bassman (<< 1.0-3)
@@ -1092,7 +1092,7 @@ Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.
 Architecture: armel
 Multi-Arch: foreign
 Source: wpa
-Version: 1.0-3+RPiTC3
+Version: 1.0-3+RPiTC1
 Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.1.4), libncurses5 (>= 5.5-5~), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libpcsclite1 (>= 1.0.0), libreadline5 (>= 5.2), libssl1.0.0 (>= 1.0.0), libtinfo5, lsb-base (>= 3.0-6), adduser, initscripts (>= 2.88dsf-13.3)
 Suggests: wpagui, libengine-pkcs11-openssl
 Conffiles:
@@ -1230,12 +1230,12 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: misc
-Installed-Size: 346
+Installed-Size: 363
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: ncurses
-Version: 5.9-10+RPiTC1
+Version: 5.9+20130504-1+RPiTC1
 Provides: ncurses-runtime
 Breaks: ncurses-term (<< 5.7+20100313-3)
 Conflicts: ncurses, ncurses-runtime
@@ -1310,6 +1310,26 @@ Description: library for common error values and messages in GnuPG components
  pinentry, SmartCard Daemon and possibly more in the future.
 Homepage: http://www.gnupg.org/related_software/libgpg-error/
 
+Package: psmisc
+Status: install ok unpacked
+Priority: optional
+Section: admin
+Installed-Size: 702
+Maintainer: Craig Small <csmall@debian.org>
+Architecture: armel
+Version: 22.20-1+RPiTC1
+Replaces: procps (<< 1:1.2)
+Depends: libc6 (>= 2.8), libtinfo5
+Description: utilities that use the proc file system
+ This package contains miscellaneous utilities that use the proc FS:
+ .
+  - fuser: identifies processes that are using files or sockets.
+  - killall: kills processes by name (e.g. "killall -HUP named").
+  - peekfd: shows the data traveling over a file descriptor.
+  - pstree: shows currently running processes as a tree.
+  - prtstat: print the contents of /proc/<pid>/stat
+Homepage: http://psmisc.sf.net/
+
 Package: ucf
 Status: install ok installed
 Priority: standard
@@ -1358,8 +1378,8 @@ Installed-Size: 185
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Source: util-linux (2.20.1-5.3+RPiTC3)
-Version: 1:2.20.1-5.3+RPiTC3
+Source: util-linux (2.20.1-5.4+RPiTC1)
+Version: 1:2.20.1-5.4+RPiTC1
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0)
 Recommends: bsdmainutils
 Description: Basic utilities from 4.4BSD-Lite
@@ -1453,7 +1473,7 @@ Maintainer: Marco d'Itri <md@linux.it>
 Architecture: armel
 Multi-Arch: same
 Source: udev
-Version: 175-7.1+RPiTC2
+Version: 175-7.2+RPiTC1
 Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.22.0), libudev0 (>= 165)
 Pre-Depends: multiarch-support
 Description: GObject-based wrapper library for libudev
@@ -1497,11 +1517,11 @@ Package: libnm-util2
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 602
+Installed-Size: 612
 Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: network-manager
-Version: 0.9.4.0-10+RPiTC2
+Version: 0.9.8.0-4+RPiTC1
 Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.78), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libuuid1 (>= 2.16)
 Description: network management framework (shared library)
  NetworkManager is a system network service that manages your network devices
@@ -1515,22 +1535,10 @@ Description: network management framework (shared library)
 Homepage: http://www.gnome.org/projects/NetworkManager/
 
 Package: libssl0.9.8
-Status: deinstall ok config-files
+Status: install ok not-installed
 Priority: important
 Section: libs
-Installed-Size: 1864
-Maintainer: Debian OpenSSL Team <pkg-openssl-devel@lists.alioth.debian.org>
 Architecture: armel
-Source: openssl
-Version: 0.9.8o-4squeeze14
-Config-Version: 0.9.8o-4squeeze14
-Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), zlib1g (>= 1:1.1.4), debconf (>= 0.5) | debconf-2.0
-Conflicts: libssl, libssl096-dev (<< 0.9.6-2), openssl (<< 0.9.6-2), ssleay (<< 0.9.2b)
-Description: SSL shared libraries
- libssl and libcrypto shared libraries needed by programs like
- apache-ssl, telnet-ssl and openssh.
- .
- It is part of the OpenSSL implementation of SSL.
 
 Package: libnotify4
 Status: install ok installed
@@ -1625,14 +1633,14 @@ Package: libgdk-pixbuf2.0-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 502
+Installed-Size: 484
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gdk-pixbuf
-Version: 2.26.1-1+RPiTC1
+Version: 2.28.1-1+RPiTC1
 Replaces: libgtk2.0-0 (<< 2.21.3), libgtk2.0-bin (<< 2.21.3)
-Depends: libc6 (>= 2.11), libglib2.0-0 (>= 2.31.18), libjasper1, libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libtiff4 (>> 3.9.5-3~), libx11-6, libgdk-pixbuf2.0-common (= 2.26.1-1+RPiTC1)
+Depends: libc6 (>= 2.11), libglib2.0-0 (>= 2.34.0), libjasper1, libjpeg8 (>= 8c), libpng12-0 (>= 1.2.13-4), libtiff4 (>> 3.9.5-3~), libx11-6, libgdk-pixbuf2.0-common (= 2.28.1-1+RPiTC1)
 Pre-Depends: multiarch-support
 Breaks: libgtk2.0-0 (<< 2.21.3), libgtk2.0-bin (<< 2.21.3), librsvg2-2 (<< 2.26.3-2), libwmf0.2-7 (<< 0.2.8.4-7)
 Description: GDK Pixbuf library
@@ -1649,9 +1657,9 @@ Section: x11
 Installed-Size: 78
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
-Version: 1:7.7+2+RPiTC1
+Version: 1:7.7+3+RPiTC1
 Provides: x-window-system, x-window-system-core
-Depends: xserver-xorg (>= 1:7.7+2+RPiTC1), libgl1-mesa-glx | libgl1, libgl1-mesa-dri, libglu1-mesa, xfonts-base (>= 1:1.0.0-1), xfonts-100dpi (>= 1:1.0.0-1), xfonts-75dpi (>= 1:1.0.0-1), xfonts-scalable (>= 1:1.0.0-1), x11-apps, x11-session-utils, x11-utils, x11-xfs-utils, x11-xkb-utils, x11-xserver-utils, xauth, xinit, xfonts-utils, xkb-data, xorg-docs-core, xterm | x-terminal-emulator
+Depends: xserver-xorg (>= 1:7.7+3+RPiTC1), libgl1-mesa-glx | libgl1, libgl1-mesa-dri, libglu1-mesa, xfonts-base (>= 1:1.0.0-1), xfonts-100dpi (>= 1:1.0.0-1), xfonts-75dpi (>= 1:1.0.0-1), xfonts-scalable (>= 1:1.0.0-1), x11-apps, x11-session-utils, x11-utils, x11-xfs-utils, x11-xkb-utils, x11-xserver-utils, xauth, xinit, xfonts-utils, xkb-data, xorg-docs-core, xterm | x-terminal-emulator
 Suggests: xorg-docs
 Description: X.Org X Window System
  This metapackage provides the components for a standalone
@@ -1669,13 +1677,13 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 492
+Installed-Size: 501
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: ncurses
-Version: 5.9-10+RPiTC1
-Pre-Depends: libc6 (>= 2.4), libtinfo5 (>= 5.9-3~)
+Version: 5.9+20130504-1+RPiTC1
+Pre-Depends: libc6 (>= 2.4), libtinfo5 (>= 5.9+20130119)
 Description: terminal-related programs and man pages
  The ncurses library routines are a terminal-independent method of
  updating character screens with reasonable optimization.
@@ -1735,18 +1743,18 @@ Package: apt
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 3151
+Installed-Size: 3199
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
-Version: 0.9.7.8+RPiTC1
-Replaces: manpages-pl (<< 20060617-3~)
-Depends: libapt-pkg4.12 (>= 0.9.7.8+RPiTC1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), debian-archive-keyring, gnupg
+Version: 0.9.8+RPiTC1
+Replaces: manpages-it, manpages-pl (<< 20060617-3~)
+Depends: libapt-pkg4.12 (>= 0.9.8+RPiTC1), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), debian-archive-keyring, gnupg
 Suggests: aptitude | synaptic | wajig, dpkg-dev, apt-doc, xz-utils, python-apt
 Conflicts: python-apt (<< 0.7.93.2~)
 Conffiles:
  /etc/logrotate.d/apt 179f2ed4f85cbaca12fa3d69c2a4a1c3
  /etc/apt/apt.conf.d/01autoremove b9bbfaa2954b0499576b8d00c37d6a34
- /etc/cron.daily/apt 6a9df5d143022d22b2e89fa7c1bac8aa
+ /etc/cron.daily/apt 0536c5c2491538f474a5c671462afa4f
 Description: commandline package manager
  This package provides commandline tools for searching and
  managing as well as querying information about packages
@@ -1782,16 +1790,16 @@ Description: simple configuration storage system - runtime library
  This package contains the runtime library.
 Homepage: http://live.gnome.org/dconf
 
-Package: libprocps0
+Package: libprocps1
 Status: install ok installed
 Priority: important
-Section: admin
-Installed-Size: 120
+Section: libs
+Installed-Size: 117
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: procps
-Version: 1:3.3.4-2+RPiTC3
+Version: 1:3.3.6-1+RPiTC1
 Replaces: procps (<< 1:3.3.2-1)
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
@@ -2113,12 +2121,12 @@ Package: libsepol1
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 317
+Installed-Size: 298
 Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libsepol
-Version: 2.1.4-3+RPiTC1
+Version: 2.1.9-1+RPiTC1
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: SELinux library for manipulating binary security policies
@@ -2195,7 +2203,7 @@ Maintainer: Marco d'Itri <md@linux.it>
 Architecture: armel
 Multi-Arch: same
 Source: udev
-Version: 175-7.1+RPiTC2
+Version: 175-7.2+RPiTC1
 Depends: libc6 (>= 2.8), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Description: libudev shared library
@@ -2227,11 +2235,11 @@ Package: ifupdown
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 192
+Installed-Size: 197
 Maintainer: Andrew Shadura <andrewsh@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 0.7.8+RPiTC1
+Version: 0.7.43+RPiTC1
 Replaces: netbase (<< 5.0)
 Depends: iproute (>= 20071016-1), libc6 (>= 2.7), lsb-base (>= 4.1+Debian3), initscripts (>= 2.88dsf-25)
 Pre-Depends: dpkg (>= 1.15.7.2)
@@ -2239,12 +2247,12 @@ Suggests: isc-dhcp-client | dhcp-client, ppp, rdnssd, net-tools
 Breaks: dhcp-client (<< 3.0), netbase (<< 5.0)
 Conffiles:
  /etc/default/networking 35cd4a2713981c9239ce4532c1bfc1c7
- /etc/init/network-interface-security.conf 8d6447a035b681f5fa22d168adcf8dec
- /etc/init/networking.conf 1a5e78aba88486d1b6070f8fa3bd60ad
+ /etc/init/networking.conf b726df187d2740478da29225160c5c9e
  /etc/init/network-interface-container.conf 7fb0862f8c092b33c16ec0f05387fbfb
  /etc/init/network-interface.conf 296dd23a2833cc2bb5c646a833011eab
- /etc/network/if-up.d/upstart dfbcde4fd4a3a2553930605e03e160ab
+ /etc/init/network-interface-security.conf feb6b4b52fe24c44ff1bc68addf245d6
  /etc/network/if-down.d/upstart 1a0205ddbc1446782a8d4d818e97d8a5
+ /etc/network/if-up.d/upstart dfbcde4fd4a3a2553930605e03e160ab
  /etc/init.d/networking b91fa5f0529020176659b341b7a1a740
 Description: high level tools to configure network interfaces
  This package provides the tools ifup and ifdown which may be used to
@@ -2255,13 +2263,13 @@ Package: libsemanage1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 232
+Installed-Size: 225
 Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libsemanage
-Version: 2.1.6-6+RPiTC1
-Depends: libsemanage-common (= 2.1.6-6+RPiTC1), libbz2-1.0, libc6 (>= 2.8), libselinux1 (>= 1.32), libsepol1 (>= 2.1.4), libustr-1.0-1 (>= 1.0.4)
+Version: 2.1.10-1+RPiTC1
+Depends: libsemanage-common (= 2.1.10-1+RPiTC1), libbz2-1.0, libc6 (>= 2.8), libselinux1 (>= 2.1.12), libsepol1 (>= 2.1.4), libustr-1.0-1 (>= 1.0.4)
 Pre-Depends: multiarch-support
 Description: SELinux policy management library
  This package provides the shared libraries for SELinux policy management.
@@ -2355,29 +2363,32 @@ Package: libusb-1.0-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 112
+Installed-Size: 106
 Maintainer: Aurelien Jarno <aurel32@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libusbx
-Version: 2:1.0.12-2+RPiTC1
+Version: 2:1.0.15-1+RPiTC1
 Depends: libc6 (>= 2.8)
 Pre-Depends: multiarch-support
 Description: userspace USB programming library
  Library for programming USB applications without the knowledge
  of Linux kernel internals.
+ .
+ This package contains what you need to run programs that use this
+ library.
 Homepage: http://www.linux-usb.org/
 
 Package: libogg0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 60
+Installed-Size: 64
 Maintainer: Ron Lee <ron@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libogg
-Version: 1.3.0-4+RPiTC1
+Version: 1.3.1-1+RPiTC1
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: Ogg bitstream library
@@ -2558,18 +2569,18 @@ Package: dbus
 Status: install ok installed
 Priority: optional
 Section: admin
-Installed-Size: 872
+Installed-Size: 805
 Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 1.6.8-1+RPiTC1
+Version: 1.6.10-1+RPiTC1
 Depends: libc6 (>= 2.10), libdbus-1-3 (>= 1.0.2), libexpat1 (>= 2.0.1), libselinux1 (>= 1.32), libsystemd-login0 (>= 31), adduser, lsb-base (>= 3.2-14)
 Suggests: dbus-x11
 Conffiles:
- /etc/default/dbus 0d0f25a2f993509c857eb262f6e22015
- /etc/init.d/dbus dfa067b2ace1fc88114695d93be749d3
  /etc/dbus-1/session.conf 3ec4497bcff6f8e1445db64b23bda595
  /etc/dbus-1/system.conf 3ecc20abdab563c7f463daf76d57e009
+ /etc/default/dbus 0d0f25a2f993509c857eb262f6e22015
+ /etc/init.d/dbus dfa067b2ace1fc88114695d93be749d3
 Description: simple interprocess messaging system (daemon and utilities)
  D-Bus is a message bus, used for sending messages between applications.
  Conceptually, it fits somewhere in between raw sockets and CORBA in
@@ -2593,13 +2604,13 @@ Package: libapt-pkg4.12
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 2535
+Installed-Size: 2513
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.8+RPiTC1
-Depends: libbz2-1.0, libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.2.3.3)
+Version: 0.9.8+RPiTC1
+Depends: libbz2-1.0, libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.6), zlib1g (>= 1:1.2.3.4)
 Pre-Depends: multiarch-support
 Breaks: apt (<< 0.9.4~)
 Description: package managment runtime library
@@ -2662,12 +2673,12 @@ Package: libthai0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 95
+Installed-Size: 96
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libthai
-Version: 0.1.18-2+RPiTC1
+Version: 0.1.19-2+RPiTC1
 Depends: libthai-data (>= 0.1.10), libc6 (>= 2.4), libdatrie1 (>= 0.2.0)
 Pre-Depends: multiarch-support
 Enhances: libqtcore4, libqtgui4
@@ -2767,12 +2778,12 @@ Package: libgtk2.0-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 6213
+Installed-Size: 5268
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gtk+2.0
-Version: 2.24.10-2+RPiTC2
+Version: 2.24.17-2+RPiTC1
 Provides: gtk2.0-binver-2.10.0
 Depends: libgtk2.0-common, libatk1.0-0 (>= 1.12.4), libc6 (>= 2.4), libcairo2 (>= 1.6.4-6.1), libcomerr2 (>= 1.01), libcups2 (>= 1.4.0), libfontconfig1 (>= 2.9.0), libfreetype6 (>= 2.2.1), libgcc1 (>= 1:4.4.0), libgcrypt11 (>= 1.4.5), libgdk-pixbuf2.0-0 (>= 2.22.0), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgssapi-krb5-2 (>= 1.6.dfsg.2), libk5crypto3 (>= 1.6.dfsg.2), libkrb5-3 (>= 1.6.dfsg.2), libpango1.0-0 (>= 1.28.3), libx11-6 (>= 2:1.4.99.1), libxcomposite1 (>= 1:0.3-1), libxcursor1 (>> 1.1.2), libxdamage1 (>= 1:1.1), libxext6, libxfixes3, libxi6, libxinerama1, libxrandr2 (>= 2:1.2.99.3), libxrender1, zlib1g (>= 1:1.1.4), shared-mime-info
 Pre-Depends: multiarch-support
@@ -2791,12 +2802,12 @@ Package: xserver-xorg-input-evdev
 Status: install ok installed
 Priority: optional
 Section: x11
-Installed-Size: 180
+Installed-Size: 192
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Version: 1:2.7.0-1+RPiTC1
 Provides: xorg-driver-input
-Depends: libc6 (>= 2.7), xorg-input-abi-16, xserver-xorg-core (>= 2:1.12.3.901)
+Depends: libc6 (>= 2.7), libmtdev1 (>= 1.1.0), xorg-input-abi-16, xserver-xorg-core (>= 2:1.12.3.901)
 Description: X.Org X server -- evdev input driver
  This package provides the driver for input devices using evdev, the Linux
  kernel's event delivery mechanism.  This driver allows for multiple keyboards
@@ -2813,7 +2824,7 @@ Priority: optional
 Section: main
 Maintainer: Gibbio <gibbio@gmail.com>
 Architecture: armel
-Version: 0.19+RPiTC4
+Version: 0.19+RPiTC6
 Depends: libcacard, celt, usbredir, spice-protocol, libgtk-3-0, libgtk-vnc-2.0-0, libavcodec53, libpulse-mainloop-glib0, libpulse0
 Description: Spice-GTK 0.19
 
@@ -2821,12 +2832,12 @@ Package: libthai-data
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 600
+Installed-Size: 605
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: libthai
-Version: 0.1.18-2+RPiTC1
+Version: 0.1.19-2+RPiTC1
 Breaks: libthai0 (<< 0.1.10)
 Description: Data files for Thai language support library
  LibThai is a set of Thai language support routines aimed to ease
@@ -2948,7 +2959,7 @@ Installed-Size: 221
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armel
 Source: util-linux
-Version: 2.20.1-5.3+RPiTC3
+Version: 2.20.1-5.4+RPiTC1
 Depends: libblkid1 (>= 2.17.2), libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32), libsepol1 (>= 1.14)
 Pre-Depends: multiarch-support
 Description: block device id library
@@ -3001,12 +3012,12 @@ Package: zlib1g
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 161
+Installed-Size: 158
 Maintainer: Mark Brown <broonie@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: zlib
-Version: 1:1.2.7.dfsg-13+RPiTC1
+Version: 1:1.2.8.dfsg-1+RPiTC1
 Provides: libz1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
@@ -3025,7 +3036,7 @@ Installed-Size: 361
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Source: xorg
-Version: 1:7.7+2+RPiTC1
+Version: 1:7.7+3+RPiTC1
 Provides: xserver
 Depends: xserver-xorg-core (>= 2:1.11), xserver-xorg-video-all | xorg-driver-video, xserver-xorg-input-all | xorg-driver-input, xserver-xorg-input-evdev, libc6 (>= 2.7), xkb-data (>= 1.4), x11-xkb-utils
 Recommends: libgl1-mesa-dri
@@ -3092,12 +3103,12 @@ Package: libapt-inst1.5
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 690
+Installed-Size: 693
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: apt
-Version: 0.9.7.8+RPiTC1
+Version: 0.9.8+RPiTC1
 Depends: libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Pre-Depends: multiarch-support
 Description: deb package format runtime library
@@ -3203,16 +3214,16 @@ Package: locales
 Status: install ok installed
 Priority: standard
 Section: localization
-Installed-Size: 15118
+Installed-Size: 15726
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: all
 Source: eglibc
-Version: 2.13-38+RPiTC3
+Version: 2.17-2+RPiTC1
 Replaces: base-config, lliurex-belocs-locales-data
-Depends: glibc-2.13-1, debconf (>= 0.5) | debconf-2.0
+Depends: glibc-2.17-1, debconf (>= 0.5) | debconf-2.0
 Conflicts: base-config, belocs-locales-bin, belocs-locales-data
 Conffiles:
- /etc/locale.alias f48c7816371493dabaae9fd0d272cccd
+ /etc/locale.alias 51efde6fe4fb2b6adbb943d32c5d5f02
 Description: Embedded GNU C Library: National Language (locale) data [support]
  Machine-readable data files, shared objects and programs used by the
  C library for localization (l10n) and internationalization (i18n) support.
@@ -3228,62 +3239,25 @@ Homepage: http://www.eglibc.org
 Package: icaclient
 Status: install ok installed
 Priority: optional
-Section: non-free/net
-Installed-Size: 7272
-Maintainer: Citrix Systems, Inc. <debian.package.support@citrix.com>
+Section: main
+Maintainer: Gibbio <gibbio@gmail.com>
 Architecture: armel
-Version: 12.1.0
-Depends: libc6 (>= 2.7-1), libice6 (>= 1:1.0.0), libgtk2.0-0 (>= 2.12.0), libsm6, libx11-6, libxext6, libxmu6, libxp6, libxpm4, libasound2
-Pre-Depends: debconf (>= 0.5)
-Recommends: libmotif4 | hptc-ica-support | openmotif (>= 2.3.1), libglib2.0-0 (>= 2.12.0), libgstreamer-plugins-base0.10-0 (>= 0.10.15), libgstreamer0.10-0 (>= 0.10.15), libspeex1, libvorbis0a, libvorbisenc2, libcurl3 (>= 7.18.2)
-Conflicts: icaclient-term
-Conffiles:
- /etc/icaclient/nls/ja/appsrv.ini 2936dfc35f329f418e22ed0f17e87783
- /etc/icaclient/nls/ja/wfclient.ini d88ba268b35568e33467ab550e1055c7
- /etc/icaclient/nls/ja/module.ini 0f97dc92f7d8a27bff0b7608ee1ec05f
- /etc/icaclient/nls/en/appsrv.ini 2936dfc35f329f418e22ed0f17e87783
- /etc/icaclient/nls/en/wfclient.ini 304820223c8a9860ff37805bccdc17fa
- /etc/icaclient/nls/en/module.ini 0fc0de9f292159b7c9a34b52d7e502ca
- /etc/icaclient/nls/de/appsrv.ini 2936dfc35f329f418e22ed0f17e87783
- /etc/icaclient/nls/de/wfclient.ini 304820223c8a9860ff37805bccdc17fa
- /etc/icaclient/nls/de/module.ini 099a5e9c8c323db184281a1d51c022eb
- /etc/icaclient/config/All_Regions.ini 1af12b997b8982b221463dc6358feb76
- /etc/icaclient/config/MediaStreamingConfig.tbl 3c6e64f300c8fa838652f1ead94fd34a
- /etc/icaclient/config/Untrusted_Region.ini d64e480a1e3aee91388e493986bc50a1
- /etc/icaclient/config/regions.ini 570a6f2df0147af5c1ae574f56a2e0c1
- /etc/icaclient/config/canonicalization.ini cdc3a64aa5173498baca07954cd37cd9
- /etc/icaclient/config/Unknown_Region.ini 6f892e2876e51729f8deb7bb329d0435
- /etc/icaclient/config/Trusted_Region.ini 9eea9fe63c32ddb140c31eee1414dc24
- /etc/icaclient/config/usertemplate/All_Regions.ini 5c15435b040ec5ed4b78d7684e9efc55
- /etc/icaclient/config/usertemplate/Untrusted_Region.ini ad4d6e982ec7c3e0297cd27843864281
- /etc/icaclient/config/usertemplate/Unknown_Region.ini 815ed196596fc20d3b250743f91719c1
- /etc/icaclient/config/usertemplate/Trusted_Region.ini 1c2d6356d76110531d85da0548a4953b
-Description: Citrix Receiver for Linux
- The Citrix Receiver for Linux provides users with access to resources published
- on XenApp or XenDesktop servers. The clients combine ease of deployment and
- use, and offer quick, secure access to applications, content, and virtual
- desktops.
- .
- Users can connect to resources published on XenApp servers using either
- individual ICA connections or, if using Citrix XenApp, predefined ICA
- connection configurations from servers running the Web Interface.
- .
- Users can also connect to virtual desktops provided by XenDesktop, enabling
- them to use those virtual desktops as if they were connecting to a local
- Windows desktop.
+Version: 12.2.3+RPiTC2
+Depends: libmotif4
+Description: Citrix Receiver for Linux System on a Chip (SoC) 12.2.3
 
 Package: libgcc1
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 198
+Installed-Size: 205
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: gcc-4.7 (4.7.2-5+RPiTC7)
-Version: 1:4.7.2-5+RPiTC7
+Source: gcc-4.8 (4.8.0-7+RPiTC2)
+Version: 1:4.8.0-7+RPiTC2
 Provides: libgcc1-armel
-Depends: gcc-4.7-base (= 4.7.2-5+RPiTC7), libc6 (>= 2.4)
+Depends: gcc-4.8-base (= 4.8.0-7+RPiTC2), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Description: GCC support library
@@ -3433,15 +3407,15 @@ Package: libasound2
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 1135
+Installed-Size: 1144
 Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: alsa-lib
-Version: 1.0.25-4+RPiTC2
+Version: 1.0.27-3+RPiTC1
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
-Suggests: libasound2-plugins (>= 1.0.18)
+Suggests: libasound2-plugins (>= 1.0.24)
 Breaks: bluez-alsa (<= 4.94-2), libasound2-plugin-equal (<= 0.6-1), libasound2-plugins (<< 1.0.24)
 Description: shared library for ALSA applications
  This package contains the ALSA library and its standard plugins, as well
@@ -3459,18 +3433,18 @@ Installed-Size: 414
 Maintainer: Santiago Vila <sanvila@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 7.1+RPiTC1
+Version: 7.2+RPiTC1
 Replaces: base, dpkg (<= 1.15.0), miscutils
 Provides: base
 Pre-Depends: awk
 Breaks: initscripts (<< 2.88dsf-13.3), sendfile (<< 2.1b.20080616-5.2~)
 Conffiles:
- /etc/debian_version a81dbdee5126e79a7099b890c5a36ebe
+ /etc/debian_version 142012ca081ab0981cdcc1ac6db77c34
  /etc/dpkg/origins/debian 731423fa8ba067262f8ef37882d1e742
  /etc/host.conf 4eb63731c9f5e30903ac4fc07a7fe3d6
- /etc/issue dba73326d9d6ae1147e8d6793bcdbe07
- /etc/issue.net b08d336396c8314f778375db545b0e32
- /etc/os-release 42d92a8b24aacf4b78c2b82a5fa64285
+ /etc/issue 7e0cdccfd92bb567d20bcbfab3633f0f
+ /etc/issue.net 1608262bf8f67fb33b204248adb06a49
+ /etc/os-release f72db031aee062cfd1e565dbf36d0c1a
 Description: Debian base system miscellaneous files
  This package contains the basic filesystem hierarchy of a Debian system, and
  several important miscellaneous files, such as /etc/debian_version,
@@ -3482,12 +3456,12 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: admin
-Installed-Size: 397
+Installed-Size: 385
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: util-linux
-Version: 2.20.1-5.3+RPiTC3
+Version: 2.20.1-5.4+RPiTC1
 Pre-Depends: libblkid1 (>= 2.20.1), libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libmount1 (>= 2.20.1), libselinux1 (>= 2.0.15), libsepol1 (>= 1.14)
 Suggests: nfs-common (>= 1:1.1.0-13)
 Description: Tools for mounting and manipulating filesystems
@@ -3499,12 +3473,12 @@ Package: libcairo-gobject2
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 494
+Installed-Size: 562
 Maintainer: Dave Beckett <dajobe@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: cairo
-Version: 1.12.2-3+RPiTC1
+Version: 1.12.14-4+RPiTC1
 Depends: libc6 (>= 2.4), libcairo2 (>= 1.10.0), libglib2.0-0 (>= 2.14.0)
 Pre-Depends: multiarch-support
 Description: The Cairo 2D vector graphics library (GObject library)
@@ -3666,12 +3640,12 @@ Package: libreadline5
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 301
+Installed-Size: 287
 Maintainer: Debian QA Group <packages@qa.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: readline5
-Version: 5.2+dfsg-1+RPiTC1
+Version: 5.2+dfsg-2+RPiTC1
 Depends: readline-common, libc6 (>= 2.4), libtinfo5
 Pre-Depends: multiarch-support
 Description: GNU readline and history libraries, run-time libraries
@@ -3706,13 +3680,13 @@ Package: libncurses5
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 249
+Installed-Size: 237
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: ncurses
-Version: 5.9-10+RPiTC1
-Depends: libtinfo5 (= 5.9-10+RPiTC1), libc6 (>= 2.4)
+Version: 5.9+20130504-1+RPiTC1
+Depends: libtinfo5 (= 5.9+20130504-1+RPiTC1), libc6 (>= 2.4)
 Pre-Depends: multiarch-support, libtinfo5 (>= 5.9-3)
 Recommends: libgpm2
 Description: shared libraries for terminal handling
@@ -3722,6 +3696,46 @@ Description: shared libraries for terminal handling
  This package contains the shared libraries necessary to run programs
  compiled with ncurses.
 Homepage: http://invisible-island.net/ncurses/
+
+Package: fonts-dejavu-core
+Status: install ok installed
+Priority: optional
+Section: fonts
+Installed-Size: 2882
+Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
+Architecture: all
+Multi-Arch: foreign
+Source: fonts-dejavu
+Version: 2.33+svn2514-3+RPiTC1
+Replaces: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Breaks: ttf-dejavu (<< 2.20-1), ttf-dejavu-core (<< 2.33+svn2514-2~)
+Conffiles:
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-sans.conf f7df7bba810dd953dd78212900f4dcad
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans.conf 6488b24401e477e35aa71237054c8ada
+ /etc/fonts/conf.avail/58-dejavu-lgc-serif.conf 5f0b00e681b1f40b65dd336696ee0bbb
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-sans-mono.conf 10d6f2176d76ee9b89a19a17811257f2
+ /etc/fonts/conf.avail/58-dejavu-lgc-sans-mono.conf d2ee39274982cb4f831783cff742c8bc
+ /etc/fonts/conf.avail/57-dejavu-sans.conf 29cfe6c581fe2dbc222525ce00097002
+ /etc/fonts/conf.avail/58-dejavu-lgc-sans.conf b4a8f51e45aa24fdee47b3f838cc0205
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-sans-mono.conf 0cbf30e4580c5a8570da071ab12c5e4d
+ /etc/fonts/conf.avail/57-dejavu-sans-mono.conf d3e4d007a9ac6c47243b5994f1d195e3
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-lgc-serif.conf 0b01522fe76b4e5b8ab3d12383371348
+ /etc/fonts/conf.avail/57-dejavu-serif.conf 1dca2f4ec93842e94f3919f7e0c8f7a9
+ /etc/fonts/conf.avail/20-unhint-small-dejavu-serif.conf e90c678d46f49bb9d6ba469b64e80c0c
+Description: Vera font family derivate with additional characters
+ DejaVu provides an expanded version of the Vera font family aiming for
+ quality and broader Unicode coverage while retaining the original Vera
+ style. DejaVu currently works towards conformance with the Multilingual
+ European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
+ fonts provide serif, sans and monospaced variants.
+ .
+ This package only contains the sans, sans-bold, serif, serif-bold,
+ mono and mono-bold variants. For additional variants, see the
+ ttf-dejavu-extra package.
+ .
+ DejaVu fonts are intended for use on low-resolution devices (mainly
+ computer screens) but can be used in printing as well.
+Homepage: http://dejavu-fonts.org/
 
 Package: libqt4-network
 Status: install ok installed
@@ -3818,12 +3832,12 @@ Package: libexpat1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 349
-Maintainer: Debian XML/SGML Group <debian-xml-sgml-pkgs@lists.alioth.debian.org>
+Installed-Size: 325
+Maintainer: Debian QA Group <packages@qa.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: expat
-Version: 2.1.0-1+RPiTC1
+Version: 2.1.0-3+RPiTC1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Conflicts: wink (<= 1.5.1060-4)
@@ -3871,7 +3885,7 @@ Priority: optional
 Section: main
 Maintainer: Gibbio <gibbio@gmail.com>
 Architecture: armel
-Version: 0.16.0.725+RPiTC5
+Version: 0.16.0.725+RPiTC6
 Depends: libwxgtk2.8-0, libxcomp3, nxproxy
 Description: OPENNX: http://opennx.net/
 
@@ -3881,9 +3895,9 @@ Priority: optional
 Section: main
 Maintainer: Gibbio <gibbio@gmail.com>
 Architecture: armel
-Version: 0.5.6+RPiTC5
+Version: 0.5.7+RPiTC1
 Depends: spice-gtk, libgtk-3-0, libgtk-vnc-2.0-0, libavcodec53, libpulse-mainloop-glib0, libpulse0
-Description: Virt Viewer Git commit: 284aef0e809784962d49d28e98dfb4705de34
+Description: Virt Viewer Git commit: 153e66b9ed710a787539624aa4b8b60a212e
 
 Package: libdirectfb-1.2-9
 Status: install ok installed
@@ -4002,10 +4016,11 @@ Package: usbutils
 Status: install ok installed
 Priority: optional
 Section: utils
-Installed-Size: 660
+Installed-Size: 693
 Maintainer: Aurelien Jarno <aurel32@debian.org>
 Architecture: armel
-Version: 1:005-3+RPiTC1
+Multi-Arch: foreign
+Version: 1:006-1+RPiTC1
 Depends: libc6 (>= 2.4), libusb-1.0-0 (>= 2:1.0.8), zlib1g (>= 1:1.2.3.3)
 Suggests: wget (>= 1.8.1-6) | lynx (>= 2.8.4.1b-3)
 Description: Linux USB utilities
@@ -4097,17 +4112,17 @@ Description: standard fonts for X
  most cases it is desirable to have the X font server (xfs) and/or an X server
  installed to make the fonts available to X clients.
 
-Package: libmpc2
+Package: libmpc3
 Status: install ok installed
 Priority: extra
 Section: libs
-Installed-Size: 97
+Installed-Size: 102
 Maintainer: Laurent Fousse <lfousse@debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: mpclib
-Version: 0.9-4+RPiTC1
-Depends: libc6 (>= 2.4), libgmp10, libmpfr4 (>= 3.1.0)
+Source: mpclib3
+Version: 1.0.1-1+RPiTC1
+Depends: libc6 (>= 2.4), libgmp10, libmpfr4 (>= 3.1.1)
 Pre-Depends: multiarch-support
 Description: multiple precision complex floating-point library
  MPC is a portable library written in C for arbitrary precision
@@ -4127,12 +4142,12 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 846
+Installed-Size: 911
 Maintainer: Clint Adams <clint@debian.org>
 Architecture: armel
-Version: 4.2.1-10+RPiTC3
+Version: 4.2.2-1+RPiTC1
 Depends: dpkg (>= 1.15.4) | install-info
-Pre-Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.4), libselinux1 (>= 1.32)
+Pre-Depends: libacl1 (>= 2.2.51-8), libc6 (>= 2.7), libselinux1 (>= 1.32)
 Description: The GNU sed stream editor
  sed reads the specified files or the standard input if no
  files are specified, makes editing changes according to a
@@ -4239,12 +4254,12 @@ Package: libgtk2.0-common
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 20627
+Installed-Size: 20638
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: gtk+2.0
-Version: 2.24.10-2+RPiTC2
+Version: 2.24.17-2+RPiTC1
 Replaces: libgtk2.0-0 (<< 2.24.8-2)
 Recommends: libgtk2.0-0
 Breaks: libgtk2.0-0 (<< 2.24.8-2)
@@ -4685,12 +4700,12 @@ Package: liborc-0.4-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 553
+Installed-Size: 511
 Maintainer: Maintainers of GStreamer packages <pkg-gstreamer-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: orc
-Version: 1:0.4.16-2+RPiTC1
+Version: 1:0.4.17-2+RPiTC1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Description: Library of Optimized Inner Loops Runtime Compiler
@@ -4921,23 +4936,23 @@ Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: xorg
-Version: 1:7.7+2+RPiTC1
+Version: 1:7.7+3+RPiTC1
 Depends: debconf (>= 0.5) | debconf-2.0, lsb-base (>= 1.3-9ubuntu2)
 Conffiles:
- /etc/X11/Xsession.options 210cd520efa87a5197cac01e10b3a84a
+ /etc/init.d/x11-common aacceda738fb4e684ff00b5ac3fb6c0a
+ /etc/X11/Xreset.d/README b344c222b5daf81926fd3270df374b5f
  /etc/X11/Xreset 05d188ccac2f3360af8fe0c216640233
  /etc/X11/Xsession 8662d290adffe530016ebf825b9af06f
- /etc/X11/Xsession.d/20x11-common_process-args b3365bc1fd7637dc237eda93533d0fe9
- /etc/X11/Xsession.d/99x11-common_start 3874d5e8f3ec888f69adb126e223e168
- /etc/X11/Xsession.d/40x11-common_xsessionrc db544c8543d1cb3762b9859288e77040
- /etc/X11/Xsession.d/90x11-common_ssh-agent ae74aadf705c5fccf841ef921b45ca72
- /etc/X11/Xsession.d/35x11-common_xhost-local 3080616d080574d7b06c2b2a20af53dd
+ /etc/X11/rgb.txt 09ee098b83d94c7c046d6b55ebe84ae1
+ /etc/X11/Xresources/x11-common b640adb1cd646ec097f8df5b6deca9f0
+ /etc/X11/Xsession.options 210cd520efa87a5197cac01e10b3a84a
  /etc/X11/Xsession.d/50x11-common_determine-startup b4570043736ae7f22947067b6d28ab8d
  /etc/X11/Xsession.d/30x11-common_xresources 61cebe25ee0c64e981b88958dfee6f9c
- /etc/X11/Xresources/x11-common b640adb1cd646ec097f8df5b6deca9f0
- /etc/X11/rgb.txt 09ee098b83d94c7c046d6b55ebe84ae1
- /etc/X11/Xreset.d/README b344c222b5daf81926fd3270df374b5f
- /etc/init.d/x11-common aacceda738fb4e684ff00b5ac3fb6c0a
+ /etc/X11/Xsession.d/40x11-common_xsessionrc db544c8543d1cb3762b9859288e77040
+ /etc/X11/Xsession.d/90x11-common_ssh-agent ae74aadf705c5fccf841ef921b45ca72
+ /etc/X11/Xsession.d/99x11-common_start 3874d5e8f3ec888f69adb126e223e168
+ /etc/X11/Xsession.d/20x11-common_process-args b3365bc1fd7637dc237eda93533d0fe9
+ /etc/X11/Xsession.d/35x11-common_xhost-local 3080616d080574d7b06c2b2a20af53dd
 Description: X Window System (X.Org) infrastructure
  x11-common contains the filesystem infrastructure required for further
  installation of the X Window System in any configuration; it does not
@@ -4954,10 +4969,10 @@ Package: net-tools
 Status: install ok installed
 Priority: important
 Section: net
-Installed-Size: 894
+Installed-Size: 829
 Maintainer: net-tools Team <pkg-net-tools-maintainers@lists.alioth.debian.org>
 Architecture: armel
-Version: 1.60-24.2+RPiTC1
+Version: 1.60-25+RPiTC1
 Replaces: ja-trans (<= 0.8-2), netbase (<< 4.00)
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0)
 Conflicts: ja-trans (<= 0.8-2)
@@ -5136,6 +5151,22 @@ Description: library for dealing with netlink sockets - generic netlink
  protocol.
 Homepage: http://people.suug.ch/~tgr/libnl/
 
+Package: gcc-4.8-base
+Status: install ok installed
+Priority: required
+Section: libs
+Installed-Size: 205
+Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
+Architecture: armel
+Multi-Arch: same
+Source: gcc-4.8
+Version: 4.8.0-7+RPiTC2
+Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
+Description: GCC, the GNU Compiler Collection (base package)
+ This package contains files common to all languages and libraries
+ contained in the GNU Compiler Collection (GCC).
+Homepage: http://gcc.gnu.org/
+
 Package: libmpg123-0
 Status: install ok installed
 Priority: optional
@@ -5145,7 +5176,7 @@ Maintainer: Debian Multimedia Maintainers <pkg-multimedia-maintainers@lists.alio
 Architecture: armel
 Multi-Arch: same
 Source: mpg123
-Version: 1.14.4-1+RPiTC1
+Version: 1.15.3-1+RPiTC1
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Description: MPEG layer 1/2/3 audio decoder (shared library)
@@ -5295,18 +5326,18 @@ Package: keyboard-configuration
 Status: install ok installed
 Priority: optional
 Section: utils
-Installed-Size: 2289
+Installed-Size: 893
 Maintainer: Debian Install System Team <debian-boot@lists.debian.org>
 Architecture: all
 Source: console-setup
-Version: 1.92+RPiTC1
+Version: 1.93+RPiTC1
 Replaces: console-setup (<< 1.47), console-setup-mini (<< 1.47)
 Depends: liblocale-gettext-perl, initscripts
 Pre-Depends: debconf (>= 1.5.34)
 Breaks: console-setup (<< 1.71), console-setup-mini (<< 1.47)
 Conffiles:
- /etc/init.d/console-setup 0db5a9bc1f799d7ce34a971a8aa43264
  /etc/init.d/keyboard-setup 6ecdd8d7eae634bc48cbc82a73c12c25
+ /etc/init.d/console-setup 0db5a9bc1f799d7ce34a971a8aa43264
 Description: system-wide keyboard preferences
  This package maintains the keyboard preferences in
  /etc/default/keyboard.  Other packages can use the information
@@ -5451,12 +5482,12 @@ Package: libgdk-pixbuf2.0-common
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 3017
+Installed-Size: 3040
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: gdk-pixbuf
-Version: 2.26.1-1+RPiTC1
+Version: 2.28.1-1+RPiTC1
 Replaces: libgdk-pixbuf2.0-0 (<< 2.24.0-2)
 Breaks: libgdk-pixbuf2.0-0 (<< 2.24.0-2)
 Description: GDK Pixbuf library - data files
@@ -5545,7 +5576,7 @@ Priority: optional
 Section: main
 Maintainer: Gibbio <gibbio@gmail.com>
 Architecture: armel
-Version: 2.9+RPiTC4
+Version: 2.9+RPiTC7
 Depends: spice-gtk, iceweasel
 Description: Virt Viewer Git commit: 56ff6800618b855260b6b72b84d692ea2fa7db8
 
@@ -5741,9 +5772,9 @@ Priority: optional
 Section: main
 Maintainer: Gibbio <gibbio@gmail.com>
 Architecture: armel
-Version: 20130422+RPiTC9
+Version: 20130510+RPiTC1
 Depends: libavcodec53, libpulse-mainloop-glib0, libpulse0, libgstreamer0.10-0, libgstreamer-plugins-base0.10-0
-Description: FreeRDP Git commit: df2096908b6763f29509175265e3e061a13319
+Description: FreeRDP Git commit: 30e2db05530e0fbf7a6d0f8bbd1d7e818f0e79
 
 Package: initscripts
 Status: install ok installed
@@ -5799,12 +5830,12 @@ Package: libblkid1
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 233
+Installed-Size: 217
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: util-linux
-Version: 2.20.1-5.3+RPiTC3
+Version: 2.20.1-5.4+RPiTC1
 Depends: libc6 (>= 2.7), libgcc1 (>= 1:4.4.0), libuuid1 (>= 2.16)
 Pre-Depends: multiarch-support
 Description: block device id library
@@ -5819,12 +5850,12 @@ Package: libdatrie1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 73
+Installed-Size: 71
 Maintainer: Theppitak Karoonboonyanan <thep@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libdatrie
-Version: 0.2.5-3+RPiTC1
+Version: 0.2.6-2+RPiTC1
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: Double-array trie library
@@ -5857,12 +5888,12 @@ Package: libsemanage-common
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 63
+Installed-Size: 64
 Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: libsemanage
-Version: 2.1.6-6+RPiTC1
+Version: 2.1.10-1+RPiTC1
 Replaces: libsemanage1 (<= 2.0.41-1), libsemanage1-dev (<< 2.1.6-3~)
 Breaks: libsemanage1 (<= 2.0.41-1), libsemanage1-dev (<< 2.1.6-3~)
 Conffiles:
@@ -6124,22 +6155,6 @@ Description: Cross Platform Audio Output Library
   * and several others.
 Homepage: http://www.xiph.org/ao/
 
-Package: rdesktop
-Status: install ok installed
-Priority: optional
-Section: x11
-Installed-Size: 410
-Maintainer: Laszlo Boszormenyi (GCS) <gcs@debian.hu>
-Architecture: armel
-Version: 1.7.1-1+RPiTC2
-Depends: libasound2 (>= 1.0.16), libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libpcsclite1 (>= 1.3.0), libssl1.0.0 (>= 1.0.0), libx11-6, libxrandr2
-Suggests: pcscd
-Description: RDP client for Windows NT/2000 Terminal Server and Windows Servers
- rdesktop is an open source client for Windows NT/2000 Terminal Server and
- Windows Server 2003/2008. Capable of natively speaking its Remote Desktop
- Protocol (RDP) in order to present the user's Windows desktop. Unlike Citrix
- ICA, no server extensions are required.
-
 Package: e2fsprogs
 Essential: yes
 Status: install ok installed
@@ -6188,24 +6203,25 @@ Package: openssh-server
 Status: install ok installed
 Priority: optional
 Section: net
-Installed-Size: 777
+Installed-Size: 774
 Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: openssh
-Version: 1:6.0p1-4+RPiTC1
+Version: 1:6.2p1-3+RPiTC1
 Replaces: openssh-client (<< 1:3.8.1p1-11), ssh, ssh-krb5
 Provides: ssh-server
-Depends: libc6 (>= 2.8), libcomerr2 (>= 1.01), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libkrb5-3 (>= 1.6.dfsg.2), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libssl1.0.0 (>= 1.0.1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, openssh-client (= 1:6.0p1-4+RPiTC1), libpam-runtime (>= 0.76-14), libpam-modules (>= 0.72-9), adduser (>= 3.9), dpkg (>= 1.9.0), lsb-base (>= 3.2-13), procps
-Recommends: xauth, ncurses-term, openssh-blacklist, openssh-blacklist-extra
-Suggests: ssh-askpass, rssh, molly-guard, ufw, monkeysphere
+Depends: libc6 (>= 2.16), libcomerr2 (>= 1.01), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libkrb5-3 (>= 1.6.dfsg.2), libpam0g (>= 0.99.7.1), libselinux1 (>= 1.32), libssl1.0.0 (>= 1.0.1), libwrap0 (>= 7.6-4~), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, openssh-client (= 1:6.2p1-3+RPiTC1), libpam-runtime (>= 0.76-14), libpam-modules (>= 0.72-9), adduser (>= 3.9), dpkg (>= 1.9.0), lsb-base (>= 3.2-13), procps, debianutils (>= 4)
+Recommends: xauth, ncurses-term
+Suggests: ssh-askpass, rssh, molly-guard, ufw, monkeysphere, openssh-blacklist, openssh-blacklist-extra
 Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7), ssh-nonfree (<< 2), ssh-socks, ssh2
 Conffiles:
  /etc/default/ssh 500e3cf069fe9a7b9936108eb9d9c035
- /etc/network/if-up.d/openssh-server f9d5bc239ec0720cb8ad6e1455fbf21e
+ /etc/init/ssh.conf 2c7eae0c0ef56b191dad89310fa36b8e
+ /etc/pam.d/sshd 6cda522e994ad0d3c6f622a0b37966bd
+ /etc/network/if-up.d/openssh-server 1df1ce98b15b2b39ea3366399d61c9d7
+ /etc/init.d/ssh 38f132932b9fd26f539d22fcfc307d84
  /etc/ufw/applications.d/openssh-server 486b78d54b93cc9fdc950c1d52ff479e
- /etc/init.d/ssh 33017d7ec97eda623412c3fd05dedb8f
- /etc/pam.d/sshd ee93e13ec6aa3f3120c6939a2880a5b6
 Description: secure shell (SSH) server, for secure access from remote machines
  This is the portable version of OpenSSH, a free implementation of
  the Secure Shell protocol as specified by the IETF secsh working
@@ -6232,13 +6248,13 @@ Package: libatk1.0-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 199
+Installed-Size: 198
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: atk1.0
-Version: 2.4.0-2+RPiTC1
-Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.2), libatk1.0-data (= 2.4.0-2+RPiTC1)
+Version: 2.8.0-2+RPiTC1
+Depends: libc6 (>= 2.4), libglib2.0-0 (>= 2.31.2), libatk1.0-data (= 2.8.0-2+RPiTC1)
 Pre-Depends: multiarch-support
 Description: ATK accessibility toolkit
  ATK is a toolkit providing accessibility interfaces for applications or
@@ -6564,11 +6580,11 @@ Package: iso-codes
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 15019
+Installed-Size: 15082
 Maintainer: Tobias Quathamer <toddy@debian.org>
 Architecture: all
 Multi-Arch: foreign
-Version: 3.41-1+RPiTC1
+Version: 3.42-1+RPiTC1
 Suggests: isoquery
 Description: ISO language, territory, currency, script codes and their translations
  This package provides the ISO 639 and ISO 639-3 language code lists,
@@ -6607,13 +6623,13 @@ Package: libncursesw5
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 307
+Installed-Size: 299
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: ncurses
-Version: 5.9-10+RPiTC1
-Depends: libtinfo5 (= 5.9-10+RPiTC1), libc6 (>= 2.4)
+Version: 5.9+20130504-1+RPiTC1
+Depends: libtinfo5 (= 5.9+20130504-1+RPiTC1), libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Recommends: libgpm2
 Description: shared libraries for terminal handling (wide character support)
@@ -6631,7 +6647,7 @@ Section: perl
 Installed-Size: 86
 Maintainer: Debian Perl Group <pkg-perl-maintainers@lists.alioth.debian.org>
 Architecture: armel
-Version: 1.05-7+RPiTC2
+Version: 1.05-7+RPiTC1
 Depends: libc6 (>= 2.4)
 Pre-Depends: perl-base (>= 5.14.2-21), perlapi-5.14.2
 Description: module using libc functions for internationalization in Perl
@@ -6691,12 +6707,12 @@ Package: libmtdev1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 74
+Installed-Size: 73
 Maintainer: Nobuhiro Iwamatsu <iwamatsu@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: mtdev
-Version: 1.1.2-1+RPiTC1
+Version: 1.1.3-1+RPiTC1
 Depends: libc6 (>= 2.4)
 Pre-Depends: multiarch-support
 Description: Multitouch Protocol Translation Library - shared library
@@ -6709,23 +6725,28 @@ Package: alsa-utils
 Status: install ok installed
 Priority: optional
 Section: sound
-Installed-Size: 1973
+Installed-Size: 1960
 Maintainer: Debian ALSA Maintainers <pkg-alsa-devel@lists.alioth.debian.org>
 Architecture: armel
-Version: 1.0.25-4+RPiTC1
+Version: 1.0.27-2+RPiTC1
 Provides: audio-mixer
-Depends: lsb-base (>= 3.0-9), kmod, whiptail | dialog, libasound2 (>= 1.0.25), libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20080119), libsamplerate0 (>= 0.1.7), libtinfo5
-Recommends: alsa-base (>= 1.0.15), pciutils
+Depends: lsb-base (>= 3.0-9), kmod, whiptail | dialog, libasound2 (>= 1.0.27), libc6 (>= 2.8), libgcc1 (>= 1:4.4.0), libncursesw5 (>= 5.6+20080119), libsamplerate0 (>= 0.1.7), libtinfo5
+Recommends: alsa-base (>= 1.0.15)
 Conffiles:
  /etc/init.d/alsa-utils 37a137aba057cd0cfd0f8daca924d3c7
 Description: Utilities for configuring and using ALSA
  Included tools:
-  - amixer: command line mixer
+  - alsactl: advanced controls for ALSA sound drivers
+  - alsaloop: create loopbacks between PCM capture and playback devices
   - alsamixer: curses mixer
+  - alsaucm: alsa use case manager
+  - amixer: command line mixer
   - amidi: read from and write to ALSA RawMIDI ports
   - aplay, arecord: command line playback and recording
   - aplaymidi, arecordmidi: command line MIDI playback and recording
   - aconnect, aseqnet, aseqdump: command line MIDI sequencer control
+  - iecset: set or dump IEC958 status bits
+  - speaker-test: speaker test tone generator
  .
  ALSA is the Advanced Linux Sound Architecture.
 Homepage: http://www.alsa-project.org/
@@ -6734,12 +6755,12 @@ Package: dialog
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 1154
+Installed-Size: 1183
 Maintainer: Santiago Vila <sanvila@debian.org>
 Architecture: armel
-Version: 1.1-20120215-3+RPiTC1
+Version: 1.2-20121230-1+RPiTC1
 Provides: libdialog-dev
-Depends: libc6 (>= 2.7), libncursesw5 (>= 5.6+20070908), libtinfo5, debianutils (>= 1.6)
+Depends: libc6 (>= 2.15), libncursesw5 (>= 5.6+20070908), libtinfo5, debianutils (>= 1.6)
 Description: Displays user-friendly dialog boxes from shell scripts
  This application provides a method of displaying several different types
  of dialog boxes from shell scripts.  This allows a developer of a script
@@ -6803,30 +6824,16 @@ Description: Little CMS color management library
 
 Package: ttf-dejavu-core
 Status: install ok installed
-Priority: optional
-Section: fonts
-Installed-Size: 2807
+Priority: extra
+Section: oldlibs
+Installed-Size: 66
 Maintainer: Debian Fonts Task Force <pkg-fonts-devel@lists.alioth.debian.org>
 Architecture: all
-Multi-Arch: foreign
-Source: ttf-dejavu
-Version: 2.33-3+RPiTC1
-Replaces: ttf-dejavu (<< 2.20-1)
-Pre-Depends: dpkg (>= 1.15.6~)
-Conflicts: ttf-dejavu (<< 2.20-1)
-Description: Vera font family derivate with additional characters
- DejaVu provides an expanded version of the Vera font family aiming for
- quality and broader Unicode coverage while retaining the original Vera
- style. DejaVu currently works towards conformance with the Multilingual
- European Standards (MES-1 and MES-2) for Unicode coverage. The DejaVu
- fonts provide serif, sans and monospaced variants.
- .
- This package only contains the sans, sans-bold, serif, serif-bold,
- mono and mono-bold variants. For additional variants, see the
- ttf-dejavu-extra package.
- .
- DejaVu fonts are intended for use on low-resolution devices (mainly
- computer screens) but can be used in printing as well.
+Source: fonts-dejavu
+Version: 2.33+svn2514-3+RPiTC1
+Depends: fonts-dejavu-core
+Description: transitional dummy package
+ This package is a dummy transitional package. It can be safely removed.
 Homepage: http://dejavu-fonts.org/
 
 Package: libxp6
@@ -6910,12 +6917,6 @@ Description: high-quality block-sorting file compressor library - runtime
  predecessor, bzip (.bz).
 Homepage: http://www.bzip.org/
 
-Package: libnx
-Status: install ok not-installed
-Priority: optional
-Section: main
-Architecture: armel
-
 Package: libmp3lame0
 Status: install ok installed
 Priority: optional
@@ -6963,12 +6964,12 @@ Package: libnm-glib4
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 447
+Installed-Size: 461
 Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Source: network-manager
-Version: 0.9.4.0-10+RPiTC2
-Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgudev-1.0-0 (>= 146), libnm-util2 (>= 0.9.4.0), libuuid1 (>= 2.16)
+Version: 0.9.8.0-4+RPiTC1
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgudev-1.0-0 (>= 146), libnm-util2 (>= 0.9.7.995), libuuid1 (>= 2.16)
 Description: network management framework (GLib shared library)
  NetworkManager is a system network service that manages your network devices
  and connections, attempting to keep active network connectivity when
@@ -6984,23 +6985,23 @@ Package: network-manager
 Status: install ok installed
 Priority: optional
 Section: net
-Installed-Size: 3976
+Installed-Size: 4455
 Maintainer: Utopia Maintenance Team <pkg-utopia-maintainers@lists.alioth.debian.org>
 Architecture: armel
-Version: 0.9.4.0-10+RPiTC2
-Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgudev-1.0-0 (>= 146), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200, libnm-glib4 (>= 0.9.4.0), libnm-util2 (>= 0.9.4.0), libpolkit-gobject-1-0 (>= 0.99), libuuid1 (>= 2.16), lsb-base (>= 3.2-14), wpasupplicant (>= 0.7.3-1), dbus (>= 1.1.2), udev, adduser, isc-dhcp-client (>= 4.1.1-P1-4)
+Version: 0.9.8.0-4+RPiTC1
+Depends: libc6 (>= 2.4), libdbus-1-3 (>= 1.0.2), libdbus-glib-1-2 (>= 0.88), libgcrypt11 (>= 1.4.5), libglib2.0-0 (>= 2.31.8), libgnutls26 (>= 2.12.17-0), libgudev-1.0-0 (>= 165), libnl-3-200 (>= 3.2.7), libnl-genl-3-200 (>= 3.2.7), libnl-route-3-200, libnm-glib4 (>= 0.9.8.0), libnm-util2 (>= 0.9.7.995), libpolkit-gobject-1-0 (>= 0.99), libuuid1 (>= 2.16), lsb-base (>= 3.2-14), wpasupplicant (>= 0.7.3-1), dbus (>= 1.1.2), udev, adduser, isc-dhcp-client (>= 4.1.1-P1-4)
 Pre-Depends: dpkg (>= 1.15.7.2)
 Recommends: policykit-1, ppp (>= 2.4.5), dnsmasq-base, iptables, modemmanager, crda
 Suggests: avahi-autoipd
 Breaks: network-manager-gnome (<< 0.9), network-manager-kde (<< 1:0.9), network-manager-openconnect (<< 0.9), network-manager-openvpn (<< 0.9), network-manager-pptp (<< 0.9), network-manager-vpnc (<< 0.9), plasma-widget-networkmanagement (<< 0.9~), ppp (<< 2.4.5)
 Conffiles:
- /etc/init.d/network-manager ff16e17e89d1aa858485570e90f6f04a
- /etc/NetworkManager/NetworkManager.conf 914f22205f2ed4d4bc84f3682ecd3153
- /etc/NetworkManager/dispatcher.d/01ifupdown 299819a8e64f00a1edbdfc99d05a8594
- /etc/dbus-1/system.d/nm-dispatcher.conf 5711a76c31a3763750fe2c331741f679
- /etc/dbus-1/system.d/nm-avahi-autoipd.conf 91ab68968b0dc06c3a55b482b50b3028
  /etc/dbus-1/system.d/nm-dhcp-client.conf 06b1ecfd8f1fa2a501a5f352e2e5e88e
- /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 86ea932131ee974e7a5c7b3d7184a583
+ /etc/dbus-1/system.d/nm-avahi-autoipd.conf 91ab68968b0dc06c3a55b482b50b3028
+ /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 0e84f6c5fc4060c582820bc63c07aa9f
+ /etc/dbus-1/system.d/nm-dispatcher.conf 5711a76c31a3763750fe2c331741f679
+ /etc/NetworkManager/dispatcher.d/01ifupdown 299819a8e64f00a1edbdfc99d05a8594
+ /etc/NetworkManager/NetworkManager.conf 914f22205f2ed4d4bc84f3682ecd3153
+ /etc/init.d/network-manager 59b97edb8cc5f8db9882118fbf102a88
  /etc/polkit-1/localauthority/10-vendor.d/org.freedesktop.NetworkManager.pkla c95fc58835c3d93739ef3efea8405b15
 Description: network management framework (daemon and userspace tools)
  NetworkManager is a system network service that manages your network devices
@@ -7045,14 +7046,14 @@ Package: libtinfo5
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 412
+Installed-Size: 421
 Maintainer: Craig Small <csmall@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: ncurses
-Version: 5.9-10+RPiTC1
+Version: 5.9+20130504-1+RPiTC1
 Replaces: libncurses5 (<< 5.9-3)
-Depends: libc6 (>= 2.4)
+Depends: libc6 (>= 2.16)
 Pre-Depends: multiarch-support
 Description: shared low-level terminfo library for terminal handling
  The ncurses library routines are a terminal-independent method of
@@ -7181,13 +7182,13 @@ Package: gcc-4.7-base
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 197
+Installed-Size: 201
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.7
-Version: 4.7.2-5+RPiTC7
-Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
+Version: 4.7.3-4+RPiTC2
+Breaks: dehydra (<= 0.9.hg20110609-2), gcc-4.4-base (<< 4.4.7), gcj-4.4-base (<< 4.4.6-9~), gcj-4.6-base (<< 4.6.1-4~), gnat-4.4-base (<< 4.4.6-3~), gnat-4.6 (<< 4.6.1-5~)
 Description: GCC, the GNU Compiler Collection (base package)
  This package contains files common to all languages and libraries
  contained in the GNU Compiler Collection (GCC).
@@ -7221,18 +7222,19 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 3019
+Installed-Size: 3043
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: eglibc
-Version: 2.13-38+RPiTC3
+Version: 2.17-2+RPiTC1
 Replaces: libc0.1, libc0.3, libc6, libc6.1
+Depends: libc6 (>> 2.17), libc6 (<< 2.18), libcap2 (>= 2.10)
 Breaks: libc0.1 (<< 2.10), libc0.3 (<< 2.10), libc6 (<< 2.10), libc6.1 (<< 2.10)
 Conffiles:
  /etc/default/nss d6d5d6f621fb3ead2548076ce81e309c
+ /etc/gai.conf 28fa76ff5a9e0566eaa1e11f1ce51f09
  /etc/ld.so.conf.d/libc.conf d4d833fd095fb7b90e1bb4a547f16de6
- /etc/gai.conf bef7187bc7be3830f50ac50727897840
  /etc/bindresvport.blacklist d2d1b996add35b65f64a22e9c8413632
 Description: Embedded GNU C Library: Binaries
  This package contains utility programs related to the GNU C Library.
@@ -7243,7 +7245,6 @@ Description: Embedded GNU C Library: Binaries
   * iconv, iconvconfig: convert between character encodings
   * ldd, ldconfig: print/configure shared library dependencies
   * locale, localedef: show/generate locale definitions
-  * rpcinfo: report RPC information
   * tzselect, zdump, zic: select/dump/compile time zones
 Homepage: http://www.eglibc.org
 
@@ -7355,7 +7356,7 @@ Maintainer: Debian/Ubuntu wpasupplicant Maintainers <pkg-wpa-devel@lists.alioth.
 Architecture: armel
 Multi-Arch: foreign
 Source: wpa
-Version: 1.0-3+RPiTC3
+Version: 1.0-3+RPiTC1
 Depends: libc6 (>= 2.4), libgcc1 (>= 1:4.4.0), libqtcore4 (>= 4:4.7.0~beta1), libqtgui4 (>= 4:4.5.3), libstdc++6 (>= 4.4.0), wpasupplicant (>= 0.7.3~), libqt4-svg
 Recommends: menu
 Description: graphical user interface for wpa_supplicant
@@ -7395,7 +7396,7 @@ Installed-Size: 62
 Maintainer: Debian X Strike Force <debian-x@lists.debian.org>
 Architecture: armel
 Source: xorg
-Version: 1:7.7+2+RPiTC1
+Version: 1:7.7+3+RPiTC1
 Depends: xserver-xorg-input-evdev, xserver-xorg-input-synaptics
 Recommends: xserver-xorg-input-wacom
 Description: X.Org X server -- input driver metapackage
@@ -7407,12 +7408,12 @@ Package: multiarch-support
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 179
+Installed-Size: 188
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: eglibc
-Version: 2.13-38+RPiTC3
+Version: 2.17-2+RPiTC1
 Depends: libc6 (>= 2.3.6-2)
 Description: Transitional package to ensure multiarch compatibility
  This is a transitional package used to ensure multiarch support is present
@@ -7526,7 +7527,7 @@ Section: editors
 Installed-Size: 1664
 Maintainer: Jordi Mallach <jordi@debian.org>
 Architecture: armel
-Version: 2.2.6-1+RPiTC2
+Version: 2.2.6-1+RPiTC1
 Replaces: pico
 Provides: editor
 Depends: libc6 (>= 2.4), libncursesw5 (>= 5.6+20070908), libtinfo5, dpkg (>= 1.15.4) | install-info
@@ -7754,12 +7755,12 @@ Package: libatk1.0-data
 Status: install ok installed
 Priority: optional
 Section: misc
-Installed-Size: 1676
+Installed-Size: 1689
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: all
 Multi-Arch: foreign
 Source: atk1.0
-Version: 2.4.0-2+RPiTC1
+Version: 2.8.0-2+RPiTC1
 Description: Common files for the ATK accessibility toolkit
  ATK is a toolkit providing accessibility interfaces for applications or
  other toolkits. By implementing these interfaces, those other toolkits or
@@ -7793,13 +7794,13 @@ Package: libselinux1
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 192
+Installed-Size: 182
 Maintainer: Debian SELinux maintainers <selinux-devel@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libselinux
-Version: 2.1.9-5+RPiTC1
-Depends: libc6 (>= 2.8)
+Version: 2.1.13-1+RPiTC1
+Depends: libc6 (>= 2.8), libpcre3 (>= 8.10)
 Pre-Depends: multiarch-support
 Description: SELinux runtime shared libraries
  This package provides the shared libraries for Security-enhanced
@@ -7821,26 +7822,27 @@ Description: SELinux runtime shared libraries
  API. libselinux may use the shared libsepol to manipulate the binary
  policy if necessary (e.g. to downgrade the policy format to an older
  version supported by the kernel) when loading policy.
+Homepage: http://userspace.selinuxproject.org/
 
 Package: openssh-client
 Status: install ok installed
 Priority: standard
 Section: net
-Installed-Size: 2240
+Installed-Size: 2362
 Maintainer: Debian OpenSSH Maintainers <debian-ssh@lists.debian.org>
 Architecture: armel
 Multi-Arch: foreign
 Source: openssh
-Version: 1:6.0p1-4+RPiTC1
+Version: 1:6.2p1-3+RPiTC1
 Replaces: ssh, ssh-krb5
 Provides: rsh-client, ssh-client
-Depends: libc6 (>= 2.11), libedit2 (>= 2.11-20080614-1), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libselinux1 (>= 1.32), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, adduser (>= 3.10), dpkg (>= 1.7.0), passwd
-Recommends: xauth, openssh-blacklist, openssh-blacklist-extra
-Suggests: ssh-askpass, libpam-ssh, keychain, monkeysphere
+Depends: libc6 (>= 2.15), libedit2 (>= 2.11-20080614-1), libgcc1 (>= 1:4.4.0), libgssapi-krb5-2 (>= 1.10+dfsg~), libselinux1 (>= 1.32), libssl1.0.0 (>= 1.0.1), zlib1g (>= 1:1.1.4), debconf (>= 1.2.0) | debconf-2.0, adduser (>= 3.10), dpkg (>= 1.7.0), passwd
+Recommends: xauth
+Suggests: ssh-askpass, libpam-ssh, keychain, monkeysphere, openssh-blacklist, openssh-blacklist-extra
 Conflicts: rsh-client (<< 0.16.1-1), sftp, ssh (<< 1:3.8.1p1-9), ssh-krb5 (<< 1:4.3p2-7)
 Conffiles:
- /etc/ssh/moduli 72ced8f8fbc59f318ad00504de5b4384
  /etc/ssh/ssh_config a7a6e6ef00bcd077b9b5e3e1b744fd30
+ /etc/ssh/moduli 07d36dec51c06b538f196fcea2c8707c
 Description: secure shell (SSH) client, for secure access to remote machines
  This is the portable version of OpenSSH, a free implementation of
  the Secure Shell protocol as specified by the IETF secsh working
@@ -7956,7 +7958,7 @@ Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gcc-4.6
-Version: 4.6.3-15+RPiTC2
+Version: 4.6.4-2+RPiTC2
 Breaks: dehydra (<= 0.9.hg20110609-2), gcj-4.6-base (<< 4.6.1-4~), gnat-4.6 (<< 4.6.1-5~)
 Description: GCC, the GNU Compiler Collection (base package)
  This package contains files common to all languages and libraries
@@ -7967,16 +7969,16 @@ Package: libc6
 Status: install ok installed
 Priority: required
 Section: libs
-Installed-Size: 8966
+Installed-Size: 9020
 Maintainer: GNU Libc Maintainers <debian-glibc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: eglibc
-Version: 2.13-38+RPiTC3
-Provides: glibc-2.13-1
-Depends: libc-bin (= 2.13-38+RPiTC3), libgcc1
+Version: 2.17-2+RPiTC1
+Provides: glibc-2.17-1
+Depends: libgcc1
 Suggests: glibc-doc, debconf | debconf-2.0, locales
-Breaks: locales (<< 2.13), locales-all (<< 2.13), nscd (<< 2.13)
+Breaks: locales (<< 2.17), locales-all (<< 2.17), nscd (<< 2.17)
 Conflicts: prelink (<= 0.0.20090311-1), tzdata (<< 2007k-1), tzdata-etch
 Conffiles:
  /etc/ld.so.conf.d/arm-linux-gnueabi.conf 8a91f734be05849526e29b33b9ef402b
@@ -8078,12 +8080,12 @@ Package: libpng12-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 276
+Installed-Size: 272
 Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: libpng
-Version: 1.2.49-3+RPiTC2
+Version: 1.2.49-4+RPiTC1
 Replaces: libpng12-dev (<= 1.2.8rel-7)
 Depends: libc6 (>= 2.11), zlib1g (>= 1:1.1.4)
 Pre-Depends: multiarch-support
@@ -8100,12 +8102,12 @@ Package: apt-utils
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 1252
+Installed-Size: 1272
 Maintainer: APT Development Team <deity@lists.debian.org>
 Architecture: armel
 Source: apt
-Version: 0.9.7.8+RPiTC1
-Depends: libapt-inst1.5 (>= 0.8.0), libapt-pkg4.12 (>= 0.8.16~exp9), libc6 (>= 2.4), libdb5.1, libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
+Version: 0.9.8+RPiTC1
+Depends: libapt-inst1.5 (>= 0.8.0), libapt-pkg4.12 (>= 0.9.8+RPiTC1), libc6 (>= 2.4), libdb5.1, libgcc1 (>= 1:4.4.0), libstdc++6 (>= 4.4.0)
 Suggests: xz-utils
 Description: package managment related utility programs
  This package contains some less used commandline utilities related
@@ -8130,28 +8132,28 @@ Package: udev
 Status: install ok installed
 Priority: important
 Section: admin
-Installed-Size: 930
+Installed-Size: 902
 Maintainer: Marco d'Itri <md@linux.it>
 Architecture: armel
 Multi-Arch: foreign
-Version: 175-7.1+RPiTC2
+Version: 175-7.2+RPiTC1
 Replaces: libudev0
-Depends: libc6 (>= 2.10), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32), libudev0 (= 175-7.1+RPiTC2), lsb-base (>= 3.0-6), util-linux (>= 2.16), procps
+Depends: libc6 (>= 2.10), libgcc1 (>= 1:4.4.0), libselinux1 (>= 1.32), libudev0 (= 175-7.2+RPiTC1), lsb-base (>= 3.0-6), util-linux (>= 2.16), procps
 Pre-Depends: debconf (>= 1.4.69) | debconf-2.0
 Recommends: usbutils, pciutils
 Breaks: consolekit (<< 0.4.1), dmsetup (<< 2.02.84-1), libsane (<< 1.0.21-3), linux-image-2.6-iop32x (<< 2.6.32), linux-image-2.6-ixp4xx (<< 2.6.32), linux-image-2.6-orion5x (<< 2.6.32), linux-image-2.6-versatile (<< 2.6.32), mdadm (<< 3.0-3), multipath-tools (<< 0.4.8-12), systemd (<< 28)
 Conflicts: libc6 (<< 2.9-22)
 Conffiles:
- /etc/init/udev.conf b4fb63a560e94cacf94765c9a371db99
  /etc/init/udevtrigger.conf 651ff2421dde80be7ce7ccbf7fa8cf18
- /etc/init/udev-finish.conf 28ebb3ad2d2c6ca545d72f3f0769f448
  /etc/init/udevmonitor.conf b541dfb5aa4958e9a5336ecaec00ca15
+ /etc/init/udev.conf b4fb63a560e94cacf94765c9a371db99
+ /etc/init/udev-finish.conf 28ebb3ad2d2c6ca545d72f3f0769f448
  /etc/init/udev-fallback-graphics.conf b8bfe7164e10cd0e53494b243c5728b1
- /etc/init.d/udev-mtab ac349aeb0669dceb1b7fce3ecb354df9
- /etc/init.d/udev c9cf56cfb976d11725170aec4cc39aa2
- /etc/modprobe.d/fbdev-blacklist.conf 38c676e0a97ce22c8198e367a55011ed
  /etc/udev/udev.conf 789b81bf32670806cf18a7fd5c295566
  /etc/udev/links.conf a30361f72b2d414a25612ba41e78f40f
+ /etc/init.d/udev c9cf56cfb976d11725170aec4cc39aa2
+ /etc/init.d/udev-mtab ac349aeb0669dceb1b7fce3ecb354df9
+ /etc/modprobe.d/fbdev-blacklist.conf f4a0af988321a0e17ef609ecffd08506
 Description: /dev/ and hotplug management daemon
  udev is a daemon which dynamically creates and removes device nodes from
  /dev/, handles hotplug events and loads drivers at boot time.
@@ -8244,12 +8246,12 @@ Package: libgmp10
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 398
+Installed-Size: 429
 Maintainer: Debian Science Team <debian-science-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: gmp
-Version: 2:5.0.5+dfsg-2+RPiTC1
+Version: 2:5.1.1+dfsg-3+RPiTC1
 Depends: libc6 (>= 2.7)
 Pre-Depends: multiarch-support
 Description: Multiprecision arithmetic library
@@ -8266,11 +8268,11 @@ Essential: yes
 Status: install ok installed
 Priority: required
 Section: utils
-Installed-Size: 1542
+Installed-Size: 1474
 Maintainer: LaMont Jones <lamont@debian.org>
 Architecture: armel
 Multi-Arch: foreign
-Version: 2.20.1-5.3+RPiTC3
+Version: 2.20.1-5.4+RPiTC1
 Replaces: e2fsprogs, fdisk, fstrim, linux32, miscutils, schedutils, setterm, sparc-utils
 Provides: linux32, schedutils
 Depends: lsb-base (>= 3.0-6), tzdata (>= 2006c-2), initscripts, dpkg (>= 1.15.4) | install-info, debconf (>= 0.5) | debconf-2.0
@@ -8391,14 +8393,14 @@ Package: libstdc++6
 Status: install ok installed
 Priority: important
 Section: libs
-Installed-Size: 1015
+Installed-Size: 1035
 Maintainer: Debian GCC Maintainers <debian-gcc@lists.debian.org>
 Architecture: armel
 Multi-Arch: same
-Source: gcc-4.7
-Version: 4.7.2-5+RPiTC7
+Source: gcc-4.8
+Version: 4.8.0-7+RPiTC2
 Provides: libstdc++6-armel
-Depends: gcc-4.7-base (= 4.7.2-5+RPiTC7), libc6 (>= 2.11), libgcc1 (>= 1:4.4.0)
+Depends: gcc-4.8-base (= 4.8.0-7+RPiTC2), libc6 (>= 2.17), libgcc1 (>= 1:4.4.0)
 Pre-Depends: multiarch-support
 Breaks: gcc-4.1, gcc-4.3 (<< 4.3.6-1), gcc-4.4 (<< 4.4.6-4), gcc-4.5 (<< 4.5.3-2)
 Conflicts: scim (<< 1.4.2-1)
@@ -8415,16 +8417,16 @@ Package: libpcsclite1
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 113
+Installed-Size: 105
 Maintainer: Ludovic Rousseau <rousseau@debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: pcsc-lite
-Version: 1.8.8-2+RPiTC5
-Depends: libc6 (>= 2.4)
+Version: 1.8.8-3+RPiTC1
+Depends: libc6 (>= 2.15)
 Pre-Depends: multiarch-support
-Suggests: pcscd (= 1.8.8-2+RPiTC5)
-Breaks: libpcsclite-dev (<< 1.8.8-2+RPiTC5), pcscd (<< 1.8.8-2+RPiTC5)
+Suggests: pcscd (= 1.8.8-3+RPiTC1)
+Breaks: libpcsclite-dev (<< 1.8.8-3+RPiTC1), pcscd (<< 1.8.8-3+RPiTC1)
 Description: Middleware to access a smart card using PC/SC (library)
  The purpose of PC/SC Lite is to provide a Windows(R) SCard interface
  in a very small form factor for communicating to smartcards and
@@ -8578,17 +8580,17 @@ Package: libglib2.0-0
 Status: install ok installed
 Priority: optional
 Section: libs
-Installed-Size: 3685
+Installed-Size: 3774
 Maintainer: Debian GNOME Maintainers <pkg-gnome-maintainers@lists.alioth.debian.org>
 Architecture: armel
 Multi-Arch: same
 Source: glib2.0
-Version: 2.33.12+really2.32.4-5+RPiTC2
+Version: 2.36.1-2+RPiTC4
 Replaces: libglib2.0-dev (<< 2.23.2-2)
-Depends: libc6 (>= 2.9), libffi5 (>= 3.0.9), libgcc1 (>= 1:4.4.0), libpcre3 (>= 8.10), libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
+Depends: libc6 (>= 2.9), libffi6 (>= 3.0.4), libgcc1 (>= 1:4.4.0), libpcre3 (>= 8.10), libselinux1 (>= 1.32), zlib1g (>= 1:1.2.2)
 Pre-Depends: multiarch-support
 Recommends: libglib2.0-data, shared-mime-info
-Breaks: gvfs (<< 1.8)
+Breaks: glib-networking (<< 2.33.12), gvfs (<< 1.8), python-gi (<< 3.7.2)
 Description: GLib library of C routines
  GLib is a library containing many useful C routines for things such
  as trees, hashes, lists, and strings.  It is a useful general-purpose
@@ -8622,7 +8624,7 @@ Section: perl
 Installed-Size: 72
 Maintainer: Anibal Monsalve Salazar <anibal@debian.org>
 Architecture: armel
-Version: 0.04-7+RPiTC2
+Version: 0.04-7+RPiTC1
 Depends: libc6 (>= 2.4), perl-base (>= 5.14.2-21), perlapi-5.14.2
 Description: get display widths of characters on the terminal
  This module permits perl software to get the display widths of characters

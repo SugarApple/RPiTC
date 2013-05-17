@@ -1,10 +1,10 @@
-1f761844d5ecf95a3f73e88e03939322  usr/bin/logger
-cfd8e7070c1c436204cf55c0602b05a6  usr/bin/renice
-4b7c797e21684aaf53fcbe7900b1fcb7  usr/bin/script
-50981ef50f448cdd0ffc68091bfdc8e7  usr/bin/scriptreplay
-60ece8cd13e382fb749408c15801364a  usr/bin/wall
+ad7e083f5fe82da8fb3a4214bee3fbc1  usr/bin/logger
+c43e9779e5c852257114923a720fca95  usr/bin/renice
+293c507375cbff2857841c9d132b4b9e  usr/bin/script
+283cd080b9dd3841714bd4d0cf290e55  usr/bin/scriptreplay
+4f0c60f6b57f01a1c3f3051e5a55ef30  usr/bin/wall
 e1b67604fd96236c1ba68bab6a4e2182  usr/share/doc/bsdutils/README.script
-c45960f47c49bac8d269c734fd5be361  usr/share/doc/bsdutils/changelog.Debian.gz
+9f34671d35096315c856db6817fe072a  usr/share/doc/bsdutils/changelog.Debian.gz
 9423346b962b53fe2ea6cb6e66f32108  usr/share/doc/bsdutils/changelog.gz
 49beacb15b769895d680b900b45c45f6  usr/share/doc/bsdutils/copyright
 65e463f7d3cd92816fc7b65193f59de8  usr/share/lintian/overrides/bsdutils

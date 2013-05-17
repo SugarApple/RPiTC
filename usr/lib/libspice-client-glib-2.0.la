@@ -14,10 +14,10 @@ library_names='libspice-client-glib-2.0.so.8.3.0 libspice-client-glib-2.0.so.8 l
 old_library='libspice-client-glib-2.0.a'
 
 # Linker flags that can not go in dependency_libs.
-inherited_linker_flags=''
+inherited_linker_flags=' -pthread'
 
 # Libraries that this one depends upon.
-dependency_libs=' -lgio-2.0 /usr/lib/libcelt051.la -lm -ljpeg -lz -lpixman-1 -lssl -lcrypto -lpulse-mainloop-glib -lpulse -lsasl2 /usr/lib/libcacard.la -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4 /usr/lib/libusbredirhost.la -lusb-1.0 /usr/lib/libusbredirparser.la -lgudev-1.0 -lgobject-2.0 -lglib-2.0'
+dependency_libs=' -lgio-2.0 /usr/lib/libcelt051.la -lm -ljpeg -lz -lpixman-1 -lssl -lcrypto -lgstapp-0.10 -lgstaudio-0.10 /usr/lib/arm-linux-gnueabi/libgstbase-0.10.la -lgstinterfaces-0.10 /usr/lib/arm-linux-gnueabi/libgstreamer-0.10.la -lgmodule-2.0 -lgthread-2.0 -lrt -lxml2 -lsasl2 -L/usr/local/lib /usr/local/lib/libcacard.la -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4 /usr/lib/libusbredirhost.la -lusb-1.0 /usr/lib/libusbredirparser.la -lgudev-1.0 -lgobject-2.0 -lglib-2.0'
 
 # Names of additional weak libraries provided by this library
 weak_library_names=''

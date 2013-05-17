@@ -3,39 +3,25 @@
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
 <menu id="apps-menu" label="Applications">
-  <item label="FileBrowser">
-    <action name="Execute"><command>pcmanfm</command></action>
+  <item label="PCManFM">
+    <action name="Execute">
+    <startupnotify><enabled>yes</enabled><icon>pcmanfm</icon></startupnotify>
+    <command>pcmanfm</command></action>
   </item>
-  <item label="LXTerminal">
-    <action name="Execute"><command>lxterminal</command></action>
+  <item label="Xterm">
+    <action name="Execute"><command>xterm</command></action>
   </item>
   <item label="Firefox">
-    <action name="Execute"><command>Iceweasel</command></action>
+    <action name="Execute"><command>firefox</command></action>
   </item>
 </menu>
 
-<menu id="rpitc-apps" label="RPi-TC Apps">
-  <item label="Citrix Receiver 12.2.3">
-    <action name="Execute"><command>/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient</command></action>
-  </item>
-  <item label="VMWare Horizon View Client 2.0.0">
-    <action name="Execute"><command>vmware-view</command></action>
-  </item>
-  <item label="Quest vWorkspaces 7.00b1">
-    <action name="Execute"><command>connmanager</command></action>
-  </item>
-  <item label="RDesktop 1.7.1">
-    <action name="Execute"><command>lxterminal -e "rdesktop -u USERNAME -p PASSWORD -g 1440x900 -E -x l -z -P -r sound:local:alsa:default 192.168.0.100"</command></action>
-  </item>
-  <item label="SPICE GTK+ Client 0.18">
-    <action name="Execute"><command>remote-viewer</command></action>
-  </item>
-  <item label="OpenNX 0.16">
-    <action name="Execute"><command>opennx</command></action>
-  </item>
-</menu>
-
-<menu id="conf-menu" label="Configurations">
+<menu id="root-menu" label="LXDE">
+  <separator label="LXDE" />
+  <menu id="apps-menu" />
+  <separator />
+  <menu id="client-list-menu" />
+  <separator />
   <item label="Desktop Settings">
     <action name="Execute">
       <startupnotify><enabled>yes</enabled></startupnotify>
@@ -48,26 +34,12 @@
       <command>obconf</command>
     </action>
   </item>
-  <item label="Change This Menu">
-    <action name="Execute"><command>leafpad /etc/xdg/openbox/menu.xml</command></action>
-  </item>
-  <item label="Reload Menu Files">
+  <item label="Reload Config Files">
     <action name="Reconfigure" />
   </item>
-</menu>
-
-<menu id="root-menu" label="RaspberryPi - ThinClient">
-  <separator label="RaspberryPi - ThinClient" />
-  <menu id="rpitc-apps" />
-  <separator />
-  <menu id="apps-menu" />
-  <separator />
-  <menu id="conf-menu" />
-  <separator />
-  <menu id="client-list-menu" />
   <separator />
   <item label="Exit">
-    <action name="Execute"><command>lxterminal -e "shutdown -h now"</command></action>
+    <action name="Execute"><command>lxde-logout</command></action>
   </item>
 </menu>
 

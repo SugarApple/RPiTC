@@ -54,22 +54,22 @@ struct              <a class="link" href="SpicePortChannel.html#SpicePortChannel
 struct              <a class="link" href="SpicePortChannel.html#SpicePortChannelClass" title="struct SpicePortChannelClass">SpicePortChannelClass</a>;
 
 <span class="returnvalue">void</span>                <a class="link" href="SpicePortChannel.html#spice-port-event" title="spice_port_event ()">spice_port_event</a>                    (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> event</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> event</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpicePortChannel.html#spice-port-write-async" title="spice_port_write_async ()">spice_port_write_async</a>              (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
                                                          <em class="parameter"><code>const <span class="type">void</span> *buffer</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
-<a href="../glib/glib-Basic-Types.html#gssize"><span class="returnvalue">gssize</span></a>              <a class="link" href="SpicePortChannel.html#spice-port-write-finish" title="spice_port_write_finish ()">spice_port_write_finish</a>             (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gssize"><span class="returnvalue">gssize</span></a>              <a class="link" href="SpicePortChannel.html#spice-port-write-finish" title="spice_port_write_finish ()">spice_port_write_finish</a>             (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpicePortChannel.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----<a class="link" href="SpiceChannel.html" title="Spice Channel">SpiceChannel</a>
          +----SpicePortChannel
 </pre>
@@ -77,15 +77,15 @@ struct              <a class="link" href="SpicePortChannel.html#SpicePortChannel
 <div class="refsect1">
 <a name="SpicePortChannel.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpicePortChannel.html#SpicePortChannel--port-name" title='The "port-name" property'>port-name</a>"                <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read
-  "<a class="link" href="SpicePortChannel.html#SpicePortChannel--port-opened" title='The "port-opened" property'>port-opened</a>"              <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read
+  "<a class="link" href="SpicePortChannel.html#SpicePortChannel--port-name" title='The "port-name" property'>port-name</a>"                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read
+  "<a class="link" href="SpicePortChannel.html#SpicePortChannel--port-opened" title='The "port-opened" property'>port-opened</a>"              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpicePortChannel.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpicePortChannel.html#SpicePortChannel-port-data" title='The "port-data" signal'>port-data</a>"                                      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
-  "<a class="link" href="SpicePortChannel.html#SpicePortChannel-port-event" title='The "port-event" signal'>port-event</a>"                                     : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="SpicePortChannel.html#SpicePortChannel-port-data" title='The "port-data" signal'>port-data</a>"                                      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
+  "<a class="link" href="SpicePortChannel.html#SpicePortChannel-port-event" title='The "port-event" signal'>port-event</a>"                                     : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a>
 </pre>
 </div>
 <div class="refsect1">
@@ -108,7 +108,7 @@ port via SpicePortChannel:port-name.
 </p>
 <p>
 When the other end of the port is ready,
-SpicePortChannel:port-opened is set to <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> and you can start
+SpicePortChannel:port-opened is set to <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> and you can start
 receiving data via the signal SpicePortChannel::port-data, or
 sending data via <a class="link" href="SpicePortChannel.html#spice-port-write-async" title="spice_port_write_async ()"><code class="function">spice_port_write_async()</code></a>.
 </p>
@@ -147,7 +147,7 @@ Class structure for <a class="link" href="SpicePortChannel.html" title="Port Cha
 <div class="refsect2">
 <a name="spice-port-event"></a><h3>spice_port_event ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_port_event                    (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> event</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint8"><span class="type">guint8</span></a> event</code></em>);</pre>
 <p>
 Send an event to the port.
 </p>
@@ -180,10 +180,10 @@ state.
 <a name="spice-port-write-async"></a><h3>spice_port_write_async ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_port_write_async              (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
                                                          <em class="parameter"><code>const <span class="type">void</span> *buffer</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> count</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 Request an asynchronous write of count bytes from <em class="parameter"><code>buffer</code></em> into the
 <em class="parameter"><code>port</code></em>. When the operation is finished <em class="parameter"><code>callback</code></em> will be called. You
@@ -233,9 +233,9 @@ containing the data to write. <span class="annotation">[<acronym title="Paramete
 <hr>
 <div class="refsect2">
 <a name="spice-port-write-finish"></a><h3>spice_port_write_finish ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gssize"><span class="returnvalue">gssize</span></a>              spice_port_write_finish             (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gssize"><span class="returnvalue">gssize</span></a>              spice_port_write_finish             (<em class="parameter"><code><a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *port</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Finishes a port write operation.
 </p>
@@ -252,17 +252,17 @@ Finishes a port write operation.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>result</code></em> :</span></p></td>
-<td>a <a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a>
+<td>a <a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>a <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> location to store the error occurring, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> location to store the error occurring, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
 to ignore</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="../glib/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> containing the number of bytes written to the stream.</td>
+<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gssize"><span class="type">gssize</span></a> containing the number of bytes written to the stream.</td>
 </tr>
 </tbody>
 </table></div>
@@ -273,14 +273,14 @@ to ignore</td>
 <a name="SpicePortChannel.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpicePortChannel--port-name"></a><h3>The <code class="literal">"port-name"</code> property</h3>
-<pre class="programlisting">  "port-name"                <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read</pre>
+<pre class="programlisting">  "port-name"                <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read</pre>
 <p>Port name.</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpicePortChannel--port-opened"></a><h3>The <code class="literal">"port-opened"</code> property</h3>
-<pre class="programlisting">  "port-opened"              <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read</pre>
+<pre class="programlisting">  "port-opened"              <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read</pre>
 <p>Port opened.</p>
 <p>Default value: FALSE</p>
 </div>
@@ -290,16 +290,16 @@ to ignore</td>
 <div class="refsect2">
 <a name="SpicePortChannel-port-data"></a><h3>The <code class="literal">"port-data"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *spiceportchannel,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          arg1,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg2,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)             : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg2,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)             : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpicePortChannel-port-event"></a><h3>The <code class="literal">"port-event"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpicePortChannel.html" title="Port Channel"><span class="type">SpicePortChannel</span></a> *spiceportchannel,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg1,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)             : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>              arg1,
+                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)             : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-LAST:CAPS"><code class="literal">Run Last</code></a></pre>
 </div>
 </div>
 <div class="refsect1">

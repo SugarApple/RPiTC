@@ -11,7 +11,7 @@ dc37b8ff7d7a7c97eb49fdc5177769bc  usr/share/doc/wpasupplicant/README-P2P.gz
 627ea07b0af301ee6c9d19c32b6ddbbd  usr/share/doc/wpasupplicant/README-WPS.gz
 ab4aec27663c2f3ff03b619306048baf  usr/share/doc/wpasupplicant/README.Debian.gz
 39ddbc8521e80d3c0914f701efb03018  usr/share/doc/wpasupplicant/README.gz
-89d9bce935085630efdf5ce82f7c51ca  usr/share/doc/wpasupplicant/changelog.Debian.gz
+caa5940b3be020a960eedeed05e04ddc  usr/share/doc/wpasupplicant/changelog.Debian.gz
 fc2eb11d39ac72383b218a4b200b6695  usr/share/doc/wpasupplicant/changelog.gz
 5978585b6ad196c47bc18d3faf6a9baf  usr/share/doc/wpasupplicant/copyright
 3ad0f4a40a1781a1c229a1ab152a2f83  usr/share/doc/wpasupplicant/examples/ieee8021x.conf
@@ -24,9 +24,9 @@ af6051d31ec2485ebcbbac7b2623024a  usr/share/doc/wpasupplicant/examples/wpa-psk-t
 c008fa5fbdd928566b42c0de24ff8a8d  usr/share/doc/wpasupplicant/examples/wpa2-eap-ccmp.conf
 a8a161fc66e609be2bb0c9344ddabbe3  usr/share/doc/wpasupplicant/examples/wpa_supplicant.conf.gz
 31b0d39c6cfe975c310473082c037dab  usr/share/lintian/overrides/wpasupplicant
-14734ecea7d94656a049bf71f91178d8  usr/share/man/man5/wpa_supplicant.conf.5.gz
+d340662bd1e161508e7f17829a83745b  usr/share/man/man5/wpa_supplicant.conf.5.gz
 40a45636a91df387fcab627e8d1245a2  usr/share/man/man8/wpa_action.8.gz
-317c9ba7c6234de573eb2ed0653680e9  usr/share/man/man8/wpa_background.8.gz
-7d330903f21dde945c5534ccb17fc9cd  usr/share/man/man8/wpa_cli.8.gz
-c233b896dfef040e5cc91f5d3c843474  usr/share/man/man8/wpa_passphrase.8.gz
-46ad8f723ff114b413c28a47159bd522  usr/share/man/man8/wpa_supplicant.8.gz
+e2a5dc0a4fd38c463224105e732fe6ce  usr/share/man/man8/wpa_background.8.gz
+04c473645c2e9153d2f5219df1db96a8  usr/share/man/man8/wpa_cli.8.gz
+c0a89fdd1836aef254452e57e1bda900  usr/share/man/man8/wpa_passphrase.8.gz
+e43fb39cdf067c9286458a2f6d57346c  usr/share/man/man8/wpa_supplicant.8.gz

@@ -10,12 +10,12 @@
     <action name="Execute"><command>lxterminal</command></action>
   </item>
   <item label="Iceweasel">
-    <action name="Execute"><command>Iceweasel</command></action>
+    <action name="Execute"><command>iceweasel</command></action>
   </item>
 </menu>
 
 <menu id="rpitc-apps" label="RPi-TC Apps">
-  <item label="Citrix Receiver 12.1.0">
+  <item label="Citrix Receiver 12.2.3">
     <action name="Execute"><command>/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient</command></action>
   </item>
   <item label="VMWare Horizon View Client 2.0.0">
@@ -27,13 +27,13 @@
   <item label="RDesktop 1.7.1">
     <action name="Execute"><command>lxterminal -e "rdesktop -u USERNAME -p PASSWORD -g 1440x900 -E -x l -z -P -r sound:local:alsa:default 192.168.0.100"</command></action>
   </item>
-  <item label="SPICE Client (virt-viewer)">
+  <item label="SPICE GTK+ Client 0.18">
     <action name="Execute"><command>remote-viewer</command></action>
   </item>
   <item label="OpenNX 0.16">
     <action name="Execute"><command>opennx</command></action>
   </item>
-  <item label="X2GO Client">
+  <item label="X2GO Client 4.0.1.1">
     <action name="Execute"><command>x2goclient</command></action>
   </item>
 </menu>
@@ -51,10 +51,16 @@
       <command>obconf</command>
     </action>
   </item>
-  <item label="Change AUTOSTART Menu">
+  <item label="Change Keyboard Configuration">
+    <action name="Execute"><command>lxterminal -e "dpkg-reconfigure keyboard-configuration"</command></action>
+  </item>
+  <item label="Change Locales">
+    <action name="Execute"><command>lxterminal -e "dpkg-reconfigure locales"</command></action>
+  </item>
+  <item label="Change Autostart Applications">
     <action name="Execute"><command>leafpad /etc/xdg/lxsession/LXDE/autostart</command></action>
   </item>
-  <item label="Change MAIN Menu">
+  <item label="Change This Menu">
     <action name="Execute"><command>leafpad /etc/xdg/openbox/menu.xml</command></action>
   </item>
   <item label="Reload Menu Files">
@@ -72,10 +78,7 @@
   <separator />
   <menu id="client-list-menu" />
   <separator />
-  <item label="Reboot">
-    <action name="Execute"><command>lxterminal -e "shutdown -r now"</command></action>
-  </item>
-  <item label="Shutdown">
+  <item label="Exit">
     <action name="Execute"><command>lxterminal -e "shutdown -h now"</command></action>
   </item>
 </menu>

@@ -26,7 +26,7 @@ state.ALSA {
 	control.3 {
 		iface MIXER
 		name 'PCM Playback Route'
-		value 2
+		value 0
 		comment {
 			access 'read write'
 			type INTEGER

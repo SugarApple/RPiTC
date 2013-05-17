@@ -1,1 +1,1 @@
-Tests have been disabled.
+Tests have been disabled via DEB_BUILD_OPTIONS.

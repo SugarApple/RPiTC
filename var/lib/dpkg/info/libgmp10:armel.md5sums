@@ -1,5 +1,4 @@
-6b15b4d523085a8bdbbaba70bd56de72  usr/lib/arm-linux-gnueabi/libgmp.so.10.0.5
+147ccfa5d91dd0f9e14c3718e0a27d48  usr/lib/arm-linux-gnueabi/libgmp.so.10.1.1
 061786ca72ba56ab851af66f5b4566b4  usr/share/doc/libgmp10/README.Debian
-8c323b2b7af6bce22521278c58c10454  usr/share/doc/libgmp10/TODO.Debian
-35b12c410c5feb4f1ff88b236c4734b7  usr/share/doc/libgmp10/changelog.Debian.gz
+a0e2589440d2389552bfcf6141f2ec9d  usr/share/doc/libgmp10/changelog.Debian.gz
 f35dd05eeb3cb5a8a0e57b7d86c58621  usr/share/doc/libgmp10/copyright

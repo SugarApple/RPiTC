@@ -1,5 +1,4 @@
-4bb27aef30f85b59421730758f95e6fe  lib/arm-linux-gnueabi/libselinux.so.1
-e304c08c4df0125b913a1be6fb60f8ca  usr/share/doc/libselinux1/changelog.Debian.gz
-c743337122762198494d315a69ce80d6  usr/share/doc/libselinux1/changelog.gz
+88834a2aec1c891598d39d7bbbc4442b  lib/arm-linux-gnueabi/libselinux.so.1
+e28b8a038b33386a561ab0b413f720ec  usr/share/doc/libselinux1/changelog.Debian.gz
+c400a23e48eec4b1d22bd65649bc77a7  usr/share/doc/libselinux1/changelog.gz
 6b7df4bd8344794af3ff02898ff49372  usr/share/doc/libselinux1/copyright
-6295e2394371c0dd61ef76548f74e714  usr/share/lintian/overrides/libselinux1

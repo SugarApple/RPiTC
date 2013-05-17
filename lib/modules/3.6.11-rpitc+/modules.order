@@ -39,6 +39,7 @@ kernel/fs/nls/nls_koi8-ru.ko
 kernel/fs/nls/nls_utf8.ko
 kernel/fs/binfmt_misc.ko
 kernel/fs/reiserfs/reiserfs.ko
+kernel/fs/squashfs/squashfs.ko
 kernel/fs/isofs/isofs.ko
 kernel/fs/exportfs/exportfs.ko
 kernel/fs/cifs/cifs.ko
@@ -81,6 +82,7 @@ kernel/drivers/block/nbd.ko
 kernel/drivers/block/cryptoloop.ko
 kernel/drivers/misc/eeprom/eeprom_93cx6.ko
 kernel/drivers/nfc/pn533.ko
+kernel/drivers/scsi/sr_mod.ko
 kernel/drivers/net/wireless/at76c50x-usb.ko
 kernel/drivers/net/wireless/hostap/hostap.ko
 kernel/drivers/net/wireless/b43/b43.ko
@@ -155,7 +157,6 @@ kernel/drivers/net/slip/slhc.ko
 kernel/drivers/net/wimax/i2400m/i2400m.ko
 kernel/drivers/net/wimax/i2400m/i2400m-usb.ko
 kernel/drivers/cdrom/cdrom.ko
-kernel/drivers/usb/storage/usb-storage.ko
 kernel/drivers/usb/storage/ums-alauda.ko
 kernel/drivers/usb/storage/ums-cypress.ko
 kernel/drivers/usb/storage/ums-datafab.ko
@@ -190,6 +191,7 @@ kernel/drivers/usb/misc/usbsevseg.ko
 kernel/drivers/usb/misc/yurex.ko
 kernel/drivers/usb/mon/usbmon.ko
 kernel/drivers/usb/class/cdc-acm.ko
+kernel/drivers/usb/class/usblp.ko
 kernel/drivers/usb/image/mdc800.ko
 kernel/drivers/usb/image/microtek.ko
 kernel/drivers/usb/serial/usbserial.ko
@@ -313,10 +315,6 @@ kernel/drivers/hid/hid-zydacron.ko
 kernel/drivers/hid/hid-wacom.ko
 kernel/drivers/hid/hid-waltop.ko
 kernel/drivers/hid/hid-wiimote.ko
-kernel/drivers/scsi/scsi_mod.ko
-kernel/drivers/scsi/sd_mod.ko
-kernel/drivers/scsi/sr_mod.ko
-kernel/drivers/ata/libata.ko
 kernel/drivers/uio/uio.ko
 kernel/drivers/uio/uio_pdrv.ko
 kernel/drivers/uio/uio_pdrv_genirq.ko
@@ -385,6 +383,9 @@ kernel/net/mac80211/mac80211.ko
 kernel/net/9p/9pnet.ko
 kernel/net/wimax/wimax.ko
 kernel/net/nfc/nfc.ko
-kernel/lib/lzo/lzo_compress.ko
 kernel/lib/crc-ccitt.ko
+kernel/lib/zlib_inflate/zlib_inflate.ko
 kernel/lib/zlib_deflate/zlib_deflate.ko
+kernel/lib/lzo/lzo_compress.ko
+kernel/lib/lzo/lzo_decompress.ko
+kernel/lib/xz/xz_dec.ko

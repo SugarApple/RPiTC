@@ -1,6 +1,6 @@
-6ac34e05cd4f7bd96c253cdacd180fd6  lib/arm-linux-gnueabi/libtinfo.so.5.9
-c6fc8318bfa573119892651b486a3f7d  usr/lib/arm-linux-gnueabi/libtic.so.5.9
+a9d450110ac74ca90df1582f6fb108c3  lib/arm-linux-gnueabi/libtinfo.so.5.9
+1e51f19bbab74e8e4f4676aaf99e016e  usr/lib/arm-linux-gnueabi/libtic.so.5.9
 aae5e7dfa0e953a72ea18a0afed45e83  usr/share/doc/libtinfo5/TODO.Debian
-7261b3e42a2e3899f0a7df6a89604d48  usr/share/doc/libtinfo5/changelog.Debian.gz
-00ce4e0e6b7858caee7d8e98c9876214  usr/share/doc/libtinfo5/changelog.gz
-a4f75f78c81ac9c15be4d8ce23ab0c4e  usr/share/doc/libtinfo5/copyright
+29a12b5fdb3ba7f6474d9b16a454129f  usr/share/doc/libtinfo5/changelog.Debian.gz
+7159971818c88eb89b432970bd80030f  usr/share/doc/libtinfo5/changelog.gz
+0c49cad40aee3b21e08f6c90fb7c102e  usr/share/doc/libtinfo5/copyright

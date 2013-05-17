@@ -5,7 +5,7 @@
 #
 #       Created:        26 May 2000
 #
-#       Version:        $Id: //icaclient/unix12.1/client/unix/installer/scripts/icalicense.sh#1 $
+#       Version:        $Id: //icaclient/unix/soc/release/client/unix/installer/scripts/icalicense.sh#1 $
 #
 #       Purpose:        Create /etc/icalicense/clientlicense for RPM install.
 #

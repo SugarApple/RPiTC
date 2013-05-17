@@ -72,8 +72,8 @@ Wfcmgr*E_CLIPPING:	内部エラー: E_CLIPPING
 Wfcmgr*E_NO_ENCRYPTION:	暗号化モジュール \"%s\" が見つかりませんでした。セッションは暗号化されません。
 Wfcmgr*E_COULDNT_SHARE_SESSION:	既存のセッションを使ってアプリケーション \"%s\" \nを起動できません。新しいセッションが使用されます。
 Wfcmgr*E_CANNOT_READ_INI_FILE:	ファイルを読み込めません:\n  \"%s\"
-Wfcmgr*E_MISSING_INI_SECTION:	設定ファイルでエラーが発生しました:\n  \"%s\"\nセクション \"%s\" が見つかりません。
-Wfcmgr*E_MISSING_INI_ENTRY:	設定ファイルでエラーが発生しました。\nセクション \"%s\" にはエントリ \"%s\" が含まれていなくてはなりません。
+Wfcmgr*E_MISSING_INI_SECTION:	構成ファイルでエラーが発生しました:\n  \"%s\"\nセクション \"%s\" が見つかりません。
+Wfcmgr*E_MISSING_INI_ENTRY:	構成ファイルでエラーが発生しました。\nセクション \"%s\" にはエントリ \"%s\" が含まれていなくてはなりません。
 Wfcmgr*E_DUPLICATE_ASSOCIATION:	アプリケーション \"%s\" は、ファイル タイプ \"%s\" に関連付けられています。
 Wfcmgr*E_NO_ASSOCIATION:	ファイル タイプ \"%s\" に関連付けられているアプリケーションはありません。
 Wfcmgr*E_VISUAL_NOT_FOUND:	このターミナルは必要なカラーモードをサポートしていません。
@@ -105,8 +105,8 @@ Wfcmgr*E_CSM_OPEN_ORIGINAL_INI_FAILED:	ファイルを読み取れません:\n  
 Wfcmgr*E_CSM_CONNECTLIST_INVALID:	選択した接続が見つかりません。
 Wfcmgr*E_CSM_CONNECTION_NOTFOUND:	指定された接続が見つかりません。
 Wfcmgr*E_CSM_INVALID_CONNECTION:		コネクション \"%s\" は無効な文字が含んでいます。 
-Wfcmgr*E_CSM_APPSERVERLIST_MISSING:	設定ファイルにエラーがあります:\n  \"%s\"\n欠落セクション:\n  \"%s\"
-Wfcmgr*E_CSM_APPSRV_SECTION_MISSING:	設定ファイル内に不整合があります: \n  \"%s\"\n欠落セクション:\n  \"%s\"
+Wfcmgr*E_CSM_APPSERVERLIST_MISSING:	構成ファイルにエラーがあります:\n  \"%s\"\n欠落セクション:\n  \"%s\"
+Wfcmgr*E_CSM_APPSRV_SECTION_MISSING:	構成ファイル内に不整合があります: \n  \"%s\"\n欠落セクション:\n  \"%s\"
 Wfcmgr*E_CSM_DESCRIPTION_NONUNIQUE:	この名前はすでに使用されています。\n固有の名前を指定してください。
 Wfcmgr*E_PNAGENT_NLS_CATALOGUE_UNREADABLE: Citrix XenApp NLS カタログ \"%s\" が見つからないか、壊れています。
 Wfcmgr*E_SERVER_CONNECTION_LOST:	not used in CSM
@@ -135,8 +135,8 @@ Wfcmgr*E_BR_ERROR_TCP_NOT_AVAILABLE:	TCP/IP プロトコルは使用できませ
 Wfcmgr*E_NOT_SUPPORTED:	サーバーは、この操作をサポートしていません。
 Wfcmgr*E_BR_ERROR_DATABASE_LOCATE:	選択したサーバーが見つかりません。
 Wfcmgr*E_BR_ERROR_CLUSTER_LOCATE:	選択したサーバー クラスタが見つかりません。
-Wfcmgr*E_BR_ERROR_NO_MASTER:	サーバーにアクセスできません。ネットワークが機能していないか、または [サーバーの場所] でアドレスを設定する必要があります。
-Wfcmgr*E_BR_ERROR_ALTADDRESS_NOT_DEFINED: 接続しようとしているサーバーは代替アドレスで設定されていません。\n\n接続の設定を確認するか、Citrix 管理者に問い合わせてください。 
+Wfcmgr*E_BR_ERROR_NO_MASTER:	サーバーにアクセスできません。ネットワークが機能していないか、または [サーバーの場所] でアドレスを構成する必要があります。
+Wfcmgr*E_BR_ERROR_ALTADDRESS_NOT_DEFINED: 接続しようとしているサーバーは代替アドレスで構成されていません。\n\n接続の設定を確認するか、Citrix 管理者に問い合わせてください。 
 Wfcmgr*E_BR_ERROR_APPLICATION_DISABLED: 要求したアプリケーションを使用できません。詳しくは、Citrix 管理者に問い合わせてください。
 Wfcmgr*E_BR_ERROR_APPLICATION_LOCATE: 要求したアプリケーションを使用できません。詳しくは、Citrix 管理者に問い合わせてください。
 Wfcmgr*E_BR_ERROR_HOST_UNREACHABLE: サーバー側のネットワーク エラーが発生しました。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
@@ -150,9 +150,9 @@ Wfcmgr*E_BR_ERROR_XML_PARSER_ERROR: サーバーは、XML 要求を解析でき�
 Wfcmgr*E_BR_ERROR_XML_UNSPECIFIED: 原因不明の XML エラーが発生しました。\n\nもう一度接続してください。このメッセージが繰り返し表示される場合は、Citrix 管理者に連絡してください。
 Wfcmgr*E_BR_ERROR_XML_VERSION_MISMATCH: 要求を処理するためには、Citrix Receiver の新しいバージョンが必要です。\n\nCitrix Receiver の最新バージョンをインストールするか、Citrix 管理者に連絡してください。
 
-Wfcmgr*E_INI_KEY_SYNTAX:	設定ファイルにエラーがあります:\n  \"%s\"\n不正なキー \"%s\"。
-Wfcmgr*E_INI_VALUE_SYNTAX:	設定ファイルにエラーがあります:\n  \"%s\"\n不正な値 \"%s\"。
-Wfcmgr*E_INI_VENDOR_RANGE:	設定ファイルにエラーがあります:\n  \"%s\"\n不正なベンダ範囲 \"%s\"。
+Wfcmgr*E_INI_KEY_SYNTAX:	構成ファイルにエラーがあります:\n  \"%s\"\n不正なキー \"%s\"。
+Wfcmgr*E_INI_VALUE_SYNTAX:	構成ファイルにエラーがあります:\n  \"%s\"\n不正な値 \"%s\"。
+Wfcmgr*E_INI_VENDOR_RANGE:	構成ファイルにエラーがあります:\n  \"%s\"\n不正なベンダ範囲 \"%s\"。
 
 Wfcmgr*E_NOT_USED2:	not used
 Wfcmgr*E_NOT_USED3:	not used
@@ -269,32 +269,32 @@ Wfcmgr*E_SSL_TIMEDOUT:	指定されたアドレスには Citrix SSL サーバー
 Wfcmgr*E_SSL_ILLEGAL_COMMONNAME:	SSL 接続を確立するには、[サーバーの場所] で完全修飾ドメイン名を指定する必要があります。
 Wfcmgr*E_SSL_NOT_AVAILABLE:SSL プロトコルを使用するには、128 ビットの SSL サポートをインストールする必要があります。\r\n128 ビットの SSL サポートをインストールするには、高度暗号化パックまたは 128 ビット暗号化をサポートした Internet Explorer をインストールしてください。
 
-Wfcmgr*E_PROXY_CONNERR_HOST_MISSING:             プロキシ サーバーに接続できません。プロキシ サーバーのユーザー設定には ProxyHost パラメーターが必要です。
-Wfcmgr*E_PROXY_CONNERR_SOCKTYPE_UNSUPPORTED:     プロキシ サーバーに接続できません。設定されたプロキシ サーバーは UDP をサポートしていません。
+Wfcmgr*E_PROXY_CONNERR_HOST_MISSING:             プロキシ サーバーに接続できません。プロキシ サーバーのユーザー構成には ProxyHost パラメーターが必要です。
+Wfcmgr*E_PROXY_CONNERR_SOCKTYPE_UNSUPPORTED:     プロキシ サーバーに接続できません。構成されたプロキシ サーバーは UDP をサポートしていません。
 Wfcmgr*E_PROXY_CONNERR_ALLOC_FAILURE:            プロキシ サーバーに接続できません。メモリが不足しています。
-Wfcmgr*E_PROXY_CONNERR_NOT_ACCEPTED:             プロキシ サーバーに接続できません。設定されたプロキシ サーバーが接続を受け入れません。
-Wfcmgr*E_PROXY_CONNERR_NO_ANSWER:                プロキシ サーバーに接続できません。設定されたプロキシ サーバーが応答しません。
-Wfcmgr*E_PROXY_CONNERR_NET_UNREACHABLE:          プロキシ サーバーに接続できません。設定されたプロキシ サーバーのネットワークにアクセスできません。
-Wfcmgr*E_PROXY_CONNERR_HOST_UNREACHABLE:         プロキシ サーバーに接続できません。設定されたプロキシ サーバーにアクセスできません。
-Wfcmgr*E_PROXY_CONNERR_HOST_NOT_FOUND:           プロキシ サーバーに接続できません。設定されたプロキシ サーバーが見つかりません。
+Wfcmgr*E_PROXY_CONNERR_NOT_ACCEPTED:             プロキシ サーバーに接続できません。構成されたプロキシ サーバーが接続を受け入れません。
+Wfcmgr*E_PROXY_CONNERR_NO_ANSWER:                プロキシ サーバーに接続できません。構成されたプロキシ サーバーが応答しません。
+Wfcmgr*E_PROXY_CONNERR_NET_UNREACHABLE:          プロキシ サーバーに接続できません。構成されたプロキシ サーバーのネットワークにアクセスできません。
+Wfcmgr*E_PROXY_CONNERR_HOST_UNREACHABLE:         プロキシ サーバーに接続できません。構成されたプロキシ サーバーにアクセスできません。
+Wfcmgr*E_PROXY_CONNERR_HOST_NOT_FOUND:           プロキシ サーバーに接続できません。構成されたプロキシ サーバーが見つかりません。
 Wfcmgr*E_PROXY_CONNERR_PROTOCOL_ERROR:           プロキシ サーバーに接続できません。プロキシ サーバーからの不正な応答が返されました。
 Wfcmgr*E_PROXY_CONNERR_AUTH_FAILED:              プロキシ サーバーに接続できません。認証に失敗しました。
 Wfcmgr*E_PROXY_CONNERR_UNSUPPORTED_AUTH_SCHEME:  プロキシ サーバーに接続できません。サポートされていないプロキシ認証です。
-Wfcmgr*E_PROXY_CONNERR_PROXY_REFUSED:            プロキシ サーバーに接続できません。設定されたプロキシ サーバーが接続を拒否しました。
-Wfcmgr*E_PROXY_CONNERR_PROXY_FAILED:             プロキシ サーバーに接続できません。設定されたプロキシ サーバーが接続を確立できません。
+Wfcmgr*E_PROXY_CONNERR_PROXY_REFUSED:            プロキシ サーバーに接続できません。構成されたプロキシ サーバーが接続を拒否しました。
+Wfcmgr*E_PROXY_CONNERR_PROXY_FAILED:             プロキシ サーバーに接続できません。構成されたプロキシ サーバーが接続を確立できません。
 Wfcmgr*E_PROXY_CONNERR_INTERNAL_ERROR:           プロキシ サーバーに接続できません。プロキシを認証中に内部エラーが発生しました。
 Wfcmgr*E_PROXY_DTCTERR_ALLOC_FAILURE:            プロキシを検出できません。メモリが不足しています。
-Wfcmgr*E_PROXY_DTCTERR_NO_BROWSER_SETTINGS:      プロキシを検出できません。Web ブラウザー プロキシ設定が見つかりません。
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_URL:           プロキシを検出できません。不正な自動設定 URL です。
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_UNKNOWN_HOST:      プロキシを検出できません。自動設定 URL のホストが不明です。
+Wfcmgr*E_PROXY_DTCTERR_NO_BROWSER_SETTINGS:      プロキシを検出できません。Web ブラウザー プロキシ構成が見つかりません。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_URL:           プロキシを検出できません。不正な自動構成 URL です。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_UNKNOWN_HOST:      プロキシを検出できません。自動構成 URL のホストが不明です。
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NO_HTTPLIB:        プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。インターネット ライブラリが見つかりません。
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_CONNECT_FAILURE:   プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。接続できません。
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NOTFOUND:          プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。パスが見つかりません。
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_GENERAL_FAILURE:   プロキシを検出できません。.PAC スクリプト HTTP ダウンロードに失敗しました。
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_EMPTY:             プロキシを検出できません。自動設定スクリプトが無効です。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_EMPTY:             プロキシを検出できません。自動構成スクリプトが無効です。
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NO_SUPPORT:        プロキシを検出できません。JavaScript サポートしていません。
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_ERROR:             プロキシを検出できません。JavaScript エラーです。
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_RESULT:        プロキシを検出できません。プロキシ自動設定スクリプトから不正な結果が返されました。
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_RESULT:        プロキシを検出できません。プロキシ自動構成スクリプトから不正な結果が返されました。
 Wfcmgr*E_PROXY_DTCTERR_TOO_MANY_REDIRECTIONS:    プロキシ検出障害: リダイレクトが多すぎます。
 
 Wfcmgr*E_PNAGENT_FILE_UNREADABLE:                XenApp Plugin ファイル \"%s\"を読み込めません:\n%s 
@@ -315,19 +315,19 @@ Wfcmgr*E_PDA_CONTENTION: 				    PDA デバイスが現在使用中のため、�
 Wfcmgr*E_CANNOT_REMOVE_LOCK_FILE: 			    ロックファイルのクリエータ（プロセス %s） は終了しましたが、ロックファイル '%s' の削除に失敗しました。
 Wfcmgr*E_INSUFFICIENT_PERMISSIONS_TO_FILE: 		    ファイル '%s' にアクセスする権限がありません。
 Wfcmgr*E_ICAROOT_DIRECTORY_INVALID:			    ICAROOT ディレクトリが見つからなかったか、無効です。
-Wfcmgr*E_LOCKDOWN_ERROR_GENERIC:  クライアント設定マネージャー: 内部エラー %s
+Wfcmgr*E_LOCKDOWN_ERROR_GENERIC:  クライアント構成マネージャー: 内部エラー %s
 Wfcmgr*E_PASSWORD_EXPIRED:                                   パスワードの有効期限が切れているので変更する必要があります。新しいパスワードを入力してください。
 Wfcmgr*E_PASSWORD_NOT_CONFIRMED:                             入力したパスワードが一致しません。両方のボックスに同じ新しいパスワードを入力してください。
 Wfcmgr*E_WEBCAM_PROBLEM:                                     unused
 Wfcmgr*E_LAST_ERROR:	not used
-Wfcmgr*E_LOCKDOWN_ERROR_SUCCESS: クライアント設定マネージャー: 操作が完了しました。
+Wfcmgr*E_LOCKDOWN_ERROR_SUCCESS: クライアント構成マネージャー: 操作が完了しました。
 Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_TOO_LARGE: Citrix Receiver が %dk よりも大きい ICA ファイルを受信しました。\nコネクションが拒否されました。
-Wfcmgr*E_LOCKDOWN_ERROR_OUT_OF_MEMORY: クライアント設定マネージャー: メモリが不足しています。
+Wfcmgr*E_LOCKDOWN_ERROR_OUT_OF_MEMORY: クライアント構成マネージャー: メモリが不足しています。
 Wfcmgr*E_LOCKDOWN_ERROR_ICA_CHARACTER_ENCODING: Citrix Receiver が無効な文字園コードを含む ICA ファイルを受け取りました。
-Wfcmgr*E_LOCKDOWN_ERROR_ICA_BOOLEAN_ENCODING: クライアント設定マネージャー: ブール値として値を解釈できませんでした。
-Wfcmgr*E_LOCKDOWN_ERROR_ICA_INTEGER_ENCODING: クライアント設定マネージャー: 整数として値を解釈できませんでした。
-Wfcmgr*E_LOCKDOWN_ERROR_FILE_NOT_FOUND: クライアント設定マネージャー: ファイル名（%s）のファイルが見つかりませんでした。\nインストールを確認するか、管理者に連絡してください。
-Wfcmgr*E_LOCKDOWN_ERROR_FILE_IO: クライアント設定マネージャー: ファイルの読み込み中にファイル システム エラーが発生しました。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_BOOLEAN_ENCODING: クライアント構成マネージャー: ブール値として値を解釈できませんでした。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_INTEGER_ENCODING: クライアント構成マネージャー: 整数として値を解釈できませんでした。
+Wfcmgr*E_LOCKDOWN_ERROR_FILE_NOT_FOUND: クライアント構成マネージャー: ファイル名（%s）のファイルが見つかりませんでした。\nインストールを確認するか、管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_FILE_IO: クライアント構成マネージャー: ファイルの読み込み中にファイル システム エラーが発生しました。
 Wfcmgr*E_LOCKDOWN_ERROR_INI_NO_EQUALS: Citrix Receiver が破損した ICA ファイルを受け取りました。\nキー（%s）に割り当てられた値がありません。
 Wfcmgr*E_LOCKDOWN_ERROR_INI_UNTERMINATED_SECTION: Citrix Receiver が破損した ICA ファイルを受け取りました。\nセクション名（%s）のセクションが正常に中断されません。
 Wfcmgr*E_LOCKDOWN_ERROR_INI_GARBAGE_AFTER_SECTION: Citrix Receiver が破損した ICA ファイルを受け取りました。\nセクション名（%s）のセクションに無効なデータがあります。
@@ -338,14 +338,14 @@ Wfcmgr*E_LOCKDOWN_ERROR_INI_DUPLICATE_KEYS: Citrix Receiver が破損した ICA 
 Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNRECOGNISED_PARAMETER: 受け取った ICA ファイルに（%s）のロックダウン プロファイルで許可されていないパラメーター（%s）があります。
 Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_INVALID_VALUE: 受け取った ICA ファイルに、ロックダウン プロファイル（%s）のロックダウン要件を満たしてない値を持つパラメーター（%s）があります。
 Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_ZONE_NOT_ALLOWED: サーバー（%s）は、ICA コネクションに対して信頼されていません。\n（%s）へのコネクション領域はロックダウン設定により許可されていません。\n管理者に連絡してください。
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNKNOWN_ZONE: クライアント設定マネージャー:  Citrix Receiver は、領域名（%s）のロックダウン設定を読み込めませんでした。\nインストールをチェックするか、または管理者に連絡してください。
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_BAD_FORMAT: クライアント設定マネージャー: ロックダウン プロファイル ファイルが破損しています。\nインストールをチェックするか、または管理者に連絡してください。
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_PROFILES_INCONSISTENT: クライアント設定マネージャー: （%s）のすべてのロックダウン要件を満たす値がありません。\n必須のロックダウン要件が矛盾している可能性があります。
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_VERSION_MISMATCH: クライアント設定マネージャー: Citrix Receiver のバージョンが、インストールした設定データを使って実行するには低すぎます。
-Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_INSTALL_CONFIG: クライアント設定マネージャー: 設定データをインストール中にエラーが発生しました。
-Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_UNRECOGNISED_SERVERNAME: クライアント設定マネージャー: （%s）に対応する ICA ファイルまたは appsrv.ini エントリが見つかりません。\nインストールをチェックするか、または管理者に連絡してください。
-Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_UPDATE_CONFIG: クライアント設定マネージャー: 設定データを更新できません。適切な権限がない可能性があります。"
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_CLIENT_DISABLED: クライアント設定マネージャー: クライアントは現在、このコンピューターまたはユーザーに対して無効です。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNKNOWN_ZONE: クライアント構成マネージャー:  Citrix Receiver は、領域名（%s）のロックダウン設定を読み込めませんでした。\nインストールをチェックするか、または管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_BAD_FORMAT: クライアント構成マネージャー: ロックダウン プロファイル ファイルが破損しています。\nインストールをチェックするか、または管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_PROFILES_INCONSISTENT: クライアント構成マネージャー: （%s）のすべてのロックダウン要件を満たす値がありません。\n必須のロックダウン要件が矛盾している可能性があります。
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_VERSION_MISMATCH: クライアント構成マネージャー: Citrix Receiver のバージョンが、インストールした構成データを使って実行するには低すぎます。
+Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_INSTALL_CONFIG: クライアント構成マネージャー: 構成データをインストール中にエラーが発生しました。
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_UNRECOGNISED_SERVERNAME: クライアント構成マネージャー: （%s）に対応する ICA ファイルまたは appsrv.ini エントリが見つかりません。\nインストールをチェックするか、または管理者に連絡してください。
+Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_UPDATE_CONFIG: クライアント構成マネージャー: 構成データを更新できません。適切な権限がない可能性があります。"
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_CLIENT_DISABLED: クライアント構成マネージャー: クライアントは現在、このコンピューターまたはユーザーに対して無効です。
 !
 ! Non-error, language-dependent strings
 !
@@ -1761,7 +1761,7 @@ Wfcmgr*viewMenu.mnemonic : V
 *pnaServerURLShell*pnaServerURLForm.messageString : サーバーの URL
 *pnaServerURLShell*pnaServerURLForm.okLabelString : 更新
 *pnaServerURLShell*pnaServerURLForm.width : 382
-*pnaServerURLShell.title: Citrix XenApp 設定
+*pnaServerURLShell.title: Citrix XenApp 構成
 *settingstopLevelShell*addressListLabel2.labelString:	サーバー グループ
 *settingstopLevelShell*addressListLabel.labelString:	アドレスの一覧
 *settingstopLevelShell*browserAddButton.labelString:	追加...
@@ -1895,7 +1895,7 @@ Wfcmgr*viewMenu.mnemonic : V
 *settingstopLevelShell*labelCacheSpaceWarning.labelString:	警告: 使用可能なディスク容量を超えます
 *settingstopLevelShell*local.labelString: 変換して使用
 *settingstopLevelShell*pNAAudioQualityDefault.labelString: デフォルト
-*settingstopLevelShell*pNAConfigDisabledLabel.labelString: クライアント側で設定を変更できません。
+*settingstopLevelShell*pNAConfigDisabledLabel.labelString: クライアント側で構成を変更できません。
 *settingstopLevelShell*pNACustomizeLogoffLabel.labelString: ［ログオフ］の詳細
 *settingstopLevelShell*pNALogoffWIAppsButton.labelString: サーバーおよびアプリケーションからログオフする
 *settingstopLevelShell*pNALogoffWIButton.labelString: サーバーからのみログオフする

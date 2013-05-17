@@ -8,8 +8,8 @@
 /usr/share/doc
 /usr/share/doc/gcc-4.6-base
 /usr/share/doc/gcc-4.6-base/README.Debian.armel.gz
-/usr/share/doc/gcc-4.6-base/TODO.Debian
 /usr/share/doc/gcc-4.6-base/README.Debian
-/usr/share/doc/gcc-4.6-base/copyright
 /usr/share/doc/gcc-4.6-base/changelog.Debian.gz
-/usr/lib/gcc/arm-linux-gnueabi/4.6.3
+/usr/share/doc/gcc-4.6-base/copyright
+/usr/share/doc/gcc-4.6-base/TODO.Debian
+/usr/lib/gcc/arm-linux-gnueabi/4.6.4

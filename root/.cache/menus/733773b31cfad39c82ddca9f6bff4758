@@ -48,16 +48,6 @@ LXTerminal
 lxterminal
 0
 0
--leafpad.desktop
-Leafpad
-Simple text editor
-leafpad
-
-7
-Leafpad
-leafpad %f
-0
-0
 
 +Internet
 Internet

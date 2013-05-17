@@ -1,7 +1,4 @@
 /.
-/lib
-/lib/arm-linux-gnueabi
-/lib/arm-linux-gnueabi/libtinfo.so.5.9
 /usr
 /usr/lib
 /usr/lib/arm-linux-gnueabi
@@ -9,9 +6,12 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/libtinfo5
-/usr/share/doc/libtinfo5/TODO.Debian
 /usr/share/doc/libtinfo5/changelog.gz
-/usr/share/doc/libtinfo5/copyright
 /usr/share/doc/libtinfo5/changelog.Debian.gz
-/lib/arm-linux-gnueabi/libtinfo.so.5
+/usr/share/doc/libtinfo5/copyright
+/usr/share/doc/libtinfo5/TODO.Debian
+/lib
+/lib/arm-linux-gnueabi
+/lib/arm-linux-gnueabi/libtinfo.so.5.9
 /usr/lib/arm-linux-gnueabi/libtic.so.5
+/lib/arm-linux-gnueabi/libtinfo.so.5

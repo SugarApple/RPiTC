@@ -25,6 +25,15 @@ set -e
 test -x /usr/sbin/sshd || exit 0
 ( /usr/sbin/sshd -\? 2>&1 | grep -q OpenSSH ) 2>/dev/null || exit 0
 
+case '\''Debian'\'' in
+    Ubuntu)
+	# The init.d script is only for chroots.
+	if [ -e /etc/init/ssh.conf ] && ! ischroot; then
+	    exec /lib/init/upstart-job ssh "$@"
+	fi
+	;;
+esac
+
 umask 022
 
 if test -f /etc/default/ssh; then
@@ -173,13 +182,6 @@ exit 0
 
 ETC_PAM_D_SSH='# PAM configuration for the Secure Shell service
 
-# Read environment variables from /etc/environment and
-# /etc/security/pam_env.conf.
-auth       required     pam_env.so # [1]
-# In Debian 4.0 (etch), locale-related environment variables were moved to
-# /etc/default/locale, so read that as well.
-auth       required     pam_env.so envfile=/etc/default/locale
-
 # Standard Un*x authentication.
 @include common-auth
 
@@ -210,6 +212,13 @@ session    required     pam_limits.so
 
 # Set up SELinux capabilities (need modified pam)
 # session  required     pam_selinux.so multiple
+
+# Read environment variables from /etc/environment and
+# /etc/security/pam_env.conf.
+session    required     pam_env.so # [1]
+# In Debian 4.0 (etch), locale-related environment variables were moved to
+# /etc/default/locale, so read that as well.
+session    required     pam_env.so user_readenv=1 envfile=/etc/default/locale
 
 # Standard Un*x password updating.
 @include common-password

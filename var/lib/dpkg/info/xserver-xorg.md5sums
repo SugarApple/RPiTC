@@ -1,4 +1,4 @@
-483c184076bc279d5b4070550253471f  usr/bin/X
+79b81c4c8a41420758a3f8389bec0b15  usr/bin/X
 c43ea5f67b6ec8b2583a07fb16775831  usr/share/bug/xorg/control
 cc5dde92d533a56c8b152858e8bc8b48  usr/share/doc/xorg/asciidoc-xhtml11.css
 a3e60e26c6b1b9271c48e16dda9b6e03  usr/share/doc/xorg/asciidoc-xhtml11.js
@@ -34,6 +34,6 @@ c1c2e9756b79b56902b2e7a379cceed7  usr/share/doc/xorg/xsf.css
 cf020c3de804c03f7bf0bf94a6aeaca2  usr/share/doc/xorg/xsf.png
 bd7ef39d6c7e4bee3079708277114a67  usr/share/doc/xorg/xsf.svg
 a53bb2c9ffb680291848543b019bfc32  usr/share/doc/xserver-xorg/NEWS.Debian.gz
-d0393bc01d20df9a21f30cfcd242d849  usr/share/doc/xserver-xorg/changelog.gz
+48cd69351b61538f69e99a08a77c5f17  usr/share/doc/xserver-xorg/changelog.gz
 d61715a706a95b7c222b5caebd8ce7f8  usr/share/doc/xserver-xorg/copyright
 1fc41e33a66b77dcf1fb5298e69d2e4d  usr/share/lintian/overrides/xserver-xorg

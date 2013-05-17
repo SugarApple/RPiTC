@@ -72,8 +72,8 @@ Wfcmgr*E_CLIPPING:	╞т╔Їеиещб╝: E_CLIPPING
 Wfcmgr*E_NO_ENCRYPTION:	░┼╣ц▓╜ете╕ехб╝еы \"%s\" дм╕лд─длдъд▐д╗дєд╟д╖д┐бге╗е├е╖ечеєд╧░┼╣ц▓╜д╡дьд▐д╗дєбг
 Wfcmgr*E_COULDNT_SHARE_SESSION:	┤√┬╕д╬е╗е├е╖ечеєдЄ╗╚д├д╞еве╫еъе▒б╝е╖ечеє \"%s\" \nдЄ╡п╞░д╟днд▐д╗дєбг┐╖д╖дде╗е├е╖ечеєдм╗╚═╤д╡дьд▐д╣бг
 Wfcmgr*E_CANNOT_READ_INI_FILE:	е╒ебедеыдЄ╞╔д▀╣■дсд▐д╗дє:\n  \"%s\"
-Wfcmgr*E_MISSING_INI_SECTION:	└▀─ъе╒ебедеыд╟еиещб╝дм╚п└╕д╖д▐д╖д┐:\n  \"%s\"\nе╗епе╖ечеє \"%s\" дм╕лд─длдъд▐д╗дєбг
-Wfcmgr*E_MISSING_INI_ENTRY:	└▀─ъе╒ебедеыд╟еиещб╝дм╚п└╕д╖д▐д╖д┐бг\nе╗епе╖ечеє \"%s\" д╦д╧еиеєе╚еъ \"%s\" дм┤▐д▐дьд╞ддд╩дпд╞д╧д╩дъд▐д╗дєбг
+Wfcmgr*E_MISSING_INI_SECTION:	╣╜└ое╒ебедеыд╟еиещб╝дм╚п└╕д╖д▐д╖д┐:\n  \"%s\"\nе╗епе╖ечеє \"%s\" дм╕лд─длдъд▐д╗дєбг
+Wfcmgr*E_MISSING_INI_ENTRY:	╣╜└ое╒ебедеыд╟еиещб╝дм╚п└╕д╖д▐д╖д┐бг\nе╗епе╖ечеє \"%s\" д╦д╧еиеєе╚еъ \"%s\" дм┤▐д▐дьд╞ддд╩дпд╞д╧д╩дъд▐д╗дєбг
 Wfcmgr*E_DUPLICATE_ASSOCIATION:	еве╫еъе▒б╝е╖ечеє \"%s\" д╧бве╒ебедеы е┐еде╫ \"%s\" д╦┤╪╧в╔╒д▒дщдьд╞ддд▐д╣бг
 Wfcmgr*E_NO_ASSOCIATION:	е╒ебедеы е┐еде╫ \"%s\" д╦┤╪╧в╔╒д▒дщдьд╞дддыеве╫еъе▒б╝е╖ечеєд╧двдъд▐д╗дєбг
 Wfcmgr*E_VISUAL_NOT_FOUND:	д│д╬е┐б╝е▀е╩еыд╧╔м═╫д╩елещб╝етб╝е╔дЄе╡е▌б╝е╚д╖д╞ддд▐д╗дєбг
@@ -105,8 +105,8 @@ Wfcmgr*E_CSM_OPEN_ORIGINAL_INI_FAILED:	е╒ебедеыдЄ╞╔д▀╝шдьд▐д╗дє:\n  \"%s\"
 Wfcmgr*E_CSM_CONNECTLIST_INVALID:	┴к┬Єд╖д┐└▄┬│дм╕лд─длдъд▐д╗дєбг
 Wfcmgr*E_CSM_CONNECTION_NOTFOUND:	╗╪─ъд╡дьд┐└▄┬│дм╕лд─длдъд▐д╗дєбг
 Wfcmgr*E_CSM_INVALID_CONNECTION:		е│е═епе╖ечеє \"%s\" д╧╠╡╕·д╩╩╕╗·дм┤▐дєд╟ддд▐д╣бг 
-Wfcmgr*E_CSM_APPSERVERLIST_MISSING:	└▀─ъе╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╖ч═юе╗епе╖ечеє:\n  \"%s\"
-Wfcmgr*E_CSM_APPSRV_SECTION_MISSING:	└▀─ъе╒ебедеы╞тд╦╔╘└░╣чдмдвдъд▐д╣: \n  \"%s\"\n╖ч═юе╗епе╖ечеє:\n  \"%s\"
+Wfcmgr*E_CSM_APPSERVERLIST_MISSING:	╣╜└ое╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╖ч═юе╗епе╖ечеє:\n  \"%s\"
+Wfcmgr*E_CSM_APPSRV_SECTION_MISSING:	╣╜└ое╒ебедеы╞тд╦╔╘└░╣чдмдвдъд▐д╣: \n  \"%s\"\n╖ч═юе╗епе╖ечеє:\n  \"%s\"
 Wfcmgr*E_CSM_DESCRIPTION_NONUNIQUE:	д│д╬╠╛┴░д╧д╣д╟д╦╗╚═╤д╡дьд╞ддд▐д╣бг\n╕╟═нд╬╠╛┴░дЄ╗╪─ъд╖д╞дпд└д╡ддбг
 Wfcmgr*E_PNAGENT_NLS_CATALOGUE_UNREADABLE: Citrix XenApp NLS еле┐еэе░ \"%s\" дм╕лд─длдщд╩дддлбв▓їдьд╞ддд▐д╣бг
 Wfcmgr*E_SERVER_CONNECTION_LOST:	not used in CSM
@@ -135,8 +135,8 @@ Wfcmgr*E_BR_ERROR_TCP_NOT_AVAILABLE:	TCP/IP е╫еэе╚е│еыд╧╗╚═╤д╟днд▐д╗дєбг
 Wfcmgr*E_NOT_SUPPORTED:	е╡б╝е╨б╝д╧бвд│д╬┴р║юдЄе╡е▌б╝е╚д╖д╞ддд▐д╗дєбг
 Wfcmgr*E_BR_ERROR_DATABASE_LOCATE:	┴к┬Єд╖д┐е╡б╝е╨б╝дм╕лд─длдъд▐д╗дєбг
 Wfcmgr*E_BR_ERROR_CLUSTER_LOCATE:	┴к┬Єд╖д┐е╡б╝е╨б╝ епеще╣е┐дм╕лд─длдъд▐д╗дєбг
-Wfcmgr*E_BR_ERROR_NO_MASTER:	е╡б╝е╨б╝д╦евепе╗е╣д╟днд▐д╗дєбге═е├е╚еяб╝епдм╡б╟╜д╖д╞ддд╩дддлбвд▐д┐д╧ [е╡б╝е╨б╝д╬╛ь╜ъ] д╟еве╔еье╣дЄ└▀─ъд╣ды╔м═╫дмдвдъд▐д╣бг
-Wfcmgr*E_BR_ERROR_ALTADDRESS_NOT_DEFINED: └▄┬│д╖дшджд╚д╖д╞дддые╡б╝е╨б╝д╧┬х┬╪еве╔еье╣д╟└▀─ъд╡дьд╞ддд▐д╗дєбг\n\n└▄┬│д╬└▀─ъдЄ│╬╟зд╣дыдлбвCitrix ┤╔═¤╝╘д╦╠фдд╣чдяд╗д╞дпд└д╡ддбг 
+Wfcmgr*E_BR_ERROR_NO_MASTER:	е╡б╝е╨б╝д╦евепе╗е╣д╟днд▐д╗дєбге═е├е╚еяб╝епдм╡б╟╜д╖д╞ддд╩дддлбвд▐д┐д╧ [е╡б╝е╨б╝д╬╛ь╜ъ] д╟еве╔еье╣дЄ╣╜└од╣ды╔м═╫дмдвдъд▐д╣бг
+Wfcmgr*E_BR_ERROR_ALTADDRESS_NOT_DEFINED: └▄┬│д╖дшджд╚д╖д╞дддые╡б╝е╨б╝д╧┬х┬╪еве╔еье╣д╟╣╜└од╡дьд╞ддд▐д╗дєбг\n\n└▄┬│д╬└▀─ъдЄ│╬╟зд╣дыдлбвCitrix ┤╔═¤╝╘д╦╠фдд╣чдяд╗д╞дпд└д╡ддбг 
 Wfcmgr*E_BR_ERROR_APPLICATION_DISABLED: ═╫╡сд╖д┐еве╫еъе▒б╝е╖ечеєдЄ╗╚═╤д╟днд▐д╗дєбг╛▄д╖дпд╧бвCitrix ┤╔═¤╝╘д╦╠фдд╣чдяд╗д╞дпд└д╡ддбг
 Wfcmgr*E_BR_ERROR_APPLICATION_LOCATE: ═╫╡сд╖д┐еве╫еъе▒б╝е╖ечеєдЄ╗╚═╤д╟днд▐д╗дєбг╛▄д╖дпд╧бвCitrix ┤╔═¤╝╘д╦╠фдд╣чдяд╗д╞дпд└д╡ддбг
 Wfcmgr*E_BR_ERROR_HOST_UNREACHABLE: е╡б╝е╨б╝┬жд╬е═е├е╚еяб╝еп еиещб╝дм╚п└╕д╖д▐д╖д┐бг\n\nдтдж░ь┼┘└▄┬│д╖д╞дпд└д╡ддбгд│д╬есе├е╗б╝е╕дм╖лдъ╩╓д╖╔╜╝ид╡дьды╛ь╣чд╧бвCitrix ┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
@@ -150,9 +150,9 @@ Wfcmgr*E_BR_ERROR_XML_PARSER_ERROR: е╡б╝е╨б╝д╧бвXML ═╫╡сдЄ▓Є└╧д╟днд▐д╗дєбг\n\nдт
 Wfcmgr*E_BR_ERROR_XML_UNSPECIFIED: ╕╢░°╔╘╠└д╬ XML еиещб╝дм╚п└╕д╖д▐д╖д┐бг\n\nдтдж░ь┼┘└▄┬│д╖д╞дпд└д╡ддбгд│д╬есе├е╗б╝е╕дм╖лдъ╩╓д╖╔╜╝ид╡дьды╛ь╣чд╧бвCitrix ┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
 Wfcmgr*E_BR_ERROR_XML_VERSION_MISMATCH: ═╫╡сдЄ╜ш═¤д╣дыд┐дсд╦д╧бвCitrix Receiver д╬┐╖д╖дде╨б╝е╕ечеєдм╔м═╫д╟д╣бг\n\nCitrix Receiver д╬║╟┐╖е╨б╝е╕ечеєдЄедеєе╣е╚б╝еыд╣дыдлбвCitrix ┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
 
-Wfcmgr*E_INI_KEY_SYNTAX:	└▀─ъе╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╔╘└╡д╩енб╝ \"%s\"бг
-Wfcmgr*E_INI_VALUE_SYNTAX:	└▀─ъе╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╔╘└╡д╩├═ \"%s\"бг
-Wfcmgr*E_INI_VENDOR_RANGE:	└▀─ъе╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╔╘└╡д╩е┘еєе└╚╧░╧ \"%s\"бг
+Wfcmgr*E_INI_KEY_SYNTAX:	╣╜└ое╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╔╘└╡д╩енб╝ \"%s\"бг
+Wfcmgr*E_INI_VALUE_SYNTAX:	╣╜└ое╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╔╘└╡д╩├═ \"%s\"бг
+Wfcmgr*E_INI_VENDOR_RANGE:	╣╜└ое╒ебедеыд╦еиещб╝дмдвдъд▐д╣:\n  \"%s\"\n╔╘└╡д╩е┘еєе└╚╧░╧ \"%s\"бг
 
 Wfcmgr*E_NOT_USED2:	not used
 Wfcmgr*E_NOT_USED3:	not used
@@ -269,32 +269,32 @@ Wfcmgr*E_SSL_TIMEDOUT:	╗╪─ъд╡дьд┐еве╔еье╣д╦д╧ Citrix SSL е╡б╝е╨б╝дмдвдъд▐д╗дєбг
 Wfcmgr*E_SSL_ILLEGAL_COMMONNAME:	SSL └▄┬│дЄ│╬╬йд╣дыд╦д╧бв[е╡б╝е╨б╝д╬╛ь╜ъ] д╟┤░┴┤╜д╛■е╔еседеє╠╛дЄ╗╪─ъд╣ды╔м═╫дмдвдъд▐д╣бг
 Wfcmgr*E_SSL_NOT_AVAILABLE:SSL е╫еэе╚е│еыдЄ╗╚═╤д╣дыд╦д╧бв128 е╙е├е╚д╬ SSL е╡е▌б╝е╚дЄедеєе╣е╚б╝еыд╣ды╔м═╫дмдвдъд▐д╣бг\r\n128 е╙е├е╚д╬ SSL е╡е▌б╝е╚дЄедеєе╣е╚б╝еыд╣дыд╦д╧бв╣т┼┘░┼╣ц▓╜е╤е├епд▐д┐д╧ 128 е╙е├е╚░┼╣ц▓╜дЄе╡е▌б╝е╚д╖д┐ Internet Explorer дЄедеєе╣е╚б╝еыд╖д╞дпд└д╡ддбг
 
-Wfcmgr*E_PROXY_CONNERR_HOST_MISSING:             е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбге╫еэене╖ е╡б╝е╨б╝д╬ецб╝е╢б╝└▀─ъд╦д╧ ProxyHost е╤ещесб╝е┐б╝дм╔м═╫д╟д╣бг
-Wfcmgr*E_PROXY_CONNERR_SOCKTYPE_UNSUPPORTED:     е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝д╧ UDP дЄе╡е▌б╝е╚д╖д╞ддд▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_HOST_MISSING:             е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбге╫еэене╖ е╡б╝е╨б╝д╬ецб╝е╢б╝╣╜└од╦д╧ ProxyHost е╤ещесб╝е┐б╝дм╔м═╫д╟д╣бг
+Wfcmgr*E_PROXY_CONNERR_SOCKTYPE_UNSUPPORTED:     е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝д╧ UDP дЄе╡е▌б╝е╚д╖д╞ддд▐д╗дєбг
 Wfcmgr*E_PROXY_CONNERR_ALLOC_FAILURE:            е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбгесетеъдм╔╘┬нд╖д╞ддд▐д╣бг
-Wfcmgr*E_PROXY_CONNERR_NOT_ACCEPTED:             е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм└▄┬│дЄ╝їд▒╞■дьд▐д╗дєбг
-Wfcmgr*E_PROXY_CONNERR_NO_ANSWER:                е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм▒■┼·д╖д▐д╗дєбг
-Wfcmgr*E_PROXY_CONNERR_NET_UNREACHABLE:          е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝д╬е═е├е╚еяб╝епд╦евепе╗е╣д╟днд▐д╗дєбг
-Wfcmgr*E_PROXY_CONNERR_HOST_UNREACHABLE:         е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝д╦евепе╗е╣д╟днд▐д╗дєбг
-Wfcmgr*E_PROXY_CONNERR_HOST_NOT_FOUND:           е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм╕лд─длдъд▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_NOT_ACCEPTED:             е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм└▄┬│дЄ╝їд▒╞■дьд▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_NO_ANSWER:                е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм▒■┼·д╖д▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_NET_UNREACHABLE:          е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝д╬е═е├е╚еяб╝епд╦евепе╗е╣д╟днд▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_HOST_UNREACHABLE:         е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝д╦евепе╗е╣д╟днд▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_HOST_NOT_FOUND:           е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм╕лд─длдъд▐д╗дєбг
 Wfcmgr*E_PROXY_CONNERR_PROTOCOL_ERROR:           е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбге╫еэене╖ е╡б╝е╨б╝длдщд╬╔╘└╡д╩▒■┼·дм╩╓д╡дьд▐д╖д┐бг
 Wfcmgr*E_PROXY_CONNERR_AUTH_FAILED:              е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╟з╛┌д╦╝║╟╘д╖д▐д╖д┐бг
 Wfcmgr*E_PROXY_CONNERR_UNSUPPORTED_AUTH_SCHEME:  е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбге╡е▌б╝е╚д╡дьд╞ддд╩дде╫еэене╖╟з╛┌д╟д╣бг
-Wfcmgr*E_PROXY_CONNERR_PROXY_REFUSED:            е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм└▄┬│дЄ╡ё╚▌д╖д▐д╖д┐бг
-Wfcmgr*E_PROXY_CONNERR_PROXY_FAILED:             е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг└▀─ъд╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм└▄┬│дЄ│╬╬йд╟днд▐д╗дєбг
+Wfcmgr*E_PROXY_CONNERR_PROXY_REFUSED:            е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм└▄┬│дЄ╡ё╚▌д╖д▐д╖д┐бг
+Wfcmgr*E_PROXY_CONNERR_PROXY_FAILED:             е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбг╣╜└од╡дьд┐е╫еэене╖ е╡б╝е╨б╝дм└▄┬│дЄ│╬╬йд╟днд▐д╗дєбг
 Wfcmgr*E_PROXY_CONNERR_INTERNAL_ERROR:           е╫еэене╖ е╡б╝е╨б╝д╦└▄┬│д╟днд▐д╗дєбге╫еэене╖дЄ╟з╛┌├цд╦╞т╔Їеиещб╝дм╚п└╕д╖д▐д╖д┐бг
 Wfcmgr*E_PROXY_DTCTERR_ALLOC_FAILURE:            е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбгесетеъдм╔╘┬нд╖д╞ддд▐д╣бг
-Wfcmgr*E_PROXY_DTCTERR_NO_BROWSER_SETTINGS:      е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбгWeb е╓ещеже╢б╝ е╫еэене╖└▀─ъдм╕лд─длдъд▐д╗дєбг
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_URL:           е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг╔╘└╡д╩╝л╞░└▀─ъ URL д╟д╣бг
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_UNKNOWN_HOST:      е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг╝л╞░└▀─ъ URL д╬е█е╣е╚дм╔╘╠└д╟д╣бг
+Wfcmgr*E_PROXY_DTCTERR_NO_BROWSER_SETTINGS:      е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбгWeb е╓ещеже╢б╝ е╫еэене╖╣╜└одм╕лд─длдъд▐д╗дєбг
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_URL:           е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг╔╘└╡д╩╝л╞░╣╜└о URL д╟д╣бг
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_UNKNOWN_HOST:      е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг╝л╞░╣╜└о URL д╬е█е╣е╚дм╔╘╠└д╟д╣бг
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NO_HTTPLIB:        е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг.PAC е╣епеъе╫е╚ HTTP е└ежеєеэб╝е╔д╦╝║╟╘д╖д▐д╖д┐бгедеєе┐б╝е═е├е╚ ещеде╓ещеъдм╕лд─длдъд▐д╗дєбг
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_CONNECT_FAILURE:   е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг.PAC е╣епеъе╫е╚ HTTP е└ежеєеэб╝е╔д╦╝║╟╘д╖д▐д╖д┐бг└▄┬│д╟днд▐д╗дєбг
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NOTFOUND:          е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг.PAC е╣епеъе╫е╚ HTTP е└ежеєеэб╝е╔д╦╝║╟╘д╖д▐д╖д┐бге╤е╣дм╕лд─длдъд▐д╗дєбг
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_GENERAL_FAILURE:   е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг.PAC е╣епеъе╫е╚ HTTP е└ежеєеэб╝е╔д╦╝║╟╘д╖д▐д╖д┐бг
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_EMPTY:             е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг╝л╞░└▀─ъе╣епеъе╫е╚дм╠╡╕·д╟д╣бг
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_EMPTY:             е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбг╝л╞░╣╜└ое╣епеъе╫е╚дм╠╡╕·д╟д╣бг
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_NO_SUPPORT:        е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбгJavaScript е╡е▌б╝е╚д╖д╞ддд▐д╗дєбг
 Wfcmgr*E_PROXY_DTCTERR_SCRIPT_ERROR:             е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбгJavaScript еиещб╝д╟д╣бг
-Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_RESULT:        е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбге╫еэене╖╝л╞░└▀─ъе╣епеъе╫е╚длдщ╔╘└╡д╩╖ы▓╠дм╩╓д╡дьд▐д╖д┐бг
+Wfcmgr*E_PROXY_DTCTERR_SCRIPT_BAD_RESULT:        е╫еэене╖дЄ╕б╜╨д╟днд▐д╗дєбге╫еэене╖╝л╞░╣╜└ое╣епеъе╫е╚длдщ╔╘└╡д╩╖ы▓╠дм╩╓д╡дьд▐д╖д┐бг
 Wfcmgr*E_PROXY_DTCTERR_TOO_MANY_REDIRECTIONS:    е╫еэене╖╕б╜╨╛у│▓: еъе└едеьепе╚дм┬┐д╣дод▐д╣бг
 
 Wfcmgr*E_PNAGENT_FILE_UNREADABLE:                XenApp Plugin е╒ебедеы \"%s\"дЄ╞╔д▀╣■дсд▐д╗дє:\n%s 
@@ -315,19 +315,19 @@ Wfcmgr*E_PDA_CONTENTION: 				    PDA е╟е╨еде╣дм╕╜║▀╗╚═╤├цд╬д┐дсбве╡б╝е╨б╝д╟╕°│лд
 Wfcmgr*E_CANNOT_REMOVE_LOCK_FILE: 			    еэе├епе╒ебедеыд╬епеъеиб╝е┐б╩е╫еэе╗е╣ %sб╦ д╧╜к╬╗д╖д▐д╖д┐дмбвеэе├епе╒ебедеы '%s' д╬║я╜№д╦╝║╟╘д╖д▐д╖д┐бг
 Wfcmgr*E_INSUFFICIENT_PERMISSIONS_TO_FILE: 		    е╒ебедеы '%s' д╦евепе╗е╣д╣ды╕в╕┬дмдвдъд▐д╗дєбг
 Wfcmgr*E_ICAROOT_DIRECTORY_INVALID:			    ICAROOT е╟егеьепе╚еъдм╕лд─длдщд╩длд├д┐длбв╠╡╕·д╟д╣бг
-Wfcmgr*E_LOCKDOWN_ERROR_GENERIC:  епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: ╞т╔Їеиещб╝ %s
+Wfcmgr*E_LOCKDOWN_ERROR_GENERIC:  епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: ╞т╔Їеиещб╝ %s
 Wfcmgr*E_PASSWORD_EXPIRED:                                   е╤е╣еяб╝е╔д╬═н╕·┤№╕┬дм└┌дьд╞дддыд╬д╟╩╤╣╣д╣ды╔м═╫дмдвдъд▐д╣бг┐╖д╖дде╤е╣еяб╝е╔дЄ╞■╬╧д╖д╞дпд└д╡ддбг
 Wfcmgr*E_PASSWORD_NOT_CONFIRMED:                             ╞■╬╧д╖д┐е╤е╣еяб╝е╔дм░ь├╫д╖д▐д╗дєбг╬╛╩¤д╬е▄е├епе╣д╦╞▒д╕┐╖д╖дде╤е╣еяб╝е╔дЄ╞■╬╧д╖д╞дпд└д╡ддбг
 Wfcmgr*E_WEBCAM_PROBLEM:                                     unused
 Wfcmgr*E_LAST_ERROR:	not used
-Wfcmgr*E_LOCKDOWN_ERROR_SUCCESS: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: ┴р║юдм┤░╬╗д╖д▐д╖д┐бг
+Wfcmgr*E_LOCKDOWN_ERROR_SUCCESS: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: ┴р║юдм┤░╬╗д╖д▐д╖д┐бг
 Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_TOO_LARGE: Citrix Receiver дм %dk дшдъдт┬чдндд ICA е╒ебедеыдЄ╝ї┐од╖д▐д╖д┐бг\nе│е═епе╖ечеєдм╡ё╚▌д╡дьд▐д╖д┐бг
-Wfcmgr*E_LOCKDOWN_ERROR_OUT_OF_MEMORY: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: есетеъдм╔╘┬нд╖д╞ддд▐д╣бг
+Wfcmgr*E_LOCKDOWN_ERROR_OUT_OF_MEMORY: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: есетеъдм╔╘┬нд╖д╞ддд▐д╣бг
 Wfcmgr*E_LOCKDOWN_ERROR_ICA_CHARACTER_ENCODING: Citrix Receiver дм╠╡╕·д╩╩╕╗·▒ре│б╝е╔дЄ┤▐др ICA е╒ебедеыдЄ╝їд▒╝шдъд▐д╖д┐бг
-Wfcmgr*E_LOCKDOWN_ERROR_ICA_BOOLEAN_ENCODING: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: е╓б╝еы├═д╚д╖д╞├═дЄ▓Є╝сд╟днд▐д╗дєд╟д╖д┐бг
-Wfcmgr*E_LOCKDOWN_ERROR_ICA_INTEGER_ENCODING: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: └░┐Їд╚д╖д╞├═дЄ▓Є╝сд╟днд▐д╗дєд╟д╖д┐бг
-Wfcmgr*E_LOCKDOWN_ERROR_FILE_NOT_FOUND: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: е╒ебедеы╠╛б╩%sб╦д╬е╒ебедеыдм╕лд─длдъд▐д╗дєд╟д╖д┐бг\nедеєе╣е╚б╝еыдЄ│╬╟зд╣дыдлбв┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
-Wfcmgr*E_LOCKDOWN_ERROR_FILE_IO: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: е╒ебедеыд╬╞╔д▀╣■д▀├цд╦е╒ебедеы е╖е╣е╞ер еиещб╝дм╚п└╕д╖д▐д╖д┐бг
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_BOOLEAN_ENCODING: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: е╓б╝еы├═д╚д╖д╞├═дЄ▓Є╝сд╟днд▐д╗дєд╟д╖д┐бг
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_INTEGER_ENCODING: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: └░┐Їд╚д╖д╞├═дЄ▓Є╝сд╟днд▐д╗дєд╟д╖д┐бг
+Wfcmgr*E_LOCKDOWN_ERROR_FILE_NOT_FOUND: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: е╒ебедеы╠╛б╩%sб╦д╬е╒ебедеыдм╕лд─длдъд▐д╗дєд╟д╖д┐бг\nедеєе╣е╚б╝еыдЄ│╬╟зд╣дыдлбв┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
+Wfcmgr*E_LOCKDOWN_ERROR_FILE_IO: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: е╒ебедеыд╬╞╔д▀╣■д▀├цд╦е╒ебедеы е╖е╣е╞ер еиещб╝дм╚п└╕д╖д▐д╖д┐бг
 Wfcmgr*E_LOCKDOWN_ERROR_INI_NO_EQUALS: Citrix Receiver дм╟╦┬╗д╖д┐ ICA е╒ебедеыдЄ╝їд▒╝шдъд▐д╖д┐бг\nенб╝б╩%sб╦д╦│фдъ┼Ўд╞дщдьд┐├═дмдвдъд▐д╗дєбг
 Wfcmgr*E_LOCKDOWN_ERROR_INI_UNTERMINATED_SECTION: Citrix Receiver дм╟╦┬╗д╖д┐ ICA е╒ебедеыдЄ╝їд▒╝шдъд▐д╖д┐бг\nе╗епе╖ечеє╠╛б╩%sб╦д╬е╗епе╖ечеєдм└╡╛яд╦├ц├╟д╡дьд▐д╗дєбг
 Wfcmgr*E_LOCKDOWN_ERROR_INI_GARBAGE_AFTER_SECTION: Citrix Receiver дм╟╦┬╗д╖д┐ ICA е╒ебедеыдЄ╝їд▒╝шдъд▐д╖д┐бг\nе╗епе╖ечеє╠╛б╩%sб╦д╬е╗епе╖ечеєд╦╠╡╕·д╩е╟б╝е┐дмдвдъд▐д╣бг
@@ -338,14 +338,14 @@ Wfcmgr*E_LOCKDOWN_ERROR_INI_DUPLICATE_KEYS: Citrix Receiver дм╟╦┬╗д╖д┐ ICA е╒ебе
 Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNRECOGNISED_PARAMETER: ╝їд▒╝шд├д┐ ICA е╒ебедеыд╦б╩%sб╦д╬еэе├епе└ежеє е╫еэе╒ебедеыд╟╡Ў▓─д╡дьд╞ддд╩дде╤ещесб╝е┐б╝б╩%sб╦дмдвдъд▐д╣бг
 Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_INVALID_VALUE: ╝їд▒╝шд├д┐ ICA е╒ебедеыд╦бвеэе├епе└ежеє е╫еэе╒ебедеыб╩%sб╦д╬еэе├епе└ежеє═╫╖ядЄ╦■д┐д╖д╞д╩дд├═дЄ╗¤д─е╤ещесб╝е┐б╝б╩%sб╦дмдвдъд▐д╣бг
 Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_ZONE_NOT_ALLOWED: е╡б╝е╨б╝б╩%sб╦д╧бвICA е│е═епе╖ечеєд╦┬╨д╖д╞┐о═ъд╡дьд╞ддд▐д╗дєбг\nб╩%sб╦д╪д╬е│е═епе╖ечеє╬╬░шд╧еэе├епе└ежеє└▀─ъд╦дшдъ╡Ў▓─д╡дьд╞ддд▐д╗дєбг\n┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNKNOWN_ZONE: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝:  Citrix Receiver д╧бв╬╬░ш╠╛б╩%sб╦д╬еэе├епе└ежеє└▀─ъдЄ╞╔д▀╣■дсд▐д╗дєд╟д╖д┐бг\nедеєе╣е╚б╝еыдЄе┴езе├епд╣дыдлбвд▐д┐д╧┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_BAD_FORMAT: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: еэе├епе└ежеє е╫еэе╒ебедеы е╒ебедеыдм╟╦┬╗д╖д╞ддд▐д╣бг\nедеєе╣е╚б╝еыдЄе┴езе├епд╣дыдлбвд▐д┐д╧┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_PROFILES_INCONSISTENT: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: б╩%sб╦д╬д╣д┘д╞д╬еэе├епе└ежеє═╫╖ядЄ╦■д┐д╣├═дмдвдъд▐д╗дєбг\n╔м┐▄д╬еэе├епе└ежеє═╫╖ядм╠╖╜тд╖д╞ддды▓─╟╜└ндмдвдъд▐д╣бг
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_VERSION_MISMATCH: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: Citrix Receiver д╬е╨б╝е╕ечеєдмбведеєе╣е╚б╝еыд╖д┐└▀─ъе╟б╝е┐дЄ╗╚д├д╞╝┬╣╘д╣дыд╦д╧─уд╣дод▐д╣бг
-Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_INSTALL_CONFIG: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: └▀─ъе╟б╝е┐дЄедеєе╣е╚б╝еы├цд╦еиещб╝дм╚п└╕д╖д▐д╖д┐бг
-Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_UNRECOGNISED_SERVERNAME: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: б╩%sб╦д╦┬╨▒■д╣ды ICA е╒ебедеыд▐д┐д╧ appsrv.ini еиеєе╚еъдм╕лд─длдъд▐д╗дєбг\nедеєе╣е╚б╝еыдЄе┴езе├епд╣дыдлбвд▐д┐д╧┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
-Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_UPDATE_CONFIG: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: └▀─ъе╟б╝е┐дЄ╣╣┐╖д╟днд▐д╗дєбг┼м└┌д╩╕в╕┬дмд╩дд▓─╟╜└ндмдвдъд▐д╣бг"
-Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_CLIENT_DISABLED: епещедевеєе╚└▀─ъе▐е═б╝е╕еуб╝: епещедевеєе╚д╧╕╜║▀бвд│д╬е│еєе╘ехб╝е┐б╝д▐д┐д╧ецб╝е╢б╝д╦┬╨д╖д╞╠╡╕·д╟д╣бг
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_UNKNOWN_ZONE: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝:  Citrix Receiver д╧бв╬╬░ш╠╛б╩%sб╦д╬еэе├епе└ежеє└▀─ъдЄ╞╔д▀╣■дсд▐д╗дєд╟д╖д┐бг\nедеєе╣е╚б╝еыдЄе┴езе├епд╣дыдлбвд▐д┐д╧┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_BAD_FORMAT: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: еэе├епе└ежеє е╫еэе╒ебедеы е╒ебедеыдм╟╦┬╗д╖д╞ддд▐д╣бг\nедеєе╣е╚б╝еыдЄе┴езе├епд╣дыдлбвд▐д┐д╧┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_PROFILES_INCONSISTENT: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: б╩%sб╦д╬д╣д┘д╞д╬еэе├епе└ежеє═╫╖ядЄ╦■д┐д╣├═дмдвдъд▐д╗дєбг\n╔м┐▄д╬еэе├епе└ежеє═╫╖ядм╠╖╜тд╖д╞ддды▓─╟╜└ндмдвдъд▐д╣бг
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_VERSION_MISMATCH: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: Citrix Receiver д╬е╨б╝е╕ечеєдмбведеєе╣е╚б╝еыд╖д┐╣╜└ое╟б╝е┐дЄ╗╚д├д╞╝┬╣╘д╣дыд╦д╧─уд╣дод▐д╣бг
+Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_INSTALL_CONFIG: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: ╣╜└ое╟б╝е┐дЄедеєе╣е╚б╝еы├цд╦еиещб╝дм╚п└╕д╖д▐д╖д┐бг
+Wfcmgr*E_LOCKDOWN_ERROR_ICA_FILE_UNRECOGNISED_SERVERNAME: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: б╩%sб╦д╦┬╨▒■д╣ды ICA е╒ебедеыд▐д┐д╧ appsrv.ini еиеєе╚еъдм╕лд─длдъд▐д╗дєбг\nедеєе╣е╚б╝еыдЄе┴езе├епд╣дыдлбвд▐д┐д╧┤╔═¤╝╘д╦╧в═эд╖д╞дпд└д╡ддбг
+Wfcmgr*E_LOCKDOWN_ERROR_COULD_NOT_UPDATE_CONFIG: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: ╣╜└ое╟б╝е┐дЄ╣╣┐╖д╟днд▐д╗дєбг┼м└┌д╩╕в╕┬дмд╩дд▓─╟╜└ндмдвдъд▐д╣бг"
+Wfcmgr*E_LOCKDOWN_ERROR_LOCKDOWN_CLIENT_DISABLED: епещедевеєе╚╣╜└ое▐е═б╝е╕еуб╝: епещедевеєе╚д╧╕╜║▀бвд│д╬е│еєе╘ехб╝е┐б╝д▐д┐д╧ецб╝е╢б╝д╦┬╨д╖д╞╠╡╕·д╟д╣бг
 !
 ! Non-error, language-dependent strings
 !
@@ -1761,7 +1761,7 @@ Wfcmgr*viewMenu.mnemonic : V
 *pnaServerURLShell*pnaServerURLForm.messageString : е╡б╝е╨б╝д╬ URL
 *pnaServerURLShell*pnaServerURLForm.okLabelString : ╣╣┐╖
 *pnaServerURLShell*pnaServerURLForm.width : 382
-*pnaServerURLShell.title: Citrix XenApp └▀─ъ
+*pnaServerURLShell.title: Citrix XenApp ╣╜└о
 *settingstopLevelShell*addressListLabel2.labelString:	е╡б╝е╨б╝ е░еыб╝е╫
 *settingstopLevelShell*addressListLabel.labelString:	еве╔еье╣д╬░ь═ў
 *settingstopLevelShell*browserAddButton.labelString:	─╔▓├...
@@ -1895,7 +1895,7 @@ Wfcmgr*viewMenu.mnemonic : V
 *settingstopLevelShell*labelCacheSpaceWarning.labelString:	╖┘╣Ё: ╗╚═╤▓─╟╜д╩е╟еге╣еп═╞╬╠дЄ─╢дид▐д╣
 *settingstopLevelShell*local.labelString: ╩╤┤╣д╖д╞╗╚═╤
 *settingstopLevelShell*pNAAudioQualityDefault.labelString: е╟е╒ейеые╚
-*settingstopLevelShell*pNAConfigDisabledLabel.labelString: епещедевеєе╚┬жд╟└▀─ъдЄ╩╤╣╣д╟днд▐д╗дєбг
+*settingstopLevelShell*pNAConfigDisabledLabel.labelString: епещедевеєе╚┬жд╟╣╜└одЄ╩╤╣╣д╟днд▐д╗дєбг
 *settingstopLevelShell*pNACustomizeLogoffLabel.labelString: б╬еэе░еке╒б╧д╬╛▄║┘
 *settingstopLevelShell*pNALogoffWIAppsButton.labelString: е╡б╝е╨б╝дкдшд╙еве╫еъе▒б╝е╖ечеєдлдщеэе░еке╒д╣ды
 *settingstopLevelShell*pNALogoffWIButton.labelString: е╡б╝е╨б╝длдщд╬д▀еэе░еке╒д╣ды

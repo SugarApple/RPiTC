@@ -1,0 +1,13 @@
+/.
+/usr
+/usr/share
+/usr/share/doc
+/usr/share/doc/libprocps1
+/usr/share/doc/libprocps1/changelog.gz
+/usr/share/doc/libprocps1/changelog.Debian.gz
+/usr/share/doc/libprocps1/copyright
+/usr/share/doc/libprocps1/NEWS.Debian.gz
+/lib
+/lib/arm-linux-gnueabi
+/lib/arm-linux-gnueabi/libprocps.so.1.1.0
+/lib/arm-linux-gnueabi/libprocps.so.1

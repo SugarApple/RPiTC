@@ -1,0 +1,64 @@
+##################################################################
+#
+#    Citrix Receiver for Linux, Version 12.2.x
+#
+#    Copyright 2012 Citrix Systems, Inc. All rights reserved.
+#
+###################################################################
+
+Documentation for the Citrix Receiver for Linux is available on Citrix eDocs.
+Go to http://support.citrix.com/proddocs/index.jsp and expand the topics for your product.
+
+Fixes applied since last full release
+=========================================
+
+The last full release was 12.2 (Linux: English, German and Japanese).
+
+Build    Fix
+
+12.2.1   Correct an error in clipped pattern drawing [305526].
+         Fix unresponsive button in the instrumentation window, with some
+         X servers [305990].
+         Fix graphics corruption in 16-bit depth sessions on 16-bit displays
+         [306198].
+         Fix an installation problem on systems using Busybox [304851].
+         Correct incorrect parameters passed to plugins for graphics
+         buffer allocation [306004].
+
+12.2.2   Fix graphics corruption in 16-bit depth sessions from Windows 7 
+         desktop on 16-bit displays [307629].
+         Fix disappearance of session when reconnecting with a changed colour
+         depth [304477].
+         Allow client audio mapping to automatically detect and discard delayed
+         audio data. This is configured off by default. [P207061, P207063,
+         P207066].
+         pnabrowse can get icons with 32-bit colour depth [311871].
+         Allow pnabrowse on ARM platform to use -WD and -WT with X11 [P207085].
+         Installer finds GStreamer on Ubuntu 12.04 [P207086].
+         Provide a configuration option, "EUKSModeMask=1", to work around 
+         incorrect reporting of the Caps Lock state when entering a password to
+         a XenDesktop server's session unlock screen. [313892]
+         Multimedia redirection fixes
+            - Add support for new formats: 'mpg1', 'mpg2', 'MPEG' fourcc-coded 
+              media types, and ADPCM [307504]; H263 and M4S2 [P207138]; AAC 
+              ADTS [299864]; 'MP4S' [P207136].
+            - Remove a way for gst_play to hang [307502].
+            - Remove a way for wfica to crash [307500].
+            - Remove unused configuration option SpeedScreenMMAGSTCheck 
+              [308321].
+            - Improve seeking, especially for MP3 [301762].
+
+12.2.3   Multimedia redirection fixes
+            - Improve gst_play shutdown behaviour [P210355, P210370].
+            - Fix handling of shutdown notifications in gst_play [P211107].
+            - Add new configuration option to permit having only one
+              gst_play at a time, avoiding hardware contention [P210355].
+            - Add new configuration option to force cleanup gst_play
+              processes [P213442].
+            - Add new configuration option to change timestamp behaviour
+              on seeking [P213445].
+         Fix parsing of the AudioLatencyCorrectionInterval parameter [P210004].
+         Ensure modifier keys reflect their correct state after loss of
+         window focus [P211949, P211966].
+         Add description of options for discarding delayed audio data to
+         module.ini [P213341].

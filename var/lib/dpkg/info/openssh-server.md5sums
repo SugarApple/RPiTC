@@ -1,7 +1,8 @@
-69785369fb7cc1392e39299ab408bd7b  usr/lib/openssh/sftp-server
-b00ff09a59d36291d9e413ef39c55488  usr/sbin/sshd
-cd30441df7f232784399d67399d6305b  usr/share/doc/openssh-client/examples/sshd_config
+dbb10de4256fc8b1b0f78897f40d74f1  usr/lib/openssh/sftp-server
+81e1d297a0c8309284b7558d484eda3b  usr/sbin/sshd
+e4f66eb12e8650acbafbfb14a0325b26  usr/share/apport/package-hooks/openssh-server.py
+846c91ca422c5b9ab48b3e8fb717bc86  usr/share/doc/openssh-client/examples/sshd_config
 8c5592e0d522fa0f8f55f3c104479ef5  usr/share/lintian/overrides/openssh-server
-6e83792e63f1cef8b78876e6bcd2297b  usr/share/man/man5/sshd_config.5.gz
-65dbe6d2862940ad7cd945fadaabc2f8  usr/share/man/man8/sftp-server.8.gz
-d64aa1f44d3282a6472300239cee2282  usr/share/man/man8/sshd.8.gz
+28f511013a7a0ac25fe7358c71e28a04  usr/share/man/man5/sshd_config.5.gz
+55e2d26a3f1c5d60128da6c4cbda7bfe  usr/share/man/man8/sftp-server.8.gz
+0c187c5b7fc152b1b16a62da6ff7e199  usr/share/man/man8/sshd.8.gz

@@ -13,12 +13,22 @@
       </metadata>
     </info>
   </bookmark>
-  <bookmark href="file:///root/debian_dark_wallpapers_hd_720.jpg" added="2013-04-27T08:07:46Z" modified="2013-04-27T08:07:46Z" visited="2013-04-27T08:07:46.986836Z">
+  <bookmark href="file:///root/debian_dark_wallpapers_hd_720.jpg" added="2013-04-27T08:07:46Z" modified="2013-05-16T21:01:47Z" visited="2013-04-27T08:07:46Z">
     <info>
       <metadata owner="http://freedesktop.org">
         <mime:mime-type type="image/jpeg"/>
         <bookmark:applications>
-          <bookmark:application name="pcmanfm" exec="&apos;pcmanfm %u&apos;" modified="2013-04-27T08:07:46Z" count="1"/>
+          <bookmark:application name="pcmanfm" exec="&apos;pcmanfm %u&apos;" modified="2013-05-16T21:01:47Z" count="2"/>
+        </bookmark:applications>
+      </metadata>
+    </info>
+  </bookmark>
+  <bookmark href="file:///root/Desktop/sdfsd" added="2013-05-16T17:39:55Z" modified="2013-05-16T17:39:55Z" visited="2013-05-16T17:39:55Z">
+    <info>
+      <metadata owner="http://freedesktop.org">
+        <mime:mime-type type="application/octet-stream"/>
+        <bookmark:applications>
+          <bookmark:application name="Leafpad" exec="&apos;leafpad %u&apos;" modified="2013-05-16T17:39:55Z" count="1"/>
         </bookmark:applications>
       </metadata>
     </info>

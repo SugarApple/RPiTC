@@ -14,6 +14,7 @@
 {00000001-0000-0010-8000-00AA00389B71}: audio/x-raw-int,endianness=1234,signed=(boolean)true,channels=$(channels),width=$(width),depth=$(width),rate=$(rate)
 
 # ADPCM
+{00000002-0000-0010-8000-00AA00389B71}: audio/x-adpcm, layout=(string)microsoft, rate=(int)$(rate), channels=(int)$(channels), block_align=(int)$(block_align)$(codec_str)
 {34616D69-0000-0010-8000-00AA00389B71}: audio/x-adpcm,layout=(string)quicktime,channels=$(channels),width=$(width),depth=$(width),rate=$(rate) # 'ima4'
 
 # WMA voice
@@ -45,12 +46,18 @@
 
 # MPEG1
 {E436EB81-524F-11CE-9F53-0020AF0BA770}: video/mpeg,mpegversion=1,systemstream=(boolean)false,bitrate=$(bitrate)
+{3167706D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=1,systemstream=(boolean)false,framerate=$(framerate),width=$(width),height=$(height) # 'mpg1'
+{4745504D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=1,systemstream=(boolean)false,framerate=$(framerate),width=$(width),height=$(height)$(codec_str) # 'MPEG'
 
 # MPEG2
 {E06D8026-DB46-11CF-B4D1-00805F6CBBEA}: video/mpeg,mpegversion=2,systemstream=(boolean)false,framerate=10000000/$(frame_duration),bitrate=$(bitrate)
+{3267706D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=2,systemstream=(boolean)false,framerate=$(framerate),width=$(width),height=$(height) # 'mpg2'
 
 # MPEG4
-{5634504D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=(int)4,systemstream=(boolean)false,width=$(width),height=$(height),framerate=10000000/$(frame_duration) # 'MP4V'
+{5634504D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=(int)4,systemstream=(boolean)false,width=(int)$(width),height=(int)$(height),framerate=(fraction)$(framerate) # 'MP4V'
+{5334504D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=(int)4,systemstream=(boolean)false,width=(int)$(width),height=(int)$(height),framerate=(fraction)$(framerate),format=(fourcc)MP4S$(codec_str) # 'MP4S'
+{3253344D-0000-0010-8000-00AA00389B71}: video/mpeg,mpegversion=(int)4,systemstream=(boolean)false,width=(int)$(width),height=(int)$(height),framerate=(fraction)$(framerate)$(codec_str) # MPEG4 std 'M4S2'
+{6D703476-767A-494D-B478-F29D25DC9037}: ? # 'mp4v' - Broken GUID -- if encountered, install replacement MP4 media splitter.
 
 # MS-MPEG4
 {3447504D-0000-0010-8000-00AA00389B71}: video/x-msmpeg,msmpegversion=41,width=$(width),height=$(height),framerate=10000000/$(frame_duration) # 'MPG4'
@@ -99,7 +106,10 @@
 # 'H264' - MPEG4 AVC (part10) (avc1) - video/x-h264, profile=(string)high, level=(string)4.1, codec_data=(buffer)01640029ffe1001867640029ac34e5014016e84001974ec04c4b4023c60c458001000468eebcb0, width=(int)1280, height=(int)720, framerate=(fraction)24000/1001, pixel-aspect-ratio=(fraction)1/1
 {34363248-0000-0010-8000-00AA00389B71}: video/x-h264, width=(int)$(width), height=(int)$(height), framerate=(fraction)10000000/$(frame_duration) # 'H264'
 
-# H.263 is missing media information -- use Matroska media splitter, instead.
+# 'H263'
+{33363248-0000-0010-8000-00AA00389B71}: video/x-h263, variant=(string)itu, framerate=(fraction)$(framerate), width=(int)$(width), height=(int)$(height)
+
+# 's263' is missing media information -- use Matroska media splitter, instead.
 # video/x-h263, width=(int)176, height=(int)144, framerate=(fraction)10000000/$(frame_duration), pixel-aspect-ratio=(fraction)1/1 # '362s'
 #{73323633-767A-494D-B478-F29D25DC9037}: ? (video) '362s' width=0, height=0, depth=0, frame_duration=40000, rate=40000, bitrate=1084168, block_align=0, codec_str=
 

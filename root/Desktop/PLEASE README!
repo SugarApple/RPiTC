@@ -4,4 +4,6 @@ PLEASE remember:
 - to change autostart application modify this file: /etc/xdg/lxsession/LXDE/autostart
 - to add Desktop icon just add a .desktop file in /root/Desktop/ like the others
 - to enable monitor sleep mode remove the file /root/.xsessionrc
+- Dual Kernel: just change config.txt and change the line: kernel=kernel.img in kernel=kernel-std.img
+- If you need some packages not included in ARMv6j release just add standard SID debian ARMv4t repository in source.list
 

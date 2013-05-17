@@ -1,7 +1,4 @@
 /.
-/lib
-/lib/arm-linux-gnueabi
-/lib/arm-linux-gnueabi/libncurses.so.5.9
 /usr
 /usr/lib
 /usr/lib/arm-linux-gnueabi
@@ -10,8 +7,11 @@
 /usr/lib/arm-linux-gnueabi/libpanel.so.5.9
 /usr/share
 /usr/share/doc
-/lib/arm-linux-gnueabi/libncurses.so.5
+/lib
+/lib/arm-linux-gnueabi
+/lib/arm-linux-gnueabi/libncurses.so.5.9
 /usr/lib/arm-linux-gnueabi/libform.so.5
 /usr/lib/arm-linux-gnueabi/libmenu.so.5
 /usr/lib/arm-linux-gnueabi/libpanel.so.5
 /usr/share/doc/libncurses5
+/lib/arm-linux-gnueabi/libncurses.so.5

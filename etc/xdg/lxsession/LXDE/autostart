@@ -1,6 +1,6 @@
 ####DONT TOUCH THIS LINE#########
 @pcmanfm --desktop --profile LXDE
-###########THANKS :)#############
+#################################
 
 ##########ADD YOUR AUTOSTART APPZ BELOW HERE##########
 #Modify parameters to fit your environment, then remove # char to uncomment. Example:
@@ -9,3 +9,7 @@
 #@xfreerdp /v:192.168.0.100 /size:1280x720 /u:USERNAME /p:PASSWORD +compression /sound:sys:alsa
 #@virt-viewer
 #@x2goclient
+
+
+##########INTRO KILLER##########
+/root/videokill.sh

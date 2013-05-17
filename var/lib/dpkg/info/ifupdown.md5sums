@@ -1,10 +1,10 @@
-3720c129515eded09c40f089ec3b8eb4  sbin/ifdown
-3720c129515eded09c40f089ec3b8eb4  sbin/ifquery
-3720c129515eded09c40f089ec3b8eb4  sbin/ifup
+a038c03893c148e7ca7708d38470f66e  sbin/ifdown
+a038c03893c148e7ca7708d38470f66e  sbin/ifquery
+a038c03893c148e7ca7708d38470f66e  sbin/ifup
 0f7d64825a5d0f0b04b871596377bef9  usr/share/doc/ifupdown/NEWS.Debian.gz
 241c6d749b8ba3f07b81a1266bccc2d1  usr/share/doc/ifupdown/README
 94e604eb3920b1eb5efa4b6ce5e52db0  usr/share/doc/ifupdown/TODO
-6ba48b5faa5d2937958f1c5bbd3634e6  usr/share/doc/ifupdown/changelog.gz
+29571b959704dede4ac57476d52994f3  usr/share/doc/ifupdown/changelog.gz
 1c9d2e2e5a56455eaebb479c1dbb20f1  usr/share/doc/ifupdown/contrib/ensureifup
 cde381570a371a774ff092d246ea786a  usr/share/doc/ifupdown/contrib/ifstate
 62f92e0d54d70005677860b6600579a8  usr/share/doc/ifupdown/contrib/ifstate-check
@@ -18,4 +18,4 @@ e8bb6daaf2f8a4f0e0e819a64612772d  usr/share/doc/ifupdown/examples/pcmcia-compat.
 d3c899ac2785db804fab38b216a39bc5  usr/share/doc/ifupdown/examples/ping-places.sh
 d3ad310d259ffcea6e2853428fd04875  usr/share/lintian/overrides/ifupdown
 253592d3cc6ca77c1caf733315a1c58b  usr/share/man/man5/interfaces.5.gz
-ff564d6d1f0421abc7f41dbd97c4075b  usr/share/man/man8/ifup.8.gz
+1cb32a52664bcf0179399d44309401f0  usr/share/man/man8/ifup.8.gz

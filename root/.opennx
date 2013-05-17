@@ -1,0 +1,5 @@
+[Config]
+UserNxDir=/root/.nx
+CurrentVersion=0.16.725
+SystemNxDir=/usr
+NxSshSmartCardSupport=0
