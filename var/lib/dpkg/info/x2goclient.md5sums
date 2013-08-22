@@ -1,7 +1,7 @@
-06b6daa2d66233641b7702c4db39d068  usr/bin/x2goclient
+484b99bcdb0eeb38169bfc697ffd93a1  usr/bin/x2goclient
 85769fcebf839e83a9ebe6a56dca0f38  usr/share/applications/x2goclient.desktop
 a5a507d0012d96352b8983e6415013f7  usr/share/doc/x2goclient/HOWTO.GPGCARD.gz
-0f40272799d5a6b705de03ca263448ff  usr/share/doc/x2goclient/changelog.Debian.gz
+f89f83ef49d13d9c377a09a06ac0b76f  usr/share/doc/x2goclient/changelog.Debian.gz
 42e86aca821080536ac01dc6171d6867  usr/share/doc/x2goclient/copyright
 7edc1c7243678a9bdf928f8996710806  usr/share/doc/x2goclient/examples/x2goclient-cli.gz
 ed286ddd180a287201e43436f59dbed5  usr/share/icons/hicolor/128x128/apps/x2goclient.png

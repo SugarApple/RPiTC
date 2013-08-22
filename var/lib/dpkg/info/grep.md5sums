@@ -1,13 +1,13 @@
-ea09105b690136a659b8401d6e8d48ed  bin/egrep
-20df958ef1b4d8fcf3b116c7633edebf  bin/fgrep
-96c2f8e0e3ca93ffabe1b824f388e7ff  bin/grep
+3536389d49beac216fb0dd46004fb633  bin/egrep
+8e2b0ccaf30148986e98f914b5249017  bin/fgrep
+654250c805b37390dc857ac7aca7a1d1  bin/grep
 449ab80d285c0965c814c89a8264a6a1  usr/bin/rgrep
 240a9af0c90321c34960b44815a519a0  usr/share/doc/grep/AUTHORS
 f170bd33993e5a2b3aee99a928b737b8  usr/share/doc/grep/NEWS.gz
 89f4d5388ab08d15e066cf5092b531ad  usr/share/doc/grep/README
 60767a209c944c1d681fc13e2e117f78  usr/share/doc/grep/THANKS.gz
 37f15711a4d59c0ee210c0a806554333  usr/share/doc/grep/TODO.gz
-7578c4ddbe31259fc083cb42ec75ae84  usr/share/doc/grep/changelog.Debian.gz
+03e3ac3dfedae02604011412097503a7  usr/share/doc/grep/changelog.Debian.gz
 4b22dd960fbd31c40947faaa1e5a4fea  usr/share/doc/grep/changelog.gz
 c162824abec826ad38a7c76d0f24cbd0  usr/share/doc/grep/copyright
 60734a67fb65618bb467acdd9f692ec2  usr/share/info/grep.info.gz
@@ -54,4 +54,4 @@ a73a2704312a92f83bf406223ba895d2  usr/share/locale/tr/LC_MESSAGES/grep.mo
 e65ead9485639760dd443a19cfeadbae  usr/share/locale/vi/LC_MESSAGES/grep.mo
 b80b5607f9f63c06f52813d028227b42  usr/share/locale/zh_CN/LC_MESSAGES/grep.mo
 305916df58d4464055b2007ee67c7ece  usr/share/locale/zh_TW/LC_MESSAGES/grep.mo
-2e62cdec52ca9e905bd0fae1376afb72  usr/share/man/man1/grep.1.gz
+d859961b30cd1d3193c1efa12d8c3bd0  usr/share/man/man1/grep.1.gz

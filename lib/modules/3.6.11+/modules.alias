@@ -700,6 +700,7 @@ alias usb:v07B8p8178d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v2019pAB2Bd*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v7392p7822d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v0586p341Fd*dc*dsc*dp*ic*isc*ip*in* 8192cu
+alias usb:v2001p330Dd*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v2001p3309d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v2001p330Ad*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v2001p3307d*dc*dsc*dp*ic*isc*ip*in* 8192cu
@@ -713,6 +714,7 @@ alias usb:v04F2pAFF7d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v13D3p3358d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v13D3p3359d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v0BDAp317Fd*dc*dsc*dp*ic*isc*ip*in* 8192cu
+alias usb:v0846p9041d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v2019pAB2Ed*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v2019p4902d*dc*dsc*dp*ic*isc*ip*in* 8192cu
 alias usb:v4856p0091d*dc*dsc*dp*ic*isc*ip*in* 8192cu
@@ -1375,6 +1377,13 @@ alias usb:v0482p0203d*dc*dsc*dp*ic*isc*ip*in* cdc_acm
 alias usb:v0E8Dp3329d*dc*dsc*dp*ic*isc*ip*in* cdc_acm
 alias usb:v0E8Dp0003d*dc*dsc*dp*ic*isc*ip*in* cdc_acm
 alias usb:v0870p0001d*dc*dsc*dp*ic*isc*ip*in* cdc_acm
+alias usb:v04B8p0202d*dc*dsc*dp*ic*isc*ip*in* usblp
+alias usb:v*p*d*dc*dsc*dp*ic07isc01ip03in* usblp
+alias usb:v*p*d*dc*dsc*dp*ic07isc01ip02in* usblp
+alias usb:v*p*d*dc*dsc*dp*ic07isc01ip01in* usblp
+alias usb:v*p*d*dc07dsc01dp03ic*isc*ip*in* usblp
+alias usb:v*p*d*dc07dsc01dp02ic*isc*ip*in* usblp
+alias usb:v*p*d*dc07dsc01dp01ic*isc*ip*in* usblp
 alias usb:v*p*d*dc*dsc*dp*ic02isc09ip*in* cdc_wdm
 alias usb:v055FpA800d*dc*dsc*dp*ic*isc*ip*in* mdc800
 alias usb:v05DAp00B6d*dc*dsc*dp*ic*isc*ip*in* microtek

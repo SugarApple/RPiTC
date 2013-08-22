@@ -1,4 +1,7 @@
-//@line 39 "/opt/build/iceweasel-10.0.12esr/browser/components/feeds/src/WebContentConverter.js"
+/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 2 -*- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 
@@ -364,9 +367,8 @@ WebContentConverterRegistrar.prototype = {
   function WCCR_registerProtocolHandler(aProtocol, aURIString, aTitle, aContentWindow) {
     LOG("registerProtocolHandler(" + aProtocol + "," + aURIString + "," + aTitle + ")");
 
-    if (Cc["@mozilla.org/privatebrowsing;1"].
-        getService(Ci.nsIPrivateBrowsingService).
-        privateBrowsingEnabled) {
+    var browserWindow = this._getBrowserWindowForContentWindow(aContentWindow);    
+    if (browserWindow.gPrivateBrowsingUI.privateWindow) {
       // Inside the private browsing mode, we don't want to alert the user to save
       // a protocol handler.  We log it to the error console so that web developers
       // would have some way to tell what's going wrong.
@@ -412,9 +414,8 @@ WebContentConverterRegistrar.prototype = {
       // Now Ask the user and provide the proper callback
       message = this._getFormattedString("addProtocolHandler",
                                          [aTitle, uri.host, aProtocol]);
-      var fis = Cc["@mozilla.org/browser/favicon-service;1"].
-                getService(Ci.nsIFaviconService);
-      var notificationIcon = fis.getFaviconLinkForIcon(uri);
+
+      var notificationIcon = uri.prePath + "/favicon.ico";
       var notificationValue = "Protocol Registration: " + aProtocol;
       var addButton = {
         label: this._getString("addProtocolHandlerAddButton"),
@@ -451,7 +452,7 @@ WebContentConverterRegistrar.prototype = {
       buttons = [addButton];
     }
 
-    var browserWindow = this._getBrowserWindowForContentWindow(aContentWindow);
+
     var browserElement = this._getBrowserForContentWindow(browserWindow, aContentWindow);
     var notificationBox = browserWindow.getBrowser().getNotificationBox(browserElement);
     notificationBox.appendNotification(message,

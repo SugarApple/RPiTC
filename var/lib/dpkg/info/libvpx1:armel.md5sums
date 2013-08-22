@@ -1,7 +1,7 @@
-c3f16efbd1cbbf4910c8ce9556019df5  usr/lib/arm-linux-gnueabi/libvpx.so.1.1.0
-6f3037a5f64a0585e75e8fc8374deb55  usr/lib/arm-linux-gnueabi/vfp/neon/libvpx.so.1.1.0
+0d7ff9ed94e81fbb5c8aee170dc1e48f  usr/lib/arm-linux-gnueabi/libvpx.so.1.2.0
+b442c6d0b5200d1d2340579419fedc8b  usr/lib/arm-linux-gnueabi/vfp/neon/libvpx.so.1.2.0
 ac10b5388c51f1ff1445e0b19fc278ed  usr/share/doc/libvpx1/AUTHORS
-1e2c02553f7ecd4ee4e220848385ad9f  usr/share/doc/libvpx1/README
-e9bec61abb27b4bd83b4fe64bd02e55b  usr/share/doc/libvpx1/changelog.Debian.gz
-e2d59cf82015a3820655b13bb82be892  usr/share/doc/libvpx1/changelog.gz
+3cb5201f421f3164340da9ecb99b6ce8  usr/share/doc/libvpx1/README
+612f569d2609eb85f0ddc6334e9f6f2f  usr/share/doc/libvpx1/changelog.Debian.gz
+8d0819e15e4605226f7eac00953ad5eb  usr/share/doc/libvpx1/changelog.gz
 290f52a059b9918e072d579be9c13016  usr/share/doc/libvpx1/copyright

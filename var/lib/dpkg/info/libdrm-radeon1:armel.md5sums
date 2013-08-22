@@ -1,5 +1,5 @@
-18082c74108126c8b712f4c7f5214f3b  usr/lib/arm-linux-gnueabi/libdrm_radeon.so.1.0.1
-9973a057251d74e53b46080c2b11b4f3  usr/share/doc/libdrm-radeon1/changelog.Debian.gz
-af2ac43128494a933fe37b705ce0a1b9  usr/share/doc/libdrm-radeon1/changelog.gz
+9a8fb59b8318fe98ff790f2c4d964780  usr/lib/arm-linux-gnueabi/libdrm_radeon.so.1.0.1
+303f9d7237172e47311c7a600e434372  usr/share/doc/libdrm-radeon1/changelog.Debian.gz
+073612e70233bb6c359120e122a9c014  usr/share/doc/libdrm-radeon1/changelog.gz
 acc80450c1bd42944061a30272f0c132  usr/share/doc/libdrm-radeon1/copyright
 9491dfacc07e88ee1d9cd279a075f80d  usr/share/lintian/overrides/libdrm-radeon1

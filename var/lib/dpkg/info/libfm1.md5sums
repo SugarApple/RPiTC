@@ -1,6 +1,6 @@
-5da4cf9c06aecbe4f6cef6ebb5a8a941  usr/lib/arm-linux-gnueabi/libfm.so.1.0.0
+b7e479a58dddbc0572e7061af1c6c31a  usr/lib/arm-linux-gnueabi/libfm.so.1.0.0
 a4770db871aef77af66f61318e7e8012  usr/share/apport/package-hooks/source_libfm.py
 59c7ec9a41e1f4f9db2bf5a03ba04d4e  usr/share/doc/libfm1/AUTHORS
 b44a2a64a1325e391e7ce60dbf4de7ef  usr/share/doc/libfm1/TODO.gz
-b98e0a6c05863392ed015a05230204d7  usr/share/doc/libfm1/changelog.Debian.gz
+72573f5fa4bf2f0f5c5c8e72e27d3f9e  usr/share/doc/libfm1/changelog.Debian.gz
 2226b0c1b4417c5f5bff6f301f365d90  usr/share/doc/libfm1/copyright

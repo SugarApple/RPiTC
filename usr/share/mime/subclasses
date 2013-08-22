@@ -7,6 +7,7 @@ application/x-ruby text/plain
 text/x-markdown text/plain
 text/x-dsrc text/x-csrc
 text/x-ssa text/plain
+application/x-openbox-theme application/x-gzip
 text/x-reject text/plain
 video/3gpp video/mp4
 text/html text/plain

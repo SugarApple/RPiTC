@@ -3,7 +3,7 @@
 # Provides:          checkfs
 # Required-Start:    checkroot
 # Required-Stop:
-# Should-Start:      mtab
+# Should-Start:
 # Default-Start:     S
 # Default-Stop:
 # X-Interactive:     true

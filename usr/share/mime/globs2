@@ -165,6 +165,7 @@
 50:application/x-pkcs12:*.pfx
 50:application/metalink+xml:*.metalink
 50:application/x-cbt:*.cbt
+50:application/x-openbox-theme:*.obt
 50:application/x-perl:*.perl
 50:application/vnd.mozilla.xul+xml:*.xul
 50:application/x-cbz:*.cbz

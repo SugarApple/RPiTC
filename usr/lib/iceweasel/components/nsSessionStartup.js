@@ -1,10 +1,33 @@
-/* 
-//@line 38 "/opt/build/iceweasel-10.0.12esr/browser/components/sessionstore/src/nsSessionStartup.js"
-*/
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 /**
-//@line 65 "/opt/build/iceweasel-10.0.12esr/browser/components/sessionstore/src/nsSessionStartup.js"
-*/
+ * Session Storage and Restoration
+ *
+ * Overview
+ * This service reads user's session file at startup, and makes a determination
+ * as to whether the session should be restored. It will restore the session
+ * under the circumstances described below.  If the auto-start Private Browsing
+ * mode is active, however, the session is never restored.
+ *
+ * Crash Detection
+ * The session file stores a session.state property, that
+ * indicates whether the browser is currently running. When the browser shuts
+ * down, the field is changed to "stopped". At startup, this field is read, and
+ * if its value is "running", then it's assumed that the browser had previously
+ * crashed, or at the very least that something bad happened, and that we should
+ * restore the session.
+ *
+ * Forced Restarts
+ * In the event that a restart is required due to application update or extension
+ * installation, set the browser.sessionstore.resume_session_once pref to true,
+ * and the session will be restored the next time the browser starts.
+ *
+ * Always Resume
+ * This service will always resume the session if the integer pref
+ * browser.startup.page is set to 3.
+ */
 
 /* :::::::: Constants and Helpers ::::::::::::::: */
 
@@ -14,6 +37,7 @@ const Cr = Components.results;
 const Cu = Components.utils;
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
+Cu.import("resource://gre/modules/TelemetryStopwatch.jsm");
 
 const STATE_RUNNING_STR = "running";
 const MAX_FILE_SIZE = 100 * 1024 * 1024; // 100 megabytes
@@ -69,23 +93,30 @@ SessionStartup.prototype = {
       return;
 
     // parse the session state into a JS object
+    // remove unneeded braces (added for compatibility with Firefox 2.0 and 3.0)
+    if (iniString.charAt(0) == '(')
+      iniString = iniString.slice(1, -1);
+    let corruptFile = false;
     try {
-      // remove unneeded braces (added for compatibility with Firefox 2.0 and 3.0)
-      if (iniString.charAt(0) == '(')
-        iniString = iniString.slice(1, -1);
+      this._initialState = JSON.parse(iniString);
+    }
+    catch (ex) {
+      debug("The session file contained un-parse-able JSON: " + ex);
+      // Try to eval.
+      // evalInSandbox will throw if iniString is not parse-able.
       try {
-        this._initialState = JSON.parse(iniString);
-      }
-      catch (exJSON) {
         var s = new Cu.Sandbox("about:blank", {sandboxName: 'nsSessionStartup'});
         this._initialState = Cu.evalInSandbox("(" + iniString + ")", s);
+      } catch(ex) {
+        debug("The session file contained un-eval-able JSON: " + ex);
+        corruptFile = true;
       }
-
-      // If this is a normal restore then throw away any previous session
-      if (!doResumeSessionOnce)
-        delete this._initialState.lastSessionState;
     }
-    catch (ex) { debug("The session file is invalid: " + ex); }
+    Services.telemetry.getHistogramById("FX_SESSION_RESTORE_CORRUPT_FILE").add(corruptFile);
+
+    // If this is a normal restore then throw away any previous session
+    if (!doResumeSessionOnce)
+      delete this._initialState.lastSessionState;
 
     let resumeFromCrash = prefBranch.getBoolPref("sessionstore.resume_from_crash");
     let lastSessionCrashed =
@@ -96,8 +127,7 @@ SessionStartup.prototype = {
     // Report shutdown success via telemetry. Shortcoming here are
     // being-killed-by-OS-shutdown-logic, shutdown freezing after
     // session restore was written, etc.
-    let Telemetry = Cc["@mozilla.org/base/telemetry;1"].getService(Ci.nsITelemetry);
-    Telemetry.getHistogramById("SHUTDOWN_OK").add(!lastSessionCrashed);
+    Services.telemetry.getHistogramById("SHUTDOWN_OK").add(!lastSessionCrashed);
 
     // set the startup type
     if (lastSessionCrashed && resumeFromCrash)
@@ -129,11 +159,11 @@ SessionStartup.prototype = {
    */
   observe: function sss_observe(aSubject, aTopic, aData) {
     switch (aTopic) {
-    case "app-startup": 
+    case "app-startup":
       Services.obs.addObserver(this, "final-ui-startup", true);
       Services.obs.addObserver(this, "quit-application", true);
       break;
-    case "final-ui-startup": 
+    case "final-ui-startup":
       Services.obs.removeObserver(this, "final-ui-startup");
       Services.obs.removeObserver(this, "quit-application");
       this.init();
@@ -174,7 +204,7 @@ SessionStartup.prototype = {
     var wType = aWindow.document.documentElement.getAttribute("windowtype");
     if (wType != "navigator:browser")
       return;
-    
+
     /**
      * Note: this relies on the fact that nsBrowserContentHandler will return
      * a different value the first time its getter is called after an update,
@@ -238,9 +268,11 @@ SessionStartup.prototype = {
    * @returns a session state string
    */
   _readStateFile: function sss_readStateFile(aFile) {
+    TelemetryStopwatch.start("FX_SESSION_RESTORE_READ_FILE_MS");
     var stateString = Cc["@mozilla.org/supports-string;1"].
                         createInstance(Ci.nsISupportsString);
     stateString.data = this._readFile(aFile) || "";
+    TelemetryStopwatch.finish("FX_SESSION_RESTORE_READ_FILE_MS");
 
     Services.obs.notifyObservers(stateString, "sessionstore-state-read", "");
 

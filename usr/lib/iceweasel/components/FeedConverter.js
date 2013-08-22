@@ -1,4 +1,7 @@
-//@line 39 "/opt/build/iceweasel-10.0.12esr/browser/components/feeds/src/FeedConverter.js"
+/* -*- Mode: C++; tab-width: 8; indent-tabs-mode: nil; c-basic-offset: 2 -*- */ 
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/debug.js");
@@ -282,7 +285,7 @@ FeedConverter.prototype = {
       // getResponseHeader.
       if (!httpChannel.requestSucceeded) {
         // Just give up, but don't forget to cancel the channel first!
-        request.cancel(0x804b0002); // NS_BINDING_ABORTED
+        request.cancel(Cr.NS_BINDING_ABORTED);
         return;
       }
       var noSniff = httpChannel.getResponseHeader("X-Moz-Is-Feed");

@@ -24,8 +24,7 @@
 #include <freerdp/types.h>
 #include <freerdp/update.h>
 #include <freerdp/freerdp.h>
-
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 typedef struct _BITMAP_V2_CELL BITMAP_V2_CELL;
 typedef struct rdp_bitmap_cache rdpBitmapCache;

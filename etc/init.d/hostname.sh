@@ -14,12 +14,14 @@
 #                    empty, the value 'localhost' is used.
 ### END INIT INFO
 
-PATH=/sbin:/bin
+PATH=/sbin:/bin:/usr/bin
 
 . /lib/init/vars.sh
 . /lib/lsb/init-functions
 
 do_start () {
+	MAC="$( ifconfig eth | head -1 | awk -F: '{print $5$6$7}' )"
+	echo rpitc-"$MAC" > /etc/hostname
 	[ -f /etc/hostname ] && HOSTNAME="$(cat /etc/hostname)"
 
 	# Keep current name if /etc/hostname is missing.

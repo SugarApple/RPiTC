@@ -1,6 +1,6 @@
-055133151af410cb4ec41f01227ea46f  usr/lib/arm-linux-gnueabi/libcups.so.2
-4388e2d7aa1922a40c136fcbca43045c  usr/share/doc/libcups2/README.Debian.gz
-6b641cc39fe97910b62270413863617d  usr/share/doc/libcups2/changelog.Debian.gz
-3a6eba9e6a0d2ad18d357419cf184020  usr/share/doc/libcups2/changelog.gz
+bd39c8c264dc26682b2dbbd9d15b6a82  usr/lib/arm-linux-gnueabi/libcups.so.2
+48e7c62e72eb5ebad163ff9a202e8b76  usr/share/doc/libcups2/README.Debian.gz
+6b7b49ad856682ded71cea9c092b09d9  usr/share/doc/libcups2/changelog.Debian.gz
+5ad106f0ea19f699dd40c5909d362dd0  usr/share/doc/libcups2/changelog.gz
 2e05f00bf39327cfc73fdf3075120a62  usr/share/doc/libcups2/copyright
-f86d6700a2a5468f86a939f768bd7a15  usr/share/doc/libcups2/examples/client.conf
+93fe2cf6a49f1234dc7f0832dcd55997  usr/share/doc/libcups2/examples/client.conf

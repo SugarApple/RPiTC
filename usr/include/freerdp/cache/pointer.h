@@ -25,8 +25,7 @@
 #include <freerdp/update.h>
 #include <freerdp/freerdp.h>
 #include <freerdp/graphics.h>
-
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 typedef struct rdp_pointer_cache rdpPointerCache;
 

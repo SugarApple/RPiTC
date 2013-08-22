@@ -6,6 +6,7 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/libdmx1
-/usr/share/doc/libdmx1/copyright
+/usr/share/doc/libdmx1/changelog.gz
 /usr/share/doc/libdmx1/changelog.Debian.gz
+/usr/share/doc/libdmx1/copyright
 /usr/lib/arm-linux-gnueabi/libdmx.so.1

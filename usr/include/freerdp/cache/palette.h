@@ -24,8 +24,7 @@
 #include <freerdp/types.h>
 #include <freerdp/update.h>
 #include <freerdp/freerdp.h>
-
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 typedef struct _PALETTE_TABLE_ENTRY PALETTE_TABLE_ENTRY;
 typedef struct rdp_palette_cache rdpPaletteCache;

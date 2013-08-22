@@ -165,6 +165,7 @@ application/x-cbr:*.cbr
 application/x-pkcs12:*.pfx
 application/metalink+xml:*.metalink
 application/x-cbt:*.cbt
+application/x-openbox-theme:*.obt
 application/x-perl:*.perl
 application/vnd.mozilla.xul+xml:*.xul
 application/x-cbz:*.cbz

@@ -29,10 +29,6 @@
 #include <winpr/error.h>
 #include <winpr/handle.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 #ifndef _WIN32
 
 /* Mutex */
@@ -274,10 +270,6 @@ WINPR_API HANDLE CreateWaitObjectEvent(LPSECURITY_ATTRIBUTES lpEventAttributes,
 
 WINPR_API int GetEventFileDescriptor(HANDLE hEvent);
 WINPR_API void* GetEventWaitObject(HANDLE hEvent);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* WINPR_SYNCH_H */
 

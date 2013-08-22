@@ -1,4 +1,7 @@
-//@line 43 "/opt/build/iceweasel-10.0.12esr/browser/components/sidebar/src/nsSidebar.js"
+/* -*- Mode: C++; tab-width: 4; indent-tabs-mode: nil; c-basic-offset: 4 -*- */
+/* This Source Code Form is subject to the terms of the Mozilla Public
+ * License, v. 2.0. If a copy of the MPL was not distributed with this
+ * file, You can obtain one at http://mozilla.org/MPL/2.0/. */
 
 Components.utils.import("resource://gre/modules/Services.jsm");
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
@@ -69,12 +72,11 @@ function (aTitle, aContentURL, aCustomizeURL, aPersist)
                                          , type: "bookmark"
                                          , hiddenRows: [ "description"
                                                        , "keyword"
-                                                       , "location"
-                                                       , "loadInSidebar" ]
+                                                       , "location" ]
                                          , uri: uri
                                          , title: aTitle
                                          , loadBookmarkInSidebar: true
-                                         }, win, true);
+                                         }, win);
 }
 
 nsSidebar.prototype.validateSearchEngine =

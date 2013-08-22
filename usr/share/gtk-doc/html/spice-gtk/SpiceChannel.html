@@ -58,26 +58,26 @@ enum                <a class="link" href="SpiceChannel.html#SpiceChannelEvent-en
                                                          <em class="parameter"><code><span class="type">int</span> type</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> id</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceChannel.html#spice-channel-destroy" title="spice_channel_destroy ()">spice_channel_destroy</a>               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-connect" title="spice_channel_connect ()">spice_channel_connect</a>               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-open-fd" title="spice_channel_open_fd ()">spice_channel_open_fd</a>               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-connect" title="spice_channel_connect ()">spice_channel_connect</a>               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>);
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-open-fd" title="spice_channel_open_fd ()">spice_channel_open_fd</a>               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> fd</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceChannel.html#spice-channel-disconnect" title="spice_channel_disconnect ()">spice_channel_disconnect</a>            (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceChannel.html#SpiceChannelEvent"><span class="type">SpiceChannelEvent</span></a> reason</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-test-capability" title="spice_channel_test_capability ()">spice_channel_test_capability</a>       (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-test-common-capability" title="spice_channel_test_common_capability ()">spice_channel_test_common_capability</a>
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-test-capability" title="spice_channel_test_capability ()">spice_channel_test_capability</a>       (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-test-common-capability" title="spice_channel_test_common_capability ()">spice_channel_test_common_capability</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);
-const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="SpiceChannel.html#spice-channel-type-to-string" title="spice_channel_type_to_string ()">spice_channel_type_to_string</a>        (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);
+const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       <a class="link" href="SpiceChannel.html#spice-channel-type-to-string" title="spice_channel_type_to_string ()">spice_channel_type_to_string</a>        (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceChannel.html#spice-channel-set-capability" title="spice_channel_set_capability ()">spice_channel_set_capability</a>        (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceChannel.html#spice-channel-flush-async" title="spice_channel_flush_async ()">spice_channel_flush_async</a>           (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-flush-finish" title="spice_channel_flush_finish ()">spice_channel_flush_finish</a>          (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
+                                                         <em class="parameter"><code><a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
+<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceChannel.html#spice-channel-flush-finish" title="spice_channel_flush_finish ()">spice_channel_flush_finish</a>          (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
+                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);
 </pre>
 </div>
 <div class="refsect1">
@@ -87,7 +87,7 @@ const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.htm
    +----SpiceChannelEvent
 </pre>
 <pre class="synopsis">
-  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----SpiceChannel
          +----<a class="link" href="SpiceCursorChannel.html" title="Cursor Channel">SpiceCursorChannel</a>
          +----<a class="link" href="SpiceDisplayChannel.html" title="Display Channel">SpiceDisplayChannel</a>
@@ -103,17 +103,17 @@ const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.htm
 <div class="refsect1">
 <a name="SpiceChannel.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceChannel.html#SpiceChannel--channel-id" title='The "channel-id" property'>channel-id</a>"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only
-  "<a class="link" href="SpiceChannel.html#SpiceChannel--channel-type" title='The "channel-type" property'>channel-type</a>"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only
+  "<a class="link" href="SpiceChannel.html#SpiceChannel--channel-id" title='The "channel-id" property'>channel-id</a>"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only
+  "<a class="link" href="SpiceChannel.html#SpiceChannel--channel-type" title='The "channel-type" property'>channel-type</a>"             <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only
   "<a class="link" href="SpiceChannel.html#SpiceChannel--spice-session" title='The "spice-session" property'>spice-session</a>"            <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>*         : Read / Write / Construct Only
-  "<a class="link" href="SpiceChannel.html#SpiceChannel--total-read-bytes" title='The "total-read-bytes" property'>total-read-bytes</a>"         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a>                : Read
+  "<a class="link" href="SpiceChannel.html#SpiceChannel--total-read-bytes" title='The "total-read-bytes" property'>total-read-bytes</a>"         <a href="../glib/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a>                : Read
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceChannel.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceChannel.html#SpiceChannel-channel-event" title='The "channel-event" signal'>channel-event</a>"                                  : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceChannel.html#SpiceChannel-open-fd" title='The "open-fd" signal'>open-fd</a>"                                        : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceChannel.html#SpiceChannel-channel-event" title='The "channel-event" signal'>channel-event</a>"                                  : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceChannel.html#SpiceChannel-open-fd" title='The "open-fd" signal'>open-fd</a>"                                        : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
 </pre>
 </div>
 <div class="refsect1">
@@ -258,7 +258,7 @@ Disconnect and unref the <em class="parameter"><code>channel</code></em>. Called
 <hr>
 <div class="refsect2">
 <a name="spice-channel-connect"></a><h3>spice_channel_connect ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_connect               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>);</pre>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_connect               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>);</pre>
 <p>
 Connect the channel, using <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> connection informations
 </p>
@@ -270,14 +270,14 @@ Connect the channel, using <a class="link" href="SpiceSession.html" title="Spice
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success.</td>
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success.</td>
 </tr></tbody>
 </table></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="spice-channel-open-fd"></a><h3>spice_channel_open_fd ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_open_fd               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_open_fd               (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> fd</code></em>);</pre>
 <p>
 Connect the channel using <em class="parameter"><code>fd</code></em> socket.
@@ -300,7 +300,7 @@ request mechanism</td>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success.</td>
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> on success.</td>
 </tr>
 </tbody>
 </table></div>
@@ -329,8 +329,8 @@ Close the socket and reset connection specific data. Finally, emit
 <hr>
 <div class="refsect2">
 <a name="spice-channel-test-capability"></a><h3>spice_channel_test_capability ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_test_capability       (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);</pre>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_test_capability       (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);</pre>
 <p>
 Test availability of remote "channel kind capability".
 </p>
@@ -342,16 +342,16 @@ Test availability of remote "channel kind capability".
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>cap</code></em> (channel kind capability) is available.</td>
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>cap</code></em> (channel kind capability) is available.</td>
 </tr></tbody>
 </table></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="spice-channel-test-common-capability"></a><h3>spice_channel_test_common_capability ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_test_common_capability
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_test_common_capability
                                                         (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);</pre>
 <p>
 Test availability of remote "common channel capability".
 </p>
@@ -363,20 +363,20 @@ Test availability of remote "common channel capability".
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>cap</code></em> (common channel capability) is available.</td>
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>cap</code></em> (common channel capability) is available.</td>
 </tr></tbody>
 </table></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="spice-channel-type-to-string"></a><h3>spice_channel_type_to_string ()</h3>
-<pre class="programlisting">const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       spice_channel_type_to_string        (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);</pre>
+<pre class="programlisting">const <a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *       spice_channel_type_to_string        (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
 <a name="spice-channel-set-capability"></a><h3>spice_channel_set_capability ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_channel_set_capability        (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> cap</code></em>);</pre>
 <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Warning</h3>
 <p><code class="literal">spice_channel_set_capability</code> has been deprecated since version 0.13 and should not be used in newly-written code. this function has been removed</p>
@@ -399,9 +399,9 @@ Enable specific channel-kind capability.
 <div class="refsect2">
 <a name="spice-channel-flush-async"></a><h3>spice_channel_flush_async ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_channel_flush_async           (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
+                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
 <p>
 Forces an asynchronous write of all user-space buffered data for
 the given channel.
@@ -424,7 +424,7 @@ operation.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cancellable</code></em> :</span></p></td>
-<td>optional GCancellable object, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+<td>optional GCancellable object, <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> to ignore. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
@@ -444,9 +444,9 @@ operation.
 <hr>
 <div class="refsect2">
 <a name="spice-channel-flush-finish"></a><h3>spice_channel_flush_finish ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_flush_finish          (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
+<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_channel_flush_finish          (<em class="parameter"><code><a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel</code></em>,
+                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *result</code></em>,
+                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **error</code></em>);</pre>
 <p>
 Finishes flushing a channel.
 </p>
@@ -463,18 +463,18 @@ Finishes flushing a channel.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>result</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gio/unstable/GAsyncResult.html"><span class="type">GAsyncResult</span></a>
+<td>a <a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> location to store the error occurring, or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
+<td>a <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> location to store the error occurring, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a>
 to ignore.</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if flush operation succeeded, <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
+<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if flush operation succeeded, <a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> otherwise.</td>
 </tr>
 </tbody>
 </table></div>
@@ -485,7 +485,7 @@ to ignore.</td>
 <a name="SpiceChannel.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceChannel--channel-id"></a><h3>The <code class="literal">"channel-id"</code> property</h3>
-<pre class="programlisting">  "channel-id"               <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only</pre>
+<pre class="programlisting">  "channel-id"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only</pre>
 <p></p>
 <p>Allowed values: &gt;= G_MAXULONG</p>
 <p>Default value: -1</p>
@@ -493,7 +493,7 @@ to ignore.</td>
 <hr>
 <div class="refsect2">
 <a name="SpiceChannel--channel-type"></a><h3>The <code class="literal">"channel-type"</code> property</h3>
-<pre class="programlisting">  "channel-type"             <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only</pre>
+<pre class="programlisting">  "channel-type"             <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only</pre>
 <p></p>
 <p>Allowed values: &gt;= G_MAXULONG</p>
 <p>Default value: -1</p>
@@ -507,7 +507,7 @@ to ignore.</td>
 <hr>
 <div class="refsect2">
 <a name="SpiceChannel--total-read-bytes"></a><h3>The <code class="literal">"total-read-bytes"</code> property</h3>
-<pre class="programlisting">  "total-read-bytes"         <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a>                : Read</pre>
+<pre class="programlisting">  "total-read-bytes"         <a href="../glib/glib-Basic-Types.html#gulong"><span class="type">gulong</span></a>                : Read</pre>
 <p></p>
 </div>
 </div>
@@ -517,7 +517,7 @@ to ignore.</td>
 <a name="SpiceChannel-channel-event"></a><h3>The <code class="literal">"channel-event"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a>     *channel,
                                                         <a class="link" href="SpiceChannel.html#SpiceChannelEvent"><span class="type">SpiceChannelEvent</span></a> event,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>          user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
 <p>
 The <a class="link" href="SpiceChannel.html#SpiceChannel-channel-event" title='The "channel-event" signal'><span class="type">"channel-event"</span></a> signal is emitted when the
 state of the connection change.
@@ -548,8 +548,8 @@ state of the connection change.
 <div class="refsect2">
 <a name="SpiceChannel-open-fd"></a><h3>The <code class="literal">"open-fd"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          with_tls,
-                                                        <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="http://library.gnome.org/devel/gobject/unstable/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          with_tls,
+                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
 <p>
 The <a class="link" href="SpiceChannel.html#SpiceChannel-open-fd" title='The "open-fd" signal'><span class="type">"open-fd"</span></a> signal is emitted when a new
 connection is requested. This signal is emitted when the

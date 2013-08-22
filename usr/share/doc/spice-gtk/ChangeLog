@@ -1,3 +1,432 @@
+2013-06-26  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	Release v0.20
+
+	build-sys: bump spice-glib version
+	new symbols in spice-glib, bump before release
+
+	doc: add missing symbols and versions
+
+2013-06-24  Yonit Halperin  <yhalperi@redhat.com>
+
+	display: disabling adaptive video streaming via env var SPICE_DISABLE_ADAPTIVE_STREAMING
+	spice-server supports adaptive video streaming only if the client
+	publishes SPICE_DISPLAY_CAP_STREAM_REPORT.
+
+	Disabling this feature is useful for debugging and performance comparison.
+
+	display: video stats logging - improve readability and ease of parsing
+
+2013-06-24  Christophe Fergeau  <cfergeau@redhat.com>
+
+	automake: Disable portability warnings
+	When they are enabled, autogen.sh fails with:
+	automake: warnings are treated as errors
+	gtk-doc.make:77: warning: GTK_DOC_V_SETUP_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:78: warning: GTK_DOC_V_SETUP_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:96: warning: GTK_DOC_V_SCAN_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:97: warning: GTK_DOC_V_SCAN_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:100: warning: GTK_DOC_V_INTROSPECT_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:101: warning: GTK_DOC_V_INTROSPECT_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:132: warning: GTK_DOC_V_XML_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:133: warning: GTK_DOC_V_XML_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:149: warning: GTK_DOC_V_HTML_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:150: warning: GTK_DOC_V_HTML_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:153: warning: GTK_DOC_V_XREF_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:154: warning: GTK_DOC_V_XREF_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:185: warning: GTK_DOC_V_PDF_$(V: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	gtk-doc.make:186: warning: GTK_DOC_V_PDF_$(AM_DEFAULT_VERBOSITY: non-POSIX recursive variable expansion
+	doc/reference/Makefile.am:59:   'gtk-doc.make' included from here
+	autoreconf: automake failed with exit status: 1
+
+	on my F19.
+	-Wportability used to be automatically disabled with automake <= 1.12 when using
+	silent rules, but this is no longer the case with automake 1.13 which is what
+	fedora 19 uses: http://www.flameeyes.eu/autotools-mythbuster/automake/silent.html
+	"As of version 1.13, though, this opt-in is no longer necessary, as all the
+	Makefiles are generated to support them. The silent-rules option is now a
+	no-op, doing nothing at all, in particular not silencing the portability
+	warnings."
+
+	This commit disables these warnings in order to avoid autogen.sh breakage
+	because of the use of -Werror, they can be reenabled once gtk-doc.make is
+	fixed to avoid these portability warnings.
+
+	Remove obsolete files from POTFILES.in
+	intltool-update -M complains about them
+
+	smartcard: Move down spice_smartcard_reader_is_software body
+	It's more consistent to have it close to
+	spice_smartcard_reader_insert_card() et al.
+
+	Add spice_smartcard_manager_get_readers()
+	This returns the list of smartcard readers known to a given
+	SpiceSmartcardManager. This is useful to check whether a software
+	smartcard reader is available or not.
+
+	smartcard: Add methods to act on software readers
+	Currently, the methods to insert/remove smartcards from a software
+	smartcard reader are global to the SpiceSmartcardManager singleton
+	rather than acting on a SpiceSmartcardreader object.
+	This commit adds insert/remove methods acting on such objects.
+
+	smartcard: Report failure when software reader is missing
+	As there is no easy way to know if the SpiceSmartcardManager
+	has an associated software reader or not, it's better to report
+	failure instead of g_return_if_fail on attempts to use
+	spice_smartcard_manager_insert/remove_card with no software reader
+	available.
+
+2013-06-24  Hans de Goede  <hdegoede@redhat.com>
+
+	Update spice-common
+
+2013-06-21  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	proxy: remove trailing slash from proxy URL
+	Apparently, trailing slash are common for proxy URI. Is there a
+	specification for these kind of URI?
+
+	(I cry that we don't have GUri yet to handle parsing... gbo#489862)
+
+	Fixes:
+	https://bugzilla.redhat.com/show_bug.cgi?id=975472
+
+2013-06-14  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	win32: don't block key up events
+	The win32 ll keyboard hook avoid Windows and other application to
+	receive global keyboard events. But some key combinations can't be
+	filtered, such as Win+L. However, the windows lock screen doesn't catch
+	that the Win key is released, when virt-viewer still holds the hook and
+	filters it.
+
+	So pressing Win+L quickly will lock the screen, but some key press in
+	the password entry will still be handled as if the Win key was pressed,
+	such as Win+P or Win+U and probably other, and prevents user from typing
+	his password.
+
+	The only working solution I could find is to just let go all the release
+	key events in the hook. There doesn't seem any drawback with that.
+
+	https://bugzilla.redhat.com/show_bug.cgi?id=917986
+
+	widget: release keys on grab-broken
+	This is similar to 8cbd5d745c221f788878c9c713f3b46a25828d3f and can be
+	reproduced by pressing Win+l while the widget has the keyboard
+	grab (pointer over the display).
+
+	I have not reproduced implicit grab-broken event, I suppose they could
+	happen if the grab is stolen from within the app. In any case, it's
+	probably better to release the keys.
+
+	This is related to:
+	https://bugzilla.redhat.com/show_bug.cgi?id=917986
+
+2013-05-29  Hans de Goede  <hdegoede@redhat.com>
+
+	Make sure our foo_get_type functions are thread-safe
+	While debugging:
+	https://bugzilla.redhat.com/show_bug.cgi?id=866718
+
+	I found a thread-safeness issue with a couple of foo_get_type functions
+	in polkit causing this crash.
+
+	After this I decided to check if spice-gtk has the same issue, and it does,
+	since foo_get_type can be called from different threads, it is important to
+	make them thread-safe.
+
+2013-05-16  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	widget: remove grab key filter
+	The widget currently filters out last key press from grab key sequence
+	if it's not a modifier key. But this will prevent nested usage of ungrab
+	combinations such as shift+f12.
+
+	https://bugzilla.redhat.com/show_bug.cgi?id=889962
+
+	This will also make the following obsolete:
+	https://bugzilla.redhat.com/show_bug.cgi?id=846005
+
+	Build fix, use correct check version
+
+2013-05-15  Mattias Grönlund  <mattias@gronlund.se>
+
+	mingw: Fix non-working AltGr with some layouts
+	Running virt-viewer-x64-0.5.6.msi, on Windows 7, connecting to QEMU using
+	spice, AltGR key combinations fails (using Swedish keyboard layout both at
+	server and client).
+
+	I suspect that this is a variant of
+	https://bugzilla.redhat.com/show_bug.cgi?id=904092.
+
+	After some debugging, I realized that there is an extra VK_LCONTROL
+	keypress sent by Windows. This extra VK_LCONTROL will then make the key
+	e.g. AltGr-< actually be Control-AltGr-<, which is not interpreted as a |
+	sign.
+
+	So in spice-widget.c : keyboard_hook_cb(), I added SPICE_DEBUG lines which
+	printed out the hooked->scanCode, and realized that this extra VK_LCONTROL
+	has a very suspect scanCode with bit 9 set. If I instead press the left
+	Ctrl key, it will also emit VK_LCONTROL, but with bit 9 cleared.
+
+	So I just made sure that keyboard_hook_cb(), silently dropped these strange
+	VK_LCONTROL events, which seems to work for me.
+
+2013-05-15  Christophe Fergeau  <cfergeau@redhat.com>
+
+	Fix printf format string warning
+	When doing a mingw32 build, I hit the following warning (which became an
+	error because of -Werror):
+
+	channel-display.c: In function 'destroy_stream':
+	channel-display.c:1546:9: error: format '%lu' expects argument of type 'long unsigned int', but argument 6 has type 'uint64_t' [-Werror=format=]
+	         CHANNEL_DEBUG(channel, "%s: drops total duration %lu ==>", __FUNCTION__, drops_duration_total);
+	         ^
+
+2013-05-14  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	Build fixes for gtk+2
+
+	Fix glib2 2.22 build after edf1daf5
+	channel-display.c: In function 'display_update_stream_report':
+	channel-display.c:1273: warning: implicit declaration of function
+	'g_get_monotonic_time'
+
+2013-05-13  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	session: timeout after 10s of socket connect() attempt
+	https://bugzilla.redhat.com/show_bug.cgi?id=885101
+
+	Fix build after 577263aaf4c
+
+2013-05-13  Yonit Halperin  <yhalperi@redhat.com>
+
+	channel-display: protect video streaming from temporarily unsynced mm_time (migration related)
+	rhbz#951664
+
+	When the src and dst servers have different mm-times, we can
+	hit a case when for a short period of time the session mm-time and
+	the video mm-time are not synced. If the video mm-time is much
+	bigger than the session mm-time, the next stream rendering will be
+	scheduled to (video-mm-time - session-mm-time), and even after
+	the different mm-times are synced, the video won't be rendered
+	till the rendering timeout that was scheduled based on a wrong mm-time,
+	takes place.
+	This patch protects from such cases. You can find more details in the
+	code comments.
+
+	spice-session: new signal for notifying on a significant change in mm-time
+	mm-time can change after migration. This can cause video synchronization
+	problems after migration if not handled appropriately (see rhbz#951664).
+
+	emit_main_context macro: handle calls from both coroutine context and main context
+
+2013-05-13  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	vncdisplaykeymap: add wayland support
+	The Wayland keycode are just Linux evdev, but the Gdk backend
+	add the +8 offset used by Xorg evdev.
+
+2013-05-11  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	vncdisplaykeymap: add broadway support
+
+	keymaps: add basic x11 keysyms
+	Ok, this isn't a good idea, but atm, the browser don't seem to send
+	hardware keycode, and so Gtk+ broadway backend decided to use keysyms
+	representation, which spice-gtk receives as "hardware keycodes"...
+
+	Since Gdk keysyms are same as X11, add a new x11 keysym to keymap.
+
+	This is not going to fly,...
+
+	vncdisplaykeymap: adapt gtk2 compat code
+
+	vncdisplaykeymap: use a window to associate table
+
+	widget: check backend is X11
+	spice-gtk blindly assume the backend is X11 if it's compiled on
+	Unix. But nowadays, gtk+ support runtime backend selection.
+
+	https://bugzilla.redhat.com/show_bug.cgi?id=961577
+
+	Remove unused spice_set_keyboard_lock_modifiers()
+	That code was used in early version to set client modifiers lock
+	but it is the wrong approach, and guest should follow client
+	state instead.
+
+	Remove GnomeRR code
+	Changing client resolution is a bad idea, and never took up.
+	Remove some unmaintained experimental code.
+
+	widget: release keys when the grab is taken elsewhere
+	gtk may propagate some press event up to the Spice display widget, but
+	a widget may take focus and grab the release event, so the guest will
+	keep seeing the key pressed.
+
+	Releasing the keys when the grab is taken solves two menu-related bugs:
+
+	https://bugzilla.redhat.com/show_bug.cgi?id=820829
+	https://bugzilla.redhat.com/show_bug.cgi?id=924577
+
+	main: do not send monitors config if some are missing
+	Spice-gtk does a bit of client-side work by optionnally delaying sending
+	the monitor configuration to the guest automatically. However, the
+	client may be slow to set all the monitors, so teach the timer to not
+	fire the event unless at least the number of monitors set explicitely
+	enabled or disabled matches the number of display channels.
+
+	This avoid some configuration races when connecting to a multi-channel
+	display server which is slow to set up.
+
+2013-04-30  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	widget: don't grab mouse when switching to server mode
+	spice-gtk used to try taking the grab when switching to server mode, so
+	that the current mouse interaction (for example a drag), isn't
+	interrupted if the agent dies. However, shutting down a VM will
+	automatically try taking the grab when there is no tablet input, and
+	agent exits.
+
+	Some users are complaining about it (especially when they don't know the
+	ungrab combination).
+
+	Instead, let's try to keep the grab only if we have currently a mouse
+	button pressed.
+
+	https://bugzilla.redhat.com/show_bug.cgi?id=873272
+
+2013-04-26  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	main: do not send monitor config if monitor state didn't change
+	Don't send monitor config after spice_main_set_display_enabled() if the
+	monitor state didn't change.
+
+	This solves monitor "flashing", reconfiguring in a loop:
+	https://bugzilla.redhat.com/show_bug.cgi?id=952327
+
+2013-04-24  Hans de Goede  <hdegoede@redhat.com>
+
+	usb-redir-manager: Fix redirect_on_connect string mem leak
+
+	usb-device-manager: Fix stray '\n'-s in g_warning calls
+
+	usb-device-manager: Fix redirect_on_connect_rules mem-leak
+
+	usb-device-manager: Add spice_usb_device_manager_get_devices_with_filter (fdo#63807)
+
+	usb-device-manager: Error check spice_usb_device_manager_device_to_libdev calls
+	Under Windows all calls to spice_usb_device_manager_device_to_libdev may fail,
+	so error check them all.
+
+	usb-device-manager: Avoid needless re-numeration of usb devs under Linux
+	libusb_get_device_list() is not exactly a cheap call (lots of sysfs and
+	usbfs accesses), so it is worth to avoid it where possible.
+
+	This patch restores the old (pre win32 support addition) of dealing with
+	libusb-devices under Linux, it keeps the device from the first lookup
+	in spice_usb_device_manager_add_dev cached and uses that throughout.
+
+	This also means that spice_usb_device_manager_device_to_libdev can no
+	longer fail under Linux, so no need to error check it.
+
+2013-04-23  Christophe Fergeau  <cfergeau@redhat.com>
+
+	option: Allow multiple options in --disable-effects
+	Commit 82c367 added checks that the value passed to --disable-effects
+	is valid, but it does not take into account that it's perfectly valid
+	to pass multiple values separated by commas. This commit splits
+	the value passed to --disable-effects and checks each component separatey.
+
+	Fixes rhbz#955277
+
+	Fix setting of SPICE_{GLIB,GTK}_REQUIRES
+	Because of a typo (REQUIRED vs REQUIRES), these variables only
+	contained the last require that was set rather than a concatenation
+	of all the needed libraries.
+
+	Fix GNetworkAddress leak when opening spice session
+
+2013-04-22  Yonit Halperin  <yhalperi@redhat.com>
+
+	channel-display: trigger re-sync of audio playback latency when there are frequent video frame drops
+	This was added in order to respond more quickly when the audio and video playback are
+	not synchronized, and when the latency between the client and the server
+	is high (i.e., when the server response to the status is delayed).
+
+	playback: support syncing the playback latency via session
+
+	spice-pulse: adjust the playback latency when the min-latency property changes
+	If the current latency is smaller than the new min-latency
+	value, we cork the playback till the target latency is achieved.
+
+	Note: I didn't modify the prebuf configuration and used
+	pa_stream_prebuf, because pulse updated the prebuf only if
+	I set both prebuf and tlength to be target_latency*2. Then,
+	due to the tlength growth, each time the playback latency deviated
+	from the target latency, an underflow occurred. Since the latency
+	that is computed by the server is not exact and is based on its
+	current evaluation of the bit-rate, which is dynamic, it is better not
+	to change the tlength (in order to avoid unnecessary underflows).
+
+	channel-playback: support SPICE_MSG_PLAYBACK_LATENCY
+	Add a new property for minimum playback latency. This property is
+	updated with the value from SPICE_MSG_PLAYBACK_LATENCY.
+	I also increased the default latency from 100ms to 200ms in order to
+	be more robust to different bandwidth settings.
+	The patch also updates spice-common submodule.
+
+	channel-display: video stream quality report
+	Handle MSG_STREAM_ACTIVIATE_REPORT and send MSGC_STREAM_REPORT
+	periodically, or when the playback is out of sync.
+	The patch also updates spice-common submodule.
+
+	channel-playback: provide access to playback properties via the session
+	Support checking whether an audio playback is active and what its latency
+	is.
+
+	spice-pulse: update the playback latency automatically when it changes
+
+	channel-display: collect and print video stream stats
+	also prints the number of underflows during a spice-pulse audio playback
+
+2013-04-12  Christophe Fergeau  <cfergeau@redhat.com>
+
+	Revert "build-sys: keep common submodule up to date"
+	This reverts commit 5150285e1cba35570c29bd923df065d2c81f081e.
+
+2013-04-11  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	session: enforce secure channels
+
+	option: add --spice-secure-channels
+
+	Add function to return Spice channel type from string
+
+	Add function to return list of supported channels
+
+	session: add secure-channels property
+
+	channel: try TLS only once
+	A broken server may reply to switch to TLS again and again. spice-gtk
+	should only try once.
+
+	cosmetic: fix indentation and comment
+
 2013-04-10  Marc-André Lureau  <marcandre.lureau@redhat.com>
 
 	Release v0.19

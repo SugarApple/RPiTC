@@ -39,9 +39,9 @@ typedef struct rdp_input rdpInput;
 #define PTR_FLAGS_WHEEL_NEGATIVE	0x0100
 #define PTR_FLAGS_MOVE			0x0800
 #define PTR_FLAGS_DOWN			0x8000
-#define PTR_FLAGS_BUTTON1		0x1000 /* left */
-#define PTR_FLAGS_BUTTON2		0x2000 /* right */
-#define PTR_FLAGS_BUTTON3		0x4000 /* middle */
+#define PTR_FLAGS_BUTTON1		0x1000 //left
+#define PTR_FLAGS_BUTTON2		0x2000 //right
+#define PTR_FLAGS_BUTTON3		0x4000 //middle
 #define WheelRotationMask		0x01FF
 
 /* Extended Pointer Flags */
@@ -67,7 +67,6 @@ typedef void (*pKeyboardEvent)(rdpInput* input, UINT16 flags, UINT16 code);
 typedef void (*pUnicodeKeyboardEvent)(rdpInput* input, UINT16 flags, UINT16 code);
 typedef void (*pMouseEvent)(rdpInput* input, UINT16 flags, UINT16 x, UINT16 y);
 typedef void (*pExtendedMouseEvent)(rdpInput* input, UINT16 flags, UINT16 x, UINT16 y);
-typedef void (*pFocusInEvent)(rdpInput* input, UINT16 toggleStates, UINT16 x, UINT16 y);
 
 struct rdp_input
 {
@@ -80,9 +79,7 @@ struct rdp_input
 	pUnicodeKeyboardEvent UnicodeKeyboardEvent; /* 18 */
 	pMouseEvent MouseEvent; /* 19 */
 	pExtendedMouseEvent ExtendedMouseEvent; /* 20 */
-	pFocusInEvent FocusInEvent; /*21 */
-
-	UINT32 paddingB[32 - 22]; /* 22 */
+	UINT32 paddingB[32 - 21]; /* 21 */
 
 	/* Internal */
 
@@ -101,7 +98,6 @@ FREERDP_API void freerdp_input_send_keyboard_event_ex(rdpInput* input, BOOL down
 FREERDP_API void freerdp_input_send_unicode_keyboard_event(rdpInput* input, UINT16 flags, UINT16 code);
 FREERDP_API void freerdp_input_send_mouse_event(rdpInput* input, UINT16 flags, UINT16 x, UINT16 y);
 FREERDP_API void freerdp_input_send_extended_mouse_event(rdpInput* input, UINT16 flags, UINT16 x, UINT16 y);
-FREERDP_API void freerdp_input_send_focus_in_event(rdpInput* input, UINT16 toggleStates, UINT16 x, UINT16 y);
 
 #ifdef __cplusplus
 }

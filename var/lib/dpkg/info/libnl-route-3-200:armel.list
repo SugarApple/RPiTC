@@ -2,12 +2,11 @@
 /usr
 /usr/lib
 /usr/lib/arm-linux-gnueabi
-/usr/lib/arm-linux-gnueabi/libnl-route-3.so.200.5.2
+/usr/lib/arm-linux-gnueabi/libnl-route-3.so.200.16.1
 /usr/share
 /usr/share/doc
 /usr/share/doc/libnl-route-3-200
-/usr/share/doc/libnl-route-3-200/buildinfo_armel.gz
 /usr/share/doc/libnl-route-3-200/changelog.gz
-/usr/share/doc/libnl-route-3-200/copyright
 /usr/share/doc/libnl-route-3-200/changelog.Debian.gz
+/usr/share/doc/libnl-route-3-200/copyright
 /usr/lib/arm-linux-gnueabi/libnl-route-3.so.200

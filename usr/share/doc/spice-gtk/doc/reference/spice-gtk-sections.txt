@@ -247,10 +247,13 @@ SpiceSmartcardManagerClass
 SpiceSmartcardReader
 <SUBSECTION>
 spice_smartcard_manager_get
+spice_smartcard_manager_get_readers
 spice_smartcard_manager_insert_card
 spice_smartcard_manager_remove_card
 <SUBSECTION>
 spice_smartcard_reader_is_software
+spice_smartcard_reader_insert_card
+spice_smartcard_reader_remove_card
 <SUBSECTION Standard>
 SPICE_SMARTCARD_MANAGER
 SPICE_IS_SMARTCARD_MANAGER
@@ -291,6 +294,7 @@ SpiceUsbDeviceManagerClass
 <SUBSECTION>
 spice_usb_device_manager_get
 spice_usb_device_manager_get_devices
+spice_usb_device_manager_get_devices_with_filter
 spice_usb_device_manager_is_device_connected
 spice_usb_device_manager_disconnect_device
 spice_usb_device_manager_can_redirect_device

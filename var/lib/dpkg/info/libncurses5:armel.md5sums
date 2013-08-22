@@ -1,4 +1,4 @@
-9e70681e2a001e19c833652080338c6a  lib/arm-linux-gnueabi/libncurses.so.5.9
-4e1a8b00ed8a5511045842514de5b059  usr/lib/arm-linux-gnueabi/libform.so.5.9
-ef8964c63baa8258246173dcef7bbc49  usr/lib/arm-linux-gnueabi/libmenu.so.5.9
-5fa099428df2ed5a98e56c0993455eda  usr/lib/arm-linux-gnueabi/libpanel.so.5.9
+f825906716faf4269a45f3c0c0e815e7  lib/arm-linux-gnueabi/libncurses.so.5.9
+cd690b7f5ea30726a15a21337fd88464  usr/lib/arm-linux-gnueabi/libform.so.5.9
+880c571af3244673129579dfc2307500  usr/lib/arm-linux-gnueabi/libmenu.so.5.9
+a4b01a5478e27f200ed969872f02e6ff  usr/lib/arm-linux-gnueabi/libpanel.so.5.9

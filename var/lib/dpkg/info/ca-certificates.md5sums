@@ -1,6 +1,6 @@
 5d3218ff481e9236fc217080e325c2ca  usr/sbin/update-ca-certificates
-190789d16052b5495b3c05b7512a412f  usr/share/ca-certificates/cacert.org/cacert.org.crt
-61f57b02afc9aac39bb0c3dbaeed6bcd  usr/share/ca-certificates/debconf.org/ca.crt
+95c1c1820c0ed1de88d512cb10e25182  usr/share/ca-certificates/cacert.org/cacert.org_class3.crt
+fb262d55709427e2e9acadf2c1298c99  usr/share/ca-certificates/cacert.org/cacert.org_root.crt
 1e719f61fd1dc529b3baf398fc1ee40c  usr/share/ca-certificates/mozilla/A-Trust-nQual-03.crt
 0f28e92dd6c19d1544e8aadb147c571a  usr/share/ca-certificates/mozilla/ACEDICOM_Root.crt
 a023ca7e515aa972921795dac27f8033  usr/share/ca-certificates/mozilla/AC_Raíz_Certicámara_S.A..crt
@@ -155,10 +155,9 @@ af9cef1bc5260376a2cbe5d845e8d383  usr/share/ca-certificates/mozilla/certSIGN_ROO
 de3d5930e6e6b3fdb385f60a05206588  usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA.crt
 bec566e660af74de78db7b39778c2ef1  usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G2.crt
 7940d0333af9e5de8515419506540624  usr/share/ca-certificates/mozilla/thawte_Primary_Root_CA_-_G3.crt
-33922a1660820e44812e7ddc392878cb  usr/share/ca-certificates/spi-inc.org/spi-ca-2003.crt
 fa268b79e0ef3ef5085a9a2303303e59  usr/share/ca-certificates/spi-inc.org/spi-cacert-2008.crt
-b5d07602627f0c9325dd5c840beb5c7f  usr/share/doc/ca-certificates/NEWS.Debian.gz
+9fe2d05abf1365ba294e0f98f54a7186  usr/share/doc/ca-certificates/NEWS.Debian.gz
 14e40b09b89f7dca6ddbb242560cd0d8  usr/share/doc/ca-certificates/README.Debian
-93d4878c67ce923ece74eb7d93dcdece  usr/share/doc/ca-certificates/changelog.gz
-6135800ff6d893c7904d7aad90972eb5  usr/share/doc/ca-certificates/copyright
-5f7add7c8d2ce22c7cac54124a3c0a9f  usr/share/man/man8/update-ca-certificates.8.gz
+2b91eb46439e467c19a442c07c38efa5  usr/share/doc/ca-certificates/changelog.gz
+d8fc4ed45f01c31c87c9b496d4babcae  usr/share/doc/ca-certificates/copyright
+97b85e8c6277a609037acae179cfbfca  usr/share/man/man8/update-ca-certificates.8.gz

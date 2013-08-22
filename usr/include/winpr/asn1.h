@@ -23,10 +23,6 @@
 #include <winpr/winpr.h>
 #include <winpr/wtypes.h>
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 typedef unsigned char	ASN1uint8_t;
 typedef signed char	ASN1int8_t;
 
@@ -308,7 +304,6 @@ enum
 	ASN1DECODE_NOASSERT		= ASN1FLAGS_NOASSERT,
 };
 
-
 WINPR_API ASN1module_t ASN1_CreateModule(ASN1uint32_t nVersion, ASN1encodingrule_e eRule,
 	ASN1uint32_t dwFlags, ASN1uint32_t cPDU, const ASN1GenericFun_t apfnEncoder[],
 	const ASN1GenericFun_t apfnDecoder[], const ASN1FreeFun_t apfnFreeMemory[],
@@ -505,10 +500,6 @@ WINPR_API int ASN1DEREncBeginBlk(ASN1encoding_t enc, ASN1blocktype_e eBlkType, v
 WINPR_API int ASN1DEREncNewBlkElement(void* pBlk, ASN1encoding_t* enc2);
 WINPR_API int ASN1DEREncFlushBlkElement(void* pBlk);
 WINPR_API int ASN1DEREncEndBlk(void* pBlk);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* WINPR_ASN1_H */
 

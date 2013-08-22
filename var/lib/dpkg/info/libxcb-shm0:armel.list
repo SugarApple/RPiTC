@@ -6,6 +6,6 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/libxcb-shm0
-/usr/share/doc/libxcb-shm0/copyright
 /usr/share/doc/libxcb-shm0/changelog.Debian.gz
+/usr/share/doc/libxcb-shm0/copyright
 /usr/lib/arm-linux-gnueabi/libxcb-shm.so.0

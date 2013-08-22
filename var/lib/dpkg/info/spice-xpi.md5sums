@@ -1,7 +1,7 @@
 e0a59782fb8b340fcda9b0f4b0e35e2d  usr/lib/mozilla/install.rdf
-034e07d32a649efaf07ba4deadc7c483  usr/lib/mozilla/plugins/npSpiceConsole.la
-0429d40a5fc34aa97fd74ddb503b86ec  usr/lib/mozilla/plugins/npSpiceConsole.so
-c1b2c7bceb94da44db03f230fc588f0c  usr/lib/mozilla/plugins/npSpiceConsole.a
+783151ce8eb6ddb6de936cc5afabe14f  usr/lib/mozilla/plugins/npSpiceConsole.la
+6702299cfd9cac0327151b78e79d4325  usr/lib/mozilla/plugins/npSpiceConsole.so
+70fedfdb1b51fa35954e16d611a9f5c9  usr/lib/mozilla/plugins/npSpiceConsole.a
 87e252c8bdc39be4b09f07048d8f602f  usr/share/doc/spice/NEWS
 7bf58177d961ac23c06c6aeb068a8aa0  usr/share/doc/spice/README
 d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/spice/AUTHORS

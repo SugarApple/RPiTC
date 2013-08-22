@@ -1,5 +1,5 @@
-9be085a13671429168d9a935794bb702  lib/arm-linux-gnueabi/libprocps.so.1.1.0
+f642bb8c48d5c3aa5881a476ab62783a  lib/arm-linux-gnueabi/libprocps.so.1.1.2
 4e66b378964dfac167ca2ded53749b63  usr/share/doc/libprocps1/NEWS.Debian.gz
-9df3c79d0737aa04edf894b87e45c100  usr/share/doc/libprocps1/changelog.Debian.gz
-9548a1e8f6c344815a2eb8c9309ab73d  usr/share/doc/libprocps1/changelog.gz
+3f8d5ac138902cad446a29768797d0e8  usr/share/doc/libprocps1/changelog.Debian.gz
+313b5f86bf8a0c2eded2011ef0a8ee24  usr/share/doc/libprocps1/changelog.gz
 f6bc4975565e26ee2672864d40d6f39d  usr/share/doc/libprocps1/copyright

@@ -1,7 +1,7 @@
 #! /bin/bash
-#                               -*- Mode: Sh -*- 
-# ucfr --- 
-# Author           : Manoj Srivastava ( srivasta@glaurung.internal.golden-gryphon.com ) 
+#                               -*- Mode: Sh -*-
+# ucfr ---
+# Author           : Manoj Srivastava ( srivasta@glaurung.internal.golden-gryphon.com )
 # Created On       : Tue Apr 11 11:09:15 2006
 # Created On Node  : glaurung.internal.golden-gryphon.com
 # Last Modified By : Manoj Srivastava
@@ -9,11 +9,11 @@
 # Last Machine Used: glaurung.internal.golden-gryphon.com
 # Update Count     : 43
 # Status           : Unknown, Use with caution!
-# HISTORY          : 
-# Description      : 
+# HISTORY          :
+# Description      :
 #
 # Register a configuration file as belonging to a package
-# 
+#
 # arch-tag: 6e1d33fe-a930-41ce-8d0f-c87f87b19918
 #
 
@@ -74,15 +74,15 @@ purge_from_registry () {
 	if [ -e "${statedir}/registry.${i}" ]; then
 	    if [ "X$docmd" = "XYES" ]; then
 		cp -f "${statedir}/registry.${i}"  "${statedir}/registry.$(($i+1))"
-	    else 
+	    else
 		echo cp -f "${statedir}/registry.${i}" "${statedir}/registry.$(($i+1))"
-	    fi 
-	fi 
+	    fi
+	fi
     done
     if [ "X$docmd" = "XYES" ]; then
-	cp -f "$statedir/registry"  "$statedir/registry.0" 
+	cp -f "$statedir/registry"  "$statedir/registry.0"
     else
-	echo cp -f "$statedir/registry"  "$statedir/registry.0" 
+	echo cp -f "$statedir/registry"  "$statedir/registry.0"
     fi
     if [ "X$docmd" = "XYES" ]; then
 	set +e
@@ -92,9 +92,9 @@ purge_from_registry () {
 	fi
 	#echo "egrep -v [[:space:]]${safe_conf_file}$ $statedir/registry"
 	egrep -v "[[:space:]]${safe_conf_file}$" "$statedir/registry" > \
-	    "$statedir/registry.tmp" || true; 
+	    "$statedir/registry.tmp" || true;
 	if [ "X$docmd" = "XYES" ]; then
-	    mv -f "$statedir/registry.tmp"  "$statedir/registry" 
+	    mv -f "$statedir/registry.tmp"  "$statedir/registry"
 	else
 	    echo mv -f "$statedir/registry.tmp"  "$statedir/registry"
 	fi
@@ -110,7 +110,7 @@ replace_in_registry () {
     if [ $count -eq 1 ]; then
         old_pkg=$(egrep "[[:space:]]${safe_conf_file}$" "$statedir/registry" | \
             awk '{print $1;}' );
-        
+
         if [ "$pkg" != "$old_pkg" ]; then
             if [ "X$FORCE" = "X" ]; then
                 echo >&2 "$progname: Attempt from package $pkg  to take ${conf_file} away from package $old_pkg";
@@ -124,7 +124,7 @@ replace_in_registry () {
             exit 0;
         fi
     fi
-    
+
     for i in $(/usr/bin/seq 6 -1 0); do
 	if [ -e "${statedir}/registry.${i}" ]; then
 	    if [ "X$docmd" = "XYES" ]; then
@@ -137,9 +137,9 @@ replace_in_registry () {
 	fi
     done
     if [ "X$docmd" = "XYES" ]; then
-	cp -f "$statedir/registry"  "$statedir/registry.0" 
+	cp -f "$statedir/registry"  "$statedir/registry.0"
     else
-	echo cp -f "$statedir/registry"  "$statedir/registry.0" 
+	echo cp -f "$statedir/registry"  "$statedir/registry.0"
     fi
     if [ "X$docmd" = "XYES" ]; then
 	set +e
@@ -147,18 +147,18 @@ replace_in_registry () {
 	    echo "egrep -v \"[[:space:]]${safe_conf_file}$\" \"$statedir/registry\"  \\"
             echo "	$statedir/registry.tmp || true"
 	    echo "echo \"$pkg 	 $conf_file\" >> \"$statedir/registry.tmp\""
-	    echo "mv -f  $statedir/registry.tmp $statedir/registry" 
+	    echo "mv -f  $statedir/registry.tmp $statedir/registry"
 	fi
 	egrep -v "[[:space:]]${safe_conf_file}$" "$statedir/registry" > \
-	    "$statedir/registry.tmp" || true; 
-	echo "$pkg 	 $conf_file" >>   "$statedir/registry.tmp"; 
-	mv -f "$statedir/registry.tmp"  "$statedir/registry" 
+	    "$statedir/registry.tmp" || true;
+	echo "$pkg 	 $conf_file" >>   "$statedir/registry.tmp";
+	mv -f "$statedir/registry.tmp"  "$statedir/registry"
 	set -e
     else
 	echo "egrep -v \"[[:space:]]${safe_conf_file}$\" \"$statedir/registry\"  \\"
         echo "	$statedir/registry.tmp || true"
 	echo "echo \"$pkg 	 $conf_file\" >> \"$statedir/registry.tmp\""
-	echo "mv -f  $statedir/registry.tmp $statedir/registry" 
+	echo "mv -f  $statedir/registry.tmp $statedir/registry"
     fi
 }
 
@@ -178,12 +178,12 @@ Options:
      -d [n], --debug    [n]  Set the Debug level to N
      -n,     --no-action     Dry run. No action is actually taken.
      -v,     --verbose       Make the script verbose
-     -p,     --purge         Remove any reference to the package/file association 
+     -p,     --purge         Remove any reference to the package/file association
                              from the records
              --state-dir bar Set the state directory to bar instead of the
                              default '/var/lib/ucf'. Used mostly for testing.
 END
-	
+
 }
 
 ######################################################################
@@ -237,13 +237,13 @@ while true ; do
 	*) echo >&2 "$progname: Internal error!" ; exit 1 ;;
     esac
 done
-# Need to run as root, or else the 
+# Need to run as root, or else the
 if test $(id -u) != 0; then
     if [ "$docmd" = "YES" ]; then
         echo "$progname: Need to be run as root." >&2
         echo "$progname: Setting up no action mode." >&2
-        action='echo'; 
-        docmd='NO'; 
+        action='echo';
+        docmd='NO';
     fi
 fi
 
@@ -251,7 +251,7 @@ if [ $# != 2 ]; then
     echo >&2 "$progname: *** ERROR: Need exactly two arguments, got $#";
     echo >&2 ""
     usageversion;
-    exit 0 ;
+    exit 3 ;
 fi
 
 setq pkg  "$1" "The Package name";
@@ -270,6 +270,9 @@ case $safe_conf_file in
         exit 0;
 esac
 
+temp=$safe_conf_file
+setq safe_conf_file "$(readlink -q -m $temp)" "The configuration file";
+
 # Load site defaults and over rides.
 if [ -f /etc/ucf.conf ]; then
     . /etc/ucf.conf
@@ -283,7 +286,7 @@ elif [ ! "x$UCF_STATE_DIR" = "x" ]; then
 elif [ ! "x$conf_state_dir" = "x" ]; then
     setq statedir "$conf_state_dir" "The State directory"
 else
-    setq statedir '/var/lib/ucf'  "The State directory"    
+    setq statedir '/var/lib/ucf'  "The State directory"
 fi
 
 # VERBOSE of 0 is supposed to be the same as not setting VERBOSE

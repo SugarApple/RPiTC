@@ -2,6 +2,7 @@
 application/rdf+xml=iceweasel.desktop;
 application/rss+xml=iceweasel.desktop;
 application/vnd.mozilla.xul+xml=iceweasel.desktop;
+application/x-openbox-theme=obconf.desktop;
 application/x-virt-viewer=remote-viewer.desktop;
 application/xhtml+xml=iceweasel.desktop;
 application/xml=iceweasel.desktop;

@@ -28,20 +28,6 @@ case "$1" in
             invoke-rc.d dbus force-reload || true
         fi
 
-        # Update init script priorities
-        if dpkg --compare-versions "$2" lt "0.7.0.99-1"; then
-            for i in 0 1 6 ; do
-                if [ -e /etc/rc$i.d/K14network-manager ]; then
-                    mv /etc/rc$i.d/K14network-manager /etc/rc$i.d/K88network-manager
-                fi
-            done
-        fi
-
-        # Kill nm-system-settings service as in 0.8 it is no longer a separate process
-        if dpkg --compare-versions "$2" lt "0.7.999-1"; then
-            kill `pidof /usr/sbin/nm-system-settings` 2>/dev/null || true
-        fi
-
         NIF=/etc/network/interfaces
         if [ -z "$2" ] && [ -f $NIF ]; then
             ifaces=`grep -v '^#' $NIF | awk '/iface/ {print $2}' | sort -u | sed -e 's/lo//' -e '/^$/d' -e 's/^/- /'`
@@ -76,18 +62,6 @@ if [ -x "/etc/init.d/network-manager" ]; then
 	fi
 	invoke-rc.d network-manager $_dh_action || exit $?
 fi
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper rm_conffile /etc/init.d/network-manager-dispatcher 0.7.0~svn4191-1~ network-manager -- "$@"
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper rm_conffile /etc/udev/rules.d/77-nm-probe-modem-capabilities.rules 0.7.0.100-1~ network-manager -- "$@"
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-system-settings.conf 0.7.999-1~ network-manager -- "$@"
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper mv_conffile /etc/NetworkManager/nm-system-settings.conf /etc/NetworkManager/NetworkManager.conf 0.8.1-2~ network-manager -- "$@"
 # End automatically added section
 # Automatically added by dh_installdeb
 dpkg-maintscript-helper mv_conffile /etc/dbus-1/system.d/NetworkManager.conf /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 0.9.4.0-1~ network-manager -- "$@"

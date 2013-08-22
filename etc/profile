@@ -36,4 +36,4 @@ if [ -d /etc/profile.d ]; then
   unset i
 fi
 
-LD_LIBRARY_PATH="/usr/local/lib;/usr/local/lib/arm-linux-gnueabi:/usr/lib/arm-linux-gnueabi"
+LD_LIBRARY_PATH="/usr/local/lib:/usr/local/lib/arm-linux-gnueabi:/usr/lib/arm-linux-gnueabi"

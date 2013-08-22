@@ -24,8 +24,7 @@
 #include <freerdp/api.h>
 #include <freerdp/types.h>
 #include <freerdp/constants.h>
-
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 #ifdef __cplusplus
 extern "C" {
@@ -69,7 +68,7 @@ FREERDP_API NSC_CONTEXT* nsc_context_new(void);
 FREERDP_API void nsc_context_set_pixel_format(NSC_CONTEXT* context, RDP_PIXEL_FORMAT pixel_format);
 FREERDP_API void nsc_process_message(NSC_CONTEXT* context, UINT16 bpp,
 	UINT16 width, UINT16 height, BYTE* data, UINT32 length);
-FREERDP_API void nsc_compose_message(NSC_CONTEXT* context, wStream* s,
+FREERDP_API void nsc_compose_message(NSC_CONTEXT* context, STREAM* s,
 	BYTE* bmpdata, int width, int height, int rowstride);
 FREERDP_API void nsc_context_free(NSC_CONTEXT* context);
 

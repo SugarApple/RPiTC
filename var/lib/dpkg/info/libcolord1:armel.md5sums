@@ -1,4 +1,5 @@
-5188683e0afb178f6f0c286592f2bbe8  usr/lib/arm-linux-gnueabi/libcolord.so.1.0.11
-305cfb0f3bd3ad12159cfc37944b7dc9  usr/share/doc/libcolord1/changelog.Debian.gz
-e03bb472025fb78f38085de51f82f7b6  usr/share/doc/libcolord1/changelog.gz
-def7881bc8635333d3e65cc1351dab37  usr/share/doc/libcolord1/copyright
+2f9cee7c7d62a04715b7319306aa895a  usr/lib/arm-linux-gnueabi/libcolord.so.1.0.21
+dcd4f4740f10cabe9a31d0bb6d85c2a0  usr/lib/arm-linux-gnueabi/libcolordprivate.so.1.0.21
+640efa52392c0b56a55c887dd5d66d8f  usr/share/doc/libcolord1/changelog.Debian.gz
+a3147303fd7e10b0bc721435e2cd7379  usr/share/doc/libcolord1/changelog.gz
+bf79dacc72a37863eedb62c21e542fbb  usr/share/doc/libcolord1/copyright

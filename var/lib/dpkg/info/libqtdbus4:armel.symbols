@@ -133,18 +133,16 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN16QDBusPendingCallD1Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallD2Ev@Base 4:4.5.3
  _ZN16QDBusPendingCallaSERKS_@Base 4:4.5.3
- _ZN18QDBusIntrospection10ObjectTreeD1Ev@Base 4:4.7.4
- _ZN18QDBusIntrospection10ObjectTreeD2Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection11parseObjectERK7QStringS2_S2_@Base 4:4.5.3
  _ZN18QDBusIntrospection14parseInterfaceERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseInterfacesERK7QString@Base 4:4.5.3
  _ZN18QDBusIntrospection15parseObjectTreeERK7QStringS2_S2_@Base 4:4.5.3
- _ZN18QDBusIntrospection6MethodD1Ev@Base 4:4.8.1
- _ZN18QDBusIntrospection6MethodD2Ev@Base 4:4.8.1
+ _ZN18QDBusIntrospection6MethodD1Ev@Base 4:4.8.4
+ _ZN18QDBusIntrospection6MethodD2Ev@Base 4:4.8.4
  _ZN18QDBusIntrospection6ObjectD1Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection6ObjectD2Ev@Base 4:4.7.4
- _ZN18QDBusIntrospection6SignalD1Ev@Base 4:4.8.1
- _ZN18QDBusIntrospection6SignalD2Ev@Base 4:4.8.1
+ _ZN18QDBusIntrospection6SignalD1Ev@Base 4:4.8.4
+ _ZN18QDBusIntrospection6SignalD2Ev@Base 4:4.8.4
  _ZN18QDBusIntrospection8ArgumentD1Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection8ArgumentD2Ev@Base 4:4.7.4
  _ZN18QDBusIntrospection8PropertyD1Ev@Base 4:4.8.1
@@ -263,9 +261,6 @@ libQtDBus.so.4 libqt4-dbus #MINVER#
  _ZN26QDBusAbstractInterfaceBaseD0Ev@Base 4:4.7.4
  _ZN26QDBusAbstractInterfaceBaseD1Ev@Base 4:4.7.4
  _ZN26QDBusAbstractInterfaceBaseD2Ev@Base 4:4.7.4
- _ZN6QDebug6StreamD1Ev@Base 4:4.8.2+dfsg-11+RPiTC1
- _ZN6QDebug6StreamD2Ev@Base 4:4.8.2+dfsg-11+RPiTC1
- _ZN7QString5clearEv@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN9QDBusUtil14isValidBusNameERK7QString@Base 4:4.5.3
  _ZN9QDBusUtil16argumentToStringERK8QVariant@Base 4:4.5.3
  _ZN9QDBusUtil16isValidBasicTypeEi@Base 4:4.8.0

@@ -60,10 +60,10 @@ DIST_COMMON = $(top_srcdir)/gtk-doc.make $(srcdir)/Makefile.in \
 subdir = doc/reference
 ACLOCAL_M4 = $(top_srcdir)/aclocal.m4
 am__aclocal_m4_deps = $(top_srcdir)/m4/check_python.m4 \
-	$(top_srcdir)/m4/gtk-doc.m4 $(top_srcdir)/m4/intltool.m4 \
-	$(top_srcdir)/m4/ld-version.m4 $(top_srcdir)/m4/libtool.m4 \
-	$(top_srcdir)/m4/ltoptions.m4 $(top_srcdir)/m4/ltsugar.m4 \
-	$(top_srcdir)/m4/ltversion.m4 $(top_srcdir)/m4/lt~obsolete.m4 \
+	$(top_srcdir)/m4/gtk-doc.m4 $(top_srcdir)/m4/ld-version.m4 \
+	$(top_srcdir)/m4/libtool.m4 $(top_srcdir)/m4/ltoptions.m4 \
+	$(top_srcdir)/m4/ltsugar.m4 $(top_srcdir)/m4/ltversion.m4 \
+	$(top_srcdir)/m4/lt~obsolete.m4 \
 	$(top_srcdir)/m4/manywarnings.m4 \
 	$(top_srcdir)/m4/spice-compile-warnings.m4 \
 	$(top_srcdir)/m4/warnings.m4 $(top_srcdir)/configure.ac
@@ -94,18 +94,18 @@ am__can_run_installinfo = \
   esac
 am__tagged_files = $(HEADERS) $(SOURCES) $(TAGS_FILES) $(LISP)
 DISTFILES = $(DIST_COMMON) $(DIST_SOURCES) $(TEXINFOS) $(EXTRA_DIST)
-ACLOCAL = ${SHELL} /opt/src/spice-gtk-0.19/build-aux/missing aclocal-1.13
+ACLOCAL = ${SHELL} /opt/src/spice-gtk-0.20/build-aux/missing aclocal-1.13
 ACL_HELPER_DIR = ${exec_prefix}/bin/
 ACL_LIBS = -lacl
 ALL_LINGUAS = 
 AMTAR = $${TAR-tar}
 AM_DEFAULT_VERBOSITY = 0
 AR = ar
-AUTOCONF = ${SHELL} /opt/src/spice-gtk-0.19/build-aux/missing autoconf
-AUTOHEADER = ${SHELL} /opt/src/spice-gtk-0.19/build-aux/missing autoheader
-AUTOMAKE = ${SHELL} /opt/src/spice-gtk-0.19/build-aux/missing automake-1.13
-AWK = mawk
-CAIRO_CFLAGS = -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12  
+AUTOCONF = ${SHELL} /opt/src/spice-gtk-0.20/build-aux/missing autoconf
+AUTOHEADER = ${SHELL} /opt/src/spice-gtk-0.20/build-aux/missing autoheader
+AUTOMAKE = ${SHELL} /opt/src/spice-gtk-0.20/build-aux/missing automake-1.13
+AWK = gawk
+CAIRO_CFLAGS = -I/usr/include/cairo -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/freetype2 -I/usr/include/libpng12 -I/usr/include/libdrm  
 CAIRO_LIBS = -lcairo  
 CATALOGS = 
 CATOBJEXT = .gmo
@@ -143,17 +143,17 @@ GMSGFMT = /usr/bin/msgfmt
 GOBJECT2_CFLAGS = -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include  
 GOBJECT2_LIBS = -lgobject-2.0 -lglib-2.0  
 GREP = /bin/grep
-GST_CFLAGS = 
-GST_LIBS = 
+GST_CFLAGS = -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/libxml2  
+GST_LIBS = -pthread -lgstapp-0.10 -lgstaudio-0.10 -lgstbase-0.10 -lgstinterfaces-0.10 -lgstreamer-0.10 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lxml2 -lglib-2.0  
 GTHREAD_CFLAGS = -pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include  
-GTHREAD_LIBS = -pthread -lgthread-2.0 -lrt -lglib-2.0  
+GTHREAD_LIBS = -pthread -lgthread-2.0 -lglib-2.0  
 GTKDOC_CHECK = /usr/bin/gtkdoc-check
 GTKDOC_DEPS_CFLAGS = 
 GTKDOC_DEPS_LIBS = 
 GTKDOC_MKPDF = /usr/bin/gtkdoc-mkpdf
 GTKDOC_REBASE = /usr/bin/gtkdoc-rebase
 GTK_API_VERSION = 3.0
-GTK_CFLAGS = -pthread -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12  
+GTK_CFLAGS = -pthread -I/usr/include/gtk-3.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/libdrm  
 GTK_LIBS = -lgtk-3 -lgdk-3 -latk-1.0 -lgio-2.0 -lpangocairo-1.0 -lgdk_pixbuf-2.0 -lcairo-gobject -lpango-1.0 -lcairo -lgobject-2.0 -lglib-2.0  
 GTK_REQUIRED = 2.91.3
 GUDEV_CFLAGS = -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/gudev-1.0  
@@ -178,7 +178,7 @@ INTROSPECTION_CFLAGS = -pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnu
 INTROSPECTION_COMPILER = /usr/bin/g-ir-compiler
 INTROSPECTION_GENERATE = /usr/bin/g-ir-generate
 INTROSPECTION_GIRDIR = /usr/share/gir-1.0
-INTROSPECTION_LIBS = -Wl,--export-dynamic -pthread -lgirepository-1.0 -lgobject-2.0 -lgmodule-2.0 -lgthread-2.0 -lrt -lffi -lglib-2.0  
+INTROSPECTION_LIBS = -lgirepository-1.0 -lgobject-2.0 -lglib-2.0  
 INTROSPECTION_MAKEFILE = /usr/share/gobject-introspection-1.0/Makefile.introspection
 INTROSPECTION_SCANNER = /usr/bin/g-ir-scanner
 INTROSPECTION_TYPELIBDIR = /usr/lib/girepository-1.0
@@ -193,7 +193,7 @@ LIPO =
 LN_S = ln -s
 LTLIBOBJS = 
 MAINT = #
-MAKEINFO = ${SHELL} /opt/src/spice-gtk-0.19/build-aux/missing makeinfo
+MAKEINFO = ${SHELL} /opt/src/spice-gtk-0.20/build-aux/missing makeinfo
 MANIFEST_TOOL = :
 MKDIR_P = /bin/mkdir -p
 MKINSTALLDIRS = build-aux/mkinstalldirs
@@ -209,13 +209,13 @@ OTOOL64 =
 PACKAGE = spice-gtk
 PACKAGE_BUGREPORT = spice-devel@lists.freedesktop.org
 PACKAGE_NAME = spice-gtk
-PACKAGE_STRING = spice-gtk 0.19
+PACKAGE_STRING = spice-gtk 0.20
 PACKAGE_TARNAME = spice-gtk
 PACKAGE_URL = 
-PACKAGE_VERSION = 0.19
+PACKAGE_VERSION = 0.20
 PATH_SEPARATOR = :
-PIE_CFLAGS = 
-PIE_LDFLAGS = 
+PIE_CFLAGS = -fPIE
+PIE_LDFLAGS = -pie -Wl,-z,relro -Wl,-z,now
 PIXMAN_CFLAGS = -I/usr/include/pixman-1  
 PIXMAN_LIBS = -lpixman-1  
 PKG_CONFIG = /usr/bin/pkg-config
@@ -223,17 +223,17 @@ PKG_CONFIG_LIBDIR =
 PKG_CONFIG_PATH = 
 PNP_IDS = ${pnpdatadir}/pnp.ids
 POFILES = 
-POLICYDIR = 
-POLKIT_CFLAGS = 
-POLKIT_LIBS = 
+POLICYDIR = /usr/share/polkit-1/actions/
+POLKIT_CFLAGS = -pthread -I/usr/include/polkit-1 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include  
+POLKIT_LIBS = -lpolkit-gobject-1 -lgio-2.0 -lgobject-2.0 -lglib-2.0  
 POSUB = po
 PO_IN_DATADIR_FALSE = 
 PO_IN_DATADIR_TRUE = 
-PULSE_CFLAGS = -D_REENTRANT -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include  
-PULSE_LIBS = -lpulse-mainloop-glib -lpulse -lglib-2.0  
+PULSE_CFLAGS = 
+PULSE_LIBS = 
 PYGTK_CFLAGS = 
 PYGTK_LIBS = 
-PYTHON = /usr/bin/python
+PYTHON = /usr/bin/python2
 PYTHON_EXEC_PREFIX = 
 PYTHON_INCLUDES = 
 PYTHON_PLATFORM = 
@@ -245,13 +245,13 @@ SASL_LIBS =  -lsasl2
 SED = /bin/sed
 SET_MAKE = 
 SHELL = /bin/bash
-SMARTCARD_CFLAGS = -I/usr/local/include/cacard -I/usr/include/nss -I/usr/include/nspr  
-SMARTCARD_LIBS = -L/usr/local/lib -lcacard -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4  
+SMARTCARD_CFLAGS = -I/usr/include/nss -I/usr/include/nspr -I/usr/include/cacard  
+SMARTCARD_LIBS = -lcacard -lnss3 -lnssutil3 -lsmime3 -lssl3 -lplds4 -lplc4 -lnspr4  
 SPICE_CFLAGS =   -Wall -W -Wformat-y2k -Wformat-security -Winit-self -Wmissing-include-dirs -Wunused -Wunknown-pragmas -Wstrict-aliasing -Wpointer-arith -Wcast-align -Wwrite-strings -Wlogical-op -Waggregate-return -Wstrict-prototypes -Wold-style-definition -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wnested-externs -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wbuiltin-macro-redefined -Wmudflap -Wpacked-bitfield-compat -Wsync-nand -Wattributes -Wcoverage-mismatch -Wmultichar -Wcpp -Wdeprecated-declarations -Wdiv-by-zero -Wdouble-promotion -Wendif-labels -Wextra -Wformat-contains-nul -Wformat-extra-args -Wformat-zero-length -Wformat=2 -Wmultichar -Wnormalized=nfc -Woverflow -Wpointer-to-int-cast -Wpragmas -Wsuggest-attribute=const -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wtrampolines -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Wno-format-nonliteral -Wno-deprecated-declarations -Wjump-misses-init -Wno-format-nonliteral -Wframe-larger-than=9216 -fstack-protector-all --param=ssp-buffer-size=4 -fexceptions -fasynchronous-unwind-tables -fdiagnostics-show-option -funit-at-a-time -fipa-pure-const -Wno-suggest-attribute=pure -Wno-suggest-attribute=const -Wno-write-strings
-SPICE_GLIB_CFLAGS =  -I/usr/include/pixman-1     -D_REENTRANT -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include    -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include   -pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/gio-unix-2.0/   -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include     
-SPICE_GLIB_REQUIRES =  openssl
+SPICE_GLIB_CFLAGS =  -I/usr/include/pixman-1      -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/libxml2   -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include   -pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/gio-unix-2.0/   -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include     
+SPICE_GLIB_REQUIRES =  pixman-1 >= 0.17.7 celt051 >= 0.5.1.1 openssl
 SPICE_GTK_API_VERSION = 3.0
-SPICE_GTK_CFLAGS =  -I/usr/include/pixman-1     -D_REENTRANT -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include    -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include   -pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/gio-unix-2.0/   -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include      -pthread -I/usr/include/gtk-3.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/atk-1.0 -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/freetype2 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/pixman-1 -I/usr/include/libpng12   
+SPICE_GTK_CFLAGS =  -I/usr/include/pixman-1      -pthread -I/usr/include/gstreamer-0.10 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/libxml2   -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include   -pthread -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/gio-unix-2.0/   -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include      -pthread -I/usr/include/gtk-3.0 -I/usr/include/atk-1.0 -I/usr/include/at-spi2-atk/2.0 -I/usr/include/pango-1.0 -I/usr/include/gio-unix-2.0/ -I/usr/include/cairo -I/usr/include/gdk-pixbuf-2.0 -I/usr/include/glib-2.0 -I/usr/lib/arm-linux-gnueabi/glib-2.0/include -I/usr/include/harfbuzz -I/usr/include/freetype2 -I/usr/include/pixman-1 -I/usr/include/libpng12 -I/usr/include/libdrm   
 SPICE_GTK_LOCALEDIR = ${datarootdir}/locale
 SPICE_GTK_REQUIRES =  gtk+-3.0 >= 2.91.3
 SSL_CFLAGS =  
@@ -265,7 +265,7 @@ USE_NLS = yes
 VALAC = 
 VAPIDIR = ${datarootdir}/vala/vapi
 VAPIGEN = 
-VERSION = 0.19
+VERSION = 0.20
 WARN_CFLAGS =  -Wall -W -Wformat-y2k -Wformat-security -Winit-self -Wmissing-include-dirs -Wunused -Wunknown-pragmas -Wstrict-aliasing -Wpointer-arith -Wcast-align -Wwrite-strings -Wlogical-op -Waggregate-return -Wstrict-prototypes -Wold-style-definition -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wnested-externs -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wbuiltin-macro-redefined -Wmudflap -Wpacked-bitfield-compat -Wsync-nand -Wattributes -Wcoverage-mismatch -Wmultichar -Wcpp -Wdeprecated-declarations -Wdiv-by-zero -Wdouble-promotion -Wendif-labels -Wextra -Wformat-contains-nul -Wformat-extra-args -Wformat-zero-length -Wformat=2 -Wmultichar -Wnormalized=nfc -Woverflow -Wpointer-to-int-cast -Wpragmas -Wsuggest-attribute=const -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wtrampolines -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Wno-format-nonliteral -Wno-deprecated-declarations -Wjump-misses-init -Wno-format-nonliteral -Wframe-larger-than=9216 -fstack-protector-all --param=ssp-buffer-size=4 -fexceptions -fasynchronous-unwind-tables -fdiagnostics-show-option -funit-at-a-time -fipa-pure-const -Wno-suggest-attribute=pure -Wno-suggest-attribute=const -Wno-write-strings
 WARN_LDFLAGS =  -Wall -W -Wformat-y2k -Wformat-security -Winit-self -Wmissing-include-dirs -Wunused -Wunknown-pragmas -Wstrict-aliasing -Wpointer-arith -Wcast-align -Wwrite-strings -Wlogical-op -Waggregate-return -Wstrict-prototypes -Wold-style-definition -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wnested-externs -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wbuiltin-macro-redefined -Wmudflap -Wpacked-bitfield-compat -Wsync-nand -Wattributes -Wcoverage-mismatch -Wmultichar -Wcpp -Wdeprecated-declarations -Wdiv-by-zero -Wdouble-promotion -Wendif-labels -Wextra -Wformat-contains-nul -Wformat-extra-args -Wformat-zero-length -Wformat=2 -Wmultichar -Wnormalized=nfc -Woverflow -Wpointer-to-int-cast -Wpragmas -Wsuggest-attribute=const -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wtrampolines -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Wno-format-nonliteral -Wno-deprecated-declarations -Wjump-misses-init -Wno-format-nonliteral -Wframe-larger-than=9216 -fstack-protector-all --param=ssp-buffer-size=4 -fexceptions -fasynchronous-unwind-tables -fdiagnostics-show-option -funit-at-a-time -fipa-pure-const -Wno-suggest-attribute=pure -Wno-suggest-attribute=const
 WARN_PYFLAGS =  -Wall -W -Wformat-y2k -Wformat-security -Winit-self -Wmissing-include-dirs -Wunused -Wunknown-pragmas -Wstrict-aliasing -Wpointer-arith -Wcast-align -Wwrite-strings -Wlogical-op -Waggregate-return -Wstrict-prototypes -Wold-style-definition -Wmissing-noreturn -Wmissing-format-attribute -Wredundant-decls -Wnested-externs -Winvalid-pch -Wvolatile-register-var -Wdisabled-optimization -Wbuiltin-macro-redefined -Wmudflap -Wpacked-bitfield-compat -Wsync-nand -Wattributes -Wcoverage-mismatch -Wmultichar -Wcpp -Wdeprecated-declarations -Wdiv-by-zero -Wdouble-promotion -Wendif-labels -Wextra -Wformat-contains-nul -Wformat-extra-args -Wformat-zero-length -Wformat=2 -Wmultichar -Wnormalized=nfc -Woverflow -Wpointer-to-int-cast -Wpragmas -Wsuggest-attribute=const -Wsuggest-attribute=noreturn -Wsuggest-attribute=pure -Wtrampolines -Wno-sign-compare -Wno-unused-parameter -Wno-missing-field-initializers -Wno-format-nonliteral -Wno-deprecated-declarations -Wjump-misses-init -Wno-format-nonliteral -Wframe-larger-than=9216 -fstack-protector-all --param=ssp-buffer-size=4 -fexceptions -fasynchronous-unwind-tables -fdiagnostics-show-option -funit-at-a-time -fipa-pure-const -Wno-suggest-attribute=pure -Wno-suggest-attribute=const -Wno-write-strings
@@ -273,10 +273,10 @@ XGETTEXT = /usr/bin/xgettext
 XRANDR_CFLAGS =  
 XRANDR_LIBS = -lX11 -lXrandr  
 Z_LIBS = -lz
-abs_builddir = /opt/src/spice-gtk-0.19/doc/reference
-abs_srcdir = /opt/src/spice-gtk-0.19/doc/reference
-abs_top_builddir = /opt/src/spice-gtk-0.19
-abs_top_srcdir = /opt/src/spice-gtk-0.19
+abs_builddir = /opt/src/spice-gtk-0.20/doc/reference
+abs_srcdir = /opt/src/spice-gtk-0.20/doc/reference
+abs_top_builddir = /opt/src/spice-gtk-0.20
+abs_top_srcdir = /opt/src/spice-gtk-0.20
 ac_ct_AR = ar
 ac_ct_CC = gcc
 ac_ct_DUMPBIN = 
@@ -305,7 +305,7 @@ host_vendor = unknown
 htmldir = ${docdir}
 includedir = ${prefix}/include
 infodir = ${datarootdir}/info
-install_sh = ${SHELL} /opt/src/spice-gtk-0.19/build-aux/install-sh
+install_sh = ${SHELL} /opt/src/spice-gtk-0.20/build-aux/install-sh
 intltool__v_merge_options_ = $(intltool__v_merge_options_$(AM_DEFAULT_VERBOSITY))
 intltool__v_merge_options_0 = -q
 libdir = ${exec_prefix}/lib

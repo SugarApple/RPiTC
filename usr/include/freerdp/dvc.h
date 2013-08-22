@@ -92,7 +92,7 @@ struct _IWTSVirtualChannelManager
 	/* Push a virtual channel event.
 	   This is a FreeRDP extension to standard MS API. */
 	int (*PushEvent) (IWTSVirtualChannelManager* pChannelMgr,
-		wMessage* pEvent);
+		RDP_EVENT* pEvent);
 	/* Find the channel or ID to send data to a specific endpoint. */
 	UINT32 (*GetChannelId) (IWTSVirtualChannel * channel);
 	IWTSVirtualChannel* (*FindChannelById) (IWTSVirtualChannelManager* pChannelMgr, 

@@ -23,8 +23,7 @@
 #include <freerdp/api.h>
 #include <freerdp/types.h>
 #include <freerdp/update.h>
-
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 #include <freerdp/cache/glyph.h>
 #include <freerdp/cache/brush.h>

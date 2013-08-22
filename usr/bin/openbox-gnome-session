@@ -13,4 +13,4 @@ xprop -root -remove _NET_NUMBER_OF_DESKTOPS \
       -remove _NET_CURRENT_DESKTOP 2> /dev/null
 
 export WINDOW_MANAGER=openbox
-exec gnome-session
+exec gnome-session --session=openbox-gnome

@@ -71,6 +71,9 @@
 /usr/share/locale/ru
 /usr/share/locale/ru/LC_MESSAGES
 /usr/share/locale/ru/LC_MESSAGES/apt.mo
+/usr/share/locale/tr
+/usr/share/locale/tr/LC_MESSAGES
+/usr/share/locale/tr/LC_MESSAGES/apt.mo
 /usr/share/locale/cy
 /usr/share/locale/cy/LC_MESSAGES
 /usr/share/locale/cy/LC_MESSAGES/apt.mo
@@ -304,6 +307,9 @@
 /etc/apt/apt.conf.d
 /etc/apt/apt.conf.d/01autoremove
 /etc/apt/preferences.d
+/etc/kernel
+/etc/kernel/postinst.d
+/etc/kernel/postinst.d/apt-auto-removal
 /etc/cron.daily
 /etc/cron.daily/apt
 /usr/lib/apt/methods/ssh

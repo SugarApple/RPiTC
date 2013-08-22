@@ -6,18 +6,9 @@ and/or use gtk-doc annotations.  -->
             xmlns="http://www.gtk.org/introspection/core/1.0"
             xmlns:c="http://www.gtk.org/introspection/c/1.0"
             xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
-  <include name="Atk" version="1.0"/>
-  <include name="GLib" version="2.0"/>
-  <include name="GModule" version="2.0"/>
   <include name="GObject" version="2.0"/>
-  <include name="Gdk" version="3.0"/>
-  <include name="GdkPixbuf" version="2.0"/>
-  <include name="Gio" version="2.0"/>
   <include name="Gtk" version="3.0"/>
-  <include name="Pango" version="1.0"/>
   <include name="SpiceClientGLib" version="2.0"/>
-  <include name="cairo" version="1.0"/>
-  <include name="xlib" version="2.0"/>
   <package name="spice-client-gtk-3.0"/>
   <c:include name="spice-widget.h"/>
   <namespace name="SpiceClientGtk"
@@ -80,12 +71,23 @@ and/or use gtk-doc annotations.  -->
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="get_grab_keys" c:identifier="spice_display_get_grab_keys">
         <return-value transfer-ownership="none">
           <doc xml:whitespace="preserve">the current grab key combination.</doc>
           <type name="GrabSequence" c:type="SpiceGrabSequence*"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the display widget</doc>
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="get_pixbuf" c:identifier="spice_display_get_pixbuf">
         <doc xml:whitespace="preserve">Take a screenshot of the display.</doc>
@@ -93,12 +95,22 @@ and/or use gtk-doc annotations.  -->
           <doc xml:whitespace="preserve">a #GdkPixbuf with the screenshot image buffer</doc>
           <type name="GdkPixbuf.Pixbuf" c:type="GdkPixbuf*"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="mouse_ungrab" c:identifier="spice_display_mouse_ungrab">
         <doc xml:whitespace="preserve">Ungrab the mouse.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="paste_from_guest"
               c:identifier="spice_display_paste_from_guest"
@@ -108,6 +120,11 @@ and/or use gtk-doc annotations.  -->
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="send_keys" c:identifier="spice_display_send_keys">
         <doc xml:whitespace="preserve">Send keyval press/release events to the display.</doc>
@@ -115,6 +132,10 @@ and/or use gtk-doc annotations.  -->
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <doc xml:whitespace="preserve">The #SpiceDisplay</doc>
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
           <parameter name="keyvals" transfer-ownership="none">
             <doc xml:whitespace="preserve">Keyval array</doc>
             <array length="1" zero-terminated="0" c:type="guint*">
@@ -138,6 +159,10 @@ and/or use gtk-doc annotations.  -->
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="display" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the display widget</doc>
+            <type name="Display" c:type="SpiceDisplay*"/>
+          </instance-parameter>
           <parameter name="seq" transfer-ownership="none">
             <doc xml:whitespace="preserve">key sequence</doc>
             <type name="GrabSequence" c:type="SpiceGrabSequence*"/>
@@ -151,14 +176,14 @@ and/or use gtk-doc annotations.  -->
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">When this is true the clipboard gets automatically shared between host
 and guest.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="channel-id"
                 writable="1"
                 construct-only="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">channel-id for this #SpiceDisplay</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="disable-inputs"
                 version="0.8"
@@ -166,19 +191,19 @@ and guest.</doc>
                 construct="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Disable all keyboard &amp; mouse inputs.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="grab-keyboard"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="grab-mouse"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="keypress-delay"
                 version="0.13"
@@ -190,7 +215,7 @@ released before this delay, a single press &amp; release event is
 sent to the server. If the key is pressed longer than the
 keypress-delay, the server will receive the delayed press
 event, and a following release event when the key is released.</doc>
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <property name="monitor-id"
                 version="0.13"
@@ -200,7 +225,7 @@ event, and a following release event when the key is released.</doc>
         <doc xml:whitespace="preserve">Select monitor from #SpiceDisplay to show.
 The value -1 means the whole display is shown.
 By default, the monitor 0 is selected.</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="only-downscale"
                 version="0.14"
@@ -208,25 +233,25 @@ By default, the monitor 0 is selected.</doc>
                 construct="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">If scaling, only scale down, never up.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="ready" version="0.13" transfer-ownership="none">
         <doc xml:whitespace="preserve">Indicate whether the display is ready to be shown. It takes
 into account several conditions, such as the channel display
 "mark" state, whether the monitor area is visible..</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="resize-guest"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="scaling"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="session"
                 writable="1"
@@ -243,7 +268,7 @@ into account several conditions, such as the channel display
         <doc xml:whitespace="preserve">Zoom level in percentage, from 10 to 400. Default to 100.
 (this option is only supported with cairo backend when scaling
 is enabled)</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <field name="parent">
         <type name="Gtk.DrawingArea" c:type="GtkDrawingArea"/>
@@ -254,30 +279,30 @@ is enabled)</doc>
       <glib:signal name="grab-keys-pressed" when="first">
         <doc xml:whitespace="preserve">Notify when the grab keys have been pressed</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="keyboard-grab" when="first">
         <doc xml:whitespace="preserve">Notify when the keyboard grab is active or not.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="status" transfer-ownership="none">
             <doc xml:whitespace="preserve">1 if grabbed, 0 otherwise.</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="mouse-grab" when="first">
         <doc xml:whitespace="preserve">Notify when the mouse grab is active or not.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="status" transfer-ownership="none">
             <doc xml:whitespace="preserve">1 if grabbed, 0 otherwise.</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -331,15 +356,18 @@ is enabled)</doc>
       <member name="press"
               value="1"
               c:identifier="SPICE_DISPLAY_KEY_EVENT_PRESS"
-              glib:nick="press"/>
+              glib:nick="press">
+      </member>
       <member name="release"
               value="2"
               c:identifier="SPICE_DISPLAY_KEY_EVENT_RELEASE"
-              glib:nick="release"/>
+              glib:nick="release">
+      </member>
       <member name="click"
               value="3"
               c:identifier="SPICE_DISPLAY_KEY_EVENT_CLICK"
-              glib:nick="click"/>
+              glib:nick="click">
+      </member>
     </enumeration>
     <record name="DisplayPrivate" c:type="SpiceDisplayPrivate" disguised="1">
     </record>
@@ -382,7 +410,7 @@ is enabled)</doc>
         <parameters>
           <parameter name="str" transfer-ownership="none">
             <doc xml:whitespace="preserve">a string of '+' seperated key names (ex: "Control_L+Alt_L")</doc>
-            <type name="utf8" c:type="gchar*"/>
+            <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
       </constructor>
@@ -391,18 +419,34 @@ is enabled)</doc>
           <doc xml:whitespace="preserve">a newly allocated string representing the key sequence</doc>
           <type name="utf8" c:type="gchar*"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="sequence" transfer-ownership="none">
+            <type name="GrabSequence" c:type="SpiceGrabSequence*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="copy" c:identifier="spice_grab_sequence_copy">
         <return-value transfer-ownership="full">
           <doc xml:whitespace="preserve">a copy of @sequence</doc>
           <type name="GrabSequence" c:type="SpiceGrabSequence*"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="sequence" transfer-ownership="none">
+            <doc xml:whitespace="preserve">sequence to copy</doc>
+            <type name="GrabSequence" c:type="SpiceGrabSequence*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="free" c:identifier="spice_grab_sequence_free">
         <doc xml:whitespace="preserve">Free @sequence.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="sequence" transfer-ownership="none">
+            <type name="GrabSequence" c:type="SpiceGrabSequence*"/>
+          </instance-parameter>
+        </parameters>
       </method>
     </record>
     <class name="GtkSession"
@@ -418,12 +462,9 @@ A new #SpiceGtkSession instance will be created the first time this
 function is called for a certain #SpiceSession.
 
 Note that this function returns a weak reference, which should not be used
-after the #SpiceSession itself has been unref-ed by the caller.
-
-
-Since 0.8</doc>
+after the #SpiceSession itself has been unref-ed by the caller.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">a weak reference to the #SpiceGtkSession associated with the passed in #SpiceSession</doc>
+          <doc xml:whitespace="preserve">a weak reference to the #SpiceGtkSession associated with the passed in #SpiceSession  Since 0.8</doc>
           <type name="GtkSession" c:type="SpiceGtkSession*"/>
         </return-value>
         <parameters>
@@ -441,6 +482,11 @@ Since 0.8</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="GtkSession" c:type="SpiceGtkSession*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="paste_from_guest"
               c:identifier="spice_gtk_session_paste_from_guest">
@@ -450,6 +496,11 @@ Since 0.8</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="GtkSession" c:type="SpiceGtkSession*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <property name="auto-clipboard"
                 version="0.8"
@@ -458,7 +509,7 @@ Since 0.8</doc>
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">When this is true the clipboard gets automatically shared between host
 and guest.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="auto-usbredir"
                 version="0.8"
@@ -468,7 +519,7 @@ and guest.</doc>
         <doc xml:whitespace="preserve">Automatically redirect newly plugged in USB devices. Note the auto
 redirection only happens when a #SpiceDisplay associated with the
 session had keyboard focus.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="session"
                 version="0.8"
@@ -521,7 +572,7 @@ session had keyboard focus.</doc>
             <type name="SpiceClientGLib.Session" c:type="SpiceSession*"/>
           </parameter>
           <parameter name="device_format_string" transfer-ownership="none">
-            <type name="utf8" c:type="gchar*"/>
+            <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
       </constructor>
@@ -530,6 +581,9 @@ session had keyboard focus.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="widget" transfer-ownership="none">
+            <type name="UsbDeviceWidget" c:type="SpiceUsbDeviceWidget*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <type name="SpiceClientGLib.UsbDevice" c:type="SpiceUsbDevice*"/>
           </parameter>
@@ -542,7 +596,7 @@ session had keyboard focus.</doc>
                 writable="1"
                 construct-only="1"
                 transfer-ownership="none">
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="session"
                 writable="1"
@@ -559,7 +613,7 @@ session had keyboard focus.</doc>
       </field>
       <glib:signal name="connect-failed" when="first">
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="object" transfer-ownership="none">

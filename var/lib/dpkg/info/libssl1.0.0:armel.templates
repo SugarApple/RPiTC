@@ -103,6 +103,12 @@ Description-nl.UTF-8: Welke diensten moeten herstart worden (zodat ze de nieuwe 
  Hierna volgt een lijst van gedetecteerde diensten die herstart moeten worden. Verbeter de lijst, als u denkt dat ze incorrect is. De namen moeten overeenkomen met de script-namen in /etc/init.d en moeten gescheiden worden door spaties. Als de lijst leeg is worden er geen diensten herstart.
  .
  Als er andere diensten mysterieus beginnen te falen na deze opwaardering, dient u deze te herstarten. Er wordt u ten zeerste aanbevolen uw machine te herstarten om SSL-gerelateerde problemen te vermijden.
+Description-pl.UTF-8: Usługi które mają być zrestartowane, aby mogły używać nowych bibliotek:
+ To wydanie OpenSSL naprawia kilka problemów bezpieczeństwa. Usługi nie będą mogły skorzystać z tych poprawek, dopóki nie zostaną zrestartowane. Proszę zauważyć, że zrestartowanie serwera SSH (sshd) nie powinno mieć wpływu na istniejące połączenia.
+ .
+ Proszę sprawdzić listę wykrytych usług, które powinny zostać zrestartowane, i poprawić ją, jeśli to konieczne. Nazwy usług muszą się zgadzać z nazwami skryptów startowych w /etc/init.d i muszą być rozdzielone spacjami. Jeśli lista będzie pusta, żadne usługi nie zostaną zrestartowane.
+ .
+ Każda usługa w której wystąpi nieoczekiwany błąd po tej aktualizacji, powinna zostać zrestartowana. Zaleca się ponowne uruchomienie komputera, co umożliwi uniknięcie wszystkich problemów związanych z SSL.
 Description-pt.UTF-8: Serviços a reiniciar para que usem as novas bibliotecas:
  Este lançamento do OpenSSL resolve alguns problemas de segurança. Os serviços podem não usar as correcções até que sejam reiniciados. Note que reiniciar o servidor SSH (sshd) não deve afectar quaisquer ligações existentes.
  .
@@ -139,6 +145,12 @@ Description-sv.UTF-8: Tjänster som ska startas om för att få dem att använda
  Undersök listan över identifierade tjänster som behöver startas om och gör ändringar i den om det behövs. Tjänstenamnen måste vara identiska för initieringsskripten i /etc/init.d och måste separeras med blanksteg. Inga tjänster kommer att startas om om listan är tom.
  .
  Om andra tjänster senare börjar att få underliga problem efter denna uppgradering bör de startas om.  Vi rekommenderar att du startar om din dator för att undvika SSL-relaterade problem.
+Description-tr.UTF-8: Yeni kitaplıkları kullanmaları için yeniden başlatılacak hizmetler:
+ OpenSSL paketinin bu sürümü bazı güvenlik sorunlarını düzeltmiştir. Hizmetler yeniden başlatılmadıkça bu düzeltmeleri kullanamayacaklar. SSH sunucusunun (sshd) yeniden başlatılması kurulu bağlantıları etkilemeyecektir.
+ .
+ Yeniden başlatılması gerektiği algılanan hizmetleri gözden geçiriniz ve gerekirse düzeltiniz. Hizmetlerin adları boşluklarla ayrılmalı ve /etc/init.d dizinindeki başlatma betikleri ile özdeş olmalıdır. Bu liste boş ise hiçbir hizmetin yeniden başlatılmasına gerek yoktur.
+ .
+ Bu yükseltmeden sonra beklenmedik bir şekilde duran herhangi bir hizmet yeniden başlatılmalıdır. SSL ile bağlantılı bir sorun yaşamamak için en doğrusu bu sunucunun yeniden başlatılmasıdır.
 Description-vi.UTF-8: Dịch vụ cần khởi chạy lại để sử dụng thư viện mới:
  Phiên bản OpenSSL này sửa chữa một số vấn đề bảo mật. Dịch vụ sẽ chỉ sử dụng những sự sửa này sau khi khởi chạy lại. Ghi chú rằng việc khởi chạy lại trình phục vụ SSH (sshd) không nên ảnh hưởng đến kết nối đã có.
  .
@@ -239,6 +251,12 @@ Description-nl.UTF-8: Herstarten van sommige diensten na de OpenSSL-opwaardering
  ${services}
  .
  U zult deze handmatig moeten herstarten via het commando '/etc/init.d/<dienst> start'.
+Description-pl.UTF-8: Zrestartowanie niektórych usług podczas aktualizacji OpenSSL nie powiodło się
+ Następujące usługi nie mogły zostać zrestartowane w celu aktualizacji biblioteki OpenSSL:
+ .
+ ${services}
+ .
+ Należy zrestartować te usługi ręcznie, przez wykonanie "/etc/init.d/<usługa> start"
 Description-pt.UTF-8: Falha ao reiniciar alguns serviços para a actualização do OpenSSL
  Os seguintes serviços não poderam ser reiniciados para a actualização da biblioteca OpenSSL:
  .
@@ -275,6 +293,12 @@ Description-sv.UTF-8: Misslyckades med att starta om tjänster för uppgradering
  ${services}
  .
  Du måste starta om dessa tjänster manuellt genom att köra '/etc/init.d/<service> start'
+Description-tr.UTF-8: OpenSSL yükseltmesi sırasında bazı hizmetler yeniden başlatılamadı
+ Aşağıdaki hizmetler OpenSSL kitaplıkları yükseltilirken yeniden başlatılamadı:
+ .
+ ${services}
+ .
+  '/etc/init.d/<hizmet> start' komutunu çalıştırarak bu hizmetleri elle başlatmalısınız.
 Description-vi.UTF-8: Lỗi khởi chạy lại một số dịch vụ để nâng cấp OpenSSL
  Những dịch vụ theo đây không khởi chạy lại được để nâng cấp thư viện OpenSSL:
  .

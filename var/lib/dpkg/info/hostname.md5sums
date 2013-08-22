@@ -1,8 +1,8 @@
-26f126edc92b9b706dfc365957f72d2f  bin/dnsdomainname
-26f126edc92b9b706dfc365957f72d2f  bin/domainname
-26f126edc92b9b706dfc365957f72d2f  bin/hostname
-26f126edc92b9b706dfc365957f72d2f  bin/nisdomainname
-26f126edc92b9b706dfc365957f72d2f  bin/ypdomainname
-c63eff3896a4bbdf58e3b8437608516e  usr/share/doc/hostname/changelog.gz
+2dece2aac6f4820131c28facd016bfc1  bin/dnsdomainname
+2dece2aac6f4820131c28facd016bfc1  bin/domainname
+2dece2aac6f4820131c28facd016bfc1  bin/hostname
+2dece2aac6f4820131c28facd016bfc1  bin/nisdomainname
+2dece2aac6f4820131c28facd016bfc1  bin/ypdomainname
+30d984b1beaaf8c9d58d86b617128d21  usr/share/doc/hostname/changelog.gz
 460b6a1df2db2b5e80f05a44ec21c62f  usr/share/doc/hostname/copyright
-f9481fc09d1a197753992bc732c2959c  usr/share/man/man1/hostname.1.gz
+51cf49298a97ed67310b88c0a570ad30  usr/share/man/man1/hostname.1.gz

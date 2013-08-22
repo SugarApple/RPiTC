@@ -5,8 +5,7 @@ I would have trouble getting again.
 
 Now that the RSA patent has expired, GPG comes with RSA support
 by default.  This means that it's actually possible to convert
-your PGP key to a GPG key, and use it normally with GPG.  You
-will not need gpg-idea or any other non-free component.
+your PGP key to a GPG key, and use it normally with GPG.
 
 The steps are quite easy.  I wrote them down here, because I expect
 that a number of Debian maintainers are in the same situation
@@ -22,9 +21,6 @@ of PGP for that -- it's the same key!
 
 Here are the steps:
 
-  0. Make sure your version of GPG supports RSA.  You should be
-     okay if you have GPG 1.0.3 or newer.  I used GPG 1.0.4 myself.
-
   1. Back up your .pgp directory, and your .gnupg directory (if any).
      Note: I started with an empty .gnupg directory for this.
      If you already have a GPG ring with a set of keys, you'll
@@ -32,16 +28,7 @@ Here are the steps:
      That won't break anything, but it can be confusing and it
      is easy to accidentally use the wrong key.
 
-  2. Remove the passphrase from your PGP secret key.  This is necessary
-     because the secret key is protected using the IDEA algorithm, and
-     IDEA is still patented so GPG does not support it.
-     Command:
-     pgp -ke userid
-     where userid is what you use to access your key, usually your name
-     or email address.  Just hit Enter when PGP asks for the new
-     passphrase.
-
-  3. Import your secret and public keys into GPG.
+  2. Import your secret and public keys into GPG.
      Command:
      gpg --import $HOME/.pgp/secring.pgp $HOME/.pgp/pubring.pgp
      There doesn't seem to be a way to tell GPG to import only selected
@@ -50,23 +37,9 @@ Here are the steps:
      I simply imported all the keys, because I wanted to convert to using
      GPG for everything.
 
-  4. Re-protect your secret key with a passphrase.
-     You removed the passphrase in step 2, you can now put it back.
-     Command:
-     gpg --edit-key userid
-     GPG will tell you what key you accessed and prompt you to do
-     something with it.  Tell it "passwd" to change the passphrase.
-
-  5. Check if everything worked.  Sign and encrypt a small file,
+  3. Check if everything worked.  Sign and encrypt a small file,
      mail it to a friend, see if you can decrypt something mailed
      to you, upload a Debian package, that sort of thing.
-
-  6. Clean up the backups.  Remember, you un-protected your PGP key.
-     It's still not protected, and it's the same key you are now using
-     with GPG.  Make sure no one can get at it.  You can restore
-     the backup, or run pgp -ke again, or -- if you don't plan to ever
-     use PGP again -- delete the key.  There is a program in fileutils
-     called "shred" which may help with this.
 
 Well, I hope this helps someone.  I wrote this down after exactly one
 experience with converting keys -- I'd love to have feedback from

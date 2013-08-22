@@ -1,4 +1,5 @@
-1560295aa59c3a7ddb7894eba8e1b65a  usr/lib/arm-linux-gnueabi/libpixman-1.so.0.26.0
-1203652f026ba9f4dce96210875d7a5b  usr/share/doc/libpixman-1-0/changelog.Debian.gz
-07b2b3b089618c8b92117dfc7805b442  usr/share/doc/libpixman-1-0/changelog.gz
+f1eb192f1154ddc38052a7957ad68079  usr/lib/arm-linux-gnueabi/libpixman-1.so.0.30.2
+75dd0b7e9d772fe678b15df7195473c6  usr/share/doc/libpixman-1-0/changelog.Debian.gz
+27c28bcab15bb779eb58f391780c3bab  usr/share/doc/libpixman-1-0/changelog.gz
 d8676ec98895998ca800f67a0ab8e8a1  usr/share/doc/libpixman-1-0/copyright
+2a4ab2a410adb3ae174c33c24ee9bcf4  usr/share/lintian/overrides/libpixman-1-0

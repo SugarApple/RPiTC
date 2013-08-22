@@ -10,6 +10,8 @@ of GCC to coexist on the same system, and selects the default version
 by means of the gcc-defaults package, which creates symbolic links as
 appropriate.
 
+FIXME: Needs update for jessie
+
 Versions of GCC present in Debian Wheezy
 -----------------------------------------
 
@@ -55,16 +57,16 @@ similar.
 The default compiler versions for Debian GNU/Linux on armel are
 (minor version numbers omitted):
 
-	cpp		: cpp-4.6
-	gcc		: gcc-4.6
-	g++		: g++-4.6
-	gfortran	: gfortran-4.6
-	gcj		: gcj-4.7
-	gij		: gij-4.7
-	gccgo		: gccgo-4.7
-	gobjc		: gobjc-4.6
-	gobjc++		: gobjc++-4.6
-	gdc		: gdc-4.6
+	cpp		: cpp-4.8
+	gcc		: gcc-4.8
+	g++		: g++-4.8
+	gfortran	: gfortran-4.8
+	gcj		: gcj-4.8
+	gij		: gij-4.8
+	gccgo		: gccgo-4.8
+	gobjc		: gobjc-4.8
+	gobjc++		: gobjc++-4.8
+	gdc		: gdc-4.8
 
 Most of the documentation for GCC including the manual pages is
 licensed under the GFDL and therefore not included in the main section.
@@ -151,6 +153,10 @@ Maintainers of these packages
 -----------------------------
 
 Matthias Klose <doko@debian.org>
+
+Former and/or inactive maintainers of these packages
+----------------------------------------------------
+
 Ray Dassen <jdassen@debian.org>
 Philip Blundell <pb@debian.org>			(arm-linux)
 Jeff Bailey <jbailey@nisa.net>			(hurd-i386)

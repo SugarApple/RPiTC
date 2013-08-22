@@ -1,8 +1,8 @@
-0fe565a9724008167183184ebafbf9b0  usr/lib/arm-linux-gnueabi/libtasn1.so.3.1.16
+e2fcfaa4e436a324296d4249de67bdb0  usr/lib/arm-linux-gnueabi/libtasn1.so.3.2.0
 1c814e64f617cee3460962cf9522ada3  usr/share/doc/libtasn1-3/AUTHORS
-45f9369c76793e7262ce50c68dae9b45  usr/share/doc/libtasn1-3/NEWS.gz
+223c0fcb176727fd86609e92012acd41  usr/share/doc/libtasn1-3/NEWS.gz
 4ed4b9919f2d54d53e386b402d343087  usr/share/doc/libtasn1-3/README
 d35df07e22528520a8ff3644f6d10262  usr/share/doc/libtasn1-3/THANKS
-1d311c24b701c26c50d0c3b92ccf6568  usr/share/doc/libtasn1-3/changelog.Debian.gz
-2ab85b827179464bb01689e8d25f8968  usr/share/doc/libtasn1-3/changelog.gz
+848b73ac4d3c640466fb0a9ccb2d06af  usr/share/doc/libtasn1-3/changelog.Debian.gz
+b7ed32f3d1b9ea36892dd517454250e9  usr/share/doc/libtasn1-3/changelog.gz
 e8ee38c7d0760947babd24ab4e68f382  usr/share/doc/libtasn1-3/copyright

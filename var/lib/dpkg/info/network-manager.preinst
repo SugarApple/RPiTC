@@ -20,12 +20,6 @@ set -e
 case "$1" in
     install|upgrade)
 	# Upgrade from previous versions
-	if dpkg --compare-versions "$2" lt "0.7.0~svn3624-1"; then
-	    if [ -x "/etc/init.d/network-manager-dispatcher" ]; then
-	        invoke-rc.d network-manager-dispatcher stop
-	    fi
-	    update-rc.d network-manager-dispatcher remove >/dev/null
-	fi
 	if dpkg --compare-versions "$2" lt "0.9.7.997-2"; then
 	    # Move old pid file to /var/run/NetworkManager so the init script
 	    # doesn't get confused
@@ -45,18 +39,6 @@ case "$1" in
 	;;
 esac
 
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper rm_conffile /etc/init.d/network-manager-dispatcher 0.7.0~svn4191-1~ network-manager -- "$@"
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper rm_conffile /etc/udev/rules.d/77-nm-probe-modem-capabilities.rules 0.7.0.100-1~ network-manager -- "$@"
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper rm_conffile /etc/dbus-1/system.d/nm-system-settings.conf 0.7.999-1~ network-manager -- "$@"
-# End automatically added section
-# Automatically added by dh_installdeb
-dpkg-maintscript-helper mv_conffile /etc/NetworkManager/nm-system-settings.conf /etc/NetworkManager/NetworkManager.conf 0.8.1-2~ network-manager -- "$@"
-# End automatically added section
 # Automatically added by dh_installdeb
 dpkg-maintscript-helper mv_conffile /etc/dbus-1/system.d/NetworkManager.conf /etc/dbus-1/system.d/org.freedesktop.NetworkManager.conf 0.9.4.0-1~ network-manager -- "$@"
 # End automatically added section

@@ -1,8 +1,8 @@
 462252ce98d71b71c9ab7717e9fc4d40  usr/share/doc/libgtk2.0-common/AUTHORS
-d7ca7e70e4c8517fb88ea04884b6422d  usr/share/doc/libgtk2.0-common/NEWS.gz
-c0ed4dbf0cae22131607cc4d245798b1  usr/share/doc/libgtk2.0-common/README.gz
-e757b07ad91ef242f237a04fc1808b97  usr/share/doc/libgtk2.0-common/changelog.Debian.gz
-5655467b5f496300d02adee933781b52  usr/share/doc/libgtk2.0-common/changelog.gz
+c1957f249389b6c042d7863165875523  usr/share/doc/libgtk2.0-common/NEWS.gz
+0cfe08ff47a431a547a7f6f59fb3f32a  usr/share/doc/libgtk2.0-common/README.gz
+b6eba24bb8cea4e3c3a9eb1f15173385  usr/share/doc/libgtk2.0-common/changelog.Debian.gz
+4a6d39d3e8a13da6e2cdeaa32edfdc03  usr/share/doc/libgtk2.0-common/changelog.gz
 e388ee635b1dee2c94d89f2a1d79d9f4  usr/share/doc/libgtk2.0-common/copyright
 a6615d42d5f4d6a53ba001f48f3b3829  usr/share/locale/af/LC_MESSAGES/gtk20-properties.mo
 bbbcbdfbe069c9669790b6e6c01f8fa1  usr/share/locale/af/LC_MESSAGES/gtk20.mo
@@ -46,8 +46,8 @@ bbe17fbf39f832dc93acdee04959277b  usr/share/locale/cs/LC_MESSAGES/gtk20-properti
 8efe10400aedfbc08cec4ccb6fb0cb50  usr/share/locale/cy/LC_MESSAGES/gtk20.mo
 4a05bf32bd0be133876d3ee1b8e969a7  usr/share/locale/da/LC_MESSAGES/gtk20-properties.mo
 0c15e909acdc91f4fee74ae8c2d7f29b  usr/share/locale/da/LC_MESSAGES/gtk20.mo
-0472ed80f9d98692f28e79d321530b11  usr/share/locale/de/LC_MESSAGES/gtk20-properties.mo
-5694228b11247b345e5f02cb6e6d5749  usr/share/locale/de/LC_MESSAGES/gtk20.mo
+a44b4ef9237e50ba38c73bce4fbe29db  usr/share/locale/de/LC_MESSAGES/gtk20-properties.mo
+2c25f2b034f8e7cccf24afe5373224a9  usr/share/locale/de/LC_MESSAGES/gtk20.mo
 58dff28f0494d8a0de3bcd629f90d0f5  usr/share/locale/dz/LC_MESSAGES/gtk20-properties.mo
 25bd1c757c1ce1dcf19d668fb301918b  usr/share/locale/dz/LC_MESSAGES/gtk20.mo
 8cd537c1d83b8ab58d6f421b56833e6d  usr/share/locale/el/LC_MESSAGES/gtk20-properties.mo
@@ -82,12 +82,12 @@ b54b0a5503c1ee02547dafda3121c29c  usr/share/locale/gu/LC_MESSAGES/gtk20.mo
 4122fdfc89ebce96773174922016c96f  usr/share/locale/hi/LC_MESSAGES/gtk20.mo
 fc254ce2a003b3bb9bfce51a32cce04d  usr/share/locale/hr/LC_MESSAGES/gtk20-properties.mo
 ad4ef53e034c23130ec3edc550d0f0e1  usr/share/locale/hr/LC_MESSAGES/gtk20.mo
-cd1b1b3693c1e3c74bfcea20be640cc6  usr/share/locale/hu/LC_MESSAGES/gtk20-properties.mo
-6ee4491ae7bc9d3dfb778578eb29a0b3  usr/share/locale/hu/LC_MESSAGES/gtk20.mo
+616b576daa222a4aeef96a2fff9783b2  usr/share/locale/hu/LC_MESSAGES/gtk20-properties.mo
+c0e59d01f34dea14b6718c0944f76beb  usr/share/locale/hu/LC_MESSAGES/gtk20.mo
 4d14bf17c075c013fd45501e057c2ef1  usr/share/locale/hy/LC_MESSAGES/gtk20-properties.mo
 53500a71a02f5c05c6ee3eadabb4c804  usr/share/locale/hy/LC_MESSAGES/gtk20.mo
 e3a8d598d10157677c55481c798106af  usr/share/locale/ia/LC_MESSAGES/gtk20-properties.mo
-ecb0e09aff6b1bfd780e2e6762c0655d  usr/share/locale/ia/LC_MESSAGES/gtk20.mo
+58215c90fd95b52e0625b65ef46bd613  usr/share/locale/ia/LC_MESSAGES/gtk20.mo
 24f0518ceb28e891c7fa3046003c45a1  usr/share/locale/id/LC_MESSAGES/gtk20-properties.mo
 9d47fa7cc0aa03dfeb719c078350f70c  usr/share/locale/id/LC_MESSAGES/gtk20.mo
 0bd68ba2cafac28202ced24e540828e6  usr/share/locale/io/LC_MESSAGES/gtk20-properties.mo
@@ -95,7 +95,7 @@ ecb0e09aff6b1bfd780e2e6762c0655d  usr/share/locale/ia/LC_MESSAGES/gtk20.mo
 186981865c229a8f57656198f244119a  usr/share/locale/is/LC_MESSAGES/gtk20-properties.mo
 a38c2eec89707a810fdaae62dc75604a  usr/share/locale/is/LC_MESSAGES/gtk20.mo
 092c35e75e4a88e1531cab71642a97cd  usr/share/locale/it/LC_MESSAGES/gtk20-properties.mo
-2fc96fd9fc9e9eac4fdb4ae5eeebc548  usr/share/locale/it/LC_MESSAGES/gtk20.mo
+44927f0087e80505f9fd0df2b4a9aee9  usr/share/locale/it/LC_MESSAGES/gtk20.mo
 1fbc34bc532061e6a8ee4d8c991ebb0e  usr/share/locale/ja/LC_MESSAGES/gtk20-properties.mo
 f3fce2ccc8df2df3702d3c69ff95aa9a  usr/share/locale/ja/LC_MESSAGES/gtk20.mo
 21ce7b08cc70e19697112a77869c8169  usr/share/locale/ka/LC_MESSAGES/gtk20-properties.mo
@@ -149,7 +149,7 @@ eb4126270a958841fd6b0ec3804b9dd5  usr/share/locale/nn/LC_MESSAGES/gtk20-properti
 631475c976daf0247ddc6660c809857e  usr/share/locale/pa/LC_MESSAGES/gtk20-properties.mo
 5fc6ed4932a9510e41fcb1c2c79d85ca  usr/share/locale/pa/LC_MESSAGES/gtk20.mo
 93a6967de5251f00df5bbea0522201e1  usr/share/locale/pl/LC_MESSAGES/gtk20-properties.mo
-fa8f9f0c544342308a4aafec01c07ed9  usr/share/locale/pl/LC_MESSAGES/gtk20.mo
+e8143365a7f6531936e0cba20b297e2f  usr/share/locale/pl/LC_MESSAGES/gtk20.mo
 d7f50e3a8395d5f5360974f4ba201a64  usr/share/locale/ps/LC_MESSAGES/gtk20-properties.mo
 0ac2692fb94708ba2b40808875558abe  usr/share/locale/ps/LC_MESSAGES/gtk20.mo
 0dc3609fafa5be9622008bd78f1f6e3d  usr/share/locale/pt/LC_MESSAGES/gtk20-properties.mo

@@ -1,7 +1,6 @@
-a36950fcdf383834b173dfcddc13f687  usr/lib/arm-linux-gnueabi/libfontconfig.so.1.5.0
+f26f5709816f2af54cb4fd8e5913f0da  usr/lib/arm-linux-gnueabi/libfontconfig.so.1.6.2
 0cfca908de4551f3aafe53c8c24c2fc7  usr/share/doc/libfontconfig1/AUTHORS
-d2028f8d1ec8520d06d07adeba56460a  usr/share/doc/libfontconfig1/README.gz
-64127d16533f3b800a85dc5604857fa0  usr/share/doc/libfontconfig1/buildinfo_armel.gz
-02b24137403a3ad3036a45ce97cb61c8  usr/share/doc/libfontconfig1/changelog.Debian.gz
-45cb83de6749bb46c0cec516e098369c  usr/share/doc/libfontconfig1/changelog.gz
+9f4e128f5d53a6871a023df31bed0c26  usr/share/doc/libfontconfig1/README.gz
+233b4ccdce99a0a6eafc1006a7d877d5  usr/share/doc/libfontconfig1/changelog.Debian.gz
+38ab7b4b84e6982fb96c13f6e75da927  usr/share/doc/libfontconfig1/changelog.gz
 4648df9e8d6215ae7dd16ce863b16967  usr/share/doc/libfontconfig1/copyright

@@ -6,6 +6,7 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/libxcursor1
-/usr/share/doc/libxcursor1/copyright
+/usr/share/doc/libxcursor1/changelog.gz
 /usr/share/doc/libxcursor1/changelog.Debian.gz
+/usr/share/doc/libxcursor1/copyright
 /usr/lib/arm-linux-gnueabi/libXcursor.so.1

@@ -2,9 +2,7 @@
 #
 # Architecture names are formed as a combination of the system name
 # (from ostable) and CPU name (from this table) after mapping from
-# the Debian triplet (from triplettable). A list of architecture
-# names in the Debian ‘sid’ distribution can be found in the archtable
-# file.
+# the Debian triplet (from triplettable).
 #
 # Column 1 is the Debian name for the CPU, used to form the cpu part in
 # the Debian triplet.
@@ -29,6 +27,8 @@ m32r		m32r		m32r			32	big
 m68k		m68k		m68k			32	big
 mips		mips		mips(eb)?		32	big
 mipsel		mipsel		mipsel			32	little
+mips64		mips64		mips64			64	big
+mips64el	mips64el	mips64el		64	little
 powerpc		powerpc		(powerpc|ppc)		32	big
 ppc64		powerpc64	(powerpc|ppc)64		64	big
 s390		s390		s390			32	big

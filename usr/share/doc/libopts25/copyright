@@ -2,7 +2,7 @@ Author: Bruce Korb
 Download: ftp://ftp.gnu.org/gnu/autogen/
 
 Files: *
-Copyright: (C) 1992-2008 by Bruce Korb
+Copyright: (C) 1992-2013 by Bruce Korb
 License: GPL-3+
  AutoGen is free software: you can redistribute it and/or modify it under
  the terms of the GNU General Public License as published by the Free
@@ -15,7 +15,7 @@ License: GPL-3+
  details.
 
 Files: autoopts/*
-Copyright (C) 1992-2008 by Bruce Korb
+Copyright (C) 1992-2013 by Bruce Korb
 License: LGPL-3+ or Modified BSD
  AutoOpts is available under any one of two licenses.  The license in use
  must be one of these two and the choice is under the control of the user of
@@ -48,7 +48,8 @@ License: LGPL-3+ or Modified BSD
  SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 
 Files: debian/*
-Copyright: (C) 2008 Bradley Smith <brad@brad-smith.co.uk>
+Copyright: (C) 2008-2012 Bradley Smith <brad@brad-smith.co.uk>
+ (C) 2012-2013 Andreas Metzler <ametzler@debian.org>
 License: GPL-3+.
  This program is free software; you can redistribute it and/or modify it
  under the terms of the GNU General Public License as published by the Free

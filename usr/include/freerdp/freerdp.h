@@ -36,10 +36,7 @@ typedef struct rdp_freerdp_peer freerdp_peer;
 #include <freerdp/error.h>
 #include <freerdp/settings.h>
 #include <freerdp/extension.h>
-
-#include <winpr/stream.h>
-
-#include <freerdp/client.h>
+#include <freerdp/utils/stream.h>
 
 #include <freerdp/input.h>
 #include <freerdp/update.h>
@@ -57,8 +54,6 @@ typedef BOOL (*pPostConnect)(freerdp* instance);
 typedef BOOL (*pAuthenticate)(freerdp* instance, char** username, char** password, char** domain);
 typedef BOOL (*pVerifyCertificate)(freerdp* instance, char* subject, char* issuer, char* fingerprint);
 typedef BOOL (*pVerifyChangedCertificate)(freerdp* instance, char* subject, char* issuer, char* new_fingerprint, char* old_fingerprint);
-
-typedef int (*pLogonErrorInfo)(freerdp* instance, UINT32 data, UINT32 type);
 
 typedef int (*pSendChannelData)(freerdp* instance, int channelId, BYTE* data, int size);
 typedef int (*pReceiveChannelData)(freerdp* instance, int channelId, BYTE* data, int size, int flags, int total_size);
@@ -106,8 +101,7 @@ struct rdp_context
 	rdpInput* input; /* 38 */
 	rdpUpdate* update; /* 39 */
 	rdpSettings* settings; /* 40 */
-	rdpClient* client; /* 41 */
-	UINT32 paddingC[64 - 42]; /* 42 */
+	UINT32 paddingC[64 - 41]; /* 41 */
 };
 
 /** Defines the options for a given instance of RDP connection.
@@ -180,10 +174,7 @@ struct rdp_freerdp
 															 Callback for changed certificate validation. 
 															 Used when a certificate differs from stored fingerprint.
 															 If returns TRUE, the new fingerprint will be trusted and old thrown out. */
-
-	pLogonErrorInfo LogonErrorInfo; /**< (offset 53)  Callback for logon error info, important for logon system messages with RemoteApp */
-
-	UINT32 paddingD[64 - 54]; /* 54 */
+	UINT32 paddingD[64 - 51]; /* 51 */
 
 	pSendChannelData SendChannelData; /* (offset 64)
 										 Callback for sending data to a channel.
@@ -218,7 +209,6 @@ FREERDP_API void freerdp_get_version(int* major, int* minor, int* revision);
 FREERDP_API freerdp* freerdp_new(void);
 FREERDP_API void freerdp_free(freerdp* instance);
 
-FREERDP_API BOOL freerdp_focus_required(freerdp* instance);
 #ifdef __cplusplus
 }
 #endif

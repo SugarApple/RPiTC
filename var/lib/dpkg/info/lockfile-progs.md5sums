@@ -1,0 +1,11 @@
+cd56ed3369220b890b97082d2165c07a  usr/bin/lockfile-check
+cd56ed3369220b890b97082d2165c07a  usr/bin/lockfile-create
+cd56ed3369220b890b97082d2165c07a  usr/bin/lockfile-remove
+cd56ed3369220b890b97082d2165c07a  usr/bin/lockfile-touch
+cd56ed3369220b890b97082d2165c07a  usr/bin/mail-lock
+cd56ed3369220b890b97082d2165c07a  usr/bin/mail-touchlock
+cd56ed3369220b890b97082d2165c07a  usr/bin/mail-unlock
+cecd36f408784e9941639e17580b1246  usr/share/doc/lockfile-progs/changelog.gz
+0e265f47a1ed6ac233e445dc4d896b32  usr/share/doc/lockfile-progs/copyright
+37f6f524cfb40fee3bb5940ca3c15856  usr/share/lintian/overrides/lockfile-progs
+9a07c663cea0ae06602b2e5334925838  usr/share/man/man1/lockfile-progs.1.gz

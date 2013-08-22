@@ -1,6 +1,7 @@
 # en-US.manifest
 override chrome://global/locale/netError.dtd chrome://browser/locale/netError.dtd
 override chrome://mozapps/locale/downloads/settingsChange.dtd chrome://browser/locale/downloads/settingsChange.dtd
+locale pdf.js en-US jar:en-US.jar!/locale/pdfviewer/
 override chrome://global/locale/appstrings.properties chrome://browser/locale/appstrings.properties
 locale branding en-US jar:en-US.jar!/locale/branding/
 locale testpilot en-US jar:en-US.jar!/locale/feedback/

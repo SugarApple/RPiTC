@@ -153,7 +153,7 @@ cpPCoIPLog "$logDirectory" "$mksLogGlob" "$viewLogFile" "$tmpdir/$targetDirector
 cpPCoIPLog "$pcoipLogDir" "$pcoipLogGlob" "$viewLogFile" "$tmpdir/$targetDirectory"
 
 # Move VDP Service logs to the temp directory
-vdpServiceGlob="vmware-vdpServiceClient-[0-9]*.log"
+vdpServiceGlob="vdpServiceClient-[0-9]*.log"
 
 # Copy the vdpServiceClient logs
 cpPCoIPLog "$logDirectory" "$vdpServiceGlob" "$viewLogFile" "$tmpdir/$targetDirectory"

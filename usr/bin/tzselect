@@ -1,6 +1,6 @@
 #!/bin/bash
 
-PKGVERSION="(Debian EGLIBC 2.17-2+RPiTC1) "
+PKGVERSION="(Debian EGLIBC 2.17-92+RPiTC3) "
 TZVERSION="2.17"
 REPORT_BUGS_TO="<http://www.debian.org/Bugs/>"
 

@@ -24,8 +24,7 @@
 #include <freerdp/types.h>
 #include <freerdp/freerdp.h>
 #include <freerdp/update.h>
-
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 typedef struct _NINE_GRID_ENTRY NINE_GRID_ENTRY;
 typedef struct rdp_nine_grid_cache rdpNineGridCache;

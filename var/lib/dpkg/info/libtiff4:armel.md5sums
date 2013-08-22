@@ -1,8 +1,8 @@
-fa76b77c9ea087023340208a1baabc53  usr/lib/arm-linux-gnueabi/libtiff.so.4.3.6
+284de10b23945b00796b9c150b3db83f  usr/lib/arm-linux-gnueabi/libtiff.so.4.3.6
 69e1797159c3554abdf564536ee2e0cc  usr/share/doc/libtiff4/README
 3ea1796b39727f221ef3822aba384d4a  usr/share/doc/libtiff4/README.Debian
 1c51320be5812f33e393f1d97cff0c1b  usr/share/doc/libtiff4/TODO
-cc008896e408509d8541f7da86d89972  usr/share/doc/libtiff4/changelog.Debian.gz
-d8cfd0f5a5bb279669bb0033a508677f  usr/share/doc/libtiff4/changelog.gz
+9c679886ebcdc01919d945b7a9173dd6  usr/share/doc/libtiff4/changelog.Debian.gz
+3f578017d5727cbe43342bcc98e2621d  usr/share/doc/libtiff4/changelog.gz
 695ae31c6ddc61ea38050467e1214369  usr/share/doc/libtiff4/copyright
 bb47a15cb3ca1e2438394b803dc1d0be  usr/share/lintian/overrides/libtiff4

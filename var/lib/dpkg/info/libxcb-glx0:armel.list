@@ -6,6 +6,6 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/libxcb-glx0
-/usr/share/doc/libxcb-glx0/copyright
 /usr/share/doc/libxcb-glx0/changelog.Debian.gz
+/usr/share/doc/libxcb-glx0/copyright
 /usr/lib/arm-linux-gnueabi/libxcb-glx.so.0

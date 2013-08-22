@@ -70,7 +70,7 @@ enum                <a class="link" href="SpiceDisplay.html#SpiceDisplayKeyEvent
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *keyvals</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> nkeyvals</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceDisplayKeyEvent" title="enum SpiceDisplayKeyEvent"><span class="type">SpiceDisplayKeyEvent</span></a> kind</code></em>);
-<a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         <a class="link" href="SpiceDisplay.html#spice-display-get-pixbuf" title="spice_display_get_pixbuf ()">spice_display_get_pixbuf</a>            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
+<span class="returnvalue">GdkPixbuf</span> *         <a class="link" href="SpiceDisplay.html#spice-display-get-pixbuf" title="spice_display_get_pixbuf ()">spice_display_get_pixbuf</a>            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
 
 struct              <a class="link" href="SpiceDisplay.html#SpiceGrabSequence-struct" title="struct SpiceGrabSequence">SpiceGrabSequence</a>;
 <a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-grab-sequence-new" title="spice_grab_sequence_new ()">spice_grab_sequence_new</a>             (<em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nkeysyms</code></em>,
@@ -86,8 +86,8 @@ struct              <a class="link" href="SpiceDisplay.html#SpiceGrabSequence-st
 <pre class="synopsis">
   <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
-               +----<a href="http://developer.gnome.org/gtk2/GtkDrawingArea.html">GtkDrawingArea</a>
+         +----GtkWidget
+               +----GtkDrawingArea
                      +----SpiceDisplay
 </pre>
 <pre class="synopsis">
@@ -99,7 +99,7 @@ struct              <a class="link" href="SpiceDisplay.html#SpiceGrabSequence-st
 <a name="SpiceDisplay.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 SpiceDisplay implements
- AtkImplementorIface and  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a>.</p>
+ AtkImplementorIface and  GtkBuildable.</p>
 </div>
 <div class="refsect1">
 <a name="SpiceDisplay.properties"></a><h2>Properties</h2>
@@ -145,7 +145,7 @@ combination with <a class="link" href="SpiceDisplay.html#spice-display-set-grab-
 </p>
 <p>
 Finally, <a class="link" href="SpiceDisplay.html#spice-display-get-pixbuf" title="spice_display_get_pixbuf ()"><code class="function">spice_display_get_pixbuf()</code></a> will take a screenshot of the
-current display and return an <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> (that you can then easily
+current display and return an <span class="type">GdkPixbuf</span> (that you can then easily
 save to disk).
 </p>
 </div>
@@ -361,7 +361,7 @@ Send keyval press/release events to the display.
 <hr>
 <div class="refsect2">
 <a name="spice-display-get-pixbuf"></a><h3>spice_display_get_pixbuf ()</h3>
-<pre class="programlisting"><a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="returnvalue">GdkPixbuf</span></a> *         spice_display_get_pixbuf            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">GdkPixbuf</span> *         spice_display_get_pixbuf            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);</pre>
 <p>
 Take a screenshot of the display.
 </p>
@@ -372,7 +372,7 @@ Take a screenshot of the display.
 </colgroup>
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/gdk-pixbuf/unstable/gdk-pixbuf-The-GdkPixbuf-Structure.html#GdkPixbuf"><span class="type">GdkPixbuf</span></a> with the screenshot image buffer. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+<td>a <span class="type">GdkPixbuf</span> with the screenshot image buffer. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
 </td>
 </tr></tbody>
 </table></div>

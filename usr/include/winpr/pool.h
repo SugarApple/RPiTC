@@ -152,10 +152,6 @@ typedef VOID (*PTP_WIN32_IO_CALLBACK)(PTP_CALLBACK_INSTANCE Instance, PVOID Cont
 
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 
 /* Synch */
 
@@ -228,9 +224,5 @@ WINPR_API VOID DisassociateCurrentThreadFromCallback(PTP_CALLBACK_INSTANCE pci);
 /* Dummy */
 
 WINPR_API void winpr_pool_dummy(void);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* WINPR_POOL_H */

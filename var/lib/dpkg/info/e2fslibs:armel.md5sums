@@ -1,4 +1,4 @@
-c85bc94b9723734c3a7ab3d195ce86f0  lib/arm-linux-gnueabi/libe2p.so.2.3
-fbb8572fc48d3d676d430065e4bb7457  lib/arm-linux-gnueabi/libext2fs.so.2.4
-372012386151a10216422d27043a9c83  usr/share/doc/e2fslibs/changelog.Debian.gz
+506ca35570f91eb1dd30d293597f5e9a  lib/arm-linux-gnueabi/libe2p.so.2.3
+4c7bca75c4a45e95a15e872bc4ac3e92  lib/arm-linux-gnueabi/libext2fs.so.2.4
+dd698bcf43f878aa17b06a8842c5b8d5  usr/share/doc/e2fslibs/changelog.Debian.gz
 51a47eee51e75de66777fc781af2f063  usr/share/doc/e2fslibs/copyright

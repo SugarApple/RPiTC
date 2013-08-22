@@ -2,12 +2,8 @@
 /usr
 /usr/lib
 /usr/lib/arm-linux-gnueabi
-/usr/lib/arm-linux-gnueabi/libGL.so.1.2
+/usr/lib/arm-linux-gnueabi/libGL.so.1.2.0
 /usr/share
-/usr/share/doc
-/usr/share/doc/libgl1-mesa-glx
-/usr/share/doc/libgl1-mesa-glx/copyright
-/usr/share/doc/libgl1-mesa-glx/changelog.Debian.gz
 /usr/share/lintian
 /usr/share/lintian/overrides
 /usr/share/lintian/overrides/libgl1-mesa-glx
@@ -15,4 +11,8 @@
 /usr/share/bug/libgl1-mesa-glx
 /usr/share/bug/libgl1-mesa-glx/control
 /usr/share/bug/libgl1-mesa-glx/script
+/usr/share/doc
+/usr/share/doc/libgl1-mesa-glx
+/usr/share/doc/libgl1-mesa-glx/changelog.Debian.gz
+/usr/share/doc/libgl1-mesa-glx/copyright
 /usr/lib/arm-linux-gnueabi/libGL.so.1

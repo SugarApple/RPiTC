@@ -1,5 +1,5 @@
-71c5745c79779c852a1152659ae94941  lib/arm-linux-gnueabi/libexpat.so.1.6.0
-5c40488b928f1177d8388fb49518c2f9  usr/lib/arm-linux-gnueabi/libexpatw.so.1.6.0
-608da489a6814aa4cc5ecc895742b78a  usr/share/doc/libexpat1/changelog.Debian.gz
+fd75a6551de1aad0886fe18d17355b9e  lib/arm-linux-gnueabi/libexpat.so.1.6.0
+0a4cb1b73f8513525b57d448550eb9a4  usr/lib/arm-linux-gnueabi/libexpatw.so.1.6.0
+369c1c1c464ae962bf3124dbf5b8a279  usr/share/doc/libexpat1/changelog.Debian.gz
 4a5548120d1a91c9c46b589b7d3b4fe8  usr/share/doc/libexpat1/changelog.gz
 33194e4eed85a1f3406b6a87aa04fae3  usr/share/doc/libexpat1/copyright

@@ -60,6 +60,9 @@ struct              <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDev
                                                          <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices" title="spice_usb_device_manager_get_devices ()">spice_usb_device_manager_get_devices</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>);
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices-with-filter" title="spice_usb_device_manager_get_devices_with_filter ()">spice_usb_device_manager_get_devices_with_filter</a>
+                                                        (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filter</code></em>);
 <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-is-device-connected" title="spice_usb_device_manager_is_device_connected ()">spice_usb_device_manager_is_device_connected</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>);
@@ -256,6 +259,37 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 </tr>
 </tbody>
 </table></div>
+</div>
+<hr>
+<div class="refsect2">
+<a name="spice-usb-device-manager-get-devices-with-filter"></a><h3>spice_usb_device_manager_get_devices_with_filter ()</h3>
+<pre class="programlisting"><a href="http://library.gnome.org/devel/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         spice_usb_device_manager_get_devices_with_filter
+                                                        (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
+                                                         <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filter</code></em>);</pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>manager</code></em> :</span></p></td>
+<td>the <a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> manager</td>
+</tr>
+<tr>
+<td><p><span class="term"><em class="parameter"><code>filter</code></em> :</span></p></td>
+<td>filter string for selecting which devices to return, see
+<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect-filter" title='The "auto-connect-filter" property'><span class="type">"auto-connect-filter"</span></a> for the filter string format</td>
+</tr>
+<tr>
+<td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
+<td>a
+<a href="http://library.gnome.org/devel/glib/unstable/glib-Pointer-Arrays.html#GPtrArray"><code class="literal">GPtrArray</code></a> array of <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><code class="literal">SpiceUsbDevice</code></a>. <span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> SpiceUsbDevice][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+</td>
+</tr>
+</tbody>
+</table></div>
+<p class="since">Since 0.20</p>
 </div>
 <hr>
 <div class="refsect2">
@@ -477,7 +511,7 @@ Set a string specifying a filter selecting USB devices to automatically
 redirect after a Spice connection has been established.
 </p>
 <p>
-See SpiceUsbDeviceManager:auto-connect-filter: for the filter string
+See <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect-filter" title='The "auto-connect-filter" property'><span class="type">"auto-connect-filter"</span></a> for the filter string
 format.
 </p>
 <p>Default value: NULL</p>

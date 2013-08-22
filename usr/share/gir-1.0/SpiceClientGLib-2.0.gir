@@ -6,7 +6,6 @@ and/or use gtk-doc annotations.  -->
             xmlns="http://www.gtk.org/introspection/core/1.0"
             xmlns:c="http://www.gtk.org/introspection/c/1.0"
             xmlns:glib="http://www.gtk.org/introspection/glib/1.0">
-  <include name="GLib" version="2.0"/>
   <include name="GObject" version="2.0"/>
   <include name="Gio" version="2.0"/>
   <package name="spice-client-glib-2.0"/>
@@ -46,7 +45,7 @@ channels to stream to your local audio system.</doc>
           </parameter>
           <parameter name="name" transfer-ownership="none">
             <doc xml:whitespace="preserve">a name for the audio channels (or %NULL for application name).</doc>
-            <type name="utf8" c:type="char*"/>
+            <type name="utf8" c:type="const char*"/>
           </parameter>
         </parameters>
       </constructor>
@@ -56,11 +55,9 @@ A new #SpiceAudio instance will be created the first time this
 function is called for a certain #SpiceSession.
 
 Note that this function returns a weak reference, which should not be used
-after the #SpiceSession itself has been unref-ed by the caller.
-
-instance or %NULL if failed.</doc>
+after the #SpiceSession itself has been unref-ed by the caller.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">a weak reference to a #SpiceAudio</doc>
+          <doc xml:whitespace="preserve">a weak reference to a #SpiceAudio instance or %NULL if failed.</doc>
           <type name="Audio" c:type="SpiceAudio*"/>
         </return-value>
         <parameters>
@@ -79,6 +76,9 @@ instance or %NULL if failed.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="audio" transfer-ownership="none">
+            <type name="Audio" c:type="SpiceAudio*"/>
+          </instance-parameter>
           <parameter name="channel" transfer-ownership="none">
             <type name="Channel" c:type="SpiceChannel*"/>
           </parameter>
@@ -162,10 +162,21 @@ instance or %NULL if failed.</doc>
           </parameter>
         </parameters>
       </constructor>
+      <function name="string_to_type"
+                c:identifier="spice_channel_string_to_type">
+        <return-value transfer-ownership="none">
+          <type name="gint" c:type="gint"/>
+        </return-value>
+        <parameters>
+          <parameter name="str" transfer-ownership="none">
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
+      </function>
       <function name="type_to_string"
                 c:identifier="spice_channel_type_to_string">
         <return-value transfer-ownership="none">
-          <type name="utf8" c:type="gchar*"/>
+          <type name="utf8" c:type="const gchar*"/>
         </return-value>
         <parameters>
           <parameter name="type" transfer-ownership="none">
@@ -177,12 +188,20 @@ instance or %NULL if failed.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="channel_event">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="event" transfer-ownership="none">
             <type name="ChannelEvent" c:type="SpiceChannelEvent"/>
           </parameter>
@@ -193,6 +212,9 @@ instance or %NULL if failed.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="migrating" transfer-ownership="none">
             <type name="gboolean" c:type="gboolean"/>
           </parameter>
@@ -202,22 +224,40 @@ instance or %NULL if failed.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="channel_send_migration_handshake">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="channel_up">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="handle_msg">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="msg" transfer-ownership="none">
             <type name="MsgIn" c:type="SpiceMsgIn*"/>
           </parameter>
@@ -227,17 +267,30 @@ instance or %NULL if failed.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="iterate_write">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="open_fd">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="with_tls" transfer-ownership="none">
             <type name="gint" c:type="int"/>
           </parameter>
@@ -249,12 +302,22 @@ instance or %NULL if failed.</doc>
           <doc xml:whitespace="preserve">%TRUE on success.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="destroy" c:identifier="spice_channel_destroy">
         <doc xml:whitespace="preserve">Disconnect and unref the @channel. Called by @spice_session_disconnect()</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="disconnect" c:identifier="spice_channel_disconnect">
         <doc xml:whitespace="preserve">Close the socket and reset connection specific data. Finally, emit
@@ -264,6 +327,9 @@ instance or %NULL if failed.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="reason" transfer-ownership="none">
             <doc xml:whitespace="preserve">a channel event emitted on main context (or #SPICE_CHANNEL_NONE)</doc>
             <type name="ChannelEvent" c:type="SpiceChannelEvent"/>
@@ -283,6 +349,10 @@ operation.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceChannel</doc>
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="cancellable"
                      transfer-ownership="none"
                      allow-none="1">
@@ -313,6 +383,10 @@ operation.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceChannel</doc>
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="result" transfer-ownership="none">
             <doc xml:whitespace="preserve">a #GAsyncResult</doc>
             <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
@@ -329,6 +403,9 @@ SpiceChannel::open-fd signal.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="fd" transfer-ownership="none">
             <doc xml:whitespace="preserve">a file descriptor (socket) or -1. request mechanism</doc>
             <type name="gint" c:type="int"/>
@@ -344,6 +421,9 @@ SpiceChannel::open-fd signal.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="cap" transfer-ownership="none">
             <doc xml:whitespace="preserve">a capability</doc>
             <type name="guint32" c:type="guint32"/>
@@ -358,6 +438,9 @@ SpiceChannel::open-fd signal.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="cap" transfer-ownership="none">
             <type name="guint32" c:type="guint32"/>
           </parameter>
@@ -371,6 +454,9 @@ SpiceChannel::open-fd signal.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="Channel" c:type="SpiceChannel*"/>
+          </instance-parameter>
           <parameter name="cap" transfer-ownership="none">
             <type name="guint32" c:type="guint32"/>
           </parameter>
@@ -380,13 +466,13 @@ SpiceChannel::open-fd signal.</doc>
                 writable="1"
                 construct-only="1"
                 transfer-ownership="none">
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="channel-type"
                 writable="1"
                 construct-only="1"
                 transfer-ownership="none">
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="spice-session"
                 writable="1"
@@ -395,7 +481,7 @@ SpiceChannel::open-fd signal.</doc>
         <type name="Session"/>
       </property>
       <property name="total-read-bytes" transfer-ownership="none">
-        <type name="gulong"/>
+        <type name="gulong" c:type="gulong"/>
       </property>
       <field name="parent">
         <type name="GObject.Object" c:type="GObject"/>
@@ -407,7 +493,7 @@ SpiceChannel::open-fd signal.</doc>
         <doc xml:whitespace="preserve">The #SpiceChannel::channel-event signal is emitted when the
 state of the connection change.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="event" transfer-ownership="none">
@@ -421,12 +507,12 @@ state of the connection change.</doc>
 connection is requested. This signal is emitted when the
 connection is made with spice_session_open_fd().</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="with_tls" transfer-ownership="none">
             <doc xml:whitespace="preserve">wether TLS connection is requested</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -583,39 +669,56 @@ connection is made with spice_session_open_fd().</doc>
       <member name="none"
               value="0"
               c:identifier="SPICE_CHANNEL_NONE"
-              glib:nick="none"/>
+              glib:nick="none">
+        <doc xml:whitespace="preserve">no event, or ignored event</doc>
+      </member>
       <member name="opened"
               value="10"
               c:identifier="SPICE_CHANNEL_OPENED"
-              glib:nick="opened"/>
+              glib:nick="opened">
+        <doc xml:whitespace="preserve">connection is authentified and ready</doc>
+      </member>
       <member name="switching"
               value="11"
               c:identifier="SPICE_CHANNEL_SWITCHING"
-              glib:nick="switching"/>
+              glib:nick="switching">
+      </member>
       <member name="closed"
               value="12"
               c:identifier="SPICE_CHANNEL_CLOSED"
-              glib:nick="closed"/>
+              glib:nick="closed">
+        <doc xml:whitespace="preserve">connection is closed normally (sent if channel was ready)</doc>
+      </member>
       <member name="error_connect"
               value="20"
               c:identifier="SPICE_CHANNEL_ERROR_CONNECT"
-              glib:nick="error-connect"/>
+              glib:nick="error-connect">
+        <doc xml:whitespace="preserve">connection error</doc>
+      </member>
       <member name="error_tls"
               value="21"
               c:identifier="SPICE_CHANNEL_ERROR_TLS"
-              glib:nick="error-tls"/>
+              glib:nick="error-tls">
+        <doc xml:whitespace="preserve">SSL error</doc>
+      </member>
       <member name="error_link"
               value="22"
               c:identifier="SPICE_CHANNEL_ERROR_LINK"
-              glib:nick="error-link"/>
+              glib:nick="error-link">
+        <doc xml:whitespace="preserve">error during link process</doc>
+      </member>
       <member name="error_auth"
               value="23"
               c:identifier="SPICE_CHANNEL_ERROR_AUTH"
-              glib:nick="error-auth"/>
+              glib:nick="error-auth">
+        <doc xml:whitespace="preserve">authentication error</doc>
+      </member>
       <member name="error_io"
               value="24"
               c:identifier="SPICE_CHANNEL_ERROR_IO"
-              glib:nick="error-io"/>
+              glib:nick="error-io">
+        <doc xml:whitespace="preserve">IO error</doc>
+      </member>
     </enumeration>
     <record name="ChannelPrivate" c:type="SpiceChannelPrivate" disguised="1">
     </record>
@@ -625,13 +728,17 @@ connection is made with spice_session_open_fd().</doc>
       <doc xml:whitespace="preserve">Error codes returned by spice-client API.</doc>
       <member name="error_failed"
               value="0"
-              c:identifier="SPICE_CLIENT_ERROR_FAILED"/>
+              c:identifier="SPICE_CLIENT_ERROR_FAILED">
+        <doc xml:whitespace="preserve">generic error code</doc>
+      </member>
       <member name="usb_device_rejected"
               value="1"
-              c:identifier="SPICE_CLIENT_USB_DEVICE_REJECTED"/>
+              c:identifier="SPICE_CLIENT_USB_DEVICE_REJECTED">
+      </member>
       <member name="usb_device_lost"
               value="2"
-              c:identifier="SPICE_CLIENT_USB_DEVICE_LOST"/>
+              c:identifier="SPICE_CLIENT_USB_DEVICE_LOST">
+      </member>
     </enumeration>
     <class name="CursorChannel"
            c:symbol-prefix="cursor_channel"
@@ -645,12 +752,20 @@ connection is made with spice_session_open_fd().</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="CursorChannel" c:type="SpiceCursorChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="cursor_move">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="CursorChannel" c:type="SpiceCursorChannel*"/>
+          </instance-parameter>
           <parameter name="x" transfer-ownership="none">
             <type name="gint" c:type="gint"/>
           </parameter>
@@ -663,12 +778,20 @@ connection is made with spice_session_open_fd().</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="CursorChannel" c:type="SpiceCursorChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <virtual-method name="cursor_set">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="CursorChannel" c:type="SpiceCursorChannel*"/>
+          </instance-parameter>
           <parameter name="width" transfer-ownership="none">
             <type name="gint" c:type="gint"/>
           </parameter>
@@ -696,23 +819,23 @@ connection is made with spice_session_open_fd().</doc>
         <doc xml:whitespace="preserve">The #SpiceCursorChannel::cursor-hide signal is emitted to hide
 the cursor/pointer on the display area.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="cursor-move" when="first">
         <doc xml:whitespace="preserve">The #SpiceCursorChannel::cursor-move signal is emitted to update
 the cursor position on the display area.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="x" transfer-ownership="none">
             <doc xml:whitespace="preserve">x position</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="y" transfer-ownership="none">
             <doc xml:whitespace="preserve">y position</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -720,35 +843,35 @@ the cursor position on the display area.</doc>
         <doc xml:whitespace="preserve">The #SpiceCursorChannel::cursor-reset signal is emitted to
 reset the cursor to its default context.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="cursor-set" when="first">
         <doc xml:whitespace="preserve">The #SpiceCursorChannel::cursor-set signal is emitted to modify
 cursor aspect and position on the display area.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="width" transfer-ownership="none">
             <doc xml:whitespace="preserve">width of the shape</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="height" transfer-ownership="none">
             <doc xml:whitespace="preserve">height of the shape</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="hot_x" transfer-ownership="none">
             <doc xml:whitespace="preserve">horizontal offset of the 'hotspot' of the cursor</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="hot_y" transfer-ownership="none">
             <doc xml:whitespace="preserve">vertical offset of the 'hotspot' of the cursor</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="rgba" transfer-ownership="none">
             <doc xml:whitespace="preserve">32bits shape data, or %NULL if default cursor. It might be freed after the signal is emitted, so make sure to copy it if you need it later!</doc>
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -843,7 +966,7 @@ cursor aspect and position on the display area.</doc>
            glib:type-struct="DisplayChannelClass">
       <doc xml:whitespace="preserve">The #SpiceDisplayChannel struct is opaque and should not be accessed directly.</doc>
       <property name="height" transfer-ownership="none">
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <property name="monitors" version="0.13" transfer-ownership="none">
         <doc xml:whitespace="preserve">Current monitors configuration.</doc>
@@ -855,10 +978,10 @@ cursor aspect and position on the display area.</doc>
         <doc xml:whitespace="preserve">The maximum number of monitors the server or guest supports.
 May change during client lifetime, for instance guest may
 reboot or dynamically adjust this.</doc>
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <property name="width" transfer-ownership="none">
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <field name="parent">
         <type name="Channel" c:type="SpiceChannel"/>
@@ -872,24 +995,24 @@ reboot or dynamically adjust this.</doc>
 when the rectangular region x/y/w/h of the primary buffer is
 updated.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="x" transfer-ownership="none">
             <doc xml:whitespace="preserve">x position</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="y" transfer-ownership="none">
             <doc xml:whitespace="preserve">y position</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="width" transfer-ownership="none">
             <doc xml:whitespace="preserve">width</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="height" transfer-ownership="none">
             <doc xml:whitespace="preserve">height</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -898,11 +1021,11 @@ updated.</doc>
 the %RED_DISPLAY_MARK command is received, and the display
 should be exposed.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="object" transfer-ownership="none">
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -910,32 +1033,32 @@ should be exposed.</doc>
         <doc xml:whitespace="preserve">The #SpiceDisplayChannel::display-primary-create signal
 provides main display buffer data.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="format" transfer-ownership="none">
             <doc xml:whitespace="preserve">%SPICE_SURFACE_FMT_32_xRGB or %SPICE_SURFACE_FMT_16_555;</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="width" transfer-ownership="none">
             <doc xml:whitespace="preserve">width resolution</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="height" transfer-ownership="none">
             <doc xml:whitespace="preserve">height resolution</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="stride" transfer-ownership="none">
             <doc xml:whitespace="preserve">the buffer stride ("width" padding)</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="shmid" transfer-ownership="none">
             <doc xml:whitespace="preserve">identifier of the shared memory segment associated with the @imgdata, or -1 if not shm</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="imgdata" transfer-ownership="none">
             <doc xml:whitespace="preserve">pointer to surface buffer</doc>
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -944,7 +1067,7 @@ provides main display buffer data.</doc>
 emitted when the primary surface is freed and should not be
 accessed anymore.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
     </class>
@@ -1063,7 +1186,7 @@ accessed anymore.</doc>
     </record>
     <record name="DisplayPrimary" c:type="SpiceDisplayPrimary">
       <field name="format" writable="1">
-        <type name="gpointer" c:type="gpointer"/>
+        <type name="gpointer" c:type="SpiceSurfaceFmt"/>
       </field>
       <field name="width" writable="1">
         <type name="gint" c:type="gint"/>
@@ -1093,7 +1216,7 @@ accessed anymore.</doc>
            glib:type-struct="InputsChannelClass">
       <doc xml:whitespace="preserve">The #SpiceInputsChannel struct is opaque and should not be accessed directly.</doc>
       <property name="key-modifiers" transfer-ownership="none">
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <field name="parent">
         <type name="Channel" c:type="SpiceChannel"/>
@@ -1103,7 +1226,7 @@ accessed anymore.</doc>
       </field>
       <glib:signal name="inputs-modifiers" when="first">
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
     </class>
@@ -1138,15 +1261,18 @@ accessed anymore.</doc>
       <member name="scroll_lock"
               value="1"
               c:identifier="SPICE_INPUTS_SCROLL_LOCK"
-              glib:nick="scroll-lock"/>
+              glib:nick="scroll-lock">
+      </member>
       <member name="num_lock"
               value="2"
               c:identifier="SPICE_INPUTS_NUM_LOCK"
-              glib:nick="num-lock"/>
+              glib:nick="num-lock">
+      </member>
       <member name="caps_lock"
               value="4"
               c:identifier="SPICE_INPUTS_CAPS_LOCK"
-              glib:nick="caps-lock"/>
+              glib:nick="caps-lock">
+      </member>
     </bitfield>
     <class name="MainChannel"
            c:symbol-prefix="main_channel"
@@ -1157,22 +1283,22 @@ accessed anymore.</doc>
            glib:type-struct="MainChannelClass">
       <doc xml:whitespace="preserve">The #SpiceMainChannel struct is opaque and should not be accessed directly.</doc>
       <property name="agent-caps-0" transfer-ownership="none">
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="agent-connected" transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="color-depth"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <property name="disable-animation"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="disable-display-align"
                 version="0.13"
@@ -1180,25 +1306,25 @@ accessed anymore.</doc>
                 construct="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Disable automatic horizontal display position alignment.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="disable-display-position"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="disable-font-smooth"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="disable-wallpaper"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="mouse-mode" transfer-ownership="none">
         <doc xml:whitespace="preserve">Spice protocol specifies two mouse modes, client mode and
@@ -1208,7 +1334,7 @@ mouse position within the display and the server sends mouse
 shape messages. In server mode (%SPICE_MOUSE_MODE_SERVER), the
 client sends relative mouse movements and the server sends
 position and shape commands.</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <field name="parent">
         <type name="Channel" c:type="SpiceChannel"/>
@@ -1220,7 +1346,7 @@ position and shape commands.</doc>
         <doc xml:whitespace="preserve">Notify when the %SpiceMainChannel:agent-connected or
 %SpiceMainChannel:agent-caps-0 property change.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="main-clipboard"
@@ -1229,20 +1355,20 @@ position and shape commands.</doc>
                    deprecated-version="0.6">
         <doc xml:whitespace="preserve">Provides guest clipboard data requested by spice_main_clipboard_request().</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="type" transfer-ownership="none">
             <doc xml:whitespace="preserve">the VD_AGENT_CLIPBOARD data type</doc>
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
           <parameter name="data" transfer-ownership="none">
             <doc xml:whitespace="preserve">clipboard data</doc>
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
           <parameter name="size" transfer-ownership="none">
             <doc xml:whitespace="preserve">size of @data in bytes</doc>
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -1253,16 +1379,16 @@ position and shape commands.</doc>
         <doc xml:whitespace="preserve">Inform when clipboard data is available from the guest, and for
 which @types.</doc>
         <return-value transfer-ownership="none">
-          <type name="gboolean"/>
+          <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
           <parameter name="types" transfer-ownership="none">
             <doc xml:whitespace="preserve">the VD_AGENT_CLIPBOARD data types</doc>
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
           <parameter name="ntypes" transfer-ownership="none">
             <doc xml:whitespace="preserve">the number of @types</doc>
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -1273,41 +1399,40 @@ which @types.</doc>
         <doc xml:whitespace="preserve">Inform when the clipboard is released from the guest, when no
 clipboard data is available from the guest.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="main-clipboard-request"
                    when="last"
                    deprecated="use SpiceMainChannel::main-clipboard-selection-request instead."
                    deprecated-version="0.6">
-        <doc xml:whitespace="preserve">Request clipbard data from the client.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">%TRUE if the request is successful</doc>
-          <type name="gboolean"/>
+          <doc xml:whitespace="preserve">%TRUE if the request is successful  Request clipbard data from the client.</doc>
+          <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
           <parameter name="types" transfer-ownership="none">
             <doc xml:whitespace="preserve">the VD_AGENT_CLIPBOARD request type</doc>
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="main-clipboard-selection" when="last" version="0.6">
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="object" transfer-ownership="none">
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
           <parameter name="p0" transfer-ownership="none">
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
           <parameter name="p1" transfer-ownership="none">
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
           <parameter name="p2" transfer-ownership="none">
-            <type name="guint"/>
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -1317,19 +1442,17 @@ clipboard data is available from the guest.</doc>
         <doc xml:whitespace="preserve">Inform when clipboard data is available from the guest, and for
 which @types.</doc>
         <return-value transfer-ownership="none">
-          <type name="gboolean"/>
+          <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
-          <parameter name="types" transfer-ownership="none">
-            <doc xml:whitespace="preserve">the VD_AGENT_CLIPBOARD data types</doc>
-            <type name="guint"/>
+          <parameter name="object" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
           </parameter>
-          <parameter name="ntypes" transfer-ownership="none">
-            <doc xml:whitespace="preserve">the number of @types</doc>
-            <type name="gpointer"/>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
-          <parameter name="since" transfer-ownership="none">
-            <type name="guint"/>
+          <parameter name="p1" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -1339,37 +1462,34 @@ which @types.</doc>
         <doc xml:whitespace="preserve">Inform when the clipboard is released from the guest, when no
 clipboard data is available from the guest.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
-          <parameter name="since" transfer-ownership="none">
-            <type name="guint"/>
+          <parameter name="object" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="main-clipboard-selection-request"
                    when="last"
                    version="0.6">
-        <doc xml:whitespace="preserve">Request clipbard data from the client.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">%TRUE if the request is successful</doc>
-          <type name="gboolean"/>
+          <doc xml:whitespace="preserve">%TRUE if the request is successful  Request clipbard data from the client.</doc>
+          <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
-          <parameter name="types" transfer-ownership="none">
-            <doc xml:whitespace="preserve">the VD_AGENT_CLIPBOARD request type</doc>
-            <type name="guint"/>
+          <parameter name="object" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
           </parameter>
-          <parameter name="returns" transfer-ownership="none">
-            <doc xml:whitespace="preserve">%TRUE if the request is successful</doc>
-            <type name="guint"/>
+          <parameter name="p0" transfer-ownership="none">
+            <type name="guint" c:type="guint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="main-mouse-update" when="first">
         <doc xml:whitespace="preserve">Notify when the mouse mode has changed.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="migration-started" when="last">
@@ -1378,7 +1498,7 @@ connections themself can set the #SpiceSession:client-sockets
 to @TRUE, then follow #SpiceSession::channel-new creation, and
 use spice_channel_open_fd() once the socket is created.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="session" transfer-ownership="none">
@@ -1441,6 +1561,9 @@ use spice_channel_open_fd() once the socket is created.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="PlaybackChannel" c:type="SpicePlaybackChannel*"/>
+          </instance-parameter>
           <parameter name="data" transfer-ownership="none">
             <type name="gpointer" c:type="gpointer*"/>
           </parameter>
@@ -1454,6 +1577,9 @@ use spice_channel_open_fd() once the socket is created.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="PlaybackChannel" c:type="SpicePlaybackChannel*"/>
+          </instance-parameter>
           <parameter name="format" transfer-ownership="none">
             <type name="gint" c:type="gint"/>
           </parameter>
@@ -1469,25 +1595,36 @@ use spice_channel_open_fd() once the socket is created.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="PlaybackChannel" c:type="SpicePlaybackChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <method name="set_delay" c:identifier="spice_playback_channel_set_delay">
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="PlaybackChannel" c:type="SpicePlaybackChannel*"/>
+          </instance-parameter>
           <parameter name="delay_ms" transfer-ownership="none">
             <type name="guint32" c:type="guint32"/>
           </parameter>
         </parameters>
       </method>
+      <property name="min-latency" writable="1" transfer-ownership="none">
+        <type name="guint" c:type="guint"/>
+      </property>
       <property name="mute" writable="1" transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="nchannels" writable="1" transfer-ownership="none">
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <property name="volume" writable="1" transfer-ownership="none">
-        <type name="gpointer"/>
+        <type name="gpointer" c:type="gpointer"/>
       </property>
       <field name="parent">
         <type name="Channel" c:type="SpiceChannel"/>
@@ -1499,50 +1636,50 @@ use spice_channel_open_fd() once the socket is created.</doc>
       <glib:signal name="playback-data" when="first">
         <doc xml:whitespace="preserve">Provide audio data to be played.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="data" transfer-ownership="none">
             <doc xml:whitespace="preserve">pointer to audio data</doc>
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
           <parameter name="data_size" transfer-ownership="none">
             <doc xml:whitespace="preserve">size in byte of @data</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="playback-get-delay" when="first">
         <doc xml:whitespace="preserve">Notify when the current playback delay is requested</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
       <glib:signal name="playback-start" when="first">
         <doc xml:whitespace="preserve">Notify when the playback should start, and provide audio format
 characteristics.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="format" transfer-ownership="none">
             <doc xml:whitespace="preserve">a #SPICE_AUDIO_FMT</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="channels" transfer-ownership="none">
             <doc xml:whitespace="preserve">number of channels</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="rate" transfer-ownership="none">
             <doc xml:whitespace="preserve">audio rate</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="playback-stop" when="first">
         <doc xml:whitespace="preserve">Notify when the playback should stop.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
     </class>
@@ -1618,10 +1755,10 @@ characteristics.</doc>
            glib:type-struct="PortChannelClass">
       <doc xml:whitespace="preserve">The #SpicePortChannel struct is opaque and should not be accessed directly.</doc>
       <property name="port-name" transfer-ownership="none">
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="port-opened" transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <field name="parent">
         <type name="Channel" c:type="SpiceChannel"/>
@@ -1631,24 +1768,24 @@ characteristics.</doc>
       </field>
       <glib:signal name="port-data" when="last">
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="object" transfer-ownership="none">
-            <type name="gpointer"/>
+            <type name="gpointer" c:type="gpointer"/>
           </parameter>
           <parameter name="p0" transfer-ownership="none">
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="port-event" when="last">
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="object" transfer-ownership="none">
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
@@ -1678,6 +1815,9 @@ characteristics.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="RecordChannel" c:type="SpiceRecordChannel*"/>
+          </instance-parameter>
           <parameter name="data" transfer-ownership="none">
             <type name="gpointer" c:type="gpointer*"/>
           </parameter>
@@ -1691,6 +1831,9 @@ characteristics.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="RecordChannel" c:type="SpiceRecordChannel*"/>
+          </instance-parameter>
           <parameter name="format" transfer-ownership="none">
             <type name="gint" c:type="gint"/>
           </parameter>
@@ -1706,15 +1849,20 @@ characteristics.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="channel" transfer-ownership="none">
+            <type name="RecordChannel" c:type="SpiceRecordChannel*"/>
+          </instance-parameter>
+        </parameters>
       </virtual-method>
       <property name="mute" writable="1" transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="nchannels" writable="1" transfer-ownership="none">
-        <type name="guint"/>
+        <type name="guint" c:type="guint"/>
       </property>
       <property name="volume" writable="1" transfer-ownership="none">
-        <type name="gpointer"/>
+        <type name="gpointer" c:type="gpointer"/>
       </property>
       <field name="parent">
         <type name="Channel" c:type="SpiceChannel"/>
@@ -1726,27 +1874,27 @@ characteristics.</doc>
         <doc xml:whitespace="preserve">Notify when the recording should start, and provide audio format
 characteristics.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="format" transfer-ownership="none">
             <doc xml:whitespace="preserve">a #SPICE_AUDIO_FMT</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="channels" transfer-ownership="none">
             <doc xml:whitespace="preserve">number of channels</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
           <parameter name="rate" transfer-ownership="none">
             <doc xml:whitespace="preserve">audio rate</doc>
-            <type name="gint"/>
+            <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
       </glib:signal>
       <glib:signal name="record-stop" when="first">
         <doc xml:whitespace="preserve">Notify when the recording should stop.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
       </glib:signal>
     </class>
@@ -1832,6 +1980,9 @@ characteristics.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
           <parameter name="channel" transfer-ownership="none">
             <type name="Channel" c:type="SpiceChannel*"/>
           </parameter>
@@ -1842,6 +1993,9 @@ characteristics.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
           <parameter name="channel" transfer-ownership="none">
             <type name="Channel" c:type="SpiceChannel*"/>
           </parameter>
@@ -1854,29 +2008,49 @@ characteristics.</doc>
           <doc xml:whitespace="preserve">%FALSE if the connection failed.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="disconnect" c:identifier="spice_session_disconnect">
         <doc xml:whitespace="preserve">Disconnect the @session, and destroy all channels.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="get_channels" c:identifier="spice_session_get_channels">
-        <doc xml:whitespace="preserve">Get the list of current channels associated with this @session.
-
-of unowned #SpiceChannel channels.</doc>
+        <doc xml:whitespace="preserve">Get the list of current channels associated with this @session.</doc>
         <return-value transfer-ownership="container">
-          <doc xml:whitespace="preserve">a #GList</doc>
+          <doc xml:whitespace="preserve">a #GList of unowned #SpiceChannel channels.</doc>
           <type name="GLib.List" c:type="GList*">
             <type name="Channel"/>
           </type>
         </return-value>
+        <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSession</doc>
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="get_read_only" c:identifier="spice_session_get_read_only">
         <return-value transfer-ownership="none">
           <doc xml:whitespace="preserve">wether the @session is in read-only mode.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSession</doc>
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="has_channel_type"
               c:identifier="spice_session_has_channel_type">
@@ -1887,6 +2061,10 @@ of unowned #SpiceChannel channels.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSession</doc>
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
           <parameter name="type" transfer-ownership="none">
             <type name="gint" c:type="gint"/>
           </parameter>
@@ -1898,13 +2076,14 @@ descriptor. This is useful if you create the fd yourself, for
 example to setup a SSH tunnel.
 
 If @fd is -1, a valid fd will be requested later via the
-SpiceChannel::open-fd signal.
-
-Returns:</doc>
+SpiceChannel::open-fd signal.</doc>
         <return-value transfer-ownership="none">
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="session" transfer-ownership="none">
+            <type name="Session" c:type="SpiceSession*"/>
+          </instance-parameter>
           <parameter name="fd" transfer-ownership="none">
             <doc xml:whitespace="preserve">a file descriptor (socket) or -1</doc>
             <type name="gint" c:type="int"/>
@@ -1918,9 +2097,9 @@ Returns:</doc>
         <doc xml:whitespace="preserve">CA certificates in PEM format. The text data can contain
 several CA certificates identified by:
 
------BEGIN CERTIFICATE-----
-... (CA certificate in base64 encoding) ...
------END CERTIFICATE-----</doc>
+ -----BEGIN CERTIFICATE-----
+ ... (CA certificate in base64 encoding) ...
+ -----END CERTIFICATE-----</doc>
         <array name="GLib.ByteArray">
           <type name="gpointer" c:type="gpointer"/>
         </array>
@@ -1928,36 +2107,36 @@ several CA certificates identified by:
       <property name="ca-file" writable="1" transfer-ownership="none">
         <doc xml:whitespace="preserve">File holding the CA certificates for the host the client is
 connecting to</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="cache-size"
                 version="0.9"
                 writable="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Images cache size. If 0, don't set.</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="cert-subject" writable="1" transfer-ownership="none">
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="ciphers" writable="1" transfer-ownership="none">
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="client-sockets" writable="1" transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="color-depth"
                 version="0.7"
                 writable="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Display color depth to set on new display channels. If 0, don't set.</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="disable-effects"
                 version="0.7"
                 writable="1"
                 transfer-ownership="none">
-        <doc xml:whitespace="preserve">A comma-separated list of effects to disable. The settings will
+        <doc xml:whitespace="preserve">A string array of effects to disable. The settings will
 be applied on new display channels. The following effets can be
 disabled "wallpaper", "font-smooth", "animation", and "all",
 which will disable all the effects. If NULL, don't apply changes.</doc>
@@ -1972,7 +2151,7 @@ which will disable all the effects. If NULL, don't apply changes.</doc>
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">If set to TRUE, the audio channels will be enabled for
 playback and recording.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="enable-smartcard"
                 version="0.7"
@@ -1980,7 +2159,7 @@ playback and recording.</doc>
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">If set to TRUE, the smartcard channel will be enabled and smartcard
 events will be forwarded to the guest</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="enable-usbredir"
                 version="0.8"
@@ -1989,26 +2168,26 @@ events will be forwarded to the guest</doc>
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">If set to TRUE, the usbredir channel will be enabled and USB devices
 can be redirected to the guest</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="glz-window-size"
                 version="0.9"
                 writable="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Glz window size. If 0, don't set.</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="host"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">URL of the SPICE host to connect to</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="inhibit-keyboard-grab"
                 writable="1"
                 transfer-ownership="none">
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="migration-state" transfer-ownership="none">
         <doc xml:whitespace="preserve">#SpiceSessionMigration bit field indicating if a migration is in
@@ -2017,22 +2196,22 @@ progress</doc>
       </property>
       <property name="name" version="0.11" transfer-ownership="none">
         <doc xml:whitespace="preserve">Spice server name.</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="password" writable="1" transfer-ownership="none">
         <doc xml:whitespace="preserve">TLS password to use</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="port" writable="1" transfer-ownership="none">
         <doc xml:whitespace="preserve">Port to connect to for unencrypted sessions</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="protocol"
                 writable="1"
                 construct="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Version of the SPICE protocol to use</doc>
-        <type name="gint"/>
+        <type name="gint" c:type="gint"/>
       </property>
       <property name="proxy"
                 version="0.17"
@@ -2040,7 +2219,7 @@ progress</doc>
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">URI to the proxy server to use when doing network connection.
 of the form &lt;![CDATA[ [protocol://]&lt;host&gt;[:port] ]]&gt;</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="pubkey" writable="1" transfer-ownership="none">
         <array name="GLib.ByteArray">
@@ -2053,7 +2232,16 @@ of the form &lt;![CDATA[ [protocol://]&lt;host&gt;[:port] ]]&gt;</doc>
                 construct="1"
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Whether this connection is read-only mode.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
+      </property>
+      <property name="secure-channels"
+                version="0.20"
+                writable="1"
+                transfer-ownership="none">
+        <doc xml:whitespace="preserve">A string array of channel types to be secured.</doc>
+        <array>
+          <type name="utf8"/>
+        </array>
       </property>
       <property name="smartcard-certificates"
                 version="0.7"
@@ -2074,20 +2262,20 @@ See also spice_smartcard_manager_insert_card()</doc>
                 transfer-ownership="none">
         <doc xml:whitespace="preserve">Path to the NSS certificate database containing the certificates to
 use to simulate a software smartcard</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="tls-port" writable="1" transfer-ownership="none">
         <doc xml:whitespace="preserve">Port to connect to for TLS sessions</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="uri" writable="1" transfer-ownership="none">
         <doc xml:whitespace="preserve">URI of the SPICE host to connect to. The URI is of the form
 spice://hostname?port=XXX or spice://hostname?tls_port=XXX</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="uuid" version="0.11" transfer-ownership="none">
         <doc xml:whitespace="preserve">Spice server uuid.</doc>
-        <type name="gpointer"/>
+        <type name="gpointer" c:type="gpointer"/>
       </property>
       <property name="verify"
                 writable="1"
@@ -2106,7 +2294,7 @@ certificate should be checked</doc>
       <glib:signal name="channel-destroy" when="first">
         <doc xml:whitespace="preserve">The #SpiceSession::channel-destroy signal is emitted each time a #SpiceChannel is destroyed.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="channel" transfer-ownership="none">
@@ -2118,7 +2306,7 @@ certificate should be checked</doc>
       <glib:signal name="channel-new" when="first">
         <doc xml:whitespace="preserve">The #SpiceSession::channel-new signal is emitted each time a #SpiceChannel is created.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="channel" transfer-ownership="none">
@@ -2126,6 +2314,14 @@ certificate should be checked</doc>
             <type name="Channel"/>
           </parameter>
         </parameters>
+      </glib:signal>
+      <glib:signal name="mm-time-reset" when="first">
+        <doc xml:whitespace="preserve">The #SpiceSession::mm-time-reset is emitted when we identify discontinuity in mm-time
+
+Since 0.20</doc>
+        <return-value transfer-ownership="none">
+          <type name="none" c:type="void"/>
+        </return-value>
       </glib:signal>
     </class>
     <record name="SessionClass"
@@ -2178,15 +2374,21 @@ certificate should be checked</doc>
       <member name="none"
               value="0"
               c:identifier="SPICE_SESSION_MIGRATION_NONE"
-              glib:nick="none"/>
+              glib:nick="none">
+        <doc xml:whitespace="preserve">no migration going on</doc>
+      </member>
       <member name="switching"
               value="1"
               c:identifier="SPICE_SESSION_MIGRATION_SWITCHING"
-              glib:nick="switching"/>
+              glib:nick="switching">
+        <doc xml:whitespace="preserve">the session is switching host (destroy and reconnect)</doc>
+      </member>
       <member name="migrating"
               value="2"
               c:identifier="SPICE_SESSION_MIGRATION_MIGRATING"
-              glib:nick="migrating"/>
+              glib:nick="migrating">
+        <doc xml:whitespace="preserve">the session is migrating seamlessly (reconnect)</doc>
+      </member>
     </enumeration>
     <record name="SessionPrivate" c:type="SpiceSessionPrivate" disguised="1">
     </record>
@@ -2198,15 +2400,21 @@ certificate should be checked</doc>
       <member name="pubkey"
               value="1"
               c:identifier="SPICE_SESSION_VERIFY_PUBKEY"
-              glib:nick="pubkey"/>
+              glib:nick="pubkey">
+        <doc xml:whitespace="preserve">verify certificate public key matching</doc>
+      </member>
       <member name="hostname"
               value="2"
               c:identifier="SPICE_SESSION_VERIFY_HOSTNAME"
-              glib:nick="hostname"/>
+              glib:nick="hostname">
+        <doc xml:whitespace="preserve">verify certificate hostname matching</doc>
+      </member>
       <member name="subject"
               value="4"
               c:identifier="SPICE_SESSION_VERIFY_SUBJECT"
-              glib:nick="subject"/>
+              glib:nick="subject">
+        <doc xml:whitespace="preserve">verify certificate subject matching</doc>
+      </member>
     </bitfield>
     <class name="SmartcardChannel"
            c:symbol-prefix="smartcard_channel"
@@ -2257,6 +2465,9 @@ time this function is called</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
           <parameter name="reader" transfer-ownership="none">
             <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
           </parameter>
@@ -2267,6 +2478,9 @@ time this function is called</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
           <parameter name="reader" transfer-ownership="none">
             <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
           </parameter>
@@ -2277,6 +2491,9 @@ time this function is called</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
           <parameter name="reader" transfer-ownership="none">
             <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
           </parameter>
@@ -2287,36 +2504,68 @@ time this function is called</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
           <parameter name="reader" transfer-ownership="none">
             <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
           </parameter>
         </parameters>
       </virtual-method>
+      <method name="get_readers"
+              c:identifier="spice_smartcard_manager_get_readers"
+              version="0.20">
+        <doc xml:whitespace="preserve">manager: a #SpiceSmartcardManager
+
+Gets the list of smartcard readers that are currently available, they
+can be either software (emulated) readers, or hardware ones.</doc>
+        <return-value transfer-ownership="full">
+          <doc xml:whitespace="preserve">a newly allocated list of SpiceSmartcardReader instances, or NULL if none were found. When no longer needed, the list must be freed after unreferencing its elements with g_boxed_free()</doc>
+          <type name="GLib.List" c:type="GList*">
+            <type name="SmartcardReader"/>
+          </type>
+        </return-value>
+        <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
       <method name="insert_card"
-              c:identifier="spice_smartcard_manager_insert_card">
+              c:identifier="spice_smartcard_manager_insert_card"
+              version="0.20">
         <doc xml:whitespace="preserve">Simulates the insertion of a smartcard in the guest. Valid certificates
 must have been set in #SpiceSession:smartcard-certificates for software
 smartcard support to work. At the moment, only one software smartcard
 reader is supported, that's why there is no parameter to indicate which
-reader to insert the card in.
-
-if this failed, or if software smartcard support isn't enabled.</doc>
+reader to insert the card in.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">TRUE if smartcard insertion was successfully simulated, FALSE</doc>
+          <doc xml:whitespace="preserve">TRUE if smartcard insertion was successfully simulated, FALSE if this failed, or if software smartcard support isn't enabled.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSmartcardManager</doc>
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <method name="remove_card"
-              c:identifier="spice_smartcard_manager_remove_card">
+              c:identifier="spice_smartcard_manager_remove_card"
+              version="0.20">
         <doc xml:whitespace="preserve">Simulates the removal of a smartcard in the guest. At the moment, only
 one software smartcard reader is supported, that's why there is no
-parameter to indicate which reader to insert the card in.
-
-if this failed, or if software smartcard support isn't enabled.</doc>
+parameter to indicate which reader to insert the card in.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">TRUE if smartcard removal was successfully simulated, FALSE</doc>
+          <doc xml:whitespace="preserve">TRUE if smartcard removal was successfully simulated, FALSE if this failed, or if software smartcard support isn't enabled.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSmartcardManager</doc>
+            <type name="SmartcardManager" c:type="SpiceSmartcardManager*"/>
+          </instance-parameter>
+        </parameters>
       </method>
       <field name="parent">
         <type name="GObject.Object" c:type="GObject"/>
@@ -2329,7 +2578,7 @@ if this failed, or if software smartcard support isn't enabled.</doc>
         <doc xml:whitespace="preserve">The #SpiceSmartcardManager::card-inserted signal is emitted whenever
 a smartcard is inserted in a reader</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="vreader" transfer-ownership="none">
@@ -2342,7 +2591,7 @@ a smartcard is inserted in a reader</doc>
         <doc xml:whitespace="preserve">The #SpiceSmartcardManager::card-removed signal is emitted whenever
 a smartcard was removed from a reader.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="vreader" transfer-ownership="none">
@@ -2355,7 +2604,7 @@ a smartcard was removed from a reader.</doc>
         <doc xml:whitespace="preserve">The #SpiceSmartcardManager::reader-added signal is emitted whenever
 a new smartcard reader (software or hardware) has been plugged in.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="vreader" transfer-ownership="none">
@@ -2368,7 +2617,7 @@ a new smartcard reader (software or hardware) has been plugged in.</doc>
         <doc xml:whitespace="preserve">The #SpiceSmartcardManager::reader-removed signal is emitted whenever
 a smartcard reader (software or hardware) has been removed.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="vreader" transfer-ownership="none">
@@ -2455,15 +2704,51 @@ a smartcard reader (software or hardware) has been removed.</doc>
             disguised="1">
     </record>
     <record name="SmartcardReader" c:type="SpiceSmartcardReader" disguised="1">
-      <method name="is_software"
-              c:identifier="spice_smartcard_reader_is_software">
-        <doc xml:whitespace="preserve">Tests if @reader is a software (emulated) smartcard reader.
-
-FALSE otherwise</doc>
+      <method name="insert_card"
+              c:identifier="spice_smartcard_reader_insert_card">
+        <doc xml:whitespace="preserve">Simulates insertion of a smartcard in the software smartcard reader
+@reader. If @reader is not a software smartcard reader, FALSE will be
+returned.</doc>
         <return-value transfer-ownership="none">
-          <doc xml:whitespace="preserve">TRUE if @reader is a software (emulated) smartcard reader,</doc>
+          <doc xml:whitespace="preserve">TRUE if insertion of a card was successfully simulated, FALSE otherwise</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
+        <parameters>
+          <instance-parameter name="reader" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSmartcardReader</doc>
+            <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="is_software"
+              c:identifier="spice_smartcard_reader_is_software">
+        <doc xml:whitespace="preserve">Tests if @reader is a software (emulated) smartcard reader.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:whitespace="preserve">TRUE if @reader is a software (emulated) smartcard reader, FALSE otherwise</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="reader" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSmartcardReader</doc>
+            <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="remove_card"
+              c:identifier="spice_smartcard_reader_remove_card">
+        <doc xml:whitespace="preserve">Simulates removal of a smartcard from the software smartcard reader
+@reader. If @reader is not a software smartcard reader, FALSE will be
+returned.</doc>
+        <return-value transfer-ownership="none">
+          <doc xml:whitespace="preserve">TRUE if removal of a card was successfully simulated, FALSE otherwise</doc>
+          <type name="gboolean" c:type="gboolean"/>
+        </return-value>
+        <parameters>
+          <instance-parameter name="reader" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a #SpiceSmartcardReader</doc>
+            <type name="SmartcardReader" c:type="SpiceSmartcardReader*"/>
+          </instance-parameter>
+        </parameters>
       </method>
     </record>
     <record name="UsbDevice"
@@ -2490,9 +2775,13 @@ The @format positional parameters are the following:
           <type name="utf8" c:type="gchar*"/>
         </return-value>
         <parameters>
+          <instance-parameter name="device" transfer-ownership="none">
+            <doc xml:whitespace="preserve">#SpiceUsbDevice to get the description of</doc>
+            <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
+          </instance-parameter>
           <parameter name="format" transfer-ownership="none">
             <doc xml:whitespace="preserve">an optionnal printf() format string with positional parameters</doc>
-            <type name="utf8" c:type="gchar*"/>
+            <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
       </method>
@@ -2531,6 +2820,9 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
           </parameter>
@@ -2544,6 +2836,9 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
           </parameter>
@@ -2554,6 +2849,9 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
           </parameter>
@@ -2567,6 +2865,9 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
           </parameter>
@@ -2579,6 +2880,9 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
           </parameter>
@@ -2590,6 +2894,10 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the #SpiceUsbDeviceManager manager</doc>
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <doc xml:whitespace="preserve">a #SpiceUsbDevice to redirect</doc>
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
@@ -2621,6 +2929,9 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="self" transfer-ownership="none">
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="res" transfer-ownership="none">
             <type name="Gio.AsyncResult" c:type="GAsyncResult*"/>
           </parameter>
@@ -2633,6 +2944,10 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the #SpiceUsbDeviceManager manager</doc>
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <doc xml:whitespace="preserve">a #SpiceUsbDevice to disconnect</doc>
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
@@ -2647,6 +2962,32 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
             <type name="UsbDevice"/>
           </array>
         </return-value>
+        <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the #SpiceUsbDeviceManager manager</doc>
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
+        </parameters>
+      </method>
+      <method name="get_devices_with_filter"
+              c:identifier="spice_usb_device_manager_get_devices_with_filter"
+              version="0.20">
+        <return-value transfer-ownership="full">
+          <doc xml:whitespace="preserve">a %GPtrArray array of %SpiceUsbDevice</doc>
+          <array name="GLib.PtrArray" c:type="GPtrArray*">
+            <type name="UsbDevice"/>
+          </array>
+        </return-value>
+        <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the #SpiceUsbDeviceManager manager</doc>
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
+          <parameter name="filter" transfer-ownership="none">
+            <doc xml:whitespace="preserve">filter string for selecting which devices to return, see #SpiceUsbDeviceManager:auto-connect-filter for the filter string format</doc>
+            <type name="utf8" c:type="const gchar*"/>
+          </parameter>
+        </parameters>
       </method>
       <method name="is_device_connected"
               c:identifier="spice_usb_device_manager_is_device_connected">
@@ -2655,6 +2996,10 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
           <type name="gboolean" c:type="gboolean"/>
         </return-value>
         <parameters>
+          <instance-parameter name="manager" transfer-ownership="none">
+            <doc xml:whitespace="preserve">the #SpiceUsbDeviceManager manager</doc>
+            <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
+          </instance-parameter>
           <parameter name="device" transfer-ownership="none">
             <doc xml:whitespace="preserve">a #SpiceUsbDevice</doc>
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
@@ -2666,7 +3011,7 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
 
 Note when #SpiceGtkSession's auto-usbredir property is TRUE, this
 property is controlled by #SpiceGtkSession.</doc>
-        <type name="gboolean"/>
+        <type name="gboolean" c:type="gboolean"/>
       </property>
       <property name="auto-connect-filter"
                 writable="1"
@@ -2691,7 +3036,7 @@ matching filter rule will not auto-connect.
 
 Filter strings in this format can be easily created with the RHEV-M
 USB filter editor tool.</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="redirect-on-connect"
                 writable="1"
@@ -2699,9 +3044,9 @@ USB filter editor tool.</doc>
         <doc xml:whitespace="preserve">Set a string specifying a filter selecting USB devices to automatically
 redirect after a Spice connection has been established.
 
-See SpiceUsbDeviceManager:auto-connect-filter: for the filter string
+See #SpiceUsbDeviceManager:auto-connect-filter for the filter string
 format.</doc>
-        <type name="utf8"/>
+        <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="session"
                 writable="1"
@@ -2722,7 +3067,7 @@ format.</doc>
 whenever the auto-connect property is true, and a newly plugged in
 device could not be auto-connected.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="device" transfer-ownership="none">
@@ -2739,7 +3084,7 @@ device could not be auto-connected.</doc>
         <doc xml:whitespace="preserve">The #SpiceUsbDeviceManager::device-added signal is emitted whenever
 a new USB device has been plugged in.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="device" transfer-ownership="none">
@@ -2753,7 +3098,7 @@ a new USB device has been plugged in.</doc>
 error happens which causes a device to no longer be available to the
 guest.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="device" transfer-ownership="none">
@@ -2770,7 +3115,7 @@ guest.</doc>
         <doc xml:whitespace="preserve">The #SpiceUsbDeviceManager::device-removed signal is emitted whenever
 an USB device has been removed.</doc>
         <return-value transfer-ownership="none">
-          <type name="none"/>
+          <type name="none" c:type="void"/>
         </return-value>
         <parameters>
           <parameter name="device" transfer-ownership="none">
@@ -2904,11 +3249,9 @@ an USB device has been removed.</doc>
     </function>
     <function name="display_get_primary"
               c:identifier="spice_display_get_primary">
-      <doc xml:whitespace="preserve">Retrieve primary display surface @surface_id.
-
-collected in @primary.</doc>
+      <doc xml:whitespace="preserve">Retrieve primary display surface @surface_id.</doc>
       <return-value transfer-ownership="none">
-        <doc xml:whitespace="preserve">%TRUE if the primary surface was found and its details</doc>
+        <doc xml:whitespace="preserve">%TRUE if the primary surface was found and its details collected in @primary.</doc>
         <type name="gboolean" c:type="gboolean"/>
       </return-value>
       <parameters>
@@ -2939,7 +3282,7 @@ when any of the objects is destroyed.</doc>
         </parameter>
         <parameter name="detailed_signal" transfer-ownership="none">
           <doc xml:whitespace="preserve">a string of the form "signal-name::detail".</doc>
-          <type name="utf8" c:type="gchar*"/>
+          <type name="utf8" c:type="const gchar*"/>
         </parameter>
         <parameter name="c_handler" transfer-ownership="none">
           <doc xml:whitespace="preserve">the #GCallback to connect.</doc>
@@ -2958,11 +3301,8 @@ when any of the objects is destroyed.</doc>
     <function name="get_option_group"
               c:identifier="spice_get_option_group"
               introspectable="0">
-      <doc xml:whitespace="preserve">arguments specific to Spice.  You have to call
-spice_set_session_option() after to set the options on a
-#SpiceSession.</doc>
       <return-value transfer-ownership="full">
-        <doc xml:whitespace="preserve">a #GOptionGroup for the commandline</doc>
+        <doc xml:whitespace="preserve">a #GOptionGroup for the commandline arguments specific to Spice.  You have to call spice_set_session_option() after to set the options on a #SpiceSession.</doc>
         <type name="GLib.OptionGroup" c:type="GOptionGroup*"/>
       </return-value>
     </function>
@@ -3177,7 +3517,7 @@ spice_set_session_option() after to set the options on a
         </parameter>
         <parameter name="data" transfer-ownership="none">
           <doc xml:whitespace="preserve">clipboard data</doc>
-          <type name="guint8" c:type="guchar*"/>
+          <type name="guint8" c:type="const guchar*"/>
         </parameter>
         <parameter name="size" transfer-ownership="none">
           <doc xml:whitespace="preserve">data length in bytes</doc>
@@ -3265,7 +3605,7 @@ through the #SpiceMainChannel::main-clipboard signal.</doc>
         </parameter>
         <parameter name="data" transfer-ownership="none">
           <doc xml:whitespace="preserve">clipboard data</doc>
-          <type name="guint8" c:type="guchar*"/>
+          <type name="guint8" c:type="const guchar*"/>
         </parameter>
         <parameter name="size" transfer-ownership="none">
           <doc xml:whitespace="preserve">data length in bytes</doc>
@@ -3648,7 +3988,7 @@ arguments given to spice_get_option_group() option group.</doc>
               c:identifier="spice_util_get_version_string">
       <return-value transfer-ownership="none">
         <doc xml:whitespace="preserve">Spice-GTK version as a const string.</doc>
-        <type name="utf8" c:type="gchar*"/>
+        <type name="utf8" c:type="const gchar*"/>
       </return-value>
     </function>
     <function name="util_set_debug" c:identifier="spice_util_set_debug">

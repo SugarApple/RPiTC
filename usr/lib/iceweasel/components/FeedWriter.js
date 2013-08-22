@@ -1,4 +1,4 @@
-//@line 42 "/opt/build/iceweasel-10.0.12esr/browser/components/feeds/src/FeedWriter.js"
+//@line 5 "/opt/build/iceweasel-17.0.8esr/browser/components/feeds/src/FeedWriter.js"
 
 const Cc = Components.classes;
 const Ci = Components.interfaces;
@@ -48,7 +48,7 @@ const TYPE_MAYBE_FEED = "application/vnd.mozilla.maybe.feed";
 const TYPE_MAYBE_AUDIO_FEED = "application/vnd.mozilla.maybe.audio.feed";
 const TYPE_MAYBE_VIDEO_FEED = "application/vnd.mozilla.maybe.video.feed";
 const URI_BUNDLE = "chrome://browser/locale/feeds/subscribe.properties";
-const SUBSCRIBE_PAGE_URI = "chrome://browser/content/feeds/subscribe.xhtml";
+const FEEDHANDLER_URI = "about:feeds";
 
 const PREF_SELECTED_APP = "browser.feeds.handlers.application";
 const PREF_SELECTED_WEB = "browser.feeds.handlers.webservice";
@@ -645,7 +645,7 @@ FeedWriter.prototype = {
    * @returns The display name of the application represented by the file.
    */
   _getFileDisplayName: function FW__getFileDisplayName(file) {
-//@line 702 "/opt/build/iceweasel-10.0.12esr/browser/components/feeds/src/FeedWriter.js"
+//@line 665 "/opt/build/iceweasel-17.0.8esr/browser/components/feeds/src/FeedWriter.js"
     return file.leafName;
   },
 
@@ -657,7 +657,7 @@ FeedWriter.prototype = {
    */
   _getFileIconURL: function FW__getFileIconURL(file) {
     var ios = Cc["@mozilla.org/network/io-service;1"].
-              getService(Components.interfaces.nsIIOService);
+              getService(Ci.nsIIOService);
     var fph = ios.getProtocolHandler("file")
                  .QueryInterface(Ci.nsIFileProtocolHandler);
     var urlSpec = fph.getURLSpecFromFile(file);
@@ -708,9 +708,9 @@ FeedWriter.prototype = {
           // XXXben - we need to compare this with the running instance executable
           //          just don't know how to do that via script...
           // XXXmano TBD: can probably add this to nsIShellService
-//@line 770 "/opt/build/iceweasel-10.0.12esr/browser/components/feeds/src/FeedWriter.js"
+//@line 733 "/opt/build/iceweasel-17.0.8esr/browser/components/feeds/src/FeedWriter.js"
           if (fp.file.leafName != "iceweasel-bin") {
-//@line 773 "/opt/build/iceweasel-10.0.12esr/browser/components/feeds/src/FeedWriter.js"
+//@line 736 "/opt/build/iceweasel-17.0.8esr/browser/components/feeds/src/FeedWriter.js"
             this._initMenuItemWithFile(this._contentSandbox.selectedAppMenuItem,
                                        this._selectedApp);
 
@@ -1067,10 +1067,9 @@ FeedWriter.prototype = {
                getInterface(Ci.nsIWebNavigation).
                QueryInterface(Ci.nsIDocShell).currentDocumentChannel;
 
-    var uri = makeURI(SUBSCRIBE_PAGE_URI);
-    var resolvedURI = Cc["@mozilla.org/chrome/chrome-registry;1"].
-                      getService(Ci.nsIChromeRegistry).
-                      convertChromeURL(uri);
+    var resolvedURI = Cc["@mozilla.org/network/io-service;1"].
+                      getService(Ci.nsIIOService).
+                      newChannel(FEEDHANDLER_URI, null, null).URI;
 
     if (resolvedURI.equals(chan.URI))
       return chan.originalURI;
@@ -1098,14 +1097,14 @@ FeedWriter.prototype = {
 
     var secman = Cc["@mozilla.org/scriptsecuritymanager;1"].
                  getService(Ci.nsIScriptSecurityManager);
-    this._feedPrincipal = secman.getCodebasePrincipal(this._feedURI);
+    this._feedPrincipal = secman.getSimpleCodebasePrincipal(this._feedURI);
 
     LOG("Subscribe Preview: feed uri = " + this._window.location.href);
 
     // Set up the subscription UI
     this._initSubscriptionUI();
     var prefs = Cc["@mozilla.org/preferences-service;1"].
-                getService(Ci.nsIPrefBranch2);
+                getService(Ci.nsIPrefBranch);
     prefs.addObserver(PREF_SELECTED_ACTION, this, false);
     prefs.addObserver(PREF_SELECTED_READER, this, false);
     prefs.addObserver(PREF_SELECTED_WEB, this, false);
@@ -1148,7 +1147,7 @@ FeedWriter.prototype = {
     this._document = null;
     this._window = null;
     var prefs = Cc["@mozilla.org/preferences-service;1"].
-                getService(Ci.nsIPrefBranch2);
+                getService(Ci.nsIPrefBranch);
     prefs.removeObserver(PREF_SELECTED_ACTION, this);
     prefs.removeObserver(PREF_SELECTED_READER, this);
     prefs.removeObserver(PREF_SELECTED_WEB, this);
@@ -1307,7 +1306,7 @@ FeedWriter.prototype = {
     }
     var faviconURI = makeURI(readerURI.prePath + "/favicon.ico");
     var self = this;
-    this._faviconService.setAndLoadFaviconForPage(readerURI, faviconURI, false,
+    this._faviconService.setAndFetchFaviconForPage(readerURI, faviconURI, false,
       function (aURI, aDataLen, aData, aMimeType) {
         if (aDataLen > 0) {
           var dataURL = "data:" + aMimeType + ";base64," +

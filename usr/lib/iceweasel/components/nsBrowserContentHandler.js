@@ -1,4 +1,4 @@
-//@line 38 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserContentHandler.js"
+//@line 4 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserContentHandler.js"
 
 Components.utils.import("resource://gre/modules/XPCOMUtils.jsm");
 Components.utils.import("resource://gre/modules/Services.jsm");
@@ -16,7 +16,6 @@ const nsIDocShellTreeItem    = Components.interfaces.nsIDocShellTreeItem;
 const nsIDOMChromeWindow     = Components.interfaces.nsIDOMChromeWindow;
 const nsIDOMWindow           = Components.interfaces.nsIDOMWindow;
 const nsIFileURL             = Components.interfaces.nsIFileURL;
-const nsIHttpProtocolHandler = Components.interfaces.nsIHttpProtocolHandler;
 const nsIInterfaceRequestor  = Components.interfaces.nsIInterfaceRequestor;
 const nsINetUtil             = Components.interfaces.nsINetUtil;
 const nsIPrefBranch          = Components.interfaces.nsIPrefBranch;
@@ -29,13 +28,12 @@ const nsIWindowWatcher       = Components.interfaces.nsIWindowWatcher;
 const nsIWebNavigationInfo   = Components.interfaces.nsIWebNavigationInfo;
 const nsIBrowserSearchService = Components.interfaces.nsIBrowserSearchService;
 const nsICommandLineValidator = Components.interfaces.nsICommandLineValidator;
-const nsIXULAppInfo          = Components.interfaces.nsIXULAppInfo;
 
 const NS_BINDING_ABORTED = Components.results.NS_BINDING_ABORTED;
 const NS_ERROR_WONT_HANDLE_CONTENT = 0x805d0001;
 const NS_ERROR_ABORT = Components.results.NS_ERROR_ABORT;
 
-const URI_INHERITS_SECURITY_CONTEXT = nsIHttpProtocolHandler
+const URI_INHERITS_SECURITY_CONTEXT = Components.interfaces.nsIHttpProtocolHandler
                                         .URI_INHERITS_SECURITY_CONTEXT;
 
 function shouldLoadURI(aURI) {
@@ -101,16 +99,14 @@ function needHomepageOverride(prefb) {
   if (savedmstone == "ignore")
     return OVERRIDE_NONE;
 
-  var mstone = Components.classes["@mozilla.org/network/protocol;1?name=http"]
-                         .getService(nsIHttpProtocolHandler).misc;
+  var mstone = Services.appinfo.platformVersion;
 
   var savedBuildID = null;
   try {
     savedBuildID = prefb.getCharPref("browser.startup.homepage_override.buildID");
   } catch (e) {}
 
-  var buildID =  Components.classes["@mozilla.org/xre/app-info;1"]
-                           .getService(nsIXULAppInfo).platformBuildID;
+  var buildID = Services.appinfo.platformBuildID;
 
   if (mstone != savedmstone) {
     // Bug 462254. Previous releases had a default pref to suppress the EULA
@@ -247,7 +243,7 @@ function openWindow(parent, url, target, features, args, noExternalArgs) {
   }
 
   // Pass these as null to ensure that we always trigger the "single URL"
-  // behavior in browser.js's BrowserStartup (which handles the window
+  // behavior in browser.js's gBrowserInit.onLoad (which handles the window
   // arguments)
   argArray.AppendElement(null); // charset
   argArray.AppendElement(null); // referer
@@ -258,14 +254,33 @@ function openWindow(parent, url, target, features, args, noExternalArgs) {
 }
 
 function openPreferences() {
-  var features = "chrome,titlebar,toolbar,centerscreen,dialog=no";
-  var url = "chrome://browser/content/preferences/preferences.xul";
+  if (Services.prefs.getBoolPref("browser.preferences.inContent")) { 
+    var sa = Components.classes["@mozilla.org/supports-array;1"]
+                       .createInstance(Components.interfaces.nsISupportsArray);
 
-  var win = getMostRecentWindow("Browser:Preferences");
-  if (win) {
-    win.focus();
+    var wuri = Components.classes["@mozilla.org/supports-string;1"]
+                         .createInstance(Components.interfaces.nsISupportsString);
+    wuri.data = "about:preferences";
+
+    sa.AppendElement(wuri);
+
+    var wwatch = Components.classes["@mozilla.org/embedcomp/window-watcher;1"]
+                           .getService(nsIWindowWatcher);
+
+    wwatch.openWindow(null, gBrowserContentHandler.chromeURL,
+                      "_blank",
+                      "chrome,dialog=no,all",
+                      sa);
   } else {
-    openWindow(null, url, "_blank", features);
+    var features = "chrome,titlebar,toolbar,centerscreen,dialog=no";
+    var url = "chrome://browser/content/preferences/preferences.xul";
+    
+    var win = getMostRecentWindow("Browser:Preferences");
+    if (win) {
+      win.focus();
+    } else {
+      openWindow(null, url, "_blank", features);
+    }
   }
 }
 
@@ -515,15 +530,15 @@ nsBrowserContentHandler.prototype = {
       cmdLine.preventDefault = true;
     }
 
-//@line 567 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserContentHandler.js"
+//@line 548 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserContentHandler.js"
   },
 
   helpInfo : "  -browser           Open a browser window.\n" +
              "  -new-window  <url> Open <url> in a new window.\n" +
              "  -new-tab     <url> Open <url> in a new tab.\n" +
-//@line 575 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserContentHandler.js"
+//@line 556 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserContentHandler.js"
              "  -preferences       Open Preferences dialog.\n" +
-//@line 577 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserContentHandler.js"
+//@line 558 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserContentHandler.js"
              "  -search     <term> Search <term> with your default search engine.\n",
 
   /* nsIBrowserHandler */
@@ -535,6 +550,15 @@ nsBrowserContentHandler.prototype = {
     var overridePage = "";
     var haveUpdateSession = false;
     try {
+      // Read the old value of homepage_override.mstone before
+      // needHomepageOverride updates it, so that we can later add it to the
+      // URL if we do end up showing an overridePage. This makes it possible
+      // to have the overridePage's content vary depending on the version we're
+      // upgrading from.
+      let old_mstone = "unknown";
+      try {
+        old_mstone = Services.prefs.getCharPref("browser.startup.homepage_override.mstone");
+      } catch (ex) {}
       let override = needHomepageOverride(prefb);
       if (override != OVERRIDE_NONE) {
         // Setup the default search engine to about:home page.
@@ -558,6 +582,8 @@ nsBrowserContentHandler.prototype = {
             overridePage = Services.urlFormatter.formatURLPref("startup.homepage_override_url");
             if (prefb.prefHasUserValue("app.update.postupdate"))
               overridePage = getPostUpdateOverridePage(overridePage);
+
+            overridePage = overridePage.replace("%OLD_VERSION%", old_mstone);
             break;
         }
       }
@@ -701,40 +727,19 @@ nsDefaultCommandLineHandler.prototype = {
     return this;
   },
 
-  // List of uri's that were passed via the command line without the app
-  // running and have already been handled. This is compared against uri's
-  // opened using DDE on Win32 so we only open one of the requests.
-  _handledURIs: [ ],
-//@line 761 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserContentHandler.js"
+//@line 749 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserContentHandler.js"
 
   /* nsICommandLineHandler */
   handle : function dch_handle(cmdLine) {
     var urilist = [];
 
-//@line 787 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserContentHandler.js"
+//@line 775 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserContentHandler.js"
 
     try {
       var ar;
       while ((ar = cmdLine.handleFlagWithParam("url", false))) {
-        var found = false;
         var uri = resolveURIInternal(cmdLine, ar);
-        // count will never be greater than zero except on Win32.
-        var count = this._handledURIs.length;
-        for (var i = 0; i < count; ++i) {
-          if (this._handledURIs[i].spec == uri.spec) {
-            this._handledURIs.splice(i, 1);
-            found = true;
-            cmdLine.preventDefault = true;
-            break;
-          }
-        }
-        if (!found) {
-          urilist.push(uri);
-          // The requestpending command line flag is only used on Win32.
-          if (cmdLine.handleFlag("requestpending", false) &&
-              cmdLine.state == nsICommandLine.STATE_INITIAL_LAUNCH)
-            this._handledURIs.push(uri)
-        }
+        urilist.push(uri);
       }
     }
     catch (e) {
@@ -798,7 +803,7 @@ let AboutHomeUtils = {
     let aboutHomeURI = Services.io.newURI("moz-safe-about:home", null, null);
     let principal = Components.classes["@mozilla.org/scriptsecuritymanager;1"].
                     getService(Components.interfaces.nsIScriptSecurityManager).
-                    getCodebasePrincipal(aboutHomeURI);
+                    getNoAppCodebasePrincipal(aboutHomeURI);
     let dsm = Components.classes["@mozilla.org/dom/storagemanager;1"].
               getService(Components.interfaces.nsIDOMStorageManager);
     return dsm.getLocalStorageForPrincipal(principal, "");
@@ -819,7 +824,7 @@ let AboutHomeUtils = {
 
   loadSnippetsURL: function AHU_loadSnippetsURL()
   {
-    const STARTPAGE_VERSION = 1;
+    const STARTPAGE_VERSION = 3;
     let updateURL = Services.prefs
                             .getCharPref(this.SNIPPETS_URL_PREF)
                             .replace("%STARTPAGE_VERSION%", STARTPAGE_VERSION);

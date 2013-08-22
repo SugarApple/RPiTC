@@ -11,7 +11,7 @@ Choices-eu.UTF-8: Lokal guztiak, ${locales}
 Choices-fi.UTF-8: Kaikki maa-asetukset, ${locales}
 Choices-fr.UTF-8: Tous les choix possibles, ${locales}
 Choices-gl.UTF-8: Todas as configuracións locais, ${locales}
-Choices-hu.UTF-8: Minden helyi beállítás, ${locales}
+Choices-hu.UTF-8: Minden nyelvi beállítás, ${locales}
 Choices-it.UTF-8: Tutti i «locale», ${locales}
 Choices-ja.UTF-8: すべてのロケール, ${locales}
 Choices-ko.UTF-8: 모든 로케일, ${locales}
@@ -81,10 +81,10 @@ Description-gl.UTF-8: Configuracións locais a xerar:
  O sistema de configuracións locais permite ter varios idiomas, e que os usuarios poidan empregar o seu idioma, país, alfabeto, orde alfabética, etc.
  .
  Escolla as configuracións locais a xerar. Debería escoller configuracións locais UTF-8 por defecto, especialmente en instalacións novas. Os outros xogos de caracteres poden ser útiles para a compatibilidade con sistemas e software antigos.
-Description-hu.UTF-8: Létrehozandó helyi beállítások:
- A helyi beállítások (locales) egy nyelveket váltó keretrendszer, mely lehetővé teszi, hogy a felhasználó saját nyelvét, országát, karaktereit használhassa.
+Description-hu.UTF-8: Létrehozandó nyelvi beállítások:
+ A nyelvi beállítások (locales) egy nyelveket váltó keretrendszer, mely lehetővé teszi, hogy a felhasználó saját nyelvét, országát, karaktereit használhassa.
  .
- Válaszd ki, milyen helyi beállításokat hozzunk létre. UTF-8 helyi beállításokat érdemes alapértelmezetten választani. Más karakter-készletek elavult rendszerekhez és szoftverekhez való kapcsolódáskor lehetnek jók.
+ Válaszd ki, milyen nyelvi beállításokat hozzunk létre. UTF-8 nyelvi beállításokat érdemes alapértelmezetten választani. Más karakter-készletek elavult rendszerekhez és szoftverekhez való kapcsolódáskor lehetnek jók.
 Description-it.UTF-8: «Locale» da generare:
  I «locale» sono l'infrastruttura che permette di cambiare la lingua e consente agli utenti di utilizzare la propria lingua, paese, caratteri, criteri di ordinamento, ecc.
  .
@@ -246,8 +246,8 @@ Description-gl.UTF-8: Configuración local por defecto para o ambiente:
  Moitos paquetes de Debian empregan configuracións locais para amosar texto aos usuarios no idioma correcto. Pode escoller unha configuración local por defecto para o sistema entre as configuracións locais xeradas.
  .
  Con isto hase escoller o idioma de todo o sistema. Se este sistema ten varios usuarios e non todos coñecen o idioma por defecto, han ter dificultades.
-Description-hu.UTF-8: A rendszer alap helyi beállítása:
- A Debian számos csomagja helyi beállításokat használ a szövegek a felhasználó számára megfelelő nyelvű megjelenítésére . Választhatsz egy alapértelmezett.
+Description-hu.UTF-8: A rendszer alap nyelvi beállítása:
+ A Debian számos csomagja nyelvi beállításokat használ a szövegek a felhasználó számára megfelelő nyelvű megjelenítésére . Választhatsz egy alapértelmezett.
  .
  Ez kiválasztja az egész rendszer alapértelmezett nyelvét. Több nyelvű rendszeren, ahol nem minden felhasználó beszéli az alapértelmezett nyelvet további beállítások kellenek.
 Description-it.UTF-8: «Locale» predefinito sul sistema:

@@ -127,7 +127,7 @@ ENDECHO
 		;;
 	# identification
 	--version)
-		echo "5.9.20130504"
+		echo "5.9.20130608"
 		;;
 	--abi-version)
 		echo "5"

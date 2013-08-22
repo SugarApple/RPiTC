@@ -1,10 +1,10 @@
-b460999a5d483cf5754148ebf6a7fc1d  bin/findmnt
-f1db3504387223220aa7fcdc7ba8c82b  bin/mount
-a463da58a9cb11e013d5997b5b0b2d43  bin/umount
-85a716070172011424d886d49787edba  sbin/losetup
-c0774ecbb982fce87e158c806b793406  sbin/swapon
+d4ea6e9137113809d91cf0a06efbc81e  bin/findmnt
+0ddbeafef4bdaebdfe11b2a0adee5564  bin/mount
+15ed7a5bd10cd9f3a7178f73653318b8  bin/umount
+189ffa2fd329ad9667a0e08b876ada0a  sbin/losetup
+3d6397ff7bfed110541c9e06b8aa8107  sbin/swapon
 15c2787f9139e903ccae774101babfbf  usr/share/doc/mount/README.mount
-9f34671d35096315c856db6817fe072a  usr/share/doc/mount/changelog.Debian.gz
+fa14c3800eaa629d3322fd774e406c4f  usr/share/doc/mount/changelog.Debian.gz
 9423346b962b53fe2ea6cb6e66f32108  usr/share/doc/mount/changelog.gz
 49beacb15b769895d680b900b45c45f6  usr/share/doc/mount/copyright
 586182189d4cf19cdeb795db6118db9b  usr/share/doc/mount/examples/fstab

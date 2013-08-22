@@ -110,6 +110,7 @@ libdrm.so.2 libdrm2 #MINVER#
  drmModePageFlip@Base 2.4.17
  drmModeRmFB@Base 2.4.3
  drmModeSetCrtc@Base 2.4.3
+ drmModeSetCursor2@Base 2.4.46
  drmModeSetCursor@Base 2.4.3
  drmModeSetPlane@Base 2.4.30
  drmMsg@Base 2.4.1

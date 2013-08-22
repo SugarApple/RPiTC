@@ -73,6 +73,7 @@
     <keyword type="property" name="The &quot;proxy&quot; property" link="SpiceSession.html#SpiceSession--proxy"/>
     <keyword type="property" name="The &quot;pubkey&quot; property" link="SpiceSession.html#SpiceSession--pubkey"/>
     <keyword type="property" name="The &quot;read-only&quot; property" link="SpiceSession.html#SpiceSession--read-only"/>
+    <keyword type="property" name="The &quot;secure-channels&quot; property" link="SpiceSession.html#SpiceSession--secure-channels"/>
     <keyword type="property" name="The &quot;smartcard-certificates&quot; property" link="SpiceSession.html#SpiceSession--smartcard-certificates"/>
     <keyword type="property" name="The &quot;smartcard-db&quot; property" link="SpiceSession.html#SpiceSession--smartcard-db"/>
     <keyword type="property" name="The &quot;tls-port&quot; property" link="SpiceSession.html#SpiceSession--tls-port"/>
@@ -81,6 +82,7 @@
     <keyword type="property" name="The &quot;verify&quot; property" link="SpiceSession.html#SpiceSession--verify"/>
     <keyword type="signal" name="The &quot;channel-destroy&quot; signal" link="SpiceSession.html#SpiceSession-channel-destroy"/>
     <keyword type="signal" name="The &quot;channel-new&quot; signal" link="SpiceSession.html#SpiceSession-channel-new"/>
+    <keyword type="signal" name="The &quot;mm-time-reset&quot; signal" link="SpiceSession.html#SpiceSession-mm-time-reset"/>
     <keyword type="enum" name="enum SpiceChannelEvent" link="SpiceChannel.html#SpiceChannelEvent-enum"/>
     <keyword type="struct" name="SpiceChannel" link="SpiceChannel.html#SpiceChannel-struct"/>
     <keyword type="struct" name="SpiceChannelClass" link="SpiceChannel.html#SpiceChannelClass"/>
@@ -167,6 +169,7 @@
     <keyword type="struct" name="struct SpicePlaybackChannel" link="SpicePlaybackChannel.html#SpicePlaybackChannel-struct"/>
     <keyword type="struct" name="struct SpicePlaybackChannelClass" link="SpicePlaybackChannel.html#SpicePlaybackChannelClass"/>
     <keyword type="function" name="spice_playback_channel_set_delay ()" link="SpicePlaybackChannel.html#spice-playback-channel-set-delay"/>
+    <keyword type="property" name="The &quot;min-latency&quot; property" link="SpicePlaybackChannel.html#SpicePlaybackChannel--min-latency"/>
     <keyword type="property" name="The &quot;mute&quot; property" link="SpicePlaybackChannel.html#SpicePlaybackChannel--mute"/>
     <keyword type="property" name="The &quot;nchannels&quot; property" link="SpicePlaybackChannel.html#SpicePlaybackChannel--nchannels"/>
     <keyword type="property" name="The &quot;volume&quot; property" link="SpicePlaybackChannel.html#SpicePlaybackChannel--volume"/>
@@ -253,9 +256,12 @@
     <keyword type="struct" name="struct SpiceSmartcardManagerClass" link="SpiceSmartcardManager.html#SpiceSmartcardManagerClass"/>
     <keyword type="struct" name="SpiceSmartcardReader" link="SpiceSmartcardManager.html#SpiceSmartcardReader"/>
     <keyword type="function" name="spice_smartcard_manager_get ()" link="SpiceSmartcardManager.html#spice-smartcard-manager-get"/>
-    <keyword type="function" name="spice_smartcard_manager_insert_card ()" link="SpiceSmartcardManager.html#spice-smartcard-manager-insert-card"/>
-    <keyword type="function" name="spice_smartcard_manager_remove_card ()" link="SpiceSmartcardManager.html#spice-smartcard-manager-remove-card"/>
+    <keyword type="function" name="spice_smartcard_manager_get_readers ()" link="SpiceSmartcardManager.html#spice-smartcard-manager-get-readers" since="0.20"/>
+    <keyword type="function" name="spice_smartcard_manager_insert_card ()" link="SpiceSmartcardManager.html#spice-smartcard-manager-insert-card" since="0.20"/>
+    <keyword type="function" name="spice_smartcard_manager_remove_card ()" link="SpiceSmartcardManager.html#spice-smartcard-manager-remove-card" since="0.20"/>
     <keyword type="function" name="spice_smartcard_reader_is_software ()" link="SpiceSmartcardManager.html#spice-smartcard-reader-is-software"/>
+    <keyword type="function" name="spice_smartcard_reader_insert_card ()" link="SpiceSmartcardManager.html#spice-smartcard-reader-insert-card"/>
+    <keyword type="function" name="spice_smartcard_reader_remove_card ()" link="SpiceSmartcardManager.html#spice-smartcard-reader-remove-card"/>
     <keyword type="signal" name="The &quot;card-inserted&quot; signal" link="SpiceSmartcardManager.html#SpiceSmartcardManager-card-inserted"/>
     <keyword type="signal" name="The &quot;card-removed&quot; signal" link="SpiceSmartcardManager.html#SpiceSmartcardManager-card-removed"/>
     <keyword type="signal" name="The &quot;reader-added&quot; signal" link="SpiceSmartcardManager.html#SpiceSmartcardManager-reader-added"/>
@@ -265,6 +271,7 @@
     <keyword type="struct" name="struct SpiceUsbDeviceManagerClass" link="SpiceUsbDeviceManager.html#SpiceUsbDeviceManagerClass"/>
     <keyword type="function" name="spice_usb_device_manager_get ()" link="SpiceUsbDeviceManager.html#spice-usb-device-manager-get"/>
     <keyword type="function" name="spice_usb_device_manager_get_devices ()" link="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices"/>
+    <keyword type="function" name="spice_usb_device_manager_get_devices_with_filter ()" link="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices-with-filter" since="0.20"/>
     <keyword type="function" name="spice_usb_device_manager_is_device_connected ()" link="SpiceUsbDeviceManager.html#spice-usb-device-manager-is-device-connected"/>
     <keyword type="function" name="spice_usb_device_manager_disconnect_device ()" link="SpiceUsbDeviceManager.html#spice-usb-device-manager-disconnect-device"/>
     <keyword type="function" name="spice_usb_device_manager_can_redirect_device ()" link="SpiceUsbDeviceManager.html#spice-usb-device-manager-can-redirect-device"/>

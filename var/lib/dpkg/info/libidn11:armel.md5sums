@@ -1,9 +1,9 @@
-1c2f1e0c20ce700b87e3ce6dc6b183d1  usr/lib/arm-linux-gnueabi/libidn.so.11.6.8
-1aefbcfac9c573b0470502cb8645bf67  usr/share/doc/libidn11/AUTHORS.gz
-1d92f06f95bc14926f08664d34a23b4c  usr/share/doc/libidn11/NEWS.gz
-5594535187e807613eb2a869c8d82f09  usr/share/doc/libidn11/README
-e586485b8636febad510520c89b67093  usr/share/doc/libidn11/THANKS
-52aac06d58375906ba2532554c85826f  usr/share/doc/libidn11/TODO
-3bfeb127e208cf8e1cc354f134193f4e  usr/share/doc/libidn11/changelog.Debian.gz
-ec02b2382d55e806dfd750a2f304749e  usr/share/doc/libidn11/changelog.gz
+46120df6f7b30fa6ca13632fa87f3434  usr/lib/arm-linux-gnueabi/libidn.so.11.6.11
+48ca8a9debc2cf3b4e6127bdc910a4d2  usr/share/doc/libidn11/AUTHORS.gz
+029df489e0d281360f24c586d5911add  usr/share/doc/libidn11/NEWS.gz
+158a20ecebebe7e3410da63fb82eb735  usr/share/doc/libidn11/README
+4ced3cf0323f2f65240ac674ffb93b07  usr/share/doc/libidn11/THANKS
+f819a8ac6eb576a9945e037b004e17de  usr/share/doc/libidn11/TODO
+fbd2576eb9ba7b21d60a76f832addce6  usr/share/doc/libidn11/changelog.Debian.gz
+8ea62501337a0f398b878371db693c5c  usr/share/doc/libidn11/changelog.gz
 1d3c88f1eea864fbee89243be995e7eb  usr/share/doc/libidn11/copyright

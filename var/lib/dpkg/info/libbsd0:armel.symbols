@@ -4,6 +4,8 @@ libbsd.so.0 libbsd0 #MINVER#
  LIBBSD_0.2@LIBBSD_0.2 0.2.0
  LIBBSD_0.3@LIBBSD_0.3 0.3.0
  LIBBSD_0.4@LIBBSD_0.4 0.4.0
+ LIBBSD_0.5@LIBBSD_0.5 0.5.0
+ LIBBSD_0.6@LIBBSD_0.6 0.6.0
  MD5Data@LIBBSD_0.0 0.0
  MD5End@LIBBSD_0.0 0.0
  MD5File@LIBBSD_0.0 0.0
@@ -25,8 +27,10 @@ libbsd.so.0 libbsd0 #MINVER#
  errc@LIBBSD_0.0 0.0
  expand_number@LIBBSD_0.4 0.4.0
  fgetln@LIBBSD_0.0 0.0
+ fgetwln@LIBBSD_0.5 0.5.0
  flopen@LIBBSD_0.2 0.2.0
  fmtcheck@LIBBSD_0.0 0.0
+ fparseln@LIBBSD_0.5 0.5.0
  fpurge@LIBBSD_0.3 0.3.0
  getmode@LIBBSD_0.0 0.0
  getpeereid@LIBBSD_0.3 0.3.0
@@ -46,11 +50,14 @@ libbsd.so.0 libbsd0 #MINVER#
  reallocf@LIBBSD_0.3 0.3.0
  setmode@LIBBSD_0.0 0.0
  setproctitle@LIBBSD_0.2 0.2.0
+ setproctitle@LIBBSD_0.5 0.5.0
+ setproctitle_init@LIBBSD_0.6 0.6.0
  setprogname@LIBBSD_0.0 0.0
  sradixsort@LIBBSD_0.3 0.3.0
  strlcat@LIBBSD_0.0 0.0
  strlcpy@LIBBSD_0.0 0.0
  strmode@LIBBSD_0.1 0.1.0
+ strnstr@LIBBSD_0.5 0.5.0
  strnunvis@LIBBSD_0.2 0.2.0
  strnvis@LIBBSD_0.2 0.2.0
  strtonum@LIBBSD_0.2 0.2.0
@@ -63,3 +70,5 @@ libbsd.so.0 libbsd0 #MINVER#
  vis@LIBBSD_0.0 0.0
  vwarnc@LIBBSD_0.0 0.0
  warnc@LIBBSD_0.0 0.0
+ wcslcat@LIBBSD_0.5 0.5.0
+ wcslcpy@LIBBSD_0.5 0.5.0

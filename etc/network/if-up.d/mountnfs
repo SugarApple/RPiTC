@@ -121,6 +121,9 @@ do_start() {
 exit_unless_last_interface() {
     ifaces="$(ifquery --list)"
     for i in $ifaces ; do
+	if [ "$i" = "lo" ]; then
+	    continue
+	fi
 	if ! grep -q $i /etc/network/run/ifstate ; then
 	    msg="if-up.d/mountnfs[$IFACE]: waiting for interface $i before doing NFS mounts"
 	    log_warning_msg "$msg"

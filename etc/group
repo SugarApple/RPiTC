@@ -18,7 +18,7 @@ voice:x:22:
 cdrom:x:24:
 floppy:x:25:
 tape:x:26:
-sudo:x:27:
+sudo:x:27:rpitc
 audio:x:29:
 dip:x:30:
 www-data:x:33:
@@ -38,7 +38,9 @@ games:x:60:
 users:x:100:
 nogroup:x:65534:
 libuuid:x:101:
-netdev:x:102:
+ssh:x:102:
 messagebus:x:103:
-ssh:x:104:
+netdev:x:104:
 ntp:x:105:
+rpitc:x:1000:
+utempter:x:106:

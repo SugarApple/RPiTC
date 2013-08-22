@@ -365,10 +365,6 @@ WINPR_API BOOL CertCloseStore(HCERTSTORE hCertStore, DWORD dwFlags);
 #define CertOpenSystemStore	CertOpenSystemStoreA
 #endif
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 WINPR_API PCCERT_CONTEXT CertFindCertificateInStore(HCERTSTORE hCertStore, DWORD dwCertEncodingType,
 		DWORD dwFindFlags, DWORD dwFindType, const void* pvFindPara, PCCERT_CONTEXT pPrevCertContext);
 
@@ -378,10 +374,6 @@ DWORD CertGetNameStringW(PCCERT_CONTEXT pCertContext, DWORD dwType,
 		DWORD dwFlags, void* pvTypePara, LPWSTR pszNameString, DWORD cchNameString);
 DWORD CertGetNameStringA(PCCERT_CONTEXT pCertContext, DWORD dwType,
 		DWORD dwFlags, void* pvTypePara, LPSTR pszNameString, DWORD cchNameString);
-
-#ifdef __cplusplus
-}
-#endif
 
 #ifdef UNICODE
 #define CertGetNameString	CertGetNameStringW

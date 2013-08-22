@@ -1,3 +1,4 @@
 /etc/logrotate.d/apt
 /etc/apt/apt.conf.d/01autoremove
+/etc/kernel/postinst.d/apt-auto-removal
 /etc/cron.daily/apt

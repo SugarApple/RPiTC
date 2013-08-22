@@ -6,6 +6,6 @@
 /usr/share
 /usr/share/doc
 /usr/share/doc/libedit2
-/usr/share/doc/libedit2/copyright
 /usr/share/doc/libedit2/changelog.Debian.gz
+/usr/share/doc/libedit2/copyright
 /usr/lib/arm-linux-gnueabi/libedit.so.2

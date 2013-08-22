@@ -24,7 +24,7 @@
 #include <freerdp/api.h>
 #include <freerdp/types.h>
 
-#include <winpr/stream.h>
+#include <freerdp/utils/stream.h>
 
 /* a safer free helper */
 #define zfree(p) do { if (p != NULL) {free(p); p = NULL;} } while (0)

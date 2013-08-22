@@ -1,0 +1,6 @@
+4b74e187af36867395d054aac56b6bf5  opt/Citrix/ICAClient/ctxusb
+40eda163b9b2aa1d582b4d3d550e870e  opt/Citrix/ICAClient/VDGUSB.DLL
+97024a4a1d26ade5ebe150ffe776e64d  opt/Citrix/ICAClient/ctxusbd
+6f338f025587da199a085a2c5bdeec16  opt/Citrix/ICAClient/ctx_usb_isactive
+703ad66065b9b6f09ae6201ac7753490  usr/share/doc/ctxusb/copyright
+57faa6c913c03c3d36daa1b5dc7e25bb  usr/share/doc/ctxusb/changelog.gz

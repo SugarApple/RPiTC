@@ -4,10 +4,6 @@
 /usr/lib/arm-linux-gnueabi
 /usr/lib/arm-linux-gnueabi/libglapi.so.0.0.0
 /usr/share
-/usr/share/doc
-/usr/share/doc/libglapi-mesa
-/usr/share/doc/libglapi-mesa/copyright
-/usr/share/doc/libglapi-mesa/changelog.Debian.gz
 /usr/share/lintian
 /usr/share/lintian/overrides
 /usr/share/lintian/overrides/libglapi-mesa
@@ -15,4 +11,8 @@
 /usr/share/bug/libglapi-mesa
 /usr/share/bug/libglapi-mesa/control
 /usr/share/bug/libglapi-mesa/script
+/usr/share/doc
+/usr/share/doc/libglapi-mesa
+/usr/share/doc/libglapi-mesa/changelog.Debian.gz
+/usr/share/doc/libglapi-mesa/copyright
 /usr/lib/arm-linux-gnueabi/libglapi.so.0

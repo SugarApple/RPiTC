@@ -1,0 +1,42 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA1
+
+Origin: Gibbio
+Label: RPi-TC ARMv6j
+Codename: sid
+Date: Tue, 20 Aug 2013 20:49:29 UTC
+Architectures: armel
+Components: main
+Description: Raspberry Pi Thin Client project ARMv6j package
+MD5Sum:
+ a2ea3ca21995f99cfd685aa5b7958b7b 2246156 main/binary-armel/Packages
+ 955828fd98a23a8b1f201807a6311f75 517064 main/binary-armel/Packages.gz
+ 8c2f50cc5bb68c21fa7010cd08f2e686 133 main/binary-armel/Release
+ d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
+ 7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
+ 4dfa43461d43e4f72b7f541fa458e720 134 main/source/Release
+SHA1:
+ 6ca2d5f2f5554a48556d65e0f73b4d93436fca8d 2246156 main/binary-armel/Packages
+ 7f19075174b56b8ccd72b07f955ad7981f75bdb8 517064 main/binary-armel/Packages.gz
+ 7fdd1df687dccc5673f785095a4878ea3103ec70 133 main/binary-armel/Release
+ da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
+ 46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
+ c7d0eda496690d72d81a5d53d79356b294680e0d 134 main/source/Release
+SHA256:
+ 23b79e42b08fc7171a07bd69963cee33ea5742b14690b471d04047094860db55 2246156 main/binary-armel/Packages
+ 9fd3da75adfdc2d72c7d8bceaff8b37fb03df4c31910b1e37828e25bbaef4ac1 517064 main/binary-armel/Packages.gz
+ fbe33bb375890e28c1237fc9b0b9d2e94b7e780427b5da2d0276a0b9a730dd4f 133 main/binary-armel/Release
+ e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
+ 59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
+ 26e99fd50e026dce88072bb9aa60729e515494c72eb76be7148fe988c199b0b0 134 main/source/Release
+-----BEGIN PGP SIGNATURE-----
+Version: GnuPG v1.4.11 (GNU/Linux)
+
+iQEcBAEBAgAGBQJSE9ZZAAoJEGx3afC1EkpW4SAH/2t6Bdk2u0FkcfJSaIGKwJGW
+Hnp3d4SEVQivsdWyoy8Tr2HdgrUhtJpJhh2suk9FL4dTMhdjJ0B3jpGAe+WJmELJ
+Vf1Un17YIgGEMGb3J+aeHUO/pGoXEyZA5k2OiMxo/GOb/weagoJvWmXoCDcWk6b7
+HNwoDRilfDftWG/oBIeq9ZD9A3tahFHPReuMS59MH6CrJEuhBrmr2UgcCFmQCM8r
+l+FyaZKcVFqPCg02ebAYl/aMHXDSqZFSNSVFLL75ric1wyES/UBVMy30RyVXEIkE
+0xCghetmhIgjM+g/8pUKRSHvxCdfZJvz51PlBi241nK1nvN3wzzxqCeoUGy9Uug=
+=9UQE
+-----END PGP SIGNATURE-----

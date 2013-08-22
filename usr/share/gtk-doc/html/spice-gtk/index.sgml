@@ -56,6 +56,7 @@
 <ANCHOR id="SpiceSession--proxy" href="spice-gtk/SpiceSession.html#SpiceSession--proxy">
 <ANCHOR id="SpiceSession--pubkey" href="spice-gtk/SpiceSession.html#SpiceSession--pubkey">
 <ANCHOR id="SpiceSession--read-only" href="spice-gtk/SpiceSession.html#SpiceSession--read-only">
+<ANCHOR id="SpiceSession--secure-channels" href="spice-gtk/SpiceSession.html#SpiceSession--secure-channels">
 <ANCHOR id="SpiceSession--smartcard-certificates" href="spice-gtk/SpiceSession.html#SpiceSession--smartcard-certificates">
 <ANCHOR id="SpiceSession--smartcard-db" href="spice-gtk/SpiceSession.html#SpiceSession--smartcard-db">
 <ANCHOR id="SpiceSession--tls-port" href="spice-gtk/SpiceSession.html#SpiceSession--tls-port">
@@ -65,6 +66,7 @@
 <ANCHOR id="SpiceSession.signal-details" href="spice-gtk/SpiceSession.html#SpiceSession.signal-details">
 <ANCHOR id="SpiceSession-channel-destroy" href="spice-gtk/SpiceSession.html#SpiceSession-channel-destroy">
 <ANCHOR id="SpiceSession-channel-new" href="spice-gtk/SpiceSession.html#SpiceSession-channel-new">
+<ANCHOR id="SpiceSession-mm-time-reset" href="spice-gtk/SpiceSession.html#SpiceSession-mm-time-reset">
 <ANCHOR id="SpiceSession.see-also" href="spice-gtk/SpiceSession.html#SpiceSession.see-also">
 <ANCHOR id="SpiceChannel" href="spice-gtk/SpiceChannel.html">
 <ANCHOR id="SpiceChannel.stability-level" href="spice-gtk/SpiceChannel.html#SpiceChannel.stability-level">
@@ -225,6 +227,7 @@
 <ANCHOR id="SpicePlaybackChannelClass" href="spice-gtk/SpicePlaybackChannel.html#SpicePlaybackChannelClass">
 <ANCHOR id="spice-playback-channel-set-delay" href="spice-gtk/SpicePlaybackChannel.html#spice-playback-channel-set-delay">
 <ANCHOR id="SpicePlaybackChannel.property-details" href="spice-gtk/SpicePlaybackChannel.html#SpicePlaybackChannel.property-details">
+<ANCHOR id="SpicePlaybackChannel--min-latency" href="spice-gtk/SpicePlaybackChannel.html#SpicePlaybackChannel--min-latency">
 <ANCHOR id="SpicePlaybackChannel--mute" href="spice-gtk/SpicePlaybackChannel.html#SpicePlaybackChannel--mute">
 <ANCHOR id="SpicePlaybackChannel--nchannels" href="spice-gtk/SpicePlaybackChannel.html#SpicePlaybackChannel--nchannels">
 <ANCHOR id="SpicePlaybackChannel--volume" href="spice-gtk/SpicePlaybackChannel.html#SpicePlaybackChannel--volume">
@@ -396,9 +399,12 @@
 <ANCHOR id="SpiceSmartcardManagerClass" href="spice-gtk/SpiceSmartcardManager.html#SpiceSmartcardManagerClass">
 <ANCHOR id="SpiceSmartcardReader" href="spice-gtk/SpiceSmartcardManager.html#SpiceSmartcardReader">
 <ANCHOR id="spice-smartcard-manager-get" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-manager-get">
+<ANCHOR id="spice-smartcard-manager-get-readers" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-manager-get-readers">
 <ANCHOR id="spice-smartcard-manager-insert-card" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-manager-insert-card">
 <ANCHOR id="spice-smartcard-manager-remove-card" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-manager-remove-card">
 <ANCHOR id="spice-smartcard-reader-is-software" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-reader-is-software">
+<ANCHOR id="spice-smartcard-reader-insert-card" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-reader-insert-card">
+<ANCHOR id="spice-smartcard-reader-remove-card" href="spice-gtk/SpiceSmartcardManager.html#spice-smartcard-reader-remove-card">
 <ANCHOR id="SpiceSmartcardManager.signal-details" href="spice-gtk/SpiceSmartcardManager.html#SpiceSmartcardManager.signal-details">
 <ANCHOR id="SpiceSmartcardManager-card-inserted" href="spice-gtk/SpiceSmartcardManager.html#SpiceSmartcardManager-card-inserted">
 <ANCHOR id="SpiceSmartcardManager-card-removed" href="spice-gtk/SpiceSmartcardManager.html#SpiceSmartcardManager-card-removed">
@@ -419,6 +425,7 @@
 <ANCHOR id="SpiceUsbDeviceManagerClass" href="spice-gtk/SpiceUsbDeviceManager.html#SpiceUsbDeviceManagerClass">
 <ANCHOR id="spice-usb-device-manager-get" href="spice-gtk/SpiceUsbDeviceManager.html#spice-usb-device-manager-get">
 <ANCHOR id="spice-usb-device-manager-get-devices" href="spice-gtk/SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices">
+<ANCHOR id="spice-usb-device-manager-get-devices-with-filter" href="spice-gtk/SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices-with-filter">
 <ANCHOR id="spice-usb-device-manager-is-device-connected" href="spice-gtk/SpiceUsbDeviceManager.html#spice-usb-device-manager-is-device-connected">
 <ANCHOR id="spice-usb-device-manager-disconnect-device" href="spice-gtk/SpiceUsbDeviceManager.html#spice-usb-device-manager-disconnect-device">
 <ANCHOR id="spice-usb-device-manager-can-redirect-device" href="spice-gtk/SpiceUsbDeviceManager.html#spice-usb-device-manager-can-redirect-device">

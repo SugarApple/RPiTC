@@ -20,7 +20,6 @@
 #ifndef WINPR_INPUT_H
 #define WINPR_INPUT_H
 
-
 #include <winpr/winpr.h>
 #include <winpr/wtypes.h>
 
@@ -855,10 +854,6 @@
 #define APPLE_VK_DownArrow		0x7D
 #define APPLE_VK_UpArrow		0x7E
 
-#ifdef __cplusplus
-extern "C" {
-#endif
-
 /**
  * Functions
  */
@@ -874,9 +869,5 @@ WINPR_API DWORD GetVirtualScanCodeFromVirtualKeyCode(DWORD vkcode, DWORD dwKeybo
 #define KEYCODE_TYPE_EVDEV		0x00000002
 
 WINPR_API DWORD GetVirtualKeyCodeFromKeycode(DWORD keycode, DWORD dwFlags);
-
-#ifdef __cplusplus
-}
-#endif
 
 #endif /* WINPR_INPUT_H */

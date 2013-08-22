@@ -165,6 +165,7 @@ libsqlite3.so.0 libsqlite3-0 #MINVER#
  sqlite3_stmt_busy@Base 3.7.10
  sqlite3_stmt_readonly@Base 3.7.4
  sqlite3_stmt_status@Base 3.6.4
+ sqlite3_strglob@Base 3.7.17
  sqlite3_stricmp@Base 3.7.11
  sqlite3_strnicmp@Base 3.6.17
  sqlite3_table_column_metadata@Base 3.5.9

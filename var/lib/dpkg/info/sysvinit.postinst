@@ -96,7 +96,7 @@ fi
 
 # If systemd is running, don't restart init or doing any initctl
 # migration.
-if [ -e /sys/fs/cgroup/systemd ]; then
+if [ -d /run/systemd/system ]; then
 	restart=no
 fi
 if [ "$(uname -s)" = "GNU" ]; then

@@ -1,11 +1,11 @@
-a293d13516258ac7ead98eb34d46f169  usr/include/dialog.h
-de3ece09fba8434f6d480e04998c978a  usr/include/dlg_config.h
+2a1da623ad2038350525750cc42501e4  usr/include/dialog.h
+8a02c6f47376779e17b0e14877930c27  usr/include/dlg_config.h
 c09cc62579aad870287c204fc038936f  usr/include/dlg_colors.h
 27f5c1d353291eb7e9f9dea5798ac753  usr/include/dlg_keys.h
-8bb1cdc6ebe84eb378d823e3991853b7  usr/lib/libdialog.a
-d17624f6f1f015a2bb2dd4ee5d892280  usr/bin/dialog
+aba8290bf7f287ffd72e9281f6f147c0  usr/lib/libdialog.a
+0ad0a9500dfb54309967359ab84a3c77  usr/bin/dialog
 bf175e90dfee4e41a5a9fda2d0221e98  usr/share/perl5/dialog.pl
-41e97f77a708f3a447d3ea5facae251b  usr/share/doc/dialog/CHANGES.gz
+ab0e8e5fa22fca590ae1d9c98a869a24  usr/share/doc/dialog/CHANGES.gz
 880b586058699fa437188f5929b978c4  usr/share/doc/dialog/examples/timebox-stdout
 0216612307306def15cf33b0e7449028  usr/share/doc/dialog/examples/menubox2
 0990e0ed0694951329382c239ff58a2f  usr/share/doc/dialog/examples/setup-tempfile
@@ -84,9 +84,9 @@ f607edf48e6e281256f0ad7a53ab6317  usr/share/doc/dialog/examples/mixedform
 05e45e307b7d994bd70a8fccaebdc12c  usr/share/doc/dialog/examples/gauge0-input-fd
 f94c4bc13cd5c14835507f0389a91d51  usr/share/doc/dialog/examples/radiolist10
 b8903c19bf81ac28db7ab5654c4e7772  usr/share/doc/dialog/examples/password1
-e6fbe2d89ef8a1e636b5fcff8e76527d  usr/share/doc/dialog/changelog.Debian.gz
+1793f3569e4672afc2487ef8f1997138  usr/share/doc/dialog/changelog.Debian.gz
 c81d580817adc67c58fa4741a36f2d7f  usr/share/doc/dialog/README
-dee4819dab45c9890b2712ce8caba474  usr/share/doc/dialog/copyright
+9a20ad1b2a448833a84dcb8f9973076a  usr/share/doc/dialog/copyright
 bcbb551cb3266475eebc0092ba50648a  usr/share/locale/id/LC_MESSAGES/dialog.mo
 607d2821b0c884b036976ccdc38d3c50  usr/share/locale/mk/LC_MESSAGES/dialog.mo
 1dd55fc97120602bc2e625d3ac127735  usr/share/locale/sq/LC_MESSAGES/dialog.mo
@@ -104,6 +104,7 @@ ecb7c25a458dc7e4d0f0316f0037b01e  usr/share/locale/pt_BR/LC_MESSAGES/dialog.mo
 621b0e0997a0445b021e63bf22afecad  usr/share/locale/th/LC_MESSAGES/dialog.mo
 22138609f07e605835dfddef1db42da8  usr/share/locale/rm/LC_MESSAGES/dialog.mo
 2f6b20de96805b7c4fcf82fba8dcd9e3  usr/share/locale/ca/LC_MESSAGES/dialog.mo
+1442680ca24313b615918a671b85f92c  usr/share/locale/an/LC_MESSAGES/dialog.mo
 cb738b50cdf957bb0bbef4d19e79a15f  usr/share/locale/sl/LC_MESSAGES/dialog.mo
 a44a00a5cf701a1daa5ce66647bdc283  usr/share/locale/lv/LC_MESSAGES/dialog.mo
 0ba918f86669cbdd78d558f1bcbf35b1  usr/share/locale/zh_CN/LC_MESSAGES/dialog.mo
@@ -120,7 +121,7 @@ f8244176f10e2c351c955f61b758d76c  usr/share/locale/be@latin/LC_MESSAGES/dialog.m
 d3507c277eefff329965ff02ee130d34  usr/share/locale/eu/LC_MESSAGES/dialog.mo
 13e86e1ad486f916ab26c012cd9385d7  usr/share/locale/el/LC_MESSAGES/dialog.mo
 8339b86595046e9f2cde52d1eb8a98ac  usr/share/locale/de/LC_MESSAGES/dialog.mo
-eecf2e1b46859955d75814986012bdcc  usr/share/locale/zh_TW/LC_MESSAGES/dialog.mo
+7dcde11f66ba6e6cc802f3da37649d49  usr/share/locale/zh_TW/LC_MESSAGES/dialog.mo
 b61e49c056f8efbafe62e06eb70c7372  usr/share/locale/gl/LC_MESSAGES/dialog.mo
 b23c5b082056fd4eae3b0f98976a9f44  usr/share/locale/es/LC_MESSAGES/dialog.mo
 572057a0cd717ff1432f1d629ce7d5c8  usr/share/locale/fr/LC_MESSAGES/dialog.mo
@@ -140,5 +141,5 @@ bfe33fcc74670aceb0a230ca24824a7d  usr/share/locale/ia/LC_MESSAGES/dialog.mo
 32ab4fd5f1871ad63de5ad2fc6fc0d03  usr/share/locale/ja/LC_MESSAGES/dialog.mo
 209a46696a7b67f238bae52577e008b6  usr/share/locale/pt/LC_MESSAGES/dialog.mo
 4a1fb085bfdfd3a965d688373f6097c9  usr/share/locale/ms/LC_MESSAGES/dialog.mo
-949bf41ef0dca403b18513af91221422  usr/share/man/man3/dialog.3.gz
-557c1b4d56d7ba148eba75a44a6f2f30  usr/share/man/man1/dialog.1.gz
+8837bf2996031fb2e794f5fd42774ad8  usr/share/man/man3/dialog.3.gz
+c5afeea158baf2557839c0552cccd059  usr/share/man/man1/dialog.1.gz

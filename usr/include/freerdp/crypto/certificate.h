@@ -28,9 +28,8 @@ typedef struct rdp_certificate_store rdpCertificateStore;
 
 #include <freerdp/api.h>
 #include <freerdp/settings.h>
-
+#include <freerdp/utils/stream.h>
 #include <winpr/print.h>
-#include <winpr/stream.h>
 
 struct rdp_certificate_data
 {

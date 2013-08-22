@@ -1,12 +1,12 @@
-dfbbb772df13bba35ad1370afc40c68d  bin/sed
-b56c771e3a99e1e1ec7cf75f54e849b7  usr/share/doc/sed/sedfaq.txt.gz
+060044b14aeec31264fc625367742573  bin/sed
+841f54621e7855113b8d945ea8d806ab  usr/share/doc/sed/sedfaq.txt.gz
 c52b77ba935e945ad02fd6d3dab62f39  usr/share/doc/sed/changelog.gz
 56177a65f8c5db03daf4c12a2bd971b1  usr/share/doc/sed/BUGS.gz
 e0bd2f7d8af1cd8953c3f8c95b210dea  usr/share/doc/sed/NEWS.gz
 5205cccc371d605b4f9e7f9649bcb0e6  usr/share/doc/sed/THANKS.gz
 dad8b4da08a3d734dbc9b744c8ab8bbc  usr/share/doc/sed/examples/dc.sed
 48b96dbd93c680973eefd5401319578c  usr/share/doc/sed/README.gz
-676958b63c06a5e24999581380613f5f  usr/share/doc/sed/changelog.Debian.gz
+e02f3fb11e013dec8bb16f38d2446e79  usr/share/doc/sed/changelog.Debian.gz
 27c0cc3a8e6b182f66de46caf568799a  usr/share/doc/sed/copyright
 eb80736aeb5cafb9deeea7e47f9751d3  usr/share/doc/sed/AUTHORS.gz
 48eb7c7e97aebc80e84d509ce885f8c7  usr/share/locale/id/LC_MESSAGES/sed.mo
@@ -47,5 +47,5 @@ d81f26cfd7c8953fbc8e49589e13bb02  usr/share/locale/fr/LC_MESSAGES/sed.mo
 eaeeb2c11c5f0c4736387b6e1a504c91  usr/share/locale/ja/LC_MESSAGES/sed.mo
 b586ecf36c701779a943d6c3b17e8461  usr/share/locale/ko/LC_MESSAGES/sed.mo
 12c3d0582ca8b528c03b971df4ffa1cb  usr/share/locale/pt/LC_MESSAGES/sed.mo
-42408d50992b7467247a9498a32cadff  usr/share/man/man1/sed.1.gz
-f0731f40daef6b1b202b3f4cf067a63d  usr/share/info/sed.info.gz
+fd702239a34cb9a28613feb7cbcd9fcb  usr/share/man/man1/sed.1.gz
+491ee24f43c7d99c3091d736e8ac1038  usr/share/info/sed.info.gz

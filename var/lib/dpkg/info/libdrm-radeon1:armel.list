@@ -4,12 +4,12 @@
 /usr/lib/arm-linux-gnueabi
 /usr/lib/arm-linux-gnueabi/libdrm_radeon.so.1.0.1
 /usr/share
-/usr/share/doc
-/usr/share/doc/libdrm-radeon1
-/usr/share/doc/libdrm-radeon1/changelog.gz
-/usr/share/doc/libdrm-radeon1/copyright
-/usr/share/doc/libdrm-radeon1/changelog.Debian.gz
 /usr/share/lintian
 /usr/share/lintian/overrides
 /usr/share/lintian/overrides/libdrm-radeon1
+/usr/share/doc
+/usr/share/doc/libdrm-radeon1
+/usr/share/doc/libdrm-radeon1/changelog.gz
+/usr/share/doc/libdrm-radeon1/changelog.Debian.gz
+/usr/share/doc/libdrm-radeon1/copyright
 /usr/lib/arm-linux-gnueabi/libdrm_radeon.so.1

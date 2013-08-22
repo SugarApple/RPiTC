@@ -1,4 +1,2 @@
-deb http://ks3313837.kimsufi.com/armv6j sid main
-
-#deb http://ftp.de.debian.org/debian wheezy main contrib non-free
-#deb-src http://ftp.debian.org/debian wheezy main contrib non-free
+deb http://armv6j.armtc.net/ sid main
+deb http://ftp.de.debian.org/debian jessie main contrib non-free

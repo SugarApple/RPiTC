@@ -2,14 +2,14 @@
 /usr
 /usr/lib
 /usr/lib/arm-linux-gnueabi
-/usr/lib/arm-linux-gnueabi/libQtDBus.so.4.8.2
+/usr/lib/arm-linux-gnueabi/libQtDBus.so.4.8.5
 /usr/share
 /usr/share/doc
 /usr/share/doc/libqtdbus4
 /usr/share/doc/libqtdbus4/LGPL_EXCEPTION.txt
-/usr/share/doc/libqtdbus4/changelog.gz
-/usr/share/doc/libqtdbus4/copyright
 /usr/share/doc/libqtdbus4/changelog.Debian.gz
+/usr/share/doc/libqtdbus4/copyright
+/usr/share/doc/libqtdbus4/changelog.gz
 /usr/share/lintian
 /usr/share/lintian/overrides
 /usr/share/lintian/overrides/libqtdbus4

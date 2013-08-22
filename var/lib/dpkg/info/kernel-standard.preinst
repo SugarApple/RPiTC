@@ -1,0 +1,17 @@
+#!/bin/sh
+
+set -e
+
+case "$1" in
+ install|upgrade)
+  #deleting old kernel
+  rm -fr /boot/kernel-std.img.2013*
+  # Backup old kernel-std.img
+  mv /boot/kernel-std.img /boot/kernel-std.img.$(date +%Y%m%d)
+ ;;
+ abort-upgrade)
+ ;;
+ *)
+  exit 1
+ ;;
+esac

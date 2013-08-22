@@ -55,7 +55,7 @@ Stable, unless otherwise indicated
 struct              <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget-struct" title="struct SpiceUsbDeviceWidget">SpiceUsbDeviceWidget</a>;
 struct              <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidgetClass" title="struct SpiceUsbDeviceWidgetClass">SpiceUsbDeviceWidgetClass</a>;
 
-<a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         <a class="link" href="SpiceUsbDeviceWidget.html#spice-usb-device-widget-new" title="spice_usb_device_widget_new ()">spice_usb_device_widget_new</a>         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
+<span class="returnvalue">GtkWidget</span> *         <a class="link" href="SpiceUsbDeviceWidget.html#spice-usb-device-widget-new" title="spice_usb_device_widget_new ()">spice_usb_device_widget_new</a>         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *device_format_string</code></em>);
 </pre>
 </div>
@@ -64,9 +64,9 @@ struct              <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDevi
 <pre class="synopsis">
   <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
    +----<a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
-         +----<a href="http://developer.gnome.org/gtk2/GtkWidget.html">GtkWidget</a>
-               +----<a href="http://developer.gnome.org/gtk2/GtkContainer.html">GtkContainer</a>
-                     +----<a href="http://developer.gnome.org/gtk2/GtkBox.html">GtkBox</a>
+         +----GtkWidget
+               +----GtkContainer
+                     +----GtkBox
                            +----SpiceUsbDeviceWidget
 </pre>
 </div>
@@ -74,7 +74,7 @@ struct              <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDevi
 <a name="SpiceUsbDeviceWidget.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 SpiceUsbDeviceWidget implements
- AtkImplementorIface,  <a href="http://developer.gnome.org/gtk2/GtkBuildable.html">GtkBuildable</a> and  <a href="http://developer.gnome.org/gtk2/gtk3-Orientable.html#GtkOrientable">GtkOrientable</a>.</p>
+ AtkImplementorIface,  GtkBuildable and  GtkOrientable.</p>
 </div>
 <div class="refsect1">
 <a name="SpiceUsbDeviceWidget.properties"></a><h2>Properties</h2>
@@ -139,7 +139,7 @@ Class structure for <a class="link" href="SpiceUsbDeviceWidget.html" title="Spic
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-widget-new"></a><h3>spice_usb_device_widget_new ()</h3>
-<pre class="programlisting"><a href="http://developer.gnome.org/gtk2/GtkWidget.html"><span class="returnvalue">GtkWidget</span></a> *         spice_usb_device_widget_new         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
+<pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         spice_usb_device_widget_new         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
                                                          <em class="parameter"><code>const <a href="http://library.gnome.org/devel/glib/unstable/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *device_format_string</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>

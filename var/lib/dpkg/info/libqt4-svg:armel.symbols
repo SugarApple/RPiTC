@@ -94,8 +94,6 @@ libQtSvg.so.4 libqt4-svg #MINVER#
  _ZN16QSvgTinyDocumentD2Ev@Base 4:4.5.3
  _ZN4QCss6ParserD1Ev@Base 4:4.7.4
  _ZN4QCss6ParserD2Ev@Base 4:4.7.4
- _ZN6QDebug6StreamD1Ev@Base 4:4.8.2+dfsg-11+RPiTC1
- _ZN6QDebug6StreamD2Ev@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZNK10QSvgWidget10metaObjectEv@Base 4:4.5.3
  _ZNK10QSvgWidget8rendererEv@Base 4:4.5.3
  _ZNK10QSvgWidget8sizeHintEv@Base 4:4.5.3

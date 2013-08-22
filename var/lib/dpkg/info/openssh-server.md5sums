@@ -1,5 +1,5 @@
-dbb10de4256fc8b1b0f78897f40d74f1  usr/lib/openssh/sftp-server
-81e1d297a0c8309284b7558d484eda3b  usr/sbin/sshd
+468d6ef90396f9e3c12e64ae94474ce5  usr/lib/openssh/sftp-server
+8968c2fa6a44a75ace35bde35c8bbf80  usr/sbin/sshd
 e4f66eb12e8650acbafbfb14a0325b26  usr/share/apport/package-hooks/openssh-server.py
 846c91ca422c5b9ab48b3e8fb717bc86  usr/share/doc/openssh-client/examples/sshd_config
 8c5592e0d522fa0f8f55f3c104479ef5  usr/share/lintian/overrides/openssh-server

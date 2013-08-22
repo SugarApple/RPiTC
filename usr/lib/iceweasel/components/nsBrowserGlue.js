@@ -1,4 +1,4 @@
-//@line 44 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 5 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
 const Ci = Components.interfaces;
 const Cc = Components.classes;
@@ -9,17 +9,34 @@ const XULNS = "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 Cu.import("resource://gre/modules/Services.jsm");
-Cu.import("resource://gre/modules/AddonManager.jsm");
+Cu.import("resource:///modules/SignInToWebsite.jsm");
 
-XPCOMUtils.defineLazyGetter(this, "NetUtil", function() {
-  Cu.import("resource://gre/modules/NetUtil.jsm");
-  return NetUtil;
-});
+XPCOMUtils.defineLazyModuleGetter(this, "AddonManager",
+                                  "resource://gre/modules/AddonManager.jsm");
 
-XPCOMUtils.defineLazyGetter(this, "PlacesUtils", function() {
-  Cu.import("resource://gre/modules/PlacesUtils.jsm");
-  return PlacesUtils;
-});
+XPCOMUtils.defineLazyModuleGetter(this, "NetUtil",
+                                  "resource://gre/modules/NetUtil.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "UserAgentOverrides",
+                                  "resource://gre/modules/UserAgentOverrides.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "PlacesUtils",
+                                  "resource://gre/modules/PlacesUtils.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "BookmarkHTMLUtils",
+                                  "resource://gre/modules/BookmarkHTMLUtils.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "webappsUI",
+                                  "resource:///modules/webappsUI.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "PageThumbs",
+                                  "resource:///modules/PageThumbs.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "NewTabUtils",
+                                  "resource:///modules/NewTabUtils.jsm");
+
+XPCOMUtils.defineLazyModuleGetter(this, "PdfJs",
+                                  "resource://pdf.js/PdfJs.jsm");
 
 const PREF_PLUGINS_NOTIFYUSER = "plugins.update.notifyUser";
 const PREF_PLUGINS_UPDATEURL  = "plugins.update.url";
@@ -65,7 +82,7 @@ function BrowserGlue() {
   this._init();
 }
 
-//@line 115 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 93 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
 BrowserGlue.prototype = {
   _saveSession: false,
@@ -74,6 +91,7 @@ BrowserGlue.prototype = {
   _isPlacesLockedObserver: false,
   _isPlacesShutdownObserver: false,
   _isPlacesDatabaseLocked: false,
+  _migrationImportsDefaultBookmarks: false,
 
   _setPrefToSaveSession: function BG__setPrefToSaveSession(aForce) {
     if (!this._saveSession && !aForce)
@@ -87,7 +105,7 @@ BrowserGlue.prototype = {
     Services.prefs.savePrefFile(null);
   },
 
-//@line 137 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 116 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
   _setSyncAutoconnectDelay: function BG__setSyncAutoconnectDelay() {
     // Assume that a non-zero value for services.sync.autoconnectDelay should override
     if (Services.prefs.prefHasUserValue("services.sync.autoconnectDelay")) {
@@ -109,7 +127,7 @@ BrowserGlue.prototype = {
     Cu.import("resource://services-sync/main.js");
     Weave.SyncScheduler.delayedAutoConnect(delay);
   },
-//@line 159 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 138 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
   // nsIObserver implementation 
   observe: function BG_observe(subject, topic, data) {
@@ -128,7 +146,7 @@ BrowserGlue.prototype = {
         Services.obs.removeObserver(this, "browser-delayed-startup-finished");
         break;
       case "sessionstore-windows-restored":
-        this._onBrowserStartup();
+        this._onWindowsRestored();
         break;
       case "browser:purge-session-history":
         // reset the console service's error buffer
@@ -142,8 +160,15 @@ BrowserGlue.prototype = {
         // This pref must be set here because SessionStore will use its value
         // on quit-application.
         this._setPrefToSaveSession();
+        try {
+          let appStartup = Cc["@mozilla.org/toolkit/app-startup;1"].
+                           getService(Ci.nsIAppStartup);
+          appStartup.trackStartupCrashEnd();
+        } catch (e) {
+          Cu.reportError("Could not end startup crash tracking in quit-application-granted: " + e);
+        }
         break;
-//@line 193 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 179 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
       case "browser-lastwindow-close-requested":
         // The application is not actually quitting, but the last full browser
         // window is about to be closed.
@@ -152,27 +177,28 @@ BrowserGlue.prototype = {
       case "browser-lastwindow-close-granted":
         this._setPrefToSaveSession();
         break;
-//@line 203 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 189 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
       case "weave:service:ready":
         this._setSyncAutoconnectDelay();
         break;
-//@line 207 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+      case "weave:engine:clients:display-uri":
+        this._onDisplaySyncURI(subject);
+        break;
+//@line 196 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
       case "session-save":
         this._setPrefToSaveSession(true);
         subject.QueryInterface(Ci.nsISupportsPRBool);
         subject.data = true;
         break;
       case "places-init-complete":
-        this._initPlaces();
+        if (!this._migrationImportsDefaultBookmarks)
+          this._initPlaces(false);
+
         Services.obs.removeObserver(this, "places-init-complete");
         this._isPlacesInitObserver = false;
         // no longer needed, since history was initialized completely.
         Services.obs.removeObserver(this, "places-database-locked");
         this._isPlacesLockedObserver = false;
-
-        // Now apply distribution customized bookmarks.
-        // This should always run after Places initialization.
-        this._distributionCustomizer.applyBookmarks();
         break;
       case "places-database-locked":
         this._isPlacesDatabaseLocked = true;
@@ -198,13 +224,6 @@ BrowserGlue.prototype = {
         // Customization has finished, we don't need the customizer anymore.
         delete this._distributionCustomizer;
         break;
-      case "bookmarks-restore-success":
-      case "bookmarks-restore-failed":
-        Services.obs.removeObserver(this, "bookmarks-restore-success");
-        Services.obs.removeObserver(this, "bookmarks-restore-failed");
-        if (topic == "bookmarks-restore-success" && data == "html-initial")
-          this.ensurePlacesDefaultQueriesInitialized();
-        break;
       case "browser-glue-test": // used by tests
         if (data == "post-update-notification") {
           if (Services.prefs.prefHasUserValue("app.update.postupdate"))
@@ -219,8 +238,14 @@ BrowserGlue.prototype = {
           // To apply distribution bookmarks use "places-init-complete".
         }
         else if (data == "force-places-init") {
-          this._initPlaces();
+          this._initPlaces(false);
         }
+        break;
+      case "initial-migration-will-import-default-bookmarks":
+        this._migrationImportsDefaultBookmarks = true;
+        break;
+      case "initial-migration-did-import-default-bookmarks":
+        this._initPlaces(true);
         break;
     }
   }, 
@@ -236,12 +261,13 @@ BrowserGlue.prototype = {
     os.addObserver(this, "browser:purge-session-history", false);
     os.addObserver(this, "quit-application-requested", false);
     os.addObserver(this, "quit-application-granted", false);
-//@line 287 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 273 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     os.addObserver(this, "browser-lastwindow-close-requested", false);
     os.addObserver(this, "browser-lastwindow-close-granted", false);
-//@line 291 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 277 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     os.addObserver(this, "weave:service:ready", false);
-//@line 293 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+    os.addObserver(this, "weave:engine:clients:display-uri", false);
+//@line 280 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     os.addObserver(this, "session-save", false);
     os.addObserver(this, "places-init-complete", false);
     this._isPlacesInitObserver = true;
@@ -262,12 +288,13 @@ BrowserGlue.prototype = {
     os.removeObserver(this, "browser:purge-session-history");
     os.removeObserver(this, "quit-application-requested");
     os.removeObserver(this, "quit-application-granted");
-//@line 314 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 301 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     os.removeObserver(this, "browser-lastwindow-close-requested");
     os.removeObserver(this, "browser-lastwindow-close-granted");
-//@line 318 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 305 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     os.removeObserver(this, "weave:service:ready", false);
-//@line 320 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+    os.removeObserver(this, "weave:engine:clients:display-uri", false);
+//@line 308 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     os.removeObserver(this, "session-save");
     if (this._isIdleObserver)
       this._idleService.removeIdleObserver(this, BOOKMARKS_BACKUP_IDLE_TIME);
@@ -277,6 +304,9 @@ BrowserGlue.prototype = {
       os.removeObserver(this, "places-database-locked");
     if (this._isPlacesShutdownObserver)
       os.removeObserver(this, "places-shutdown");
+    UserAgentOverrides.uninit();
+    webappsUI.uninit();
+    SignInToWebsiteUX.uninit();
   },
 
   _onAppDefaults: function BG__onAppDefaults() {
@@ -301,28 +331,52 @@ BrowserGlue.prototype = {
     // handle any UI migration
     this._migrateUI();
 
+    this._setUpUserAgentOverrides();
+
+    webappsUI.init();
+    PageThumbs.init();
+    NewTabUtils.init();
+    SignInToWebsiteUX.init();
+    PdfJs.init();
+
     Services.obs.notifyObservers(null, "browser-ui-startup-complete", "");
+  },
+
+  _setUpUserAgentOverrides: function BG__setUpUserAgentOverrides() {
+    UserAgentOverrides.init();
+
+    if (Services.prefs.getBoolPref("general.useragent.complexOverride.moodle")) {
+      UserAgentOverrides.addComplexOverride(function (aHttpChannel, aOriginalUA) {
+        let cookies;
+        try {
+          cookies = aHttpChannel.getRequestHeader("Cookie");
+        } catch (e) { /* no cookie sent */ }
+        if (cookies && cookies.indexOf("MoodleSession") > -1)
+          return aOriginalUA.replace(/Gecko\/[^ ]*/, "Gecko/20100101");
+        return null;
+      });
+    }
   },
 
   // the first browser window has finished initializing
   _onFirstWindowLoaded: function BG__onFirstWindowLoaded() {
-//@line 368 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 383 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
   },
 
   // profile shutdown handler (contains profile cleanup routines)
   _onProfileShutdown: function BG__onProfileShutdown() {
     this._shutdownPlaces();
     this._sanitizer.onShutdown();
+    PageThumbs.uninit();
   },
 
-  // Browser startup complete. All initial windows have opened.
-  _onBrowserStartup: function BG__onBrowserStartup() {
+  // All initial windows have opened.
+  _onWindowsRestored: function BG__onWindowsRestored() {
     // Show about:rights notification, if needed.
     if (this._shouldShowRights()) {
       this._showRightsNotification();
-//@line 386 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 402 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     }
-
 
     // Show update notification, if needed.
     if (Services.prefs.prefHasUserValue("app.update.postupdate"))
@@ -340,19 +394,70 @@ BrowserGlue.prototype = {
       this._showPluginUpdatePage();
 
     // For any add-ons that were installed disabled and can be enabled offer
-    // them to the user
-    var win = this.getMostRecentBrowserWindow();
-    var browser = win.gBrowser;
-    var changedIDs = AddonManager.getStartupChanges(AddonManager.STARTUP_CHANGE_INSTALLED);
-    AddonManager.getAddonsByIDs(changedIDs, function(aAddons) {
-      aAddons.forEach(function(aAddon) {
-        // If the add-on isn't user disabled or can't be enabled then skip it
-        if (!aAddon.userDisabled || !(aAddon.permissions & AddonManager.PERM_CAN_ENABLE))
-          return;
+    // them to the user.
+    let changedIDs = AddonManager.getStartupChanges(AddonManager.STARTUP_CHANGE_INSTALLED);
+    if (changedIDs.length > 0) {
+      let browser = this.getMostRecentBrowserWindow().gBrowser;
+      AddonManager.getAddonsByIDs(changedIDs, function(aAddons) {
+        aAddons.forEach(function(aAddon) {
+          // If the add-on isn't user disabled or can't be enabled then skip it.
+          if (!aAddon.userDisabled || !(aAddon.permissions & AddonManager.PERM_CAN_ENABLE))
+            return;
 
-        browser.selectedTab = browser.addTab("about:newaddon?id=" + aAddon.id);
-      })
-    });
+          browser.selectedTab = browser.addTab("about:newaddon?id=" + aAddon.id);
+        })
+      });
+    }
+
+    let keywordURLUserSet = Services.prefs.prefHasUserValue("keyword.URL");
+    Services.telemetry.getHistogramById("FX_KEYWORD_URL_USERSET").add(keywordURLUserSet);
+
+    // Perform default browser checking.
+    var shell;
+    try {
+      shell = Components.classes["@mozilla.org/browser/shell-service;1"]
+        .getService(Components.interfaces.nsIShellService);
+    } catch (e) { }
+    if (shell) {
+//@line 448 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
+      let shouldCheck = shell.shouldCheckDefaultBrowser;
+//@line 450 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
+      let willRecoverSession = false;
+      try {
+        let ss = Cc["@mozilla.org/browser/sessionstartup;1"].
+                 getService(Ci.nsISessionStartup);
+        willRecoverSession =
+          (ss.sessionType == Ci.nsISessionStartup.RECOVER_SESSION);
+      }
+      catch (ex) { /* never mind; suppose SessionStore is broken */ }
+      if (shouldCheck &&
+          !shell.isDefaultBrowser(true, false) &&
+          !willRecoverSession) {
+        Services.tm.mainThread.dispatch(function() {
+          var win = this.getMostRecentBrowserWindow();
+          var brandBundle = win.document.getElementById("bundle_brand");
+          var shellBundle = win.document.getElementById("bundle_shell");
+  
+          var brandShortName = brandBundle.getString("brandShortName");
+          var promptTitle = shellBundle.getString("setDefaultBrowserTitle");
+          var promptMessage = shellBundle.getFormattedString("setDefaultBrowserMessage",
+                                                             [brandShortName]);
+          var checkboxLabel = shellBundle.getFormattedString("setDefaultBrowserDontAsk",
+                                                             [brandShortName]);
+          var checkEveryTime = { value: shouldCheck };
+          var ps = Services.prompt;
+          var rv = ps.confirmEx(win, promptTitle, promptMessage,
+                                ps.STD_YES_NO_BUTTONS,
+                                null, null, null, checkboxLabel, checkEveryTime);
+          if (rv == 0) {
+            var claimAllTypes = true;
+//@line 491 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
+            shell.setDefaultBrowser(claimAllTypes, false);
+          }
+          shell.shouldCheckDefaultBrowser = checkEveryTime.value;
+        }.bind(this), Ci.nsIThread.DISPATCH_NORMAL);
+      }
+    }
   },
 
   _onQuitRequest: function BG__onQuitRequest(aCancelQuit, aQuitType) {
@@ -382,10 +487,13 @@ BrowserGlue.prototype = {
     var windowcount = 0;
     var pagecount = 0;
     var browserEnum = Services.wm.getEnumerator("navigator:browser");
+    let allWindowsPrivate = true;
     while (browserEnum.hasMoreElements()) {
       windowcount++;
 
       var browser = browserEnum.getNext();
+      if (("gPrivateBrowsingUI" in browser) && !browser.gPrivateBrowsingUI.privateWindow)
+        allWindowsPrivate = false;
       var tabbrowser = browser.document.getElementById("content");
       if (tabbrowser)
         pagecount += tabbrowser.browsers.length - tabbrowser._numPinnedTabs;
@@ -397,13 +505,6 @@ BrowserGlue.prototype = {
 
     if (!aQuitType)
       aQuitType = "quit";
-
-    // Never show a prompt inside private browsing mode
-    var inPrivateBrowsing = Cc["@mozilla.org/privatebrowsing;1"].
-                            getService(Ci.nsIPrivateBrowsingService).
-                            privateBrowsingEnabled;
-    if (inPrivateBrowsing)
-      return;
 
     var showPrompt = false;
     var mostRecentBrowserWindow;
@@ -435,6 +536,10 @@ BrowserGlue.prototype = {
       aCancelQuit.data = !mostRecentBrowserWindow.gBrowser.warnAboutClosingTabs(true);
       return;
     }
+
+    // Never show a prompt inside private browsing mode
+    if (allWindowsPrivate)
+      return;
 
     if (!showPrompt)
       return;
@@ -527,10 +632,10 @@ BrowserGlue.prototype = {
       return !Services.prefs.getBoolPref("browser.EULA.override");
     } catch (e) { }
 
-//@line 593 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 672 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     // Non-official builds shouldn't shouldn't show the notification.
     return false;
-//@line 596 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 675 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
     // Look to see if the user has seen the current version or not.
     var currentVersion = Services.prefs.getIntPref("browser.rights.version");
@@ -688,14 +793,14 @@ BrowserGlue.prototype = {
     try {
       // This will throw NS_ERROR_NOT_AVAILABLE if the notification cannot
       // be displayed per the idl.
-      notifier.showAlertNotification("post-update-notification", title, text,
+      notifier.showAlertNotification(null, title, text,
                                      true, url, clickCallback);
     }
     catch (e) {
     }
   },
 
-//@line 838 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 960 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
   _showPluginUpdatePage: function BG__showPluginUpdatePage() {
     Services.prefs.setBoolPref(PREF_PLUGINS_NOTIFYUSER, false);
@@ -729,25 +834,16 @@ BrowserGlue.prototype = {
    *   Set to true by safe-mode dialog to indicate we must restore default
    *   bookmarks.
    */
-  _initPlaces: function BG__initPlaces() {
+  _initPlaces: function BG__initPlaces(aInitialMigrationPerformed) {
     // We must instantiate the history service since it will tell us if we
     // need to import or restore bookmarks due to first-run, corruption or
     // forced migration (due to a major schema change).
     // If the database is corrupt or has been newly created we should
     // import bookmarks.
     var dbStatus = PlacesUtils.history.databaseStatus;
-    var importBookmarks = dbStatus == PlacesUtils.history.DATABASE_STATUS_CREATE ||
-                          dbStatus == PlacesUtils.history.DATABASE_STATUS_CORRUPT;
-
-    if (dbStatus == PlacesUtils.history.DATABASE_STATUS_CREATE) {
-      // If the database has just been created, but we already have any
-      // bookmark, this is not the initial import.  This can happen after a
-      // migration from a different browser since migrators run before us.
-      // In such a case we should not import, unless some pref has been set.
-      if (PlacesUtils.bookmarks.getIdForItemAt(PlacesUtils.bookmarksMenuFolderId, 0) != -1 ||
-          PlacesUtils.bookmarks.getIdForItemAt(PlacesUtils.toolbarFolderId, 0) != -1)
-        importBookmarks = false;
-    }
+    var importBookmarks = !aInitialMigrationPerformed &&
+                          (dbStatus == PlacesUtils.history.DATABASE_STATUS_CREATE ||
+                           dbStatus == PlacesUtils.history.DATABASE_STATUS_CORRUPT);
 
     // Check if user or an extension has required to import bookmarks.html
     var importBookmarksHTML = false;
@@ -804,6 +900,9 @@ BrowserGlue.prototype = {
     // delayed till the import operations has finished.  Not doing so would
     // cause them to be overwritten by the newly imported bookmarks.
     if (!importBookmarks) {
+      // Now apply distribution customized bookmarks.
+      // This should always run after Places initialization.
+      this._distributionCustomizer.applyBookmarks();
       this.ensurePlacesDefaultQueriesInitialized();
     }
     else {
@@ -837,25 +936,28 @@ BrowserGlue.prototype = {
       }
 
       if (bookmarksURI) {
-        // Add an import observer.  It will ensure that smart bookmarks are
-        // created once the operation is complete.
-        Services.obs.addObserver(this, "bookmarks-restore-success", false);
-        Services.obs.addObserver(this, "bookmarks-restore-failed", false);
-
         // Import from bookmarks.html file.
         try {
-          var importer = Cc["@mozilla.org/browser/places/import-export-service;1"].
-                         getService(Ci.nsIPlacesImportExportService);
-          importer.importHTMLFromURI(bookmarksURI, true /* overwrite existing */);
+          BookmarkHTMLUtils.importFromURL(bookmarksURI.spec, true, (function (success) {
+            if (success) {
+              // Now apply distribution customized bookmarks.
+              // This should always run after Places initialization.
+              this._distributionCustomizer.applyBookmarks();
+              // Ensure that smart bookmarks are created once the operation is
+              // complete.
+              this.ensurePlacesDefaultQueriesInitialized();
+            }
+            else {
+              Cu.reportError("Bookmarks.html file could be corrupt.");
+            }
+          }).bind(this));
         } catch (err) {
-          // Report the error, but ignore it.
           Cu.reportError("Bookmarks.html file could be corrupt. " + err);
-          Services.obs.removeObserver(this, "bookmarks-restore-success");
-          Services.obs.removeObserver(this, "bookmarks-restore-failed");
         }
       }
-      else
+      else {
         Cu.reportError("Unable to find bookmarks.html file.");
+      }
 
       // Reset preferences, so we won't try to import again at next run
       if (importBookmarksHTML)
@@ -961,7 +1063,7 @@ BrowserGlue.prototype = {
   },
 
   _migrateUI: function BG__migrateUI() {
-    const UI_VERSION = 5;
+    const UI_VERSION = 7;
     const BROWSER_DOCURL = "chrome://browser/content/browser.xul#";
     let currentUIVersion = 0;
     try {
@@ -974,33 +1076,6 @@ BrowserGlue.prototype = {
     this._dataSource = this._rdf.GetDataSource("rdf:local-store");
     this._dirty = false;
 
-    if (currentUIVersion < 1) {
-      // this code should always migrate pre-FF3 profiles to the current UI state
-      let currentsetResource = this._rdf.GetResource("currentset");
-      let toolbars = ["nav-bar", "toolbar-menubar", "PersonalToolbar"];
-      for (let i = 0; i < toolbars.length; i++) {
-        let toolbar = this._rdf.GetResource(BROWSER_DOCURL + toolbars[i]);
-        let currentset = this._getPersist(toolbar, currentsetResource);
-        if (!currentset) {
-          // toolbar isn't customized
-          if (i == 0)
-            // new button is in the defaultset, nothing to migrate
-            break;
-          continue;
-        }
-        if (/(?:^|,)unified-back-forward-button(?:$|,)/.test(currentset))
-          // new button is already there, nothing to migrate
-          break;
-        if (/(?:^|,)back-button(?:$|,)/.test(currentset)) {
-          let newset = currentset.replace(/(^|,)back-button($|,)/,
-                                          "$1unified-back-forward-button,back-button$2")
-          this._setPersist(toolbar, currentsetResource, newset);
-          // done migrating
-          break;
-        }
-      }
-    }
-
     if (currentUIVersion < 2) {
       // This code adds the customizable bookmarks button.
       let currentsetResource = this._rdf.GetResource("currentset");
@@ -1009,13 +1084,7 @@ BrowserGlue.prototype = {
       // Need to migrate only if toolbar is customized and the element is not found.
       if (currentset &&
           currentset.indexOf("bookmarks-menu-button-container") == -1) {
-        if (currentset.indexOf("fullscreenflex") != -1) {
-          currentset = currentset.replace(/(^|,)fullscreenflex($|,)/,
-                                          "$1bookmarks-menu-button-container,fullscreenflex$2")
-        }
-        else {
-          currentset += ",bookmarks-menu-button-container";
-        }
+        currentset += ",bookmarks-menu-button-container";
         this._setPersist(toolbarResource, currentsetResource, currentset);
       }
     }
@@ -1083,6 +1152,52 @@ BrowserGlue.prototype = {
       }
     }
 
+    if (currentUIVersion < 6) {
+      // convert tabsontop attribute to pref
+      let toolboxResource = this._rdf.GetResource(BROWSER_DOCURL + "navigator-toolbox");
+      let tabsOnTopResource = this._rdf.GetResource("tabsontop");
+      let tabsOnTopAttribute = this._getPersist(toolboxResource, tabsOnTopResource);
+      if (tabsOnTopAttribute)
+        Services.prefs.setBoolPref("browser.tabs.onTop", tabsOnTopAttribute == "true");
+    }
+
+    // This migration step is executed only if the Downloads Panel feature is
+    // enabled.  By default, the feature is enabled only in the Nightly channel.
+    // This means that, unless the preference that enables the feature is
+    // changed manually, the Downloads button is added to the toolbar only if
+    // migration happens while running a build from the Nightly channel.  This
+    // migration code will be updated when the feature will be enabled on all
+    // channels, see bug 748381 for details.
+    if (currentUIVersion < 7 &&
+        !Services.prefs.getBoolPref("browser.download.useToolkitUI")) {
+      // This code adds the customizable downloads buttons.
+      let currentsetResource = this._rdf.GetResource("currentset");
+      let toolbarResource = this._rdf.GetResource(BROWSER_DOCURL + "nav-bar");
+      let currentset = this._getPersist(toolbarResource, currentsetResource);
+
+      // Since the Downloads button is located in the navigation bar by default,
+      // migration needs to happen only if the toolbar was customized using a
+      // previous UI version, and the button was not already placed on the
+      // toolbar manually.
+      if (currentset &&
+          currentset.indexOf("downloads-button") == -1) {
+        // The element is added either after the search bar or before the home
+        // button. As a last resort, the element is added just before the
+        // non-customizable window controls.
+        if (currentset.indexOf("search-container") != -1) {
+          currentset = currentset.replace(/(^|,)search-container($|,)/,
+                                          "$1search-container,downloads-button$2")
+        } else if (currentset.indexOf("home-button") != -1) {
+          currentset = currentset.replace(/(^|,)home-button($|,)/,
+                                          "$1downloads-button,home-button$2")
+        } else {
+          currentset = currentset.replace(/(^|,)window-controls($|,)/,
+                                          "$1downloads-button,window-controls$2")
+        }
+        this._setPersist(toolbarResource, currentsetResource, currentset);
+      }
+    }
+
     if (this._dirty)
       this._dataSource.QueryInterface(Ci.nsIRDFRemoteDataSource).Flush();
 
@@ -1142,7 +1257,7 @@ BrowserGlue.prototype = {
     // be set to the version it has been added in, we will compare its value
     // to users' smartBookmarksVersion and add new smart bookmarks without
     // recreating old deleted ones.
-    const SMART_BOOKMARKS_VERSION = 2;
+    const SMART_BOOKMARKS_VERSION = 4;
     const SMART_BOOKMARKS_ANNO = "Places/SmartBookmark";
     const SMART_BOOKMARKS_PREF = "browser.places.smartBookmarksVersion";
 
@@ -1170,9 +1285,7 @@ BrowserGlue.prototype = {
         let smartBookmarks = {
           MostVisited: {
             title: bundle.GetStringFromName("mostVisitedTitle"),
-            uri: NetUtil.newURI("place:redirectsMode=" +
-                                Ci.nsINavHistoryQueryOptions.REDIRECTS_MODE_TARGET +
-                                "&sort=" +
+            uri: NetUtil.newURI("place:sort=" +
                                 Ci.nsINavHistoryQueryOptions.SORT_BY_VISITCOUNT_DESCENDING +
                                 "&maxResults=" + MAX_RESULTS),
             parent: PlacesUtils.toolbarFolderId,
@@ -1188,7 +1301,6 @@ BrowserGlue.prototype = {
                                 Ci.nsINavHistoryQueryOptions.QUERY_TYPE_BOOKMARKS +
                                 "&sort=" +
                                 Ci.nsINavHistoryQueryOptions.SORT_BY_DATEADDED_DESCENDING +
-                                "&excludeItemIfParentHasAnnotation=livemark%2FfeedURI" +
                                 "&maxResults=" + MAX_RESULTS +
                                 "&excludeQueries=1"),
             parent: PlacesUtils.bookmarksMenuFolderId,
@@ -1206,7 +1318,7 @@ BrowserGlue.prototype = {
             parent: PlacesUtils.bookmarksMenuFolderId,
             position: menuIndex++,
             newInVersion: 1
-          },
+          }
         };
 
         // Set current itemId, parent and position if Smart Bookmark exists,
@@ -1217,9 +1329,9 @@ BrowserGlue.prototype = {
           let queryId = PlacesUtils.annotations.getItemAnnotation(itemId, SMART_BOOKMARKS_ANNO);
           if (queryId in smartBookmarks) {
             let smartBookmark = smartBookmarks[queryId];
-            smartBookmarks[queryId].itemId = itemId;
-            smartBookmarks[queryId].parent = PlacesUtils.bookmarks.getFolderIdForItem(itemId);
-            smartBookmarks[queryId].position = PlacesUtils.bookmarks.getItemIndex(itemId);
+            smartBookmark.itemId = itemId;
+            smartBookmark.parent = PlacesUtils.bookmarks.getFolderIdForItem(itemId);
+            smartBookmark.position = PlacesUtils.bookmarks.getItemIndex(itemId);
           }
           else {
             // We don't remove old Smart Bookmarks because user could still
@@ -1286,16 +1398,16 @@ BrowserGlue.prototype = {
     }
   },
 
-//@line 1431 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 1560 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
   // this returns the most recent non-popup browser window
   getMostRecentBrowserWindow: function BG_getMostRecentBrowserWindow() {
     function isFullBrowserWindow(win) {
       return !win.closed &&
-             !win.document.documentElement.getAttribute("chromehidden");
+             win.toolbar.visible;
     }
 
-//@line 1440 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 1569 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
     var win = Services.wm.getMostRecentWindow("navigator:browser");
 
     // if we're lucky, this isn't a popup, and we can just return this
@@ -1310,9 +1422,32 @@ BrowserGlue.prototype = {
       }
     }
     return win;
-//@line 1463 "/opt/build/iceweasel-10.0.12esr/browser/components/nsBrowserGlue.js"
+//@line 1592 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
   },
 
+//@line 1595 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
+  /**
+   * Called as an observer when Sync's "display URI" notification is fired.
+   *
+   * We open the received URI in a background tab.
+   *
+   * Eventually, this will likely be replaced by a more robust tab syncing
+   * feature. This functionality is considered somewhat evil by UX because it
+   * opens a new tab automatically without any prompting. However, it is a
+   * lesser evil than sending a tab to a specific device (from e.g. Fennec)
+   * and having nothing happen on the receiving end.
+   */
+  _onDisplaySyncURI: function _onDisplaySyncURI(data) {
+    try {
+      let tabbrowser = this.getMostRecentBrowserWindow().gBrowser;
+
+      // The payload is wrapped weirdly because of how Sync does notifications.
+      tabbrowser.addTab(data.wrappedJSObject.object.uri);
+    } catch (ex) {
+      Cu.reportError("Error displaying tab received by Sync: " + ex);
+    }
+  },
+//@line 1617 "/opt/build/iceweasel-17.0.8esr/browser/components/nsBrowserGlue.js"
 
   // for XPCOM
   classID:          Components.ID("{eab9012e-5f74-4cbc-b2b5-a590235513cc}"),
@@ -1338,13 +1473,14 @@ ContentPermissionPrompt.prototype = {
         return;
     }
 
-    var requestingURI = request.uri;
+    var requestingPrincipal = request.principal;
+    var requestingURI = requestingPrincipal.URI;
 
     // Ignore requests from non-nsIStandardURLs
     if (!(requestingURI instanceof Ci.nsIStandardURL))
       return;
 
-    var result = Services.perms.testExactPermission(requestingURI, "geo");
+    var result = Services.perms.testExactPermissionFromPrincipal(requestingPrincipal, "geo");
 
     if (result == Ci.nsIPermissionManager.ALLOW_ACTION) {
       request.allow();
@@ -1369,55 +1505,58 @@ ContentPermissionPrompt.prototype = {
     }
 
     var browserBundle = Services.strings.createBundle("chrome://browser/locale/browser.properties");
+    let secHistogram = Components.classes["@mozilla.org/base/telemetry;1"].
+                                  getService(Ci.nsITelemetry).
+                                  getHistogramById("SECURITY_UI");
 
     var mainAction = {
       label: browserBundle.GetStringFromName("geolocation.shareLocation"),
       accessKey: browserBundle.GetStringFromName("geolocation.shareLocation.accesskey"),
-      callback: function(notification) {
+      callback: function() {
+        secHistogram.add(Ci.nsISecurityUITelemetry.WARNING_GEOLOCATION_REQUEST_SHARE_LOCATION);
         request.allow();
       },
     };
 
     var message;
     var secondaryActions = [];
+    var requestingWindow = request.window.top;
+    var chromeWin = getChromeWindow(requestingWindow).wrappedJSObject;
 
     // Different message/options if it is a local file
     if (requestingURI.schemeIs("file")) {
-      message = browserBundle.formatStringFromName("geolocation.fileWantsToKnow",
+      message = browserBundle.formatStringFromName("geolocation.shareWithFile",
                                                    [requestingURI.path], 1);
     } else {
-      message = browserBundle.formatStringFromName("geolocation.siteWantsToKnow",
+      message = browserBundle.formatStringFromName("geolocation.shareWithSite",
                                                    [requestingURI.host], 1);
 
       // Don't offer to "always/never share" in PB mode
-      var inPrivateBrowsing = Cc["@mozilla.org/privatebrowsing;1"].
-                              getService(Ci.nsIPrivateBrowsingService).
-                              privateBrowsingEnabled;
-
-      if (!inPrivateBrowsing) {
+      if (("gPrivateBrowsingUI" in chromeWin) && !chromeWin.gPrivateBrowsingUI.privateWindow) {
         secondaryActions.push({
-          label: browserBundle.GetStringFromName("geolocation.alwaysShare"),
-          accessKey: browserBundle.GetStringFromName("geolocation.alwaysShare.accesskey"),
+          label: browserBundle.GetStringFromName("geolocation.alwaysShareLocation"),
+          accessKey: browserBundle.GetStringFromName("geolocation.alwaysShareLocation.accesskey"),
           callback: function () {
-            Services.perms.add(requestingURI, "geo", Ci.nsIPermissionManager.ALLOW_ACTION);
+            Services.perms.addFromPrincipal(requestingPrincipal, "geo", Ci.nsIPermissionManager.ALLOW_ACTION);
+            secHistogram.add(Ci.nsISecurityUITelemetry.WARNING_GEOLOCATION_REQUEST_ALWAYS_SHARE);
             request.allow();
           }
         });
         secondaryActions.push({
-          label: browserBundle.GetStringFromName("geolocation.neverShare"),
-          accessKey: browserBundle.GetStringFromName("geolocation.neverShare.accesskey"),
+          label: browserBundle.GetStringFromName("geolocation.neverShareLocation"),
+          accessKey: browserBundle.GetStringFromName("geolocation.neverShareLocation.accesskey"),
           callback: function () {
-            Services.perms.add(requestingURI, "geo", Ci.nsIPermissionManager.DENY_ACTION);
+            Services.perms.addFromPrincipal(requestingPrincipal, "geo", Ci.nsIPermissionManager.DENY_ACTION);
+            secHistogram.add(Ci.nsISecurityUITelemetry.WARNING_GEOLOCATION_REQUEST_NEVER_SHARE);
             request.cancel();
           }
         });
       }
     }
 
-    var requestingWindow = request.window.top;
-    var chromeWin = getChromeWindow(requestingWindow).wrappedJSObject;
     var browser = chromeWin.gBrowser.getBrowserForDocument(requestingWindow.document);
 
+    secHistogram.add(Ci.nsISecurityUITelemetry.WARNING_GEOLOCATION_REQUEST);
     chromeWin.PopupNotifications.show(browser, "geolocation", message, "geo-notification-icon",
                                       mainAction, secondaryActions);
   }

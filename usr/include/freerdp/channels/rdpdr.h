@@ -25,10 +25,10 @@
 #include <winpr/file.h>
 #include <winpr/synch.h>
 #include <winpr/thread.h>
-#include <winpr/stream.h>
 #include <winpr/interlocked.h>
 
 #include <freerdp/utils/list.h>
+#include <freerdp/utils/stream.h>
 #include <freerdp/utils/svc_plugin.h>
 
 /* RDPDR_HEADER.Component */
@@ -465,7 +465,7 @@ struct _DEVICE
 
 	UINT32 type;
 	char* name;
-	wStream* data;
+	STREAM* data;
 
 	pcIRPRequest IRPRequest;
 	pcFreeDevice Free;
@@ -483,10 +483,10 @@ struct _IRP
 	UINT32 CompletionId;
 	UINT32 MajorFunction;
 	UINT32 MinorFunction;
-	wStream* input;
+	STREAM* input;
 
 	UINT32 IoStatus;
-	wStream* output;
+	STREAM* output;
 
 	pcIRPResponse Complete;
 	pcIRPResponse Discard;

@@ -1,9 +1,7 @@
-4bbd446d1110b6b8cb28ef2e47137fad  usr/lib/arm-linux-gnueabi/libsasl2.so.2.0.25
-f12e41d4cf67a487c777a9a3366eaa8b  usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so.2.0.25
-6943de0d307f73489ddb2fc99297756a  usr/lib/sasl2/berkeley_db.txt
+f3892b11a80092ac31f69639c29323c9  usr/lib/arm-linux-gnueabi/libsasl2.so.2.0.25
 e042d6323a8d1cf4db55d05d142a3c6a  usr/share/doc/libsasl2-2/NEWS.Debian.gz
 98c1bc6998a957ef0c0e4a516f927a98  usr/share/doc/libsasl2-2/README.Debian
 f6ca26587b4d1c4457b978f0d4f2c3cb  usr/share/doc/libsasl2-2/README.configure-options
-8dae7f36b1b729d5d6643db237f4d0c3  usr/share/doc/libsasl2-2/changelog.Debian.gz
+12f8fc69fcd8e0e1116b06c93a60f780  usr/share/doc/libsasl2-2/changelog.Debian.gz
 987c908c1a9b42c374a0e64e969906ab  usr/share/doc/libsasl2-2/changelog.gz
 aca5f6cee4d31610ab0d78cac2e0206d  usr/share/doc/libsasl2-2/copyright

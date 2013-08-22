@@ -503,12 +503,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN10QTransform9setMatrixEfffffffff@Base 4:4.5.3
  _ZN10QTransform9translateEff@Base 4:4.5.3
  _ZN10QTransformC1ERK7QMatrix@Base 4:4.5.3
- _ZN10QTransformC1ERKS_@Base 4:4.8.1
  _ZN10QTransformC1Ev@Base 4:4.5.3
  _ZN10QTransformC1Effffff@Base 4:4.5.3
  _ZN10QTransformC1Efffffffff@Base 4:4.5.3
  _ZN10QTransformC2ERK7QMatrix@Base 4:4.5.3
- _ZN10QTransformC2ERKS_@Base 4:4.8.1
  _ZN10QTransformC2Ev@Base 4:4.5.3
  _ZN10QTransformC2Effffff@Base 4:4.5.3
  _ZN10QTransformC2Efffffffff@Base 4:4.5.3
@@ -1443,8 +1441,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN11QTextEngine10LayoutDataD2Ev@Base 4:4.5.3
  _ZN11QTextEngine10freeMemoryEv@Base 4:4.5.3
  _ZN11QTextEngine10invalidateEv@Base 4:4.5.3
- _ZN11QTextEngine11SpecialDataD1Ev@Base 4:4.8.2+dfsg-11+RPiTC1
- _ZN11QTextEngine11SpecialDataD2Ev@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN11QTextEngine11bidiReorderEiPKhPi@Base 4:4.5.3
  _ZN11QTextEngine13clearLineDataEv@Base 4:4.5.3
  _ZN11QTextEngine15FontEngineCacheC1Ev@Base 4:4.7.4
@@ -2891,10 +2887,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN13QMdiSubWindowD2Ev@Base 4:4.5.3
  _ZN13QPainterState4initEP8QPainter@Base 4:4.5.3
  _ZN13QPainterStateC1EPKS_@Base 4:4.5.3
- _ZN13QPainterStateC1ERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN13QPainterStateC1Ev@Base 4:4.5.3
  _ZN13QPainterStateC2EPKS_@Base 4:4.5.3
- _ZN13QPainterStateC2ERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN13QPainterStateC2Ev@Base 4:4.5.3
  _ZN13QPainterStateD0Ev@Base 4:4.5.3
  _ZN13QPainterStateD1Ev@Base 4:4.5.3
@@ -3242,8 +3236,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN14QItemSelection6selectERK11QModelIndexS2_@Base 4:4.5.3
  _ZN14QItemSelectionC1ERK11QModelIndexS2_@Base 4:4.5.3
  _ZN14QItemSelectionC2ERK11QModelIndexS2_@Base 4:4.5.3
- _ZN14QItemSelectionD1Ev@Base 4:4.7.4
- _ZN14QItemSelectionD2Ev@Base 4:4.7.4
  _ZN14QLayoutPrivate16createSpacerItemEPK7QLayoutiiN11QSizePolicy6PolicyES4_@Base 4:4.5.3
  _ZN14QLayoutPrivate16createWidgetItemEPK7QLayoutP7QWidget@Base 4:4.5.3
  _ZN14QLayoutPrivate20reparentChildWidgetsEP7QWidget@Base 4:4.5.3
@@ -3862,9 +3854,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QLinearGradientC2ERK7QPointFS2_@Base 4:4.5.3
  _ZN15QLinearGradientC2Ev@Base 4:4.5.3
  _ZN15QLinearGradientC2Effff@Base 4:4.5.3
- _ZN15QLinearGradientD1Ev@Base 4:4.7.4
- _ZN15QLinearGradientD2Ev@Base 4:4.7.4
- _ZN15QLinearGradientaSERKS_@Base 4:4.8.1
  _ZN15QListWidgetItem4readER11QDataStream@Base 4:4.5.3
  _ZN15QListWidgetItem7setDataEiRK8QVariant@Base 4:4.5.3
  _ZN15QListWidgetItem8setFlagsE6QFlagsIN2Qt8ItemFlagEE@Base 4:4.5.3
@@ -3945,8 +3934,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QRadialGradientC2Efff@Base 4:4.5.3
  _ZN15QRadialGradientC2Efffff@Base 4:4.5.3
  _ZN15QRadialGradientC2Effffff@Base 4:4.8.0
- _ZN15QRadialGradientD1Ev@Base 4:4.7.4
- _ZN15QRadialGradientD2Ev@Base 4:4.7.4
  _ZN15QSessionManager11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN15QSessionManager11qt_metacastEPKc@Base 4:4.5.3
  _ZN15QSessionManager13requestPhase2Ev@Base 4:4.5.3
@@ -4035,14 +4022,10 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN15QTextCharFormatC1Ev@Base 4:4.5.3
  _ZN15QTextCharFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextCharFormatC2Ev@Base 4:4.5.3
- _ZN15QTextCharFormatD1Ev@Base 4:4.8.1
- _ZN15QTextCharFormatD2Ev@Base 4:4.8.1
  _ZN15QTextListFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextListFormatC1Ev@Base 4:4.5.3
  _ZN15QTextListFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN15QTextListFormatC2Ev@Base 4:4.5.3
- _ZN15QTextListFormatD1Ev@Base 4:4.8.1
- _ZN15QTextListFormatD2Ev@Base 4:4.8.1
  _ZN15QTreeWidgetItem11addChildrenERK5QListIPS_E@Base 4:4.5.3
  _ZN15QTreeWidgetItem11insertChildEiPS_@Base 4:4.5.3
  _ZN15QTreeWidgetItem11itemChangedEv@Base 4:4.5.3
@@ -4162,8 +4145,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QConicalGradientC2ERK7QPointFf@Base 4:4.5.3
  _ZN16QConicalGradientC2Ev@Base 4:4.5.3
  _ZN16QConicalGradientC2Efff@Base 4:4.5.3
- _ZN16QConicalGradientD1Ev@Base 4:4.8.1
- _ZN16QConicalGradientD2Ev@Base 4:4.8.1
  _ZN16QCoreApplication20sendSpontaneousEventEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN16QCoreApplication9sendEventEP7QObjectP6QEvent@Base 4:4.5.3
  _ZN16QDesktopServices11displayNameENS_16StandardLocationE@Base 4:4.5.3
@@ -4323,15 +4304,11 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN16QTextBlockFormatC1Ev@Base 4:4.5.3
  _ZN16QTextBlockFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextBlockFormatC2Ev@Base 4:4.5.3
- _ZN16QTextBlockFormatD1Ev@Base 4:4.8.1
- _ZN16QTextBlockFormatD2Ev@Base 4:4.8.1
  _ZN16QTextFrameFormat9setMarginEf@Base 4:4.5.3
  _ZN16QTextFrameFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextFrameFormatC1Ev@Base 4:4.5.3
  _ZN16QTextFrameFormatC2ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextFrameFormatC2Ev@Base 4:4.5.3
- _ZN16QTextFrameFormatD1Ev@Base 4:4.8.1
- _ZN16QTextFrameFormatD2Ev@Base 4:4.8.1
  _ZN16QTextImageFormatC1ERK11QTextFormat@Base 4:4.5.3
  _ZN16QTextImageFormatC1Ev@Base 4:4.5.3
  _ZN16QTextImageFormatC2ERK11QTextFormat@Base 4:4.5.3
@@ -4660,7 +4637,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QInputMethodEventD0Ev@Base 4:4.7.4
  _ZN17QInputMethodEventD1Ev@Base 4:4.7.4
  _ZN17QInputMethodEventD2Ev@Base 4:4.7.4
- _ZN17QInputMethodEventaSERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN17QInternalMimeData11canReadDataERK7QString@Base 4:4.8.0
  _ZN17QInternalMimeData11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.8.0
  _ZN17QInternalMimeData11qt_metacastEPKc@Base 4:4.8.0
@@ -4716,8 +4692,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN17QStyleOptionTabV3C2ERK15QStyleOptionTab@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ei@Base 4:4.5.3
  _ZN17QStyleOptionTabV3C2Ev@Base 4:4.5.3
- _ZN17QStyleOptionTabV3D1Ev@Base 4:4.7.4
- _ZN17QStyleOptionTabV3D2Ev@Base 4:4.7.4
  _ZN17QStyleOptionTabV3aSERK15QStyleOptionTab@Base 4:4.5.3
  _ZN17QTextImageHandler14externalLoaderE@Base 4:4.5.3
  _ZN17QTextInlineObject10setDescentEf@Base 4:4.5.3
@@ -4870,8 +4844,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN18QStyleOptionSliderC1Ev@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ei@Base 4:4.5.3
  _ZN18QStyleOptionSliderC2Ev@Base 4:4.5.3
- _ZN18QStyleOptionSliderD1Ev@Base 4:4.8.1
- _ZN18QStyleOptionSliderD2Ev@Base 4:4.8.1
  _ZN18QSyntaxHighlighter11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN18QSyntaxHighlighter11qt_metacastEPKc@Base 4:4.5.3
  _ZN18QSyntaxHighlighter11rehighlightEv@Base 4:4.5.3
@@ -5338,16 +5310,12 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QPrintPreviewWidgetD2Ev@Base 4:4.5.3
  _ZN19QStyleOptionComplexC1Eii@Base 4:4.5.3
  _ZN19QStyleOptionComplexC2Eii@Base 4:4.5.3
- _ZN19QStyleOptionComplexD1Ev@Base 4:4.8.1
- _ZN19QStyleOptionComplexD2Ev@Base 4:4.8.1
  _ZN19QStyleOptionFrameV2C1ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C1Ei@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C1Ev@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2Ei@Base 4:4.5.3
  _ZN19QStyleOptionFrameV2C2Ev@Base 4:4.5.3
- _ZN19QStyleOptionFrameV2D1Ev@Base 4:4.8.1
- _ZN19QStyleOptionFrameV2D2Ev@Base 4:4.8.1
  _ZN19QStyleOptionFrameV2aSERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV3C1ERK17QStyleOptionFrame@Base 4:4.5.3
  _ZN19QStyleOptionFrameV3C1Ei@Base 4:4.5.3
@@ -5360,8 +5328,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN19QStyleOptionSpinBoxC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionSpinBoxC2Ei@Base 4:4.5.3
  _ZN19QStyleOptionSpinBoxC2Ev@Base 4:4.5.3
- _ZN19QStyleOptionSpinBoxD1Ev@Base 4:4.8.1
- _ZN19QStyleOptionSpinBoxD2Ev@Base 4:4.8.1
  _ZN19QStyleOptionToolBarC1Ei@Base 4:4.5.3
  _ZN19QStyleOptionToolBarC1Ev@Base 4:4.5.3
  _ZN19QStyleOptionToolBarC2Ei@Base 4:4.5.3
@@ -5800,8 +5766,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN21QStyleOptionFocusRectC1Ev@Base 4:4.5.3
  _ZN21QStyleOptionFocusRectC2Ei@Base 4:4.5.3
  _ZN21QStyleOptionFocusRectC2Ev@Base 4:4.5.3
- _ZN21QStyleOptionFocusRectD1Ev@Base 4:4.8.1
- _ZN21QStyleOptionFocusRectD2Ev@Base 4:4.8.1
  _ZN21QStyleOptionToolBoxV2C1ERK19QStyleOptionToolBox@Base 4:4.5.3
  _ZN21QStyleOptionToolBoxV2C1Ei@Base 4:4.5.3
  _ZN21QStyleOptionToolBoxV2C1Ev@Base 4:4.5.3
@@ -5923,8 +5887,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QStyleOptionViewItemV3C2ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV3C2Ei@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV3C2Ev@Base 4:4.5.3
- _ZN22QStyleOptionViewItemV3D1Ev@Base 4:4.7.4
- _ZN22QStyleOptionViewItemV3D2Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV3aSERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C1ERK20QStyleOptionViewItem@Base 4:4.5.3
  _ZN22QStyleOptionViewItemV4C1Ei@Base 4:4.5.3
@@ -5935,7 +5897,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN22QStyleOptionViewItemV4D1Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV4D2Ev@Base 4:4.7.4
  _ZN22QStyleOptionViewItemV4aSERK20QStyleOptionViewItem@Base 4:4.5.3
- _ZN22QStyleOptionViewItemV4aSERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN22QWhatsThisClickedEventC1ERK7QString@Base 4:4.5.3
  _ZN22QWhatsThisClickedEventC2ERK7QString@Base 4:4.5.3
  _ZN22QWhatsThisClickedEventD0Ev@Base 4:4.5.3
@@ -6148,7 +6109,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QStyleOptionGraphicsItemC1Ev@Base 4:4.5.3
  _ZN24QStyleOptionGraphicsItemC2Ei@Base 4:4.5.3
  _ZN24QStyleOptionGraphicsItemC2Ev@Base 4:4.5.3
- _ZN24QStyleOptionGraphicsItemaSERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN24QStyleOptionQ3DockWindowC1Ei@Base 4:4.5.3
  _ZN24QStyleOptionQ3DockWindowC1Ev@Base 4:4.5.3
  _ZN24QStyleOptionQ3DockWindowC2Ei@Base 4:4.5.3
@@ -6159,8 +6119,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN24QStyleOptionTabBarBaseV2C2ERK22QStyleOptionTabBarBase@Base 4:4.5.3
  _ZN24QStyleOptionTabBarBaseV2C2Ei@Base 4:4.5.3
  _ZN24QStyleOptionTabBarBaseV2C2Ev@Base 4:4.5.3
- _ZN24QStyleOptionTabBarBaseV2D1Ev@Base 4:4.8.1
- _ZN24QStyleOptionTabBarBaseV2D2Ev@Base 4:4.8.1
  _ZN24QStyleOptionTabBarBaseV2aSERK22QStyleOptionTabBarBase@Base 4:4.5.3
  _ZN25QAbstractItemModelPrivate10PersistentD1Ev@Base 4:4.7.4
  _ZN25QAbstractItemModelPrivate10PersistentD2Ev@Base 4:4.7.4
@@ -6296,8 +6254,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN28QStyleOptionTabWidgetFrameV2C2ERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2Ei@Base 4:4.6.1
  _ZN28QStyleOptionTabWidgetFrameV2C2Ev@Base 4:4.6.1
- _ZN28QStyleOptionTabWidgetFrameV2D1Ev@Base 4:4.8.1
- _ZN28QStyleOptionTabWidgetFrameV2D2Ev@Base 4:4.8.1
  _ZN28QStyleOptionTabWidgetFrameV2aSERK26QStyleOptionTabWidgetFrame@Base 4:4.6.1
  _ZN29QIconEngineFactoryInterfaceV2D0Ev@Base 4:4.7.4
  _ZN29QIconEngineFactoryInterfaceV2D1Ev@Base 4:4.7.4
@@ -6347,8 +6303,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN4QCss13StyleSelectorD0Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD1Ev@Base 4:4.5.3
  _ZN4QCss13StyleSelectorD2Ev@Base 4:4.5.3
- _ZN4QCss5ValueD1Ev@Base 4:4.8.1
- _ZN4QCss5ValueD2Ev@Base 4:4.8.1
  _ZN4QCss6Parser10lexemUntilENS_9TokenTypeE@Base 4:4.5.3
  _ZN4QCss6Parser10parseClassEP7QString@Base 4:4.5.3
  _ZN4QCss6Parser10parseMediaEPNS_9MediaRuleE@Base 4:4.5.3
@@ -6596,7 +6550,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN5QMenuD0Ev@Base 4:4.5.3
  _ZN5QMenuD1Ev@Base 4:4.5.3
  _ZN5QMenuD2Ev@Base 4:4.5.3
- _ZN5QRectaNERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN6QBrush10setTextureERK7QPixmap@Base 4:4.5.3
  _ZN6QBrush12setTransformERK10QTransform@Base 4:4.5.3
  _ZN6QBrush15setTextureImageERK6QImage@Base 4:4.5.3
@@ -6674,8 +6627,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QColorC2Ej@Base 4:4.5.3
  _ZN6QColoraSEN2Qt11GlobalColorE@Base 4:4.5.3
  _ZN6QColoraSERKS_@Base 4:4.5.3
- _ZN6QDebug6StreamD1Ev@Base 4:4.8.2+dfsg-11+RPiTC1
- _ZN6QDebug6StreamD2Ev@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN6QFrame10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN6QFrame11changeEventEP6QEvent@Base 4:4.5.3
  _ZN6QFrame11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
@@ -6840,8 +6791,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN6QMovieD0Ev@Base 4:4.5.3
  _ZN6QMovieD1Ev@Base 4:4.5.3
  _ZN6QMovieD2Ev@Base 4:4.5.3
- _ZN6QRectFaNERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
- _ZN6QRectFoRERKS_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN6QSound11isAvailableEv@Base 4:4.5.3
  _ZN6QSound11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN6QSound11qt_metacastEPKc@Base 4:4.5.3
@@ -7013,6 +6962,7 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QLayout10setEnabledEb@Base 4:4.5.3
  _ZN7QLayout10setMenuBarEP7QWidget@Base 4:4.5.3
  _ZN7QLayout10setSpacingEi@Base 4:4.5.3
+ _ZN7QLayout11adoptLayoutEPS_@Base 4:4.8.5
  _ZN7QLayout11qt_metacallEN11QMetaObject4CallEiPPv@Base 4:4.5.3
  _ZN7QLayout11qt_metacastEPKc@Base 4:4.5.3
  _ZN7QLayout11setGeometryERK5QRect@Base 4:4.5.3
@@ -7170,7 +7120,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN7QSliderD0Ev@Base 4:4.5.3
  _ZN7QSliderD1Ev@Base 4:4.5.3
  _ZN7QSliderD2Ev@Base 4:4.5.3
- _ZN7QString5clearEv@Base 4:4.8.1
  _ZN7QTabBar10paintEventEP11QPaintEvent@Base 4:4.5.3
  _ZN7QTabBar10setMovableEb@Base 4:4.5.3
  _ZN7QTabBar10setTabDataEiRK8QVariant@Base 4:4.5.3
@@ -7687,7 +7636,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN8QPictureD1Ev@Base 4:4.5.3
  _ZN8QPictureD2Ev@Base 4:4.5.3
  _ZN8QPictureaSERKS_@Base 4:4.5.3
- _ZN8QPolygon8setPointEiii@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZN8QPolygon9putPointsEiiPKi@Base 4:4.5.3
  _ZN8QPolygon9putPointsEiiRKS_i@Base 4:4.5.3
  _ZN8QPolygon9putPointsEiiiiz@Base 4:4.5.3
@@ -8066,8 +8014,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGradient8setStopsERK7QVectorI5QPairIf6QColorEE@Base 4:4.5.3
  _ZN9QGradientC1Ev@Base 4:4.5.3
  _ZN9QGradientC2Ev@Base 4:4.5.3
- _ZN9QGradientD1Ev@Base 4:4.7.4
- _ZN9QGradientD2Ev@Base 4:4.7.4
  _ZN9QGradienteqERKS_@Base 4:4.5.3
  _ZN9QGroupBox10childEventEP11QChildEvent@Base 4:4.5.3
  _ZN9QGroupBox10paintEventEP11QPaintEvent@Base 4:4.5.3
@@ -8116,7 +8062,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZN9QGtkStyleD0Ev@Base 4:4.5.3
  _ZN9QGtkStyleD1Ev@Base 4:4.5.3
  _ZN9QGtkStyleD2Ev@Base 4:4.5.3
- _ZN9QHashData8willGrowEv@Base 4:4.8.1
  _ZN9QHashData9hasShrunkEv@Base 4:4.8.1
  _ZN9QKeyEvent22createExtendedKeyEventEN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEEjjjRK7QStringbt@Base 4:4.5.3
  _ZN9QKeyEventC1EN6QEvent4TypeEi6QFlagsIN2Qt16KeyboardModifierEERK7QStringbt@Base 4:4.5.3
@@ -9512,6 +9457,8 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK12QLineControl11clearStringEjj@Base 4:4.6.1
  _ZNK12QLineControl11stripStringERK7QString@Base 4:4.6.1
  _ZNK12QLineControl12isValidInputE5QCharS0_@Base 4:4.6.1
+ _ZNK12QLineControl15isRedoAvailableEv@Base 4:4.8.3
+ _ZNK12QLineControl15isUndoAvailableEv@Base 4:4.8.3
  _ZNK12QLineControl18hasAcceptableInputERK7QString@Base 4:4.6.1
  _ZNK12QLineControl4copyEN10QClipboard4ModeE@Base 4:4.6.1
  _ZNK12QLineControl6xToPosEiN9QTextLine14CursorPositionE@Base 4:4.6.1
@@ -10251,7 +10198,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK14QWidgetPrivate22childAtRecursiveHelperERK6QPointbb@Base 4:4.7.0~beta2
  _ZNK14QWidgetPrivate22subtractOpaqueChildrenER7QRegionRK5QRect@Base 4:4.5.3
  _ZNK14QWidgetPrivate22subtractOpaqueSiblingsER7QRegionPbb@Base 4:4.5.3
- _ZNK14QWidgetPrivate7topDataEv@Base 4:4.8.1
  _ZNK14QWidgetPrivate8clipRectEv@Base 4:4.5.3
  _ZNK14QWindowSurface10grabWidgetEPK7QWidgetRK5QRect@Base 4:4.5.3
  _ZNK14QWindowSurface14staticContentsEv@Base 4:4.5.3
@@ -11350,7 +11296,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK5QMenu7isEmptyEv@Base 4:4.5.3
  _ZNK5QMenu8actionAtERK6QPoint@Base 4:4.5.3
  _ZNK5QMenu8sizeHintEv@Base 4:4.5.3
- _ZNK5QRect7isEmptyEv@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZNK6QBrush12textureImageEv@Base 4:4.5.3
  _ZNK6QBrush6pixmapEv@Base 4:4.5.3
  _ZNK6QBrush7textureEv@Base 4:4.5.3
@@ -11670,7 +11615,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QPixmap9doImageIOEP12QImageWriteri@Base 4:4.5.3
  _ZNK7QPixmap9isQBitmapEv@Base 4:4.5.3
  _ZNK7QPixmapcv8QVariantEv@Base 4:4.5.3
- _ZNK7QPointF7toPointEv@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZNK7QRegion10intersectsERK5QRect@Base 4:4.5.3
  _ZNK7QRegion10intersectsERKS_@Base 4:4.5.3
  _ZNK7QRegion10translatedEii@Base 4:4.5.3
@@ -11820,8 +11764,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK7QWidget8hasFocusEv@Base 4:4.5.3
  _ZNK7QWidget8sizeHintEv@Base 4:4.5.3
  _ZNK7QWidget9frameSizeEv@Base 4:4.5.3
- _ZNK7QWidget9isEnabledEv@Base 4:4.8.1
- _ZNK7QWidget9isVisibleEv@Base 4:4.8.1
  _ZNK7QWidget9statusTipEv@Base 4:4.5.3
  _ZNK7QWidget9whatsThisEv@Base 4:4.5.3
  _ZNK7QWizard10buttonTextENS_12WizardButtonE@Base 4:4.5.3
@@ -12415,7 +12357,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZNK9QVector4D16toVector3DAffineEv@Base 4:4.6.1
  _ZNK9QVector4D6lengthEv@Base 4:4.6.1
  _ZNK9QVector4Dcv8QVariantEv@Base 4:4.6.1
- _ZSt4swapI21QPersistentModelIndexEvRT_S2_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZTI10QBlittable@Base 4:4.8.0
  _ZTI10QBoxLayout@Base 4:4.5.3
  _ZTI10QClipboard@Base 4:4.5.3
@@ -13807,7 +13748,6 @@ libQtGui.so.4 libqtgui4 #MINVER#
  _ZlsR11QTextStreamRK9QSplitter@Base 4:4.5.3
  _ZlsR6QDebugRK11QVectorPath@Base 4:4.5.3
  _ZmlRK12QPainterPathRK7QMatrix@Base 4:4.5.3
- _ZneRK6QRectFS1_@Base 4:4.8.2+dfsg-11+RPiTC1
  _ZrsR11QDataStreamR10QMatrix4x4@Base 4:4.6.1
  _ZrsR11QDataStreamR10QTransform@Base 4:4.5.3
  _ZrsR11QDataStreamR11QColorGroup@Base 4:4.5.3

@@ -257,7 +257,7 @@ fi # udev_root != /dev
 
 case "$1" in
     start)
-    /usr/bin/h264 /root/RPi-TC.m4v &
+    /usr/bin/sudo /usr/bin/h264 /home/rpitc/RPi-TC.m4v &
     if init_is_upstart 2>/dev/null; then
 	exit 1
     fi

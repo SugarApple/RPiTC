@@ -1,0 +1,9 @@
+429c87bab123702298e61100038e8627  boot/config.txt
+bb8541e7401fbfabc53a529e760bd3aa  boot/start_cd.elf
+7cc43b582773858d9e8cc86500d59210  boot/fixup_cd.dat
+60cfd1adccf278cee3af4cfee0d65123  boot/bootcode.bin
+8ed8bb65a1a40991c29a765a1a3aff5a  boot/cmdline.txt
+2d1fcbd9fd35b70ef3c96a53c1fb0287  boot/fixup_x.dat
+14397ab9fd76c1284dc294f3434e8045  boot/start.elf
+e3645ebfb254f1ce47de1a28010d28f5  boot/start_x.elf
+2a352a20da2511b9f3c66ac5dd6d5387  boot/fixup.dat

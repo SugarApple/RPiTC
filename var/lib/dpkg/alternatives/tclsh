@@ -1,0 +1,12 @@
+auto
+/usr/bin/tclsh
+tclsh.1
+/usr/share/man/man1/tclsh.1.gz
+
+/usr/bin/tclsh-default
+10000
+/usr/share/man/man1/tclsh-default.1.gz
+/usr/bin/tclsh8.5
+850
+/usr/share/man/man1/tclsh8.5.1.gz
+
