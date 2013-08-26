@@ -20,7 +20,7 @@ PATH=/sbin:/bin:/usr/bin
 . /lib/lsb/init-functions
 
 do_start () {
-	MAC="$( ifconfig eth | head -1 | awk -F: '{print $5$6$7}' )"
+	MAC="$(cat cpuinfo | grep Serial | awk '{print substr($3,9)}')"
 	echo rpitc-"$MAC" > /etc/hostname
 	[ -f /etc/hostname ] && HOSTNAME="$(cat /etc/hostname)"
 
