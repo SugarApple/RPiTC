@@ -9,7 +9,7 @@
   <item label="LXTerminal">
     <action name="Execute"><command>lxterminal</command></action>
   </item>
-  <item label="Iceweasell">
+  <item label="Iceweasel">
     <action name="Execute"><command>iceweasel</command></action>
   </item>
 </menu>
@@ -18,7 +18,7 @@
   <item label="Citrix Receiver 12.2.3">
     <action name="Execute"><command>/opt/Citrix/ICAClient/wfcmgr -icaroot /opt/Citrix/ICAClient</command></action>
   </item>
-  <item label="VMWare View Client 1.7.1">
+  <item label="VMWare View Client 1.7.0">
     <action name="Execute"><command>vmware-view</command></action>
   </item>
   <item label="Quest vWorkspaces 7.00b1">
