@@ -1,0 +1,12 @@
+Right click on Desktop to access the menu!
+
+PLEASE remember:
+- to change autostart application, openbox menu, keyboard layout and locales: right-click on desktop and go to
+  Configurations submenu. Step by step all configuration will be migrated to Administrator mode.
+- to add Desktop icon just add a .desktop file in $HOME/Desktop/ like the others
+- to enable monitor sleep mode remove the file $HOME/.xsessionrc
+- Dual Kernel: just change config.txt and change the line: kernel=kernel.img in kernel=kernel-std.img
+
+NEW Feature:
+- Administrator Mode: press K (shift+k) during boot video intro to enter root mode. Password is "LOL"
+- Browser Mode: press B (shift+b) diring boot video intro to enter browser only mode.

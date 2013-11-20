@@ -1,8 +1,8 @@
-bbcdecdc3a8cd12a2b8002878ec5d118  usr/lib/arm-linux-gnueabi/libpulse-simple.so.0.0.4
-d33442b71e8fd2de64967332819fb684  usr/lib/arm-linux-gnueabi/libpulse.so.0.16.2
-e90588f8caeb02b1ae3e4da23b29ad29  usr/lib/arm-linux-gnueabi/pulseaudio/libpulsecommon-4.0.so
+02bec9e5965ead3594283f78d590e3ed  usr/lib/arm-linux-gnueabi/libpulse-simple.so.0.0.4
+9c8d77c9393208e7029a3426159be163  usr/lib/arm-linux-gnueabi/libpulse.so.0.16.2
+f1f0deeba4db5de5e52e7c134bdbbc65  usr/lib/arm-linux-gnueabi/pulseaudio/libpulsecommon-4.0.so
 f75cad65c647d54e21c16a182e5fe0eb  usr/share/doc/libpulse0/NEWS.gz
 a17c7bf6f9b9321f4cf389682cf0d058  usr/share/doc/libpulse0/README
-2ef23e8256cdc742f23dc21960ab6f8e  usr/share/doc/libpulse0/buildinfo_armel.gz
-73b2b42199de8b3906a8d7e4733777d0  usr/share/doc/libpulse0/changelog.Debian.gz
+9a6ad31b8094d6e667a464d66d791dd1  usr/share/doc/libpulse0/changelog.Debian.armel.gz
+d51e86c10e6d0c7d2e7a4d6edf8ed9c0  usr/share/doc/libpulse0/changelog.Debian.gz
 1a70969fd317243739e917dee33e532a  usr/share/doc/libpulse0/copyright

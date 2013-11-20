@@ -27,6 +27,7 @@ libsqlite3.so.0 libsqlite3-0 #MINVER#
  sqlite3_blob_write@Base 3.5.9
  sqlite3_busy_handler@Base 3.5.9
  sqlite3_busy_timeout@Base 3.5.9
+ sqlite3_cancel_auto_extension@Base 3.8.0.1
  sqlite3_changes@Base 3.5.9
  sqlite3_clear_bindings@Base 3.5.9
  sqlite3_close@Base 3.5.9

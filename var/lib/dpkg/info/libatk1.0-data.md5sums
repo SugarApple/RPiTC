@@ -1,11 +1,12 @@
 f7aab5f692a919da87674ec49a2b091f  usr/share/doc/libatk1.0-data/AUTHORS
-bdb24a1885f48bab79d57d946b9a3f54  usr/share/doc/libatk1.0-data/NEWS.gz
+19808e1df9278fc755f2608d58ec1b3b  usr/share/doc/libatk1.0-data/NEWS.gz
 17231178a2d7228a7e82746f0acd116f  usr/share/doc/libatk1.0-data/README
-4f63602da5f8294a0447747bdbb173b3  usr/share/doc/libatk1.0-data/changelog.Debian.gz
+76207baa746d1261049cf50fa15e19e3  usr/share/doc/libatk1.0-data/changelog.Debian.gz
 1ba22938fb99187744dab17a099331e9  usr/share/doc/libatk1.0-data/changelog.gz
 b9cccf47a1700092620a0e6579806e84  usr/share/doc/libatk1.0-data/copyright
 251434e1cfab68b84ff73e0f75e9d67a  usr/share/locale/af/LC_MESSAGES/atk10.mo
 eb4e16a8b4d3666a0c40c80f6ea0f707  usr/share/locale/am/LC_MESSAGES/atk10.mo
+2361315a57bccac7801c619ee20409a5  usr/share/locale/an/LC_MESSAGES/atk10.mo
 70ae935b771c2037f74ce261d866b260  usr/share/locale/ar/LC_MESSAGES/atk10.mo
 908254720d1c8f0ce95ab13d91015017  usr/share/locale/as/LC_MESSAGES/atk10.mo
 5ccfc5034dd552446065b8ba83ca1749  usr/share/locale/ast/LC_MESSAGES/atk10.mo
@@ -45,7 +46,7 @@ beae7d202f1bb06d79a42741fe411cdc  usr/share/locale/hu/LC_MESSAGES/atk10.mo
 0108415cad104ffdde9aa6f09b1cff76  usr/share/locale/id/LC_MESSAGES/atk10.mo
 44891c3f89a6709bc257d6faefbd88f9  usr/share/locale/is/LC_MESSAGES/atk10.mo
 9d0e7a7ce7ada9e6ac1eb6de45c215b1  usr/share/locale/it/LC_MESSAGES/atk10.mo
-c755f54febeb90dc4f36823014685548  usr/share/locale/ja/LC_MESSAGES/atk10.mo
+eac974a315e1ae67cf9be28673984967  usr/share/locale/ja/LC_MESSAGES/atk10.mo
 5972bf225f3950336d77721108870b0b  usr/share/locale/ka/LC_MESSAGES/atk10.mo
 4ecfceff4de7f6596fd0dc907f998108  usr/share/locale/kk/LC_MESSAGES/atk10.mo
 94db25f2aa1e95465e5a8f9c8ff07ffd  usr/share/locale/km/LC_MESSAGES/atk10.mo

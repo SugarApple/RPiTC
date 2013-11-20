@@ -4,27 +4,27 @@ Hash: SHA1
 Origin: Gibbio
 Label: RPi-TC ARMv6j
 Codename: sid
-Date: Tue, 20 Aug 2013 20:49:29 UTC
+Date: Mon, 18 Nov 2013 16:56:29 UTC
 Architectures: armel
 Components: main
 Description: Raspberry Pi Thin Client project ARMv6j package
 MD5Sum:
- a2ea3ca21995f99cfd685aa5b7958b7b 2246156 main/binary-armel/Packages
- 955828fd98a23a8b1f201807a6311f75 517064 main/binary-armel/Packages.gz
+ 8ac6d2ee7ad1bb978b7f0601b30bfb36 2518945 main/binary-armel/Packages
+ cc02cdedad014dc8c197426b159792b0 574864 main/binary-armel/Packages.gz
  8c2f50cc5bb68c21fa7010cd08f2e686 133 main/binary-armel/Release
  d41d8cd98f00b204e9800998ecf8427e 0 main/source/Sources
  7029066c27ac6f5ef18d660d5741979a 20 main/source/Sources.gz
  4dfa43461d43e4f72b7f541fa458e720 134 main/source/Release
 SHA1:
- 6ca2d5f2f5554a48556d65e0f73b4d93436fca8d 2246156 main/binary-armel/Packages
- 7f19075174b56b8ccd72b07f955ad7981f75bdb8 517064 main/binary-armel/Packages.gz
+ 27108a6b652cf1a695bd908bc33e38ad6bc91c19 2518945 main/binary-armel/Packages
+ 4c441e37e47c26fbd7f5eabdd5e09efb437aa6cd 574864 main/binary-armel/Packages.gz
  7fdd1df687dccc5673f785095a4878ea3103ec70 133 main/binary-armel/Release
  da39a3ee5e6b4b0d3255bfef95601890afd80709 0 main/source/Sources
  46c6643f07aa7f6bfe7118de926b86defc5087c4 20 main/source/Sources.gz
  c7d0eda496690d72d81a5d53d79356b294680e0d 134 main/source/Release
 SHA256:
- 23b79e42b08fc7171a07bd69963cee33ea5742b14690b471d04047094860db55 2246156 main/binary-armel/Packages
- 9fd3da75adfdc2d72c7d8bceaff8b37fb03df4c31910b1e37828e25bbaef4ac1 517064 main/binary-armel/Packages.gz
+ 50100533bc554690ee909a51fd6b8de9193c2ba6a3a03c6d094dfdb527f0c65a 2518945 main/binary-armel/Packages
+ 946d1082199f670e461dd788134479c0933b047d6cb9b15f83463c0f8735988e 574864 main/binary-armel/Packages.gz
  fbe33bb375890e28c1237fc9b0b9d2e94b7e780427b5da2d0276a0b9a730dd4f 133 main/binary-armel/Release
  e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855 0 main/source/Sources
  59869db34853933b239f1e2219cf7d431da006aa919635478511fabbfc8849d2 20 main/source/Sources.gz
@@ -32,11 +32,11 @@ SHA256:
 -----BEGIN PGP SIGNATURE-----
 Version: GnuPG v1.4.11 (GNU/Linux)
 
-iQEcBAEBAgAGBQJSE9ZZAAoJEGx3afC1EkpW4SAH/2t6Bdk2u0FkcfJSaIGKwJGW
-Hnp3d4SEVQivsdWyoy8Tr2HdgrUhtJpJhh2suk9FL4dTMhdjJ0B3jpGAe+WJmELJ
-Vf1Un17YIgGEMGb3J+aeHUO/pGoXEyZA5k2OiMxo/GOb/weagoJvWmXoCDcWk6b7
-HNwoDRilfDftWG/oBIeq9ZD9A3tahFHPReuMS59MH6CrJEuhBrmr2UgcCFmQCM8r
-l+FyaZKcVFqPCg02ebAYl/aMHXDSqZFSNSVFLL75ric1wyES/UBVMy30RyVXEIkE
-0xCghetmhIgjM+g/8pUKRSHvxCdfZJvz51PlBi241nK1nvN3wzzxqCeoUGy9Uug=
-=9UQE
+iQEcBAEBAgAGBQJSika9AAoJEGx3afC1EkpW5ZMIAIWnjhVrKUwF65rPbppBiCOe
+v3LczXmXm209SfJA7iucPq6YmGj875tieJ7ZNMNlZDVpO4p6rYcw0wzmAGtVBEke
+GyhFtP4zkRL8dVHwJfRM4AyioHmTJrG6oyDizrfNfDiP27Zi1Na6uSvKX8kxUu5n
+uz8mTzz5e7WyVEzkFGiSqTLW0a4LdxXt1D+ULnkQHcU77SGX/SW4kbWyMR5SbrAG
+t9c2kk2TQy4yfl7xOfmy1m/OWVOGUGZyDEjZrXC3LAZL/Pus38K6IM7LUZJjI+g7
+8DlLwQ42MjQi5iaHWXJ5VdsEsCbou+ah5DkQOTn1p43epRWu1Ht7/kM5iccy+u4=
+=kqFY
 -----END PGP SIGNATURE-----

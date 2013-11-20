@@ -9,13 +9,16 @@
 #@xfreerdp /v:192.168.0.100 /size:1280x720 /u:USERNAME /p:PASSWORD +compression /sound:sys:alsa
 #@virt-viewer
 #@x2goclient
+#@python /usr/bin/rdpgui.py
 ######################################################
 
 ################DEFAULT AUTOSTART APPZ################
 #show reame please file:
-@leafpad /$HOME/PLEASE_README
+@leafpad /opt/PLEASE_README
 #kill boot intro as soon desktop is ready:
-@/$HOME/killintro.sh
-#start VNC shadowing on display 0:
-@x11vnc -forever -usepw -httpport 5900
+@/opt/killintro.sh
+#VNC server
+@x11vnc -noipv6 -forever -usepw -display :0
+#Conky
+@/home/rpitc/.start-conky
 ######################################################

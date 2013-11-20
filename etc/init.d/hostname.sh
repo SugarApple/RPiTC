@@ -22,6 +22,7 @@ PATH=/sbin:/bin:/usr/bin
 do_start () {
 	MAC="$(cat /proc/cpuinfo | grep Serial | awk '{print substr($3,9)}')"
 	echo rpitc-"$MAC" > /etc/hostname
+        echo 127.0.0.1 localhost rpitc-"$MAC" > /etc/hosts
 	[ -f /etc/hostname ] && HOSTNAME="$(cat /etc/hostname)"
 
 	# Keep current name if /etc/hostname is missing.

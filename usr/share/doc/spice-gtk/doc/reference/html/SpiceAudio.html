@@ -8,7 +8,7 @@
 <link rel="up" href="application-support.html" title="Application Support, from spice-client-glib">
 <link rel="prev" href="application-support.html" title="Application Support, from spice-client-glib">
 <link rel="next" href="SpiceSmartcardManager.html" title="Spice Smartcard Manager">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -52,23 +52,23 @@ struct              <a class="link" href="SpiceAudio.html#SpiceAudio-struct" tit
 struct              <a class="link" href="SpiceAudio.html#SpiceAudioClass" title="struct SpiceAudioClass">SpiceAudioClass</a>;
 
 <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="returnvalue">SpiceAudio</span></a> *        <a class="link" href="SpiceAudio.html#spice-audio-get" title="spice_audio_get ()">spice_audio_get</a>                     (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> *context</code></em>);
+                                                         <em class="parameter"><code><span class="type">GMainContext</span> *context</code></em>);
 <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="returnvalue">SpiceAudio</span></a> *        <a class="link" href="SpiceAudio.html#spice-audio-new" title="spice_audio_new ()">spice_audio_new</a>                     (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> *context</code></em>,
+                                                         <em class="parameter"><code><span class="type">GMainContext</span> *context</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceAudio.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----SpiceAudio
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceAudio.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceAudio.html#SpiceAudio--main-context" title='The "main-context" property'>main-context</a>"             <a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a>*         : Read / Write / Construct Only
+  "<a class="link" href="SpiceAudio.html#SpiceAudio--main-context" title='The "main-context" property'>main-context</a>"             <span class="type">GMainContext</span>*         : Read / Write / Construct Only
   "<a class="link" href="SpiceAudio.html#SpiceAudio--session" title='The "session" property'>session</a>"                  <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>*         : Read / Write / Construct Only
 </pre>
 </div>
@@ -104,7 +104,7 @@ Class structure for <a class="link" href="SpiceAudio.html" title="Spice Audio"><
 <col>
 </colgroup>
 <tbody><tr>
-<td><p><span class="term"><a href="http://library.gnome.org/devel/gobject/unstable/gobject-The-Base-Object-Type.html#GObjectClass"><span class="type">GObjectClass</span></a> <em class="structfield"><code><a name="SpiceAudioClass.parent-class"></a>parent_class</code></em>;</span></p></td>
+<td><p><span class="term"><span class="type">GObjectClass</span> <em class="structfield"><code><a name="SpiceAudioClass.parent-class"></a>parent_class</code></em>;</span></p></td>
 <td>Parent class.</td>
 </tr></tbody>
 </table></div>
@@ -113,7 +113,7 @@ Class structure for <a class="link" href="SpiceAudio.html" title="Spice Audio"><
 <div class="refsect2">
 <a name="spice-audio-get"></a><h3>spice_audio_get ()</h3>
 <pre class="programlisting"><a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="returnvalue">SpiceAudio</span></a> *        spice_audio_get                     (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> *context</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GMainContext</span> *context</code></em>);</pre>
 <p>
 Gets the <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="type">SpiceAudio</span></a> associated with the passed in <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>.
 A new <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="type">SpiceAudio</span></a> instance will be created the first time this
@@ -135,13 +135,13 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>context</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> to attach to (or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for default). <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+<td>a <span class="type">GMainContext</span> to attach to (or <code class="literal">NULL</code> for default). <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>a weak reference to a <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="type">SpiceAudio</span></a>
-instance or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if failed. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
+instance or <code class="literal">NULL</code> if failed. <span class="annotation">[<acronym title="Don't free data after the code is done."><span class="acronym">transfer none</span></acronym>]</span>
 </td>
 </tr>
 </tbody>
@@ -151,7 +151,7 @@ instance or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-
 <div class="refsect2">
 <a name="spice-audio-new"></a><h3>spice_audio_new ()</h3>
 <pre class="programlisting"><a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="returnvalue">SpiceAudio</span></a> *        spice_audio_new                     (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> *context</code></em>,
+                                                         <em class="parameter"><code><span class="type">GMainContext</span> *context</code></em>,
                                                          <em class="parameter"><code>const <span class="type">char</span> *name</code></em>);</pre>
 <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Warning</h3>
@@ -173,15 +173,19 @@ channels to stream to your local audio system.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>context</code></em> :</span></p></td>
-<td>a <a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a> to attach to (or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for default).</td>
+<td>a <span class="type">GMainContext</span> to attach to (or <code class="literal">NULL</code> for
+default). <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>name</code></em> :</span></p></td>
-<td>a name for the audio channels (or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> for application name).</td>
+<td>a name for the audio channels (or <code class="literal">NULL</code> for
+application name). <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a new <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="type">SpiceAudio</span></a> instance or <a href="http://library.gnome.org/devel/glib/unstable/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if no backend or failed.</td>
+<td>a new <a class="link" href="SpiceAudio.html" title="Spice Audio"><span class="type">SpiceAudio</span></a> instance or <code class="literal">NULL</code> if no backend or failed.</td>
 </tr>
 </tbody>
 </table></div>
@@ -191,7 +195,7 @@ channels to stream to your local audio system.
 <a name="SpiceAudio.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceAudio--main-context"></a><h3>The <code class="literal">"main-context"</code> property</h3>
-<pre class="programlisting">  "main-context"             <a href="http://library.gnome.org/devel/glib/unstable/glib-The-Main-Event-Loop.html#GMainContext"><span class="type">GMainContext</span></a>*         : Read / Write / Construct Only</pre>
+<pre class="programlisting">  "main-context"             <span class="type">GMainContext</span>*         : Read / Write / Construct Only</pre>
 <p>GMainContext to use for the event source.</p>
 </div>
 <hr>
@@ -210,6 +214,6 @@ channels to stream to your local audio system.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

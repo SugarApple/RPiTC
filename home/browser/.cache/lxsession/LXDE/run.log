@@ -1,0 +1,85 @@
+** Message: utils.vala:79: Config system location : /etc/xdg/lxsession/LXDE
+** Message: utils.vala:85: System system path location : /etc/xdg/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /etc/xdg/lxsession/LXDE/desktop.conf
+** Message: settings.vala:396: Key file does not have key 'panel/command'
+** Message: settings.vala:396: Key file does not have key 'dock/command'
+** Message: settings.vala:396: Key file does not have key 'file_manager/command'
+** Message: settings.vala:396: Key file does not have key 'desktop_manager/command'
+** Message: settings.vala:396: Key file does not have key 'launcher_manager/command'
+** Message: settings.vala:396: Key file does not have key 'composite_manager/command'
+** Message: settings.vala:396: Key file does not have key 'im1/command'
+** Message: settings.vala:396: Key file does not have key 'im2/command'
+** Message: settings.vala:396: Key file does not have key 'widget1/command'
+** Message: settings.vala:396: Key file does not have group 'Keymap'
+** Message: settings.vala:396: Key file does not have group 'XRandr'
+** Message: settings.vala:396: Key file does not have key 'screensaver/command'
+** Message: settings.vala:396: Key file does not have key 'power_manager/command'
+** Message: settings.vala:396: Key file does not have key 'polkit/command'
+** Message: settings.vala:396: Key file does not have key 'network_gui/command'
+** Message: settings.vala:396: Key file does not have key 'audio_manager/command'
+** Message: settings.vala:396: Key file does not have key 'quit_manager/command'
+** Message: settings.vala:396: Key file does not have key 'quit_manager/image'
+** Message: settings.vala:396: Key file does not have key 'quit_manager/layout'
+** Message: settings.vala:396: Key file does not have key 'workspace_manager/command'
+** Message: settings.vala:396: Key file does not have key 'terminal_manager/command'
+** Message: settings.vala:396: Key file does not have key 'screenshot_manager/command'
+** Message: settings.vala:396: Key file does not have key 'upgrade_manager/command'
+** Message: settings.vala:396: Key file does not have key 'clipboard/command'
+** Message: settings.vala:396: Key file does not have key 'disable_autostart'
+** Message: settings.vala:396: Key file does not have key 'upstart_user_session'
+** Message: settings.vala:396: Key file does not have group 'State'
+** Message: settings.vala:396: Key file does not have group 'Dbus'
+** Message: settings.vala:396: Key file does not have group 'Dbus'
+** Message: settings.vala:396: Key file does not have group 'Security'
+** Message: settings.vala:396: Key file does not have group 'a11y'
+** Message: settings.vala:396: Key file does not have group 'Updates'
+** Message: settings.vala:396: Key file does not have group 'Environment'
+** Message: settings.vala:396: Key file does not have group 'Environment'
+** Message: settings.vala:435: Key file does not have key 'iXft/Hinting'
+** Message: settings.vala:396: Key file does not have key 'sXft/HintStyle'
+** Message: settings.vala:396: Key file does not have key 'sXft/RGBA'
+** Message: settings.vala:396: Key file does not have key 'sGtk/ColorScheme'
+** Message: settings.vala:396: Key file does not have key 'sGtk/CursorThemeName'
+** Message: settings.vala:435: Key file does not have key 'iGtk/ToolbarIconSize'
+** Message: settings.vala:435: Key file does not have key 'iNet/EnableEventSounds'
+** Message: settings.vala:435: Key file does not have key 'iNet/EnableInputFeedbackSounds'
+** Message: settings.vala:435: Key file does not have key 'Beep'
+** Message: settings.vala:332: Monitoring: /etc/xdg/lxsession/LXDE/desktop.conf
+** Message: settings.vala:340: Desktop file is not in config home, monitoring creation of it
+** Message: settings.vala:355: Monitoring home path: /home/browser/.config/lxsession/LXDE/desktop.conf
+** Message: environement.vala:56: Exporting variable
+** Message: environement.vala:57: desktop_environnement XDG_CURRENT_DESKTOP
+** Message: environement.vala:139: confir_dirs is null, export : /etc/xdg
+** Message: environement.vala:151: Exporting XDG_CONFIG_DIRS
+** Message: environement.vala:158: data_dirs is null, export : /usr/local/share:/usr/share:/usr/share/gdm:/var/lib/menu-xdg
+** Message: environement.vala:170: Exporting XDG_DATA_DIRS
+** Message: environement.vala:204: Failed to execute child process "dbus-launch" (No such file or directory)
+** Message: utils.vala:79: Config system location : /etc/xdg/lxsession/LXDE
+** Message: utils.vala:85: System system path location : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: utils.vala:89: Final file used : /etc/xdg/lxsession/LXDE/conffiles.conf
+** Message: utils.vala:79: Config system location : /etc/xdg/lxsession/LXDE
+** Message: utils.vala:85: System system path location : /etc/xdg/lxsession/LXDE/desktop.conf
+** Message: utils.vala:89: Final file used : /etc/xdg/lxsession/LXDE/desktop.conf
+xprop:  no such property "_NET_NUMBER_OF_DESKTOPS"
+xprop:  no such property "_NET_DESKTOP_NAMES"
+xprop:  no such property "_NET_CURRENT_DESKTOP"
+** Message: utils.vala:68: User config used : /home/browser/.config/lxsession/LXDE/autostart
+** Message: utils.vala:89: Final file used : /home/browser/.config/lxsession/LXDE/autostart
+** Message: autostart.vala:44: Autostart path : /home/browser/.config/lxsession/LXDE/autostart
+** Message: options.vala:213: Create Option Clipboard
+** Message: options.vala:46: Options - Launch command lxclipboard
+** Message: main.vala:391: Check keymap_mode (null)
+
+** (lxsession:1036): WARNING **: main.vala:448: Could not aquire name
+
+Obt-Message: Xinerama extension is not present on the server
+
+(process:1119): GLib-CRITICAL **: g_slice_set_config: assertion `sys_page_size == 0' failed
+Openbox-Message: Unable to find a valid menu file "/usr/share/lxde/openbox/menu.xml"
+** Message: app.vala:123: /opt/killintro.sh exit with this type of exit: 0
+** Message: app.vala:132: Exit normal, don't reload
+** Message: app.vala:123: iceweasel exit with this type of exit: 0
+** Message: app.vala:132: Exit normal, don't reload
+XIO:  fatal IO error 11 (Resource temporarily unavailable) on X server ":0"
+      after 9931 requests (9928 known processed) with 0 events remaining.
+pcmanfm: Fatal IO error 11 (Resource temporarily unavailable) on X server :0.

@@ -18,8 +18,8 @@ voice:*::
 cdrom:*::
 floppy:*::
 tape:*::
-sudo:*::rpitc
-audio:*::
+sudo:*::rpitc,browser
+audio:*::rpitc,browser
 dip:*::
 www-data:*::
 backup:*::
@@ -30,7 +30,7 @@ src:*::
 gnats:*::
 shadow:*::
 utmp:*::
-video:*::
+video:*::rpitc,browser
 sasl:*::
 plugdev:*::
 staff:*::
@@ -43,3 +43,5 @@ messagebus:!::
 netdev:!::
 ntp:!::
 rpitc:!::
+utempter:!::
+browser:!::

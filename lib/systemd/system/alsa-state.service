@@ -13,5 +13,5 @@ Conflicts=shutdown.target
 
 [Service]
 Type=simple
-ExecStart=-/usr/sbin/alsactl -s -n 19 -c rdaemon
-ExecStop=-/usr/sbin/alsactl -s rkill save_and_quit
+ExecStart=-/usr/sbin/alsactl -E HOME=/var/run/alsa -s -n 19 -c rdaemon
+ExecStop=-/usr/sbin/alsactl -E HOME=/var/run/alsa -s kill save_and_quit

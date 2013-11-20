@@ -565,13 +565,18 @@ session had keyboard focus.</doc>
       <implements name="Gtk.Orientable"/>
       <constructor name="new" c:identifier="spice_usb_device_widget_new">
         <return-value transfer-ownership="none">
+          <doc xml:whitespace="preserve">a new #SpiceUsbDeviceWidget instance</doc>
           <type name="Gtk.Widget" c:type="GtkWidget*"/>
         </return-value>
         <parameters>
           <parameter name="session" transfer-ownership="none">
+            <doc xml:whitespace="preserve">#SpiceSession for which to widget will control USB redirection</doc>
             <type name="SpiceClientGLib.Session" c:type="SpiceSession*"/>
           </parameter>
-          <parameter name="device_format_string" transfer-ownership="none">
+          <parameter name="device_format_string"
+                     transfer-ownership="none"
+                     allow-none="1">
+            <doc xml:whitespace="preserve">String passed to spice_usb_device_get_description()</doc>
             <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
@@ -596,30 +601,38 @@ session had keyboard focus.</doc>
                 writable="1"
                 construct-only="1"
                 transfer-ownership="none">
+        <doc xml:whitespace="preserve">Format string to pass to spice_usb_device_get_description() for getting
+the device USB descriptions.</doc>
         <type name="utf8" c:type="gchar*"/>
       </property>
       <property name="session"
                 writable="1"
                 construct-only="1"
                 transfer-ownership="none">
+        <doc xml:whitespace="preserve">#SpiceSession this #SpiceUsbDeviceWidget is associated with</doc>
         <type name="SpiceClientGLib.Session"/>
       </property>
       <field name="parent">
-        <type name="_GtkBox" c:type="_SpiceGtkBox"/>
+        <type name="Gtk.VBox" c:type="GtkVBox"/>
       </field>
       <field name="priv" readable="0" private="1">
         <type name="UsbDeviceWidgetPrivate"
               c:type="SpiceUsbDeviceWidgetPrivate*"/>
       </field>
       <glib:signal name="connect-failed" when="first">
+        <doc xml:whitespace="preserve">The #SpiceUsbDeviceWidget::connect-failed signal is emitted whenever
+the user has requested for a device to be redirected and this has
+failed.</doc>
         <return-value transfer-ownership="none">
           <type name="none" c:type="void"/>
         </return-value>
         <parameters>
-          <parameter name="object" transfer-ownership="none">
+          <parameter name="device" transfer-ownership="none">
+            <doc xml:whitespace="preserve">#SpiceUsbDevice boxed object corresponding to the added device</doc>
             <type name="SpiceClientGLib.UsbDevice"/>
           </parameter>
-          <parameter name="p0" transfer-ownership="none">
+          <parameter name="error" transfer-ownership="none">
+            <doc xml:whitespace="preserve">#GError describing the reason why the connect failed</doc>
             <type name="GLib.Error"/>
           </parameter>
         </parameters>
@@ -630,7 +643,7 @@ session had keyboard focus.</doc>
             glib:is-gtype-struct-for="UsbDeviceWidget">
       <doc xml:whitespace="preserve">Class structure for #SpiceUsbDeviceWidget.</doc>
       <field name="parent_class">
-        <type name="_GtkBoxClass" c:type="_SpiceGtkBoxClass"/>
+        <type name="Gtk.VBoxClass" c:type="GtkVBoxClass"/>
       </field>
       <field name="connect_failed">
         <callback name="connect_failed">
@@ -659,10 +672,6 @@ session had keyboard focus.</doc>
     <record name="UsbDeviceWidgetPrivate"
             c:type="SpiceUsbDeviceWidgetPrivate"
             disguised="1">
-    </record>
-    <record name="_GtkBox" c:type="_SpiceGtkBox" disguised="1">
-    </record>
-    <record name="_GtkBoxClass" c:type="_SpiceGtkBoxClass" disguised="1">
     </record>
   </namespace>
 </repository>

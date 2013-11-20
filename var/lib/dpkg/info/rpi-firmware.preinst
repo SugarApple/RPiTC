@@ -11,7 +11,6 @@ case "$1" in
   # Backup old config.txt & cmdline.txt
   mv /boot/config.txt /boot/config.txt.$(date +%Y%m%d)
   mv /boot/cmdline.txt /boot/cmdline.txt.$(date +%Y%m%d)
-  rm -fr /boot/*.tar
   tar cvf /boot/backup$(date +%Y%m%d).tar /boot/*.bin /boot/*.elf /boot/*.dat
   rm -fr /boot/*.bin /boot/*.elf /boot/*.dat
  ;;

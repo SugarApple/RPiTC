@@ -1,0 +1,10 @@
+#################DONT TOUCH THIS LINE#################
+@pcmanfm --desktop --profile LXDE
+######################################################
+
+################DEFAULT AUTOSTART APPZ################
+#kill boot intro as soon desktop is ready:
+@/opt/killintro.sh
+#start Iceweasel in kiosk mode
+@iceweasel
+######################################################

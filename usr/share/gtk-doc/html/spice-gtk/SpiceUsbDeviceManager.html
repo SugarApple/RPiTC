@@ -8,7 +8,7 @@
 <link rel="up" href="application-support.html" title="Application Support, from spice-client-glib">
 <link rel="prev" href="SpiceSmartcardManager.html" title="Spice Smartcard Manager">
 <link rel="next" href="spice-gtk-Utilities.html" title="Utilities">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -57,42 +57,42 @@ struct              <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDev
 struct              <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManagerClass" title="struct SpiceUsbDeviceManagerClass">SpiceUsbDeviceManagerClass</a>;
 
 <a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="returnvalue">SpiceUsbDeviceManager</span></a> * <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get" title="spice_usb_device_manager_get ()">spice_usb_device_manager_get</a>    (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);
-<a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices" title="spice_usb_device_manager_get_devices ()">spice_usb_device_manager_get_devices</a>
+                                                         <em class="parameter"><code><span class="type">GError</span> **err</code></em>);
+<span class="returnvalue">GPtrArray</span> *         <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices" title="spice_usb_device_manager_get_devices ()">spice_usb_device_manager_get_devices</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>);
-<a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices-with-filter" title="spice_usb_device_manager_get_devices_with_filter ()">spice_usb_device_manager_get_devices_with_filter</a>
+<span class="returnvalue">GPtrArray</span> *         <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-get-devices-with-filter" title="spice_usb_device_manager_get_devices_with_filter ()">spice_usb_device_manager_get_devices_with_filter</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filter</code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-is-device-connected" title="spice_usb_device_manager_is_device_connected ()">spice_usb_device_manager_is_device_connected</a>
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *filter</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-is-device-connected" title="spice_usb_device_manager_is_device_connected ()">spice_usb_device_manager_is_device_connected</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-disconnect-device" title="spice_usb_device_manager_disconnect_device ()">spice_usb_device_manager_disconnect_device</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-can-redirect-device" title="spice_usb_device_manager_can_redirect_device ()">spice_usb_device_manager_can_redirect_device</a>
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-can-redirect-device" title="spice_usb_device_manager_can_redirect_device ()">spice_usb_device_manager_can_redirect_device</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);
+                                                         <em class="parameter"><code><span class="type">GError</span> **err</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-connect-device-async" title="spice_usb_device_manager_connect_device_async ()">spice_usb_device_manager_connect_device_async</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-connect-device-finish" title="spice_usb_device_manager_connect_device_finish ()">spice_usb_device_manager_connect_device_finish</a>
+                                                         <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                                                         <em class="parameter"><code><span class="type">GAsyncReadyCallback</span> callback</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-manager-connect-device-finish" title="spice_usb_device_manager_connect_device_finish ()">spice_usb_device_manager_connect_device_finish</a>
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *self</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *res</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);
+                                                         <em class="parameter"><code><span class="type">GAsyncResult</span> *res</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **err</code></em>);
 
                     <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice-struct" title="SpiceUsbDevice">SpiceUsbDevice</a>;
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-get-description" title="spice_usb_device_get_description ()">spice_usb_device_get_description</a>    (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-get-description" title="spice_usb_device_get_description ()">spice_usb_device_get_description</a>    (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *format</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceUsbDeviceManager.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----SpiceUsbDeviceManager
 </pre>
 <pre class="synopsis">
@@ -104,24 +104,24 @@ struct              <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDev
 <a name="SpiceUsbDeviceManager.implemented-interfaces"></a><h2>Implemented Interfaces</h2>
 <p>
 SpiceUsbDeviceManager implements
- <a href="../gio/GInitable.html">GInitable</a>.</p>
+ GInitable.</p>
 </div>
 <div class="refsect1">
 <a name="SpiceUsbDeviceManager.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect" title='The "auto-connect" property'>auto-connect</a>"             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect-filter" title='The "auto-connect-filter" property'>auto-connect-filter</a>"      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write / Construct
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--redirect-on-connect" title='The "redirect-on-connect" property'>redirect-on-connect</a>"      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect" title='The "auto-connect" property'>auto-connect</a>"             <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect-filter" title='The "auto-connect-filter" property'>auto-connect-filter</a>"      <span class="type">gchar</span>*                : Read / Write / Construct
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--redirect-on-connect" title='The "redirect-on-connect" property'>redirect-on-connect</a>"      <span class="type">gchar</span>*                : Read / Write
   "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--session" title='The "session" property'>session</a>"                  <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>*         : Read / Write / Construct Only
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceUsbDeviceManager.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-auto-connect-failed" title='The "auto-connect-failed" signal'>auto-connect-failed</a>"                            : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-added" title='The "device-added" signal'>device-added</a>"                                   : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-error" title='The "device-error" signal'>device-error</a>"                                   : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-removed" title='The "device-removed" signal'>device-removed</a>"                                 : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-auto-connect-failed" title='The "auto-connect-failed" signal'>auto-connect-failed</a>"                            : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-added" title='The "device-added" signal'>device-added</a>"                                   : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-error" title='The "device-error" signal'>device-error</a>"                                   : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-removed" title='The "device-removed" signal'>device-removed</a>"                                 : <code class="literal">Run First</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -129,7 +129,7 @@ SpiceUsbDeviceManager implements
 <p>
 <a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> monitors USB redirection channels and USB
 devices plugging/unplugging. If <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect" title='The "auto-connect" property'><span class="type">"auto-connect"</span></a>
-is set to <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a>, it will automatically connect newly plugged USB
+is set to <code class="literal">TRUE</code>, it will automatically connect newly plugged USB
 devices to available channels.
 </p>
 <p>
@@ -181,7 +181,7 @@ Class structure for <a class="link" href="SpiceUsbDeviceManager.html" title="Spi
 </colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><a href="../gobject/gobject-The-Base-Object-Type.html#GObjectClass"><span class="type">GObjectClass</span></a> <em class="structfield"><code><a name="SpiceUsbDeviceManagerClass.parent-class"></a>parent_class</code></em>;</span></p></td>
+<td><p><span class="term"><span class="type">GObjectClass</span> <em class="structfield"><code><a name="SpiceUsbDeviceManagerClass.parent-class"></a>parent_class</code></em>;</span></p></td>
 <td>Parent class.</td>
 </tr>
 <tr>
@@ -207,7 +207,7 @@ Class structure for <a class="link" href="SpiceUsbDeviceManager.html" title="Spi
 <div class="refsect2">
 <a name="spice-usb-device-manager-get"></a><h3>spice_usb_device_manager_get ()</h3>
 <pre class="programlisting"><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="returnvalue">SpiceUsbDeviceManager</span></a> * spice_usb_device_manager_get    (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GError</span> **err</code></em>);</pre>
 <p>
 Gets the <a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> associated with the passed in <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>.
 A new <a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> instance will be created the first time this
@@ -240,7 +240,7 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-manager-get-devices"></a><h3>spice_usb_device_manager_get_devices ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         spice_usb_device_manager_get_devices
+<pre class="programlisting"><span class="returnvalue">GPtrArray</span> *         spice_usb_device_manager_get_devices
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
@@ -254,7 +254,7 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><code class="literal">GPtrArray</code></a> array of <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><code class="literal">SpiceUsbDevice</code></a>. <span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> SpiceUsbDevice][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+<td>a <code class="literal">GPtrArray</code> array of <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><code class="literal">SpiceUsbDevice</code></a>. <span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> SpiceUsbDevice][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
 </td>
 </tr>
 </tbody>
@@ -263,9 +263,9 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-manager-get-devices-with-filter"></a><h3>spice_usb_device_manager_get_devices_with_filter ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><span class="returnvalue">GPtrArray</span></a> *         spice_usb_device_manager_get_devices_with_filter
+<pre class="programlisting"><span class="returnvalue">GPtrArray</span> *         spice_usb_device_manager_get_devices_with_filter
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *filter</code></em>);</pre>
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *filter</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -278,13 +278,15 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>filter</code></em> :</span></p></td>
-<td>filter string for selecting which devices to return, see
-<a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect-filter" title='The "auto-connect-filter" property'><span class="type">"auto-connect-filter"</span></a> for the filter string format</td>
+<td>filter string for selecting which devices to return,
+see <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager--auto-connect-filter" title='The "auto-connect-filter" property'><span class="type">"auto-connect-filter"</span></a> for the f ilter
+string format. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>a
-<a href="../glib/glib-Pointer-Arrays.html#GPtrArray"><code class="literal">GPtrArray</code></a> array of <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><code class="literal">SpiceUsbDevice</code></a>. <span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> SpiceUsbDevice][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
+<code class="literal">GPtrArray</code> array of <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><code class="literal">SpiceUsbDevice</code></a>. <span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> SpiceUsbDevice][<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
 </td>
 </tr>
 </tbody>
@@ -294,7 +296,7 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-manager-is-device-connected"></a><h3>spice_usb_device_manager_is_device_connected ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_usb_device_manager_is_device_connected
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_usb_device_manager_is_device_connected
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
@@ -315,7 +317,7 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>device</code></em> has an associated USB redirection channel</td>
+<code class="literal">TRUE</code> if <em class="parameter"><code>device</code></em> has an associated USB redirection channel</td>
 </tr>
 </tbody>
 </table></div>
@@ -343,7 +345,7 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><code class="literal">TRUE</code></a> if <em class="parameter"><code>device</code></em> has an associated USB redirection channel</td>
+<code class="literal">TRUE</code> if <em class="parameter"><code>device</code></em> has an associated USB redirection channel</td>
 </tr>
 </tbody>
 </table></div>
@@ -351,10 +353,10 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-manager-can-redirect-device"></a><h3>spice_usb_device_manager_can_redirect_device ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_usb_device_manager_can_redirect_device
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_usb_device_manager_can_redirect_device
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *self</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GError</span> **err</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -362,9 +364,9 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_usb_device_manager_connect_device_async
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> *cancellable</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> callback</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> user_data</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GCancellable</span> *cancellable</code></em>,
+                                                         <em class="parameter"><code><span class="type">GAsyncReadyCallback</span> callback</code></em>,
+                                                         <em class="parameter"><code><span class="type">gpointer</span> user_data</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -381,11 +383,11 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>cancellable</code></em> :</span></p></td>
-<td>a <a href="../gio/GCancellable.html"><span class="type">GCancellable</span></a> or NULL</td>
+<td>a <span class="type">GCancellable</span> or NULL</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>callback</code></em> :</span></p></td>
-<td>a <a href="../gio/GAsyncResult.html#GAsyncReadyCallback"><span class="type">GAsyncReadyCallback</span></a> to call when the request is satisfied</td>
+<td>a <span class="type">GAsyncReadyCallback</span> to call when the request is satisfied</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -397,10 +399,10 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-manager-connect-device-finish"></a><h3>spice_usb_device_manager_connect_device_finish ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_usb_device_manager_connect_device_finish
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_usb_device_manager_connect_device_finish
                                                         (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *self</code></em>,
-                                                         <em class="parameter"><code><a href="../gio/GAsyncResult.html"><span class="type">GAsyncResult</span></a> *res</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> **err</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">GAsyncResult</span> *res</code></em>,
+                                                         <em class="parameter"><code><span class="type">GError</span> **err</code></em>);</pre>
 </div>
 <hr>
 <div class="refsect2">
@@ -410,12 +412,12 @@ after the <a class="link" href="SpiceSession.html" title="Spice Session"><span c
 <hr>
 <div class="refsect2">
 <a name="spice-usb-device-get-description"></a><h3>spice_usb_device_get_description ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             spice_usb_device_get_description    (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *format</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             spice_usb_device_get_description    (<em class="parameter"><code><a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a> *device</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *format</code></em>);</pre>
 <p>
 Get a string describing the device which is suitable as a description of
 the device for the end user. The returned string should be freed with
-<a href="../glib/glib-Memory-Allocation.html#g-free"><code class="function">g_free()</code></a> when no longer needed.
+<code class="function">g_free()</code> when no longer needed.
 </p>
 <p>
 The <em class="parameter"><code>format</code></em> positional parameters are the following:
@@ -445,11 +447,13 @@ The <em class="parameter"><code>format</code></em> positional parameters are the
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>format</code></em> :</span></p></td>
-<td>an optionnal <code class="function">printf()</code> format string with positional parameters</td>
+<td>an optional <code class="function">printf()</code> format string with
+positional parameters. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
+</td>
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a newly-allocated string holding the description, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if failed</td>
+<td>a newly-allocated string holding the description, or <code class="literal">NULL</code> if failed</td>
 </tr>
 </tbody>
 </table></div>
@@ -459,7 +463,7 @@ The <em class="parameter"><code>format</code></em> positional parameters are the
 <a name="SpiceUsbDeviceManager.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceUsbDeviceManager--auto-connect"></a><h3>The <code class="literal">"auto-connect"</code> property</h3>
-<pre class="programlisting">  "auto-connect"             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "auto-connect"             <span class="type">gboolean</span>              : Read / Write</pre>
 <p>
 Set this to TRUE to automatically redirect newly plugged in device.
 </p>
@@ -472,7 +476,7 @@ property is controlled by <a class="link" href="SpiceGtkSession.html" title="Spi
 <hr>
 <div class="refsect2">
 <a name="SpiceUsbDeviceManager--auto-connect-filter"></a><h3>The <code class="literal">"auto-connect-filter"</code> property</h3>
-<pre class="programlisting">  "auto-connect-filter"      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write / Construct</pre>
+<pre class="programlisting">  "auto-connect-filter"      <span class="type">gchar</span>*                : Read / Write / Construct</pre>
 <p>
 Set a string specifying a filter to use to determine which USB devices
 to autoconnect when plugged in, a filter consists of one or more rules.
@@ -485,7 +489,7 @@ Where each rule has the form of:
 Use -1 for <em class="parameter"><code>class</code></em>/<em class="parameter"><code>vendor</code></em>/<em class="parameter"><code>product</code></em>/<em class="parameter"><code>version</code></em> to accept any value.
 </p>
 <p>
-And the rules are themselves are concatonated like this:
+And the rules themselves are concatenated like this:
 </p>
 <p>
 <em class="parameter"><code>rule1</code></em>|<em class="parameter"><code>rule2</code></em>|<em class="parameter"><code>rule3</code></em>
@@ -505,7 +509,7 @@ USB filter editor tool.
 <hr>
 <div class="refsect2">
 <a name="SpiceUsbDeviceManager--redirect-on-connect"></a><h3>The <code class="literal">"redirect-on-connect"</code> property</h3>
-<pre class="programlisting">  "redirect-on-connect"      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "redirect-on-connect"      <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 Set a string specifying a filter selecting USB devices to automatically
 redirect after a Spice connection has been established.
@@ -531,8 +535,8 @@ format.
 <a name="SpiceUsbDeviceManager-auto-connect-failed"></a><h3>The <code class="literal">"auto-connect-failed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager,
                                                         <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a>        *device,
-                                                        <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>                *error,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">GError</span>                *error,
+                                                        <span class="type">gpointer</span>               user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-auto-connect-failed" title='The "auto-connect-failed" signal'><span class="type">"auto-connect-failed"</span></a> signal is emitted
 whenever the auto-connect property is true, and a newly plugged in
@@ -556,7 +560,7 @@ device could not be auto-connected.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
 <td>
-<a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> describing the reason why the autoconnect failed</td>
+<span class="type">GError</span> describing the reason why the autoconnect failed</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -570,7 +574,7 @@ device could not be auto-connected.
 <a name="SpiceUsbDeviceManager-device-added"></a><h3>The <code class="literal">"device-added"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager,
                                                         <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a>        *device,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>               user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-added" title='The "device-added" signal'><span class="type">"device-added"</span></a> signal is emitted whenever
 a new USB device has been plugged in.
@@ -602,8 +606,8 @@ a new USB device has been plugged in.
 <a name="SpiceUsbDeviceManager-device-error"></a><h3>The <code class="literal">"device-error"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager,
                                                         <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a>        *device,
-                                                        <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>                *error,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">GError</span>                *error,
+                                                        <span class="type">gpointer</span>               user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-error" title='The "device-error" signal'><span class="type">"device-error"</span></a> signal is emitted whenever an
 error happens which causes a device to no longer be available to the
@@ -628,7 +632,7 @@ guest.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
 <td>
-<a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> describing the error</td>
+<span class="type">GError</span> describing the error</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -642,7 +646,7 @@ guest.
 <a name="SpiceUsbDeviceManager-device-removed"></a><h3>The <code class="literal">"device-removed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceUsbDeviceManager.html" title="Spice USB Manager"><span class="type">SpiceUsbDeviceManager</span></a> *manager,
                                                         <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a>        *device,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>               user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>               user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDeviceManager-device-removed" title='The "device-removed" signal'><span class="type">"device-removed"</span></a> signal is emitted whenever
 an USB device has been removed.
@@ -673,6 +677,6 @@ an USB device has been removed.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

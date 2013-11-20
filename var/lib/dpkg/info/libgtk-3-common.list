@@ -196,6 +196,10 @@
 /usr/share/locale/he/LC_MESSAGES
 /usr/share/locale/he/LC_MESSAGES/gtk30.mo
 /usr/share/locale/he/LC_MESSAGES/gtk30-properties.mo
+/usr/share/locale/gd
+/usr/share/locale/gd/LC_MESSAGES
+/usr/share/locale/gd/LC_MESSAGES/gtk30.mo
+/usr/share/locale/gd/LC_MESSAGES/gtk30-properties.mo
 /usr/share/locale/af
 /usr/share/locale/af/LC_MESSAGES
 /usr/share/locale/af/LC_MESSAGES/gtk30.mo

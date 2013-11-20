@@ -1,13 +1,13 @@
 This package was debianized by Jose Carlos Garcia Sogo <jsogo@debian.org> on
 Mon, 23 Jun 2003 15:43:18 +0200.
 
-It was downloaded from ftp://ftp.gnupg.org/GnuPG/libgpg-error
+It was downloaded from ftp://ftp.gnupg.org/gcrypt/libgpg-error/
 
 Upstream Author:
 	g10 Code GmbH <code@g10code.com>
-	
-Copyright: 2003 - 2006 g10 Code GmbH
-  
+
+Copyright: 2001-2004, 2010, 2012, 2013 g10 Code GmbH
+
 Copyright statement:
 
    This program is free software; you can redistribute it and/or modify

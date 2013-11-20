@@ -1,6 +1,6 @@
-f286db759b3a16f2dac2bae2dfb12136  usr/lib/arm-linux-gnueabi/liborc-0.4.so.0.17.0
-f57a0f3a352c63b2bc120b2ea613b5d3  usr/lib/arm-linux-gnueabi/liborc-test-0.4.so.0.17.0
+fe2a97a1c4c2d541dd9b35b3eb0572b1  usr/lib/arm-linux-gnueabi/liborc-0.4.so.0.18.0
+df40aaed538bb7196f673281612ea3fd  usr/lib/arm-linux-gnueabi/liborc-test-0.4.so.0.18.0
 2ec3be946ba7666f6b6672e44beaeeba  usr/share/doc/liborc-0.4-0/README
 0bab3a655919a228902ba5edeb5daa60  usr/share/doc/liborc-0.4-0/TODO
-4a76164a03d4e82e3c456b10db05c2c2  usr/share/doc/liborc-0.4-0/changelog.Debian.gz
+ecdbdfdb1ad35f2dd77045d1a902fe39  usr/share/doc/liborc-0.4-0/changelog.Debian.gz
 68fa95b2be1e678abd11b10fd17c94aa  usr/share/doc/liborc-0.4-0/copyright

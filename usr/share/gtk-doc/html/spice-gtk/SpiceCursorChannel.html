@@ -8,7 +8,7 @@
 <link rel="up" href="ch02.html" title="Session and Channels Objects, from spice-client-glib">
 <link rel="prev" href="SpiceChannel.html" title="Spice Channel">
 <link rel="next" href="SpiceDisplayChannel.html" title="Display Channel">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -55,7 +55,7 @@ struct              <a class="link" href="SpiceCursorChannel.html#SpiceCursorCha
 <div class="refsect1">
 <a name="SpiceCursorChannel.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----<a class="link" href="SpiceChannel.html" title="Spice Channel">SpiceChannel</a>
          +----SpiceCursorChannel
 </pre>
@@ -63,10 +63,10 @@ struct              <a class="link" href="SpiceCursorChannel.html#SpiceCursorCha
 <div class="refsect1">
 <a name="SpiceCursorChannel.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-hide" title='The "cursor-hide" signal'>cursor-hide</a>"                                    : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-move" title='The "cursor-move" signal'>cursor-move</a>"                                    : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-reset" title='The "cursor-reset" signal'>cursor-reset</a>"                                   : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-set" title='The "cursor-set" signal'>cursor-set</a>"                                     : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-hide" title='The "cursor-hide" signal'>cursor-hide</a>"                                    : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-move" title='The "cursor-move" signal'>cursor-move</a>"                                    : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-reset" title='The "cursor-reset" signal'>cursor-reset</a>"                                   : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-set" title='The "cursor-set" signal'>cursor-set</a>"                                     : <code class="literal">Run First</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -140,7 +140,7 @@ Class structure for <a class="link" href="SpiceCursorChannel.html" title="Cursor
 <div class="refsect2">
 <a name="SpiceCursorChannel-cursor-hide"></a><h3>The <code class="literal">"cursor-hide"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceCursorChannel.html" title="Cursor Channel"><span class="type">SpiceCursorChannel</span></a> *cursor,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>            user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-hide" title='The "cursor-hide" signal'><span class="type">"cursor-hide"</span></a> signal is emitted to hide
 the cursor/pointer on the display area.
@@ -166,9 +166,9 @@ the cursor/pointer on the display area.
 <div class="refsect2">
 <a name="SpiceCursorChannel-cursor-move"></a><h3>The <code class="literal">"cursor-move"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceCursorChannel.html" title="Cursor Channel"><span class="type">SpiceCursorChannel</span></a> *cursor,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                x,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                y,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gint</span>                x,
+                                                        <span class="type">gint</span>                y,
+                                                        <span class="type">gpointer</span>            user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-move" title='The "cursor-move" signal'><span class="type">"cursor-move"</span></a> signal is emitted to update
 the cursor position on the display area.
@@ -202,7 +202,7 @@ the cursor position on the display area.
 <div class="refsect2">
 <a name="SpiceCursorChannel-cursor-reset"></a><h3>The <code class="literal">"cursor-reset"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceCursorChannel.html" title="Cursor Channel"><span class="type">SpiceCursorChannel</span></a> *cursor,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>            user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-reset" title='The "cursor-reset" signal'><span class="type">"cursor-reset"</span></a> signal is emitted to
 reset the cursor to its default context.
@@ -228,12 +228,12 @@ reset the cursor to its default context.
 <div class="refsect2">
 <a name="SpiceCursorChannel-cursor-set"></a><h3>The <code class="literal">"cursor-set"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceCursorChannel.html" title="Cursor Channel"><span class="type">SpiceCursorChannel</span></a> *cursor,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                width,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                height,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                hot_x,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                hot_y,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            rgba,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gint</span>                width,
+                                                        <span class="type">gint</span>                height,
+                                                        <span class="type">gint</span>                hot_x,
+                                                        <span class="type">gint</span>                hot_y,
+                                                        <span class="type">gpointer</span>            rgba,
+                                                        <span class="type">gpointer</span>            user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceCursorChannel.html#SpiceCursorChannel-cursor-set" title='The "cursor-set" signal'><span class="type">"cursor-set"</span></a> signal is emitted to modify
 cursor aspect and position on the display area.
@@ -266,7 +266,7 @@ cursor aspect and position on the display area.
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>rgba</code></em> :</span></p></td>
-<td>32bits shape data, or <a href="../glib/glib-Standard-Macros.html#NULL:CAPS"><code class="literal">NULL</code></a> if default cursor. It might
+<td>32bits shape data, or <code class="literal">NULL</code> if default cursor. It might
 be freed after the signal is emitted, so make sure to copy it
 if you need it later!</td>
 </tr>
@@ -285,6 +285,6 @@ if you need it later!</td>
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

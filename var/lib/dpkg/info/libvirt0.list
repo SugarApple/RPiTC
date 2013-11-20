@@ -1,0 +1,15 @@
+/.
+/usr
+/usr/lib
+/usr/lib/libvirt.so.0.1001.2
+/usr/lib/libvirt-lxc.so.0.1001.2
+/usr/lib/libvirt-qemu.so.0.1001.2
+/usr/share
+/usr/share/doc
+/usr/share/doc/libvirt0
+/usr/share/doc/libvirt0/changelog.Debian.gz
+/usr/share/doc/libvirt0/copyright
+/usr/share/doc/libvirt0/changelog.gz
+/usr/lib/libvirt-lxc.so.0
+/usr/lib/libvirt.so.0
+/usr/lib/libvirt-qemu.so.0

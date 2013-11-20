@@ -18,10 +18,6 @@ Package: libkrb5-3
 Architecture: armel
 Auto-Installed: 1
 
-Package: libudev0
-Architecture: armel
-Auto-Installed: 1
-
 Package: dconf-service
 Architecture: armel
 Auto-Installed: 1
@@ -482,10 +478,6 @@ Package: x11-xserver-utils
 Architecture: armel
 Auto-Installed: 1
 
-Package: libobt0
-Architecture: armel
-Auto-Installed: 1
-
 Package: libjpeg8
 Architecture: armel
 Auto-Installed: 0
@@ -531,10 +523,6 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libid3tag0
-Architecture: armel
-Auto-Installed: 1
-
-Package: libfm1
 Architecture: armel
 Auto-Installed: 1
 
@@ -615,10 +603,6 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libgdk-pixbuf2.0-common
-Architecture: armel
-Auto-Installed: 1
-
-Package: libmenu-cache1
 Architecture: armel
 Auto-Installed: 1
 
@@ -718,10 +702,6 @@ Package: lxmenu-data
 Architecture: armel
 Auto-Installed: 1
 
-Package: libmozjs17d
-Architecture: armel
-Auto-Installed: 1
-
 Package: cpp-4.8
 Architecture: armel
 Auto-Installed: 1
@@ -747,10 +727,6 @@ Architecture: armel
 Auto-Installed: 1
 
 Package: libxi6
-Architecture: armel
-Auto-Installed: 1
-
-Package: libaudit0
 Architecture: armel
 Auto-Installed: 1
 
@@ -978,10 +954,6 @@ Package: libxcomp3
 Architecture: armel
 Auto-Installed: 1
 
-Package: libffi5
-Architecture: armel
-Auto-Installed: 1
-
 Package: xbitmaps
 Architecture: armel
 Auto-Installed: 1
@@ -1010,10 +982,6 @@ Package: python2.7
 Architecture: armel
 Auto-Installed: 1
 
-Package: libfm-gtk1
-Architecture: armel
-Auto-Installed: 1
-
 Package: libpython2.7-stdlib
 Architecture: armel
 Auto-Installed: 1
@@ -1022,23 +990,11 @@ Package: libgraphite2-3
 Architecture: armel
 Auto-Installed: 1
 
-Package: xulrunner-17.0
-Architecture: armel
-Auto-Installed: 1
-
 Package: libpango1.0-0
 Architecture: armel
 Auto-Installed: 1
 
-Package: libwayland-client0
-Architecture: armel
-Auto-Installed: 1
-
 Package: python-minimal
-Architecture: armel
-Auto-Installed: 1
-
-Package: libfm-gtk-bin
 Architecture: armel
 Auto-Installed: 1
 
@@ -1058,15 +1014,7 @@ Package: mime-support
 Architecture: armel
 Auto-Installed: 1
 
-Package: libobrender27
-Architecture: armel
-Auto-Installed: 1
-
 Package: libwnck22
-Architecture: armel
-Auto-Installed: 1
-
-Package: libwayland-server0
 Architecture: armel
 Auto-Installed: 1
 
@@ -1130,19 +1078,127 @@ Package: tk
 Architecture: armel
 Auto-Installed: 1
 
-Package: libvncserver0
-Architecture: armel
-Auto-Installed: 1
-
 Package: tk8.5
 Architecture: armel
 Auto-Installed: 1
 
-Package: x11vnc-data
+Package: tcl8.5
 Architecture: armel
 Auto-Installed: 1
 
-Package: tcl8.5
+Package: 3270-common
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-scripttools
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-help
+Architecture: armel
+Auto-Installed: 1
+
+Package: qdbus
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-designer
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqtassistantclient4
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-dbus
+Architecture: armel
+Auto-Installed: 1
+
+Package: python-qt4
+Architecture: armel
+Auto-Installed: 1
+
+Package: qtchooser
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-script
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqtwebkit4
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-xmlpatterns
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-declarative
+Architecture: armel
+Auto-Installed: 1
+
+Package: python-sip
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-test
+Architecture: armel
+Auto-Installed: 1
+
+Package: libpython2.7
+Architecture: armel
+Auto-Installed: 1
+
+Package: libqt4-sql
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcap-ng0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libdevmapper1.02.1
+Architecture: armel
+Auto-Installed: 1
+
+Package: dmsetup
+Architecture: armel
+Auto-Installed: 1
+
+Package: libyajl2
+Architecture: armel
+Auto-Installed: 1
+
+Package: liblua5.1-0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libxmmsclient6
+Architecture: armel
+Auto-Installed: 1
+
+Package: libssh2-1
+Architecture: armel
+Auto-Installed: 1
+
+Package: libcurl3-gnutls
+Architecture: armel
+Auto-Installed: 1
+
+Package: librtmp0
+Architecture: armel
+Auto-Installed: 1
+
+Package: libaudclient2
+Architecture: armel
+Auto-Installed: 1
+
+Package: libvncserver0
+Architecture: armel
+Auto-Installed: 1
+
+Package: x11vnc-data
 Architecture: armel
 Auto-Installed: 1
 

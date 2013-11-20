@@ -1,11 +1,13 @@
 Format: http://www.debian.org/doc/packaging-manuals/copyright-format/1.0
 Upstream-Name: leafpad
-Upstream-Contact: Tarot Osuji <tarot@sdf.lonestar.org>
+Upstream-Contact: Tarot Osuji <tarot@freeshell.org>, <tarot@sdf.lonestar.org>
 Source: http://freshmeat.net/projects/leafpad
 X-Upstream-Bugs: <tarot@sdf.lonestar.org>
-X-Source-See-Also:
+Comment:
+  See also
   http://tarot.freeshell.org/leafpad
   http://savannah.nongnu.org/projects/leafpad
+  https://launchpad.net/~tarot
 
 Files: *
 Copyright:
@@ -22,10 +24,11 @@ License: LGPL-2+
 
 Files: debian/*
 Copyright:
- 2009-2011 Jari Aalto <jari.aalto@cante.net>,
- 2009      Emilio Pozuelo Monfort <pochu@debian.org>,
- 2007      Julien Lavergne <julien.lavergne@gmail.com>,
- 2004-2006 Carlos Z.F. Liu <carlosliu@users.sourceforge.net>,
+ 2009-2013 Jari Aalto <jari.aalto@cante.net>
+ 2009      Emilio Pozuelo Monfort <pochu@debian.org>
+ 2007      Julien Lavergne <julien.lavergne@gmail.com>
+ 2005      Ondřej Surý <ondrej@sury.org>
+ 2004-2006 Carlos Z.F. Liu <carlosliu@users.sourceforge.net>, <carlos_liu@yahoo.com>
  2004      Ming Hua <minghua@rice.edu>
 X-Debianized-By: Carlos Z.F. Liu 2004-09-27 17:12:26+12 Mon
 License: GPL-2+

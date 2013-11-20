@@ -1,8 +1,8 @@
-TARGETS = fake-hwclock network-manager urandom hwclock.sh alsa-utils sendsigs umountnfs.sh networking umountfs umountroot halt reboot
-sendsigs: network-manager alsa-utils
-umountnfs.sh: network-manager sendsigs alsa-utils
+TARGETS = choose.sh fake-hwclock network-manager urandom hwclock.sh alsa-utils sendsigs umountnfs.sh networking umountfs umountroot halt reboot
+sendsigs: network-manager choose.sh alsa-utils
+umountnfs.sh: network-manager choose.sh sendsigs alsa-utils
 networking: umountnfs.sh
-umountfs: urandom network-manager networking alsa-utils umountnfs.sh hwclock.sh
+umountfs: urandom network-manager choose.sh networking alsa-utils umountnfs.sh hwclock.sh
 umountroot: fake-hwclock umountfs
 halt: umountroot
 reboot: umountroot

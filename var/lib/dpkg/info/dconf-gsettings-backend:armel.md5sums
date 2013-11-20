@@ -1,6 +1,6 @@
-c94148abe5ebd9644de6efe374db2c58  usr/lib/arm-linux-gnueabi/gio/modules/libdconfsettings.so
+c448cac7e9d606e7e5e1b3a240d3d5a0  usr/lib/arm-linux-gnueabi/gio/modules/libdconfsettings.so
 715d979c7e78425cbdbe53291e3d4406  usr/share/doc/dconf-gsettings-backend/NEWS.Debian.gz
-d7fea48ce0e8ee180d46d0316153c02f  usr/share/doc/dconf-gsettings-backend/NEWS.gz
+54259efaab286a47c9a7c5e41d44977f  usr/share/doc/dconf-gsettings-backend/NEWS.gz
 68765f6443a18433d0b37b92c76fcb94  usr/share/doc/dconf-gsettings-backend/README
-2a5e2c60dbf53756a15400fdb6be679e  usr/share/doc/dconf-gsettings-backend/changelog.Debian.gz
+4fb61ec36bb2ddcaa09c977840f2861f  usr/share/doc/dconf-gsettings-backend/changelog.Debian.gz
 cf470c91ee78366d09eb19042268ae9f  usr/share/doc/dconf-gsettings-backend/copyright

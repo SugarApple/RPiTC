@@ -1,9 +1,9 @@
-6f2f2ff2c45358bdea7b40b6d6dd5148  usr/lib/arm-linux-gnueabi/libgnutls-openssl.so.27.0.0
+73e593c5a4bb27cdf3a9694355e7a64b  usr/lib/arm-linux-gnueabi/libgnutls-openssl.so.27.0.0
 f6a433e2785ded50726f7432870db2ef  usr/share/doc/libgnutls-openssl27/AUTHORS.gz
 9e81e6c7f530da32224b1838126a3077  usr/share/doc/libgnutls-openssl27/NEWS.gz
 b886c78d58e2d013e7c2928903a2de5c  usr/share/doc/libgnutls-openssl27/README.gz
 1192334bd9775092782083640a1f4b90  usr/share/doc/libgnutls-openssl27/THANKS.gz
 31e88cbf7ffbb3ba69f6f93eaff0671d  usr/share/doc/libgnutls-openssl27/TODO
-c5e7e1b2b4739a3a40ae2057cf9b5ff5  usr/share/doc/libgnutls-openssl27/changelog.Debian.gz
+d2bb7f35abc781e99d2e6178eccdb94c  usr/share/doc/libgnutls-openssl27/changelog.Debian.gz
 f03fbe73671b7d4b9c5d264f42f736fe  usr/share/doc/libgnutls-openssl27/changelog.gz
 4b72818e6a32b62fe2e33e18830e6597  usr/share/doc/libgnutls-openssl27/copyright

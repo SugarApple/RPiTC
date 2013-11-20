@@ -8,7 +8,7 @@
 <link rel="up" href="ch03.html" title="GTK Widget, from spice-client-gtk">
 <link rel="prev" href="SpiceGtkSession.html" title="Spice GTK Session">
 <link rel="next" href="SpiceUsbDeviceWidget.html" title="Spice USB device selection widget">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -58,8 +58,8 @@ enum                <a class="link" href="SpiceDisplay.html#SpiceDisplayKeyEvent
 <a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="returnvalue">SpiceDisplay</span></a> *      <a class="link" href="SpiceDisplay.html#spice-display-new" title="spice_display_new ()">spice_display_new</a>                   (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> channel_id</code></em>);
 <a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="returnvalue">SpiceDisplay</span></a> *      <a class="link" href="SpiceDisplay.html#spice-display-new-with-monitor" title="spice_display_new_with_monitor ()">spice_display_new_with_monitor</a>      (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channel_id</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> monitor_id</code></em>);
+                                                         <em class="parameter"><code><span class="type">gint</span> channel_id</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> monitor_id</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceDisplay.html#spice-display-mouse-ungrab" title="spice_display_mouse_ungrab ()">spice_display_mouse_ungrab</a>          (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceDisplay.html#spice-display-copy-to-guest" title="spice_display_copy_to_guest ()">spice_display_copy_to_guest</a>         (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceDisplay.html#spice-display-paste-from-guest" title="spice_display_paste_from_guest ()">spice_display_paste_from_guest</a>      (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
@@ -67,25 +67,25 @@ enum                <a class="link" href="SpiceDisplay.html#SpiceDisplayKeyEvent
                                                          <em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *seq</code></em>);
 <a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-display-get-grab-keys" title="spice_display_get_grab_keys ()">spice_display_get_grab_keys</a>         (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceDisplay.html#spice-display-send-keys" title="spice_display_send_keys ()">spice_display_send_keys</a>             (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *keyvals</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">guint</span> *keyvals</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> nkeyvals</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceDisplayKeyEvent" title="enum SpiceDisplayKeyEvent"><span class="type">SpiceDisplayKeyEvent</span></a> kind</code></em>);
 <span class="returnvalue">GdkPixbuf</span> *         <a class="link" href="SpiceDisplay.html#spice-display-get-pixbuf" title="spice_display_get_pixbuf ()">spice_display_get_pixbuf</a>            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>);
 
 struct              <a class="link" href="SpiceDisplay.html#SpiceGrabSequence-struct" title="struct SpiceGrabSequence">SpiceGrabSequence</a>;
-<a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-grab-sequence-new" title="spice_grab_sequence_new ()">spice_grab_sequence_new</a>             (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nkeysyms</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *keysyms</code></em>);
-<a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-grab-sequence-new-from-string" title="spice_grab_sequence_new_from_string ()">spice_grab_sequence_new_from_string</a> (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);
+<a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-grab-sequence-new" title="spice_grab_sequence_new ()">spice_grab_sequence_new</a>             (<em class="parameter"><code><span class="type">guint</span> nkeysyms</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> *keysyms</code></em>);
+<a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-grab-sequence-new-from-string" title="spice_grab_sequence_new_from_string ()">spice_grab_sequence_new_from_string</a> (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>);
 <a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * <a class="link" href="SpiceDisplay.html#spice-grab-sequence-copy" title="spice_grab_sequence_copy ()">spice_grab_sequence_copy</a>            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *sequence</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceDisplay.html#spice-grab-sequence-free" title="spice_grab_sequence_free ()">spice_grab_sequence_free</a>            (<em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *sequence</code></em>);
-<a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             <a class="link" href="SpiceDisplay.html#spice-grab-sequence-as-string" title="spice_grab_sequence_as_string ()">spice_grab_sequence_as_string</a>       (<em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *sequence</code></em>);
+<span class="returnvalue">gchar</span> *             <a class="link" href="SpiceDisplay.html#spice-grab-sequence-as-string" title="spice_grab_sequence_as_string ()">spice_grab_sequence_as_string</a>       (<em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *sequence</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceDisplay.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+  GObject
+   +----GInitiallyUnowned
          +----GtkWidget
                +----GtkDrawingArea
                      +----SpiceDisplay
@@ -104,27 +104,27 @@ SpiceDisplay implements
 <div class="refsect1">
 <a name="SpiceDisplay.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--auto-clipboard" title='The "auto-clipboard" property'>auto-clipboard</a>"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--channel-id" title='The "channel-id" property'>channel-id</a>"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--disable-inputs" title='The "disable-inputs" property'>disable-inputs</a>"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-keyboard" title='The "grab-keyboard" property'>grab-keyboard</a>"            <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-mouse" title='The "grab-mouse" property'>grab-mouse</a>"               <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--keypress-delay" title='The "keypress-delay" property'>keypress-delay</a>"           <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--monitor-id" title='The "monitor-id" property'>monitor-id</a>"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--only-downscale" title='The "only-downscale" property'>only-downscale</a>"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--ready" title='The "ready" property'>ready</a>"                    <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--resize-guest" title='The "resize-guest" property'>resize-guest</a>"             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--scaling" title='The "scaling" property'>scaling</a>"                  <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--auto-clipboard" title='The "auto-clipboard" property'>auto-clipboard</a>"           <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--channel-id" title='The "channel-id" property'>channel-id</a>"               <span class="type">gint</span>                  : Read / Write / Construct Only
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--disable-inputs" title='The "disable-inputs" property'>disable-inputs</a>"           <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-keyboard" title='The "grab-keyboard" property'>grab-keyboard</a>"            <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-mouse" title='The "grab-mouse" property'>grab-mouse</a>"               <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--keypress-delay" title='The "keypress-delay" property'>keypress-delay</a>"           <span class="type">guint</span>                 : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--monitor-id" title='The "monitor-id" property'>monitor-id</a>"               <span class="type">gint</span>                  : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--only-downscale" title='The "only-downscale" property'>only-downscale</a>"           <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--ready" title='The "ready" property'>ready</a>"                    <span class="type">gboolean</span>              : Read
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--resize-guest" title='The "resize-guest" property'>resize-guest</a>"             <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--scaling" title='The "scaling" property'>scaling</a>"                  <span class="type">gboolean</span>              : Read / Write / Construct
   "<a class="link" href="SpiceDisplay.html#SpiceDisplay--session" title='The "session" property'>session</a>"                  <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>*         : Read / Write / Construct Only
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--zoom-level" title='The "zoom-level" property'>zoom-level</a>"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay--zoom-level" title='The "zoom-level" property'>zoom-level</a>"               <span class="type">gint</span>                  : Read / Write / Construct
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceDisplay.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay-grab-keys-pressed" title='The "grab-keys-pressed" signal'>grab-keys-pressed</a>"                              : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay-keyboard-grab" title='The "keyboard-grab" signal'>keyboard-grab</a>"                                  : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceDisplay.html#SpiceDisplay-mouse-grab" title='The "mouse-grab" signal'>mouse-grab</a>"                                     : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay-grab-keys-pressed" title='The "grab-keys-pressed" signal'>grab-keys-pressed</a>"                              : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay-keyboard-grab" title='The "keyboard-grab" signal'>keyboard-grab</a>"                                  : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceDisplay.html#SpiceDisplay-mouse-grab" title='The "mouse-grab" signal'>mouse-grab</a>"                                     : <code class="literal">Run First</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -139,7 +139,7 @@ Arbitrary key events can be sent thanks to <a class="link" href="SpiceDisplay.ht
 <p>
 The widget will optionally grab the keyboard and the mouse when
 focused if the properties <a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-keyboard" title='The "grab-keyboard" property'><span class="type">"grab-keyboard"</span></a> and
-<a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-mouse" title='The "grab-mouse" property'><span class="type">"grab-mouse"</span></a> are <a href="../glib/glib-Standard-Macros.html#TRUE:CAPS"><span class="type">TRUE</span></a> respectively.  It can be
+<a class="link" href="SpiceDisplay.html#SpiceDisplay--grab-mouse" title='The "grab-mouse" property'><span class="type">"grab-mouse"</span></a> are <span class="type">TRUE</span> respectively.  It can be
 ungrabbed with <a class="link" href="SpiceDisplay.html#spice-display-mouse-ungrab" title="spice_display_mouse_ungrab ()"><code class="function">spice_display_mouse_ungrab()</code></a>, and by setting a key
 combination with <a class="link" href="SpiceDisplay.html#spice-display-set-grab-keys" title="spice_display_set_grab_keys ()"><code class="function">spice_display_set_grab_keys()</code></a>.
 </p>
@@ -176,6 +176,26 @@ save to disk).
 	SPICE_DISPLAY_KEY_EVENT_CLICK = 3,
 } SpiceDisplayKeyEvent;
 </pre>
+<div class="variablelist"><table border="0" class="variablelist">
+<colgroup>
+<col align="left" valign="top">
+<col>
+</colgroup>
+<tbody>
+<tr>
+<td><p><a name="SPICE-DISPLAY-KEY-EVENT-PRESS:CAPS"></a><span class="term"><code class="literal">SPICE_DISPLAY_KEY_EVENT_PRESS</code></span></p></td>
+<td></td>
+</tr>
+<tr>
+<td><p><a name="SPICE-DISPLAY-KEY-EVENT-RELEASE:CAPS"></a><span class="term"><code class="literal">SPICE_DISPLAY_KEY_EVENT_RELEASE</code></span></p></td>
+<td></td>
+</tr>
+<tr>
+<td><p><a name="SPICE-DISPLAY-KEY-EVENT-CLICK:CAPS"></a><span class="term"><code class="literal">SPICE_DISPLAY_KEY_EVENT_CLICK</code></span></p></td>
+<td></td>
+</tr>
+</tbody>
+</table></div>
 </div>
 <hr>
 <div class="refsect2">
@@ -209,8 +229,8 @@ save to disk).
 <div class="refsect2">
 <a name="spice-display-new-with-monitor"></a><h3>spice_display_new_with_monitor ()</h3>
 <pre class="programlisting"><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="returnvalue">SpiceDisplay</span></a> *      spice_display_new_with_monitor      (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> channel_id</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> monitor_id</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gint</span> channel_id</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> monitor_id</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -324,7 +344,7 @@ Set the key combination to grab/ungrab the keyboard. The default is
 <div class="refsect2">
 <a name="spice-display-send-keys"></a><h3>spice_display_send_keys ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_display_send_keys             (<em class="parameter"><code><a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *keyvals</code></em>,
+                                                         <em class="parameter"><code>const <span class="type">guint</span> *keyvals</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> nkeyvals</code></em>,
                                                          <em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceDisplayKeyEvent" title="enum SpiceDisplayKeyEvent"><span class="type">SpiceDisplayKeyEvent</span></a> kind</code></em>);</pre>
 <p>
@@ -387,8 +407,8 @@ Take a screenshot of the display.
 <hr>
 <div class="refsect2">
 <a name="spice-grab-sequence-new"></a><h3>spice_grab_sequence_new ()</h3>
-<pre class="programlisting"><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * spice_grab_sequence_new             (<em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> nkeysyms</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a> *keysyms</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * spice_grab_sequence_new             (<em class="parameter"><code><span class="type">guint</span> nkeysyms</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint</span> *keysyms</code></em>);</pre>
 <p>
 Creates a new grab sequence from a list of keysym values
 </p>
@@ -419,7 +439,7 @@ Creates a new grab sequence from a list of keysym values
 <hr>
 <div class="refsect2">
 <a name="spice-grab-sequence-new-from-string"></a><h3>spice_grab_sequence_new_from_string ()</h3>
-<pre class="programlisting"><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * spice_grab_sequence_new_from_string (<em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *str</code></em>);</pre>
+<pre class="programlisting"><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="returnvalue">SpiceGrabSequence</span></a> * spice_grab_sequence_new_from_string (<em class="parameter"><code>const <span class="type">gchar</span> *str</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -470,7 +490,7 @@ Free <em class="parameter"><code>sequence</code></em>.
 <hr>
 <div class="refsect2">
 <a name="spice-grab-sequence-as-string"></a><h3>spice_grab_sequence_as_string ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gchar"><span class="returnvalue">gchar</span></a> *             spice_grab_sequence_as_string       (<em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *sequence</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gchar</span> *             spice_grab_sequence_as_string       (<em class="parameter"><code><a class="link" href="SpiceDisplay.html#SpiceGrabSequence"><span class="type">SpiceGrabSequence</span></a> *sequence</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -488,7 +508,7 @@ Free <em class="parameter"><code>sequence</code></em>.
 <a name="SpiceDisplay.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceDisplay--auto-clipboard"></a><h3>The <code class="literal">"auto-clipboard"</code> property</h3>
-<pre class="programlisting">  "auto-clipboard"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "auto-clipboard"           <span class="type">gboolean</span>              : Read / Write</pre>
 <div class="warning" style="margin-left: 0.5in; margin-right: 0.5in;">
 <h3 class="title">Warning</h3>
 <p><code class="literal">SpiceDisplay:auto-clipboard</code> has been deprecated since version 0.8 and should not be used in newly-written code. Use SpiceGtkSession:auto-clipboard property instead</p>
@@ -502,7 +522,7 @@ and guest.
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--channel-id"></a><h3>The <code class="literal">"channel-id"</code> property</h3>
-<pre class="programlisting">  "channel-id"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct Only</pre>
+<pre class="programlisting">  "channel-id"               <span class="type">gint</span>                  : Read / Write / Construct Only</pre>
 <p>
 channel-id for this <a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a>
 </p>
@@ -512,7 +532,7 @@ channel-id for this <a class="link" href="SpiceDisplay.html" title="Spice Displa
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--disable-inputs"></a><h3>The <code class="literal">"disable-inputs"</code> property</h3>
-<pre class="programlisting">  "disable-inputs"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "disable-inputs"           <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>
 Disable all keyboard &amp; mouse inputs.
 </p>
@@ -522,21 +542,21 @@ Disable all keyboard &amp; mouse inputs.
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--grab-keyboard"></a><h3>The <code class="literal">"grab-keyboard"</code> property</h3>
-<pre class="programlisting">  "grab-keyboard"            <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "grab-keyboard"            <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>Whether we should grab the keyboard.</p>
 <p>Default value: TRUE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--grab-mouse"></a><h3>The <code class="literal">"grab-mouse"</code> property</h3>
-<pre class="programlisting">  "grab-mouse"               <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "grab-mouse"               <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>Whether we should grab the mouse.</p>
 <p>Default value: TRUE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--keypress-delay"></a><h3>The <code class="literal">"keypress-delay"</code> property</h3>
-<pre class="programlisting">  "keypress-delay"           <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write / Construct</pre>
+<pre class="programlisting">  "keypress-delay"           <span class="type">guint</span>                 : Read / Write / Construct</pre>
 <p>
 Delay in ms of non-modifiers key press events. If the key is
 released before this delay, a single press &amp; release event is
@@ -550,20 +570,20 @@ event, and a following release event when the key is released.
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--monitor-id"></a><h3>The <code class="literal">"monitor-id"</code> property</h3>
-<pre class="programlisting">  "monitor-id"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct</pre>
+<pre class="programlisting">  "monitor-id"               <span class="type">gint</span>                  : Read / Write / Construct</pre>
 <p>
 Select monitor from <a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> to show.
 The value -1 means the whole display is shown.
 By default, the monitor 0 is selected.
 </p>
-<p>Allowed values: &gt;= G_MAXULONG</p>
+<p>Allowed values: &gt;= -1</p>
 <p>Default value: 0</p>
 <p class="since">Since 0.13</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--only-downscale"></a><h3>The <code class="literal">"only-downscale"</code> property</h3>
-<pre class="programlisting">  "only-downscale"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "only-downscale"           <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>
 If scaling, only scale down, never up.
 </p>
@@ -573,7 +593,7 @@ If scaling, only scale down, never up.
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--ready"></a><h3>The <code class="literal">"ready"</code> property</h3>
-<pre class="programlisting">  "ready"                    <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read</pre>
+<pre class="programlisting">  "ready"                    <span class="type">gboolean</span>              : Read</pre>
 <p>
 Indicate whether the display is ready to be shown. It takes
 into account several conditions, such as the channel display
@@ -585,14 +605,14 @@ into account several conditions, such as the channel display
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--resize-guest"></a><h3>The <code class="literal">"resize-guest"</code> property</h3>
-<pre class="programlisting">  "resize-guest"             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "resize-guest"             <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>Try to adapt guest display on window resize. Requires guest cooperation.</p>
 <p>Default value: FALSE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--scaling"></a><h3>The <code class="literal">"scaling"</code> property</h3>
-<pre class="programlisting">  "scaling"                  <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "scaling"                  <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>Whether we should use scaling.</p>
 <p>Default value: TRUE</p>
 </div>
@@ -607,7 +627,7 @@ into account several conditions, such as the channel display
 <hr>
 <div class="refsect2">
 <a name="SpiceDisplay--zoom-level"></a><h3>The <code class="literal">"zoom-level"</code> property</h3>
-<pre class="programlisting">  "zoom-level"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct</pre>
+<pre class="programlisting">  "zoom-level"               <span class="type">gint</span>                  : Read / Write / Construct</pre>
 <p>
 Zoom level in percentage, from 10 to 400. Default to 100.
 (this option is only supported with cairo backend when scaling
@@ -623,7 +643,7 @@ is enabled)
 <div class="refsect2">
 <a name="SpiceDisplay-grab-keys-pressed"></a><h3>The <code class="literal">"grab-keys-pressed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run First</code></pre>
 <p>
 Notify when the grab keys have been pressed
 </p>
@@ -648,8 +668,8 @@ Notify when the grab keys have been pressed
 <div class="refsect2">
 <a name="SpiceDisplay-keyboard-grab"></a><h3>The <code class="literal">"keyboard-grab"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          status,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gint</span>          status,
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run First</code></pre>
 <p>
 Notify when the keyboard grab is active or not.
 </p>
@@ -678,8 +698,8 @@ Notify when the keyboard grab is active or not.
 <div class="refsect2">
 <a name="SpiceDisplay-mouse-grab"></a><h3>The <code class="literal">"mouse-grab"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceDisplay.html" title="Spice Display"><span class="type">SpiceDisplay</span></a> *display,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>          status,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gint</span>          status,
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run First</code></pre>
 <p>
 Notify when the mouse grab is active or not.
 </p>
@@ -708,6 +728,6 @@ Notify when the mouse grab is active or not.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

@@ -1,10 +1,10 @@
-18039a6ca6a2785beb80f35366dc7ac9  usr/lib/arm-linux-gnueabi/libmpfr.so.4.1.1
+390afec8b98fb1069c68df352b9a7c11  usr/lib/arm-linux-gnueabi/libmpfr.so.4.1.2
 413a35031e9bf034d06500a526bc0e03  usr/share/doc/libmpfr4/AUTHORS
-dfd0574373b48d11845b1e32fad4f9a3  usr/share/doc/libmpfr4/BUGS
-6dd171d5716694baa5d3b50691684ac0  usr/share/doc/libmpfr4/NEWS.gz
-e69b662381d7c4eee9c8a6de5b57f157  usr/share/doc/libmpfr4/README
+0bec66e954a28737ab688e9197c5eb96  usr/share/doc/libmpfr4/BUGS
+bd55f283a011177d3549d85a03017d74  usr/share/doc/libmpfr4/NEWS.gz
+b6f2209427fec2662dd66012bb36181a  usr/share/doc/libmpfr4/README
 fd917f9c082d12b3c259f4559039b5d0  usr/share/doc/libmpfr4/README.Debian
-77c4f1ca1dfabd5bc16545ba23695502  usr/share/doc/libmpfr4/TODO.gz
-20feb03836f9b3223cb3a410a442f8b4  usr/share/doc/libmpfr4/changelog.Debian.gz
-a84f5f89fdaeb7775a243a4d155cb3d3  usr/share/doc/libmpfr4/changelog.gz
+60d4f6f762d84c0dfe18b88a4dfde547  usr/share/doc/libmpfr4/TODO.gz
+ee8bfbbb5f68f5c246497bd4e45a3c93  usr/share/doc/libmpfr4/changelog.Debian.gz
+752ada2f46c14c9c2588198d1428e3e2  usr/share/doc/libmpfr4/changelog.gz
 83b5ff375a9af2c404528b5ce85b23e1  usr/share/doc/libmpfr4/copyright

@@ -1,4 +1,3 @@
-manifest components/components.manifest
-manifest chrome/webapprt.manifest
+manifest chrome/chrome.manifest
 resource webapprt ./
-manifest chrome/localized.manifest
+manifest components/components.manifest

@@ -1,4 +1,5 @@
 libatk-1.0.so.0 libatk1.0-0 #MINVER#
+* Build-Depends-Package: libatk1.0-dev
  atk_action_do_action@Base 1.12.4
  atk_action_get_description@Base 1.12.4
  atk_action_get_keybinding@Base 1.12.4
@@ -244,11 +245,13 @@ libatk-1.0.so.0 libatk1.0-0 #MINVER#
  atk_text_get_range_extents@Base 1.12.4
  atk_text_get_run_attributes@Base 1.12.4
  atk_text_get_selection@Base 1.12.4
+ atk_text_get_string_at_offset@Base 2.10.0
  atk_text_get_text@Base 1.12.4
  atk_text_get_text_after_offset@Base 1.12.4
  atk_text_get_text_at_offset@Base 1.12.4
  atk_text_get_text_before_offset@Base 1.12.4
  atk_text_get_type@Base 1.12.4
+ atk_text_granularity_get_type@Base 2.10.0
  atk_text_range_get_type@Base 2.0.0
  atk_text_remove_selection@Base 1.12.4
  atk_text_set_caret_offset@Base 1.12.4

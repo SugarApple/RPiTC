@@ -1,10 +1,8 @@
-b15f20c60f8c513547eeac2817e2629b  lib/arm-linux-gnueabi/libgcrypt.so.11.8.2
+fc978b9a74a8ef152c93537d120cfc8d  lib/arm-linux-gnueabi/libgcrypt.so.11.8.2
 cc1933b74254b077ad022de724d91e4a  usr/share/doc/libgcrypt11/AUTHORS.gz
 3e4fb838f9c35d3a46a6aec6b7611584  usr/share/doc/libgcrypt11/NEWS.gz
 7b93bb717fbce17a169bb7fd6dabd442  usr/share/doc/libgcrypt11/README.gz
 2676c26bf70bc0aa0e64b27ab249646c  usr/share/doc/libgcrypt11/THANKS.gz
-76d5fc840868bb24b4c931e8366762a0  usr/share/doc/libgcrypt11/TODO
-a67dc620a3753ad1a61c1628c9d93a5b  usr/share/doc/libgcrypt11/buildinfo_armel.gz
-d269ea8606f916fa9a24e8c340f2feed  usr/share/doc/libgcrypt11/changelog.Debian.gz
+fef4973144df4e4394311e6bf0c59d68  usr/share/doc/libgcrypt11/changelog.Debian.gz
 848fe877de9ebfbfccccfdf1672b08f0  usr/share/doc/libgcrypt11/changelog.gz
 d24c2b425a33f6d1938bae041efe1129  usr/share/doc/libgcrypt11/copyright

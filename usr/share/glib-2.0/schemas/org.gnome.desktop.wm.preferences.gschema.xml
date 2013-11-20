@@ -3,7 +3,7 @@
 
   <schema path="/org/gnome/desktop/wm/preferences/" id="org.gnome.desktop.wm.preferences" gettext-domain="gsettings-desktop-schemas">
     <key type="s" name="mouse-button-modifier">
-      <default><![CDATA['<Alt>']]></default>
+      <default><![CDATA['<Super>']]></default>
       <summary>Modifier to use for modified window click actions</summary>
       <description>Clicking a window while holding down this modifier key will move the window (left click), resize the window (middle click), or show the window menu (right click). The middle and right click operations may be swapped using the "resize-with-right-button" key. Modifier is expressed as <![CDATA["<Alt>"]]> or <![CDATA["<Super>"]]> for example.</description>
     </key>

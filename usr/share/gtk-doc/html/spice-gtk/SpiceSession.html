@@ -8,7 +8,7 @@
 <link rel="up" href="ch02.html" title="Session and Channels Objects, from spice-client-glib">
 <link rel="prev" href="ch02.html" title="Session and Channels Objects, from spice-client-glib">
 <link rel="next" href="SpiceChannel.html" title="Spice Channel">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -53,29 +53,29 @@ Stable, unless otherwise indicated
                     <a class="link" href="SpiceSession.html#SpiceSession-struct" title="SpiceSession">SpiceSession</a>;
                     <a class="link" href="SpiceSession.html#SpiceSessionClass" title="SpiceSessionClass">SpiceSessionClass</a>;
 <a class="link" href="SpiceSession.html" title="Spice Session"><span class="returnvalue">SpiceSession</span></a> *      <a class="link" href="SpiceSession.html#spice-session-new" title="spice_session_new ()">spice_session_new</a>                   (<em class="parameter"><code><span class="type">void</span></code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceSession.html#spice-session-connect" title="spice_session_connect ()">spice_session_connect</a>               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceSession.html#spice-session-open-fd" title="spice_session_open_fd ()">spice_session_open_fd</a>               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceSession.html#spice-session-connect" title="spice_session_connect ()">spice_session_connect</a>               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceSession.html#spice-session-open-fd" title="spice_session_open_fd ()">spice_session_open_fd</a>               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> fd</code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceSession.html#spice-session-disconnect" title="spice_session_disconnect ()">spice_session_disconnect</a>            (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
-<a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *             <a class="link" href="SpiceSession.html#spice-session-get-channels" title="spice_session_get_channels ()">spice_session_get_channels</a>          (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceSession.html#spice-session-get-read-only" title="spice_session_get_read_only ()">spice_session_get_read_only</a>         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
-<a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            <a class="link" href="SpiceSession.html#spice-session-has-channel-type" title="spice_session_has_channel_type ()">spice_session_has_channel_type</a>      (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);
+<span class="returnvalue">GList</span> *             <a class="link" href="SpiceSession.html#spice-session-get-channels" title="spice_session_get_channels ()">spice_session_get_channels</a>          (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceSession.html#spice-session-get-read-only" title="spice_session_get_read_only ()">spice_session_get_read_only</a>         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
+<span class="returnvalue">gboolean</span>            <a class="link" href="SpiceSession.html#spice-session-has-channel-type" title="spice_session_has_channel_type ()">spice_session_has_channel_type</a>      (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> type</code></em>);
 
 enum                <a class="link" href="SpiceSession.html#SpiceSessionMigration-enum" title="enum SpiceSessionMigration">SpiceSessionMigration</a>;
 enum                <a class="link" href="SpiceSession.html#SpiceSessionVerify-enum" title="enum SpiceSessionVerify">SpiceSessionVerify</a>;
-<a href="../glib/glib-Commandline-option-parser.html#GOptionGroup"><span class="returnvalue">GOptionGroup</span></a> *      <a class="link" href="SpiceSession.html#spice-get-option-group" title="spice_get_option_group ()">spice_get_option_group</a>              (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">GOptionGroup</span> *      <a class="link" href="SpiceSession.html#spice-get-option-group" title="spice_get_option_group ()">spice_get_option_group</a>              (<em class="parameter"><code><span class="type">void</span></code></em>);
 <span class="returnvalue">void</span>                <a class="link" href="SpiceSession.html#spice-set-session-option" title="spice_set_session_option ()">spice_set_session_option</a>            (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);
 
 enum                <a class="link" href="SpiceSession.html#SpiceClientError" title="enum SpiceClientError">SpiceClientError</a>;
 #define             <a class="link" href="SpiceSession.html#SPICE-CLIENT-ERROR:CAPS" title="SPICE_CLIENT_ERROR">SPICE_CLIENT_ERROR</a>
-<a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>              <a class="link" href="SpiceSession.html#spice-client-error-quark" title="spice_client_error_quark ()">spice_client_error_quark</a>            (<em class="parameter"><code><span class="type">void</span></code></em>);
+<span class="returnvalue">GQuark</span>              <a class="link" href="SpiceSession.html#spice-client-error-quark" title="spice_client_error_quark ()">spice_client_error_quark</a>            (<em class="parameter"><code><span class="type">void</span></code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceSession.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----SpiceSession
 </pre>
 <pre class="synopsis">
@@ -90,43 +90,43 @@ enum                <a class="link" href="SpiceSession.html#SpiceClientError" ti
 <div class="refsect1">
 <a name="SpiceSession.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceSession.html#SpiceSession--ca" title='The "ca" property'>ca</a>"                       <a href="../glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a>*           : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--ca-file" title='The "ca-file" property'>ca-file</a>"                  <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--cache-size" title='The "cache-size" property'>cache-size</a>"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--cert-subject" title='The "cert-subject" property'>cert-subject</a>"             <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--ciphers" title='The "ciphers" property'>ciphers</a>"                  <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--client-sockets" title='The "client-sockets" property'>client-sockets</a>"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--color-depth" title='The "color-depth" property'>color-depth</a>"              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--disable-effects" title='The "disable-effects" property'>disable-effects</a>"          <a href="../gobject/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>                 : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--enable-audio" title='The "enable-audio" property'>enable-audio</a>"             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceSession.html#SpiceSession--enable-smartcard" title='The "enable-smartcard" property'>enable-smartcard</a>"         <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--enable-usbredir" title='The "enable-usbredir" property'>enable-usbredir</a>"          <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceSession.html#SpiceSession--glz-window-size" title='The "glz-window-size" property'>glz-window-size</a>"          <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--host" title='The "host" property'>host</a>"                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write / Construct
-  "<a class="link" href="SpiceSession.html#SpiceSession--inhibit-keyboard-grab" title='The "inhibit-keyboard-grab" property'>inhibit-keyboard-grab</a>"    <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--ca" title='The "ca" property'>ca</a>"                       <span class="type">GByteArray</span>*           : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--ca-file" title='The "ca-file" property'>ca-file</a>"                  <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--cache-size" title='The "cache-size" property'>cache-size</a>"               <span class="type">gint</span>                  : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--cert-subject" title='The "cert-subject" property'>cert-subject</a>"             <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--ciphers" title='The "ciphers" property'>ciphers</a>"                  <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--client-sockets" title='The "client-sockets" property'>client-sockets</a>"           <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--color-depth" title='The "color-depth" property'>color-depth</a>"              <span class="type">gint</span>                  : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--disable-effects" title='The "disable-effects" property'>disable-effects</a>"          <span class="type">GStrv</span>                 : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--enable-audio" title='The "enable-audio" property'>enable-audio</a>"             <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceSession.html#SpiceSession--enable-smartcard" title='The "enable-smartcard" property'>enable-smartcard</a>"         <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--enable-usbredir" title='The "enable-usbredir" property'>enable-usbredir</a>"          <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceSession.html#SpiceSession--glz-window-size" title='The "glz-window-size" property'>glz-window-size</a>"          <span class="type">gint</span>                  : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--host" title='The "host" property'>host</a>"                     <span class="type">gchar</span>*                : Read / Write / Construct
+  "<a class="link" href="SpiceSession.html#SpiceSession--inhibit-keyboard-grab" title='The "inhibit-keyboard-grab" property'>inhibit-keyboard-grab</a>"    <span class="type">gboolean</span>              : Read / Write
   "<a class="link" href="SpiceSession.html#SpiceSession--migration-state" title='The "migration-state" property'>migration-state</a>"          <a class="link" href="SpiceSession.html#SpiceSessionMigration"><span class="type">SpiceSessionMigration</span></a>  : Read
-  "<a class="link" href="SpiceSession.html#SpiceSession--name" title='The "name" property'>name</a>"                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read
-  "<a class="link" href="SpiceSession.html#SpiceSession--password" title='The "password" property'>password</a>"                 <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--port" title='The "port" property'>port</a>"                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--protocol" title='The "protocol" property'>protocol</a>"                 <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct
-  "<a class="link" href="SpiceSession.html#SpiceSession--proxy" title='The "proxy" property'>proxy</a>"                    <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--pubkey" title='The "pubkey" property'>pubkey</a>"                   <a href="../glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a>*           : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--read-only" title='The "read-only" property'>read-only</a>"                <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct
-  "<a class="link" href="SpiceSession.html#SpiceSession--secure-channels" title='The "secure-channels" property'>secure-channels</a>"          <a href="../gobject/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>                 : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--smartcard-certificates" title='The "smartcard-certificates" property'>smartcard-certificates</a>"   <a href="../gobject/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>                 : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--smartcard-db" title='The "smartcard-db" property'>smartcard-db</a>"             <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--tls-port" title='The "tls-port" property'>tls-port</a>"                 <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--uri" title='The "uri" property'>uri</a>"                      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write
-  "<a class="link" href="SpiceSession.html#SpiceSession--uuid" title='The "uuid" property'>uuid</a>"                     <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              : Read
+  "<a class="link" href="SpiceSession.html#SpiceSession--name" title='The "name" property'>name</a>"                     <span class="type">gchar</span>*                : Read
+  "<a class="link" href="SpiceSession.html#SpiceSession--password" title='The "password" property'>password</a>"                 <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--port" title='The "port" property'>port</a>"                     <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--protocol" title='The "protocol" property'>protocol</a>"                 <span class="type">gint</span>                  : Read / Write / Construct
+  "<a class="link" href="SpiceSession.html#SpiceSession--proxy" title='The "proxy" property'>proxy</a>"                    <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--pubkey" title='The "pubkey" property'>pubkey</a>"                   <span class="type">GByteArray</span>*           : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--read-only" title='The "read-only" property'>read-only</a>"                <span class="type">gboolean</span>              : Read / Write / Construct
+  "<a class="link" href="SpiceSession.html#SpiceSession--secure-channels" title='The "secure-channels" property'>secure-channels</a>"          <span class="type">GStrv</span>                 : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--smartcard-certificates" title='The "smartcard-certificates" property'>smartcard-certificates</a>"   <span class="type">GStrv</span>                 : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--smartcard-db" title='The "smartcard-db" property'>smartcard-db</a>"             <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--tls-port" title='The "tls-port" property'>tls-port</a>"                 <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--uri" title='The "uri" property'>uri</a>"                      <span class="type">gchar</span>*                : Read / Write
+  "<a class="link" href="SpiceSession.html#SpiceSession--uuid" title='The "uuid" property'>uuid</a>"                     <span class="type">gpointer</span>              : Read
   "<a class="link" href="SpiceSession.html#SpiceSession--verify" title='The "verify" property'>verify</a>"                   <a class="link" href="SpiceSession.html#SpiceSessionVerify"><span class="type">SpiceSessionVerify</span></a>    : Read / Write / Construct
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceSession.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceSession.html#SpiceSession-channel-destroy" title='The "channel-destroy" signal'>channel-destroy</a>"                                : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceSession.html#SpiceSession-channel-new" title='The "channel-new" signal'>channel-new</a>"                                    : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceSession.html#SpiceSession-mm-time-reset" title='The "mm-time-reset" signal'>mm-time-reset</a>"                                  : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceSession.html#SpiceSession-channel-destroy" title='The "channel-destroy" signal'>channel-destroy</a>"                                : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceSession.html#SpiceSession-channel-new" title='The "channel-new" signal'>channel-new</a>"                                    : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceSession.html#SpiceSession-mm-time-reset" title='The "mm-time-reset" signal'>mm-time-reset</a>"                                  : <code class="literal">Run First</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -197,7 +197,7 @@ Creates a new Spice session.
 <hr>
 <div class="refsect2">
 <a name="spice-session-connect"></a><h3>spice_session_connect ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_session_connect               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_session_connect               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);</pre>
 <p>
 Open the session using the <a class="link" href="SpiceSession.html#SpiceSession--host" title='The "host" property'><span class="type">"host"</span></a> and
 <a class="link" href="SpiceSession.html#SpiceSession--port" title='The "port" property'><span class="type">"port"</span></a>.
@@ -210,14 +210,14 @@ Open the session using the <a class="link" href="SpiceSession.html#SpiceSession-
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
 <td>
-<a href="../glib/glib-Standard-Macros.html#FALSE:CAPS"><code class="literal">FALSE</code></a> if the connection failed.</td>
+<code class="literal">FALSE</code> if the connection failed.</td>
 </tr></tbody>
 </table></div>
 </div>
 <hr>
 <div class="refsect2">
 <a name="spice-session-open-fd"></a><h3>spice_session_open_fd ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_session_open_fd               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_session_open_fd               (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
                                                          <em class="parameter"><code><span class="type">int</span> fd</code></em>);</pre>
 <p>
 Open the session using the provided <em class="parameter"><code>fd</code></em> socket file
@@ -250,7 +250,7 @@ Disconnect the <em class="parameter"><code>session</code></em>, and destroy all 
 <hr>
 <div class="refsect2">
 <a name="spice-session-get-channels"></a><h3>spice_session_get_channels ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="returnvalue">GList</span></a> *             spice_session_get_channels          (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">GList</span> *             spice_session_get_channels          (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);</pre>
 <p>
 Get the list of current channels associated with this <em class="parameter"><code>session</code></em>.
 </p>
@@ -267,7 +267,7 @@ Get the list of current channels associated with this <em class="parameter"><cod
 </tr>
 <tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="../glib/glib-Doubly-Linked-Lists.html#GList"><span class="type">GList</span></a>
+<td>a <span class="type">GList</span>
 of unowned <a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> channels. <span class="annotation">[<acronym title="Generics and defining elements of containers and arrays."><span class="acronym">element-type</span></acronym> SpiceChannel][<acronym title="Free data container after the code is done."><span class="acronym">transfer container</span></acronym>]</span>
 </td>
 </tr>
@@ -277,7 +277,7 @@ of unowned <a class="link" href="SpiceChannel.html" title="Spice Channel"><span 
 <hr>
 <div class="refsect2">
 <a name="spice-session-get-read-only"></a><h3>spice_session_get_read_only ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_session_get_read_only         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_session_get_read_only         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -299,8 +299,8 @@ of unowned <a class="link" href="SpiceChannel.html" title="Spice Channel"><span 
 <hr>
 <div class="refsect2">
 <a name="spice-session-has-channel-type"></a><h3>spice_session_has_channel_type ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Basic-Types.html#gboolean"><span class="returnvalue">gboolean</span></a>            spice_session_has_channel_type      (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a> type</code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">gboolean</span>            spice_session_has_channel_type      (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
+                                                         <em class="parameter"><code><span class="type">gint</span> type</code></em>);</pre>
 <p>
 See if there is a <em class="parameter"><code>type</code></em> channel in the channels associated with this
 <em class="parameter"><code>session</code></em>.
@@ -398,7 +398,7 @@ Peer certificate verification parameters flags.
 <hr>
 <div class="refsect2">
 <a name="spice-get-option-group"></a><h3>spice_get_option_group ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Commandline-option-parser.html#GOptionGroup"><span class="returnvalue">GOptionGroup</span></a> *      spice_get_option_group              (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">GOptionGroup</span> *      spice_get_option_group              (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -406,7 +406,7 @@ Peer certificate verification parameters flags.
 </colgroup>
 <tbody><tr>
 <td><p><span class="term"><span class="emphasis"><em>Returns</em></span> :</span></p></td>
-<td>a <a href="../glib/glib-Commandline-option-parser.html#GOptionGroup"><span class="type">GOptionGroup</span></a> for the commandline
+<td>a <span class="type">GOptionGroup</span> for the commandline
 arguments specific to Spice.  You have to call
 <a class="link" href="SpiceSession.html#spice-set-session-option" title="spice_set_session_option ()"><code class="function">spice_set_session_option()</code></a> after to set the options on a
 <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>. <span class="annotation">[<acronym title="Free data after the code is done."><span class="acronym">transfer full</span></acronym>]</span>
@@ -476,14 +476,14 @@ Error codes returned by spice-client API.
 <hr>
 <div class="refsect2">
 <a name="spice-client-error-quark"></a><h3>spice_client_error_quark ()</h3>
-<pre class="programlisting"><a href="../glib/glib-Quarks.html#GQuark"><span class="returnvalue">GQuark</span></a>              spice_client_error_quark            (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
+<pre class="programlisting"><span class="returnvalue">GQuark</span>              spice_client_error_quark            (<em class="parameter"><code><span class="type">void</span></code></em>);</pre>
 </div>
 </div>
 <div class="refsect1">
 <a name="SpiceSession.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceSession--ca"></a><h3>The <code class="literal">"ca"</code> property</h3>
-<pre class="programlisting">  "ca"                       <a href="../glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a>*           : Read / Write</pre>
+<pre class="programlisting">  "ca"                       <span class="type">GByteArray</span>*           : Read / Write</pre>
 <p>
 CA certificates in PEM format. The text data can contain
 several CA certificates identified by:
@@ -498,7 +498,7 @@ several CA certificates identified by:
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--ca-file"></a><h3>The <code class="literal">"ca-file"</code> property</h3>
-<pre class="programlisting">  "ca-file"                  <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "ca-file"                  <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 File holding the CA certificates for the host the client is
 connecting to
@@ -508,7 +508,7 @@ connecting to
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--cache-size"></a><h3>The <code class="literal">"cache-size"</code> property</h3>
-<pre class="programlisting">  "cache-size"               <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<pre class="programlisting">  "cache-size"               <span class="type">gint</span>                  : Read / Write</pre>
 <p>
 Images cache size. If 0, don't set.
 </p>
@@ -519,28 +519,28 @@ Images cache size. If 0, don't set.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--cert-subject"></a><h3>The <code class="literal">"cert-subject"</code> property</h3>
-<pre class="programlisting">  "cert-subject"             <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "cert-subject"             <span class="type">gchar</span>*                : Read / Write</pre>
 <p>Certificate subject to check.</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--ciphers"></a><h3>The <code class="literal">"ciphers"</code> property</h3>
-<pre class="programlisting">  "ciphers"                  <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "ciphers"                  <span class="type">gchar</span>*                : Read / Write</pre>
 <p>SSL cipher list.</p>
 <p>Default value: NULL</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--client-sockets"></a><h3>The <code class="literal">"client-sockets"</code> property</h3>
-<pre class="programlisting">  "client-sockets"           <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "client-sockets"           <span class="type">gboolean</span>              : Read / Write</pre>
 <p>Sockets are provided by the client.</p>
 <p>Default value: FALSE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--color-depth"></a><h3>The <code class="literal">"color-depth"</code> property</h3>
-<pre class="programlisting">  "color-depth"              <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<pre class="programlisting">  "color-depth"              <span class="type">gint</span>                  : Read / Write</pre>
 <p>
 Display color depth to set on new display channels. If 0, don't set.
 </p>
@@ -551,7 +551,7 @@ Display color depth to set on new display channels. If 0, don't set.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--disable-effects"></a><h3>The <code class="literal">"disable-effects"</code> property</h3>
-<pre class="programlisting">  "disable-effects"          <a href="../gobject/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>                 : Read / Write</pre>
+<pre class="programlisting">  "disable-effects"          <span class="type">GStrv</span>                 : Read / Write</pre>
 <p>
 A string array of effects to disable. The settings will
 be applied on new display channels. The following effets can be
@@ -563,7 +563,7 @@ which will disable all the effects. If NULL, don't apply changes.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--enable-audio"></a><h3>The <code class="literal">"enable-audio"</code> property</h3>
-<pre class="programlisting">  "enable-audio"             <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "enable-audio"             <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>
 If set to TRUE, the audio channels will be enabled for
 playback and recording.
@@ -574,7 +574,7 @@ playback and recording.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--enable-smartcard"></a><h3>The <code class="literal">"enable-smartcard"</code> property</h3>
-<pre class="programlisting">  "enable-smartcard"         <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "enable-smartcard"         <span class="type">gboolean</span>              : Read / Write</pre>
 <p>
 If set to TRUE, the smartcard channel will be enabled and smartcard
 events will be forwarded to the guest
@@ -585,7 +585,7 @@ events will be forwarded to the guest
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--enable-usbredir"></a><h3>The <code class="literal">"enable-usbredir"</code> property</h3>
-<pre class="programlisting">  "enable-usbredir"          <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "enable-usbredir"          <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>
 If set to TRUE, the usbredir channel will be enabled and USB devices
 can be redirected to the guest
@@ -596,7 +596,7 @@ can be redirected to the guest
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--glz-window-size"></a><h3>The <code class="literal">"glz-window-size"</code> property</h3>
-<pre class="programlisting">  "glz-window-size"          <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write</pre>
+<pre class="programlisting">  "glz-window-size"          <span class="type">gint</span>                  : Read / Write</pre>
 <p>
 Glz window size. If 0, don't set.
 </p>
@@ -607,7 +607,7 @@ Glz window size. If 0, don't set.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--host"></a><h3>The <code class="literal">"host"</code> property</h3>
-<pre class="programlisting">  "host"                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write / Construct</pre>
+<pre class="programlisting">  "host"                     <span class="type">gchar</span>*                : Read / Write / Construct</pre>
 <p>
 URL of the SPICE host to connect to
 </p>
@@ -616,7 +616,7 @@ URL of the SPICE host to connect to
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--inhibit-keyboard-grab"></a><h3>The <code class="literal">"inhibit-keyboard-grab"</code> property</h3>
-<pre class="programlisting">  "inhibit-keyboard-grab"    <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "inhibit-keyboard-grab"    <span class="type">gboolean</span>              : Read / Write</pre>
 <p>Request that SpiceDisplays don't grab the keyboard.</p>
 <p>Default value: FALSE</p>
 </div>
@@ -633,7 +633,7 @@ progress
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--name"></a><h3>The <code class="literal">"name"</code> property</h3>
-<pre class="programlisting">  "name"                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read</pre>
+<pre class="programlisting">  "name"                     <span class="type">gchar</span>*                : Read</pre>
 <p>
 Spice server name.
 </p>
@@ -643,7 +643,7 @@ Spice server name.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--password"></a><h3>The <code class="literal">"password"</code> property</h3>
-<pre class="programlisting">  "password"                 <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "password"                 <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 TLS password to use
 </p>
@@ -652,7 +652,7 @@ TLS password to use
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--port"></a><h3>The <code class="literal">"port"</code> property</h3>
-<pre class="programlisting">  "port"                     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "port"                     <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 Port to connect to for unencrypted sessions
 </p>
@@ -661,7 +661,7 @@ Port to connect to for unencrypted sessions
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--protocol"></a><h3>The <code class="literal">"protocol"</code> property</h3>
-<pre class="programlisting">  "protocol"                 <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                  : Read / Write / Construct</pre>
+<pre class="programlisting">  "protocol"                 <span class="type">gint</span>                  : Read / Write / Construct</pre>
 <p>
 Version of the SPICE protocol to use
 </p>
@@ -671,7 +671,7 @@ Version of the SPICE protocol to use
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--proxy"></a><h3>The <code class="literal">"proxy"</code> property</h3>
-<pre class="programlisting">  "proxy"                    <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "proxy"                    <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 URI to the proxy server to use when doing network connection.
 of the form  [protocol://]&lt;host&gt;[:port] 
@@ -682,13 +682,13 @@ of the form  [protocol://]&lt;host&gt;[:port]
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--pubkey"></a><h3>The <code class="literal">"pubkey"</code> property</h3>
-<pre class="programlisting">  "pubkey"                   <a href="../glib/glib-Byte-Arrays.html#GByteArray"><span class="type">GByteArray</span></a>*           : Read / Write</pre>
+<pre class="programlisting">  "pubkey"                   <span class="type">GByteArray</span>*           : Read / Write</pre>
 <p>Public key to check.</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--read-only"></a><h3>The <code class="literal">"read-only"</code> property</h3>
-<pre class="programlisting">  "read-only"                <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write / Construct</pre>
+<pre class="programlisting">  "read-only"                <span class="type">gboolean</span>              : Read / Write / Construct</pre>
 <p>
 Whether this connection is read-only mode.
 </p>
@@ -698,7 +698,7 @@ Whether this connection is read-only mode.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--secure-channels"></a><h3>The <code class="literal">"secure-channels"</code> property</h3>
-<pre class="programlisting">  "secure-channels"          <a href="../gobject/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>                 : Read / Write</pre>
+<pre class="programlisting">  "secure-channels"          <span class="type">GStrv</span>                 : Read / Write</pre>
 <p>
 A string array of channel types to be secured.
 </p>
@@ -707,7 +707,7 @@ A string array of channel types to be secured.
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--smartcard-certificates"></a><h3>The <code class="literal">"smartcard-certificates"</code> property</h3>
-<pre class="programlisting">  "smartcard-certificates"   <a href="../gobject/gobject-Boxed-Types.html#GStrv"><span class="type">GStrv</span></a>                 : Read / Write</pre>
+<pre class="programlisting">  "smartcard-certificates"   <span class="type">GStrv</span>                 : Read / Write</pre>
 <p>
 This property is used when one wants to simulate a smartcard with no
 hardware smartcard reader. If it's set to a NULL-terminated string
@@ -720,7 +720,7 @@ See also <a class="link" href="SpiceSmartcardManager.html#spice-smartcard-manage
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--smartcard-db"></a><h3>The <code class="literal">"smartcard-db"</code> property</h3>
-<pre class="programlisting">  "smartcard-db"             <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "smartcard-db"             <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 Path to the NSS certificate database containing the certificates to
 use to simulate a software smartcard
@@ -731,7 +731,7 @@ use to simulate a software smartcard
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--tls-port"></a><h3>The <code class="literal">"tls-port"</code> property</h3>
-<pre class="programlisting">  "tls-port"                 <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "tls-port"                 <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 Port to connect to for TLS sessions
 </p>
@@ -740,7 +740,7 @@ Port to connect to for TLS sessions
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--uri"></a><h3>The <code class="literal">"uri"</code> property</h3>
-<pre class="programlisting">  "uri"                      <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write</pre>
+<pre class="programlisting">  "uri"                      <span class="type">gchar</span>*                : Read / Write</pre>
 <p>
 URI of the SPICE host to connect to. The URI is of the form
 spice://hostname?port=XXX or spice://hostname?tls_port=XXX
@@ -750,7 +750,7 @@ spice://hostname?port=XXX or spice://hostname?tls_port=XXX
 <hr>
 <div class="refsect2">
 <a name="SpiceSession--uuid"></a><h3>The <code class="literal">"uuid"</code> property</h3>
-<pre class="programlisting">  "uuid"                     <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              : Read</pre>
+<pre class="programlisting">  "uuid"                     <span class="type">gpointer</span>              : Read</pre>
 <p>
 Spice server uuid.
 </p>
@@ -773,7 +773,7 @@ certificate should be checked
 <a name="SpiceSession-channel-destroy"></a><h3>The <code class="literal">"channel-destroy"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session,
                                                         <a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceSession.html#SpiceSession-channel-destroy" title='The "channel-destroy" signal'><span class="type">"channel-destroy"</span></a> signal is emitted each time a <a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> is destroyed.
 </p>
@@ -804,7 +804,7 @@ The <a class="link" href="SpiceSession.html#SpiceSession-channel-destroy" title=
 <a name="SpiceSession-channel-new"></a><h3>The <code class="literal">"channel-new"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session,
                                                         <a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> *channel,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceSession.html#SpiceSession-channel-new" title='The "channel-new" signal'><span class="type">"channel-new"</span></a> signal is emitted each time a <a class="link" href="SpiceChannel.html" title="Spice Channel"><span class="type">SpiceChannel</span></a> is created.
 </p>
@@ -834,7 +834,7 @@ The <a class="link" href="SpiceSession.html#SpiceSession-channel-new" title='The
 <div class="refsect2">
 <a name="SpiceSession-mm-time-reset"></a><h3>The <code class="literal">"mm-time-reset"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>      user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>      user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceSession.html#SpiceSession-mm-time-reset" title='The "mm-time-reset" signal'><span class="type">"mm-time-reset"</span></a> is emitted when we identify discontinuity in mm-time
 </p>
@@ -866,6 +866,6 @@ Since 0.20
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

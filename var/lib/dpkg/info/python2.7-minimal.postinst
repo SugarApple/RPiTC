@@ -31,9 +31,13 @@ case "$1" in
 esac
 
 if [ "$1" = configure ]; then
-    ls -L /usr/lib/python2.7/sitecustomize.py >/dev/null 2>&1 \
-      || filt='| fgrep -v sitecustomize.py'
-    files=$(dpkg -L libpython2.7-minimal | sed -n '/^\/usr\/lib\/python2.7\/.*\.py$/p' $filt)
+    if ls -L /usr/lib/python2.7/sitecustomize.py >/dev/null 2>&1; then
+	filt='cat'
+    else
+	filt='fgrep -v sitecustomize.py'
+    fi
+    files=$(dpkg -L libpython2.7-minimal \
+		| sed -n '/^\/usr\/lib\/python2.7\/.*\.py$/p' | $filt)
     if [ -n "$files" ]; then
 	python2.7 -E -S /usr/lib/python2.7/py_compile.py $files
 	if grep -sq '^byte-compile[^#]*optimize' /etc/python/debian_config; then

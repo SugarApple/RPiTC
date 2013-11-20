@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libQtScriptTools.so.4.8.6
+/usr/share
+/usr/share/doc
+/usr/share/doc/libqt4-scripttools
+/usr/share/doc/libqt4-scripttools/copyright
+/usr/share/doc/libqt4-scripttools/changelog.Debian.gz
+/usr/share/doc/libqt4-scripttools/LGPL_EXCEPTION.txt
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/libqt4-scripttools
+/usr/lib/arm-linux-gnueabi/libQtScriptTools.so.4
+/usr/lib/arm-linux-gnueabi/libQtScriptTools.so.4.8

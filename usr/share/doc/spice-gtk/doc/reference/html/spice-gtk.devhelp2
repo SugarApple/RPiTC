@@ -93,7 +93,8 @@
     <keyword type="function" name="spice_channel_disconnect ()" link="SpiceChannel.html#spice-channel-disconnect"/>
     <keyword type="function" name="spice_channel_test_capability ()" link="SpiceChannel.html#spice-channel-test-capability"/>
     <keyword type="function" name="spice_channel_test_common_capability ()" link="SpiceChannel.html#spice-channel-test-common-capability"/>
-    <keyword type="function" name="spice_channel_type_to_string ()" link="SpiceChannel.html#spice-channel-type-to-string"/>
+    <keyword type="function" name="spice_channel_type_to_string ()" link="SpiceChannel.html#spice-channel-type-to-string" since="0.20"/>
+    <keyword type="function" name="spice_channel_string_to_type ()" link="SpiceChannel.html#spice-channel-string-to-type" since="0.21"/>
     <keyword type="function" name="spice_channel_set_capability ()" link="SpiceChannel.html#spice-channel-set-capability" deprecated="0.13: this function has been removed"/>
     <keyword type="function" name="spice_channel_flush_async ()" link="SpiceChannel.html#spice-channel-flush-async" since="0.15"/>
     <keyword type="function" name="spice_channel_flush_finish ()" link="SpiceChannel.html#spice-channel-flush-finish" since="0.15"/>
@@ -307,5 +308,11 @@
     <keyword type="constant" name="SPICE_CHANNEL_ERROR_LINK" link="SpiceChannel.html#SPICE-CHANNEL-ERROR-LINK:CAPS"/>
     <keyword type="constant" name="SPICE_CHANNEL_ERROR_AUTH" link="SpiceChannel.html#SPICE-CHANNEL-ERROR-AUTH:CAPS"/>
     <keyword type="constant" name="SPICE_CHANNEL_ERROR_IO" link="SpiceChannel.html#SPICE-CHANNEL-ERROR-IO:CAPS"/>
+    <keyword type="constant" name="SPICE_INPUTS_SCROLL_LOCK" link="SpiceInputsChannel.html#SPICE-INPUTS-SCROLL-LOCK:CAPS"/>
+    <keyword type="constant" name="SPICE_INPUTS_NUM_LOCK" link="SpiceInputsChannel.html#SPICE-INPUTS-NUM-LOCK:CAPS"/>
+    <keyword type="constant" name="SPICE_INPUTS_CAPS_LOCK" link="SpiceInputsChannel.html#SPICE-INPUTS-CAPS-LOCK:CAPS"/>
+    <keyword type="constant" name="SPICE_DISPLAY_KEY_EVENT_PRESS" link="SpiceDisplay.html#SPICE-DISPLAY-KEY-EVENT-PRESS:CAPS"/>
+    <keyword type="constant" name="SPICE_DISPLAY_KEY_EVENT_RELEASE" link="SpiceDisplay.html#SPICE-DISPLAY-KEY-EVENT-RELEASE:CAPS"/>
+    <keyword type="constant" name="SPICE_DISPLAY_KEY_EVENT_CLICK" link="SpiceDisplay.html#SPICE-DISPLAY-KEY-EVENT-CLICK:CAPS"/>
   </functions>
 </book>

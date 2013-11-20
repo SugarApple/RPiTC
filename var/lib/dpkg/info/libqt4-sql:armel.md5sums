@@ -1,0 +1,5 @@
+9ed2ae1b09f11763ccbf58146d2b42c1  usr/lib/arm-linux-gnueabi/libQtSql.so.4.8.6
+eb6c371255e1262c55ae9b652a90b528  usr/share/doc/libqt4-sql/LGPL_EXCEPTION.txt
+447446f9345995e3a62669f7e61766b6  usr/share/doc/libqt4-sql/changelog.Debian.gz
+d49cf542b1b3ba75bad90e9560c459d3  usr/share/doc/libqt4-sql/copyright
+d13cfd087b4020d3cb8cbca92cf9f1d1  usr/share/lintian/overrides/libqt4-sql

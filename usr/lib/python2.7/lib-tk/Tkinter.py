@@ -1350,7 +1350,7 @@ class Misc:
                 value = words[i+1]
                 if not value:
                     value = None
-                elif '.' in value:
+                elif '.' in str(value):
                     value = getdouble(value)
                 else:
                     value = getint(value)
@@ -1739,7 +1739,7 @@ class Tk(Misc, Wm):
         # ensure that self.tk is always _something_.
         self.tk = None
         if baseName is None:
-            import sys, os
+            import os
             baseName = os.path.basename(sys.argv[0])
             baseName, ext = os.path.splitext(baseName)
             if ext not in ('.py', '.pyc', '.pyo'):
@@ -1883,7 +1883,7 @@ class Pack:
         for i in range(0, len(words), 2):
             key = words[i][1:]
             value = words[i+1]
-            if value[:1] == '.':
+            if str(value)[:1] == '.':
                 value = self._nametowidget(value)
             dict[key] = value
         return dict
@@ -1934,7 +1934,7 @@ class Place:
         for i in range(0, len(words), 2):
             key = words[i][1:]
             value = words[i+1]
-            if value[:1] == '.':
+            if str(value)[:1] == '.':
                 value = self._nametowidget(value)
             dict[key] = value
         return dict
@@ -1983,7 +1983,7 @@ class Grid:
         for i in range(0, len(words), 2):
             key = words[i][1:]
             value = words[i+1]
-            if value[:1] == '.':
+            if str(value)[:1] == '.':
                 value = self._nametowidget(value)
             dict[key] = value
         return dict

@@ -1,9 +1,9 @@
-15d0233d9e4e5f2fb10040c19de38ebd  usr/bin/leafpad
-282b35168a9f2c2f7e8728d7da916765  usr/share/applications/leafpad.desktop
+567a61c0121bfe32ac2c4ef9fc446c7a  usr/bin/leafpad
+c6588a895c6b7da65cfdbb5f53c05fc3  usr/share/applications/leafpad.desktop
 0060215a5dbd6ab338c9d379ce673bf1  usr/share/doc/leafpad/README
-85b387c4524ef4840c96b8c259db7c2f  usr/share/doc/leafpad/changelog.Debian.gz
+bc4d88676939b84d5e54e247a3108f94  usr/share/doc/leafpad/changelog.Debian.gz
 3bdc15130bde63d83abcb8794a97f214  usr/share/doc/leafpad/changelog.gz
-63935bff45667ca4fa4600d23ca4ba40  usr/share/doc/leafpad/copyright
+4518ef809eb039bcb6d1b68ae870a6c0  usr/share/doc/leafpad/copyright
 be0ac5a7cc6a04d6233da08a558d4319  usr/share/icons/hicolor/16x16/apps/leafpad.png
 f4f07bf71bf59d8e286cd7caa529ac49  usr/share/icons/hicolor/22x22/apps/leafpad.png
 63ae206e77258701b8b1b889197aac0e  usr/share/icons/hicolor/24x24/apps/leafpad.png
@@ -47,7 +47,7 @@ a02cf4a366c324c1fd8c5cfa9b17db3a  usr/share/locale/sr/LC_MESSAGES/leafpad.mo
 3d7970604a62304452a55b0645e0c701  usr/share/locale/vi/LC_MESSAGES/leafpad.mo
 9f3438f7c6f3bd3470cca5e1acf4097a  usr/share/locale/zh_CN/LC_MESSAGES/leafpad.mo
 6ab2f3013acc113b9f4cd69764933fb7  usr/share/locale/zh_TW/LC_MESSAGES/leafpad.mo
-c1f261dc4540fda8e8866f0487c71d3f  usr/share/man/man1/leafpad.1.gz
+f2703c4dfd850ea0fa5ed8a52876d084  usr/share/man/man1/leafpad.1.gz
 7534031eadb0227f37c0ca448914b3a5  usr/share/menu/leafpad
 5f3a81d13e1982d8bcf5207486fbc364  usr/share/pixmaps/leafpad.png
 834ff86884ce26e2c5e4c578a5b9ae8e  usr/share/pixmaps/leafpad.xpm

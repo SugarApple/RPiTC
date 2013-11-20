@@ -1,8 +1,8 @@
-2bd9ba2fa2bb2a35181cb3ea8eb19eaa  usr/lib/dconf/dconf-service
+2b728eb18686c810c66d17a9a430bafc  usr/lib/dconf/dconf-service
 b0d84954bc27d0a7237e87f8612fc6c4  usr/share/dbus-1/services/ca.desrt.dconf.service
 715d979c7e78425cbdbe53291e3d4406  usr/share/doc/dconf-service/NEWS.Debian.gz
-d7fea48ce0e8ee180d46d0316153c02f  usr/share/doc/dconf-service/NEWS.gz
+54259efaab286a47c9a7c5e41d44977f  usr/share/doc/dconf-service/NEWS.gz
 68765f6443a18433d0b37b92c76fcb94  usr/share/doc/dconf-service/README
-2a5e2c60dbf53756a15400fdb6be679e  usr/share/doc/dconf-service/changelog.Debian.gz
+4fb61ec36bb2ddcaa09c977840f2861f  usr/share/doc/dconf-service/changelog.Debian.gz
 cf470c91ee78366d09eb19042268ae9f  usr/share/doc/dconf-service/copyright
-5930e1edb007089286a00120dca37119  usr/share/man/man1/dconf-service.1.gz
+29e372bc2a2f3bacbc0b866a80293a87  usr/share/man/man1/dconf-service.1.gz

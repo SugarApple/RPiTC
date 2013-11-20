@@ -1,0 +1,11 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libaudclient.so.2.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libaudclient2
+/usr/share/doc/libaudclient2/changelog.Debian.gz
+/usr/share/doc/libaudclient2/copyright
+/usr/lib/arm-linux-gnueabi/libaudclient.so.2

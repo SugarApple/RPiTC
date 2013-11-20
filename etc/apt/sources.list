@@ -1,2 +1,2 @@
 deb http://armv6j.armtc.net/ sid main
-deb http://ftp.de.debian.org/debian jessie main contrib non-free
+deb http://ftp.de.debian.org/debian sid main contrib non-free

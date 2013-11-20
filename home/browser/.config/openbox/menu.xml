@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+
+<menu id="conf-menu" label="Configurations">
+  <item label="Desktop Settings">
+    <action name="Execute">
+      <startupnotify><enabled>yes</enabled></startupnotify>
+      <command>pcmanfm --desktop-pref</command>
+    </action>
+  </item>
+  <item label="Window Management Settings">
+    <action name="Execute">
+      <startupnotify><enabled>yes</enabled><icon>openbox</icon></startupnotify>
+      <command>obconf</command>
+    </action>
+  </item>
+  <item label="Change Keyboard Configuration">
+    <action name="Execute"><command>lxterminal -e "dpkg-reconfigure keyboard-configuration"</command></action>
+  </item>
+  <item label="Change Locales">
+    <action name="Execute"><command>lxterminal -e "dpkg-reconfigure locales"</command></action>
+  </item>
+  <item label="Change Autostart Applications">
+    <action name="Execute"><command>leafpad ~/.config/lxsession/LXDE/autostart</command></action>
+  </item>
+  <item label="Change This Menu">
+    <action name="Execute"><command>leafpad ~/.config/openbox/menu.xml</command></action>
+  </item>
+  <item label="Reload Menu Files">
+    <action name="Reconfigure" />
+  </item>
+</menu>
+
+<menu id="root-menu" label="RPi-TC BrowserMode">
+  <separator label="RPi-TC BrowserMode" />
+  <item label="Iceweasel">
+    <action name="Execute"><command>iceweasel</command></action>
+  </item>
+  <separator />
+  <item label="LXTerminal">
+    <action name="Execute"><command>lxterminal</command></action>
+  </item>
+  <separator />
+  <menu id="conf-menu" />
+  <separator />
+  <menu id="client-list-menu" />
+  <separator />
+  <item label="Reboot">
+    <action name="Execute"><command>lxterminal -e "sudo shutdown -r now"</command></action>
+  </item>
+  <item label="Shutdown">
+    <action name="Execute"><command>lxterminal -e "sudo shutdown -h now"</command></action>
+  </item>
+</menu>
+
+</openbox_menu>
+

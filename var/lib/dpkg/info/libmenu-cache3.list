@@ -1,0 +1,16 @@
+/.
+/usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libmenu-cache3
+/usr/lib/arm-linux-gnueabi/libmenu-cache3/libexec
+/usr/lib/arm-linux-gnueabi/libmenu-cache3/libexec/menu-cache
+/usr/lib/arm-linux-gnueabi/libmenu-cache3/libexec/menu-cache/menu-cache-gen
+/usr/lib/arm-linux-gnueabi/libmenu-cache3/libexec/menu-cache/menu-cached
+/usr/lib/arm-linux-gnueabi/libmenu-cache.so.3.0.0
+/usr/share
+/usr/share/doc
+/usr/share/doc/libmenu-cache3
+/usr/share/doc/libmenu-cache3/changelog.Debian.gz
+/usr/share/doc/libmenu-cache3/copyright
+/usr/lib/arm-linux-gnueabi/libmenu-cache.so.3

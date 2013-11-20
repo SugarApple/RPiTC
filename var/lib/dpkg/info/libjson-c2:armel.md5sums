@@ -1,6 +1,6 @@
-19196d7d1f4e60110b871281c553d8af  lib/arm-linux-gnueabi/libjson-c.so.2.0.1
-049b1a9bbb9d6c10a2608ca0fed29d63  usr/share/doc/libjson-c2/README
+c705ca9deb0cc8eb95bacf23b8e73a65  lib/arm-linux-gnueabi/libjson-c.so.2.0.0
+e03b5881cdab9ea7fcd43e30fa710245  usr/share/doc/libjson-c2/README
 c2cd2445b7d70640fb856de7f15f0787  usr/share/doc/libjson-c2/README.html
-20aeeb827d560c7cfde1e4770a14407e  usr/share/doc/libjson-c2/changelog.Debian.gz
-dba94f5a6b170ba1d37b6f426c466bd7  usr/share/doc/libjson-c2/changelog.gz
+63b31dd2e165217378d28275406390f5  usr/share/doc/libjson-c2/changelog.Debian.gz
+bdcf323df3931ed5fbd1685210f7e4a4  usr/share/doc/libjson-c2/changelog.gz
 ccc88a203dcbaff2f99c4d46fbf36f4d  usr/share/doc/libjson-c2/copyright

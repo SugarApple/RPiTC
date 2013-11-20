@@ -1,4 +1,4 @@
-root:*:15935:0:99999:7:::
+root:$6$btRYBbUO$nUYegCcHWZYRTCv0EgJmmWjHuduvSWxWwDLnoV1qLVmeDg98WISOUeGKKYC0YjIGU0YEkB/rdnaXn/b0gqXt40:15936:0:99999:7:::
 daemon:*:15935:0:99999:7:::
 bin:*:15935:0:99999:7:::
 sys:*:15935:0:99999:7:::
@@ -20,3 +20,4 @@ libuuid:!:15935:0:99999:7:::
 messagebus:*:15935:0:99999:7:::
 sshd:*:15935:0:99999:7:::
 ntp:*:15935:0:99999:7:::
+rpitc:$6$xIFaWJSy$g.K4FW8.IFCCC6X7MHcwHvvkwVOEEcEzt1WIycSChbtlGFlTU4v.zuM3ckrSDvLH87z7/3R8KbKf.EmWHEHMo1:15935:0:99999:7:::

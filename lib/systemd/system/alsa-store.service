@@ -11,5 +11,5 @@ Before=shutdown.target
 
 [Service]
 Type=oneshot
-ExecStart=/usr/sbin/alsactl store
+ExecStart=/usr/sbin/alsactl -E HOME=/var/run/alsa store
 StandardOutput=syslog

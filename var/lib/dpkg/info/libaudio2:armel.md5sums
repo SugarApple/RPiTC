@@ -1,8 +1,8 @@
-c51a77e3a0822d7af89131bc41700198  usr/lib/arm-linux-gnueabi/libaudio.so.2.4
-4bddf4f40d3f9c6cf6263fe2e0eb4012  usr/share/doc/libaudio2/TODO.gz
+281032dcc46df97505ffa156cb38e499  usr/lib/arm-linux-gnueabi/libaudio.so.2.4
+306d9bd04729fd92915e54d52067da68  usr/share/doc/libaudio2/changelog.gz
 c2a23171bdbba19fcc8bda47d3205e6c  usr/share/doc/libaudio2/FAQ.gz
 3416d9970dd9941f1c6c73eb1ed0436f  usr/share/doc/libaudio2/README.gz
-6f0ddfa594947ff3d5a91cf33a18cd06  usr/share/doc/libaudio2/changelog.gz
+4bddf4f40d3f9c6cf6263fe2e0eb4012  usr/share/doc/libaudio2/TODO.gz
+3800c3c203531d4717a24718824a913c  usr/share/doc/libaudio2/changelog.Debian.gz
 997b955a5dbaa7dec4179db924d541b3  usr/share/doc/libaudio2/copyright
-623b99667b4114ef37716f8e7e901572  usr/share/doc/libaudio2/changelog.Debian.gz
 597d1d606286748f0bafd3f122f1ea69  usr/share/libaudio2/AuErrorDB

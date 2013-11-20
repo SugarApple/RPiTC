@@ -1,6 +1,6 @@
-58495ec3a33c9596b1a665ff99a9c780  usr/lib/arm-linux-gnueabi/libpulse-mainloop-glib.so.0.0.4
+61264981263ec0251e0f413114086efe  usr/lib/arm-linux-gnueabi/libpulse-mainloop-glib.so.0.0.4
 f75cad65c647d54e21c16a182e5fe0eb  usr/share/doc/libpulse-mainloop-glib0/NEWS.gz
 a17c7bf6f9b9321f4cf389682cf0d058  usr/share/doc/libpulse-mainloop-glib0/README
-066a86aef2ce4a5eb93f71531c00f412  usr/share/doc/libpulse-mainloop-glib0/buildinfo_armel.gz
-73b2b42199de8b3906a8d7e4733777d0  usr/share/doc/libpulse-mainloop-glib0/changelog.Debian.gz
+9a6ad31b8094d6e667a464d66d791dd1  usr/share/doc/libpulse-mainloop-glib0/changelog.Debian.armel.gz
+d51e86c10e6d0c7d2e7a4d6edf8ed9c0  usr/share/doc/libpulse-mainloop-glib0/changelog.Debian.gz
 1a70969fd317243739e917dee33e532a  usr/share/doc/libpulse-mainloop-glib0/copyright

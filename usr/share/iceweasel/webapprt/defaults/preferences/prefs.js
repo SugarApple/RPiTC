@@ -39,7 +39,7 @@ pref("plugin.allowed_types", "application/x-shockwave-flash,application/futuresp
 
 // The default for this pref reflects whether the build is capable of IPC.
 // (Turning it on in a no-IPC build will have no effect.)
-//@line 49 "/opt/build/iceweasel-17.0.8esr/webapprt/prefs.js"
+//@line 49 "/opt/build/iceweasel-24.1.0esr/webapprt/prefs.js"
 pref("dom.ipc.plugins.enabled", true);
-//@line 51 "/opt/build/iceweasel-17.0.8esr/webapprt/prefs.js"
+//@line 51 "/opt/build/iceweasel-24.1.0esr/webapprt/prefs.js"
 

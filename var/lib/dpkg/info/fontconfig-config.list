@@ -5,6 +5,7 @@
 /usr/share/fontconfig/conf.avail
 /usr/share/fontconfig/conf.avail/11-lcdfilter-legacy.conf
 /usr/share/fontconfig/conf.avail/10-unhinted.conf
+/usr/share/fontconfig/conf.avail/10-scale-bitmap-fonts.conf
 /usr/share/fontconfig/conf.avail/45-latin.conf
 /usr/share/fontconfig/conf.avail/70-force-bitmaps.conf
 /usr/share/fontconfig/conf.avail/30-urw-aliases.conf
@@ -50,6 +51,7 @@
 /etc/fonts/fonts.conf
 /etc/fonts/conf.d
 /etc/fonts/conf.d/README
+/etc/fonts/conf.d/10-scale-bitmap-fonts.conf
 /etc/fonts/conf.d/45-latin.conf
 /etc/fonts/conf.d/30-urw-aliases.conf
 /etc/fonts/conf.d/60-latin.conf

@@ -1,5 +1,5 @@
-1da775b75427bd8d5c37c1df4a9f18df  usr/lib/arm-linux-gnueabi/libdrm_nouveau.so.2.0.0
-303f9d7237172e47311c7a600e434372  usr/share/doc/libdrm-nouveau2/changelog.Debian.gz
+0f8f5e70de87552b89e239657c2bff39  usr/lib/arm-linux-gnueabi/libdrm_nouveau.so.2.0.0
+b7a4c6214c6f4134f2460c4bc80aac3e  usr/share/doc/libdrm-nouveau2/changelog.Debian.gz
 073612e70233bb6c359120e122a9c014  usr/share/doc/libdrm-nouveau2/changelog.gz
 acc80450c1bd42944061a30272f0c132  usr/share/doc/libdrm-nouveau2/copyright
 be1195a533b145d7c66df5d6c16e7a70  usr/share/lintian/overrides/libdrm-nouveau2

@@ -97,6 +97,7 @@
 <ANCHOR id="spice-channel-test-capability" href="spice-gtk/SpiceChannel.html#spice-channel-test-capability">
 <ANCHOR id="spice-channel-test-common-capability" href="spice-gtk/SpiceChannel.html#spice-channel-test-common-capability">
 <ANCHOR id="spice-channel-type-to-string" href="spice-gtk/SpiceChannel.html#spice-channel-type-to-string">
+<ANCHOR id="spice-channel-string-to-type" href="spice-gtk/SpiceChannel.html#spice-channel-string-to-type">
 <ANCHOR id="spice-channel-set-capability" href="spice-gtk/SpiceChannel.html#spice-channel-set-capability">
 <ANCHOR id="spice-channel-flush-async" href="spice-gtk/SpiceChannel.html#spice-channel-flush-async">
 <ANCHOR id="spice-channel-flush-finish" href="spice-gtk/SpiceChannel.html#spice-channel-flush-finish">
@@ -157,6 +158,9 @@
 <ANCHOR id="SpiceInputsChannel-struct" href="spice-gtk/SpiceInputsChannel.html#SpiceInputsChannel-struct">
 <ANCHOR id="SpiceInputsChannelClass" href="spice-gtk/SpiceInputsChannel.html#SpiceInputsChannelClass">
 <ANCHOR id="SpiceInputsLock-enum" href="spice-gtk/SpiceInputsChannel.html#SpiceInputsLock-enum">
+<ANCHOR id="SPICE-INPUTS-SCROLL-LOCK:CAPS" href="spice-gtk/SpiceInputsChannel.html#SPICE-INPUTS-SCROLL-LOCK:CAPS">
+<ANCHOR id="SPICE-INPUTS-NUM-LOCK:CAPS" href="spice-gtk/SpiceInputsChannel.html#SPICE-INPUTS-NUM-LOCK:CAPS">
+<ANCHOR id="SPICE-INPUTS-CAPS-LOCK:CAPS" href="spice-gtk/SpiceInputsChannel.html#SPICE-INPUTS-CAPS-LOCK:CAPS">
 <ANCHOR id="spice-inputs-motion" href="spice-gtk/SpiceInputsChannel.html#spice-inputs-motion">
 <ANCHOR id="spice-inputs-position" href="spice-gtk/SpiceInputsChannel.html#spice-inputs-position">
 <ANCHOR id="spice-inputs-button-press" href="spice-gtk/SpiceInputsChannel.html#spice-inputs-button-press">
@@ -323,6 +327,9 @@
 <ANCHOR id="SpiceDisplay-struct" href="spice-gtk/SpiceDisplay.html#SpiceDisplay-struct">
 <ANCHOR id="SpiceDisplayClass" href="spice-gtk/SpiceDisplay.html#SpiceDisplayClass">
 <ANCHOR id="SpiceDisplayKeyEvent" href="spice-gtk/SpiceDisplay.html#SpiceDisplayKeyEvent">
+<ANCHOR id="SPICE-DISPLAY-KEY-EVENT-PRESS:CAPS" href="spice-gtk/SpiceDisplay.html#SPICE-DISPLAY-KEY-EVENT-PRESS:CAPS">
+<ANCHOR id="SPICE-DISPLAY-KEY-EVENT-RELEASE:CAPS" href="spice-gtk/SpiceDisplay.html#SPICE-DISPLAY-KEY-EVENT-RELEASE:CAPS">
+<ANCHOR id="SPICE-DISPLAY-KEY-EVENT-CLICK:CAPS" href="spice-gtk/SpiceDisplay.html#SPICE-DISPLAY-KEY-EVENT-CLICK:CAPS">
 <ANCHOR id="spice-display-new" href="spice-gtk/SpiceDisplay.html#spice-display-new">
 <ANCHOR id="spice-display-new-with-monitor" href="spice-gtk/SpiceDisplay.html#spice-display-new-with-monitor">
 <ANCHOR id="spice-display-mouse-ungrab" href="spice-gtk/SpiceDisplay.html#spice-display-mouse-ungrab">

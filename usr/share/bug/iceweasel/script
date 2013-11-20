@@ -1,5 +1,5 @@
 #!/bin/sh
 
-if [ -x /usr/lib/xulrunner-17.0/reportbug-helper-script ]; then
-	/usr/lib/xulrunner-17.0/reportbug-helper-script iceweasel
+if [ -x /usr/lib/xulrunner-24.0/reportbug-helper-script ]; then
+	/usr/lib/xulrunner-24.0/reportbug-helper-script iceweasel
 fi

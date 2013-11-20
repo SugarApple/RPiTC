@@ -8,10 +8,12 @@ libisl.so.10 libisl10 #MINVER#
  isl_aff_add@Base 0.10
  isl_aff_add_coefficient@Base 0.10
  isl_aff_add_coefficient_si@Base 0.10
+ isl_aff_add_coefficient_val@Base 0.12.1
  isl_aff_add_constant@Base 0.10
  isl_aff_add_constant_num@Base 0.11
  isl_aff_add_constant_num_si@Base 0.11
  isl_aff_add_constant_si@Base 0.10
+ isl_aff_add_constant_val@Base 0.12.1
  isl_aff_add_dims@Base 0.10
  isl_aff_add_on_domain@Base 0.10
  isl_aff_align_divs@Base 0.10
@@ -19,6 +21,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_aff_alloc@Base 0.10
  isl_aff_alloc_vec@Base 0.10
  isl_aff_ceil@Base 0.10
+ isl_aff_check_match_domain_space@Base 0.12.1
  isl_aff_copy@Base 0.10
  isl_aff_cow@Base 0.10
  isl_aff_dim@Base 0.10
@@ -31,9 +34,12 @@ libisl.so.10 libisl10 #MINVER#
  isl_aff_free@Base 0.10
  isl_aff_ge_basic_set@Base 0.10
  isl_aff_get_coefficient@Base 0.10
+ isl_aff_get_coefficient_val@Base 0.12.1
  isl_aff_get_constant@Base 0.10
+ isl_aff_get_constant_val@Base 0.12.1
  isl_aff_get_ctx@Base 0.10
  isl_aff_get_denominator@Base 0.10
+ isl_aff_get_denominator_val@Base 0.12.1
  isl_aff_get_dim@Base 0.10
  isl_aff_get_dim_name@Base 0.10
  isl_aff_get_div@Base 0.10
@@ -58,6 +64,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_aff_list_dump@Base 0.10
  isl_aff_list_dup@Base 0.10
  isl_aff_list_foreach@Base 0.10
+ isl_aff_list_foreach_scc@Base 0.12.1
  isl_aff_list_free@Base 0.10
  isl_aff_list_from_aff@Base 0.10
  isl_aff_list_get_aff@Base 0.10
@@ -65,7 +72,9 @@ libisl.so.10 libisl10 #MINVER#
  isl_aff_list_insert@Base 0.11
  isl_aff_list_n_aff@Base 0.10
  isl_aff_list_set_aff@Base 0.11
+ isl_aff_list_sort@Base 0.12.1
  isl_aff_mod@Base 0.10
+ isl_aff_mod_val@Base 0.12.1
  isl_aff_mul@Base 0.10
  isl_aff_neg@Base 0.10
  isl_aff_neg_basic_set@Base 0.11
@@ -83,10 +92,14 @@ libisl.so.10 libisl10 #MINVER#
  isl_aff_scale@Base 0.10
  isl_aff_scale_down@Base 0.10
  isl_aff_scale_down_ui@Base 0.10
+ isl_aff_scale_down_val@Base 0.12.1
+ isl_aff_scale_val@Base 0.12.1
  isl_aff_set_coefficient@Base 0.10
  isl_aff_set_coefficient_si@Base 0.10
+ isl_aff_set_coefficient_val@Base 0.12.1
  isl_aff_set_constant@Base 0.10
  isl_aff_set_constant_si@Base 0.10
+ isl_aff_set_constant_val@Base 0.12.1
  isl_aff_set_denominator@Base 0.10
  isl_aff_set_dim_id@Base 0.10
  isl_aff_set_dim_name@Base 0.10
@@ -147,8 +160,6 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_build_increase_depth@Base 0.11
  isl_ast_build_insert_dim@Base 0.11
  isl_ast_build_map_to_iterator@Base 0.11
- isl_ast_build_max@Base 0.11
- isl_ast_build_min@Base 0.11
  isl_ast_build_need_schedule_map@Base 0.11
  isl_ast_build_options_involve_depth@Base 0.11
  isl_ast_build_product@Base 0.11
@@ -166,10 +177,10 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_build_set_loop_bounds@Base 0.11
  isl_ast_build_set_options@Base 0.11
  isl_ast_build_set_single_valued@Base 0.11.2
+ isl_ast_build_substitute_values_union_map_domain@Base 0.12.1
  isl_ast_expr_add@Base 0.11
  isl_ast_expr_alloc_binary@Base 0.11
- isl_ast_expr_alloc_int@Base 0.11
- isl_ast_expr_alloc_int_si@Base 0.11
+ isl_ast_expr_alloc_int_si@Base 0.12.1
  isl_ast_expr_alloc_op@Base 0.11
  isl_ast_expr_and@Base 0.11
  isl_ast_expr_copy@Base 0.11
@@ -180,6 +191,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_expr_free@Base 0.11
  isl_ast_expr_from_aff@Base 0.11
  isl_ast_expr_from_id@Base 0.11
+ isl_ast_expr_from_val@Base 0.12.1
  isl_ast_expr_get_ctx@Base 0.11
  isl_ast_expr_get_id@Base 0.11
  isl_ast_expr_get_int@Base 0.11
@@ -187,6 +199,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_expr_get_op_n_arg@Base 0.11
  isl_ast_expr_get_op_type@Base 0.11
  isl_ast_expr_get_type@Base 0.11
+ isl_ast_expr_get_val@Base 0.12.1
  isl_ast_expr_list_add@Base 0.11
  isl_ast_expr_list_alloc@Base 0.11
  isl_ast_expr_list_concat@Base 0.11
@@ -196,6 +209,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_expr_list_dump@Base 0.11
  isl_ast_expr_list_dup@Base 0.11
  isl_ast_expr_list_foreach@Base 0.11
+ isl_ast_expr_list_foreach_scc@Base 0.12.1
  isl_ast_expr_list_free@Base 0.11
  isl_ast_expr_list_from_ast_expr@Base 0.11
  isl_ast_expr_list_get_ast_expr@Base 0.11
@@ -203,6 +217,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_expr_list_insert@Base 0.11
  isl_ast_expr_list_n_ast_expr@Base 0.11
  isl_ast_expr_list_set_ast_expr@Base 0.11
+ isl_ast_expr_list_sort@Base 0.12.1
  isl_ast_expr_mul@Base 0.11
  isl_ast_expr_neg@Base 0.11
  isl_ast_expr_or@Base 0.11
@@ -230,6 +245,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_graft_list_dump@Base 0.11
  isl_ast_graft_list_dup@Base 0.11
  isl_ast_graft_list_foreach@Base 0.11
+ isl_ast_graft_list_foreach_scc@Base 0.12.1
  isl_ast_graft_list_free@Base 0.11
  isl_ast_graft_list_from_ast_graft@Base 0.11
  isl_ast_graft_list_fuse@Base 0.11
@@ -241,6 +257,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_graft_list_preimage_multi_aff@Base 0.11
  isl_ast_graft_list_set_ast_graft@Base 0.11
  isl_ast_graft_list_sort@Base 0.11
+ isl_ast_graft_list_sort_guard@Base 0.12.1
  isl_ast_graft_list_unembed@Base 0.11
  isl_ast_graft_preimage_multi_aff@Base 0.11
  isl_ast_graft_set_enforced@Base 0.11
@@ -287,6 +304,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_node_list_dump@Base 0.11
  isl_ast_node_list_dup@Base 0.11
  isl_ast_node_list_foreach@Base 0.11
+ isl_ast_node_list_foreach_scc@Base 0.12.1
  isl_ast_node_list_free@Base 0.11
  isl_ast_node_list_from_ast_node@Base 0.11
  isl_ast_node_list_get_ast_node@Base 0.11
@@ -295,6 +313,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_ast_node_list_n_ast_node@Base 0.11
  isl_ast_node_list_print@Base 0.11
  isl_ast_node_list_set_ast_node@Base 0.11
+ isl_ast_node_list_sort@Base 0.12.1
  isl_ast_node_print@Base 0.11
  isl_ast_node_print_macros@Base 0.11
  isl_ast_node_set_annotation@Base 0.11
@@ -332,6 +351,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_band_list_dup@Base 0.10
  isl_band_list_foreach@Base 0.10
  isl_band_list_foreach_band@Base 0.10
+ isl_band_list_foreach_scc@Base 0.12.1
  isl_band_list_free@Base 0.10
  isl_band_list_from_band@Base 0.10
  isl_band_list_get_band@Base 0.10
@@ -341,8 +361,10 @@ libisl.so.10 libisl10 #MINVER#
  isl_band_list_insert@Base 0.11
  isl_band_list_n_band@Base 0.10
  isl_band_list_set_band@Base 0.11
+ isl_band_list_sort@Base 0.12.1
  isl_band_member_is_zero_distance@Base 0.10
  isl_band_n_member@Base 0.10
+ isl_band_split@Base 0.12.1
  isl_band_tile@Base 0.10
  isl_band_to_str@Base 0.10
  isl_basic_map_add@Base 0.10
@@ -411,6 +433,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_map_fix@Base 0.10
  isl_basic_map_fix_input_si@Base 0.10
  isl_basic_map_fix_si@Base 0.10
+ isl_basic_map_fix_val@Base 0.12.1
  isl_basic_map_flat_product@Base 0.10
  isl_basic_map_flat_range_product@Base 0.10
  isl_basic_map_flatten@Base 0.10
@@ -491,6 +514,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_map_offset@Base 0.10
  isl_basic_map_order_divs@Base 0.10
  isl_basic_map_order_ge@Base 0.11
+ isl_basic_map_order_gt@Base 0.12.1
  isl_basic_map_overlying_set@Base 0.10
  isl_basic_map_partial_lexmax@Base 0.10
  isl_basic_map_partial_lexmax_pw_multi_aff@Base 0.10
@@ -498,12 +522,14 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_map_partial_lexmin_pw_multi_aff@Base 0.10
  isl_basic_map_partial_lexopt_pw_multi_aff@Base 0.10
  isl_basic_map_plain_cmp@Base 0.10
+ isl_basic_map_plain_get_val_if_fixed@Base 0.12.1
  isl_basic_map_plain_is_disjoint@Base 0.10
  isl_basic_map_plain_is_empty@Base 0.10
  isl_basic_map_plain_is_equal@Base 0.10
  isl_basic_map_plain_is_fixed@Base 0.10
  isl_basic_map_plain_is_single_valued@Base 0.10
  isl_basic_map_plain_is_singleton@Base 0.10
+ isl_basic_map_preimage_multi_aff@Base 0.12.1
  isl_basic_map_print@Base 0.10
  isl_basic_map_print_internal@Base 0.10
  isl_basic_map_product@Base 0.10
@@ -603,6 +629,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_set_fix@Base 0.10
  isl_basic_set_fix_dim_si@Base 0.10
  isl_basic_set_fix_si@Base 0.10
+ isl_basic_set_fix_val@Base 0.12.1
  isl_basic_set_flat_product@Base 0.10
  isl_basic_set_flatten@Base 0.10
  isl_basic_set_follows_at@Base 0.10
@@ -628,6 +655,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_set_get_dim_id@Base 0.10
  isl_basic_set_get_dim_name@Base 0.10
  isl_basic_set_get_div@Base 0.10
+ isl_basic_set_get_divs@Base 0.12.1
  isl_basic_set_get_hash@Base 0.10
  isl_basic_set_get_local_space@Base 0.10
  isl_basic_set_get_space@Base 0.10
@@ -665,6 +693,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_set_list_dump@Base 0.10
  isl_basic_set_list_dup@Base 0.10
  isl_basic_set_list_foreach@Base 0.10
+ isl_basic_set_list_foreach_scc@Base 0.12.1
  isl_basic_set_list_free@Base 0.10
  isl_basic_set_list_from_basic_set@Base 0.10
  isl_basic_set_list_get_basic_set@Base 0.10
@@ -673,8 +702,12 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_set_list_n_basic_set@Base 0.10
  isl_basic_set_list_product@Base 0.10
  isl_basic_set_list_set_basic_set@Base 0.11
+ isl_basic_set_list_sort@Base 0.12.1
  isl_basic_set_lower_bound_dim@Base 0.10
  isl_basic_set_max@Base 0.10
+ isl_basic_set_max_lp_val@Base 0.12.1
+ isl_basic_set_max_val@Base 0.12.1
+ isl_basic_set_min_lp_val@Base 0.12.1
  isl_basic_set_move_dims@Base 0.10
  isl_basic_set_multiplicative_call@Base 0.10
  isl_basic_set_n_constraint@Base 0.10
@@ -686,6 +719,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_basic_set_normalize_constraints@Base 0.10
  isl_basic_set_offset@Base 0.10
  isl_basic_set_opt@Base 0.10
+ isl_basic_set_opt_val@Base 0.12.1
  isl_basic_set_order_divs@Base 0.10
  isl_basic_set_parameter_compression@Base 0.10
  isl_basic_set_params@Base 0.10
@@ -769,7 +803,9 @@ libisl.so.10 libisl10 #MINVER#
  isl_constraint_get_aff@Base 0.10
  isl_constraint_get_bound@Base 0.10
  isl_constraint_get_coefficient@Base 0.10
+ isl_constraint_get_coefficient_val@Base 0.12.1
  isl_constraint_get_constant@Base 0.10
+ isl_constraint_get_constant_val@Base 0.12.1
  isl_constraint_get_ctx@Base 0.10
  isl_constraint_get_dim@Base 0.10
  isl_constraint_get_dim_name@Base 0.10
@@ -791,6 +827,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_constraint_list_dump@Base 0.11
  isl_constraint_list_dup@Base 0.11
  isl_constraint_list_foreach@Base 0.11
+ isl_constraint_list_foreach_scc@Base 0.12.1
  isl_constraint_list_free@Base 0.11
  isl_constraint_list_from_constraint@Base 0.11
  isl_constraint_list_get_constraint@Base 0.11
@@ -798,11 +835,14 @@ libisl.so.10 libisl10 #MINVER#
  isl_constraint_list_insert@Base 0.11
  isl_constraint_list_n_constraint@Base 0.11
  isl_constraint_list_set_constraint@Base 0.11
+ isl_constraint_list_sort@Base 0.12.1
  isl_constraint_negate@Base 0.10
  isl_constraint_set_coefficient@Base 0.10
  isl_constraint_set_coefficient_si@Base 0.10
+ isl_constraint_set_coefficient_val@Base 0.12.1
  isl_constraint_set_constant@Base 0.10
  isl_constraint_set_constant_si@Base 0.10
+ isl_constraint_set_constant_val@Base 0.12.1
  isl_constraint_to_str@Base 0.10
  isl_context_gbr_op@Base 0.10
  isl_context_lex_op@Base 0.10
@@ -875,6 +915,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_flow_get_no_source@Base 0.10
  isl_fold_type_negate@Base 0.10
  isl_gbr_choice@Base 0.10
+ isl_gmp_gcdext@Base 0.12.1
  isl_gmp_hash@Base 0.10
  isl_handle_error@Base 0.10
  isl_hash_id@Base 0.10
@@ -908,6 +949,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_id_list_dump@Base 0.11
  isl_id_list_dup@Base 0.11
  isl_id_list_foreach@Base 0.11
+ isl_id_list_foreach_scc@Base 0.12.1
  isl_id_list_free@Base 0.11
  isl_id_list_from_id@Base 0.11
  isl_id_list_get_ctx@Base 0.11
@@ -915,6 +957,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_id_list_insert@Base 0.11
  isl_id_list_n_id@Base 0.11
  isl_id_list_set_id@Base 0.11
+ isl_id_list_sort@Base 0.12.1
  isl_id_none@Base 0.10
  isl_id_set_free_user@Base 0.11
  isl_id_to_str@Base 0.10
@@ -1036,7 +1079,9 @@ libisl.so.10 libisl10 #MINVER#
  isl_map_fix@Base 0.10
  isl_map_fix_input_si@Base 0.10
  isl_map_fix_si@Base 0.10
+ isl_map_fix_val@Base 0.12.1
  isl_map_fixed_power@Base 0.10
+ isl_map_fixed_power_val@Base 0.12.1
  isl_map_flat_domain_product@Base 0.10
  isl_map_flat_product@Base 0.10
  isl_map_flat_range_product@Base 0.10
@@ -1044,6 +1089,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_map_flatten_domain@Base 0.10
  isl_map_flatten_range@Base 0.10
  isl_map_floordiv@Base 0.10
+ isl_map_floordiv_val@Base 0.12.1
  isl_map_foreach_basic_map@Base 0.10
  isl_map_free@Base 0.10
  isl_map_from_aff@Base 0.10
@@ -1135,6 +1181,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_map_params@Base 0.10
  isl_map_partial_lexmax@Base 0.10
  isl_map_partial_lexmin@Base 0.10
+ isl_map_plain_get_val_if_fixed@Base 0.12.1
  isl_map_plain_input_is_fixed@Base 0.10
  isl_map_plain_is_disjoint@Base 0.10
  isl_map_plain_is_empty@Base 0.10
@@ -1146,6 +1193,8 @@ libisl.so.10 libisl10 #MINVER#
  isl_map_plain_is_universe@Base 0.10
  isl_map_polyhedral_hull@Base 0.10
  isl_map_power@Base 0.10
+ isl_map_preimage_domain_multi_aff@Base 0.12.1
+ isl_map_preimage_multi_aff@Base 0.12.1
  isl_map_print@Base 0.10
  isl_map_print_internal@Base 0.10
  isl_map_product@Base 0.10
@@ -1220,6 +1269,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_mat_gcd@Base 0.10
  isl_mat_get_ctx@Base 0.10
  isl_mat_get_element@Base 0.10
+ isl_mat_get_element_val@Base 0.12.1
  isl_mat_identity@Base 0.10
  isl_mat_initial_non_zero_cols@Base 0.10
  isl_mat_insert_cols@Base 0.10
@@ -1234,6 +1284,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_mat_normalize@Base 0.10
  isl_mat_normalize_row@Base 0.10
  isl_mat_parameter_compression@Base 0.10
+ isl_mat_parameter_compression_ext@Base 0.12.1
  isl_mat_print_internal@Base 0.10
  isl_mat_product@Base 0.10
  isl_mat_right_inverse@Base 0.10
@@ -1243,6 +1294,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_mat_scale_down_row@Base 0.10
  isl_mat_set_element@Base 0.10
  isl_mat_set_element_si@Base 0.10
+ isl_mat_set_element_val@Base 0.12.1
  isl_mat_sub_alloc6@Base 0.10
  isl_mat_sub_alloc@Base 0.10
  isl_mat_sub_copy@Base 0.10
@@ -1321,11 +1373,14 @@ libisl.so.10 libisl10 #MINVER#
  isl_multi_aff_reset_space@Base 0.10
  isl_multi_aff_reset_space_and_domain@Base 0.10
  isl_multi_aff_scale@Base 0.10
+ isl_multi_aff_scale_multi_val@Base 0.12.1
+ isl_multi_aff_scale_val@Base 0.12.1
  isl_multi_aff_set_aff@Base 0.10
  isl_multi_aff_set_dim_name@Base 0.10
  isl_multi_aff_set_tuple_id@Base 0.10
  isl_multi_aff_set_tuple_name@Base 0.11
  isl_multi_aff_splice@Base 0.11
+ isl_multi_aff_sub@Base 0.12.1
  isl_multi_aff_substitute@Base 0.10
  isl_multi_aff_to_str@Base 0.10
  isl_multi_aff_zero@Base 0.10
@@ -1359,6 +1414,8 @@ libisl.so.10 libisl10 #MINVER#
  isl_multi_pw_aff_reset_domain_space@Base 0.11
  isl_multi_pw_aff_reset_space@Base 0.11
  isl_multi_pw_aff_reset_space_and_domain@Base 0.11
+ isl_multi_pw_aff_scale_multi_val@Base 0.12.1
+ isl_multi_pw_aff_scale_val@Base 0.12.1
  isl_multi_pw_aff_set_dim_name@Base 0.11
  isl_multi_pw_aff_set_pw_aff@Base 0.11
  isl_multi_pw_aff_set_tuple_id@Base 0.11
@@ -1366,6 +1423,40 @@ libisl.so.10 libisl10 #MINVER#
  isl_multi_pw_aff_splice@Base 0.11
  isl_multi_pw_aff_to_str@Base 0.11
  isl_multi_pw_aff_zero@Base 0.11
+ isl_multi_val_add_dims@Base 0.12.1
+ isl_multi_val_add_val@Base 0.12.1
+ isl_multi_val_align_params@Base 0.12.1
+ isl_multi_val_alloc@Base 0.12.1
+ isl_multi_val_copy@Base 0.12.1
+ isl_multi_val_cow@Base 0.12.1
+ isl_multi_val_dim@Base 0.12.1
+ isl_multi_val_drop_dims@Base 0.12.1
+ isl_multi_val_dup@Base 0.12.1
+ isl_multi_val_flat_range_product@Base 0.12.1
+ isl_multi_val_flatten_range@Base 0.12.1
+ isl_multi_val_free@Base 0.12.1
+ isl_multi_val_from_val_list@Base 0.12.1
+ isl_multi_val_get_ctx@Base 0.12.1
+ isl_multi_val_get_domain_space@Base 0.12.1
+ isl_multi_val_get_space@Base 0.12.1
+ isl_multi_val_get_tuple_name@Base 0.12.1
+ isl_multi_val_get_val@Base 0.12.1
+ isl_multi_val_insert_dims@Base 0.12.1
+ isl_multi_val_mod_val@Base 0.12.1
+ isl_multi_val_range_product@Base 0.12.1
+ isl_multi_val_range_splice@Base 0.12.1
+ isl_multi_val_realign_domain@Base 0.12.1
+ isl_multi_val_reset_domain_space@Base 0.12.1
+ isl_multi_val_reset_space@Base 0.12.1
+ isl_multi_val_reset_space_and_domain@Base 0.12.1
+ isl_multi_val_scale_multi_val@Base 0.12.1
+ isl_multi_val_scale_val@Base 0.12.1
+ isl_multi_val_set_dim_name@Base 0.12.1
+ isl_multi_val_set_tuple_id@Base 0.12.1
+ isl_multi_val_set_tuple_name@Base 0.12.1
+ isl_multi_val_set_val@Base 0.12.1
+ isl_multi_val_splice@Base 0.12.1
+ isl_multi_val_zero@Base 0.12.1
  isl_obj_int_vtable@Base 0.10
  isl_obj_map_vtable@Base 0.10
  isl_obj_none_vtable@Base 0.10
@@ -1376,10 +1467,12 @@ libisl.so.10 libisl10 #MINVER#
  isl_obj_union_pw_qpolynomial_fold_vtable@Base 0.10
  isl_obj_union_pw_qpolynomial_vtable@Base 0.10
  isl_obj_union_set_vtable@Base 0.10
+ isl_obj_val_vtable@Base 0.12.1
  isl_options_args@Base 0.10
  isl_options_argsLIST@Base 0.10
  isl_options_free@Base 0.10
  isl_options_get_ast_build_allow_else@Base 0.11
+ isl_options_get_ast_build_allow_or@Base 0.12.1
  isl_options_get_ast_build_atomic_upper_bound@Base 0.11
  isl_options_get_ast_build_exploit_nested_bounds@Base 0.11
  isl_options_get_ast_build_group_coscheduled@Base 0.11
@@ -1400,9 +1493,11 @@ libisl.so.10 libisl10 #MINVER#
  isl_options_get_schedule_separate_components@Base 0.10
  isl_options_get_schedule_split_scaled@Base 0.10
  isl_options_get_tile_scale_tile_loops@Base 0.10
+ isl_options_get_tile_shift_point_loops@Base 0.12.1
  isl_options_new_with_defaults@Base 0.10
  isl_options_parse@Base 0.10
  isl_options_set_ast_build_allow_else@Base 0.11
+ isl_options_set_ast_build_allow_or@Base 0.12.1
  isl_options_set_ast_build_atomic_upper_bound@Base 0.11
  isl_options_set_ast_build_exploit_nested_bounds@Base 0.11
  isl_options_set_ast_build_group_coscheduled@Base 0.11
@@ -1423,6 +1518,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_options_set_schedule_separate_components@Base 0.10
  isl_options_set_schedule_split_scaled@Base 0.10
  isl_options_set_tile_scale_tile_loops@Base 0.10
+ isl_options_set_tile_shift_point_loops@Base 0.12.1
  isl_parameter_alignment_reordering@Base 0.10
  isl_pip_basic_map_lexopt@Base 0.10
  isl_pip_basic_set_sample@Base 0.10
@@ -1437,11 +1533,13 @@ libisl.so.10 libisl10 #MINVER#
  isl_point_dup@Base 0.10
  isl_point_free@Base 0.10
  isl_point_get_coordinate@Base 0.10
+ isl_point_get_coordinate_val@Base 0.12.1
  isl_point_get_ctx@Base 0.10
  isl_point_get_dim@Base 0.10
  isl_point_get_space@Base 0.10
  isl_point_is_void@Base 0.10
  isl_point_set_coordinate@Base 0.10
+ isl_point_set_coordinate_val@Base 0.12.1
  isl_point_sub_ui@Base 0.10
  isl_point_to_str@Base 0.11
  isl_point_void@Base 0.10
@@ -1496,6 +1594,8 @@ libisl.so.10 libisl10 #MINVER#
  isl_printer_print_union_pw_qpolynomial@Base 0.10
  isl_printer_print_union_pw_qpolynomial_fold@Base 0.10
  isl_printer_print_union_set@Base 0.10
+ isl_printer_print_val@Base 0.12.1
+ isl_printer_print_val_list@Base 0.12.1
  isl_printer_print_vec@Base 0.10
  isl_printer_set_indent@Base 0.10
  isl_printer_set_isl_int_width@Base 0.10
@@ -1513,6 +1613,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_aff_alloc@Base 0.10
  isl_pw_aff_alloc_size@Base 0.10
  isl_pw_aff_ceil@Base 0.10
+ isl_pw_aff_check_match_domain_space@Base 0.12.1
  isl_pw_aff_coalesce@Base 0.10
  isl_pw_aff_cond@Base 0.10
  isl_pw_aff_copy@Base 0.10
@@ -1526,6 +1627,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_aff_empty@Base 0.10
  isl_pw_aff_eq_set@Base 0.10
  isl_pw_aff_fix_dim@Base 0.10
+ isl_pw_aff_fix_val@Base 0.12.1
  isl_pw_aff_floor@Base 0.10
  isl_pw_aff_foreach_piece@Base 0.10
  isl_pw_aff_free@Base 0.10
@@ -1563,6 +1665,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_aff_list_dup@Base 0.10
  isl_pw_aff_list_eq_set@Base 0.10
  isl_pw_aff_list_foreach@Base 0.10
+ isl_pw_aff_list_foreach_scc@Base 0.12.1
  isl_pw_aff_list_free@Base 0.10
  isl_pw_aff_list_from_pw_aff@Base 0.10
  isl_pw_aff_list_ge_set@Base 0.10
@@ -1578,10 +1681,12 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_aff_list_ne_set@Base 0.10
  isl_pw_aff_list_set_pw_aff@Base 0.11
  isl_pw_aff_list_set_rational@Base 0.11
+ isl_pw_aff_list_sort@Base 0.12.1
  isl_pw_aff_lt_set@Base 0.10
  isl_pw_aff_max@Base 0.10
  isl_pw_aff_min@Base 0.10
  isl_pw_aff_mod@Base 0.10
+ isl_pw_aff_mod_val@Base 0.12.1
  isl_pw_aff_mul@Base 0.10
  isl_pw_aff_mul_isl_int@Base 0.10
  isl_pw_aff_n_piece@Base 0.10
@@ -1601,6 +1706,8 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_aff_reset_space@Base 0.10
  isl_pw_aff_scale@Base 0.10
  isl_pw_aff_scale_down@Base 0.10
+ isl_pw_aff_scale_down_val@Base 0.12.1
+ isl_pw_aff_scale_val@Base 0.12.1
  isl_pw_aff_set_dim_id@Base 0.10
  isl_pw_aff_set_dim_name@Base 0.10
  isl_pw_aff_set_rational@Base 0.11
@@ -1633,6 +1740,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_multi_aff_dup@Base 0.10
  isl_pw_multi_aff_empty@Base 0.10
  isl_pw_multi_aff_fix_dim@Base 0.10
+ isl_pw_multi_aff_fix_val@Base 0.12.1
  isl_pw_multi_aff_flat_range_product@Base 0.10
  isl_pw_multi_aff_foreach_piece@Base 0.10
  isl_pw_multi_aff_free@Base 0.10
@@ -1673,11 +1781,14 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_multi_aff_reset_domain_space@Base 0.10
  isl_pw_multi_aff_reset_space@Base 0.10
  isl_pw_multi_aff_scale@Base 0.10
+ isl_pw_multi_aff_scale_multi_val@Base 0.12.1
+ isl_pw_multi_aff_scale_val@Base 0.12.1
  isl_pw_multi_aff_set_dim_id@Base 0.10
  isl_pw_multi_aff_set_dim_name@Base 0.10
  isl_pw_multi_aff_set_pw_aff@Base 0.11
  isl_pw_multi_aff_set_tuple_id@Base 0.10
  isl_pw_multi_aff_split_dims@Base 0.10
+ isl_pw_multi_aff_sub@Base 0.12.1
  isl_pw_multi_aff_substitute@Base 0.10
  isl_pw_multi_aff_to_str@Base 0.10
  isl_pw_multi_aff_union_add@Base 0.10
@@ -1701,6 +1812,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_qpolynomial_dup@Base 0.10
  isl_pw_qpolynomial_eval@Base 0.10
  isl_pw_qpolynomial_fix_dim@Base 0.10
+ isl_pw_qpolynomial_fix_val@Base 0.12.1
  isl_pw_qpolynomial_fold_add@Base 0.10
  isl_pw_qpolynomial_fold_add_disjoint@Base 0.10
  isl_pw_qpolynomial_fold_add_piece@Base 0.10
@@ -1719,6 +1831,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_qpolynomial_fold_dup@Base 0.10
  isl_pw_qpolynomial_fold_eval@Base 0.10
  isl_pw_qpolynomial_fold_fix_dim@Base 0.10
+ isl_pw_qpolynomial_fold_fix_val@Base 0.12.1
  isl_pw_qpolynomial_fold_fold@Base 0.10
  isl_pw_qpolynomial_fold_foreach_lifted_piece@Base 0.10
  isl_pw_qpolynomial_fold_foreach_piece@Base 0.10
@@ -1759,6 +1872,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_qpolynomial_fold_reset_domain_space@Base 0.10
  isl_pw_qpolynomial_fold_reset_space@Base 0.10
  isl_pw_qpolynomial_fold_scale@Base 0.10
+ isl_pw_qpolynomial_fold_scale_val@Base 0.12.1
  isl_pw_qpolynomial_fold_set_dim_id@Base 0.10
  isl_pw_qpolynomial_fold_set_dim_name@Base 0.10
  isl_pw_qpolynomial_fold_set_tuple_id@Base 0.10
@@ -1812,6 +1926,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_pw_qpolynomial_reset_domain_space@Base 0.10
  isl_pw_qpolynomial_reset_space@Base 0.10
  isl_pw_qpolynomial_scale@Base 0.10
+ isl_pw_qpolynomial_scale_val@Base 0.12.1
  isl_pw_qpolynomial_set_dim_id@Base 0.10
  isl_pw_qpolynomial_set_dim_name@Base 0.10
  isl_pw_qpolynomial_set_tuple_id@Base 0.10
@@ -1876,6 +1991,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_qpolynomial_fold_reset_domain_space@Base 0.10
  isl_qpolynomial_fold_reset_space_and_domain@Base 0.10
  isl_qpolynomial_fold_scale@Base 0.10
+ isl_qpolynomial_fold_scale_val@Base 0.12.1
  isl_qpolynomial_fold_set_dim_name@Base 0.10
  isl_qpolynomial_fold_substitute@Base 0.10
  isl_qpolynomial_fold_substitute_equalities@Base 0.10
@@ -1886,6 +2002,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_qpolynomial_from_affine@Base 0.10
  isl_qpolynomial_from_constraint@Base 0.10
  isl_qpolynomial_from_term@Base 0.10
+ isl_qpolynomial_get_constant_val@Base 0.12.1
  isl_qpolynomial_get_ctx@Base 0.10
  isl_qpolynomial_get_den@Base 0.10
  isl_qpolynomial_get_dim@Base 0.10
@@ -1926,6 +2043,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_qpolynomial_reset_domain_space@Base 0.10
  isl_qpolynomial_reset_space_and_domain@Base 0.10
  isl_qpolynomial_scale@Base 0.10
+ isl_qpolynomial_scale_val@Base 0.12.1
  isl_qpolynomial_set_dim_name@Base 0.10
  isl_qpolynomial_sgn@Base 0.10
  isl_qpolynomial_sub@Base 0.10
@@ -1933,6 +2051,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_qpolynomial_substitute_equalities@Base 0.10
  isl_qpolynomial_terms_of_sign@Base 0.10
  isl_qpolynomial_to_str@Base 0.10
+ isl_qpolynomial_val_on_domain@Base 0.12.1
  isl_qpolynomial_var_on_domain@Base 0.10
  isl_qpolynomial_var_pow_on_domain@Base 0.10
  isl_qpolynomial_zero_on_domain@Base 0.10
@@ -2010,6 +2129,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_copy_basic_set@Base 0.10
  isl_set_count@Base 0.10
  isl_set_count_upto@Base 0.10
+ isl_set_count_val@Base 0.12.1
  isl_set_cow@Base 0.10
  isl_set_detect_equalities@Base 0.10
  isl_set_dim@Base 0.10
@@ -2022,6 +2142,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_dim_max@Base 0.10
  isl_set_dim_min@Base 0.10
  isl_set_dim_residue_class@Base 0.10
+ isl_set_dim_residue_class_val@Base 0.12.1
  isl_set_drop@Base 0.10
  isl_set_drop_basic_set@Base 0.10
  isl_set_drop_constraints_involving_dims@Base 0.11
@@ -2046,6 +2167,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_fix@Base 0.10
  isl_set_fix_dim_si@Base 0.10
  isl_set_fix_si@Base 0.10
+ isl_set_fix_val@Base 0.12.1
  isl_set_flat_product@Base 0.10
  isl_set_flatten@Base 0.10
  isl_set_flatten_map@Base 0.10
@@ -2102,7 +2224,9 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_lex_le_set@Base 0.10
  isl_set_lex_lt_set@Base 0.10
  isl_set_lexmax@Base 0.10
+ isl_set_lexmax_pw_multi_aff@Base 0.12.1
  isl_set_lexmin@Base 0.10
+ isl_set_lexmin_pw_multi_aff@Base 0.12.1
  isl_set_lift@Base 0.10
  isl_set_lifting@Base 0.10
  isl_set_list_add@Base 0.10
@@ -2114,6 +2238,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_list_dump@Base 0.10
  isl_set_list_dup@Base 0.10
  isl_set_list_foreach@Base 0.10
+ isl_set_list_foreach_scc@Base 0.12.1
  isl_set_list_free@Base 0.10
  isl_set_list_from_set@Base 0.10
  isl_set_list_get_ctx@Base 0.10
@@ -2121,12 +2246,16 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_list_insert@Base 0.11
  isl_set_list_n_set@Base 0.10
  isl_set_list_set_set@Base 0.11
+ isl_set_list_sort@Base 0.12.1
  isl_set_lower_bound@Base 0.10
  isl_set_lower_bound_dim@Base 0.10
  isl_set_lower_bound_si@Base 0.10
+ isl_set_lower_bound_val@Base 0.12.1
  isl_set_make_disjoint@Base 0.10
  isl_set_max@Base 0.10
+ isl_set_max_val@Base 0.12.1
  isl_set_min@Base 0.10
+ isl_set_min_val@Base 0.12.1
  isl_set_move_dims@Base 0.10
  isl_set_n_basic_set@Base 0.10
  isl_set_n_dim@Base 0.10
@@ -2135,12 +2264,14 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_neg@Base 0.10
  isl_set_normalize@Base 0.10
  isl_set_opt@Base 0.10
+ isl_set_opt_val@Base 0.12.1
  isl_set_params@Base 0.10
  isl_set_partial_lexmax@Base 0.10
  isl_set_partial_lexmin@Base 0.10
  isl_set_plain_cmp@Base 0.10
  isl_set_plain_dim_has_fixed_lower_bound@Base 0.10
  isl_set_plain_dim_is_fixed@Base 0.10
+ isl_set_plain_get_val_if_fixed@Base 0.12.1
  isl_set_plain_is_disjoint@Base 0.10
  isl_set_plain_is_empty@Base 0.10
  isl_set_plain_is_equal@Base 0.10
@@ -2192,6 +2323,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_set_unwrap@Base 0.10
  isl_set_upper_bound@Base 0.10
  isl_set_upper_bound_si@Base 0.10
+ isl_set_upper_bound_val@Base 0.12.1
  isl_set_wrap_facet@Base 0.10
  isl_sort@Base 0.11
  isl_space_add_dims@Base 0.10
@@ -2298,8 +2430,10 @@ libisl.so.10 libisl10 #MINVER#
  isl_stream_read_pw_qpolynomial@Base 0.10
  isl_stream_read_set@Base 0.10
  isl_stream_read_union_map@Base 0.10
+ isl_stream_read_union_pw_multi_aff@Base 0.12.1
  isl_stream_read_union_pw_qpolynomial@Base 0.10
  isl_stream_read_union_set@Base 0.10
+ isl_stream_read_val@Base 0.12.1
  isl_stream_register_keyword@Base 0.10
  isl_stream_skip_line@Base 0.10
  isl_tab_add_div@Base 0.10
@@ -2330,6 +2464,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_tab_from_basic_map@Base 0.10
  isl_tab_from_basic_set@Base 0.10
  isl_tab_from_recession_cone@Base 0.10
+ isl_tab_get_ctx@Base 0.12.1
  isl_tab_get_sample_value@Base 0.10
  isl_tab_ineq_type@Base 0.10
  isl_tab_init_samples@Base 0.10
@@ -2361,6 +2496,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_tab_solve_lp@Base 0.10
  isl_tab_track_bmap@Base 0.10
  isl_tab_track_bset@Base 0.10
+ isl_tab_unrestrict@Base 0.12.1
  isl_tab_var_from_row@Base 0.10
  isl_tarjan_graph_free@Base 0.11
  isl_tarjan_graph_init@Base 0.11
@@ -2370,12 +2506,16 @@ libisl.so.10 libisl10 #MINVER#
  isl_term_dim@Base 0.10
  isl_term_dup@Base 0.10
  isl_term_free@Base 0.10
+ isl_term_get_coefficient_val@Base 0.12.1
  isl_term_get_ctx@Base 0.10
  isl_term_get_den@Base 0.10
  isl_term_get_div@Base 0.10
  isl_term_get_exp@Base 0.10
  isl_term_get_num@Base 0.10
  isl_token_free@Base 0.10
+ isl_token_get_str@Base 0.12.1
+ isl_token_get_type@Base 0.12.1
+ isl_token_get_val@Base 0.12.1
  isl_token_new@Base 0.10
  isl_union_map_add_map@Base 0.10
  isl_union_map_affine_hull@Base 0.10
@@ -2401,6 +2541,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_union_map_empty@Base 0.10
  isl_union_map_extract_map@Base 0.10
  isl_union_map_fixed_power@Base 0.10
+ isl_union_map_fixed_power_val@Base 0.12.1
  isl_union_map_flat_range_product@Base 0.10
  isl_union_map_foreach_map@Base 0.10
  isl_union_map_free@Base 0.10
@@ -2440,6 +2581,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_union_map_plain_is_injective@Base 0.10
  isl_union_map_polyhedral_hull@Base 0.10
  isl_union_map_power@Base 0.10
+ isl_union_map_preimage_domain_multi_aff@Base 0.12.1
  isl_union_map_product@Base 0.10
  isl_union_map_range@Base 0.10
  isl_union_map_range_map@Base 0.10
@@ -2475,6 +2617,8 @@ libisl.so.10 libisl10 #MINVER#
  isl_union_pw_multi_aff_free@Base 0.10
  isl_union_pw_multi_aff_from_domain@Base 0.10
  isl_union_pw_multi_aff_from_pw_multi_aff@Base 0.10
+ isl_union_pw_multi_aff_from_union_map@Base 0.12.1
+ isl_union_pw_multi_aff_from_union_set@Base 0.12.1
  isl_union_pw_multi_aff_get_ctx@Base 0.10
  isl_union_pw_multi_aff_get_space@Base 0.10
  isl_union_pw_multi_aff_gist@Base 0.10
@@ -2483,6 +2627,10 @@ libisl.so.10 libisl10 #MINVER#
  isl_union_pw_multi_aff_intersect_params@Base 0.10
  isl_union_pw_multi_aff_mul_isl_int@Base 0.10
  isl_union_pw_multi_aff_plain_is_equal@Base 0.10
+ isl_union_pw_multi_aff_read_from_str@Base 0.12.1
+ isl_union_pw_multi_aff_scale_multi_val@Base 0.12.1
+ isl_union_pw_multi_aff_scale_val@Base 0.12.1
+ isl_union_pw_multi_aff_sub@Base 0.12.1
  isl_union_pw_multi_aff_to_str@Base 0.10
  isl_union_pw_qpolynomial_add@Base 0.10
  isl_union_pw_qpolynomial_add_pw_qpolynomial@Base 0.10
@@ -2523,6 +2671,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_union_pw_qpolynomial_fold_intersect_params@Base 0.10
  isl_union_pw_qpolynomial_fold_mul_isl_int@Base 0.10
  isl_union_pw_qpolynomial_fold_plain_is_equal@Base 0.10
+ isl_union_pw_qpolynomial_fold_scale_val@Base 0.12.1
  isl_union_pw_qpolynomial_fold_to_str@Base 0.10
  isl_union_pw_qpolynomial_fold_zero@Base 0.10
  isl_union_pw_qpolynomial_foreach_pw_qpolynomial@Base 0.10
@@ -2540,6 +2689,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_union_pw_qpolynomial_neg@Base 0.10
  isl_union_pw_qpolynomial_plain_is_equal@Base 0.10
  isl_union_pw_qpolynomial_read_from_str@Base 0.10
+ isl_union_pw_qpolynomial_scale_val@Base 0.12.1
  isl_union_pw_qpolynomial_sub@Base 0.10
  isl_union_pw_qpolynomial_to_polynomial@Base 0.10
  isl_union_pw_qpolynomial_to_str@Base 0.10
@@ -2645,10 +2795,109 @@ libisl.so.10 libisl10 #MINVER#
  isl_upoly_update_affine@Base 0.10
  isl_upoly_var_pow@Base 0.10
  isl_upoly_zero@Base 0.10
+ isl_val_2exp@Base 0.12.1
+ isl_val_abs@Base 0.12.1
+ isl_val_add@Base 0.12.1
+ isl_val_add_ui@Base 0.12.1
+ isl_val_alloc@Base 0.12.1
+ isl_val_ceil@Base 0.12.1
+ isl_val_check_match_domain_space@Base 0.12.1
+ isl_val_cmp_si@Base 0.12.1
+ isl_val_copy@Base 0.12.1
+ isl_val_cow@Base 0.12.1
+ isl_val_div@Base 0.12.1
+ isl_val_drop_dims@Base 0.12.1
+ isl_val_dump@Base 0.12.1
+ isl_val_dup@Base 0.12.1
+ isl_val_eq@Base 0.12.1
+ isl_val_floor@Base 0.12.1
+ isl_val_free@Base 0.12.1
+ isl_val_from_gmp@Base 0.12.1
+ isl_val_gcd@Base 0.12.1
+ isl_val_gcdext@Base 0.12.1
+ isl_val_ge@Base 0.12.1
+ isl_val_get_abs_num_chunks@Base 0.12.1
+ isl_val_get_ctx@Base 0.12.1
+ isl_val_get_d@Base 0.12.1
+ isl_val_get_den_gmp@Base 0.12.1
+ isl_val_get_den_si@Base 0.12.1
+ isl_val_get_num_gmp@Base 0.12.1
+ isl_val_get_num_isl_int@Base 0.12.1
+ isl_val_get_num_si@Base 0.12.1
+ isl_val_gt@Base 0.12.1
+ isl_val_infty@Base 0.12.1
+ isl_val_insert_dims@Base 0.12.1
+ isl_val_int_from_chunks@Base 0.12.1
+ isl_val_int_from_gmp@Base 0.12.1
+ isl_val_int_from_isl_int@Base 0.12.1
+ isl_val_int_from_si@Base 0.12.1
+ isl_val_int_from_ui@Base 0.12.1
+ isl_val_is_divisible_by@Base 0.12.1
+ isl_val_is_infty@Base 0.12.1
+ isl_val_is_int@Base 0.12.1
+ isl_val_is_nan@Base 0.12.1
+ isl_val_is_neg@Base 0.12.1
+ isl_val_is_neginfty@Base 0.12.1
+ isl_val_is_negone@Base 0.12.1
+ isl_val_is_nonneg@Base 0.12.1
+ isl_val_is_nonpos@Base 0.12.1
+ isl_val_is_one@Base 0.12.1
+ isl_val_is_pos@Base 0.12.1
+ isl_val_is_rat@Base 0.12.1
+ isl_val_is_zero@Base 0.12.1
+ isl_val_le@Base 0.12.1
+ isl_val_list_add@Base 0.12.1
+ isl_val_list_alloc@Base 0.12.1
+ isl_val_list_concat@Base 0.12.1
+ isl_val_list_copy@Base 0.12.1
+ isl_val_list_cow@Base 0.12.1
+ isl_val_list_drop@Base 0.12.1
+ isl_val_list_dump@Base 0.12.1
+ isl_val_list_dup@Base 0.12.1
+ isl_val_list_foreach@Base 0.12.1
+ isl_val_list_foreach_scc@Base 0.12.1
+ isl_val_list_free@Base 0.12.1
+ isl_val_list_from_val@Base 0.12.1
+ isl_val_list_get_ctx@Base 0.12.1
+ isl_val_list_get_val@Base 0.12.1
+ isl_val_list_insert@Base 0.12.1
+ isl_val_list_n_val@Base 0.12.1
+ isl_val_list_set_val@Base 0.12.1
+ isl_val_list_sort@Base 0.12.1
+ isl_val_lt@Base 0.12.1
+ isl_val_max@Base 0.12.1
+ isl_val_min@Base 0.12.1
+ isl_val_mod@Base 0.12.1
+ isl_val_mul@Base 0.12.1
+ isl_val_mul_ui@Base 0.12.1
+ isl_val_n_abs_num_chunks@Base 0.12.1
+ isl_val_nan@Base 0.12.1
+ isl_val_ne@Base 0.12.1
+ isl_val_neg@Base 0.12.1
+ isl_val_neginfty@Base 0.12.1
+ isl_val_normalize@Base 0.12.1
+ isl_val_one@Base 0.12.1
+ isl_val_rat_from_isl_int@Base 0.12.1
+ isl_val_read_from_str@Base 0.12.1
+ isl_val_realign_domain@Base 0.12.1
+ isl_val_reset_domain_space@Base 0.12.1
+ isl_val_scale_val@Base 0.12.1
+ isl_val_set_dim_name@Base 0.12.1
+ isl_val_set_nan@Base 0.12.1
+ isl_val_set_si@Base 0.12.1
+ isl_val_set_zero@Base 0.12.1
+ isl_val_sgn@Base 0.12.1
+ isl_val_sub@Base 0.12.1
+ isl_val_sub_ui@Base 0.12.1
+ isl_val_to_str@Base 0.12.1
+ isl_val_trunc@Base 0.12.1
+ isl_val_zero@Base 0.12.1
+ isl_val_zero_on_domain@Base 0.12.1
  isl_vec_add@Base 0.10
  isl_vec_alloc@Base 0.10
  isl_vec_ceil@Base 0.10
  isl_vec_clr@Base 0.10
+ isl_vec_cmp_element@Base 0.12.1
  isl_vec_concat@Base 0.11
  isl_vec_copy@Base 0.10
  isl_vec_cow@Base 0.10
@@ -2660,6 +2909,7 @@ libisl.so.10 libisl10 #MINVER#
  isl_vec_free@Base 0.10
  isl_vec_get_ctx@Base 0.10
  isl_vec_get_element@Base 0.10
+ isl_vec_get_element_val@Base 0.12.1
  isl_vec_insert_els@Base 0.10
  isl_vec_insert_zero_els@Base 0.10
  isl_vec_is_equal@Base 0.10
@@ -2672,7 +2922,9 @@ libisl.so.10 libisl10 #MINVER#
  isl_vec_set@Base 0.10
  isl_vec_set_element@Base 0.10
  isl_vec_set_element_si@Base 0.10
+ isl_vec_set_element_val@Base 0.12.1
  isl_vec_set_si@Base 0.10
+ isl_vec_set_val@Base 0.12.1
  isl_vec_size@Base 0.10
  isl_vec_sort@Base 0.10
  isl_vec_zero_extend@Base 0.10

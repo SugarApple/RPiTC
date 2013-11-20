@@ -6,6 +6,7 @@
 /usr/bin/fc-cache
 /usr/bin/fc-cat
 /usr/bin/fc-list
+/usr/bin/fc-validate
 /usr/bin/fc-match
 /usr/bin/fc-scan
 /usr/share
@@ -25,6 +26,7 @@
 /usr/share/doc/fontconfig/fontconfig-user.pdf.gz
 /usr/share/man
 /usr/share/man/man1
+/usr/share/man/man1/fc-validate.1.gz
 /usr/share/man/man1/fc-match.1.gz
 /usr/share/man/man1/fc-cat.1.gz
 /usr/share/man/man1/fc-query.1.gz

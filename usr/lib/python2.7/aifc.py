@@ -123,7 +123,7 @@ It is best to first set all parameters, perhaps possibly the
 compression type, and then write audio frames using writeframesraw.
 When all frames have been written, either call writeframes('') or
 close() to patch up the sizes in the header.
-Marks can be added anytime.  If there are any marks, ypu must call
+Marks can be added anytime.  If there are any marks, you must call
 close() after all frames have been written.
 The close() method is called automatically when the class instance
 is destroyed.
@@ -953,23 +953,27 @@ if __name__ == '__main__':
         sys.argv.append('/usr/demos/data/audio/bach.aiff')
     fn = sys.argv[1]
     f = open(fn, 'r')
-    print "Reading", fn
-    print "nchannels =", f.getnchannels()
-    print "nframes   =", f.getnframes()
-    print "sampwidth =", f.getsampwidth()
-    print "framerate =", f.getframerate()
-    print "comptype  =", f.getcomptype()
-    print "compname  =", f.getcompname()
-    if sys.argv[2:]:
-        gn = sys.argv[2]
-        print "Writing", gn
-        g = open(gn, 'w')
-        g.setparams(f.getparams())
-        while 1:
-            data = f.readframes(1024)
-            if not data:
-                break
-            g.writeframes(data)
-        g.close()
+    try:
+        print "Reading", fn
+        print "nchannels =", f.getnchannels()
+        print "nframes   =", f.getnframes()
+        print "sampwidth =", f.getsampwidth()
+        print "framerate =", f.getframerate()
+        print "comptype  =", f.getcomptype()
+        print "compname  =", f.getcompname()
+        if sys.argv[2:]:
+            gn = sys.argv[2]
+            print "Writing", gn
+            g = open(gn, 'w')
+            try:
+                g.setparams(f.getparams())
+                while 1:
+                    data = f.readframes(1024)
+                    if not data:
+                        break
+                    g.writeframes(data)
+            finally:
+                g.close()
+            print "Done."
+    finally:
         f.close()
-        print "Done."

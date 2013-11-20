@@ -5,7 +5,6 @@
 /usr/lib/arm-linux-gnueabi/sasl2
 /usr/lib/arm-linux-gnueabi/sasl2/libcrammd5.so.2.0.25
 /usr/lib/arm-linux-gnueabi/sasl2/libntlm.so.2.0.25
-/usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so.2.0.25
 /usr/lib/arm-linux-gnueabi/sasl2/libdigestmd5.so.2.0.25
 /usr/lib/arm-linux-gnueabi/sasl2/libanonymous.so.2.0.25
 /usr/lib/arm-linux-gnueabi/sasl2/liblogin.so.2.0.25
@@ -22,7 +21,6 @@
 /usr/share/doc/libsasl2-modules/NEWS.Debian.gz
 /usr/lib/arm-linux-gnueabi/sasl2/libanonymous.so.2
 /usr/lib/arm-linux-gnueabi/sasl2/libdigestmd5.so
-/usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so
 /usr/lib/arm-linux-gnueabi/sasl2/libdigestmd5.so.2
 /usr/lib/arm-linux-gnueabi/sasl2/libplain.so.2
 /usr/lib/arm-linux-gnueabi/sasl2/libanonymous.so
@@ -32,5 +30,4 @@
 /usr/lib/arm-linux-gnueabi/sasl2/libntlm.so
 /usr/lib/arm-linux-gnueabi/sasl2/liblogin.so.2
 /usr/lib/arm-linux-gnueabi/sasl2/liblogin.so
-/usr/lib/arm-linux-gnueabi/sasl2/libsasldb.so.2
 /usr/lib/arm-linux-gnueabi/sasl2/libcrammd5.so.2

@@ -2,7 +2,9 @@ libdatrie.so.1 libdatrie1 #MINVER#
 * Build-Depends-Package: libdatrie-dev
  DATRIE_0.2.4@DATRIE_0.2.4 0.2.4
  DATRIE_0.2.6@DATRIE_0.2.6 0.2.6
+ DATRIE_0.2.7@DATRIE_0.2.7 0.2.7
  DATRIE_0.2@DATRIE_0.2 0.2.1
+ alpha_char_strcmp@DATRIE_0.2.7 0.2.7
  alpha_char_strlen@DATRIE_0.2 0.2.0
  alpha_map_add_range@DATRIE_0.2 0.2.0
  alpha_map_clone@DATRIE_0.2 0.2.0

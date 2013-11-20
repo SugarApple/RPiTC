@@ -1,8 +1,8 @@
-e084a4c239d32adff4ae42a1ec65fe94  usr/bin/x11vnc
+97c3034b2c32c755462a32ce7760f1a9  usr/bin/x11vnc
 054aeb49a01e111b2efeb5da9a25b121  usr/share/applications/x11vnc.desktop
 0cf5e41a518892d51b4edd23ea36b77e  usr/share/doc/x11vnc/ChangeLog.gz
 6cf9c1932f3568a8ee4874cd9c5aed30  usr/share/doc/x11vnc/README.gz
-5fd96a4054c5e017cda223be9a43f679  usr/share/doc/x11vnc/changelog.Debian.gz
+043c9aa88659b6f06a618aaf0375de86  usr/share/doc/x11vnc/changelog.Debian.gz
 1de6076ec6265697190c2a7dd1c9cadb  usr/share/doc/x11vnc/changelog.gz
 be70aaf8e2be2f14097e0ab711db3348  usr/share/doc/x11vnc/copyright
 bad4591e497b0f70875412a2ffa8e657  usr/share/man/man1/x11vnc.1.gz

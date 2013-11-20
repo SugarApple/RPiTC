@@ -18,6 +18,7 @@ Copyright: 2007, 2012 Stefan Walter
 License: BSD-3-Clause
 
 Files: common/library.c common/library.h common/message.c
+ tests/test-deprecated.c
 Copyright: 2011 Collabora Ltd.
  2012 Stef Walter
 License: BSD-3-Clause
@@ -27,6 +28,10 @@ Copyright: 2011 Collabora Ltd.
  2013 Red Hat Inc.
 License: BSD-3-Clause
 
+Files: p11-kit/log.c
+Copyright: 2007, Stefan Walter
+ 2013, Red Hat Inc.
+License: BSD-3-Clause
 
 Files: common/pkcs11.h
 Copyright: 2006, 2007 g10 Code GmbH
@@ -41,19 +46,21 @@ License:
    the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR
    PURPOSE.  */
 
-Files: common/asn1.c common/asn1.h common/hash.h
- common/oid.c common/oid.h
- common/pem.c common/pem.h common/pkcs11x.h common/tests/frob-cert.c
- common/tests/frob-eku.c common/tests/frob-ku.c common/tests/frob-oid.c
+Files: common/argv.c common/argv.h common/hash.h
+ trust/oid.c trust/oid.h
+ trust/pem.c trust/pem.h common/argv.c common/argv.h common/pkcs11x.h
  common/tests/test-constants.c common/tests/test-hash.c
- p11-kit/pkcs11.h p11-kit/tests/test-modules.c trust/builder.c
- trust/builder.h trust/module.c trust/module.h trust/parser.h
- trust/session.c trust/session.h trust/tests/frob-token.c
- trust/tests/test-data.c trust/tests/test-data.h
- trust/tests/test-index.c
- trust/tests/test-module.c trust/tests/test-parser.c
- trust/tests/test-token.c trust/token.c
- trust/token.h tests/frob-setuid.c
+ p11-kit/pkcs11.h p11-kit/tests/test-managed.c p11-kit/tests/test-modules.c
+ trust/builder.c
+ trust/builder.h trust/digest.h trust/module.c trust/module.h trust/pem.c
+ trust/pem.h trust/oid.c trust/oid.h trust/parser.h
+ trust/session.c trust/session.h trust/tests/frob-cert.c
+ trust/tests/frob-eku.c trust/tests/frob-token.c
+ trust/tests/test-digest.c trust/tests/test-enumerate.c
+ trust/tests/test-index.c trust/tests/test-module.c trust/tests/test-oid.c
+ trust/tests/test-parser.c trust/tests/test-pem.c trust/tests/test-token.c
+ trust/token.c trust/token.h trust/tests/test-trust.c
+ trust/tests/test-trust.h trust/x509.c trust/x509.h tests/frob-setuid.c
 Copyright: 2012 Red Hat Inc.
 License: BSD-3-Clause
 
@@ -63,26 +70,45 @@ Copyright: 2012, Redhat Inc.
 License: BSD-3-Clause
 
 
-Files: common/tests/test-asn1.c common/tests/test-attrs.c
- common/tests/test-buffer.c
- common/tests/test-oid.c common/tests/test-pem.c
- common/tests/test-x509.c common/x509.c common/x509.h
+Files: common/tests/test-attrs.c common/tests/test-buffer.c
+ trust/tests/frob-ku.c trust/tests/frob-oid.c trust/tests/test-asn1.c
+ trust/tests/test-base64.c
 Copyright: 2012, Redhat Inc.
 License: BSD-3-Clause
 
-Files: common/tests/test-utf8.c common/tests/test-compat.c
- common/utf8.c common/utf8.h
- tools/extract.c tools/extract.h tools/extract-info.c
- tools/extract-jks.c tools/extract-openssl.c tools/extract-pem.c
- tools/extract-x509.c tools/save.c tools/save.h
- tools/tests/test.c tools/tests/test.h tools/tests/test-save.c
- tools/tool.h common/constants.c common/constants.h
- trust/index.c trust/index.h trust/persist.c trust/persist.h
- trust/tests/frob-pow.c trust/tests/test-builder.c
+Files: common/constants.c common/constants.h common/test.c
+ common/test.h common/tests/test-compat.c common/tests/test-tests.c
+ common/tests/test-utf8.c common/tool.h p11-kit/deprecated.h
+ p11-kit/docs.h p11-kit/log.h p11-kit/modules.h p11-kit/proxy.h
+ p11-kit/tests/test-log.c trust/anchor.c trust/anchor.h
+ trust/enumerate.c trust/enumerate.h trust/extract.c
+ trust/extract-cer.c trust/extract.h trust/extract-jks.c
+ trust/extract-openssl.c trust/extract-pem.c trust/index.c
+ trust/index.h trust/list.c trust/list.h trust/persist.c
+ trust/persist.h trust/save.c trust/save.h trust/tests/frob-bc.c
+ trust/tests/frob-ext.c trust/tests/frob-pow.c
+ trust/tests/test-builder.c trust/tests/test-save.c
+ trust/tests/test-utf8.c trust/tests/test-x509.c
+ trust/types.h trust/utf8.c trust/utf8.h
 Copyright: 2013, Redhat Inc.
 License: BSD-3-Clause
 
-Files: common/hash.c
+Files: p11-kit/tests/test-mock.c
+Copyright: 2012 Stefan Walter
+ 2012-2013 Red Hat Inc.
+License: BSD-3-Clause
+
+Files: p11-kit/tests/test-virtual.c
+Copyright: 2012 Stefan Walter
+ 2012 Red Hat Inc.
+License: BSD-3-Clause
+
+Files: p11-kit/virtual.c trust/asn1.c trust/asn1.h
+Copyright: 2008 Stefan Walter
+ 2012 Red Hat Inc.
+License: BSD-3-Clause
+
+Files: trust/digest.c trust/digest.c common/hash.c
 Copyright: 2004, 2005, 2007, 2011  Internet Systems Consortium, Inc. ("ISC")
            2000, 2001, 2003  Internet Software Consortium.
 License: 
@@ -99,7 +125,7 @@ License:
  PERFORMANCE OF THIS SOFTWARE.
 
 
-Files: common/base64.c common/base64.h
+Files: trust/base64.c trust/base64.h
 Copyright: 1996, 1998 by Internet Software Consortium
   Portions Copyright (c) 1995 by International Business Machines, Inc.
 License: 
@@ -148,29 +174,6 @@ Copyright: 2005 Stefan Walter
  2013 Red Hat Inc.
 License: BSD-3-Clause
 
-Files: */cutest/*
-Copyright: 2003 Asim Jalis
-License: 
- This software is provided 'as-is', without any express or implied
- warranty. In no event will the authors be held liable for any damages
- arising from the use of this software.
- .
- Permission is granted to anyone to use this software for any purpose,
- including commercial applications, and to alter it and redistribute it
- freely, subject to the following restrictions:
- .
- 1. The origin of this software must not be misrepresented; you must not
- claim that you wrote the original software. If you use this software in
- a product, an acknowledgment in the product documentation would be
- appreciated but is not required.
- .
- 2. Altered source versions must be plainly marked as such, and must not
- be misrepresented as being the original software.
- .
- 3. This notice may not be removed or altered from any source
- distribution.
-
-
 Files: common/compat.c
 Copyright: Copyright (c) 2011 Collabora Ltd.
  Portions of this file are covered by the following copyright:
@@ -206,15 +209,17 @@ License: BSD-3-Clause
  OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
  SUCH DAMAGE.
 
-Files: p11-kit/iter.c p11-kit/iter.h p11-kit/tests/test-iter.c
- common/mock.h trust/tests/frob-nss-trust.c common/tests/test-base64.c
- common/tests/test-lexer.c common/tests/test-url.c
- trust/tests/test-parser.c trust/tests/test-persist.c common/path.h
- common/tests/test-path.c common/tests/frob-getauxval.c tests/test-util.c
+Files: common/mock.h common/path.h common/tests/frob-getauxval.c
+ common/tests/test-lexer.c common/tests/test-message.c
+ common/tests/test-path.c common/tests/test-url.c
+ p11-kit/iter.c p11-kit/iter.h p11-kit/tests/test-iter.c
+ p11-kit/tests/test-proxy.c p11-kit/virtual.h tests/test-util.c
+ trust/tests/frob-nss-trust.c trust/tests/test-parser.c
+ trust/tests/test-persist.c 
 Copyright: 2013 Red Hat Inc.
 License: BSD-3-Clause
 
-Files: p11-kit/tests/mock-module-ep.c p11-kit/tests/progname-test.c
+Files: p11-kit/tests/mock-module-ep.c p11-kit/tests/test-progname.c
 Copyright: 2012 Stefan Walter
 License: BSD-3-Clause
 

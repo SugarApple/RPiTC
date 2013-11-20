@@ -39,11 +39,11 @@ channels to stream to your local audio system.</doc>
             <doc xml:whitespace="preserve">the #SpiceSession to connect to</doc>
             <type name="Session" c:type="SpiceSession*"/>
           </parameter>
-          <parameter name="context" transfer-ownership="none">
+          <parameter name="context" transfer-ownership="none" allow-none="1">
             <doc xml:whitespace="preserve">a #GMainContext to attach to (or %NULL for default).</doc>
             <type name="GLib.MainContext" c:type="GMainContext*"/>
           </parameter>
-          <parameter name="name" transfer-ownership="none">
+          <parameter name="name" transfer-ownership="none" allow-none="1">
             <doc xml:whitespace="preserve">a name for the audio channels (or %NULL for application name).</doc>
             <type name="utf8" c:type="const char*"/>
           </parameter>
@@ -163,23 +163,31 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
         </parameters>
       </constructor>
       <function name="string_to_type"
-                c:identifier="spice_channel_string_to_type">
+                c:identifier="spice_channel_string_to_type"
+                version="0.21">
+        <doc xml:whitespace="preserve">Convert a channel-type property value to a string.</doc>
         <return-value transfer-ownership="none">
+          <doc xml:whitespace="preserve">the channel-type property value for a @str channel</doc>
           <type name="gint" c:type="gint"/>
         </return-value>
         <parameters>
           <parameter name="str" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a string representation of the channel-type property</doc>
             <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
       </function>
       <function name="type_to_string"
-                c:identifier="spice_channel_type_to_string">
+                c:identifier="spice_channel_type_to_string"
+                version="0.20">
+        <doc xml:whitespace="preserve">Convert a channel-type property value to a string.</doc>
         <return-value transfer-ownership="none">
+          <doc xml:whitespace="preserve">string representation of @type.</doc>
           <type name="utf8" c:type="const gchar*"/>
         </return-value>
         <parameters>
           <parameter name="type" transfer-ownership="none">
+            <doc xml:whitespace="preserve">a channel-type property value</doc>
             <type name="gint" c:type="gint"/>
           </parameter>
         </parameters>
@@ -654,6 +662,11 @@ connection is made with spice_session_open_fd().</doc>
             </parameter>
           </parameters>
         </callback>
+      </field>
+      <field name="handlers" readable="0" private="1">
+        <array name="GLib.Array" c:type="GArray*">
+          <type name="gpointer" c:type="gpointer"/>
+        </array>
       </field>
       <field name="_spice_reserved" readable="0" private="1">
         <array zero-terminated="0" c:type="gchar" fixed-size="0">
@@ -2779,8 +2792,8 @@ The @format positional parameters are the following:
             <doc xml:whitespace="preserve">#SpiceUsbDevice to get the description of</doc>
             <type name="UsbDevice" c:type="SpiceUsbDevice*"/>
           </instance-parameter>
-          <parameter name="format" transfer-ownership="none">
-            <doc xml:whitespace="preserve">an optionnal printf() format string with positional parameters</doc>
+          <parameter name="format" transfer-ownership="none" allow-none="1">
+            <doc xml:whitespace="preserve">an optional printf() format string with positional parameters</doc>
             <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
@@ -2983,8 +2996,8 @@ after the #SpiceSession itself has been unref-ed by the caller.</doc>
             <doc xml:whitespace="preserve">the #SpiceUsbDeviceManager manager</doc>
             <type name="UsbDeviceManager" c:type="SpiceUsbDeviceManager*"/>
           </instance-parameter>
-          <parameter name="filter" transfer-ownership="none">
-            <doc xml:whitespace="preserve">filter string for selecting which devices to return, see #SpiceUsbDeviceManager:auto-connect-filter for the filter string format</doc>
+          <parameter name="filter" transfer-ownership="none" allow-none="1">
+            <doc xml:whitespace="preserve">filter string for selecting which devices to return, see #SpiceUsbDeviceManager:auto-connect-filter for the f ilter string format</doc>
             <type name="utf8" c:type="const gchar*"/>
           </parameter>
         </parameters>
@@ -3025,7 +3038,7 @@ Where each rule has the form of:
 
 Use -1 for @class/@vendor/@product/@version to accept any value.
 
-And the rules are themselves are concatonated like this:
+And the rules themselves are concatenated like this:
 
 @rule1|@rule2|@rule3
 
@@ -3635,7 +3648,7 @@ clipboard grab): Inform the guest no clipboard data is available.</doc>
               c:identifier="spice_main_clipboard_selection_request"
               version="0.6">
       <doc xml:whitespace="preserve">Request clipboard data of @type from the guest. The reply is sent
-through the #SpiceMainChannel::main-clipboard signal.</doc>
+through the #SpiceMainChannel::main-clipboard-selection signal.</doc>
       <return-value transfer-ownership="none">
         <type name="none" c:type="void"/>
       </return-value>

@@ -20,4 +20,5 @@ libuuid:x:100:101::/var/lib/libuuid:/bin/sh
 messagebus:x:101:103::/var/run/dbus:/bin/false
 sshd:x:102:65534::/var/run/sshd:/usr/sbin/nologin
 ntp:x:103:105::/home/ntp:/bin/false
-rpitc:x:1000:1000::/home/rpitc:/bin/bash
+rpitc:x:1000:1000:,,,:/home/rpitc:/bin/bash
+browser:x:1001:1001::/home/browser:/bin/bash

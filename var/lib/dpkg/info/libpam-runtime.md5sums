@@ -1,7 +1,7 @@
-da5a4f8b800cdbd91437d97e2ea17c1e  usr/sbin/pam-auth-update
+ea694492f4f7191cc9b185d09875fa6a  usr/sbin/pam-auth-update
 cb2de21870706b3b402637a6b8b1f17a  usr/sbin/pam_getenv
 a8215173a307fce152aa7f888b37d6a8  usr/share/doc/libpam-runtime/NEWS.Debian.gz
-393071e7773a82d7e190dc29f4e84dab  usr/share/doc/libpam-runtime/changelog.Debian.gz
+97eeaf69e855f2ce45f182e5109c00db  usr/share/doc/libpam-runtime/changelog.Debian.gz
 daa8faa8287a67fa583f80bba1adef4e  usr/share/doc/libpam-runtime/changelog.gz
 6c05e902bc75c9e6d2da3ac75da5d47b  usr/share/doc/libpam-runtime/copyright
 8d5fd94005de12b6696a6c3308f06371  usr/share/lintian/overrides/libpam-runtime
@@ -51,7 +51,7 @@ dd6a325f5f09fcaddd773cc5842774e7  usr/share/locale/zu/LC_MESSAGES/Linux-PAM.mo
 a0869348a85e4d6e70e34197b06c2eb8  usr/share/man/man5/pam.conf.5.gz
 e92b542eddf6ce6e685a43eb0ba5ff43  usr/share/man/man7/PAM.7.gz
 0628c7175a328913cf8ea4024cc53fc9  usr/share/man/man8/pam-auth-update.8.gz
-5cc71fb9556021657b671f80ad3fd586  usr/share/man/man8/pam_getenv.8.gz
+f897580f6bb056c5dd431bddb6014596  usr/share/man/man8/pam_getenv.8.gz
 f6d15d69c43d7d363c02d219d8323fbb  usr/share/pam-configs/unix
 117df385af6d411fbd1ffa97bc048f66  usr/share/pam/common-account
 a16cd434ecf1fd38ade67f3ce31ecdc6  usr/share/pam/common-account.md5sums

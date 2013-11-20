@@ -8,7 +8,7 @@
 <link rel="up" href="ch02.html" title="Session and Channels Objects, from spice-client-glib">
 <link rel="prev" href="SpicePlaybackChannel.html" title="Playback Channel">
 <link rel="next" href="SpiceSmartcardChannel.html" title="Smartcard Channel">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -54,15 +54,15 @@ struct              <a class="link" href="SpiceRecordChannel.html#SpiceRecordCha
 struct              <a class="link" href="SpiceRecordChannel.html#SpiceRecordChannelClass" title="struct SpiceRecordChannelClass">SpiceRecordChannelClass</a>;
 
 <span class="returnvalue">void</span>                <a class="link" href="SpiceRecordChannel.html#spice-record-send-data" title="spice_record_send_data ()">spice_record_send_data</a>              (<em class="parameter"><code><a class="link" href="SpiceRecordChannel.html" title="Record Channel"><span class="type">SpiceRecordChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> bytes</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time</code></em>);
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>,
+                                                         <em class="parameter"><code><span class="type">gsize</span> bytes</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> time</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceRecordChannel.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
+  GObject
    +----<a class="link" href="SpiceChannel.html" title="Spice Channel">SpiceChannel</a>
          +----SpiceRecordChannel
 </pre>
@@ -70,16 +70,16 @@ struct              <a class="link" href="SpiceRecordChannel.html#SpiceRecordCha
 <div class="refsect1">
 <a name="SpiceRecordChannel.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel--mute" title='The "mute" property'>mute</a>"                     <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write
-  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel--nchannels" title='The "nchannels" property'>nchannels</a>"                <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write
-  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel--volume" title='The "volume" property'>volume</a>"                   <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              : Read / Write
+  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel--mute" title='The "mute" property'>mute</a>"                     <span class="type">gboolean</span>              : Read / Write
+  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel--nchannels" title='The "nchannels" property'>nchannels</a>"                <span class="type">guint</span>                 : Read / Write
+  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel--volume" title='The "volume" property'>volume</a>"                   <span class="type">gpointer</span>              : Read / Write
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceRecordChannel.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel-record-start" title='The "record-start" signal'>record-start</a>"                                   : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
-  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel-record-stop" title='The "record-stop" signal'>record-stop</a>"                                    : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel-record-start" title='The "record-start" signal'>record-start</a>"                                   : <code class="literal">Run First</code>
+  "<a class="link" href="SpiceRecordChannel.html#SpiceRecordChannel-record-stop" title='The "record-stop" signal'>record-stop</a>"                                    : <code class="literal">Run First</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -153,9 +153,9 @@ Class structure for <a class="link" href="SpiceRecordChannel.html" title="Record
 <div class="refsect2">
 <a name="spice-record-send-data"></a><h3>spice_record_send_data ()</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                spice_record_send_data              (<em class="parameter"><code><a class="link" href="SpiceRecordChannel.html" title="Record Channel"><span class="type">SpiceRecordChannel</span></a> *channel</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a> data</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#gsize"><span class="type">gsize</span></a> bytes</code></em>,
-                                                         <em class="parameter"><code><a href="../glib/glib-Basic-Types.html#guint32"><span class="type">guint32</span></a> time</code></em>);</pre>
+                                                         <em class="parameter"><code><span class="type">gpointer</span> data</code></em>,
+                                                         <em class="parameter"><code><span class="type">gsize</span> bytes</code></em>,
+                                                         <em class="parameter"><code><span class="type">guint32</span> time</code></em>);</pre>
 <p>
 Send recorded PCM data to the guest.
 </p>
@@ -186,14 +186,14 @@ Send recorded PCM data to the guest.
 <a name="SpiceRecordChannel.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceRecordChannel--mute"></a><h3>The <code class="literal">"mute"</code> property</h3>
-<pre class="programlisting">  "mute"                     <a href="../glib/glib-Basic-Types.html#gboolean"><span class="type">gboolean</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "mute"                     <span class="type">gboolean</span>              : Read / Write</pre>
 <p>Mute.</p>
 <p>Default value: FALSE</p>
 </div>
 <hr>
 <div class="refsect2">
 <a name="SpiceRecordChannel--nchannels"></a><h3>The <code class="literal">"nchannels"</code> property</h3>
-<pre class="programlisting">  "nchannels"                <a href="../glib/glib-Basic-Types.html#guint"><span class="type">guint</span></a>                 : Read / Write</pre>
+<pre class="programlisting">  "nchannels"                <span class="type">guint</span>                 : Read / Write</pre>
 <p>Number of Channels.</p>
 <p>Allowed values: &lt;= 255</p>
 <p>Default value: 2</p>
@@ -201,7 +201,7 @@ Send recorded PCM data to the guest.
 <hr>
 <div class="refsect2">
 <a name="SpiceRecordChannel--volume"></a><h3>The <code class="literal">"volume"</code> property</h3>
-<pre class="programlisting">  "volume"                   <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              : Read / Write</pre>
+<pre class="programlisting">  "volume"                   <span class="type">gpointer</span>              : Read / Write</pre>
 <p></p>
 </div>
 </div>
@@ -210,10 +210,10 @@ Send recorded PCM data to the guest.
 <div class="refsect2">
 <a name="SpiceRecordChannel-record-start"></a><h3>The <code class="literal">"record-start"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceRecordChannel.html" title="Record Channel"><span class="type">SpiceRecordChannel</span></a> *channel,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                format,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                channels,
-                                                        <a href="../glib/glib-Basic-Types.html#gint"><span class="type">gint</span></a>                rate,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gint</span>                format,
+                                                        <span class="type">gint</span>                channels,
+                                                        <span class="type">gint</span>                rate,
+                                                        <span class="type">gpointer</span>            user_data)      : <code class="literal">Run First</code></pre>
 <p>
 Notify when the recording should start, and provide audio format
 characteristics.
@@ -252,7 +252,7 @@ characteristics.
 <div class="refsect2">
 <a name="SpiceRecordChannel-record-stop"></a><h3>The <code class="literal">"record-stop"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceRecordChannel.html" title="Record Channel"><span class="type">SpiceRecordChannel</span></a> *channel,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>            user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">gpointer</span>            user_data)      : <code class="literal">Run First</code></pre>
 <p>
 Notify when the recording should stop.
 </p>
@@ -281,6 +281,6 @@ Notify when the recording should stop.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

@@ -1,9 +1,9 @@
-b95ea34e99471b0c8d218a0dd2c66bbc  usr/sbin/update-passwd
+d7f8f8ba7d889250535eb43cabd36438  usr/sbin/update-passwd
 eee0dc6a097ceaab6fd938092bc4b86c  usr/share/base-passwd/group.master
 c05b865b21853c001e03aca163d62912  usr/share/base-passwd/passwd.master
 cdac90d3d3ef8d60e4bc0eb73efa68d7  usr/share/doc-base/users-and-groups
 9d98a8fada0224665d4fb88d0a2a91f9  usr/share/doc/base-passwd/README
-31d35ffadc9f84f44e1cd07c6da25240  usr/share/doc/base-passwd/changelog.gz
+4a29b66dbf54fcb286f2efd16f3d89c9  usr/share/doc/base-passwd/changelog.gz
 76b8211297b64b28671dfea99a6d032e  usr/share/doc/base-passwd/copyright
 ff78a4f1125c0600a233038227bc2794  usr/share/doc/base-passwd/users-and-groups.html
 fc1d7081ec4c72bceb6a559693e3412a  usr/share/doc/base-passwd/users-and-groups.txt.gz

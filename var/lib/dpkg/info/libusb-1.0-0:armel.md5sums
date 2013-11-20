@@ -1,5 +1,6 @@
-35c1e400cf7c1e5973f8fd4e02dedd0d  lib/arm-linux-gnueabi/libusb-1.0.so.0.1.0
-cba748efe3656c5682b0c6f981a3d2a5  usr/share/doc/libusb-1.0-0/README
-f55ba88c227fa8b0432c12ce81d04ff9  usr/share/doc/libusb-1.0-0/changelog.Debian.gz
+159627d88e0d40a8011fe8a152874f60  lib/arm-linux-gnueabi/libusb-1.0.so.0.1.0
+b31e8380e9fcd991386e48379875e68e  usr/share/doc/libusb-1.0-0/README
+e49a57713fbf2c13f3a8ace4c6d6f71e  usr/share/doc/libusb-1.0-0/changelog.Debian.armel.gz
+ac39481cdf807063a5f5db047ef9c838  usr/share/doc/libusb-1.0-0/changelog.Debian.gz
 eb2b94924c909e04cec5717582199544  usr/share/doc/libusb-1.0-0/changelog.gz
 a15fea1c91b8cbac8ca1c12c00358c22  usr/share/doc/libusb-1.0-0/copyright

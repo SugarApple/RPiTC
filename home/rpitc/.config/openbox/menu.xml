@@ -3,15 +3,16 @@
 <openbox_menu xmlns="http://openbox.org/3.4/menu">
 
 <menu id="apps-menu" label="Applications">
+  <item label="Iceweasel">
+    <action name="Execute"><command>iceweasel</command></action>
+  </item>
   <item label="FileBrowser">
     <action name="Execute"><command>pcmanfm</command></action>
   </item>
   <item label="LXTerminal">
     <action name="Execute"><command>lxterminal</command></action>
   </item>
-  <item label="Iceweasel">
-    <action name="Execute"><command>iceweasel</command></action>
-  </item>
+
 </menu>
 
 <menu id="rpitc-apps" label="RPi-TC Apps">
@@ -24,9 +25,6 @@
   <item label="Quest vWorkspaces 7.00b1">
     <action name="Execute"><command>connmanager</command></action>
   </item>
-  <item label="RDesktop 1.7.1">
-    <action name="Execute"><command>lxterminal -e "rdesktop -u USERNAME -p PASSWORD -g 1440x900 -E -x l -z -P -r sound:local:alsa:default 192.168.0.100"</command></action>
-  </item>
   <item label="SPICE Client 0.20">
     <action name="Execute"><command>remote-viewer</command></action>
   </item>
@@ -35,6 +33,23 @@
   </item>
   <item label="X2GO Client 4.0.1.1">
     <action name="Execute"><command>x2goclient</command></action>
+  </item>
+  <separator />
+  <item label="RDesktop 1.7.1">
+    <action name="Execute"><command>lxterminal -e "rdesktop -u USERNAME -p PASSWORD -g 1440x900 -E -x l -z -P -r sound:local:alsa:default 192.168.0.100"</command></action>
+  </item>
+  <item label="xFreeRDP">
+    <action name="Execute"><command>lxterminal -e "xfreerdp /v:192.168.0.100 /size:1440x900 /u:USERNAME /p:PASSWORD +compression /sound:sys:alsa"</command></action>
+  </item>
+  <item label="RDPGUI">
+    <action name="Execute"><command>python /usr/bin/rdpgui.py</command></action>
+  </item>
+  <separator />
+  <item label="x3270">
+    <action name="Execute"><command>x3270</command></action>
+  </item>
+  <item label="tn5250">
+    <action name="Execute"><command>lxterminal -e "tn5250 [options] HOST[:PORT]"</command></action>
   </item>
 </menu>
 
@@ -78,9 +93,13 @@
   <separator />
   <menu id="client-list-menu" />
   <separator />
-  <item label="Exit">
+  <item label="Shutdown">
     <action name="Execute"><command>lxterminal -e "sudo shutdown -h now"</command></action>
+  </item>
+  <item label="Reboot">
+    <action name="Execute"><command>lxterminal -e "sudo shutdown -r now"</command></action>
   </item>
 </menu>
 
 </openbox_menu>
+

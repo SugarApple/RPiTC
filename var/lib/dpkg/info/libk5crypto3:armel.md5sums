@@ -1,4 +1,4 @@
-c47c4ae96854e848ab39a54850e6169e  usr/lib/arm-linux-gnueabi/libk5crypto.so.3.1
+dfa1c6d18442117d34f8c7ca2f59400b  usr/lib/arm-linux-gnueabi/libk5crypto.so.3.1
 7e936a5ba409ae87002f91d80bfd6de4  usr/share/doc/libk5crypto3/NEWS.Debian.gz
-8d838909d12aee2ef443906b5aaed246  usr/share/doc/libk5crypto3/changelog.Debian.gz
-1d592b61381f4c221776d8e32cf81638  usr/share/doc/libk5crypto3/copyright
+d60cd3bab6973e64d984592efb847262  usr/share/doc/libk5crypto3/changelog.Debian.gz
+898b819ff0deef88384163dad8ad087f  usr/share/doc/libk5crypto3/copyright

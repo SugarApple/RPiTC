@@ -8,12 +8,7 @@
 /usr/lib/xorg/modules/libvbe.so
 /usr/lib/xorg/modules/libshadow.so
 /usr/lib/xorg/modules/extensions
-/usr/lib/xorg/modules/extensions/libextmod.so
 /usr/lib/xorg/modules/extensions/libglx.so
-/usr/lib/xorg/modules/extensions/libdri2.so
-/usr/lib/xorg/modules/extensions/librecord.so
-/usr/lib/xorg/modules/extensions/libdri.so
-/usr/lib/xorg/modules/extensions/libdbe.so
 /usr/lib/xorg/modules/libfbdevhw.so
 /usr/lib/xorg/modules/libexa.so
 /usr/lib/xorg/modules/libvgahw.so
@@ -27,7 +22,6 @@
 /usr/lib/xorg/modules/multimedia/tda9850_drv.so
 /usr/lib/xorg/modules/multimedia/uda1380_drv.so
 /usr/lib/xorg/modules/libshadowfb.so
-/usr/lib/xorg/modules/libxaa.so
 /usr/bin
 /usr/bin/Xorg
 /usr/bin/gtf

@@ -1,0 +1,6 @@
+17b5dc561362438e696083b9521b13bc  usr/bin/x3270if
+024117ef0bc6e54fc63bc55ebca3a58b  usr/share/doc/3270-common/changelog.Debian.gz
+7f348db97cfdc19a1954786a08ed0043  usr/share/doc/3270-common/copyright
+6e5ed31fa23dcb9ba4f73af868b71334  usr/share/man/man1/x3270-script.1.gz
+5a02e3f0623e608578b318f2feaedbcb  usr/share/man/man1/x3270if.1.gz
+c18adc3db5c5476b9d63e0e46bcfa89e  usr/share/man/man5/ibm_hosts.5.gz

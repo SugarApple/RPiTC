@@ -1,12 +1,12 @@
-78362e57f7a10a87454e80099baa792f  usr/lib/arm-linux-gnueabi/libgnutls-extra.so.26.22.6
-569460bb2ae56f7f7be41b71e76d806f  usr/lib/arm-linux-gnueabi/libgnutls.so.26.22.6
+3ee7f66dfec3fa406451d5326659cfa4  usr/lib/arm-linux-gnueabi/libgnutls-extra.so.26.22.6
+4de558625b2fe00ed2b6f5f5f6ec5dfe  usr/lib/arm-linux-gnueabi/libgnutls.so.26.22.6
 f6a433e2785ded50726f7432870db2ef  usr/share/doc/libgnutls26/AUTHORS.gz
 284e046202dd005632ff822e272788b7  usr/share/doc/libgnutls26/NEWS.Debian.gz
 9e81e6c7f530da32224b1838126a3077  usr/share/doc/libgnutls26/NEWS.gz
 b886c78d58e2d013e7c2928903a2de5c  usr/share/doc/libgnutls26/README.gz
 1192334bd9775092782083640a1f4b90  usr/share/doc/libgnutls26/THANKS.gz
 31e88cbf7ffbb3ba69f6f93eaff0671d  usr/share/doc/libgnutls26/TODO
-c5e7e1b2b4739a3a40ae2057cf9b5ff5  usr/share/doc/libgnutls26/changelog.Debian.gz
+d2bb7f35abc781e99d2e6178eccdb94c  usr/share/doc/libgnutls26/changelog.Debian.gz
 f03fbe73671b7d4b9c5d264f42f736fe  usr/share/doc/libgnutls26/changelog.gz
 4b72818e6a32b62fe2e33e18830e6597  usr/share/doc/libgnutls26/copyright
 3e188f16bf1ff9da7e57c768e287642b  usr/share/locale/cs/LC_MESSAGES/libgnutls26.mo

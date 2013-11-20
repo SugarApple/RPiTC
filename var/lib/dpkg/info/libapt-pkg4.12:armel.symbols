@@ -26,8 +26,10 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _Z11SHA512_DataPKhjPc@Base 0.8.16~exp2
  _Z11SHA512_InitP11_SHA512_CTX@Base 0.8.16~exp2
  _Z11SetNonBlockib@Base 0.8.0
+ _Z11StringSplitRKSsS0_j@Base 0.9.12.1+RPiTC1
  _Z11TimeRFC1123l@Base 0.8.0
  _Z11flExtensionSs@Base 0.8.0
+ _Z11strv_lengthPPKc@Base 0.9.12.1+RPiTC1
  _Z12Base256ToNumPKcRmj@Base 0.8.11
  _Z12Base64EncodeRKSs@Base 0.8.0
  _Z12ReadMessagesiRSt6vectorISsSaISsEE@Base 0.8.0
@@ -81,10 +83,12 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _Z19GetListOfFilesInDirRKSsb@Base 0.8.16~exp13
  _Z19GetModificationTimeRKSs@Base 0.8.15.6
  _Z20SplitClearSignedFileRKSsP6FileFdPSt6vectorISsSaISsEES2_@Base 0.9.7.9~exp2
+ _Z21pkgAllUpgradeNoDeleteR11pkgDepCache@Base 0.9.12.1+RPiTC1
  _Z22pkgMakeOnlyStatusCacheR10OpProgressPP11DynamicMMap@Base 0.8.0
  _Z23FindMountPointForDevicePKc@Base 0.8.12
  _Z24OpenMaybeClearSignedFileRKSsR6FileFd@Base 0.9.7.9~exp2
  _Z26CreateAPTDirectoryIfNeededRKSsS0_@Base 0.8.2
+ _Z4GlobRKSsi@Base 0.9.12.1+RPiTC1
  _Z6SigINTi@Base 0.8.16~exp14
  _Z6WaitFdibm@Base 0.8.0
  _Z7GetLockSsb@Base 0.8.0
@@ -192,6 +196,7 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN10pkgAcquire3AddEPNS_6WorkerE@Base 0.8.0
  _ZN10pkgAcquire3RunEi@Base 0.8.0
  _ZN10pkgAcquire4BumpEv@Base 0.8.0
+ _ZN10pkgAcquire4Item13RenameOnErrorENS0_18RenameOnErrorStateE@Base 0.9.12.1+RPiTC1
  _ZN10pkgAcquire4Item16Custom600HeadersEv@Base 0.8.0
  _ZN10pkgAcquire4Item19ReportMirrorFailureESs@Base 0.8.0
  _ZN10pkgAcquire4Item4DoneESsySsPNS_12MethodConfigE@Base 0.8.16~exp6
@@ -290,6 +295,7 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN10pkgTagFile4StepER13pkgTagSection@Base 0.8.0
  _ZN10pkgTagFile6OffsetEv@Base 0.8.16~exp6
  _ZN10pkgTagFile6ResizeEv@Base 0.8.0
+ _ZN10pkgTagFile6ResizeEy@Base 0.9.12.1+RPiTC1
  _ZN10pkgTagFileC1EP6FileFdy@Base 0.8.16~exp6
  _ZN10pkgTagFileC2EP6FileFdy@Base 0.8.16~exp6
  _ZN10pkgTagFileD0Ev@Base 0.8.0
@@ -297,9 +303,11 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN10pkgTagFileD2Ev@Base 0.8.0
  _ZN11CdromDeviceD1Ev@Base 0.8.0
  _ZN11CdromDeviceD2Ev@Base 0.8.0
+ _ZN11CommandLine10GetCommandEPKNS_8DispatchEjPKPKc@Base 0.9.12.1+RPiTC1
  _ZN11CommandLine11DispatchArgEPNS_8DispatchEb@Base 0.8.0
  _ZN11CommandLine12SaveInConfigERKjPKPKc@Base 0.8.0
  _ZN11CommandLine5ParseEiPPKc@Base 0.8.0
+ _ZN11CommandLine8MakeArgsEcPKcS1_m@Base 0.9.12.1+RPiTC1
  _ZN11CommandLine9HandleOptERiiPPKcRS2_PNS_4ArgsEb@Base 0.8.0
  _ZN11CommandLineC1EPNS_4ArgsEP13Configuration@Base 0.8.0
  _ZN11CommandLineC2EPNS_4ArgsEP13Configuration@Base 0.8.0
@@ -543,6 +551,7 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN13Configuration5ClearERKSs@Base 0.8.0
  _ZN13Configuration5ClearERKSsRKi@Base 0.8.0
  _ZN13Configuration5ClearERKSsS1_@Base 0.8.0
+ _ZN13Configuration5ClearEv@Base 0.9.12.1+RPiTC1
  _ZN13Configuration6CndSetEPKcRKSs@Base 0.8.0
  _ZN13Configuration6CndSetEPKci@Base 0.8.15.3
  _ZN13Configuration6LookupEPKcRKb@Base 0.8.0
@@ -649,6 +658,8 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN13pkgTagSection4TrimEv@Base 0.8.0
  _ZN13pkgTagSection6ExistsEPKc@Base 0.9.7.9~exp1
  _ZN13pkgTagSection8FindFlagERmmPKcS2_@Base 0.8.11
+ _ZN13pkgTagSectionC1Ev@Base 0.9.12.1+RPiTC1
+ _ZN13pkgTagSectionC2Ev@Base 0.9.12.1+RPiTC1
  _ZN13pkgTagSectionD0Ev@Base 0.8.16~exp6
  _ZN13pkgTagSectionD1Ev@Base 0.8.16~exp6
  _ZN13pkgTagSectionD2Ev@Base 0.8.16~exp6
@@ -963,6 +974,8 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN3APT11CacheFilter23PackageNameMatchesRegExD2Ev@Base 0.8.0
  _ZN3APT11CacheFilter23PackageNameMatchesRegExclERKN8pkgCache11GrpIteratorE@Base 0.8.0
  _ZN3APT11CacheFilter23PackageNameMatchesRegExclERKN8pkgCache11PkgIteratorE@Base 0.8.0
+ _ZN3APT11CacheFilter25PackageNameMatchesFnmatchclERKN8pkgCache11GrpIteratorE@Base 0.9.12.1+RPiTC1
+ _ZN3APT11CacheFilter25PackageNameMatchesFnmatchclERKN8pkgCache11PkgIteratorE@Base 0.9.12.1+RPiTC1
  _ZN3APT11CacheFilter39PackageArchitectureMatchesSpecificationC1ERKSsb@Base 0.9.7
  _ZN3APT11CacheFilter39PackageArchitectureMatchesSpecificationC2ERKSsb@Base 0.9.7
  _ZN3APT11CacheFilter39PackageArchitectureMatchesSpecificationD1Ev@Base 0.9.7
@@ -1007,6 +1020,7 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN3APT16VersionContainerISt4listIN8pkgCache11VerIteratorESaIS3_EEE5clearEv@Base 0.8.16~exp9
  _ZN3APT16VersionContainerISt4listIN8pkgCache11VerIteratorESaIS3_EEE6insertERKS3_@Base 0.8.16~exp9
  _ZN3APT25PackageContainerInterface10FromStringEPS0_R12pkgCacheFileRKSsRNS_14CacheSetHelperE@Base 0.8.16~exp9
+ _ZN3APT25PackageContainerInterface11FromFnmatchEPS0_R12pkgCacheFileSsRNS_14CacheSetHelperE@Base 0.9.12.1+RPiTC1
  _ZN3APT25PackageContainerInterface15FromCommandLineEPS0_R12pkgCacheFilePPKcRNS_14CacheSetHelperE@Base 0.8.16~exp9
  _ZN3APT25PackageContainerInterface23FromModifierCommandLineERtPS0_R12pkgCacheFilePKcRKSt4listINS0_8ModifierESaIS8_EERNS_14CacheSetHelperE@Base 0.8.16~exp9
  _ZN3APT25PackageContainerInterface8FromNameER12pkgCacheFileRKSsRNS_14CacheSetHelperE@Base 0.8.16~exp9
@@ -1176,8 +1190,10 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZN9pkgDPkgPM15WriteHistoryTagERKSsSs@Base 0.8.0
  _ZN9pkgDPkgPM17WriteApportReportEPKcS1_@Base 0.8.0
  _ZN9pkgDPkgPM18RunScriptsWithPkgsEPKc@Base 0.8.0
+ _ZN9pkgDPkgPM20SendTerminalProgressEf@Base 0.9.12.1+RPiTC1
  _ZN9pkgDPkgPM21ProcessDpkgStatusLineEiPc@Base 0.8.0
  _ZN9pkgDPkgPM21handleDisappearActionERKSs@Base 0.8.0
+ _ZN9pkgDPkgPM23SetupTerminalScrollAreaEi@Base 0.9.12.1+RPiTC1
  _ZN9pkgDPkgPM2GoEi@Base 0.8.0
  _ZN9pkgDPkgPM5ResetEv@Base 0.8.0
  _ZN9pkgDPkgPM6RemoveEN8pkgCache11PkgIteratorEb@Base 0.8.0
@@ -1388,11 +1404,11 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED0Ev@Base 0.8.0
  _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED1Ev@Base 0.8.0
  _ZNSt15basic_stringbufIcSt11char_traitsIcESaIcEED2Ev@Base 0.8.0
+ _ZNSt3mapISsSt6vectorIN9pkgDPkgPM9DpkgStateESaIS2_EESt4lessISsESaISt4pairIKSsS4_EEEixERS8_@Base 0.8.0
+ _ZNSt3mapISsjSt4lessISsESaISt4pairIKSsjEEEixERS3_@Base 0.8.0
  _ZNSt4listIN11GlobalError4ItemESaIS1_EEaSERKS3_@Base 0.8.0
  _ZNSt4pairIKSsSsED1Ev@Base 0.8.0
  _ZNSt4pairIKSsSsED2Ev@Base 0.8.0
- _ZNSt4pairIKSsSt6vectorIN9pkgDPkgPM9DpkgStateESaIS3_EEED1Ev@Base 0.8.0
- _ZNSt4pairIKSsSt6vectorIN9pkgDPkgPM9DpkgStateESaIS3_EEED2Ev@Base 0.8.0
  _ZNSt6vectorI11CdromDeviceSaIS0_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS0_S2_EERKS0_@Base 0.8.0
  _ZNSt6vectorI11CdromDeviceSaIS0_EED1Ev@Base 0.8.0
  _ZNSt6vectorI11CdromDeviceSaIS0_EED2Ev@Base 0.8.0
@@ -1409,6 +1425,8 @@ libapt-pkg.so.4.12 libapt-pkg4.12 #MINVER#
  _ZNSt6vectorIN3APT13Configuration10CompressorESaIS2_EED1Ev@Base 0.8.0
  _ZNSt6vectorIN3APT13Configuration10CompressorESaIS2_EED2Ev@Base 0.8.0
  _ZNSt6vectorIN9pkgDPkgPM4ItemESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.8.0
+ _ZNSt6vectorIN9pkgDPkgPM4ItemESaIS1_EED1Ev@Base 0.8.0
+ _ZNSt6vectorIN9pkgDPkgPM4ItemESaIS1_EED2Ev@Base 0.8.0
  _ZNSt6vectorIN9pkgDPkgPM9DpkgStateESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.8.0
  _ZNSt6vectorIN9pkgPolicy3PinESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.8.0
  _ZNSt6vectorIN9pkgPolicy6PkgPinESaIS1_EE13_M_insert_auxEN9__gnu_cxx17__normal_iteratorIPS1_S3_EERKS1_@Base 0.8.0

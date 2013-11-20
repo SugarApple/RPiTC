@@ -97,12 +97,24 @@ Description-ml.UTF-8: പുിതിയ ലൈബ്രറികള്‍ ഉ�
  ദയവായി പുനരാരംഭിയ്ക്കേണ്ടതായി കണ്ടുപിടിയ്ക്കപ്പെട്ട സേവനങ്ങളുടെ പട്ടിക ദയവായി പരിശോദിയ്ക്കുകയും ആവശ്യമെങ്കില്‍ തിരുത്തുകയും ചെയ്യുക. സേവന നാമങ്ങള്‍ /etc/init.d യിലെ ആരംഭ സ്ക്രിപ്റ്റ് നാമങ്ങളുമായി സമാനമായിരിയ്ക്കുയും സ്പേയ്സുകള്‍ കൊണ്ട് വേര്‍തിരിയ്ക്കപ്പെട്ടവയുമായിരിയ്ക്കണം. പട്ടിക ശൂന്യമാണെങ്കില്‍ സേവനങ്ങളൊന്നും പുനരാരംഭിയ്ക്കുന്നതല്ല.
  .
  ഈ പുതുക്കലിന് ശേഷം പിന്നീട് അപ്രതീക്ഷിതമായി മുടങ്ങുന്ന ഏതൊരു സേവനങ്ങളേയും പുനരാരംഭിയ്ക്കേണ്ടതുണ്ട്. SSL ലുമായി ബന്ധപ്പെട്ട പ്രശ്നം ഒഴിവാക്കാന്‍ ഈ ഹോസ്റ്റിനെ പുനരാരംഭിയ്ക്കാന്‍ ശുപാര്‍ശ ചെയ്തിരിയ്ക്കുന്നു.
+Description-nb.UTF-8: Tjenester som skal startes på nytt slik at de bruker de nye bibliotekene.
+ Denne utgaven av OpenSSL retter noen sikkerhetsproblemer. Tjenester kan ikke bruke disse rettelsene før de er startet på nytt. Merk: om sshd startes på nytt blir antakelig ingen eksisterende tilkoblinger påvirket.
+ .
+ Kontroller lista over funne tjenester som trenger omstart. Rett på lista om den er feil. Tjenestenavnene må være lik skript-navnene i /etc/init.d, og være atskilt med mellomrom. Hvis du tømmer lista blir ingen tjenester omstartet.
+ .
+ Hvis andre tjenester begynner å svikte på mystisk måte etter denne oppgraderingen, så blir det anbefalt at maskinen stoppes og startes for å unngå vansker i forbindelse med SSL.
 Description-nl.UTF-8: Welke diensten moeten herstart worden (zodat ze de nieuwe bibliotheken gebruiken)?
  Deze uitgave van OpenSSL dicht een aantal veiligheidslekken. Andere achtergronddiensten maken pas gebruik van de nieuwe versie eens ze herstart zijn. Herstarten van de SSH-server (sshd) heeft normaal geen gevolgen voor bestande verbindingen.
  .
  Hierna volgt een lijst van gedetecteerde diensten die herstart moeten worden. Verbeter de lijst, als u denkt dat ze incorrect is. De namen moeten overeenkomen met de script-namen in /etc/init.d en moeten gescheiden worden door spaties. Als de lijst leeg is worden er geen diensten herstart.
  .
  Als er andere diensten mysterieus beginnen te falen na deze opwaardering, dient u deze te herstarten. Er wordt u ten zeerste aanbevolen uw machine te herstarten om SSL-gerelateerde problemen te vermijden.
+Description-no.UTF-8: Tjenester som skal startes på nytt slik at de bruker de nye bibliotekene.
+ Denne utgaven av OpenSSL retter noen sikkerhetsproblemer. Tjenester kan ikke bruke disse rettelsene før de er startet på nytt. Merk: om sshd startes på nytt blir antakelig ingen eksisterende tilkoblinger påvirket.
+ .
+ Kontroller lista over funne tjenester som trenger omstart. Rett på lista om den er feil. Tjenestenavnene må være lik skript-navnene i /etc/init.d, og være atskilt med mellomrom. Hvis du tømmer lista blir ingen tjenester omstartet.
+ .
+ Hvis andre tjenester begynner å svikte på mystisk måte etter denne oppgraderingen, så blir det anbefalt at maskinen stoppes og startes for å unngå vansker i forbindelse med SSL.
 Description-pl.UTF-8: Usługi które mają być zrestartowane, aby mogły używać nowych bibliotek:
  To wydanie OpenSSL naprawia kilka problemów bezpieczeństwa. Usługi nie będą mogły skorzystać z tych poprawek, dopóki nie zostaną zrestartowane. Proszę zauważyć, że zrestartowanie serwera SSH (sshd) nie powinno mieć wpływu na istniejące połączenia.
  .
@@ -245,12 +257,24 @@ Description-ja.UTF-8: OpenSSL のアップグレードによって再起動に�
  ${services}
  .
  開始するには '/etc/init.d/<service> start' を手動で実行する必要があります。
+Description-nb.UTF-8: Noen tjenester kunne ikke restartes for OpenSSL-oppgradering
+ Følgende tjenester kunne ikke restartes for oppgradering av OpenSSL-biblioteket:
+ .
+ ${services}
+ .
+ Du må starte disse manuelt ved å kjøre «/etc/init.d/<service> start».
 Description-nl.UTF-8: Herstarten van sommige diensten na de OpenSSL-opwaardering is mislukt.
  De volgende diensten konden niet herstart worden na de opwaardering van de OpenSSL-bibliotheek:
  .
  ${services}
  .
  U zult deze handmatig moeten herstarten via het commando '/etc/init.d/<dienst> start'.
+Description-no.UTF-8: Noen tjenester kunne ikke restartes for OpenSSL-oppgradering
+ Følgende tjenester kunne ikke restartes for oppgradering av OpenSSL-biblioteket:
+ .
+ ${services}
+ .
+ Du må starte disse manuelt ved å kjøre «/etc/init.d/<service> start».
 Description-pl.UTF-8: Zrestartowanie niektórych usług podczas aktualizacji OpenSSL nie powiodło się
  Następujące usługi nie mogły zostać zrestartowane w celu aktualizacji biblioteki OpenSSL:
  .

@@ -1,0 +1,8 @@
+eb274bb99c942ce47b3d1244b4c48714  usr/lib/arm-linux-gnueabi/libQtDeclarative.so.4.8.6
+1048fb40b1d99782b9ebed8c64ab3a9b  usr/lib/arm-linux-gnueabi/qt4/plugins/designer/libqdeclarativeview.so
+8d8af86a7ff49c9ccd1eee6d7f8d5dbc  usr/lib/arm-linux-gnueabi/qt4/plugins/qmltooling/libqmldbg_inspector.so
+764ca0d6b1da609bce51bb8c6952e5a2  usr/lib/arm-linux-gnueabi/qt4/plugins/qmltooling/libqmldbg_tcp.so
+eb6c371255e1262c55ae9b652a90b528  usr/share/doc/libqt4-declarative/LGPL_EXCEPTION.txt
+447446f9345995e3a62669f7e61766b6  usr/share/doc/libqt4-declarative/changelog.Debian.gz
+d49cf542b1b3ba75bad90e9560c459d3  usr/share/doc/libqt4-declarative/copyright
+d8a68ca459c6937aad86e03b8b689e5e  usr/share/lintian/overrides/libqt4-declarative

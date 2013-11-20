@@ -62,5 +62,52 @@
       <summary>Clip the crosshairs at the center</summary>
       <description>Determines whether the crosshairs intersect the magnified mouse sprite, or are clipped such that the ends of the horizontal and vertical lines surround the mouse image.</description>
     </key>
+    <key type="b" name="invert-lightness">
+      <default>false</default>
+      <summary>Inverse lightness</summary>
+      <description>Determines whether the lightness values are inverted: darker colors become lighter and vice versa, and white and black are interchanged.</description>
+    </key>
+    <key type="d" name="color-saturation">
+      <default>1.0</default>
+      <range min="0.0" max="1.0"/>
+      <summary>Color Saturation</summary>
+      <description>Represents a change to the color saturation, from 0.0 (grayscale) to 1.0 (full color).</description>
+    </key>
+    <key type="d" name="brightness-red">
+      <default>0.0</default>
+      <range min="-1.0" max="1.0"/>
+      <summary>Change brightness of red</summary>
+      <description>Represents a change to the default brightness of the red component. Zero indicates no change, values less than zero indicate a decrease, and values greater than zero indicate an increase.</description>
+    </key>
+    <key type="d" name="brightness-green">
+      <default>0.0</default>
+      <range min="-1.0" max="1.0"/>
+      <summary>Change brightness of green</summary>
+      <description>Represents a change to the default brightness for the green component. Zero indicates no change, values less than zero indicate a decrease, and values greater than zero indicate an increase.</description>
+    </key>
+    <key type="d" name="brightness-blue">
+      <default>0.0</default>
+      <range min="-1.0" max="1.0"/>
+      <summary>Change brightness of blue</summary>
+      <description>Represents a change to the default brightness for the blue component. Zero indicates no change, values less than zero indicate a decrease, and values greater than zero indicate an increase.</description>
+    </key>
+    <key type="d" name="contrast-red">
+      <default>0.0</default>
+      <range min="-1.0" max="1.0"/>
+      <summary>Change contrast of red</summary>
+      <description>Represents a change to the default contrast of the red component. Zero indicates no change in contrast, values less than zero indicate a decrease, and values greater than zero indicate an increase.</description>
+    </key>
+    <key type="d" name="contrast-green">
+      <default>0.0</default>
+      <range min="-1.0" max="1.0"/>
+      <summary>Change contrast of green</summary>
+      <description>Represents a change to the default contrast of the green component. Zero indicates no change in contrast, values less than zero indicate a decrease, and values greater than zero indicate an increase.</description>
+    </key>
+    <key type="d" name="contrast-blue">
+      <default>0.0</default>
+      <range min="-1.0" max="1.0"/>
+      <summary>Change contrast of blue</summary>
+      <description>Represents a change to the default contrast of the blue component. Zero indicates no change in contrast, values less than zero indicate a decrease, and values greater than zero indicate an increase.</description>
+    </key>
   </schema>
 </schemalist>

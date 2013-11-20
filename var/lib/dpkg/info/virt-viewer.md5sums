@@ -1,5 +1,5 @@
-dabe06bb9ba8ae6eb958c285343ee519  usr/bin/remote-viewer
-9afd85de9a68e99bf8f358aea9205a4b  usr/bin/virt-viewer
+bfce653d935fc6d28d70340a9792a1a7  usr/bin/remote-viewer
+bb0bcb2f8295c2b29a48f4a6b25e32a4  usr/bin/virt-viewer
 c1e2fefa92a6f36d22d0541885a96e5b  usr/share/mime/packages/virt-viewer-mime.xml
 a5558b599d2a05267350f53c10dbc6c0  usr/share/applications/remote-viewer.desktop
 a7e2d7b3e053bd18c96692e9f40492a6  usr/share/virt-viewer/ui/virt-viewer-auth.xml
@@ -7,9 +7,9 @@ a7e2d7b3e053bd18c96692e9f40492a6  usr/share/virt-viewer/ui/virt-viewer-auth.xml
 ce27027fed40e7cf004225581333b559  usr/share/virt-viewer/ui/virt-viewer.xml
 9f14bee447f0c8353876000ce972c969  usr/share/doc/virt-viewer/NEWS
 7f82b1558435628a8073e66cae6099dc  usr/share/doc/virt-viewer/README
-d86106eb0031d3779d810836d6671ffd  usr/share/doc/virt-viewer/AUTHORS
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/virt-viewer/AUTHORS
 59530bdf33659b29e73d4adb9f9f6552  usr/share/doc/virt-viewer/COPYING
-6f879768b61535cb95b0e300b8d47579  usr/share/doc/virt-viewer/ChangeLog
+d41d8cd98f00b204e9800998ecf8427e  usr/share/doc/virt-viewer/ChangeLog
 0278479fa183a2ff8ab216669424b764  usr/share/doc/virt-viewer/INSTALL
 c1fcdbbad31d6d3be445a9c2b04d4465  usr/share/locale/id/LC_MESSAGES/virt-viewer.mo
 593a4c2716c75d14b8901e9ea5a69e5f  usr/share/locale/bn_IN/LC_MESSAGES/virt-viewer.mo
@@ -74,8 +74,8 @@ b44661d14abee559f00e2141468a864f  usr/share/locale/pa/LC_MESSAGES/virt-viewer.mo
 f5c1b5bcc560b9c82fc1a4529bbe6a9e  usr/share/locale/pt/LC_MESSAGES/virt-viewer.mo
 4a2e5343ef2f38bae4583f588657327c  usr/share/locale/kn/LC_MESSAGES/virt-viewer.mo
 bf654fa4d39056c6fd98c4e8cee8b42b  usr/share/locale/as/LC_MESSAGES/virt-viewer.mo
-d5f916ec0a01ce23e85d9b5832c96d2b  usr/share/man/man1/remote-viewer.1.gz
-0edce10724bb2337a7679a283d4020f5  usr/share/man/man1/virt-viewer.1.gz
+dd07a27d038bd0e11d32a68b0f6eea2a  usr/share/man/man1/remote-viewer.1.gz
+aecda94703e3e7a4888f0511b0f7f7ab  usr/share/man/man1/virt-viewer.1.gz
 9e272e47b44db0effb67142c745c7be3  usr/share/icons/hicolor/24x24/apps/virt-viewer.png
 bf6229462c97d339af3b8f471c511965  usr/share/icons/hicolor/16x16/apps/virt-viewer.png
 0c15577486603c0d6854ed536cb00041  usr/share/icons/hicolor/48x48/apps/virt-viewer.png

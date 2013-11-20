@@ -1,9 +1,11 @@
 /.
 /boot
+/boot/config_standard
 /boot/config.txt
 /boot/start_cd.elf
 /boot/fixup_cd.dat
 /boot/bootcode.bin
+/boot/config_tuned
 /boot/cmdline.txt
 /boot/fixup_x.dat
 /boot/start.elf

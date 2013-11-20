@@ -2,8 +2,8 @@
 /usr
 /usr/lib
 /usr/lib/arm-linux-gnueabi
-/usr/lib/arm-linux-gnueabi/libgdk-3.so.0.800.2
-/usr/lib/arm-linux-gnueabi/libgtk-3.so.0.800.2
+/usr/lib/arm-linux-gnueabi/libgtk-3.so.0.800.6
+/usr/lib/arm-linux-gnueabi/libgdk-3.so.0.800.6
 /usr/lib/arm-linux-gnueabi/libgtk-3-0
 /usr/lib/arm-linux-gnueabi/libgtk-3-0/gtk-update-icon-cache-3.0
 /usr/lib/arm-linux-gnueabi/libgtk-3-0/gtk-query-immodules-3.0

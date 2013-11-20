@@ -1,3 +1,374 @@
+2013-09-18  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	Release v0.21
+
+2013-09-18  Colin Walters  <walters@verbum.org>
+
+	acl helper: Use ruid of invoker rather than looking up euid in /proc
+	This way we avoid a race condition if the parent execve()s a setuid
+	program (possibly this program).
+
+	This is the same as the fix for pkexec which is CVE-2011-1485:
+	See: https://bugzilla.redhat.com/show_bug.cgi?id=692922
+
+2013-09-18  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	build-sys: fix bad cast on win64
+	spice-widget.c:814:50: error: cast to pointer from integer of different size [-Werror=int-to-pointer-cast]
+	         g_return_if_fail(SystemParametersInfo(SPI_SETMOUSESPEED, 0, (PVOID)d->win_mouse_speed, 0));
+
+2013-09-13  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	display: unshare the palette cache
+	As pointed out by Yonit on the ML:
+	> (1) the palette cache shouldn't be shared among the display channels. I.e.,
+	> there should be one instance per channel, and not one instance in
+	> spice-session.
+
+	channel: unref incoming migrate data
+
+2013-09-13  Marc-André Lureau  <marcandre.lureau@gmail.com>
+
+	gtk: simplify spice_channel_recv_msg
+	Use of coroutines allow to simplify spice_channel_recv_msg(), it doesn't
+	need to keep current reading state, it can rely on the coroutine stack
+	for that.
+
+	gtk: use slices for frequently allocated objects
+
+	gtk: use GHashTable in display_cache
+	The cache code isn't very quick, it shows up in profilers.  Using
+	GHashTable allows to simplify the code while making it faster.
+
+	channel: do not reenter the mainloop at every iteration
+	The current coroutine channel_iterate() creates a GSource for the socket
+	reenters the mainloop waiting for IO condition. This is really heavy
+	usage of mainloop showing up in system time and user space
+	profiling (10% of CPU time spent in mainloop overhead). Instead flush
+	all pending input messages before switching context and reentering main
+	loop.
+
+	This is the kind of results I get with a replay:
+
+	before:
+
+	       2179,440455 task-clock                #    0,629 CPUs utilized
+	             3 580 context-switches          #    0,002 M/sec
+	               207 cpu-migrations            #    0,095 K/sec
+	            48 909 page-faults               #    0,022 M/sec
+	     7 362 442 301 cycles                    #    3,378 GHz
+	     5 256 957 520 stalled-cycles-frontend   #   71,40% frontend cycles
+	             idle
+	   <not supported> stalled-cycles-backend
+	     5 460 266 981 instructions              #    0,74  insns per cycle
+	                                             #    0,96  stalled cycles
+	             per insn
+	       982 749 523 branches                  #  450,918 M/sec
+	        20 745 453 branch-misses             #    2,11% of all branches
+
+	       3,463422087 seconds time elapsed
+
+	after:
+
+	       1741,651383 task-clock                #    0,522 CPUs utilized
+	             5 093 context-switches          #    0,003 M/sec
+	               137 cpu-migrations            #    0,079 K/sec
+	            49 033 page-faults               #    0,028 M/sec
+	     5 874 567 974 cycles                    #    3,373 GHz
+	     4 247 059 288 stalled-cycles-frontend   #   72,30% frontend cycles
+	             idle
+	   <not supported> stalled-cycles-backend
+	     4 419 666 346 instructions              #    0,75  insns per cycle
+	                                             #    0,96  stalled cycles
+	             per insn
+	       776 972 366 branches                  #  446,112 M/sec
+	        17 862 170 branch-misses             #    2,30% of all branches
+
+	       3,337472053 seconds time elapsed
+
+	util: avoid calling getenv for every SPICE_DEBUG
+	That doesn't seem to really improve performance so much,
+	but that' s what we should do probably.
+
+2013-09-13  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	display: keep a reference to the primary surface
+	Avoid hard-coding surface 0 as being primary, although in practice it
+	always is so far. Also a lot of lookups are primary, so add a shortcut
+	for this special case (~30% apparently), it shows some small lookup
+	speedup.
+
+	before:
+	real     0m5.008s
+	user     0m3.253s
+	sys      0m2.015s
+
+	after:
+	real    0m4.930s
+	user    0m3.133s
+	sys     0m2.027s
+
+	display: make the hashtable to destroy the surface
+	Improve a bit the code by using hashtable ownership.
+
+	display: replace ring with hashtable
+	With a Spice replay (a tool not yet merged, but available in dev
+	branches), the following commit improves a little bit performance by not
+	spending so much CPU time in looking up surfaces. I found initially
+	hotspot with "perf", and get a consistant ~200ms speedup with "time
+	spicy-stats" after replacing the ring.
+
+	before:
+	real     0m5.147s
+	user     0m3.506s
+	sys      0m1.949s
+
+	after:
+	real     0m5.008s
+	user     0m3.253s
+	sys      0m2.015s
+
+	channel: add SPICE_DISABLE_CHANNELS
+	Allow to disable selectively channels, mainly used for testing,
+	ex: SPICE_DISABLE_CHANNELS=display spicy-stats -p 12345
+
+	channels: use spice_channel_set_handlers()
+	This allows to simplify a little bit derived class (no need to override
+	handle_msg), and allows the base class more flexibility (for example for
+	filtering messages, as in the following patch)
+
+	channel: add spice_channel_set_handlers()
+	This function will allow to set base handlers and specific channel
+	handlers in a common way, instead of each channel having to override the
+	base channel virtual handle_msg().
+
+	display: use bitfields for surface flags
+	Checking by value make the flag fields useless. Unfortunately, when
+	adding more flags, the server will have to ensure it can safely send it,
+	by checking some of new client caps (for some features).
+
+	Update spice-common
+
+2013-09-10  Dunrong Huang  <riegamaths@gmail.com>
+
+	Fix _FORTIFY_SOURCE redefine error
+	If the _FORTIFY_SOURCE has been already defined, we shouldn't redefine
+	it, or it will raise a build error as below:
+
+	In file included from spice-audio.c:36:0:
+	../config.h:12:0: error: "_FORTIFY_SOURCE" redefined [-Werror]
+	spice-audio.c:1:0: note: this is the location of the previous definition
+
+	Suggested-by: Christophe Fergeau <cfergeau@redhat.com>
+
+2013-08-28  Marc-André Lureau  <marcandre.lureau@gmail.com>
+
+	Revert "tmp: debug MIGRATE_DATA"
+	This reverts commit f670e0197c37b2f12518f6d216642f67cdf5de84.
+
+2013-08-28  Alon Levy  <alevy@redhat.com>
+
+	gtk/channel-cursor: copy spicec hack, RHBZ #998529
+	flip -> unsupported by x11, since XCreatePixmapCursor has no invert
+	functionality, only a mask, shape, background and foreground colors. Use
+	this checkerboard hack to get some contrast for cursors in the guest
+	that relied on invert for the same contrast.
+
+	gtk/channel-cursor.c: add cursor_type_to_string for debugging
+
+	gtk/channel-display: only use SysV shm for x11
+
+	tmp: debug MIGRATE_DATA
+
+2013-08-28  Jonathon Jongsma  <jjongsma@redhat.com>
+
+	Remove incorrect option context from spicy-stats
+	The argument given to g_option_context_new() was apparently copy/pasted from
+	spicy-screenshot and therefore inaccurate for spicy-stats.  Since the actual
+	description of the program (from _set_summary()) is displayed on the next line
+	anyway, simply make the context NULL.
+
+	channel-main: Fix minor documentation issue
+	Documentation for spice_main_clipboard_selection_request() refers to deprecated
+	signal 'main-clipboard' instead of 'main-clipboard-selection'
+
+2013-08-24  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	tests: add some dos2unix tests
+	This is probably not exhaustive enough, but better than nothing.
+
+	gtk: handle clipboard CRLF conversion
+	gtk+ internal text/utf8 is using LF conversion, on all platforms.
+	Even though the toolkit may only handle a single line ending type, we
+	may want to avoid the conversion for Spice use cases, gtk+ could learn a
+	new native utf8 target type, see also:
+	https://bugzilla.gnome.org/show_bug.cgi?id=706657
+
+	In the meantime, the only thing we need to convert, is to/from crlf
+	guest (from/to lf). This is what this change is about.
+
+	It has been tested successfully with the various guest/client OS
+	combinations.
+
+	util: add unix2dos and dos2unix
+	Convert line endings from/to LF/CRLF.
+
+2013-08-23  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	Revert "channel-main: Convert text line-endings if necessary (rhbz#752350)"
+	This implementation assumes that the toolkit doesn't do any conversion
+	on its own. This is actually not the case, gtk+ converts line endings
+	already on windows.  It would be pretty ugly to do conversions back and
+	forth at different levels. So the channel implementation shouldn't
+	try to do conversion, and implementation must be done at higher level,
+	where the actual system clipboard implementation is known (at
+	gtk-session for instance)
+
+	Since this code hasn't been officially released, let's revert it and
+	implement a better crlf conversion handling in gtk-session in the
+	following commits.
+
+	This reverts commit e45a446a9981ad4adaeff9c885962a8c6140333e.
+
+	gtk: remove dead code
+
+2013-08-20  Uri Lublin  <uril@redhat.com>
+
+	win-usb-dev: ignore devices with addr 1 for LIBUSBX_API_VERSION
+	Starting libusbx version 1.0.13 (commit 8cd30bb7066f785ee78cf6c3dccafdbc4b957b50)
+	windows device enumeration changed and root hubs address number is 1 intead
+	of 0xff.
+
+	This patch uses LIBUSBX_API_VERSION which was introduced after 1.0.13 release
+	(commit 9d368fc4774344d81ab02840f3a8478301bfb6fa).
+
+	win usb: request for driver uninstall only for driver that were installed
+	Currently when spice_usb_device_manager_remove_dev() is called,
+	for windows clients a request to uninstall the driver is sent to usbclerk.
+
+	This cause problems when 2 instances (A and B) of the client are running:
+	- Both A and B get notified about a new USB device when it's plugged in
+	- A is requested to usbredir the USB device.
+	- A requests usbclerk to install WinUSB driver for that device.
+	- usbclerk starts installing the driver
+	- Windows sends to both A and B - device removal events, which may cause
+	  B to call spice_usb_device_manager_remove_dev.
+	- usbclerk completes installing the driver and reply to A
+	- B requests usbclerk to remove the WinUSB driver for that device.
+
+	To prevent that, spice-gtk now requests usbclerk to remove the driver
+	only if it was the instance that requested the driver to be installed.
+	This is done with the help of a new device SPICE_USB_DEVICE_STATE_INSTALLED
+	state.
+
+	rhbz#919166
+
+2013-08-19  Christophe Fergeau  <cfergeau@redhat.com>
+
+	Use g_slist_foreach_full glib implementation
+	For the compat case (glib < 2.28), we were using our own implementation
+	instead of directly reusing glib code.
+
+2013-08-19  Hans de Goede  <hdegoede@redhat.com>
+
+	glib-compat: g_slist_free_full: pass the right ptr to destroy (rhbz#997893)
+	The destroy function passed to g_slist_free_full should be passed the elements
+	data pointer, not the element itself.
+
+2013-08-13  Christophe Fergeau  <cfergeau@redhat.com>
+
+	Only use GOBJECT_INTROSPECTION_CHECK when available
+	Current el6 systems don't have gobject-introspection packages,
+	so the GOBJECT_INTROSPECTION_CHECK m4 macro is not available
+	on such systems. This makes it difficult to run autogen.sh
+	on these systems.
+	This commit uses m4_ifdef to check if this macro is available
+	before trying to use it, and makes sure introspection is
+	disabled when GOBJECT_INTROSPECTION_CHECK could not be found.
+	This allows to compile spice-gtk from git on el6 systems
+	with:
+	./autogen.sh --with-gtk=2.0 --disable-gtk-doc --disable-vala
+	             --disable-controller --disable-werror
+
+2013-08-06  Yonit Halperin  <yhalperi@redhat.com>
+
+	usb-device-manager: fix compilation error when usbredir is disabled
+
+2013-08-06  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	usb-widget: fix gtk2 Python bindings
+	The Python bindings generator failed to bind the USB widget, because of
+	the object/class declaration. The declaration was circumventing the
+	deprecated errors when compiling with GTK_DISABLE_DEPRECATED. We used
+	to need that because of broken gtk+ headers, but it is no longer
+	necessary since 15bd7ceba1434b5d710bfd16078044f30693467b.
+
+2013-07-22  Marc-André Lureau  <marcandre.lureau@redhat.com>
+
+	session: copy "ca" property in copy ctor
+	This fixes the GSpice-WARNING **: no cert loaded, when doing a seamless
+	migration (when using the "ca" property).
+
+2013-07-11  Christophe Fergeau  <cfergeau@redhat.com>
+
+	smartcard: Only init manager once
+	The SpiceSmartcardManager is a singleton, so it does not make
+	a lot of sense to try to init it multiple times. This commit adds
+	a GOnce to ensure the manager is only init'ed once.
+
+	smartcard: Handle VCARD_EMUL_INIT_ALREADY_INITED
+	When initializing a software smartcard, vcard_emul_init() can
+	report success, error, or indicate that initialization has already
+	been done. In this last case, we would assume that an error occurred
+	instead of behaving as if the initialization succeeded.
+
+	vcard_emul_init() can end up being called multiple time if the
+	smartcard channel gets destroyed and recreated during the lifetime
+	of the application
+
+	Fixes rhbz#815639
+
+2013-07-08  Christophe Fergeau  <cfergeau@redhat.com>
+
+	doc: Fix typo in code comment
+
+	gst: Chain up dispose impl to parent class
+
+	gi: Add (allow none) to optional const char * params
+	Without that annotation, it will not be possible to pass NULL to
+	these methods when using a gi-based binding.
+
+	gi: Make sure usb-device-widget.c is introspected
+	If it's not, annotation we add to inline gtk-doc comments won't
+	be taken into account in the .gir file.
+
+2013-07-05  Hans de Goede  <hdegoede@redhat.com>
+
+	usb-device-manager: Add support for libusb hotplug API
+	For now this makes the usb-code even more of a #ifdef party (albeit only
+	slightly so). But it does give us (theoretical, untested) usb support on
+	Mac OS X, and once the libusb Windows backend also gets hotplug support, we
+	can bump the required libusb version to a new enough one, and drop both the
+	windows gudev emulation as well as the gudev code-paths.
+
+2013-07-04  Hans de Goede  <hdegoede@redhat.com>
+
+	usb-device-manager: Splitout device add / remove function
+	Split the device add / remove functions into a gudev specific part and
+	a generic part. This is a preparation patch for adding support libusb's
+	new hotplug API.
+
+2013-06-27  Hans de Goede  <hdegoede@redhat.com>
+
+	Add spice_channel_string_to_type to map files
+	And document both spice_channel_string_to_type and
+	spice_channel_type_to_string.
+
+	channel-main: Convert text line-endings if necessary (rhbz#752350)
+	This implements line-ending conversion following the specification in the
+	commit message of spice-protocol commit 7be0e88e7e03a956b364cc847aad11b96ed4 :
+	vd_agent: Add caps for the agent to signal the guest line-ending (rhbz#752350)
+
 2013-06-26  Marc-André Lureau  <marcandre.lureau@redhat.com>
 
 	Release v0.20

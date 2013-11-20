@@ -1,8 +1,8 @@
 462252ce98d71b71c9ab7717e9fc4d40  usr/share/doc/libgtk2.0-common/AUTHORS
-c1957f249389b6c042d7863165875523  usr/share/doc/libgtk2.0-common/NEWS.gz
-0cfe08ff47a431a547a7f6f59fb3f32a  usr/share/doc/libgtk2.0-common/README.gz
-b6eba24bb8cea4e3c3a9eb1f15173385  usr/share/doc/libgtk2.0-common/changelog.Debian.gz
-4a6d39d3e8a13da6e2cdeaa32edfdc03  usr/share/doc/libgtk2.0-common/changelog.gz
+ee583b3f263ed6a0e1a3e5bb518ce4e9  usr/share/doc/libgtk2.0-common/NEWS.gz
+8950a9f7b025da6b1feab84b5bd274b1  usr/share/doc/libgtk2.0-common/README.gz
+fac65bd7027a0a1905fd3f977e4e96c0  usr/share/doc/libgtk2.0-common/changelog.Debian.gz
+e5dee986210b44c51da9bbe9313e34fe  usr/share/doc/libgtk2.0-common/changelog.gz
 e388ee635b1dee2c94d89f2a1d79d9f4  usr/share/doc/libgtk2.0-common/copyright
 a6615d42d5f4d6a53ba001f48f3b3829  usr/share/locale/af/LC_MESSAGES/gtk20-properties.mo
 bbbcbdfbe069c9669790b6e6c01f8fa1  usr/share/locale/af/LC_MESSAGES/gtk20.mo
@@ -83,7 +83,7 @@ b54b0a5503c1ee02547dafda3121c29c  usr/share/locale/gu/LC_MESSAGES/gtk20.mo
 fc254ce2a003b3bb9bfce51a32cce04d  usr/share/locale/hr/LC_MESSAGES/gtk20-properties.mo
 ad4ef53e034c23130ec3edc550d0f0e1  usr/share/locale/hr/LC_MESSAGES/gtk20.mo
 616b576daa222a4aeef96a2fff9783b2  usr/share/locale/hu/LC_MESSAGES/gtk20-properties.mo
-c0e59d01f34dea14b6718c0944f76beb  usr/share/locale/hu/LC_MESSAGES/gtk20.mo
+ed96969c684c2180d643755bab878ca2  usr/share/locale/hu/LC_MESSAGES/gtk20.mo
 4d14bf17c075c013fd45501e057c2ef1  usr/share/locale/hy/LC_MESSAGES/gtk20-properties.mo
 53500a71a02f5c05c6ee3eadabb4c804  usr/share/locale/hy/LC_MESSAGES/gtk20.mo
 e3a8d598d10157677c55481c798106af  usr/share/locale/ia/LC_MESSAGES/gtk20-properties.mo
@@ -183,7 +183,7 @@ db53f6866a9d52f5014c09d770ac0414  usr/share/locale/ta/LC_MESSAGES/gtk20-properti
 31a66a137d5a9512991ba3103232abe0  usr/share/locale/te/LC_MESSAGES/gtk20-properties.mo
 4b2a24212bdd59970bbed4c2b0c00cbf  usr/share/locale/te/LC_MESSAGES/gtk20.mo
 9a56c87ac8efb0b08e32599f62052b3d  usr/share/locale/th/LC_MESSAGES/gtk20-properties.mo
-bfbd047f120e139acd5a2285283f8602  usr/share/locale/th/LC_MESSAGES/gtk20.mo
+e5e709907ac021c940fe1e627030f7e7  usr/share/locale/th/LC_MESSAGES/gtk20.mo
 f50284b39b44a5fd8f5e852adc6a4b3e  usr/share/locale/tk/LC_MESSAGES/gtk20-properties.mo
 35fa1892234abfcf5672c1953e05ec36  usr/share/locale/tk/LC_MESSAGES/gtk20.mo
 9e4bcda3713044d6dd322008061e207a  usr/share/locale/tr/LC_MESSAGES/gtk20-properties.mo

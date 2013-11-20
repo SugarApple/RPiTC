@@ -22,6 +22,8 @@
 /usr/lib/dpkg/methods/apt/desc.apt
 /usr/lib/dpkg/methods/apt/names
 /usr/lib/dpkg/methods/apt/setup
+/usr/lib/arm-linux-gnueabi
+/usr/lib/arm-linux-gnueabi/libapt-private.so.0.0.0
 /usr/bin
 /usr/bin/apt-get
 /usr/bin/apt-config
@@ -30,6 +32,9 @@
 /usr/bin/apt-cdrom
 /usr/bin/apt-mark
 /usr/share
+/usr/share/lintian
+/usr/share/lintian/overrides
+/usr/share/lintian/overrides/apt
 /usr/share/bug
 /usr/share/bug/apt
 /usr/share/bug/apt/script
@@ -316,3 +321,4 @@
 /usr/lib/apt/methods/xz
 /usr/lib/apt/methods/lzma
 /usr/lib/apt/methods/bzip2
+/usr/lib/arm-linux-gnueabi/libapt-private.so.0.0

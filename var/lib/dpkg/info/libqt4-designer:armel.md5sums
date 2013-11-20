@@ -1,0 +1,6 @@
+c6da92a37019aae964f4aa6b93dce291  usr/lib/arm-linux-gnueabi/libQtDesigner.so.4.8.6
+e61a9ef614fb3d13ca28a372fef76272  usr/lib/arm-linux-gnueabi/libQtDesignerComponents.so.4.8.6
+eb6c371255e1262c55ae9b652a90b528  usr/share/doc/libqt4-designer/LGPL_EXCEPTION.txt
+447446f9345995e3a62669f7e61766b6  usr/share/doc/libqt4-designer/changelog.Debian.gz
+d49cf542b1b3ba75bad90e9560c459d3  usr/share/doc/libqt4-designer/copyright
+2cebdc8cefce1ea6ec5ee19fabace9af  usr/share/lintian/overrides/libqt4-designer

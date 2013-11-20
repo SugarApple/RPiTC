@@ -1,5 +1,7 @@
 /.
 /usr
+/usr/lib
+/usr/lib/arm-linux-gnueabi
 /usr/share
 /usr/share/doc
 /usr/share/doc/libpng12-0
@@ -17,4 +19,5 @@
 /lib
 /lib/arm-linux-gnueabi
 /lib/arm-linux-gnueabi/libpng12.so.0.49.0
+/usr/lib/arm-linux-gnueabi/libpng12.so.0
 /lib/arm-linux-gnueabi/libpng12.so.0

@@ -18,8 +18,8 @@ voice:x:22:
 cdrom:x:24:
 floppy:x:25:
 tape:x:26:
-sudo:x:27:rpitc
-audio:x:29:
+sudo:x:27:rpitc,browser
+audio:x:29:rpitc,browser
 dip:x:30:
 www-data:x:33:
 backup:x:34:
@@ -30,7 +30,7 @@ src:x:40:
 gnats:x:41:
 shadow:x:42:
 utmp:x:43:
-video:x:44:
+video:x:44:rpitc,browser,root
 sasl:x:45:
 plugdev:x:46:
 staff:x:50:
@@ -44,3 +44,4 @@ netdev:x:104:
 ntp:x:105:
 rpitc:x:1000:
 utempter:x:106:
+browser:x:1001:

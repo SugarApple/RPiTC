@@ -6,6 +6,9 @@
 /usr/share/mime/packages/libfm.xml
 /usr/share/libfm
 /usr/share/libfm/archivers.list
+/usr/share/apport
+/usr/share/apport/package-hooks
+/usr/share/apport/package-hooks/source_libfm.py
 /usr/share/doc
 /usr/share/doc/libfm-data
 /usr/share/doc/libfm-data/changelog.Debian.gz
@@ -23,9 +26,15 @@
 /usr/share/locale/hu
 /usr/share/locale/hu/LC_MESSAGES
 /usr/share/locale/hu/LC_MESSAGES/libfm.mo
+/usr/share/locale/ug
+/usr/share/locale/ug/LC_MESSAGES
+/usr/share/locale/ug/LC_MESSAGES/libfm.mo
 /usr/share/locale/ps
 /usr/share/locale/ps/LC_MESSAGES
 /usr/share/locale/ps/LC_MESSAGES/libfm.mo
+/usr/share/locale/kk
+/usr/share/locale/kk/LC_MESSAGES
+/usr/share/locale/kk/LC_MESSAGES/libfm.mo
 /usr/share/locale/bg
 /usr/share/locale/bg/LC_MESSAGES
 /usr/share/locale/bg/LC_MESSAGES/libfm.mo
@@ -89,9 +98,6 @@
 /usr/share/locale/be
 /usr/share/locale/be/LC_MESSAGES
 /usr/share/locale/be/LC_MESSAGES/libfm.mo
-/usr/share/locale/es_VE
-/usr/share/locale/es_VE/LC_MESSAGES
-/usr/share/locale/es_VE/LC_MESSAGES/libfm.mo
 /usr/share/locale/nb
 /usr/share/locale/nb/LC_MESSAGES
 /usr/share/locale/nb/LC_MESSAGES/libfm.mo

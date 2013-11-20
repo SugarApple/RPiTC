@@ -1,45 +1,3 @@
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #	This file contains compose table file name.
 #	The first word is the compose table file name and
@@ -552,48 +510,6 @@ zh_HK.UTF-8/Compose		zh_HK.UTF-8
 zh_TW.UTF-8/Compose		zh_TW.UTF-8
 en_US.UTF-8/Compose		zu_ZA.UTF-8
 en_US.UTF-8/Compose		zh_SG.UTF-8
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 #
 #	This file contains compose table file name.
 #	The first word is the compose table file name and

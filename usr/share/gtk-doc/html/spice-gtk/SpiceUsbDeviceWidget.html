@@ -8,7 +8,7 @@
 <link rel="up" href="ch03.html" title="GTK Widget, from spice-client-gtk">
 <link rel="prev" href="SpiceDisplay.html" title="Spice Display">
 <link rel="next" href="application-support.html" title="Application Support, from spice-client-glib">
-<meta name="generator" content="GTK-Doc V1.18 (XML mode)">
+<meta name="generator" content="GTK-Doc V1.19 (XML mode)">
 <link rel="stylesheet" href="style.css" type="text/css">
 </head>
 <body bgcolor="white" text="black" link="#0000FF" vlink="#840084" alink="#0000FF">
@@ -56,14 +56,14 @@ struct              <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDevi
 struct              <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidgetClass" title="struct SpiceUsbDeviceWidgetClass">SpiceUsbDeviceWidgetClass</a>;
 
 <span class="returnvalue">GtkWidget</span> *         <a class="link" href="SpiceUsbDeviceWidget.html#spice-usb-device-widget-new" title="spice_usb_device_widget_new ()">spice_usb_device_widget_new</a>         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *device_format_string</code></em>);
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *device_format_string</code></em>);
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceUsbDeviceWidget.object-hierarchy"></a><h2>Object Hierarchy</h2>
 <pre class="synopsis">
-  <a href="../gobject/gobject-The-Base-Object-Type.html#GObject">GObject</a>
-   +----<a href="../gobject/gobject-The-Base-Object-Type.html#GInitiallyUnowned">GInitiallyUnowned</a>
+  GObject
+   +----GInitiallyUnowned
          +----GtkWidget
                +----GtkContainer
                      +----GtkBox
@@ -79,14 +79,14 @@ SpiceUsbDeviceWidget implements
 <div class="refsect1">
 <a name="SpiceUsbDeviceWidget.properties"></a><h2>Properties</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget--device-format-string" title='The "device-format-string" property'>device-format-string</a>"     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write / Construct Only
+  "<a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget--device-format-string" title='The "device-format-string" property'>device-format-string</a>"     <span class="type">gchar</span>*                : Read / Write / Construct Only
   "<a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget--session" title='The "session" property'>session</a>"                  <a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a>*         : Read / Write / Construct Only
 </pre>
 </div>
 <div class="refsect1">
 <a name="SpiceUsbDeviceWidget.signals"></a><h2>Signals</h2>
 <pre class="synopsis">
-  "<a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget-connect-failed" title='The "connect-failed" signal'>connect-failed</a>"                                 : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a>
+  "<a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget-connect-failed" title='The "connect-failed" signal'>connect-failed</a>"                                 : <code class="literal">Run First</code>
 </pre>
 </div>
 <div class="refsect1">
@@ -109,7 +109,7 @@ The <a class="link" href="SpiceUsbDeviceWidget.html" title="Spice USB device sel
 <div class="refsect2">
 <a name="SpiceUsbDeviceWidgetClass"></a><h3>struct SpiceUsbDeviceWidgetClass</h3>
 <pre class="programlisting">struct SpiceUsbDeviceWidgetClass {
-    _SpiceGtkBoxClass parent_class;
+    GtkVBoxClass parent_class;
 
     /* signals */
     void (*connect_failed) (SpiceUsbDeviceWidget *widget,
@@ -126,7 +126,7 @@ Class structure for <a class="link" href="SpiceUsbDeviceWidget.html" title="Spic
 </colgroup>
 <tbody>
 <tr>
-<td><p><span class="term"><span class="type">_SpiceGtkBoxClass</span> <em class="structfield"><code><a name="SpiceUsbDeviceWidgetClass.parent-class"></a>parent_class</code></em>;</span></p></td>
+<td><p><span class="term"><span class="type">GtkVBoxClass</span> <em class="structfield"><code><a name="SpiceUsbDeviceWidgetClass.parent-class"></a>parent_class</code></em>;</span></p></td>
 <td></td>
 </tr>
 <tr>
@@ -140,7 +140,7 @@ Class structure for <a class="link" href="SpiceUsbDeviceWidget.html" title="Spic
 <div class="refsect2">
 <a name="spice-usb-device-widget-new"></a><h3>spice_usb_device_widget_new ()</h3>
 <pre class="programlisting"><span class="returnvalue">GtkWidget</span> *         spice_usb_device_widget_new         (<em class="parameter"><code><a class="link" href="SpiceSession.html" title="Spice Session"><span class="type">SpiceSession</span></a> *session</code></em>,
-                                                         <em class="parameter"><code>const <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a> *device_format_string</code></em>);</pre>
+                                                         <em class="parameter"><code>const <span class="type">gchar</span> *device_format_string</code></em>);</pre>
 <div class="variablelist"><table border="0" class="variablelist">
 <colgroup>
 <col align="left" valign="top">
@@ -154,7 +154,8 @@ Class structure for <a class="link" href="SpiceUsbDeviceWidget.html" title="Spic
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>device_format_string</code></em> :</span></p></td>
-<td>String passed to <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-get-description" title="spice_usb_device_get_description ()"><code class="function">spice_usb_device_get_description()</code></a>
+<td>String passed to
+<a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-get-description" title="spice_usb_device_get_description ()"><code class="function">spice_usb_device_get_description()</code></a>. <span class="annotation">[<acronym title="NULL is ok, both for passing and for returning."><span class="acronym">allow-none</span></acronym>]</span>
 </td>
 </tr>
 <tr>
@@ -169,7 +170,7 @@ Class structure for <a class="link" href="SpiceUsbDeviceWidget.html" title="Spic
 <a name="SpiceUsbDeviceWidget.property-details"></a><h2>Property Details</h2>
 <div class="refsect2">
 <a name="SpiceUsbDeviceWidget--device-format-string"></a><h3>The <code class="literal">"device-format-string"</code> property</h3>
-<pre class="programlisting">  "device-format-string"     <a href="../glib/glib-Basic-Types.html#gchar"><span class="type">gchar</span></a>*                : Read / Write / Construct Only</pre>
+<pre class="programlisting">  "device-format-string"     <span class="type">gchar</span>*                : Read / Write / Construct Only</pre>
 <p>
 Format string to pass to <a class="link" href="SpiceUsbDeviceManager.html#spice-usb-device-get-description" title="spice_usb_device_get_description ()"><code class="function">spice_usb_device_get_description()</code></a> for getting
 the device USB descriptions.
@@ -191,8 +192,8 @@ the device USB descriptions.
 <a name="SpiceUsbDeviceWidget-connect-failed"></a><h3>The <code class="literal">"connect-failed"</code> signal</h3>
 <pre class="programlisting"><span class="returnvalue">void</span>                user_function                      (<a class="link" href="SpiceUsbDeviceWidget.html" title="Spice USB device selection widget"><span class="type">SpiceUsbDeviceWidget</span></a> *widget,
                                                         <a class="link" href="SpiceUsbDeviceManager.html#SpiceUsbDevice"><span class="type">SpiceUsbDevice</span></a>       *device,
-                                                        <a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a>               *error,
-                                                        <a href="../glib/glib-Basic-Types.html#gpointer"><span class="type">gpointer</span></a>              user_data)      : <a href="../gobject/gobject-Signals.html#G-SIGNAL-RUN-FIRST:CAPS"><code class="literal">Run First</code></a></pre>
+                                                        <span class="type">GError</span>               *error,
+                                                        <span class="type">gpointer</span>              user_data)      : <code class="literal">Run First</code></pre>
 <p>
 The <a class="link" href="SpiceUsbDeviceWidget.html#SpiceUsbDeviceWidget-connect-failed" title='The "connect-failed" signal'><span class="type">"connect-failed"</span></a> signal is emitted whenever
 the user has requested for a device to be redirected and this has
@@ -216,7 +217,7 @@ failed.
 <tr>
 <td><p><span class="term"><em class="parameter"><code>error</code></em> :</span></p></td>
 <td>
-<a href="../glib/glib-Error-Reporting.html#GError"><span class="type">GError</span></a> describing the reason why the connect failed</td>
+<span class="type">GError</span> describing the reason why the connect failed</td>
 </tr>
 <tr>
 <td><p><span class="term"><em class="parameter"><code>user_data</code></em> :</span></p></td>
@@ -229,6 +230,6 @@ failed.
 </div>
 <div class="footer">
 <hr>
-          Generated by GTK-Doc V1.18</div>
+          Generated by GTK-Doc V1.19</div>
 </body>
 </html>

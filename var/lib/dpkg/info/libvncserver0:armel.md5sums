@@ -1,8 +1,8 @@
-0086d2a85e4269b7d279866d115a09fd  usr/lib/arm-linux-gnueabi/libvncclient.so.0.0.0
-d3e9c639572e9eec7c77cecbf2833435  usr/lib/arm-linux-gnueabi/libvncserver.so.0.0.0
+06adab8959477cc14a36009f7718dc64  usr/lib/arm-linux-gnueabi/libvncclient.so.0.0.0
+a86936ff523c75ce78b423d1d6d553b0  usr/lib/arm-linux-gnueabi/libvncserver.so.0.0.0
 b645b71483fba0d114ff351baddfa2c7  usr/share/doc/libvncserver0/NEWS.gz
 57bf1aed9b48141d03b4a5ad8d80da61  usr/share/doc/libvncserver0/README.gz
 67ddf67ffdc6c275cbcd76c32173ef5d  usr/share/doc/libvncserver0/TODO
-37661b4be8407b3808f643ebbf3aa999  usr/share/doc/libvncserver0/changelog.Debian.gz
+024849496657972cda313c0227785be0  usr/share/doc/libvncserver0/changelog.Debian.gz
 0527e657a7ed50a0c4ae2722a15121ab  usr/share/doc/libvncserver0/changelog.gz
 fc39434da6e3a64f905756daf5e7ef2c  usr/share/doc/libvncserver0/copyright
