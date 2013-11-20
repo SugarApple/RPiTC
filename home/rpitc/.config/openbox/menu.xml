@@ -67,10 +67,10 @@
     </action>
   </item>
   <item label="Change Keyboard Configuration">
-    <action name="Execute"><command>lxterminal -e "dpkg-reconfigure keyboard-configuration"</command></action>
+    <action name="Execute"><command>lxterminal -e "sudo dpkg-reconfigure keyboard-configuration"</command></action>
   </item>
   <item label="Change Locales">
-    <action name="Execute"><command>lxterminal -e "dpkg-reconfigure locales"</command></action>
+    <action name="Execute"><command>lxterminal -e "sudo dpkg-reconfigure locales"</command></action>
   </item>
   <item label="Change Autostart Applications">
     <action name="Execute"><command>leafpad ~/.config/lxsession/LXDE/autostart</command></action>
